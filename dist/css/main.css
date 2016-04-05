@@ -48,7 +48,7 @@ body {
   font-size: 16px; }
   body p {
     color: #545353;
-    line-height: 1.3em; }
+    line-height: 1.5em; }
 
 .img-holder {
   overflow: hidden;
@@ -226,3 +226,147 @@ img {
       font-size: 20px;
       line-height: 1.5em;
       margin-bottom: 20px; }
+    #faq .block_text a {
+      line-height: 50px;
+      color: #ff4504;
+      font-size: 16px;
+      width: 155px;
+      text-align: center;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      display: block;
+      margin: auto;
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16);
+      font-family: "FuturaPT-Heavy", sans-serif;
+      text-transform: uppercase; }
+      #faq .block_text a:hover {
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        text-decoration: none; }
+
+#block_info {
+  padding: 70px 0 90px; }
+  #block_info h3 {
+    text-align: center;
+    font-size: 60px;
+    line-height: 1em;
+    margin-bottom: 80px; }
+  #block_info .block_article {
+    width: 560px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    border: 10px solid #ff4504;
+    border-left: 0;
+    padding: 60px 10px 60px 0;
+    margin-right: 55px; }
+    #block_info .block_article .item {
+      margin-bottom: 50px; }
+      #block_info .block_article .item .img-holder {
+        width: 140px;
+        height: 115px;
+        overflow: hidden;
+        float: left;
+        margin-bottom: 20px;
+        margin-right: 20px; }
+      #block_info .block_article .item:last-child {
+        margin-bottom: 0; }
+      #block_info .block_article .item h4 {
+        font-size: 30px;
+        line-height: 1em;
+        font-family: "FuturaPT-Medium", sans-serif;
+        font-weight: normal;
+        margin-bottom: 15px; }
+      #block_info .block_article .item .data {
+        font-size: 14px;
+        line-height: 1em;
+        margin-bottom: 20px;
+        color: #6f7070; }
+      #block_info .block_article .item .text {
+        line-height: 1.5em;
+        color: #525252;
+        font-size: 20px;
+        margin-bottom: 15px; }
+      #block_info .block_article .item .readmore {
+        color: #000;
+        font-family: "FuturaPT-Medium", sans-serif;
+        font-weight: normal;
+        font-size: 20px;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        padding-right: 15px;
+        position: relative;
+        display: inline-block; }
+        #block_info .block_article .item .readmore:after {
+          content: "";
+          position: absolute;
+          top: 5px;
+          right: 0;
+          width: 6px;
+          height: 10px;
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s;
+          background: url("../img/icons/readmore.png") no-repeat;
+          background-size: 100%; }
+        #block_info .block_article .item .readmore:hover {
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s;
+          color: #ff4504;
+          text-decoration: none; }
+          #block_info .block_article .item .readmore:hover:after {
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+            background: url("../img/icons/readmore_hover.png") no-repeat;
+            background-size: 100%; }
+  #block_info .block_order_info {
+    width: 320px;
+    display: inline-block;
+    vertical-align: top; }
+    #block_info .block_order_info h4 {
+      line-height: 60px;
+      color: #fff;
+      font-size: 36px;
+      width: 320px;
+      text-align: center;
+      display: block;
+      margin: auto;
+      background: #ff4504;
+      border-radius: 6px;
+      box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16);
+      font-weight: normal;
+      margin-bottom: 25px; }
+    #block_info .block_order_info ul {
+      margin-bottom: 30px; }
+      #block_info .block_order_info ul li {
+        position: relative;
+        padding-left: 80px;
+        line-height: 50px;
+        font-size: 20px;
+        color: #353434;
+        margin-bottom: 8px; }
+        #block_info .block_order_info ul li:last-child {
+          margin-bottom: 0; }
+        #block_info .block_order_info ul li:after {
+          position: absolute;
+          content: "";
+          width: 55px;
+          height: 50px;
+          background: #ff4504;
+          top: 0;
+          left: 0;
+          z-index: 0; }
+        #block_info .block_order_info ul li .img-holder {
+          position: absolute;
+          top: 5px;
+          left: 0;
+          z-index: 1;
+          width: 55px;
+          height: 50px;
+          text-align: center; }
+    #block_info .block_order_info .text p {
+      font-size: 20px;
+      line-height: 1.3em;
+      margin-bottom: 20px;
+      color: #000; }
