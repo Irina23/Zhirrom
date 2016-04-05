@@ -370,3 +370,82 @@ img {
       line-height: 1.3em;
       margin-bottom: 20px;
       color: #000; }
+
+.copyright_block {
+  background: #ff4504;
+  padding: 20px 0; }
+  .copyright_block .wrap .copyright_zhirrom {
+    float: left;
+    font-size: 20px;
+    line-height: 1em;
+    color: #000;
+    font-weight: bold; }
+    .copyright_block .wrap .copyright_zhirrom span {
+      font-family: "FuturaPT-Bold", sans-serif;
+      font-weight: normal; }
+  .copyright_block .wrap .copyright {
+    float: right; }
+    .copyright_block .wrap .copyright a {
+      color: #fff;
+      line-height: 1em;
+      font-size: 20px; }
+
+.footer {
+  background: #727272;
+  padding: 25px 0 30px; }
+  .footer .wrap > div {
+    display: inline-block;
+    vertical-align: top;
+    color: #fff; }
+    .footer .wrap > div a {
+      color: #fff;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
+      .footer .wrap > div a:hover {
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        color: #ff4504;
+        text-decoration: none; }
+    .footer .wrap > div h4 {
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 1em;
+      margin-bottom: 20px;
+      color: #fff; }
+  .footer .wrap .logo {
+    width: 187px;
+    height: 139px;
+    margin-right: 140px; }
+  .footer .wrap .contact {
+    margin-right: 70px;
+    color: #fff; }
+    .footer .wrap .contact > div {
+      font-size: 20px;
+      line-height: 1em;
+      margin-bottom: 20px; }
+      .footer .wrap .contact > div a {
+        font-size: 20px;
+        line-height: 1em; }
+  .footer .wrap .user_block a, .footer .wrap .user_block span {
+    font-size: 20px;
+    line-height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 20px; }
+  .footer .wrap .user_block .social a {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 22px;
+    background: #fff;
+    color: #727272;
+    text-align: center;
+    margin-right: 30px;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding-top: 3px; }
+    .footer .wrap .user_block .social a:hover {
+      color: #ff4504; }
+    .footer .wrap .user_block .social a:last-child {
+      margin-right: 0; }
