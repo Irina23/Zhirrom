@@ -5,14 +5,49 @@
   font-style: normal;
   font-weight: normal; }
 
+@font-face {
+  font-family: "FuturaPT-Bold";
+  src: url("../fonts/FuturaPT-Bold.eot");
+  src: url("../fonts/FuturaPT-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPT-Bold.woff") format("woff"), url("../fonts/FuturaPT-Bold.ttf") format("truetype"), url("../fonts/FuturaPT-Bold.svg") format("svg"), url("../fonts/FuturaPT-Bold.otf") format("otf");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "FuturaPT-Demi";
+  src: url("../fonts/FuturaPT-Demi.eot");
+  src: url("../fonts/FuturaPT-Demi.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPT-Demi.woff") format("woff"), url("../fonts/FuturaPT-Demi.ttf") format("truetype"), url("../fonts/FuturaPT-Demi.svg") format("svg"), url("../fonts/FuturaPT-Demi.otf") format("otf");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "FuturaPT-Heavy";
+  src: url("../fonts/FuturaPT-Heavy.eot");
+  src: url("../fonts/FuturaPT-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPT-Heavy.woff") format("woff"), url("../fonts/FuturaPT-Heavy.ttf") format("truetype"), url("../fonts/FuturaPT-Heavy.svg") format("svg"), url("../fonts/FuturaPT-Heavy.otf") format("otf");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "FuturaPT-Light";
+  src: url("../fonts/FuturaPT-Light.eot");
+  src: url("../fonts/FuturaPT-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPT-Light.woff") format("woff"), url("../fonts/FuturaPT-Light.ttf") format("truetype"), url("../fonts/FuturaPT-Light.svg") format("svg"), url("../fonts/FuturaPT-Light.otf") format("otf");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "FuturaPT-Medium";
+  src: url("../fonts/FuturaPT-Medium.eot");
+  src: url("../fonts/FuturaPT-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPT-Medium.woff") format("woff"), url("../fonts/FuturaPT-Medium.ttf") format("truetype"), url("../fonts/FuturaPT-Medium.svg") format("svg"), url("../fonts/FuturaPT-Medium.otf") format("otf");
+  font-style: normal;
+  font-weight: normal; }
+
 body {
-  font-family: "SegoeUIRegular", sans-serif;
+  font-family: "FuturaPT-Light", sans-serif;
   padding: 0;
   margin: 0;
   line-height: 1em;
   font-size: 16px; }
   body p {
-    color: #545454;
+    color: #545353;
     line-height: 1.3em; }
 
 .img-holder {
@@ -28,3 +63,166 @@ img {
 
 #cache {
   display: none; }
+
+.top {
+  background: #727272; }
+  .top .phone {
+    margin-right: 70px; }
+  .top .phone, .top .email {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px 0; }
+    .top .phone span, .top .email span {
+      margin-right: 5px; }
+    .top .phone a, .top .email a {
+      margin-right: 20px;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
+      .top .phone a:hover, .top .email a:hover {
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        color: #ff4504;
+        text-decoration: none; }
+      .top .phone a:last-child, .top .email a:last-child {
+        margin-right: 0; }
+    .top .phone span, .top .phone a, .top .email span, .top .email a {
+      color: #fff;
+      font-size: 20px;
+      line-height: 1em;
+      display: inline-block;
+      vertical-align: middle; }
+  .top .user-login {
+    float: right; }
+    .top .user-login a {
+      line-height: 40px;
+      color: #fff;
+      font-size: 20px;
+      width: 115px;
+      text-align: center;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      display: inline-block;
+      vertical-align: middle; }
+      .top .user-login a.login {
+        background: #ff4504;
+        border-radius: 2px;
+        box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16); }
+        .top .user-login a.login:hover {
+          color: #fff; }
+      .top .user-login a:hover {
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        color: #ff4504;
+        text-decoration: none; }
+      .top .user-login a span {
+        font-family: "FuturaPT-Medium", sans-serif; }
+
+.header {
+  width: 940px;
+  margin: 20px auto 50px; }
+  .header .logo {
+    width: 250px;
+    margin: auto;
+    margin-bottom: 40px; }
+  .header #menu li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 25px; }
+    .header #menu li.active a {
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      color: #ff4504;
+      text-decoration: none; }
+    .header #menu li:last-child {
+      margin-right: 0; }
+    .header #menu li a {
+      text-transform: uppercase;
+      color: #000;
+      font-family: "FuturaPT-Medium", sans-serif;
+      letter-spacing: 2px;
+      font-size: 14px;
+      line-height: 1em;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
+      .header #menu li a:hover {
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        color: #ff4504;
+        text-decoration: none; }
+
+.about {
+  padding: 60px 0 80px; }
+  .about h3 {
+    text-align: center;
+    font-size: 60px;
+    line-height: 1em;
+    margin-bottom: 80px; }
+  .about .text_holder {
+    width: 500px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 35px; }
+    .about .text_holder p {
+      line-height: 2em;
+      font-size: 20px; }
+  .about .advantages_holder {
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    border: 10px solid #ff4504;
+    padding: 25px; }
+    .about .advantages_holder li {
+      margin-bottom: 20px; }
+      .about .advantages_holder li h4 {
+        font-size: 24px;
+        margin-bottom: 15px; }
+        .about .advantages_holder li h4 span {
+          display: inline-block;
+          vertical-align: middle;
+          background: #ff4504;
+          color: #fff;
+          font-size: 24px;
+          font-family: "FuturaPT-Medium", sans-serif;
+          line-height: 1em;
+          padding: 5px;
+          margin-right: 15px;
+          font-weight: normal; }
+      .about .advantages_holder li p.text {
+        font-size: 18px;
+        line-height: 1.5em;
+        color: #545454; }
+      .about .advantages_holder li:last-child {
+        margin-bottom: 0; }
+
+#faq {
+  background: #ff4504; }
+  #faq .wrap {
+    background: url("../img/bg/bg_faq.png") no-repeat left center;
+    padding: 40px 0 30px; }
+  #faq h3 {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    font-family: "FuturaPT-Demi", sans-serif;
+    font-size: 60px;
+    line-height: 1em;
+    width: 400px;
+    letter-spacing: 1px;
+    margin-right: 75px; }
+  #faq .block_text {
+    display: inline-block;
+    vertical-align: middle;
+    width: 460px;
+    color: #fff;
+    text-align: center; }
+    #faq .block_text h4 {
+      font-size: 36px;
+      line-height: 1em;
+      margin-bottom: 20px; }
+    #faq .block_text p.text {
+      color: #fff;
+      text-align: left;
+      font-size: 20px;
+      line-height: 1.5em;
+      margin-bottom: 20px; }

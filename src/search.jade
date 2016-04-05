@@ -1,0 +1,32 @@
+doctype html
+html(lang="ru")
+    include ./head.jade
+
+
+    body(data-spy="scroll", data-target="#menu", data-offset="105")
+        .page_wrapper.home
+            include ./header.jade
+
+            .container
+                .wrap
+                    script.
+                        (function() {
+                          var cx = '007193684977280474025:m3ozddvtnpw';
+                          var gcse = document.createElement('script');
+                          gcse.type = 'text/javascript';
+                          gcse.async = true;
+                          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                          '//cse.google.com/cse.js?cx=' + cx;
+                          var s = document.getElementsByTagName('script')[0];
+                          s.parentNode.insertBefore(gcse, s);
+                          })();
+                        gcse:search
+
+
+
+
+            #overlay
+            include ./footer.jade
+
+
+
