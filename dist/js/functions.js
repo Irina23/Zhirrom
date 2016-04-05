@@ -52,8 +52,12 @@ jQuery(document).ready(function() {
 
     jQuery(window).load(function() {
 
+        jQuery('.slider').bxSlider({
+            controls: false
+            //adaptiveHeight: true
+            //auto: true
 
-
+        });
 
 
 

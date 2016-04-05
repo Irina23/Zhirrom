@@ -449,3 +449,11 @@ img {
       color: #ff4504; }
     .footer .wrap .user_block .social a:last-child {
       margin-right: 0; }
+
+.bx-viewport {
+  height: 465px !important; }
+
+.slider {
+  height: 465px; }
+  .slider .item {
+    height: 465px; }
