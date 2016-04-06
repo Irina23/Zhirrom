@@ -191,7 +191,49 @@ img {
     .header #menu li {
       display: inline-block;
       vertical-align: middle;
-      margin-right: 25px; }
+      margin-right: 25px;
+      position: relative; }
+      .header #menu li.parent > a {
+        border-bottom: 2px solid #fff; }
+      .header #menu li.parent:hover > a {
+        border-color: #efe087; }
+        .header #menu li.parent:hover > a:after {
+          position: absolute;
+          width: 13px;
+          height: 7px;
+          top: 19px;
+          left: 50%;
+          margin-left: -7px;
+          background: url("../img/icons/menu.png") no-repeat;
+          background-size: 100%;
+          content: ""; }
+      .header #menu li.parent:hover ul.drop-menu {
+        display: block; }
+      .header #menu li ul.drop-menu {
+        display: none;
+        position: absolute;
+        top: 15px;
+        left: 0;
+        padding-top: 20px;
+        z-index: 10; }
+        .header #menu li ul.drop-menu li {
+          width: 190px; }
+          .header #menu li ul.drop-menu li a {
+            display: block;
+            background-color: rgba(229, 203, 55, 0.85);
+            width: 100%;
+            line-height: 1em;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #373636;
+            padding: 15px;
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+            font-family: "FuturaPT-Medium", sans-serif; }
+            .header #menu li ul.drop-menu li a:hover {
+              -webkit-transition: all 0.35s;
+              transition: all 0.35s;
+              background: #fcd910; }
       .header #menu li.active a {
         -webkit-transition: all 0.35s;
         transition: all 0.35s;

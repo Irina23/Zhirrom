@@ -213,6 +213,64 @@ img
       display: inline-block
       vertical-align: middle
       margin-right: 25px
+      position: relative
+      &.parent
+        >a
+          border-bottom: 2px solid #fff
+        &:hover
+          >a
+            border-color: #efe087
+
+            &:after
+              position: absolute
+              width: 13px
+              height: 7px
+              top: 19px
+              left: 50%
+              margin-left: -7px
+              background: url("../img/icons/menu.png") no-repeat
+              background-size: 100%
+              content: ""
+
+
+
+
+          ul.drop-menu
+            display: block
+
+
+
+
+
+      ul.drop-menu
+        display: none
+        position: absolute
+        top: 15px
+        left: 0
+        padding-top: 20px
+        z-index: 10
+
+        li
+          width: 190px
+          a
+            display: block
+            background-color:  rgba(229, 203, 55, 0.85)
+            width: 100%
+
+            line-height: 1em
+            font-size: 14px
+            text-transform: uppercase
+            color: #373636
+            padding: 15px
+            transition: all 0.35s
+            font-family: "FuturaPT-Medium", sans-serif
+            &:hover
+              transition: all 0.35s
+              background: #fcd910
+
+
+
+
       &.active
         a
 
@@ -233,6 +291,7 @@ img
           transition: all 0.35s
           color: $main-color
           text-decoration: none
+
 
 
 
