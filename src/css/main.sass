@@ -1051,3 +1051,107 @@ img
   left: 0
   cursor: pointer
   display: none
+
+
+
+
+
+.list_category
+  border: 10px solid $main-color
+  padding: 50px 50px 60px
+  margin-bottom: 80px
+  text-align: center
+  h1
+    text-align: center
+    font-weight: normal
+    margin-bottom: 80px
+    font-size: 60px
+    line-height: 1em
+    //font-family: "FuturaPT-Light", sans-serif
+  .item-category
+    width: 49%
+    display: inline-block
+    vertical-align: top
+    text-align: left
+    margin-bottom: 65px
+    &:last-child
+      margin-bottom: 0
+    &.category1
+      h3
+        position: relative
+        left: -135px
+
+    &.category2
+      margin-top: 30px
+      .img-holder
+        float: right
+        margin-right: 0
+        margin-left: 25px
+      .number
+        margin-top: 140px
+        text-align: right
+    &.category3
+      .number
+        margin-top: 125px
+      h3
+        left: -60px
+
+
+
+
+    .img-holder
+      margin-right: 25px
+      width: 240px
+      height: 270px
+      float: left
+      overflow: hidden
+    .number
+      margin-bottom: 10px
+      color: $main-color
+      line-height: 1em
+      font-family: "FuturaPT-Heavy", sans-serif
+      font-size: 48px
+      overflow: hidden
+
+    h3
+      font-weight: normal
+      font-size: 48px
+      line-height: 1em
+      margin-bottom: 15px
+      color: #000
+      white-space: nowrap
+      position: relative
+
+    a
+      font-size: 20px
+      line-height: 1em
+      color: #000
+      position: relative
+      transition: all 0.35s
+      padding-right: 10px
+      display: inline-block
+      vertical-align: top
+      font-family: "FuturaPT-Demi", sans-serif
+      overflow: hidden
+
+
+      &:after
+        content: ""
+        position: absolute
+        top: 7px
+        right: 0
+        width: 6px
+        height: 10px
+        transition: all 0.35s
+        background: url("../img/icons/readmore.png") no-repeat
+        background-size: 100%
+
+
+      &:hover
+          transition: all 0.35s
+          color: $main-color
+          text-decoration: none
+          &:after
+            transition: all 0.35s
+            background: url("../img/icons/readmore_hover.png") no-repeat
+            background-size: 100%

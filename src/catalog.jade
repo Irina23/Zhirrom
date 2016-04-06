@@ -4,15 +4,33 @@ html(lang="ru")
 
 
     body(data-spy="scroll", data-target="#menu", data-offset="105")
-        .page_wrapper.home
+        .page_wrapper.catalog
             include ./header.jade
 
 
             .container
                 .wrap
+                    .list_category
+                        h1 Категории товаров
+                        .item-category.cf.category1
+                            .img-holder
+                                img(src="img/content/category1.jpg")
+                            .number 01
+                            h3 Головные уборы
+                            a(href="#") Перейти в раздел
 
-
-
+                        .item-category.cf.category2
+                            .img-holder
+                                img(src="img/content/category2.jpg")
+                            .number 02
+                            h3 Аксессуары
+                            a(href="#") Перейти в раздел
+                        .item-category.cf.category3
+                            .img-holder
+                                img(src="img/content/category3.jpg")
+                            .number 03
+                            h3 Одежда
+                            a(href="#") Перейти в раздел
 
             include ./footer.jade
 

@@ -904,3 +904,93 @@ img {
   left: 0;
   cursor: pointer;
   display: none; }
+
+.list_category {
+  border: 10px solid #ff4504;
+  padding: 50px 50px 60px;
+  margin-bottom: 80px;
+  text-align: center; }
+  .list_category h1 {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 80px;
+    font-size: 60px;
+    line-height: 1em; }
+  .list_category .item-category {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    margin-bottom: 65px; }
+    .list_category .item-category:last-child {
+      margin-bottom: 0; }
+    .list_category .item-category.category1 h3 {
+      position: relative;
+      left: -135px; }
+    .list_category .item-category.category2 {
+      margin-top: 30px; }
+      .list_category .item-category.category2 .img-holder {
+        float: right;
+        margin-right: 0;
+        margin-left: 25px; }
+      .list_category .item-category.category2 .number {
+        margin-top: 140px;
+        text-align: right; }
+    .list_category .item-category.category3 .number {
+      margin-top: 125px; }
+    .list_category .item-category.category3 h3 {
+      left: -60px; }
+    .list_category .item-category .img-holder {
+      margin-right: 25px;
+      width: 240px;
+      height: 270px;
+      float: left;
+      overflow: hidden; }
+    .list_category .item-category .number {
+      margin-bottom: 10px;
+      color: #ff4504;
+      line-height: 1em;
+      font-family: "FuturaPT-Heavy", sans-serif;
+      font-size: 48px;
+      overflow: hidden; }
+    .list_category .item-category h3 {
+      font-weight: normal;
+      font-size: 48px;
+      line-height: 1em;
+      margin-bottom: 15px;
+      color: #000;
+      white-space: nowrap;
+      position: relative; }
+    .list_category .item-category a {
+      font-size: 20px;
+      line-height: 1em;
+      color: #000;
+      position: relative;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      padding-right: 10px;
+      display: inline-block;
+      vertical-align: top;
+      font-family: "FuturaPT-Demi", sans-serif;
+      overflow: hidden; }
+      .list_category .item-category a:after {
+        content: "";
+        position: absolute;
+        top: 7px;
+        right: 0;
+        width: 6px;
+        height: 10px;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        background: url("../img/icons/readmore.png") no-repeat;
+        background-size: 100%; }
+      .list_category .item-category a:hover {
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        color: #ff4504;
+        text-decoration: none; }
+        .list_category .item-category a:hover:after {
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s;
+          background: url("../img/icons/readmore_hover.png") no-repeat;
+          background-size: 100%; }
