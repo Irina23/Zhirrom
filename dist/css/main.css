@@ -929,6 +929,8 @@ img {
       position: relative;
       left: -135px;
       color: #ff4504; }
+      .list_category .item-category.category1 h3 span {
+        color: #fff; }
     .list_category .item-category.category1 a {
       left: 260px;
       top: 115px;
