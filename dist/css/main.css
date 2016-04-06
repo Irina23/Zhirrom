@@ -921,12 +921,24 @@ img {
     display: inline-block;
     vertical-align: top;
     text-align: left;
-    margin-bottom: 65px; }
+    margin-bottom: 65px;
+    position: relative; }
     .list_category .item-category:last-child {
       margin-bottom: 0; }
     .list_category .item-category.category1 h3 {
       position: relative;
-      left: -135px; }
+      left: -135px;
+      color: #ff4504; }
+    .list_category .item-category.category1 a {
+      left: 260px;
+      top: 115px;
+      position: absolute;
+      color: #ff4504; }
+      .list_category .item-category.category1 a:after {
+        background: url("../img/icons/readmore_hover.png") no-repeat;
+        background-size: 100%; }
+      .list_category .item-category.category1 a:hover {
+        color: #fe622b; }
     .list_category .item-category.category2 {
       margin-top: 30px; }
       .list_category .item-category.category2 .img-holder {
@@ -936,10 +948,18 @@ img {
       .list_category .item-category.category2 .number {
         margin-top: 140px;
         text-align: right; }
+      .list_category .item-category.category2 a {
+        position: absolute;
+        bottom: 5px;
+        left: 0; }
     .list_category .item-category.category3 .number {
       margin-top: 125px; }
     .list_category .item-category.category3 h3 {
       left: -60px; }
+    .list_category .item-category.category3 a {
+      position: absolute;
+      bottom: 20px;
+      left: 260px; }
     .list_category .item-category .img-holder {
       margin-right: 25px;
       width: 240px;
@@ -947,7 +967,6 @@ img {
       float: left;
       overflow: hidden; }
     .list_category .item-category .number {
-      margin-bottom: 10px;
       color: #ff4504;
       line-height: 1em;
       font-family: "FuturaPT-Heavy", sans-serif;
@@ -972,7 +991,9 @@ img {
       display: inline-block;
       vertical-align: top;
       font-family: "FuturaPT-Demi", sans-serif;
-      overflow: hidden; }
+      overflow: hidden;
+      white-space: nowrap;
+      letter-spacing: -1px; }
       .list_category .item-category a:after {
         content: "";
         position: absolute;
