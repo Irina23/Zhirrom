@@ -16,9 +16,9 @@ footer
                     a(href="mailto:client@zhirrom.ru") client@zhirrom.ru
             .user_block
                 h4 Личный кабинет
-                a.login(href="#") Авторизация
+                a.login.open_modal(href="#login") Авторизация
                 span &#160;/&#160;
-                a.registration(href="#") Регистрация
+                a.registration.open_modal(href="#registration") Регистрация
                 h4 Социальные сети
                 .social
 
@@ -36,6 +36,50 @@ footer
             div.copyright
                 a(href="http://intertechcompany.com/" target="_blank") Разработка: INTERTECH
 
+
+
+
+
+#registration.modal_div
+
+    .modal_close
+    form
+
+        h3 Регистрация пользователя
+
+        .form-holder
+            div
+                input(type="text", placeholder="ФИО:", name="name", minlength="2", data-validate="name")
+            div
+                input(type="text", placeholder="Телефон:", name="phone", data-validate="phone")
+            div
+                input(type="text", placeholder="Почта:", name="email", data-validate="email")
+            div
+                input(type="text", placeholder="Адрес:", name="address", data-validate="name")
+            div
+                input(type="text", placeholder="ИНН:", name="iin", data-validate="number")
+            div
+                input(type="text", placeholder="Интересующий асортимент:", name="assortment", data-validate="name")
+            .btn.submit Отправить
+
+#login.modal_div
+
+    .modal_close
+    form
+
+        h3 Вход в личный кабинет
+
+        .form-holder
+
+
+            div
+                input(type="text", placeholder="Почта:", name="email", data-validate="email")
+            div
+                input(type="text", placeholder="Пароль:", name="pass", data-validate="pass")
+
+            .btn.submit Отправить
+
+#overlay
 
 script(src="bower_components/jquery/dist/jquery.js")
 script(src="js/functions.js")

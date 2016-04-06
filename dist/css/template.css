@@ -150,15 +150,36 @@ img{
 
 .search input[type="text"]::-webkit-input-placeholder{
     color: #000;
-
 }
 
 .search input[type="text"]::-moz-placeholder{
     color: #000;
-
 }
 
 .search input[type="text"]::-moz-placeholder{
     color: #000;
+}
 
+
+#registration input[type="text"]::-webkit-input-placeholder{
+    color: #686767;
+}
+
+#registration input[type="text"]::-moz-placeholder{
+    color: #686767;
+}
+
+#registration input[type="text"]::-moz-placeholder{
+    color: #686767;
+}
+#login input[type="text"]::-webkit-input-placeholder{
+    color: #fff;
+}
+
+#login input[type="text"]::-moz-placeholder{
+    color: #fff;
+}
+
+#login input[type="text"]::-moz-placeholder{
+    color: #fff;
 }

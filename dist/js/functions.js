@@ -15,6 +15,22 @@ jQuery(document).ready(function() {
             email:{
                 required: true,
                 email: true
+            },
+            address:{
+                required: true
+
+            },
+            iin:{
+                required: true,
+                digits: true
+            },
+            assortment:{
+                required: true
+
+            },
+            pass:{
+                required: true
+
             }
 
         }

@@ -10,7 +10,7 @@
         <div> Email:&#160;<a href="mailto:client@zhirrom.ru">client@zhirrom.ru</a></div>
       </div>
       <div class="user_block">
-        <h4>Личный кабинет</h4><a href="#" class="login">Авторизация</a><span>&#160;/&#160;</span><a href="#" class="registration">Регистрация</a>
+        <h4>Личный кабинет</h4><a href="#login" class="login open_modal">Авторизация</a><span>&#160;/&#160;</span><a href="#registration" class="registration open_modal">Регистрация</a>
         <h4>Социальные сети</h4>
         <div class="social"><a href="#" target="_blank" class="vk"><i class="fa fa-vk"></i></a><a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a><a href="#" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a></div>
       </div>
@@ -23,6 +23,49 @@
     </div>
   </div>
 </footer>
+<div id="registration" class="modal_div">
+  <div class="modal_close"></div>
+  <form>
+    <h3>Регистрация пользователя</h3>
+    <div class="form-holder">
+      <div>
+        <input type="text" placeholder="ФИО:" name="name" minlength="2" data-validate="name"/>
+      </div>
+      <div>
+        <input type="text" placeholder="Телефон:" name="phone" data-validate="phone"/>
+      </div>
+      <div>
+        <input type="text" placeholder="Почта:" name="email" data-validate="email"/>
+      </div>
+      <div>
+        <input type="text" placeholder="Адрес:" name="address" data-validate="name"/>
+      </div>
+      <div>
+        <input type="text" placeholder="ИНН:" name="iin" data-validate="number"/>
+      </div>
+      <div>
+        <input type="text" placeholder="Интересующий асортимент:" name="assortment" data-validate="name"/>
+      </div>
+      <div class="btn submit">Отправить</div>
+    </div>
+  </form>
+</div>
+<div id="login" class="modal_div">
+  <div class="modal_close"></div>
+  <form>
+    <h3>Вход в личный кабинет</h3>
+    <div class="form-holder">
+      <div>
+        <input type="text" placeholder="Почта:" name="email" data-validate="email"/>
+      </div>
+      <div>
+        <input type="text" placeholder="Пароль:" name="pass" data-validate="pass"/>
+      </div>
+      <div class="btn submit">Отправить</div>
+    </div>
+  </form>
+</div>
+<div id="overlay"></div>
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="js/functions.js"></script>
 <script src="js/bootstrap_tabs.min.js"></script>
