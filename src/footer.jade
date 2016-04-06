@@ -48,18 +48,24 @@ footer
         h3 Регистрация пользователя
 
         .form-holder
-            div
-                input(type="text", placeholder="ФИО:", name="name", minlength="2", data-validate="name")
-            div
-                input(type="text", placeholder="Телефон:", name="phone", data-validate="phone")
-            div
-                input(type="text", placeholder="Почта:", name="email", data-validate="email")
-            div
-                input(type="text", placeholder="Адрес:", name="address", data-validate="name")
-            div
-                input(type="text", placeholder="ИНН:", name="iin", data-validate="number")
-            div
-                input(type="text", placeholder="Интересующий асортимент:", name="assortment", data-validate="name")
+            .row-group
+                div
+                    input(type="text", placeholder="ФИО:", name="name", minlength="2", data-validate="name")
+                div
+                    input(type="text", placeholder="Телефон:", name="phone", data-validate="phone")
+            .row-group
+                div
+                    input(type="text", placeholder="Почта:", name="email", data-validate="email")
+                div
+                    input(type="text", placeholder="Адрес:", name="address", data-validate="name")
+            .row-group
+                div
+                    input(type="text", placeholder="ИНН:", name="iin", data-validate="number")
+                div.file
+                    input(type="file",  name="file")
+            .row-group
+                div.assortment
+                    input(type="text", placeholder="Интересующий асортимент:", name="assortment", data-validate="name")
             .btn.submit Отправить
 
 #login.modal_div

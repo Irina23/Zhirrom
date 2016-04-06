@@ -200,7 +200,6 @@
           </div>
         </div>
       </div>
-      <div id="overlay"></div>
       <footer>
         <div class="footer">
           <div class="wrap">
@@ -230,23 +229,34 @@
         <form>
           <h3>Регистрация пользователя</h3>
           <div class="form-holder">
-            <div>
-              <input type="text" placeholder="ФИО:" name="name" minlength="2" data-validate="name">
+            <div class="row-group">
+              <div>
+                <input type="text" placeholder="ФИО:" name="name" minlength="2" data-validate="name">
+              </div>
+              <div>
+                <input type="text" placeholder="Телефон:" name="phone" data-validate="phone">
+              </div>
             </div>
-            <div>
-              <input type="text" placeholder="Телефон:" name="phone" data-validate="phone">
+            <div class="row-group">
+              <div>
+                <input type="text" placeholder="Почта:" name="email" data-validate="email">
+              </div>
+              <div>
+                <input type="text" placeholder="Адрес:" name="address" data-validate="name">
+              </div>
             </div>
-            <div>
-              <input type="text" placeholder="Почта:" name="email" data-validate="email">
+            <div class="row-group">
+              <div>
+                <input type="text" placeholder="ИНН:" name="iin" data-validate="number">
+              </div>
+              <div class="file">
+                <input type="file" name="file">
+              </div>
             </div>
-            <div>
-              <input type="text" placeholder="Адрес:" name="address" data-validate="name">
-            </div>
-            <div>
-              <input type="text" placeholder="ИНН:" name="iin" data-validate="number">
-            </div>
-            <div>
-              <input type="text" placeholder="Интересующий асортимент:" name="assortment" data-validate="name">
+            <div class="row-group">
+              <div class="assortment">
+                <input type="text" placeholder="Интересующий асортимент:" name="assortment" data-validate="name">
+              </div>
             </div>
             <div class="btn submit">Отправить</div>
           </div>

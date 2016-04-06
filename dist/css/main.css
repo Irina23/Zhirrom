@@ -41,7 +41,7 @@
   font-weight: normal; }
 
 body {
-  font-family: "FuturaPT-Light", sans-serif;
+  font-family: "FuturaPT-Medium", sans-serif;
   padding: 0;
   margin: 0;
   line-height: 1em;
@@ -108,7 +108,8 @@ img {
         border-radius: 2px;
         box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16); }
         .top .user-login a.login:hover {
-          color: #fff; }
+          color: #fff;
+          background: #fe622b; }
       .top .user-login a:hover {
         -webkit-transition: all 0.35s;
         transition: all 0.35s;
@@ -125,12 +126,12 @@ img {
     margin: auto;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 125px; }
+    margin-right: 120px; }
   .header .search {
     display: inline-block;
     vertical-align: middle;
     width: 220px;
-    margin-right: 125px; }
+    margin-right: 120px; }
     .header .search input[type="text"] {
       border: 0;
       border-bottom: 1px solid #000;
@@ -159,11 +160,11 @@ img {
     vertical-align: middle; }
     .header .cart a {
       display: block;
-      padding-left: 32px;
+      padding-left: 40px;
       position: relative;
       color: #000;
       font-family: "FuturaPT-Heavy", sans-serif;
-      line-height: 20px;
+      line-height: 30px;
       font-size: 18px;
       -webkit-transition: all 0.35s;
       transition: all 0.35s; }
@@ -173,19 +174,39 @@ img {
         font-family: "FuturaPT-Medium", sans-serif;
         line-height: 20px; }
       .header .cart a:hover {
-        color: #ff4504;
         -webkit-transition: all 0.35s;
         transition: all 0.35s;
         text-decoration: none; }
+        .header .cart a:hover:after {
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s;
+          opacity: 1; }
+        .header .cart a:hover:before {
+          background: url("../img/icons/cart_hover.png") no-repeat;
+          background-size: 100%; }
+      .header .cart a:after {
+        border-radius: 2px;
+        background-color: #ff4504;
+        width: 30px;
+        height: 30px;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        z-index: 1; }
       .header .cart a:before {
         position: absolute;
-        top: 2px;
-        left: 0;
+        top: 6px;
+        left: 4px;
         background: url("../img/icons/cart.png") no-repeat;
         background-size: 100%;
         width: 22px;
         height: 18px;
-        content: ""; }
+        content: "";
+        z-index: 2; }
   .header #menu {
     margin-top: 40px; }
     .header #menu li {
@@ -195,18 +216,17 @@ img {
       position: relative; }
       .header #menu li.parent > a {
         border-bottom: 2px solid #fff; }
-      .header #menu li.parent:hover > a {
-        border-color: #efe087; }
-        .header #menu li.parent:hover > a:after {
-          position: absolute;
-          width: 13px;
-          height: 7px;
-          top: 19px;
-          left: 50%;
-          margin-left: -7px;
-          background: url("../img/icons/menu.png") no-repeat;
-          background-size: 100%;
-          content: ""; }
+      .header #menu li.parent:hover > a:after {
+        content: '';
+        position: absolute;
+        top: 21px;
+        left: 50%;
+        margin-left: -7px;
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 8px solid #ff4504; }
       .header #menu li.parent:hover ul.drop-menu {
         display: block; }
       .header #menu li ul.drop-menu {
@@ -220,12 +240,12 @@ img {
           width: 190px; }
           .header #menu li ul.drop-menu li a {
             display: block;
-            background-color: rgba(229, 203, 55, 0.85);
+            background-color: rgba(255, 69, 4, 0.7);
             width: 100%;
             line-height: 1em;
             font-size: 14px;
             text-transform: uppercase;
-            color: #373636;
+            color: #fff;
             padding: 15px;
             -webkit-transition: all 0.35s;
             transition: all 0.35s;
@@ -233,7 +253,7 @@ img {
             .header #menu li ul.drop-menu li a:hover {
               -webkit-transition: all 0.35s;
               transition: all 0.35s;
-              background: #fcd910; }
+              background: #ff4504; }
       .header #menu li.active a {
         -webkit-transition: all 0.35s;
         transition: all 0.35s;
@@ -262,7 +282,8 @@ img {
     text-align: center;
     font-size: 60px;
     line-height: 1em;
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    font-weight: normal; }
   .about .text_holder {
     width: 500px;
     display: inline-block;
@@ -282,7 +303,8 @@ img {
       margin-bottom: 20px; }
       .about .advantages_holder li h4 {
         font-size: 24px;
-        margin-bottom: 15px; }
+        margin-bottom: 15px;
+        font-family: "FuturaPT-Light", sans-serif; }
         .about .advantages_holder li h4 span {
           display: inline-block;
           vertical-align: middle;
@@ -315,7 +337,8 @@ img {
     line-height: 1em;
     width: 400px;
     letter-spacing: 1px;
-    margin-right: 75px; }
+    margin-right: 75px;
+    font-weight: normal; }
   #faq .block_text {
     display: inline-block;
     vertical-align: middle;
@@ -325,7 +348,8 @@ img {
     #faq .block_text h4 {
       font-size: 36px;
       line-height: 1em;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      font-family: "FuturaPT-Light", sans-serif; }
     #faq .block_text p.text {
       color: #fff;
       text-align: left;
@@ -350,6 +374,7 @@ img {
       #faq .block_text a:hover {
         -webkit-transition: all 0.35s;
         transition: all 0.35s;
+        background: #dadada;
         text-decoration: none; }
 
 #block_info {
@@ -358,7 +383,8 @@ img {
     text-align: center;
     font-size: 60px;
     line-height: 1em;
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    font-weight: normal; }
   #block_info .block_article {
     width: 560px;
     display: inline-block;
@@ -510,7 +536,7 @@ img {
       .footer .wrap > div a:hover {
         -webkit-transition: all 0.35s;
         transition: all 0.35s;
-        color: #ff4504;
+        color: #ff8604;
         text-decoration: none; }
     .footer .wrap > div h4 {
       font-weight: normal;
@@ -521,9 +547,9 @@ img {
   .footer .wrap .logo {
     width: 187px;
     height: 139px;
-    margin-right: 140px; }
+    margin-right: 135px; }
   .footer .wrap .contact {
-    margin-right: 140px;
+    margin-right: 135px;
     color: #fff; }
     .footer .wrap .contact > div {
       font-size: 20px;
@@ -552,7 +578,7 @@ img {
     box-sizing: border-box;
     padding-top: 3px; }
     .footer .wrap .user_block .social a:hover {
-      color: #ff4504; }
+      background: #ff8604; }
     .footer .wrap .user_block .social a:last-child {
       margin-right: 0; }
 
@@ -586,7 +612,7 @@ img {
           width: 155px;
           height: 50px; }
           #slider .slider .item .block_text.left_text a:hover {
-            background: #e5cb37; }
+            background: #fe622b; }
       #slider .slider .item .block_text h3 {
         font-family: "FuturaPT-Medium", sans-serif;
         color: #ffffff;
@@ -659,7 +685,10 @@ img {
       #slider .bx-wrapper .bx-controls-direction a:hover {
         -webkit-transition: all 0.35s;
         transition: all 0.35s;
-        background: #ff4504; }
+        background: #fff; }
+        #slider .bx-wrapper .bx-controls-direction a:hover:after {
+          background: url("../img/icons/slider-nav_hover.png") no-repeat 50% 50%;
+          background-size: 100%; }
       #slider .bx-wrapper .bx-controls-direction a:after {
         width: 10px;
         height: 18px;
@@ -681,13 +710,13 @@ img {
 
 #registration {
   background-color: #ffffff;
-  width: 460px;
-  height: 600px;
+  width: 620px;
+  height: 530px;
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -300px;
-  margin-left: -230px;
+  margin-top: -265px;
+  margin-left: -310px;
   display: none;
   opacity: 0;
   z-index: 5;
@@ -702,7 +731,14 @@ img {
     background-size: 100%;
     top: 15px;
     right: 20px;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s; }
+    #registration .modal_close:hover {
+      background: url("../img/icons/close_hover.png") no-repeat;
+      background-size: 100%;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
   #registration h3 {
     text-transform: uppercase;
     margin-bottom: 40px;
@@ -710,20 +746,47 @@ img {
     line-height: 1em;
     font-family: "FuturaPT-Demi", sans-serif;
     font-weight: normal; }
+  #registration .form-holder .row-group .file {
+    width: 240px;
+    height: 45px;
+    background: url("../img/icons/file.png") no-repeat;
+    overflow: hidden;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s; }
+    #registration .form-holder .row-group .file:hover {
+      background: url("../img/icons/file_hover.png") no-repeat;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
+  #registration .form-holder .row-group > div {
+    display: inline-block;
+    vertical-align: top; }
+    #registration .form-holder .row-group > div:first-child {
+      margin-right: 15px; }
+  #registration .form-holder .assortment {
+    width: 100%; }
+    #registration .form-holder .assortment input[type="text"] {
+      width: 100%; }
+  #registration .form-holder input[type="file"] {
+    width: 240px !important;
+    height: 45px !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+    cursor: pointer; }
   #registration .form-holder input[type="text"],
   #registration .form-holder input[type="email"] {
     text-align: left;
-    width: 100%;
-    height: 43px;
+    height: 45px;
     padding: 0 10px;
     box-sizing: border-box;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border: 1px solid #bab9b9;
     color: #686767;
-    font-size: 20px;
-    line-height: 43px;
+    border-radius: 2px;
+    font-size: 18px;
+    line-height: 45px;
     background: #fff;
-    font-family: "FuturaPT-Light", sans-serif; }
+    font-family: "FuturaPT-Medium", sans-serif;
+    width: 240px; }
   #registration .form-holder .error input[type="text"],
   #registration .form-holder .error input[type="email"] {
     border-color: #FF0000; }
@@ -737,7 +800,7 @@ img {
     transition: all 0.35s;
     display: block;
     margin: 30px auto 0;
-    background: #e5cb37;
+    background: #ff4504;
     border-radius: 6px;
     box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16);
     text-transform: uppercase;
@@ -747,11 +810,11 @@ img {
     #registration .form-holder .btn:hover {
       -webkit-transition: all 0.35s;
       transition: all 0.35s;
-      background: #ff4504;
+      background: #fe622b;
       text-decoration: none; }
 
 #login {
-  background-color: #e5cb37;
+  background-color: #fff;
   width: 340px;
   height: 330px;
   position: fixed;
@@ -769,11 +832,18 @@ img {
     position: absolute;
     width: 16px;
     height: 16px;
-    background: url("../img/icons/close_w.png") no-repeat;
+    background: url("../img/icons/close.png") no-repeat;
     background-size: 100%;
     top: 15px;
     right: 20px;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s; }
+    #login .modal_close:hover {
+      background: url("../img/icons/close_hover.png") no-repeat;
+      background-size: 100%;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
   #login h3 {
     text-transform: uppercase;
     margin-bottom: 30px;
@@ -781,27 +851,28 @@ img {
     line-height: 1em;
     font-family: "FuturaPT-Demi", sans-serif;
     font-weight: normal;
-    color: #fff; }
+    color: #000; }
   #login .form-holder input[type="text"],
   #login .form-holder input[type="email"] {
     text-align: left;
     width: 100%;
-    height: 41px;
+    height: 45px;
     padding: 0 10px;
     box-sizing: border-box;
-    margin-bottom: 30px;
-    border: 2px solid #fff;
-    color: #fff;
-    font-size: 20px;
-    line-height: 41px;
-    background: #e5cb37;
-    font-family: "FuturaPT-Light", sans-serif; }
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 45px;
+    background: #fff;
+    font-family: "FuturaPT-Medium", sans-serif;
+    border: 1px solid #bab9b9;
+    color: #686767;
+    border-radius: 2px; }
   #login .form-holder .error input[type="text"],
   #login .form-holder .error input[type="email"] {
     border-color: #FF0000; }
   #login .form-holder .btn {
     line-height: 50px;
-    color: #e5cb37;
+    color: #fff;
     font-size: 16px;
     width: 155px;
     text-align: center;
@@ -809,7 +880,7 @@ img {
     transition: all 0.35s;
     display: block;
     margin: auto;
-    background: #fff;
+    background: #ff4504;
     border-radius: 6px;
     box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16);
     text-transform: uppercase;
@@ -819,9 +890,8 @@ img {
     #login .form-holder .btn:hover {
       -webkit-transition: all 0.35s;
       transition: all 0.35s;
-      background: #ff4504;
-      text-decoration: none;
-      color: #fff; }
+      background: #fe622b;
+      text-decoration: none; }
 
 #overlay {
   z-index: 3;

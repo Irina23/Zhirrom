@@ -53,7 +53,7 @@ $color-grey: #727272
 
 
 body
-  font-family: "FuturaPT-Light", sans-serif
+  font-family: "FuturaPT-Medium", sans-serif
   padding: 0
   margin: 0
   line-height: 1em
@@ -120,6 +120,7 @@ img
         box-shadow: inset  0px -2px 4px 2px rgba(0,0,0,0.16)
         &:hover
           color: #fff
+          background: #fe622b
       &:hover
         transition: all 0.35s
         color: $main-color
@@ -139,13 +140,13 @@ img
     //margin-bottom: 40px
     display: inline-block
     vertical-align: middle
-    margin-right: 125px
+    margin-right: 120px
 
   .search
       display: inline-block
       vertical-align: middle
       width: 220px
-      margin-right: 125px
+      margin-right: 120px
       input[type="text"]
         border: 0
         border-bottom: 1px solid #000
@@ -176,11 +177,11 @@ img
     vertical-align: middle
     a
       display: block
-      padding-left: 32px
+      padding-left: 40px
       position: relative
       color: #000
       font-family: "FuturaPT-Heavy", sans-serif
-      line-height: 20px
+      line-height: 30px
       font-size: 18px
       transition: all 0.35s
       span
@@ -191,21 +192,41 @@ img
 
       &:hover
 
-          color: $main-color
+          //color: $main-color
           transition: all 0.35s
           text-decoration: none
+          &:after
+            transition: all 0.35s
+            opacity: 1
+          &:before
+            background: url("../img/icons/cart_hover.png") no-repeat
+            background-size: 100%
 
 
-
+      &:after
+        border-radius: 2px
+        background-color:  #ff4504
+        width: 30px
+        height: 30px
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        opacity: 0
+        transition: all 0.35s
+        z-index: 1
+        
+        
       &:before
         position: absolute
-        top: 2px
-        left: 0
+        top: 6px
+        left: 4px
         background: url("../img/icons/cart.png") no-repeat
         background-size: 100%
         width: 22px
         height: 18px
         content: ""
+        z-index: 2
 
   #menu
     margin-top: 40px
@@ -219,9 +240,20 @@ img
           border-bottom: 2px solid #fff
         &:hover
           >a
-            border-color: #efe087
-
             &:after
+              content: ''
+              position: absolute
+              top: 21px
+              left: 50%
+              margin-left: -7px
+              width: 0
+              height: 0
+              border-left: 7px solid transparent
+              border-right: 7px solid transparent
+              border-top: 8px solid #ff4504
+            //border-color: #efe087
+
+            //&:after
               position: absolute
               width: 13px
               height: 7px
@@ -254,19 +286,19 @@ img
           width: 190px
           a
             display: block
-            background-color:  rgba(229, 203, 55, 0.85)
+            background-color:  rgba(255, 69, 4, 0.7)
             width: 100%
 
             line-height: 1em
             font-size: 14px
             text-transform: uppercase
-            color: #373636
+            color: #fff
             padding: 15px
             transition: all 0.35s
             font-family: "FuturaPT-Medium", sans-serif
             &:hover
               transition: all 0.35s
-              background: #fcd910
+              background: #ff4504
 
 
 
@@ -304,6 +336,8 @@ img
     font-size: 60px
     line-height: 1em
     margin-bottom: 80px
+    font-weight: normal
+    //font-family: "FuturaPT-Light", sans-serif
   .text_holder
 
       width: 500px
@@ -326,6 +360,8 @@ img
       h4
         font-size: 24px
         margin-bottom: 15px
+        //font-weight: normal
+        font-family: "FuturaPT-Light", sans-serif
         span
           display: inline-block
           vertical-align: middle
@@ -366,6 +402,7 @@ img
     width: 400px
     letter-spacing: 1px
     margin-right: 75px
+    font-weight: normal
   .block_text
     display: inline-block
     vertical-align: middle
@@ -376,6 +413,7 @@ img
       font-size: 36px
       line-height: 1em
       margin-bottom: 20px
+      font-family: "FuturaPT-Light", sans-serif
     p.text
       color: #fff
       text-align: left
@@ -400,6 +438,7 @@ img
 
       &:hover
         transition: all 0.35s
+        background: #dadada
         //color: $main-color
         text-decoration: none
 
@@ -413,6 +452,7 @@ img
     font-size: 60px
     line-height: 1em
     margin-bottom: 80px
+    font-weight: normal
   .block_article
     width: 560px
     display: inline-block
@@ -504,6 +544,7 @@ img
       margin-bottom: 25px
 
 
+
     ul
       margin-bottom: 30px
       li
@@ -582,7 +623,7 @@ img
         transition: all 0.35s
         &:hover
           transition: all 0.35s
-          color: $main-color
+          color: #ff8604
           text-decoration: none
       h4
 
@@ -595,10 +636,10 @@ img
     .logo
       width: 187px
       height: 139px
-      margin-right: 140px
+      margin-right: 135px
 
     .contact
-      margin-right: 140px
+      margin-right: 135px
       color: #fff
       >div
         font-size: 20px
@@ -631,7 +672,7 @@ img
             box-sizing: border-box
             padding-top: 3px
             &:hover
-              color: $main-color
+              background: #ff8604
             &:last-child
               margin-right: 0
 
@@ -674,7 +715,7 @@ img
             width: 155px
             height: 50px
             &:hover
-              background: #e5cb37
+              background: #fe622b
 
 
         h3
@@ -753,7 +794,10 @@ img
 
           &:hover
             transition: all 0.35s
-            background: $main-color
+            background: #fff
+            &:after
+              background: url("../img/icons/slider-nav_hover.png") no-repeat 50% 50%
+              background-size: 100%
           &:after
             width: 10px
             height: 18px
@@ -781,13 +825,13 @@ img
 
 #registration
   background-color:  #ffffff
-  width: 460px
-  height: 600px
+  width: 620px
+  height: 530px
   position: fixed
   top: 50%
   left: 50%
-  margin-top: -300px
-  margin-left: -230px
+  margin-top: -265px
+  margin-left: -310px
   display: none
   opacity: 0
   z-index: 5
@@ -805,6 +849,11 @@ img
     top: 15px
     right: 20px
     cursor: pointer
+    transition: all 0.35s
+    &:hover
+      background: url("../img/icons/close_hover.png") no-repeat
+      background-size: 100%
+      transition: all 0.35s
 
 
 
@@ -821,21 +870,48 @@ img
   .form-holder
 
 
+    .row-group
+      .file
+        width: 240px
+        height: 45px
+        background: url("../img/icons/file.png") no-repeat
+        overflow: hidden
+        transition: all 0.35s
+        &:hover
+          background: url("../img/icons/file_hover.png") no-repeat
+          transition: all 0.35s
+      >div
+        display: inline-block
+        vertical-align: top
+        &:first-child
+          margin-right: 15px
+    .assortment
+      width: 100%
+      input[type="text"]
+        width: 100%
 
+    input[type="file"]
+      width: 240px!important
+      height: 45px!important
+      opacity: 0!important
+      overflow: hidden !important
+      cursor: pointer
     input[type="text"],
     input[type="email"]
       text-align: left
-      width: 100%
-      height: 43px
+
+      height: 45px
       padding: 0 10px
       box-sizing: border-box
-      margin-bottom: 15px
+      margin-bottom: 20px
       border: 1px solid #bab9b9
       color: #686767
-      font-size: 20px
-      line-height: 43px
+      border-radius: 2px
+      font-size: 18px
+      line-height: 45px
       background: #fff
-      font-family: "FuturaPT-Light", sans-serif
+      font-family: "FuturaPT-Medium", sans-serif
+      width: 240px
 
     .error
         input[type="text"],
@@ -852,7 +928,7 @@ img
       transition: all 0.35s
       display: block
       margin: 30px auto 0
-      background: #e5cb37
+      background: $main-color
       border-radius: 6px
       box-shadow: inset  0px -2px 4px 2px rgba(0,0,0,0.16)
       text-transform: uppercase
@@ -862,14 +938,14 @@ img
 
       &:hover
         transition: all 0.35s
-        background: $main-color
+        background: #fe622b
         text-decoration: none
 
 
 
 
 #login
-  background-color:  #e5cb37
+  background-color:  #fff
   width: 340px
   height: 330px
   position: fixed
@@ -889,11 +965,16 @@ img
     position: absolute
     width: 16px
     height: 16px
-    background: url("../img/icons/close_w.png") no-repeat
+    background: url("../img/icons/close.png") no-repeat
     background-size: 100%
     top: 15px
     right: 20px
     cursor: pointer
+    transition: all 0.35s
+    &:hover
+      background: url("../img/icons/close_hover.png") no-repeat
+      background-size: 100%
+      transition: all 0.35s
 
 
 
@@ -904,7 +985,7 @@ img
     line-height: 1em
     font-family: "FuturaPT-Demi", sans-serif
     font-weight: normal
-    color: #fff
+    color: #000
 
 
 
@@ -916,16 +997,18 @@ img
     input[type="email"]
       text-align: left
       width: 100%
-      height: 41px
+      height: 45px
       padding: 0 10px
       box-sizing: border-box
-      margin-bottom: 30px
-      border: 2px solid #fff
-      color: #fff
-      font-size: 20px
-      line-height: 41px
-      background: #e5cb37
-      font-family: "FuturaPT-Light", sans-serif
+      margin-bottom: 20px
+      font-size: 18px
+      line-height: 45px
+      background: #fff
+      font-family: "FuturaPT-Medium", sans-serif
+      border: 1px solid #bab9b9
+      color: #686767
+      border-radius: 2px
+
 
     .error
       input[type="text"],
@@ -935,14 +1018,14 @@ img
     .btn
 
       line-height: 50px
-      color: #e5cb37
+      color: #fff
       font-size: 16px
       width: 155px
       text-align: center
       transition: all 0.35s
       display: block
       margin: auto
-      background: #fff
+      background: $main-color
       border-radius: 6px
       box-shadow: inset  0px -2px 4px 2px rgba(0,0,0,0.16)
       text-transform: uppercase
@@ -952,9 +1035,9 @@ img
 
       &:hover
         transition: all 0.35s
-        background: $main-color
+        background: #fe622b
         text-decoration: none
-        color: #fff
+
 
 
 #overlay
