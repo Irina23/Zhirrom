@@ -148,3 +148,17 @@ img{
     max-width: 100%;
 }
 
+.search input[type="text"]::-webkit-input-placeholder{
+    color: #000;
+
+}
+
+.search input[type="text"]::-moz-placeholder{
+    color: #000;
+
+}
+
+.search input[type="text"]::-moz-placeholder{
+    color: #000;
+
+}
