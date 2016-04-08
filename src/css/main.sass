@@ -1339,6 +1339,13 @@ img
         >div
           display: inline-block
           vertical-align: middle
+          ul
+            display: none
+
+            li
+
+              &.active
+                display: none
           .active_sort
             border: 1px solid #e0dddd
             background:  #e8e7e7
@@ -1350,12 +1357,14 @@ img
             color: #000
             box-sizing: border-box
             position: relative
+            cursor: pointer
             &:after
               position: absolute
               top: 50%
-              right: 0
+              right: 10px
               width: 13px
               height: 9px
+              margin-top: -5px
               background: url("../img/icons/select.png") no-repeat
               content: ""
 

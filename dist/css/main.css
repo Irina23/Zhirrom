@@ -1161,6 +1161,10 @@ img {
         .list_products .filter > div.sort_by > div {
           display: inline-block;
           vertical-align: middle; }
+          .list_products .filter > div.sort_by > div ul {
+            display: none; }
+            .list_products .filter > div.sort_by > div ul li.active {
+              display: none; }
           .list_products .filter > div.sort_by > div .active_sort {
             border: 1px solid #e0dddd;
             background: #e8e7e7;
@@ -1171,12 +1175,14 @@ img {
             padding: 7px 30px 7px 12px;
             color: #000;
             box-sizing: border-box;
-            position: relative; }
+            position: relative;
+            cursor: pointer; }
             .list_products .filter > div.sort_by > div .active_sort:after {
               position: absolute;
               top: 50%;
-              right: 0;
+              right: 10px;
               width: 13px;
               height: 9px;
+              margin-top: -5px;
               background: url("../img/icons/select.png") no-repeat;
               content: ""; }
