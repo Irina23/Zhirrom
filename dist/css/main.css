@@ -40,8 +40,15 @@
   font-style: normal;
   font-weight: normal; }
 
+@font-face {
+  font-family: "FuturaBookC";
+  src: url("../fonts/FuturaBookC.eot");
+  src: url("../fonts/FuturaBookC.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaBookC.woff") format("woff"), url("../fonts/FuturaBookC.ttf") format("truetype"), url("../fonts/FuturaBookC.svg") format("svg"), url("../fonts/FuturaBookC.otf") format("otf");
+  font-style: normal;
+  font-weight: normal; }
+
 body {
-  font-family: "FuturaPT-Medium", sans-serif;
+  font-family: "FuturaBookC", sans-serif;
   padding: 0;
   margin: 0;
   line-height: 1em;
@@ -75,7 +82,7 @@ img {
     .top .phone span, .top .email span {
       margin-right: 5px; }
     .top .phone a, .top .email a {
-      margin-right: 20px;
+      margin-right: 18px;
       -webkit-transition: all 0.35s;
       transition: all 0.35s; }
       .top .phone a:hover, .top .email a:hover {
@@ -87,16 +94,16 @@ img {
         margin-right: 0; }
     .top .phone span, .top .phone a, .top .email span, .top .email a {
       color: #fff;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 1em;
       display: inline-block;
       vertical-align: middle; }
   .top .user-login {
     float: right; }
     .top .user-login a {
-      line-height: 40px;
+      line-height: 39px;
       color: #fff;
-      font-size: 20px;
+      font-size: 18px;
       width: 115px;
       text-align: center;
       -webkit-transition: all 0.35s;
@@ -288,10 +295,11 @@ img {
     width: 500px;
     display: inline-block;
     vertical-align: top;
-    margin-right: 35px; }
+    margin-right: 35px;
+    margin-top: -11px; }
     .about .text_holder p {
       line-height: 2em;
-      font-size: 20px; }
+      font-size: 18px; }
   .about .advantages_holder {
     width: 400px;
     display: inline-block;
@@ -419,13 +427,13 @@ img {
       #block_info .block_article .item .text {
         line-height: 1.5em;
         color: #525252;
-        font-size: 20px;
+        font-size: 18px;
         margin-bottom: 15px; }
       #block_info .block_article .item .readmore {
         color: #000;
         font-family: "FuturaPT-Medium", sans-serif;
         font-weight: normal;
-        font-size: 20px;
+        font-size: 18px;
         -webkit-transition: all 0.35s;
         transition: all 0.35s;
         padding-right: 15px;
@@ -475,7 +483,7 @@ img {
         position: relative;
         padding-left: 80px;
         line-height: 50px;
-        font-size: 20px;
+        font-size: 18px;
         color: #353434;
         margin-bottom: 8px; }
         #block_info .block_order_info ul li:last-child {
@@ -498,7 +506,7 @@ img {
           height: 50px;
           text-align: center; }
     #block_info .block_order_info .text p {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 1.3em;
       margin-bottom: 20px;
       color: #000; }
@@ -923,24 +931,37 @@ img {
     text-align: left;
     margin-bottom: 65px;
     position: relative; }
+    .list_category .item-category a:hover {
+      text-decoration: none; }
+      .list_category .item-category a:hover .img-holder:after {
+        background: rgba(255, 69, 4, 0.45);
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s; }
+      .list_category .item-category a:hover .number {
+        text-decoration: none; }
+      .list_category .item-category a:hover h3 {
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        text-decoration: none; }
+      .list_category .item-category a:hover .readmore {
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        color: #ff4504;
+        text-decoration: none; }
+        .list_category .item-category a:hover .readmore:after {
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s;
+          background: url("../img/icons/readmore_hover.png") no-repeat;
+          background-size: 100%; }
     .list_category .item-category:last-child {
       margin-bottom: 0; }
     .list_category .item-category.category1 h3 {
       position: relative;
-      left: -135px;
-      color: #ff4504; }
-      .list_category .item-category.category1 h3 span {
-        color: #fff; }
-    .list_category .item-category.category1 a {
+      left: -135px; }
+    .list_category .item-category.category1 .readmore {
       left: 260px;
       top: 115px;
-      position: absolute;
-      color: #ff4504; }
-      .list_category .item-category.category1 a:after {
-        background: url("../img/icons/readmore_hover.png") no-repeat;
-        background-size: 100%; }
-      .list_category .item-category.category1 a:hover {
-        color: #fe622b; }
+      position: absolute; }
     .list_category .item-category.category2 {
       margin-top: 30px; }
       .list_category .item-category.category2 .img-holder {
@@ -950,7 +971,7 @@ img {
       .list_category .item-category.category2 .number {
         margin-top: 140px;
         text-align: right; }
-      .list_category .item-category.category2 a {
+      .list_category .item-category.category2 .readmore {
         position: absolute;
         bottom: 5px;
         left: 0; }
@@ -958,7 +979,7 @@ img {
       margin-top: 125px; }
     .list_category .item-category.category3 h3 {
       left: -60px; }
-    .list_category .item-category.category3 a {
+    .list_category .item-category.category3 .readmore {
       position: absolute;
       bottom: 20px;
       left: 260px; }
@@ -967,7 +988,18 @@ img {
       width: 240px;
       height: 270px;
       float: left;
-      overflow: hidden; }
+      overflow: hidden;
+      position: relative; }
+      .list_category .item-category .img-holder:after {
+        background: rgba(255, 69, 4, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s; }
     .list_category .item-category .number {
       color: #ff4504;
       line-height: 1em;
@@ -981,8 +1013,10 @@ img {
       margin-bottom: 15px;
       color: #000;
       white-space: nowrap;
-      position: relative; }
-    .list_category .item-category a {
+      position: relative;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
+    .list_category .item-category .readmore {
       font-size: 20px;
       line-height: 1em;
       color: #000;
@@ -992,11 +1026,11 @@ img {
       padding-right: 10px;
       display: inline-block;
       vertical-align: top;
-      font-family: "FuturaPT-Demi", sans-serif;
+      font-family: "FuturaPT-Medium", sans-serif;
       overflow: hidden;
       white-space: nowrap;
       letter-spacing: -1px; }
-      .list_category .item-category a:after {
+      .list_category .item-category .readmore:after {
         content: "";
         position: absolute;
         top: 7px;
@@ -1007,13 +1041,3 @@ img {
         transition: all 0.35s;
         background: url("../img/icons/readmore.png") no-repeat;
         background-size: 100%; }
-      .list_category .item-category a:hover {
-        -webkit-transition: all 0.35s;
-        transition: all 0.35s;
-        color: #ff4504;
-        text-decoration: none; }
-        .list_category .item-category a:hover:after {
-          -webkit-transition: all 0.35s;
-          transition: all 0.35s;
-          background: url("../img/icons/readmore_hover.png") no-repeat;
-          background-size: 100%; }
