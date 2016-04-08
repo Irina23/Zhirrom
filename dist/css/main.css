@@ -127,7 +127,8 @@ img {
 
 .header {
   width: 940px;
-  margin: 20px auto 50px; }
+  padding: 20px 0 50px;
+  margin: auto; }
   .header .logo {
     width: 250px;
     margin: auto;
@@ -1041,3 +1042,27 @@ img {
         transition: all 0.35s;
         background: url("../img/icons/readmore.png") no-repeat;
         background-size: 100%; }
+
+.bread {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  .bread li {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    padding-right: 20px; }
+    .bread li a {
+      color: #797878;
+      font-size: 18px;
+      line-height: 1em;
+      font-family: "FuturaBookC", sans-serif;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
+      .bread li a:hover {
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        color: #ff4504;
+        text-decoration: none; }
+
+.list_product header {
+  border-bottom: 5px solid #ff4504; }
