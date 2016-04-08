@@ -28,16 +28,18 @@ html(lang="ru")
                             .preview
                                 span Вид:
                                 ul
+                                    li.active.preview_list
                                     li.preview_block
-                                    li.preview_list
 
                             .sort_by
                                 span Сортировать как:
-                                ul
-                                    li от дешёвых к дорогим
-                                    li от дорогих к дешёвым
-                                    li популярные
-                                    li новинки
+                                div
+                                    .active_sort От дешёвых к дорогим
+                                    ul
+                                        li.active От дешёвых к дорогим
+                                        li От дорогих к дешёвым
+                                        li Популярные
+                                        li Новинки
                             .sort_by
                                 span Товаров на странице:
                                 ul

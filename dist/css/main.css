@@ -1109,4 +1109,74 @@ img {
     border: 1px solid #f0f0f0;
     background-color: #f5f4f4;
     width: 100%;
-    height: 63px; }
+    padding: 20px;
+    margin-bottom: 30px; }
+    .list_products .filter > div {
+      display: inline-block;
+      vertical-align: middle; }
+      .list_products .filter > div span {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 20px;
+        color: #000;
+        font-family: "FuturaBookC", sans-serif;
+        margin-right: 10px; }
+      .list_products .filter > div.preview {
+        margin-right: 100px; }
+        .list_products .filter > div.preview ul {
+          display: inline-block;
+          vertical-align: middle; }
+          .list_products .filter > div.preview ul li {
+            display: inline-block;
+            vertical-align: middle;
+            width: 25px;
+            height: 23px;
+            cursor: pointer;
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s; }
+            .list_products .filter > div.preview ul li.active.preview_block {
+              background: url("../img/icons/preview_block_hover.png") no-repeat;
+              background-size: 100%; }
+            .list_products .filter > div.preview ul li.active.preview_list {
+              background: url("../img/icons/preview_list_hover.png") no-repeat;
+              background-size: 100%; }
+            .list_products .filter > div.preview ul li:hover {
+              -webkit-transition: all 0.35s;
+              transition: all 0.35s; }
+            .list_products .filter > div.preview ul li.preview_block {
+              background: url("../img/icons/preview_block.png") no-repeat;
+              background-size: 100%; }
+              .list_products .filter > div.preview ul li.preview_block:hover {
+                background: url("../img/icons/preview_block_hover.png") no-repeat;
+                background-size: 100%; }
+            .list_products .filter > div.preview ul li.preview_list {
+              background: url("../img/icons/preview_list.png") no-repeat;
+              background-size: 100%;
+              width: 30px; }
+              .list_products .filter > div.preview ul li.preview_list:hover {
+                background: url("../img/icons/preview_list_hover.png") no-repeat;
+                background-size: 100%; }
+      .list_products .filter > div.sort_by {
+        margin-right: 40px; }
+        .list_products .filter > div.sort_by > div {
+          display: inline-block;
+          vertical-align: middle; }
+          .list_products .filter > div.sort_by > div .active_sort {
+            border: 1px solid #e0dddd;
+            background: #e8e7e7;
+            width: 220px;
+            font-size: 18px;
+            font-family: "FuturaBookC", sans-serif;
+            line-height: 1em;
+            padding: 7px 30px 7px 12px;
+            color: #000;
+            box-sizing: border-box;
+            position: relative; }
+            .list_products .filter > div.sort_by > div .active_sort:after {
+              position: absolute;
+              top: 50%;
+              right: 0;
+              width: 13px;
+              height: 9px;
+              background: url("../img/icons/select.png") no-repeat;
+              content: ""; }
