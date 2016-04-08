@@ -1220,14 +1220,38 @@ img
   li
     display: inline-block
     vertical-align: middle
-    margin-right: 5px
-    padding-right: 20px
+    margin-right: 15px
+    padding-right: 10px
+    position: relative
+    &:last-child
+      padding: 0
+      margin: 0
+      &:after
+        width: 0
+        height: 0
+    &:after 
+      position: absolute
+      top: 50%
+      right: 0
+      width: 4px 
+      height: 8px 
+      background: url("../img/icons/bread.png") no-repeat
+      content: ""
+      margin-top: -4px
+      
+      
+    span
+      color: #797878
+      font-size: 18px
+      line-height: 1em
+      font-family: "FuturaBookC", sans-serif
     a
       color: #797878
       font-size: 18px
       line-height: 1em
       font-family: "FuturaBookC", sans-serif
       transition: all 0.35s
+
       &:hover
         transition: all 0.35s
         color: $main-color
@@ -1238,3 +1262,29 @@ img
 .list_product
     header
       border-bottom: 5px solid $main-color
+
+
+
+.list_products
+  padding-top: 20px
+  h1
+    text-align: center
+    font-family: "FuturaBookC", sans-serif
+    font-weight: normal
+    font-size: 60px
+    line-height: 1em
+    margin-bottom: 20px
+  .description
+    width: 760px
+    margin: auto
+    text-align: center
+    font-size: 18px
+    line-height: 1.5em
+    color: #636363
+    margin-bottom: 50px
+  .filter
+    border: 1px solid #f0f0f0
+    background-color:  #f5f4f4
+    width: 100%
+    height: 63px
+    color: #000
