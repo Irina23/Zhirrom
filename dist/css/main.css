@@ -1085,7 +1085,7 @@ img {
         color: #ff4504;
         text-decoration: none; }
 
-.list_product header {
+.list_product header, .productfull header {
   border-bottom: 5px solid #ff4504; }
 
 .list_products {
