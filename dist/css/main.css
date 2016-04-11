@@ -1227,7 +1227,9 @@ img {
   .list_products .products {
     float: right;
     width: 720px;
-    margin: 0 -15px 100px; }
+    margin: 0 -15px 100px;
+    -webkit-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out; }
     .list_products .products .block_product {
       width: 220px;
       display: inline-block;
@@ -1235,13 +1237,17 @@ img {
       overflow: hidden;
       margin: 0 8px;
       box-sizing: border-box;
-      margin-bottom: 70px; }
+      margin-bottom: 70px;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
       .list_products .products .block_product a .img_holder {
         width: 220px;
         height: 220px;
         overflow: hidden;
         margin-bottom: 20px;
         position: relative; }
+        .list_products .products .block_product a .img_holder img {
+          width: 100%; }
         .list_products .products .block_product a .img_holder:after {
           background: rgba(255, 69, 4, 0);
           position: absolute;
@@ -1260,9 +1266,7 @@ img {
         text-align: center;
         overflow: hidden;
         height: 20px;
-        text-overflow: ellipsis;
-        -webkit-transition: all 0.35s;
-        transition: all 0.35s; }
+        text-overflow: ellipsis; }
       .list_products .products .block_product a .description_product {
         color: #6a6a6a;
         font-size: 16px;
@@ -1350,3 +1354,35 @@ img {
         -webkit-transition: all 0.35s;
         transition: all 0.35s;
         background: #fe622b; }
+    .list_products .products .block_text {
+      overflow: hidden; }
+    .list_products .products.preview_block {
+      margin: auto;
+      margin-bottom: 140px;
+      -webkit-transition: opacity 0.35s ease-in-out;
+      transition: opacity 0.35s ease-in-out; }
+      .list_products .products.preview_block .ias-trigger {
+        margin-top: 40px; }
+      .list_products .products.preview_block .block_product {
+        width: 100%;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        margin: auto;
+        margin-bottom: 30px; }
+        .list_products .products.preview_block .block_product .img_holder {
+          float: left;
+          margin-right: 20px;
+          width: 240px;
+          height: 240px;
+          margin-bottom: 0; }
+        .list_products .products.preview_block .block_product .name {
+          text-align: left;
+          font-size: 24px;
+          margin-bottom: 20px;
+          padding-bottom: 10px;
+          border-bottom: 2px solid #eeeded; }
+        .list_products .products.preview_block .block_product .block_price {
+          text-align: left; }
+        .list_products .products.preview_block .block_product .description_product {
+          font-size: 18px;
+          height: auto; }

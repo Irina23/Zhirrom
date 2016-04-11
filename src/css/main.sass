@@ -1413,6 +1413,7 @@ img
     float: right
     width: 720px
     margin: 0 -15px 100px
+    transition: opacity 0.35s ease-in-out
 
 
     .block_product
@@ -1423,6 +1424,7 @@ img
       margin: 0 8px
       box-sizing: border-box
       margin-bottom: 70px
+      transition: all 0.35s
       a
         .img_holder
           width: 220px
@@ -1430,6 +1432,8 @@ img
           overflow: hidden
           margin-bottom: 20px
           position: relative
+          img
+            width: 100%
           &:after
             background: rgba(255, 69, 4, 0)
             position: absolute
@@ -1448,7 +1452,7 @@ img
           overflow: hidden
           height: 20px
           text-overflow: ellipsis
-          transition: all 0.35s
+
 
 
 
@@ -1459,8 +1463,10 @@ img
           height: 45px
           overflow: hidden
           margin-bottom: 15px
+
         .block_price
           text-align: center
+
 
           .price
             display: inline-block
@@ -1543,4 +1549,40 @@ img
       //&:hover
         transition: all 0.35s
         background: #fe622b
+    .block_text
+        overflow: hidden
 
+    &.preview_block
+      margin: auto
+      margin-bottom: 140px
+      transition: opacity 0.35s ease-in-out
+      .ias-trigger
+        margin-top: 40px
+      .block_product
+        width: 100%
+        transition: all 0.35s
+        margin: auto
+        margin-bottom: 30px
+        .img_holder
+          float: left
+          margin-right: 20px
+          width: 240px
+          height: 240px
+          margin-bottom: 0
+
+
+        .name
+          text-align: left
+          font-size: 24px
+          margin-bottom: 20px
+          padding-bottom: 10px
+          border-bottom: 2px solid #eeeded
+
+        .block_price
+          text-align: left
+
+
+
+        .description_product
+          font-size: 18px
+          height: auto

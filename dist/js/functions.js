@@ -104,7 +104,51 @@ jQuery(document).ready(function() {
 
 
     });
+    function hideproducts() {
+        $(".products").css("opacity", 0);
 
+    }
+
+    function showproducts() {
+        $(".products").css("opacity", 1);
+
+    }
+    function removeClass() {
+        $(".products").removeClass('preview_block');
+
+    }
+    function addClass() {
+        $(".products").addClass('preview_block');
+
+    }
+    function preview_list() {
+
+        setTimeout(hideproducts, 0);
+        setTimeout(removeClass, 300);
+        setTimeout(showproducts, 600);
+
+
+    }
+    function preview_block() {
+
+        setTimeout(hideproducts, 0);
+        setTimeout(addClass, 300);
+        setTimeout(showproducts, 600);
+
+
+    }
+    jQuery(".preview .preview_list").click(function(){
+        preview_list();
+
+
+
+    });
+    jQuery(".preview .preview_block").click(function(){
+        preview_block();
+        //var opacity = 1, toOpacity = 0, duration = 500;
+        //$(".products").fadeTo(duration,toOpacity).fadeTo(duration,opacity).delay(5000).addClass('preview_block');
+
+    });
 
 
 
