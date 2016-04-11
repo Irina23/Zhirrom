@@ -1152,19 +1152,51 @@ img {
             .list_products .filter > div.preview ul li.preview_list {
               background: url("../img/icons/preview_list.png") no-repeat;
               background-size: 100%;
-              width: 30px; }
+              width: 30px;
+              margin-right: 10px; }
               .list_products .filter > div.preview ul li.preview_list:hover {
                 background: url("../img/icons/preview_list_hover.png") no-repeat;
                 background-size: 100%; }
       .list_products .filter > div.sort_by {
-        margin-right: 40px; }
+        margin-right: 75px;
+        position: relative; }
+        .list_products .filter > div.sort_by:last-child {
+          margin-right: 0; }
         .list_products .filter > div.sort_by > div {
           display: inline-block;
-          vertical-align: middle; }
+          vertical-align: middle;
+          position: relative; }
           .list_products .filter > div.sort_by > div ul {
-            display: none; }
-            .list_products .filter > div.sort_by > div ul li.active {
-              display: none; }
+            display: none;
+            position: absolute;
+            top: 33px;
+            left: 0;
+            width: 100%;
+            border-bottom: 0;
+            border-top: 0;
+            background: #e8e7e7;
+            box-sizing: border-box; }
+            .list_products .filter > div.sort_by > div ul li {
+              font-size: 18px;
+              font-family: "FuturaBookC", sans-serif;
+              line-height: 1em;
+              cursor: pointer;
+              color: #000;
+              padding: 7px 30px 7px 12px;
+              -webkit-transition: all 0.35s;
+              transition: all 0.35s;
+              border-left: 1px solid #e0dddd;
+              border-right: 1px solid #e0dddd; }
+              .list_products .filter > div.sort_by > div ul li:last-child {
+                border-bottom: 1px solid #e0dddd; }
+              .list_products .filter > div.sort_by > div ul li:hover {
+                background: #ff4504;
+                -webkit-transition: all 0.35s;
+                transition: all 0.35s;
+                color: #fff;
+                border-color: #ff4504; }
+              .list_products .filter > div.sort_by > div ul li.active {
+                display: none; }
           .list_products .filter > div.sort_by > div .active_sort {
             border: 1px solid #e0dddd;
             background: #e8e7e7;
@@ -1186,3 +1218,5 @@ img {
               margin-top: -5px;
               background: url("../img/icons/select.png") no-repeat;
               content: ""; }
+        .list_products .filter > div.sort_by.items_page .active_sort {
+          width: 75px; }

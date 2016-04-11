@@ -84,7 +84,26 @@ jQuery(document).ready(function() {
 
 
 
+    jQuery(".active_sort").click(function(){
 
+        jQuery(this).next("ul").slideToggle();
+
+    });
+
+    jQuery(".sort_by li").click(function(){
+        var active_text=jQuery(this).text();
+        jQuery(this).closest(".sort_by").find(".active_sort").text(active_text);
+        jQuery(this).addClass("active").siblings().removeClass('active');
+        jQuery(this).closest("ul").slideToggle();
+
+    });
+
+    jQuery(".preview li").click(function(){
+
+        jQuery(this).addClass("active").siblings().removeClass('active');
+
+
+    });
 
 
 
