@@ -89,6 +89,7 @@ footer
 
 script(src="bower_components/jquery/dist/jquery.js")
 script(src="js/functions.js")
+script(src="js/jquery-ias.min.js")
 script(src="js/bootstrap_tabs.min.js")
 script(src="js/alexValidate.js")
 script(src="bower_components/jquery.bxslider/jquery.bxslider.js")
@@ -103,3 +104,13 @@ script.
       var s = document.getElementsByTagName('script')[0];
       s.parentNode.insertBefore(gcse, s);
       })();
+script(type='text/javascript').
+    var ias = jQuery.ias({
+        container: '.products',
+        item: '.block_product',
+        pagination: '.pagination',
+        next: '.next a'
+    });
+    ias.extension(new IASTriggerExtension({
+        text: 'показать еще' // optionally
+    }));
