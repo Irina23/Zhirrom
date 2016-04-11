@@ -152,6 +152,36 @@ jQuery(document).ready(function() {
 
 
 
+    jQuery(".preview .preview_block").click(function(){
+        preview_block();
+        //var opacity = 1, toOpacity = 0, duration = 500;
+        //$(".products").fadeTo(duration,toOpacity).fadeTo(duration,opacity).delay(5000).addClass('preview_block');
+
+    });
+
+
+    /*jQuery("#filter").on("input",function(){
+        event.preventDefault();
+        console.log( jQuery( this ).serialize() );
+    });*/
+
+    function showValues() {
+        var filter_data = $( "#filter" ).serialize();
+        console.log( filter_data );
+        /*$.ajax({
+            type: "GET",
+            url: "list_product.html",
+            data: filter_data,
+            success: function(msg){
+                alert( "Прибыли данные: " + msg );
+            }
+        });*/
+    }
+    jQuery( "#filter li, #filter input" ).on( "click", showValues ).on( "change", showValues );
+
+    showValues();
+
+
 
 
 

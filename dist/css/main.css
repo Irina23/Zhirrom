@@ -1173,6 +1173,7 @@ img {
             top: 33px;
             left: 0;
             width: 100%;
+            z-index: 2;
             border-bottom: 0;
             border-top: 0;
             background: #e8e7e7;
@@ -1402,7 +1403,7 @@ img {
     margin-bottom: 20px;
     font-weight: normal; }
   .filter_products [id^="attribute"] .attribute_holder {
-    height: 255px;
+    max-height: 255px;
     overflow: auto; }
     .filter_products [id^="attribute"] .attribute_holder::-webkit-scrollbar-track {
       background-color: #e8e7e7; }

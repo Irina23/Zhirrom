@@ -86,136 +86,138 @@
               В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом
               и придаст неповторимый колорит советских времен.
             </div>
-            <form class="filter">
-              <div class="preview"><span>Вид:</span>
-                <ul>
-                  <li class="active preview_list"></li>
-                  <li class="preview_block"></li>
-                </ul>
-              </div>
-              <div class="sort_by"><span>Сортировать как:</span>
-                <div>
-                  <div class="active_sort">От дешёвых к дорогим</div>
+            <form id="filter">
+              <div class="filter">
+                <div class="preview"><span>Вид:</span>
                   <ul>
-                    <li class="active">От дешёвых к дорогим</li>
-                    <li>От дорогих к дешёвым</li>
-                    <li>Популярные</li>
-                    <li>Новинки</li>
+                    <li class="active preview_list"></li>
+                    <li class="preview_block"></li>
                   </ul>
                 </div>
-              </div>
-              <div class="sort_by items_page"><span>Товаров на странице:</span>
-                <div>
-                  <div class="active_sort">10</div>
-                  <ul>
-                    <li class="active">10</li>
-                    <li>20</li>
-                    <li>40</li>
-                  </ul>
+                <div class="sort_by"><span>Сортировать как:</span>
+                  <div>
+                    <div class="active_sort">От дешёвых к дорогим</div>
+                    <ul>
+                      <li class="active">От дешёвых к дорогим</li>
+                      <li>От дорогих к дешёвым</li>
+                      <li>Популярные</li>
+                      <li>Новинки</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            </form>
-            <form class="filter_products cf">
-              <div id="attribute1">
-                <h3>Сезон:</h3>
-                <div class="attribute_holder">
-                  <div class="attribute">
-                    <input type="checkbox" name="option1" value="Зима" id="option1" checked>
-                    <label for="option1">Зима</label>
-                  </div>
-                  <div class="attribute">
-                    <input type="checkbox" name="option2" value="Зима" id="option2">
-                    <label for="option2">Весна</label>
-                  </div>
-                  <div class="attribute">
-                    <input type="checkbox" name="option3" value="Зима" id="option3">
-                    <label for="option3">Лето</label>
-                  </div>
-                  <div class="attribute">
-                    <input type="checkbox" name="option4" value="Зима" id="option43">
-                    <label for="option4">Осень</label>
+                <div class="sort_by items_page"><span>Товаров на странице:</span>
+                  <div>
+                    <div class="active_sort">10</div>
+                    <ul>
+                      <li class="active">10</li>
+                      <li>20</li>
+                      <li>40</li>
+                    </ul>
                   </div>
                 </div>
               </div>
-              <div id="attribute2">
-                <h3>Фасон:</h3>
-                <div class="attribute_holder">
-                  <div class="attribute">
-                    <input type="checkbox" name="option5" value="Зима" id="option5" checked>
-                    <label for="option5">Шапка</label>
-                  </div>
-                  <div class="attribute">
-                    <input type="checkbox" name="option6" value="Зима" id="option6">
-                    <label for="option6">Берет</label>
-                  </div>
-                  <div class="attribute">
-                    <input type="checkbox" name="option7" value="Зима" id="option7">
-                    <label for="option7">Пилотка</label>
-                  </div>
-                  <div class="attribute">
-                    <input type="checkbox" name="option8" value="Зима" id="option8">
-                    <label for="option8">Комплект</label>
-                  </div>
-                  <div class="attribute">
-                    <input type="checkbox" name="option9" value="Зима" id="option9" checked>
-                    <label for="option9">Чалма</label>
-                  </div>
-                  <div class="attribute">
-                    <input type="checkbox" name="option10" value="Зима" id="option10">
-                    <label for="option10">Труба</label>
-                  </div>
-                  <div class="attribute">
-                    <input type="checkbox" name="option11" value="Зима" id="option11">
-                    <label for="option11">Перекрутка</label>
-                  </div>
-                  <div class="attribute">
-                    <input type="checkbox" name="option12" value="Зима" id="option12">
-                    <label for="option12">Косынка</label>
-                  </div>
-                  <div class="attribute">
-                    <input type="checkbox" name="option13" value="Зима" id="option13">
-                    <label for="option13">Копюшон</label>
-                  </div>
-                  <div class="attribute">
-                    <input type="checkbox" name="option14" value="Зима" id="option14">
-                    <label for="option14">Косынка</label>
+              <div class="filter_products cf">
+                <div id="attribute1">
+                  <h3>Сезон:</h3>
+                  <div class="attribute_holder">
+                    <div class="attribute">
+                      <input type="checkbox" name="option1" value="Зима" id="option1" checked>
+                      <label for="option1">Зима</label>
+                    </div>
+                    <div class="attribute">
+                      <input type="checkbox" name="option2" value="Зима" id="option2">
+                      <label for="option2">Весна</label>
+                    </div>
+                    <div class="attribute">
+                      <input type="checkbox" name="option3" value="Зима" id="option3">
+                      <label for="option3">Лето</label>
+                    </div>
+                    <div class="attribute">
+                      <input type="checkbox" name="option4" value="Зима" id="option4">
+                      <label for="option4">Осень</label>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div id="attribute3">
-                <h3>Бренды:</h3>
-                <div class="attribute_holder">
-                  <div class="attribute">
-                    <input type="checkbox" name="option5" value="Зима" id="option5" checked>
-                    <label for="option5">София</label>
+                <div id="attribute2">
+                  <h3>Фасон:</h3>
+                  <div class="attribute_holder">
+                    <div class="attribute">
+                      <input type="checkbox" name="option5" value="Зима" id="option5" checked>
+                      <label for="option5">Шапка</label>
+                    </div>
+                    <div class="attribute">
+                      <input type="checkbox" name="option6" value="Зима" id="option6">
+                      <label for="option6">Берет</label>
+                    </div>
+                    <div class="attribute">
+                      <input type="checkbox" name="option7" value="Зима" id="option7">
+                      <label for="option7">Пилотка</label>
+                    </div>
+                    <div class="attribute">
+                      <input type="checkbox" name="option8" value="Зима" id="option8">
+                      <label for="option8">Комплект</label>
+                    </div>
+                    <div class="attribute">
+                      <input type="checkbox" name="option9" value="Зима" id="option9" checked>
+                      <label for="option9">Чалма</label>
+                    </div>
+                    <div class="attribute">
+                      <input type="checkbox" name="option10" value="Зима" id="option10">
+                      <label for="option10">Труба</label>
+                    </div>
+                    <div class="attribute">
+                      <input type="checkbox" name="option11" value="Зима" id="option11">
+                      <label for="option11">Перекрутка</label>
+                    </div>
+                    <div class="attribute">
+                      <input type="checkbox" name="option12" value="Зима" id="option12">
+                      <label for="option12">Косынка</label>
+                    </div>
+                    <div class="attribute">
+                      <input type="checkbox" name="option13" value="Зима" id="option13">
+                      <label for="option13">Копюшон</label>
+                    </div>
+                    <div class="attribute">
+                      <input type="checkbox" name="option14" value="Зима" id="option14">
+                      <label for="option14">Косынка</label>
+                    </div>
                   </div>
-                  <div class="attribute">
-                    <input type="checkbox" name="option6" value="Зима" id="option6">
-                    <label for="option6">Винта плюс</label>
-                  </div>
-                  <div class="attribute">
-                    <input type="checkbox" name="option7" value="Зима" id="option7">
-                    <label for="option7">La chica loca</label>
-                  </div>
-                  <div class="attribute">
-                    <input type="checkbox" name="option8" value="Зима" id="option8">
-                    <label for="option8">Lak miss</label>
-                  </div>
-                  <div class="attribute">
-                    <input type="checkbox" name="option9" value="Зима" id="option9" checked>
-                    <label for="option9">Ярик</label>
-                  </div>
-                  <div class="attribute">
-                    <input type="checkbox" name="option10" value="Зима" id="option10">
-                    <label for="option10">Лидия</label>
-                  </div>
-                  <div class="attribute">
-                    <input type="checkbox" name="option11" value="Зима" id="option11">
-                    <label for="option11">Свиридюк</label>
-                  </div>
-                  <div class="attribute">
-                    <input type="checkbox" name="option12" value="Зима" id="option12">
-                    <label for="option12">M.alina</label>
+                </div>
+                <div id="attribute3">
+                  <h3>Бренды:</h3>
+                  <div class="attribute_holder">
+                    <div class="attribute">
+                      <input type="checkbox" name="option5" value="Зима" id="option5" checked>
+                      <label for="option5">София</label>
+                    </div>
+                    <div class="attribute">
+                      <input type="checkbox" name="option6" value="Зима" id="option6">
+                      <label for="option6">Винта плюс</label>
+                    </div>
+                    <div class="attribute">
+                      <input type="checkbox" name="option7" value="Зима" id="option7">
+                      <label for="option7">La chica loca</label>
+                    </div>
+                    <div class="attribute">
+                      <input type="checkbox" name="option8" value="Зима" id="option8">
+                      <label for="option8">Lak miss</label>
+                    </div>
+                    <div class="attribute">
+                      <input type="checkbox" name="option9" value="Зима" id="option9" checked>
+                      <label for="option9">Ярик</label>
+                    </div>
+                    <div class="attribute">
+                      <input type="checkbox" name="option10" value="Зима" id="option10">
+                      <label for="option10">Лидия</label>
+                    </div>
+                    <div class="attribute">
+                      <input type="checkbox" name="option11" value="Зима" id="option11">
+                      <label for="option11">Свиридюк</label>
+                    </div>
+                    <div class="attribute">
+                      <input type="checkbox" name="option12" value="Зима" id="option12">
+                      <label for="option12">M.alina</label>
+                    </div>
                   </div>
                 </div>
               </div>
