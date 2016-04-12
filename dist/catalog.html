@@ -32,18 +32,18 @@
         </div>
         <div class="header cf">
           <div class="search">
-            <form action="/search.html" role="search">
+            <form action="search.html" role="search">
               <div class="form-control">
                 <input type="text" name="search" placeholder="Поиск" minlength="2" data-validate="name">
               </div>
               <div class="btn submit"></div>
             </form>
           </div>
-          <div class="logo"><a href="/"><img src="img/icons/logo.png"></a></div>
+          <div class="logo"><a href="index.html"><img src="img/icons/logo.png"></a></div>
           <div class="cart"><a href="cart.html">Товаров в корзине:&#160;<span>0</span></a></div>
           <div id="menu">
             <ul>
-              <li class="active"><a href="/">Главная</a></li>
+              <li class="active"><a href="index.html">Главная</a></li>
               <li class="parent"><a href="catalog.html">Женщинам</a>
                 <ul class="drop-menu">
                   <li><a href="catalog.html">Головные уборы</a></li>
@@ -76,17 +76,17 @@
         <div class="wrap">
           <div class="list_category">
             <h1>Категории товаров</h1>
-            <div class="item-category cf category1"><a href="#">
+            <div class="item-category cf category1"><a href="list_product.html">
                 <div class="img-holder"><img src="img/content/category1.jpg"></div>
                 <div class="number">01</div>
                 <h3>Головные уборы</h3>
                 <div class="readmore">Перейти в раздел</div></a></div>
-            <div class="item-category cf category2"><a href="#">
+            <div class="item-category cf category2"><a href="list_product.html">
                 <div class="img-holder"><img src="img/content/category2.jpg"></div>
                 <div class="number">02</div>
                 <h3>Аксессуары</h3>
                 <div class="readmore">Перейти в раздел</div></a></div>
-            <div class="item-category cf category3"><a href="#">
+            <div class="item-category cf category3"><a href="list_product.html">
                 <div class="img-holder"><img src="img/content/category3.jpg"></div>
                 <div class="number">03</div>
                 <h3>Одежда</h3>
@@ -97,7 +97,7 @@
       <footer>
         <div class="footer">
           <div class="wrap">
-            <div class="logo"><a href="/"><img src="img/icons/logo-footer.png"></a></div>
+            <div class="logo"><a href="index.html"><img src="img/icons/logo-footer.png"></a></div>
             <div class="contact">
               <h4>Связаться с нами</h4>
               <div> Телефон:&#160;<a href="tel:+7(495) 369-14-15">+7(495) 369-14-15</a></div>
@@ -166,6 +166,41 @@
             </div>
             <div>
               <input type="text" placeholder="Пароль:" name="pass" data-validate="pass">
+            </div>
+            <div class="btn submit">Отправить</div>
+          </div>
+        </form>
+      </div>
+      <div id="call_back" class="modal_div">
+        <div class="modal_close"></div>
+        <form>
+          <h3>Заказать звонок</h3>
+          <div class="form-holder">
+            <div>
+              <input type="text" placeholder="Имя:" name="name" data-validate="name">
+            </div>
+            <div>
+              <input type="text" placeholder="Телефон:" name="phone" data-validate="phone">
+            </div>
+            <div class="btn submit">Отправить</div>
+          </div>
+        </form>
+      </div>
+      <div id="contact_form" class="modal_div">
+        <div class="modal_close"></div>
+        <form>
+          <h3>Связаться с нами</h3>
+          <div class="form-holder">
+            <div class="row-group">
+              <div>
+                <input type="text" placeholder="Имя:" name="name" data-validate="name">
+              </div>
+              <div>
+                <input type="text" placeholder="Телефон:" name="phone" data-validate="phone">
+              </div>
+            </div>
+            <div>
+              <textarea placeholder="Текст:" name="feedback" data-validate="name"></textarea>
             </div>
             <div class="btn submit">Отправить</div>
           </div>

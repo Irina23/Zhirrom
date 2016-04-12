@@ -32,18 +32,18 @@
         </div>
         <div class="header cf">
           <div class="search">
-            <form action="/search.html" role="search">
+            <form action="search.html" role="search">
               <div class="form-control">
                 <input type="text" name="search" placeholder="Поиск" minlength="2" data-validate="name">
               </div>
               <div class="btn submit"></div>
             </form>
           </div>
-          <div class="logo"><a href="/"><img src="img/icons/logo.png"></a></div>
+          <div class="logo"><a href="index.html"><img src="img/icons/logo.png"></a></div>
           <div class="cart"><a href="cart.html">Товаров в корзине:&#160;<span>0</span></a></div>
           <div id="menu">
             <ul>
-              <li class="active"><a href="/">Главная</a></li>
+              <li class="active"><a href="index.html">Главная</a></li>
               <li class="parent"><a href="catalog.html">Женщинам</a>
                 <ul class="drop-menu">
                   <li><a href="catalog.html">Головные уборы</a></li>
@@ -74,24 +74,24 @@
       </header>
       <div id="slider">
         <div class="slider">
-          <div style="background: url(&quot;../img/content/slider1.jpg&quot;) no-repeat top center;    background-size: cover;" class="item">
+          <div style="background: url(&quot;../img/content/slider1.jpg&quot;) no-repeat top center; background-size: cover;" class="item">
             <div class="wrap">
               <div class="block_text left_text">
-                <h3>Магазин<span>оптовых</span>продаж</h3><a href="#">Подробнее</a>
+                <h3>Магазин<span>оптовых</span>продаж</h3><a href="catalog.html">Подробнее</a>
               </div>
             </div>
           </div>
-          <div style="background: url(&quot;../img/content/slider2.jpg&quot;) no-repeat top center;    background-size: cover;" class="item">
+          <div style="background: url(&quot;../img/content/slider2.jpg&quot;) no-repeat top center; background-size: cover;" class="item">
             <div class="wrap">
               <div class="block_text">
-                <h3>Зарегистрируйтесь и получите цены от производителя!</h3><a href="#">зарегистрироваться</a>
+                <h3>Зарегистрируйтесь и получите цены от производителя!</h3><a href="#registration" class="open_modal">зарегистрироваться</a>
               </div>
             </div>
           </div>
-          <div style="background: url(&quot;../img/content/slider3.jpg&quot;) no-repeat top center;    background-size: cover;" class="item">
+          <div style="background: url(&quot;../img/content/slider3.jpg&quot;) no-repeat top center; background-size: cover;" class="item">
             <div class="wrap">
               <div class="block_text">
-                <h3>Закажите звонок и наш менеджер с вами свяжется</h3><a href="#">заказать звонок</a>
+                <h3>Закажите звонок и наш менеджер с вами свяжется</h3><a href="#call_back" class="open_modal">заказать звонок</a>
               </div>
             </div>
           </div>
@@ -148,7 +148,7 @@
             <h3>Задать вопрос</h3>
             <div class="block_text">
               <h4>Связаться с нами</h4>
-              <p class="text">Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания.</p><a href="#">написать</a>
+              <p class="text">Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания.</p><a href="#contact_form" class="open_modal">написать</a>
             </div>
           </div>
         </div>
@@ -204,7 +204,7 @@
       <footer>
         <div class="footer">
           <div class="wrap">
-            <div class="logo"><a href="/"><img src="img/icons/logo-footer.png"></a></div>
+            <div class="logo"><a href="index.html"><img src="img/icons/logo-footer.png"></a></div>
             <div class="contact">
               <h4>Связаться с нами</h4>
               <div> Телефон:&#160;<a href="tel:+7(495) 369-14-15">+7(495) 369-14-15</a></div>
@@ -273,6 +273,41 @@
             </div>
             <div>
               <input type="text" placeholder="Пароль:" name="pass" data-validate="pass">
+            </div>
+            <div class="btn submit">Отправить</div>
+          </div>
+        </form>
+      </div>
+      <div id="call_back" class="modal_div">
+        <div class="modal_close"></div>
+        <form>
+          <h3>Заказать звонок</h3>
+          <div class="form-holder">
+            <div>
+              <input type="text" placeholder="Имя:" name="name" data-validate="name">
+            </div>
+            <div>
+              <input type="text" placeholder="Телефон:" name="phone" data-validate="phone">
+            </div>
+            <div class="btn submit">Отправить</div>
+          </div>
+        </form>
+      </div>
+      <div id="contact_form" class="modal_div">
+        <div class="modal_close"></div>
+        <form>
+          <h3>Связаться с нами</h3>
+          <div class="form-holder">
+            <div class="row-group">
+              <div>
+                <input type="text" placeholder="Имя:" name="name" data-validate="name">
+              </div>
+              <div>
+                <input type="text" placeholder="Телефон:" name="phone" data-validate="phone">
+              </div>
+            </div>
+            <div>
+              <textarea placeholder="Текст:" name="feedback" data-validate="name"></textarea>
             </div>
             <div class="btn submit">Отправить</div>
           </div>

@@ -737,7 +737,7 @@ img {
 .gcsc-branding {
   display: none; }
 
-#registration {
+#registration, #contact_form {
   background-color: #ffffff;
   width: 620px;
   height: 530px;
@@ -752,7 +752,7 @@ img {
   padding: 60px;
   text-align: center;
   box-sizing: border-box; }
-  #registration .modal_close {
+  #registration .modal_close, #contact_form .modal_close {
     position: absolute;
     width: 16px;
     height: 16px;
@@ -763,46 +763,47 @@ img {
     cursor: pointer;
     -webkit-transition: all 0.35s;
     transition: all 0.35s; }
-    #registration .modal_close:hover {
+    #registration .modal_close:hover, #contact_form .modal_close:hover {
       background: url("../img/icons/close_hover.png") no-repeat;
       background-size: 100%;
       -webkit-transition: all 0.35s;
       transition: all 0.35s; }
-  #registration h3 {
+  #registration h3, #contact_form h3 {
     text-transform: uppercase;
     margin-bottom: 40px;
     font-size: 24px;
     line-height: 1em;
     font-family: "FuturaPT-Demi", sans-serif;
     font-weight: normal; }
-  #registration .form-holder .row-group .file {
+  #registration .form-holder .row-group .file, #contact_form .form-holder .row-group .file {
     width: 240px;
     height: 45px;
     background: url("../img/icons/file.png") no-repeat;
     overflow: hidden;
     -webkit-transition: all 0.35s;
     transition: all 0.35s; }
-    #registration .form-holder .row-group .file:hover {
+    #registration .form-holder .row-group .file:hover, #contact_form .form-holder .row-group .file:hover {
       background: url("../img/icons/file_hover.png") no-repeat;
       -webkit-transition: all 0.35s;
       transition: all 0.35s; }
-  #registration .form-holder .row-group > div {
+  #registration .form-holder .row-group > div, #contact_form .form-holder .row-group > div {
     display: inline-block;
     vertical-align: top; }
-    #registration .form-holder .row-group > div:first-child {
+    #registration .form-holder .row-group > div:first-child, #contact_form .form-holder .row-group > div:first-child {
       margin-right: 15px; }
-  #registration .form-holder .assortment {
+  #registration .form-holder .assortment, #contact_form .form-holder .assortment {
     width: 100%; }
-    #registration .form-holder .assortment input[type="text"] {
+    #registration .form-holder .assortment input[type="text"], #contact_form .form-holder .assortment input[type="text"] {
       width: 100%; }
-  #registration .form-holder input[type="file"] {
+  #registration .form-holder input[type="file"], #contact_form .form-holder input[type="file"] {
     width: 240px !important;
     height: 45px !important;
     opacity: 0 !important;
     overflow: hidden !important;
     cursor: pointer; }
   #registration .form-holder input[type="text"],
-  #registration .form-holder input[type="email"] {
+  #registration .form-holder input[type="email"], #contact_form .form-holder input[type="text"],
+  #contact_form .form-holder input[type="email"] {
     text-align: left;
     height: 45px;
     padding: 0 10px;
@@ -816,10 +817,25 @@ img {
     background: #fff;
     font-family: "FuturaPT-Medium", sans-serif;
     width: 240px; }
+  #registration .form-holder textarea, #contact_form .form-holder textarea {
+    border-radius: 2px;
+    border: 1px solid #bab9b9;
+    width: 100%;
+    box-sizing: border-box;
+    height: 135px;
+    background: none;
+    padding: 10px;
+    color: #818181;
+    font-size: 18px;
+    line-height: 1.3em;
+    font-family: "FuturaPT-Medium", sans-serif; }
   #registration .form-holder .error input[type="text"],
-  #registration .form-holder .error input[type="email"] {
+  #registration .form-holder .error input[type="email"],
+  #registration .form-holder .error textarea, #contact_form .form-holder .error input[type="text"],
+  #contact_form .form-holder .error input[type="email"],
+  #contact_form .form-holder .error textarea {
     border-color: #FF0000; }
-  #registration .form-holder .btn {
+  #registration .form-holder .btn, #contact_form .form-holder .btn {
     line-height: 50px;
     color: #fff;
     font-size: 16px;
@@ -836,13 +852,17 @@ img {
     font-family: "FuturaPT-Heavy", sans-serif;
     letter-spacing: 1px;
     cursor: pointer; }
-    #registration .form-holder .btn:hover {
+    #registration .form-holder .btn:hover, #contact_form .form-holder .btn:hover {
       -webkit-transition: all 0.35s;
       transition: all 0.35s;
       background: #fe622b;
       text-decoration: none; }
 
-#login {
+#contact_form {
+  height: 450px;
+  margin-top: -225px; }
+
+#login, #call_back {
   background-color: #fff;
   width: 340px;
   height: 330px;
@@ -857,7 +877,7 @@ img {
   padding: 45px;
   text-align: center;
   box-sizing: border-box; }
-  #login .modal_close {
+  #login .modal_close, #call_back .modal_close {
     position: absolute;
     width: 16px;
     height: 16px;
@@ -868,12 +888,12 @@ img {
     cursor: pointer;
     -webkit-transition: all 0.35s;
     transition: all 0.35s; }
-    #login .modal_close:hover {
+    #login .modal_close:hover, #call_back .modal_close:hover {
       background: url("../img/icons/close_hover.png") no-repeat;
       background-size: 100%;
       -webkit-transition: all 0.35s;
       transition: all 0.35s; }
-  #login h3 {
+  #login h3, #call_back h3 {
     text-transform: uppercase;
     margin-bottom: 30px;
     font-size: 20px;
@@ -882,7 +902,8 @@ img {
     font-weight: normal;
     color: #000; }
   #login .form-holder input[type="text"],
-  #login .form-holder input[type="email"] {
+  #login .form-holder input[type="email"], #call_back .form-holder input[type="text"],
+  #call_back .form-holder input[type="email"] {
     text-align: left;
     width: 100%;
     height: 45px;
@@ -897,9 +918,10 @@ img {
     color: #686767;
     border-radius: 2px; }
   #login .form-holder .error input[type="text"],
-  #login .form-holder .error input[type="email"] {
+  #login .form-holder .error input[type="email"], #call_back .form-holder .error input[type="text"],
+  #call_back .form-holder .error input[type="email"] {
     border-color: #FF0000; }
-  #login .form-holder .btn {
+  #login .form-holder .btn, #call_back .form-holder .btn {
     line-height: 50px;
     color: #fff;
     font-size: 16px;
@@ -916,7 +938,7 @@ img {
     font-family: "FuturaPT-Heavy", sans-serif;
     letter-spacing: 1px;
     cursor: pointer; }
-    #login .form-holder .btn:hover {
+    #login .form-holder .btn:hover, #call_back .form-holder .btn:hover {
       -webkit-transition: all 0.35s;
       transition: all 0.35s;
       background: #fe622b;

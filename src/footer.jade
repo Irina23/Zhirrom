@@ -3,7 +3,7 @@ footer
     .footer
         .wrap
             .logo
-                a(href="/")
+                a(href="index.html")
                     img(src="img/icons/logo-footer.png")
 
             .contact
@@ -83,6 +83,43 @@ footer
             div
                 input(type="text", placeholder="Пароль:", name="pass", data-validate="pass")
 
+            .btn.submit Отправить
+
+
+#call_back.modal_div
+
+    .modal_close
+    form
+
+        h3 Заказать звонок
+
+        .form-holder
+
+
+            div
+                input(type="text", placeholder="Имя:", name="name", data-validate="name")
+            div
+                input(type="text", placeholder="Телефон:", name="phone", data-validate="phone")
+
+            .btn.submit Отправить
+
+
+#contact_form.modal_div
+
+    .modal_close
+    form
+
+        h3 Связаться с нами
+
+        .form-holder
+
+            .row-group
+                div
+                    input(type="text", placeholder="Имя:", name="name", data-validate="name")
+                div
+                    input(type="text", placeholder="Телефон:", name="phone", data-validate="phone")
+            div
+                textarea(placeholder="Текст:", name="feedback", data-validate="name")
             .btn.submit Отправить
 
 #overlay
