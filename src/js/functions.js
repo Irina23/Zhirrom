@@ -80,11 +80,12 @@ jQuery(document).ready(function() {
 
 
 
+
     });
 
 
 
-    jQuery(".active_sort").click(function(){
+    jQuery(".active_sort,.active_size,.active_color").click(function(){
 
         jQuery(this).next("ul").slideToggle();
 
@@ -93,6 +94,20 @@ jQuery(document).ready(function() {
     jQuery(".sort_by li").click(function(){
         var active_text=jQuery(this).text();
         jQuery(this).closest(".sort_by").find(".active_sort").text(active_text);
+        jQuery(this).addClass("active").siblings().removeClass('active');
+        jQuery(this).closest("ul").slideToggle();
+
+    });
+    jQuery(".select_size li").click(function(){
+        var active_text=jQuery(this).text();
+        jQuery(this).closest(".value").find(".active_size").text(active_text);
+        jQuery(this).addClass("active").siblings().removeClass('active');
+        jQuery(this).closest("ul").slideToggle();
+
+    });
+    jQuery(".select_color li").click(function(){
+        var active_text=jQuery(this).text();
+        jQuery(this).closest(".value").find(".active_color").text(active_text);
         jQuery(this).addClass("active").siblings().removeClass('active');
         jQuery(this).closest("ul").slideToggle();
 
@@ -168,19 +183,18 @@ jQuery(document).ready(function() {
     function showValues() {
         var filter_data = $( "#filter" ).serialize();
         console.log( filter_data );
-        /*$.ajax({
+        $.ajax({
             type: "GET",
             url: "list_product.html",
             data: filter_data,
-            success: function(msg){
-                alert( "Прибыли данные: " + msg );
+            success: function(data){
+
             }
-        });*/
+        });
     }
     jQuery( "#filter li, #filter input" ).on( "click", showValues ).on( "change", showValues );
 
     showValues();
-
 
 
 

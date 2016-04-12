@@ -111,7 +111,7 @@ img
   .user-login
     float: right
     a
-      line-height: 39px
+      line-height: 38px
       color: #fff
       font-size: 18px
       width: 115px
@@ -1646,3 +1646,467 @@ img
             width: 22px
             height: 22px
             content: ""
+
+
+
+.productfull
+
+  .related_products
+    padding-bottom: 50px
+    h3
+      background: $main-color
+      color: #fff
+      font-size: 60px
+      line-height: 1em
+      padding: 40px 0
+      font-weight: normal
+      text-align: center
+      font-family: "FuturaPT-Light", sans-serif
+      margin-bottom: 80px
+
+    .products
+      margin: 0 -10px
+    .block_product
+      width: 220px
+      display: inline-block
+      vertical-align: top
+      overflow: hidden
+      margin: 0 8px
+      box-sizing: border-box
+      margin-bottom: 70px
+      transition: all 0.35s
+      a
+        .img_holder
+          width: 220px
+          height: 220px
+          overflow: hidden
+          margin-bottom: 20px
+          position: relative
+          img
+            width: 100%
+          &:after
+            background: rgba(255, 69, 4, 0)
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            content: ""
+            transition: all 0.35s
+        .name
+          font-size: 20px
+          line-height: 1em
+          color:  #373737
+          font-family: "FuturaBookC", sans-serif
+          text-align: center
+          overflow: hidden
+          height: 20px
+          text-overflow: ellipsis
+
+
+
+
+        .description_product
+          color:  #6a6a6a
+          font-size: 16px
+          line-height: 1.5em
+          height: 45px
+          overflow: hidden
+          margin-bottom: 15px
+
+        .block_price
+          text-align: center
+
+
+          .price
+            display: inline-block
+            vertical-align: middle
+            font-size: 24px
+            line-height: 1em
+            color:  #3e3d3d
+            text-transform: uppercase
+            span
+              font-size: 18px
+              display: inline-block
+              vertical-align: middle
+              margin-left: 5px
+              line-height: 1em
+          .cart
+            position: relative
+            display: inline-block
+            vertical-align: middle
+            margin-right: 5px
+            border-radius: 2px
+            background: rgba(255, 69, 4, 0)
+            width: 30px
+            height: 30px
+            transition: all 0.35s
+            &:before
+              background: url("../img/icons/cart.png") no-repeat
+              background-size: 100%
+              width: 22px
+              height: 18px
+              content: ""
+              position: absolute
+              top: 6px
+              left: 4px
+              z-index: 2
+              transition: all 0.35s
+
+        &:hover
+          text-decoration: none
+          .img_holder
+            &:after
+              background: rgba(255, 69, 4, 0.45)
+              transition: all 0.35s
+
+          .name
+            color: $main-color
+            transition: all 0.35s
+          .block_price
+            .cart
+              transition: all 0.35s
+              background: $main-color
+              &:before
+                background: url("../img/icons/cart_hover.png") no-repeat
+                background-size: 100%
+                transition: all 0.35s
+
+
+  .feedback
+    background: url("../img/bg/bg_review.jpg") no-repeat top center
+    background-size: cover
+    position: relative
+    padding: 50px 0 110px
+    &:after
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: rgba(255, 255, 255, 0.9)
+      content: ""
+      z-index: 1
+    .wrap
+      position: relative
+      z-index: 2
+      h3
+        text-align: center
+        margin-bottom: 60px
+        color: #000
+        font-size: 60px
+        line-height: 1em
+        font-family: "FuturaPT-Light", sans-serif
+        font-weight: normal
+      form
+        h4
+          color: $main-color
+          margin-bottom: 30px
+          font-size: 36px
+          line-height: 1em
+          font-family: "FuturaPT-Light", sans-serif
+          font-weight: normal
+        .error
+          textarea
+            border-color: red
+        textarea
+            border-radius: 2px
+            border: 2px solid #c8c7c7
+            width: 100%
+            box-sizing: border-box
+            height: 135px
+            background: none
+            padding: 20px
+            color:  #818181
+            font-size: 20px
+            line-height: 1.3em
+            font-family: "FuturaBookC", sans-serif
+            letter-spacing: 1px
+            margin-bottom: 30px
+        .submit
+
+          line-height: 50px
+          color: #fff
+          font-size: 16px
+          width: 185px
+          text-align: center
+          transition: all 0.35s
+          display: block
+          margin:  auto
+          background: $main-color
+          border-radius: 6px
+          box-shadow: inset  0px -2px 4px 2px rgba(0,0,0,0.16)
+          text-transform: uppercase
+          font-family: "FuturaPT-Heavy", sans-serif
+          letter-spacing: 1px
+          cursor: pointer
+
+          &:hover
+            transition: all 0.35s
+            background: #fe622b
+            text-decoration: none
+
+  .feedback_list
+
+    //margin: 0 -20px 60px
+    .block_feedback
+      display: inline-block
+      vertical-align: top
+      width: 49%
+      padding: 0 10px
+      box-sizing: border-box
+      margin-bottom: 60px
+      &:nth-child(2n+1)
+        padding-left: 0
+      &:nth-child(2n)
+        padding-right: 0
+      .text_holder
+        font-family: "FuturaBookC", sans-serif
+        color:  #3e3d3d
+        font-size: 18px
+        font-weight: normal
+        line-height: 1.5em
+        text-align: left
+      .block_personal
+        margin-bottom: 20px
+        .img_hoder
+          width: 90px
+          height: 90px
+          float: left
+          border-radius: 90px
+          overflow: hidden
+          margin-right: 15px
+        .block_name
+          margin-top: 40px
+          .name
+            color: #000
+            font-size: 24px
+            line-height: 1em
+            margin-bottom: 10px
+          .data
+            color: $main-color
+            line-height: 1em
+            font-size: 16px
+
+
+
+  .product_info
+    .image
+      width: 450px
+      display: inline-block
+      vertical-align: top
+      margin-right: 85px
+    .block_info
+      width: 400px
+      display: inline-block
+      vertical-align: top
+      .code_product
+        color:  #5c5c5c
+        font-size: 16px
+        line-height: 1em
+        margin-bottom: 15px
+      .name_product
+        color:  #000000
+        font-size: 36px
+        line-height: 1em
+        padding-bottom: 20px
+        margin-bottom: 10px
+        border-bottom: 1px solid #dfdede
+        //font-family: "FuturaPT-Light", sans-serif
+      .block_price
+        margin-bottom: 25px
+        .name_price
+          margin-bottom: 10px
+          line-height: 1em
+          color:  #535353
+          font-size: 16px
+        .price
+          margin-bottom: 15px
+          line-height: 1em
+          font-size: 36px
+          color: #000
+          //font-family: "FuturaPT-Light", sans-serif
+        .description_price
+          color:  #5c5c5c
+          font-size: 16px
+          line-height: 1.5em
+
+
+      .submit
+        width: 145px
+        line-height: 40px
+        text-align: center
+        text-transform: uppercase
+        color: $main-color
+        box-sizing: border-box
+        border: 2px solid $main-color
+        border-radius: 4px
+        cursor: pointer
+        font-size: 14px
+        font-family: "FuturaPT-Demi", sans-serif
+        font-weight: normal
+        letter-spacing: 1px
+        transition: all 0.35s
+        margin-bottom: 30px
+        &:hover
+          transition: all 0.35s
+          background: $main-color
+          color: #fff
+      .description_product
+        color: #000
+        font-size: 16px
+        line-height: 2em
+        span
+          font-family: "FuturaPT-Medium", sans-serif
+          margin-right: 5px
+      .block_characteristics
+        margin-bottom: 10px
+        >div
+          margin-bottom: 15px
+          position: relative
+          .name,.value
+            display: inline-block
+            vertical-align: middle
+            font-size: 16px
+            line-height: 1em
+            position: relative
+          .name
+              font-family: "FuturaPT-Medium", sans-serif
+              margin-right: 5px
+
+
+        .active_size
+          font-size: 16px
+          color: #343434
+          position: relative
+          border: 1px solid #d2d2d2
+          line-height: 30px
+          padding: 0 25px 0 10px
+          cursor: pointer
+          &:after
+            position: absolute
+            top: 50%
+            right: 5px
+            width: 13px
+            height: 9px
+            margin-top: -5px
+            background: url("../img/icons/select.png") no-repeat
+            content: ""
+
+        .select_size
+            display: none
+            position: absolute
+            top: 32px
+            left: 0
+            width: 100%
+            z-index: 2
+            background: #fff
+
+
+            li
+              font-size: 16px
+              //font-family: "FuturaBookC", sans-serif
+              line-height: 1em
+              cursor: pointer
+              color: #000
+              padding: 6px 10px
+              transition: all 0.35s
+              border: 1px solid #d2d2d2
+              border-top: 0
+              box-sizing: border-box
+
+              &:hover
+                background: $main-color
+                transition: all 0.35s
+                color: #fff
+                border-color: $main-color
+
+              &.active
+                display: none
+
+
+
+
+
+
+        .active_color
+          font-size: 16px
+          color: #343434
+          position: relative
+          border: 1px solid #d2d2d2
+          line-height: 30px
+          padding: 0 25px 0 10px
+          cursor: pointer
+          min-width: 150px
+          box-sizing: border-box
+          &:after
+            position: absolute
+            top: 50%
+            right: 5px
+            width: 13px
+            height: 9px
+            margin-top: -5px
+            background: url("../img/icons/select.png") no-repeat
+            content: ""
+        .select_color
+          display: none
+          position: absolute
+          top: 32px
+          left: 0
+          width: 100%
+          z-index: 2
+          background: #fff
+
+
+          li
+            font-size: 16px
+            line-height: 1em
+            cursor: pointer
+            color: #000
+            padding: 6px 10px
+            transition: all 0.35s
+            border-left: 1px solid #d2d2d2
+            border-right: 1px solid #d2d2d2
+            box-sizing: border-box
+            border-bottom: 1px solid #d2d2d2
+            text-align: center
+            position: relative
+
+            &:after
+                width: 100%
+                height: 100%
+                background: rgba(0, 0, 0, 0.4)
+                transition: all 0.34s
+                position: absolute
+                top: 0
+                left: 0
+                content: ""
+                opacity: 0
+            .img_hoder
+              width: 75px
+              height: 75px
+              margin: 0 auto 10px
+            .name_color
+              color:  #3d3d3d
+              transition: all 0.35s
+              position: relative
+              z-index: 3
+              font-size: 18px
+              line-height: 1em
+
+
+            &:hover
+              //background: rgba(0, 0, 0, 0.4)
+              transition: all 0.35s
+              color: #fff
+              border-color: #989898
+              .name_color
+                color:  #fff
+                transition: all 0.35s
+              &:after
+                opacity: 1
+                transition: all 0.35s
+
+
+            &.active
+              display: none
