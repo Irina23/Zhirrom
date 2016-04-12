@@ -779,6 +779,7 @@ img
         padding: 0
         width: auto
 
+
         a
           text-indent: 0
           width: auto
@@ -1930,19 +1931,22 @@ img
 
       .bx-wrapper
           margin-bottom: 30px
-          .bx-controls-direction a
-            width: 20px
-            height: 34px
-            background: url("../img/icons/slider-nav_hover.png") no-repeat
-            background-size: 100%
-            margin-top: -10px
-            text-indent: 0
-            &.bx-next
-              transform: rotate(180deg)
-              right: 10px
-            &.bx-prev
-              left: 10px
+          .bx-controls-direction
+            display: none
+            a
+              width: 20px
+              height: 34px
+              background: url("../img/icons/slider-nav_hover.png") no-repeat
+              background-size: 100%
+              margin-top: -10px
+              text-indent: 0
+              &.bx-next
+                transform: rotate(180deg)
+                right: 10px
+              &.bx-prev
+                left: 10px
       [id^="slider_product"]
+        overflow: hidden
 
         >div
           width: 460px!important
@@ -2181,3 +2185,8 @@ img
 
             &.active
               display: none
+
+
+
+.zoomContainer
+  z-index: 11
