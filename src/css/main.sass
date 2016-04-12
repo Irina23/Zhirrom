@@ -614,6 +614,11 @@ img
           //font-weight: bold
           line-height: 1em
           font-size: 20px
+          transition: all 0.35s
+          &:hover
+            transition: all 0.35s
+            text-decoration: none
+            color: #000
 
 
 
@@ -1891,11 +1896,48 @@ img
 
 
   .product_info
+    margin-bottom: 60px
     .image
-      width: 450px
+      width: 460px
       display: inline-block
       vertical-align: top
-      margin-right: 85px
+      margin-right: 75px
+      .bx-wrapper
+          margin-bottom: 30px
+          .bx-controls-direction a
+            width: 20px
+            height: 34px
+            background: url("../img/icons/slider-nav_hover.png") no-repeat
+            background-size: 100%
+            margin-top: -10px
+            text-indent: 0
+            &.bx-next
+              transform: rotate(180deg)
+              right: 10px
+            &.bx-prev
+              left: 10px
+      .slider_product
+
+        >div
+          width: 460px!important
+          height: 500px
+          //margin-bottom: 30px
+          box-sizing: border-box
+          border: 5px solid #f3f3f3
+
+      #bx-pager
+        margin: 0 -10px
+        a
+          display: inline-block
+          vertical-align: top
+          width: 140px
+          height: 140px
+          box-sizing: border-box
+          border: 5px solid #f3f3f3
+          margin: 0 10px 20px
+          &.active
+            border-color: $main-color
+
     .block_info
       width: 400px
       display: inline-block

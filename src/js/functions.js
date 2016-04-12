@@ -77,6 +77,20 @@ jQuery(document).ready(function() {
 
         });
 
+        slider=$('.slider_product').bxSlider({
+            pagerCustom: '#bx-pager',
+            nextText: "",
+            prevText: "",
+            onSlideAfter: function (currentSlideNumber, totalSlideQty, currentSlideHtmlObject) {
+                console.log(currentSlideHtmlObject);
+                $('.active-slide').removeClass('active-slide');
+                $('.slider_product>div').eq(currentSlideHtmlObject + 1).addClass('active-slide')
+            },
+            onSliderLoad: function () {
+                $('.slider_product>div').eq(1).addClass('active-slide')
+            },
+
+        });
 
 
 
