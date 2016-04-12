@@ -22,26 +22,70 @@ html(lang="ru")
                                 span Повязка Chelsi
 
                     .product_info
-                        .image
-                            .slider_product
-                                div
-                                    img(src="img/content/img_product.jpg" )
+                        .image.cf
+                            .slider_filter_color.active(data-filter="pink")
+                                #slider_product1
+                                    div
+                                        img(src="img/content/product1.jpg" )
 
-                                div
-                                    img(src="img/content/img_product.jpg" )
+                                    div
+                                        img(src="img/content/product1.jpg" )
 
-                                div
-                                    img(src="img/content/img_product.jpg" )
+                                    div
+                                        img(src="img/content/product1.jpg" )
 
-                            #bx-pager
+
+                                #bx-pager1
+                                        a(data-slide-index='0', href='')
+                                            img(src="img/content/product1.jpg" )
+
+                                        a(data-slide-index='1', href='')
+                                            img(src="img/content/product1.jpg" )
+
+                                        a(data-slide-index='2', href='')
+                                            img(src="img/content/product1.jpg" )
+
+                            .slider_filter_color(data-filter="purple")
+                                #slider_product2
+                                    div
+                                        img(src="img/content/product2.jpg" )
+
+                                    div
+                                        img(src="img/content/product2.jpg" )
+
+                                    div
+                                        img(src="img/content/product2.jpg" )
+
+                                #bx-pager2
                                     a(data-slide-index='0', href='')
-                                        img(src="img/content/product4.jpg" )
+                                        img(src="img/content/product2.jpg" )
 
                                     a(data-slide-index='1', href='')
-                                        img(src="img/content/product4.jpg" )
+                                        img(src="img/content/product2.jpg" )
 
                                     a(data-slide-index='2', href='')
-                                        img(src="img/content/product4.jpg" )
+                                        img(src="img/content/product2.jpg" )
+                            .slider_filter_color(data-filter="blue")
+                                #slider_product3
+                                    div
+                                        img(src="img/content/product3.jpg" )
+
+                                    div
+                                        img(src="img/content/product2.jpg" )
+
+                                    div
+                                        img(src="img/content/product3.jpg" )
+
+                                #bx-pager3
+                                    a(data-slide-index='0', href='')
+                                        img(src="img/content/product3.jpg" )
+
+                                    a(data-slide-index='1', href='')
+                                        img(src="img/content/product2.jpg" )
+
+                                    a(data-slide-index='2', href='')
+                                        img(src="img/content/product3.jpg" )
+
 
                         .block_info
                                     form#product_add_cart
@@ -71,24 +115,23 @@ html(lang="ru")
                                             div
                                                 .name Цвет:
                                                 .value
-                                                    .active_color Фиолетовый
+                                                    .active_color Белый
                                                     ul.select_color
-                                                        li.active
+                                                        li.active(data-filter="pink")
+                                                            .img_hoder
+                                                                img(src="img/content/product1.jpg" )
+                                                            .name_color Розовый
+
+                                                        li(data-filter="purple")
                                                             .img_hoder
                                                                 img(src="img/content/product2.jpg" )
                                                             .name_color Фиолетовый
-                                                        li
-                                                            .img_hoder
-                                                                img(src="img/content/product4.jpg" )
-                                                            .name_color Белый
-                                                        li
-                                                            .img_hoder
-                                                                img(src="img/content/product.jpg" )
-                                                            .name_color Розовый
-                                                        li
+                                                        li(data-filter="blue")
                                                             .img_hoder
                                                                 img(src="img/content/product3.jpg" )
-                                                            .name_color Серый
+                                                            .name_color Синий
+
+
 
                                         .description_product
                                             span Описание товара:

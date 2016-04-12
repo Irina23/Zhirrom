@@ -21,6 +21,7 @@
   </head>
   <body>
     <div class="page_wrapper productfull">
+      <div id="preloader"></div>
       <header>
         <div class="top">
           <div class="wrap">
@@ -82,13 +83,31 @@
             </ul>
           </div>
           <div class="product_info">
-            <div class="image">
-              <div class="slider_product">
-                <div><img src="img/content/img_product.jpg"></div>
-                <div><img src="img/content/img_product.jpg"></div>
-                <div><img src="img/content/img_product.jpg"></div>
+            <div class="image cf">
+              <div data-filter="pink" class="slider_filter_color active">
+                <div id="slider_product1">
+                  <div><img src="img/content/product1.jpg"></div>
+                  <div><img src="img/content/product1.jpg"></div>
+                  <div><img src="img/content/product1.jpg"></div>
+                </div>
+                <div id="bx-pager1"><a data-slide-index="0" href=""><img src="img/content/product1.jpg"></a><a data-slide-index="1" href=""><img src="img/content/product1.jpg"></a><a data-slide-index="2" href=""><img src="img/content/product1.jpg"></a></div>
               </div>
-              <div id="bx-pager"><a data-slide-index="0" href=""><img src="img/content/product4.jpg"></a><a data-slide-index="1" href=""><img src="img/content/product4.jpg"></a><a data-slide-index="2" href=""><img src="img/content/product4.jpg"></a></div>
+              <div data-filter="purple" class="slider_filter_color">
+                <div id="slider_product2">
+                  <div><img src="img/content/product2.jpg"></div>
+                  <div><img src="img/content/product2.jpg"></div>
+                  <div><img src="img/content/product2.jpg"></div>
+                </div>
+                <div id="bx-pager2"><a data-slide-index="0" href=""><img src="img/content/product2.jpg"></a><a data-slide-index="1" href=""><img src="img/content/product2.jpg"></a><a data-slide-index="2" href=""><img src="img/content/product2.jpg"></a></div>
+              </div>
+              <div data-filter="blue" class="slider_filter_color">
+                <div id="slider_product3">
+                  <div><img src="img/content/product3.jpg"></div>
+                  <div><img src="img/content/product2.jpg"></div>
+                  <div><img src="img/content/product3.jpg"></div>
+                </div>
+                <div id="bx-pager3"><a data-slide-index="0" href=""><img src="img/content/product3.jpg"></a><a data-slide-index="1" href=""><img src="img/content/product2.jpg"></a><a data-slide-index="2" href=""><img src="img/content/product3.jpg"></a></div>
+              </div>
             </div>
             <div class="block_info">
               <form id="product_add_cart">
@@ -123,23 +142,19 @@
                   <div>
                     <div class="name">Цвет:</div>
                     <div class="value">
-                      <div class="active_color">Фиолетовый</div>
+                      <div class="active_color">Белый</div>
                       <ul class="select_color">
-                        <li class="active">
+                        <li data-filter="pink" class="active">
+                          <div class="img_hoder"><img src="img/content/product1.jpg"></div>
+                          <div class="name_color">Розовый</div>
+                        </li>
+                        <li data-filter="purple">
                           <div class="img_hoder"><img src="img/content/product2.jpg"></div>
                           <div class="name_color">Фиолетовый</div>
                         </li>
-                        <li>
-                          <div class="img_hoder"><img src="img/content/product4.jpg"></div>
-                          <div class="name_color">Белый</div>
-                        </li>
-                        <li>
-                          <div class="img_hoder"><img src="img/content/product.jpg"></div>
-                          <div class="name_color">Розовый</div>
-                        </li>
-                        <li>
+                        <li data-filter="blue">
                           <div class="img_hoder"><img src="img/content/product3.jpg"></div>
-                          <div class="name_color">Серый</div>
+                          <div class="name_color">Синий</div>
                         </li>
                       </ul>
                     </div>

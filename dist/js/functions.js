@@ -68,6 +68,8 @@ jQuery(document).ready(function() {
 
     jQuery(window).load(function() {
 
+        $('#preloader').fadeOut('slow',function(){$(this).remove();});
+
         jQuery('.slider').bxSlider({
             nextText: "",
             prevText: ""
@@ -77,20 +79,23 @@ jQuery(document).ready(function() {
 
         });
 
-        slider=$('.slider_product').bxSlider({
-            pagerCustom: '#bx-pager',
+
+        $('[id^="slider_product"]').bxSlider({
+            pagerCustom: '[id^="bx-pager"]',
             nextText: "",
-            prevText: "",
-            onSlideAfter: function (currentSlideNumber, totalSlideQty, currentSlideHtmlObject) {
-                console.log(currentSlideHtmlObject);
-                $('.active-slide').removeClass('active-slide');
-                $('.slider_product>div').eq(currentSlideHtmlObject + 1).addClass('active-slide')
-            },
-            onSliderLoad: function () {
-                $('.slider_product>div').eq(1).addClass('active-slide')
-            },
+            prevText: ""
+            /*onSlideAfter: function (currentSlideNumber, totalSlideQty, currentSlideHtmlObject) {
+             console.log(currentSlideHtmlObject);
+             $('.active-slide').removeClass('active-slide');
+             $('.slider_product>div').eq(currentSlideHtmlObject + 1).addClass('active-slide')
+             },
+             onSliderLoad: function () {
+             $('.slider_product>div').eq(1).addClass('active-slide')
+             }*/
 
         });
+
+
 
 
 
@@ -98,7 +103,19 @@ jQuery(document).ready(function() {
     });
 
 
+    $('[id^="bx-pager"]').each(function(){
+        var height_bx_pager = $(this).height();
+        var main_height = height_bx_pager +490;
+        //$(this).closest(".slider_filter_color").css("height", main_height);
+        var max_height = 650;
+        if (max_height < main_height){
+            max_height = main_height;
+            //console.log(max_height);
+            $(".product_info .image ").css("height", max_height);
+        }
 
+    });
+//sort
     jQuery(".active_sort,.active_size,.active_color").click(function(){
 
         jQuery(this).next("ul").slideToggle();
@@ -124,6 +141,17 @@ jQuery(document).ready(function() {
         jQuery(this).closest(".value").find(".active_color").text(active_text);
         jQuery(this).addClass("active").siblings().removeClass('active');
         jQuery(this).closest("ul").slideToggle();
+        //jQuery('[id^="bx-pager"] a:first-child').addClass("active").siblings().removeClass('active');
+        //jQuery('[id^="slider_product"]').css("translate3d", "0px, 0px, 0px!important");
+
+        var customType = jQuery(this).attr('data-filter');
+        //console.log(customType);
+
+        jQuery('.slider_filter_color').each(function(){
+            if(jQuery(this).attr('data-filter').indexOf(customType) < 0) jQuery(this).css("opacity", 0).removeClass("active");
+            else jQuery(this).css("opacity", 1).addClass("active");
+        });
+
 
     });
 
@@ -144,7 +172,6 @@ jQuery(document).ready(function() {
     }
     function removeClass() {
         $(".products").removeClass('preview_block');
-
     }
     function addClass() {
         $(".products").addClass('preview_block');
@@ -174,25 +201,14 @@ jQuery(document).ready(function() {
     });
     jQuery(".preview .preview_block").click(function(){
         preview_block();
-        //var opacity = 1, toOpacity = 0, duration = 500;
-        //$(".products").fadeTo(duration,toOpacity).fadeTo(duration,opacity).delay(5000).addClass('preview_block');
 
     });
+//end sort
 
 
 
-    jQuery(".preview .preview_block").click(function(){
-        preview_block();
-        //var opacity = 1, toOpacity = 0, duration = 500;
-        //$(".products").fadeTo(duration,toOpacity).fadeTo(duration,opacity).delay(5000).addClass('preview_block');
-
-    });
 
 
-    /*jQuery("#filter").on("input",function(){
-        event.preventDefault();
-        console.log( jQuery( this ).serialize() );
-    });*/
 
     function showValues() {
         var filter_data = $( "#filter" ).serialize();
