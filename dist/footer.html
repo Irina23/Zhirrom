@@ -61,6 +61,44 @@
     </div>
   </form>
 </div>
+<div id="private_edit" class="modal_div">
+  <div class="modal_close"></div>
+  <form>
+    <h3>Редактировать информацию</h3>
+    <div class="form-holder">
+      <div class="row-group">
+        <div>
+          <input type="text" placeholder="ФИО:" name="name" minlength="2" data-validate="name"/>
+        </div>
+        <div>
+          <input type="text" placeholder="Телефон:" name="phone" data-validate="phone"/>
+        </div>
+      </div>
+      <div class="row-group">
+        <div>
+          <input type="text" placeholder="Почта:" name="email" data-validate="email"/>
+        </div>
+        <div>
+          <input type="text" placeholder="Адрес:" name="address" data-validate="name"/>
+        </div>
+      </div>
+      <div class="row-group">
+        <div>
+          <input type="text" placeholder="ИНН:" name="iin" data-validate="number"/>
+        </div>
+        <div class="file">
+          <input type="file" name="file"/>
+        </div>
+      </div>
+      <div class="row-group">
+        <div class="assortment">
+          <input type="text" placeholder="Интересующий асортимент:" name="assortment" data-validate="name"/>
+        </div>
+      </div>
+      <div class="btn submit">Отправить</div>
+    </div>
+  </form>
+</div>
 <div id="login" class="modal_div">
   <div class="modal_close"></div>
   <form>

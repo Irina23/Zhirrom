@@ -120,12 +120,14 @@ img {
       line-height: 38px;
       color: #fff;
       font-size: 18px;
-      width: 115px;
+      min-width: 115px;
       text-align: center;
       -webkit-transition: all 0.35s;
       transition: all 0.35s;
       display: inline-block;
-      vertical-align: middle; }
+      vertical-align: middle;
+      padding: 0 15px;
+      box-sizing: border-box; }
       .top .user-login a.login {
         background: #ff4504;
         border-radius: 2px;
@@ -138,7 +140,7 @@ img {
         transition: all 0.35s;
         color: #ff4504;
         text-decoration: none; }
-      .top .user-login a span {
+      .top .user-login a:first-letter {
         font-family: "FuturaPT-Medium", sans-serif; }
 
 .header {
@@ -740,7 +742,7 @@ img {
 .gcsc-branding {
   display: none; }
 
-#registration, #contact_form {
+#registration, #contact_form, #private_edit {
   background-color: #ffffff;
   width: 620px;
   height: 530px;
@@ -755,7 +757,7 @@ img {
   padding: 60px;
   text-align: center;
   box-sizing: border-box; }
-  #registration .modal_close, #contact_form .modal_close {
+  #registration .modal_close, #contact_form .modal_close, #private_edit .modal_close {
     position: absolute;
     width: 16px;
     height: 16px;
@@ -766,39 +768,39 @@ img {
     cursor: pointer;
     -webkit-transition: all 0.35s;
     transition: all 0.35s; }
-    #registration .modal_close:hover, #contact_form .modal_close:hover {
+    #registration .modal_close:hover, #contact_form .modal_close:hover, #private_edit .modal_close:hover {
       background: url("../img/icons/close_hover.png") no-repeat;
       background-size: 100%;
       -webkit-transition: all 0.35s;
       transition: all 0.35s; }
-  #registration h3, #contact_form h3 {
+  #registration h3, #contact_form h3, #private_edit h3 {
     text-transform: uppercase;
     margin-bottom: 40px;
     font-size: 24px;
     line-height: 1em;
     font-family: "FuturaPT-Demi", sans-serif;
     font-weight: normal; }
-  #registration .form-holder .row-group .file, #contact_form .form-holder .row-group .file {
+  #registration .form-holder .row-group .file, #contact_form .form-holder .row-group .file, #private_edit .form-holder .row-group .file {
     width: 240px;
     height: 45px;
     background: url("../img/icons/file.png") no-repeat;
     overflow: hidden;
     -webkit-transition: all 0.35s;
     transition: all 0.35s; }
-    #registration .form-holder .row-group .file:hover, #contact_form .form-holder .row-group .file:hover {
+    #registration .form-holder .row-group .file:hover, #contact_form .form-holder .row-group .file:hover, #private_edit .form-holder .row-group .file:hover {
       background: url("../img/icons/file_hover.png") no-repeat;
       -webkit-transition: all 0.35s;
       transition: all 0.35s; }
-  #registration .form-holder .row-group > div, #contact_form .form-holder .row-group > div {
+  #registration .form-holder .row-group > div, #contact_form .form-holder .row-group > div, #private_edit .form-holder .row-group > div {
     display: inline-block;
     vertical-align: top; }
-    #registration .form-holder .row-group > div:first-child, #contact_form .form-holder .row-group > div:first-child {
+    #registration .form-holder .row-group > div:first-child, #contact_form .form-holder .row-group > div:first-child, #private_edit .form-holder .row-group > div:first-child {
       margin-right: 15px; }
-  #registration .form-holder .assortment, #contact_form .form-holder .assortment {
+  #registration .form-holder .assortment, #contact_form .form-holder .assortment, #private_edit .form-holder .assortment {
     width: 100%; }
-    #registration .form-holder .assortment input[type="text"], #contact_form .form-holder .assortment input[type="text"] {
+    #registration .form-holder .assortment input[type="text"], #contact_form .form-holder .assortment input[type="text"], #private_edit .form-holder .assortment input[type="text"] {
       width: 100%; }
-  #registration .form-holder input[type="file"], #contact_form .form-holder input[type="file"] {
+  #registration .form-holder input[type="file"], #contact_form .form-holder input[type="file"], #private_edit .form-holder input[type="file"] {
     width: 240px !important;
     height: 45px !important;
     opacity: 0 !important;
@@ -806,7 +808,8 @@ img {
     cursor: pointer; }
   #registration .form-holder input[type="text"],
   #registration .form-holder input[type="email"], #contact_form .form-holder input[type="text"],
-  #contact_form .form-holder input[type="email"] {
+  #contact_form .form-holder input[type="email"], #private_edit .form-holder input[type="text"],
+  #private_edit .form-holder input[type="email"] {
     text-align: left;
     height: 45px;
     padding: 0 10px;
@@ -820,7 +823,7 @@ img {
     background: #fff;
     font-family: "FuturaPT-Medium", sans-serif;
     width: 240px; }
-  #registration .form-holder textarea, #contact_form .form-holder textarea {
+  #registration .form-holder textarea, #contact_form .form-holder textarea, #private_edit .form-holder textarea {
     border-radius: 2px;
     border: 1px solid #bab9b9;
     width: 100%;
@@ -836,9 +839,11 @@ img {
   #registration .form-holder .error input[type="email"],
   #registration .form-holder .error textarea, #contact_form .form-holder .error input[type="text"],
   #contact_form .form-holder .error input[type="email"],
-  #contact_form .form-holder .error textarea {
+  #contact_form .form-holder .error textarea, #private_edit .form-holder .error input[type="text"],
+  #private_edit .form-holder .error input[type="email"],
+  #private_edit .form-holder .error textarea {
     border-color: #FF0000; }
-  #registration .form-holder .btn, #contact_form .form-holder .btn {
+  #registration .form-holder .btn, #contact_form .form-holder .btn, #private_edit .form-holder .btn {
     line-height: 50px;
     color: #fff;
     font-size: 16px;
@@ -855,7 +860,7 @@ img {
     font-family: "FuturaPT-Heavy", sans-serif;
     letter-spacing: 1px;
     cursor: pointer; }
-    #registration .form-holder .btn:hover, #contact_form .form-holder .btn:hover {
+    #registration .form-holder .btn:hover, #contact_form .form-holder .btn:hover, #private_edit .form-holder .btn:hover {
       -webkit-transition: all 0.35s;
       transition: all 0.35s;
       background: #fe622b;
@@ -2243,3 +2248,120 @@ img {
         transition: all 0.35s;
         background: #fe622b;
         text-decoration: none; }
+
+.block_private_office {
+  border: 5px solid #ff4504;
+  padding: 50px 130px 70px;
+  margin-bottom: 85px; }
+  .block_private_office h1 {
+    font-size: 60px;
+    line-height: 1em;
+    margin-bottom: 70px;
+    color: #000;
+    font-weight: normal;
+    font-family: "FuturaPT-Light", sans-serif;
+    text-align: center; }
+  .block_private_office .img-holder {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin-right: 40px; }
+  .block_private_office .block_info {
+    overflow: hidden;
+    padding-top: 30px; }
+    .block_private_office .block_info .row {
+      line-height: 1em;
+      margin-bottom: 20px;
+      font-size: 18px; }
+    .block_private_office .block_info .submit {
+      line-height: 50px;
+      color: #fff;
+      font-size: 16px;
+      width: 185px;
+      text-align: center;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      display: block;
+      background: #ff4504;
+      border-radius: 6px;
+      box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16);
+      text-transform: uppercase;
+      font-family: "FuturaPT-Heavy", sans-serif;
+      letter-spacing: 1px;
+      cursor: pointer; }
+      .block_private_office .block_info .submit:hover {
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        background: #fe622b;
+        text-decoration: none; }
+
+.private_office .order_block {
+  margin-bottom: 120px; }
+  .private_office .order_block .ias-trigger a {
+    border: 2px solid #ff4504;
+    border-radius: 4px;
+    color: #ff4504;
+    font-size: 14px;
+    font-family: "FuturaPT-Demi", sans-serif;
+    box-shadow: none;
+    background: none; }
+    .private_office .order_block .ias-trigger a:hover {
+      background: #ff4504;
+      color: #fff; }
+  .private_office .order_block h3 {
+    font-size: 60px;
+    line-height: 1em;
+    margin-bottom: 50px;
+    color: #000;
+    font-weight: normal;
+    font-family: "FuturaPT-Light", sans-serif;
+    text-align: center; }
+  .private_office .order_block .list_order .item {
+    margin-bottom: 70px; }
+  .private_office .order_block .list_order .data {
+    color: #5d5c5c;
+    font-size: 18px;
+    line-height: 1em;
+    margin-bottom: 20px; }
+  .private_office .order_block .list_order .order {
+    border-bottom: 1px solid #f0eeee; }
+    .private_office .order_block .list_order .order .row {
+      display: inline-block;
+      vertical-align: middle;
+      width: 100px;
+      box-sizing: border-box;
+      padding: 0 10px; }
+      .private_office .order_block .list_order .order .row .title {
+        color: #b0afaf;
+        font-size: 16px;
+        line-height: 1em;
+        margin-bottom: 30px; }
+      .private_office .order_block .list_order .order .row .name {
+        color: #000000;
+        font-size: 18px;
+        line-height: 1em; }
+        .private_office .order_block .list_order .order .row .name a {
+          color: #000000;
+          font-size: 18px;
+          line-height: 1em;
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s; }
+          .private_office .order_block .list_order .order .row .name a:hover {
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+            color: #ff4504;
+            text-decoration: none; }
+      .private_office .order_block .list_order .order .row.image {
+        width: 220px; }
+        .private_office .order_block .list_order .order .row.image .img-holder {
+          width: 220px;
+          height: 220px; }
+        .private_office .order_block .list_order .order .row.image a {
+          display: block; }
+      .private_office .order_block .list_order .order .row.quantity .name {
+        text-align: center; }
+      .private_office .order_block .list_order .order .row.name {
+        width: 270px;
+        padding: 0 20px 0 40px; }
+      .private_office .order_block .list_order .order .row.price {
+        width: 130px; }

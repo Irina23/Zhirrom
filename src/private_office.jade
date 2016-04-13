@@ -1,0 +1,112 @@
+doctype html
+html(lang="ru")
+    include ./head.jade
+
+
+    body
+        .page_wrapper.private_office
+            include ./header.jade
+
+
+            .container
+                .wrap
+                    .block_private_office.cf
+                        h1 Личный кабинет
+                        .img-holder
+                            img(src="img/content/img_blog.jpg")
+                        .block_info
+                            .row ФИО: Зарва Светлана Юрьевна
+                            .row ИНН: 333546365987
+                            .row Почта: Zarva@gmail.com
+                            .row Телефон: +7 (495) 773-36-46
+                            .row Адрес: г. Москва, Ленина 22
+                            a.submit.open_modal(href="#private_edit") Редактировать
+
+                    .order_block
+                        h3 История покупок
+                        .list_order.list_items
+                            .item
+                                .data Дата заказа: 14 апреля 2016г.
+                                .order
+                                    .row.image
+                                        .img-holder
+                                            a(href="product.html")
+                                                img(src="img/content/product.jpg")
+                                    .row.name
+                                        .title Артикул: 5017
+                                        .name
+                                            a(href="product.html") Повязка CHELSI
+                                    .row.size
+                                        .title Размер:
+                                        .name 42-44
+
+                                    .row.color
+                                        .title Цвет:
+                                        .name Белый
+                                    .row.quantity
+                                        .title Количество:
+                                        .name 1
+                                    .row.price
+                                        .title Цена:
+                                        .name 1199 руб.
+
+                                .order
+                                    .row.image
+                                        .img-holder
+                                            a(href="product.html")
+                                                img(src="img/content/product.jpg")
+                                    .row.name
+                                        .title Артикул: 5017
+                                        .name
+                                            a(href="product.html") Повязка CHELSI
+                                    .row.size
+                                        .title Размер:
+                                        .name 42-44
+
+                                    .row.color
+                                        .title Цвет:
+                                        .name Белый
+                                    .row.quantity
+                                        .title Количество:
+                                        .name 1
+                                    .row.price
+                                        .title Цена:
+                                        .name 1199 руб.
+
+                            .item
+                                .data Дата заказа: 14 апреля 2016г.
+                                .order
+                                    .row.image
+                                        .img-holder
+                                            a(href="product.html")
+                                                img(src="img/content/product.jpg")
+                                    .row.name
+                                        .title Артикул: 5017
+                                        .name
+                                            a(href="product.html") Повязка CHELSI
+                                    .row.size
+                                        .title Размер:
+                                        .name 42-44
+
+                                    .row.color
+                                        .title Цвет:
+                                        .name Белый
+                                    .row.quantity
+                                        .title Количество:
+                                        .name 1
+                                    .row.price
+                                        .title Цена:
+                                        .name 1199 руб.
+
+
+                        .pagination
+                            ul
+                                li.prev
+                                    a(href="#")
+                                li.next
+                                    a(href="#")
+
+            include ./footer.jade
+
+
+
