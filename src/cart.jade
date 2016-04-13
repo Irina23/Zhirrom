@@ -1,0 +1,106 @@
+doctype html
+html(lang="ru")
+    include ./head.jade
+
+
+    body
+        .page_wrapper.cart
+            include ./header.jade
+
+
+            .container
+                .wrap
+                    .bread
+                        ul
+                            li
+                                a(href="index.html") Главная
+
+                            li
+                                span Корзина
+
+                    .order_block
+                        h1 Ваша корзина
+                        .list_order.cf
+
+                                .order
+                                    .row.image
+                                        .img-holder
+                                            a(href="product.html")
+                                                img(src="img/content/product.jpg")
+                                    .row.name
+                                        .title Артикул: 5017
+                                        .name
+                                            a(href="product.html") Повязка CHELSI
+                                    .row.size
+                                        .title Размер:
+                                        .name 42-44
+
+                                    .row.color
+                                        .title Цвет:
+                                        .name Белый
+                                    .row.quantity
+                                        .title Количество:
+                                        .name 1
+                                    .row.price
+                                        .title Цена:
+                                        .name 1199 руб.
+                                    button.delete
+                                .order
+                                    .row.image
+                                        .img-holder
+                                            a(href="product.html")
+                                                img(src="img/content/product.jpg")
+                                    .row.name
+                                        .title Артикул: 5017
+                                        .name
+                                            a(href="product.html") Повязка CHELSI
+                                    .row.size
+                                        .title Размер:
+                                        .name 42-44
+
+                                    .row.color
+                                        .title Цвет:
+                                        .name Белый
+                                    .row.quantity
+                                        .title Количество:
+                                        .name 1
+                                    .row.price
+                                        .title Цена:
+                                        .name 1199 руб.
+                                    button.delete
+
+                                .order
+                                    .row.image
+                                        .img-holder
+                                            a(href="product.html")
+                                                img(src="img/content/product.jpg")
+                                    .row.name
+                                        .title Артикул: 5017
+                                        .name
+                                            a(href="product.html") Повязка CHELSI
+                                    .row.size
+                                        .title Размер:
+                                        .name 42-44
+
+                                    .row.color
+                                        .title Цвет:
+                                        .name Белый
+                                    .row.quantity
+                                        .title Количество:
+                                        .name 1
+                                    .row.price
+                                        .title Цена:
+                                        .name 1199 руб.
+
+                                    button.delete
+
+                                .total_price
+                                    .total_title ИТОГО:
+                                    .price 3597 руб.
+
+                        a.submit.btn(href="#") ОФОРМИТЬ ЗАКАЗ
+
+            include ./footer.jade
+
+
+

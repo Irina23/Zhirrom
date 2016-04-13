@@ -1280,7 +1280,7 @@ img
       
       
     span
-      color: #797878
+      color: $main-color
       font-size: 18px
       line-height: 1em
       font-family: "FuturaBookC", sans-serif
@@ -1298,7 +1298,7 @@ img
 
 
 
-.list_product, .productfull, .blog, .article, .search
+.list_product, .productfull, .blog, .article, .search,.cart
     header
       border-bottom: 5px solid $main-color
 
@@ -2570,7 +2570,7 @@ img
 
 
 
-.private_office
+.private_office, .cart
   .order_block
     margin-bottom: 120px
     .ias-trigger
@@ -2585,8 +2585,28 @@ img
         &:hover
           background: $main-color
           color: #fff
+    .submit
+      border: 2px solid $main-color
+      border-radius: 4px
+      color: $main-color
+      font-size: 14px
+      font-family: "FuturaPT-Demi", sans-serif
+      box-shadow: none
+      background: none
+      transition: all 0.35s
+      width: 195px
+      line-height: 50px
+      margin: auto
+      text-align: center
+      display: block
+      &:hover
+        background: $main-color
+        color: #fff
+        transition: all 0.35s
+        text-decoration: none
 
-    h3
+
+    h1,h3
       font-size: 60px
       line-height: 1em
       margin-bottom: 50px
@@ -2606,6 +2626,23 @@ img
         margin-bottom: 20px
       .order
         border-bottom: 1px solid #f0eeee
+        position: relative
+        .delete
+          position: absolute
+          top: 30px
+          right: 0
+          width: 16px
+          height: 16px
+          border: 0
+          border-radius: 0
+          background: url("../img/icons/close.png") no-repeat
+          background-size: 100%
+          transition: all 0.35s
+          cursor: pointer
+          &:hover
+            background: url("../img/icons/close_hover.png") no-repeat
+            background-size: 100%
+            transition: all 0.35s
         .row
           display: inline-block
           vertical-align: middle
@@ -2650,3 +2687,25 @@ img
             padding: 0 20px 0 40px
           &.price
             width: 130px
+
+.cart
+  .list_order
+    margin-bottom: 60px
+    .total_price
+      float: right
+      margin-top: 30px
+      .total_title
+        text-transform: uppercase
+        color:  #828181
+        font-size: 18px
+        line-height: 22px
+        display: inline-block
+        vertical-align: bottom
+        margin-right: 5px
+      .price
+        display: inline-block
+        vertical-align: bottom
+        color: #000
+        font-size: 30px
+        line-height: 1em
+        font-family: "FuturaPT-Medium", sans-serif
