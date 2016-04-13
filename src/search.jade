@@ -3,13 +3,20 @@ html(lang="ru")
     include ./head.jade
 
 
-    body(data-spy="scroll", data-target="#menu", data-offset="105")
-        .page_wrapper.home
+    body
+        .page_wrapper.search
             include ./header.jade
 
             .container
                 .wrap
+                    .bread
+                        ul
+                            li
+                                a(href="index.html") Главная
 
+                            li
+                                span Поиск
+                    h1 Поиск
                     gcse:search
 
 

@@ -68,6 +68,10 @@ body
     line-height: 1.5em
     //font-weight: bold
 
+.container
+  min-height: 44vh
+
+
 .img-holder
   overflow: hidden
   height: 100%
@@ -79,7 +83,7 @@ img
   margin: auto
 
 
-#cache
+#cache, .pagination
   display: none
 #preloader
   position: fixed
@@ -1249,8 +1253,7 @@ img
 
 
 .bread
-  margin-top: 20px
-  margin-bottom: 20px
+  padding: 20px 0
   li
     display: inline-block
     vertical-align: middle
@@ -1293,7 +1296,7 @@ img
 
 
 
-.list_product, .productfull
+.list_product, .productfull, .blog, .article, .search
     header
       border-bottom: 5px solid $main-color
 
@@ -1558,32 +1561,7 @@ img
                 background: url("../img/icons/cart_hover.png") no-repeat
                 background-size: 100%
                 transition: all 0.35s
-    .ias-trigger
 
-      a
-        display: block
-        margin: auto
-        width: 185px
-        line-height: 1em
-        text-transform: uppercase
-        color: #fff
-        background: $main-color
-        border-radius: 6px
-        font-size: 16px
-        text-align: center
-        padding: 17px 0
-        box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16)
-        cursor: pointer
-        transition: all 0.35s
-        font-family: "FuturaPT-Heavy", sans-serif
-        letter-spacing: 1px
-        &:hover
-          text-decoration: none
-          transition: all 0.35s
-          background: #fe622b
-      //&:hover
-        transition: all 0.35s
-        background: #fe622b
     .block_text
         overflow: hidden
 
@@ -1624,6 +1602,30 @@ img
 
 
 
+
+.ias-trigger
+
+    a
+      display: block
+      margin: auto
+      width: 185px
+      line-height: 1em
+      text-transform: uppercase
+      color: #fff
+      background: $main-color
+      border-radius: 6px
+      font-size: 16px
+      text-align: center
+      padding: 17px 0
+      box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16)
+      cursor: pointer
+      transition: all 0.35s
+      font-family: "FuturaPT-Heavy", sans-serif
+      letter-spacing: 1px
+      &:hover
+        text-decoration: none
+        transition: all 0.35s
+        background: #fe622b
 
 
 .filter_products
@@ -2208,3 +2210,250 @@ img
 
 .zoomContainer
   z-index: 11
+
+
+.search
+  h1
+    text-align: center
+    font-family: "FuturaPT-Light", sans-serif
+    font-weight: normal
+    font-size: 60px
+    line-height: 1em
+    margin-bottom: 70px
+  .gsst_a
+    padding-top: 6px
+    .gscb_a
+      color: $color-grey
+      &:hover
+        color: $main-color
+
+
+
+
+.blog
+  h1
+    text-align: center
+    font-family: "FuturaPT-Light", sans-serif
+    font-weight: normal
+    font-size: 60px
+    line-height: 1em
+    margin-bottom: 70px
+
+  .list_items
+    margin-bottom: 120px
+    .ias-trigger
+      margin-top: 90px
+    .item
+      margin-bottom: 70px
+      padding-top: 20px
+      box-sizing: border-box
+
+      &:nth-child(2n+1)
+        padding-left: 20px
+        .img_block
+          float: left
+          margin-right: 60px
+          position: relative
+          &:after
+              position: absolute
+              content: ""
+              top: -20px
+              left: -20px
+              width: 100%
+              height: 100%
+              box-sizing: border-box
+              border: 5px solid $main-color
+              z-index: 1
+
+        .block_text
+          text-align: left
+      &:nth-child(2n)
+        padding-right: 20px
+        .img_block
+          float: right
+          margin-left: 60px
+          position: relative
+          &:after
+            position: absolute
+            content: ""
+            top: -20px
+            right: -20px
+            width: 100%
+            height: 100%
+            box-sizing: border-box
+            border: 5px solid $main-color
+            z-index: 1
+
+        .block_text
+          text-align: right
+      .img-holder
+        position: relative
+        width: 380px
+        height: 380px
+        img
+          position: relative
+          z-index: 2
+
+      .block_text
+        overflow: hidden
+        margin-top: 20px
+        .id_article
+          font-family: "FuturaBookC", sans-serif
+          color:  #c1c0c0
+          font-size: 72px
+          font-weight: normal
+          line-height: 1em
+          margin-bottom: 30px
+        .name
+          margin-bottom: 30px
+          a
+            font-size: 36px
+            color: #000
+            line-height: 1em
+            overflow: hidden
+            text-overflow: ellipsis
+            height: 36px
+            transition: all 0.35s
+            display: block
+            white-space: nowrap
+            &:hover
+              transition: all 0.35s
+              color: $main-color
+              text-decoration: none
+
+        .short_description
+          color:  #3c3b3b
+          font-size: 18px
+          line-height: 2em
+          overflow: hidden
+          height: 108px
+          margin-bottom: 20px
+        .readmore
+
+          color:  #000000
+          font-size: 18px
+          line-height: 1em
+          transition: all 0.35s
+          position: relative
+          padding-right: 15px
+          display: inline-block
+          vertical-align: middle
+          &:after
+            content: ""
+            position: absolute
+            top: 4px
+            right: 0
+            width: 6px
+            height: 10px
+            transition: all 0.35s
+            background: url("../img/icons/readmore.png") no-repeat
+            background-size: 100%
+          &:hover
+            transition: all 0.35s
+            color: $main-color
+            text-decoration: none
+            &:after
+              transition: all 0.35s
+              background: url("../img/icons/readmore_hover.png") no-repeat
+              background-size: 100%
+
+
+
+.article
+
+  .container
+    background: #fcf3f0
+    padding-bottom: 100px
+  h1
+    text-align: center
+    font-family: "FuturaPT-Light", sans-serif
+    font-weight: normal
+    font-size: 60px
+    line-height: 1em
+    margin-bottom: 70px
+
+  .img_block
+      float: left
+      margin-right: 60px
+      position: relative
+
+
+      img
+        position: relative
+        z-index: 2
+      &:after
+        position: absolute
+        content: ""
+        top: -20px
+        left: -20px
+        width: 100%
+        height: 100%
+        box-sizing: border-box
+        border: 5px solid $main-color
+        z-index: 1
+
+
+  .block_text
+    overflow: hidden
+    p
+
+      color:  #3c3b3b
+      font-size: 18px
+      line-height: 2em
+      margin-bottom: 50px
+    ul, ol
+      margin-bottom: 50px
+      //display: list-item
+
+      li
+        line-height: 2em
+        font-size: 18px
+        color:  #3c3b3b
+        display: list-item
+        margin-left: 30px
+
+    ul
+      li
+        list-style-type: disc
+
+
+    ol
+      li
+        list-style-type: decimal
+
+    .block_share_social
+      .title_share_social
+        display: inline-block
+        vertical-align: middle
+        color:  #3c3b3b
+        font-size: 18px
+        line-height: 1em
+        margin-right: 10px
+      .ya-share2
+        display: inline-block
+        vertical-align: middle
+        ul
+          margin-bottom: 0
+          li
+            padding: 0
+            margin-right: 10px
+            line-height: 1em
+            list-style-type: none
+            display: inline-block
+            vertical-align: middle
+            margin-left: 0
+            a
+              &:hover
+                text-decoration: none
+                .ya-share2__title
+                  color: #fe622b
+                  transition: all 0.35s
+            .ya-share2__badge
+              display: none
+            .ya-share2__title
+              display: block
+              font-family: "FuturaPT-Bold", sans-serif
+              font-size: 18px
+              line-height: 1em
+              color: $main-color
+              transition: all 0.35s

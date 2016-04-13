@@ -46,28 +46,28 @@
               <li class="active"><a href="index.html">Главная</a></li>
               <li class="parent"><a href="catalog.html">Женщинам</a>
                 <ul class="drop-menu">
-                  <li><a href="catalog.html">Головные уборы</a></li>
-                  <li><a href="catalog.html">Одежда</a></li>
-                  <li><a href="catalog.html">Аксессуары</a></li>
+                  <li><a href="list_product.html">Головные уборы</a></li>
+                  <li><a href="list_product.html">Одежда</a></li>
+                  <li><a href="list_product.html">Аксессуары</a></li>
                 </ul>
               </li>
               <li class="parent"><a href="catalog.html">Детям</a>
                 <ul class="drop-menu">
-                  <li><a href="catalog.html">Головные уборы</a></li>
-                  <li><a href="catalog.html">Аксессуары</a></li>
+                  <li><a href="list_product.html">Головные уборы</a></li>
+                  <li><a href="list_product.html">Аксессуары</a></li>
                 </ul>
               </li>
               <li class="parent"><a href="catalog.html">Мужчинам</a>
                 <ul class="drop-menu">
-                  <li><a href="catalog.html">Головные уборы</a></li>
-                  <li><a href="catalog.html">Аксессуары</a></li>
+                  <li><a href="list_product.html">Головные уборы</a></li>
+                  <li><a href="list_product.html">Аксессуары</a></li>
                 </ul>
               </li>
               <li><a href="#">Бренды</a></li>
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">Условия работы</a></li>
-              <li><a href="#">Блог</a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="about.html">О нас</a></li>
+              <li><a href="working.html">Условия работы</a></li>
+              <li><a href="blog.html">Блог</a></li>
+              <li><a href="contact.html">Контакты</a></li>
             </ul>
           </div>
         </div>
@@ -321,6 +321,8 @@
       <script src="js/bootstrap_tabs.min.js"></script>
       <script src="js/alexValidate.js"></script>
       <script src="bower_components/jquery.bxslider/jquery.bxslider.js"></script>
+      <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
+      <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
       <script>
         (function() {
           var cx = '007193684977280474025:m3ozddvtnpw';
@@ -335,8 +337,8 @@
       </script>
       <script type="text/javascript">
         var ias = jQuery.ias({
-            container: '.products',
-            item: '.block_product',
+            container: '.list_items',
+            item: '.item',
             pagination: '.pagination',
             next: '.next a'
         });
