@@ -25,7 +25,7 @@ jQuery(document).ready(function() {
                 digits: true
             },
             assortment:{
-                required: true
+                //required: true
 
             },
             pass:{

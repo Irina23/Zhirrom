@@ -2251,7 +2251,7 @@ img {
 
 .block_private_office {
   border: 5px solid #ff4504;
-  padding: 50px 130px 70px;
+  padding: 50px 100px 70px;
   margin-bottom: 85px; }
   .block_private_office h1 {
     font-size: 60px;
@@ -2267,8 +2267,7 @@ img {
     float: left;
     margin-right: 40px; }
   .block_private_office .block_info {
-    overflow: hidden;
-    padding-top: 30px; }
+    overflow: hidden; }
     .block_private_office .block_info .row {
       line-height: 1em;
       margin-bottom: 20px;

@@ -34,7 +34,7 @@
 						case 'name':
 							return /^[а-яіїєґёА-ЯІЇЄҐЁa-zA-Z\-]+\s{0,1}[а-яіїєґёА-ЯІЇЄҐЁa-zA-Z\-]{0,}$/.test(data);
 						case 'phone':
-							return /^[\(\)0-9\-\s\+]{8,}/.test(data);
+							return /^[\(\)0-9\-\s\+]{6,}/.test(data);
 						case 'email':
 							return /^[0-9a-zA-Z._-]+@[0-9a-zA-Z_-]+\.[a-zA-Z._-]+/.test(data);
 						case 'number':
