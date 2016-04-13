@@ -2502,3 +2502,42 @@ img {
       -webkit-transition: all 0.35s;
       transition: all 0.35s;
       text-decoration: none; }
+
+.brand .block_brand {
+  border: 5px solid #ff4504;
+  padding: 60px 70px;
+  margin-bottom: 100px; }
+
+.brand h1 {
+  font-size: 60px;
+  line-height: 1em;
+  font-family: "FuturaPT-Light", sans-serif;
+  font-weight: normal;
+  margin-bottom: 10px;
+  text-align: center; }
+
+.brand .text_block {
+  line-height: 2em;
+  text-align: center;
+  color: #5c5b5b;
+  font-size: 18px;
+  margin-bottom: 80px; }
+
+.brand .list_brand li {
+  margin-bottom: 35px;
+  width: 33%;
+  display: inline-block;
+  vertical-align: middle; }
+  .brand .list_brand li a {
+    text-transform: uppercase;
+    color: #4a4949;
+    font-size: 18px;
+    line-height: 1em;
+    font-family: "FuturaPT-Medium", sans-serif;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s; }
+    .brand .list_brand li a:hover {
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      text-decoration: none;
+      color: #ff4504; }
