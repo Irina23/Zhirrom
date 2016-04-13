@@ -1298,7 +1298,7 @@ img
 
 
 
-.list_product, .productfull, .blog, .article, .search,.cart
+.list_product, .productfull, .blog, .article, .search,.cart, .payment
     header
       border-bottom: 5px solid $main-color
 
@@ -2595,10 +2595,11 @@ img
       background: none
       transition: all 0.35s
       width: 195px
-      line-height: 50px
+      line-height: 45px
       margin: auto
       text-align: center
       display: block
+      box-sizing: border-box
       &:hover
         background: $main-color
         color: #fff
@@ -2709,3 +2710,87 @@ img
         font-size: 30px
         line-height: 1em
         font-family: "FuturaPT-Medium", sans-serif
+
+
+
+.payment
+  form
+    margin-top: 15px
+    margin-bottom: 100px
+    h3
+      background: #f0efef
+      line-height: 85px
+      color:  #000000
+      font-size: 48px
+      font-family: "FuturaPT-Light", sans-serif
+      text-align: center
+      margin-bottom: 70px
+      font-weight: normal
+
+
+    .radio
+      display: table
+      width: 100%
+      margin-bottom: 70px
+      >div
+        display: table-cell
+        vertical-align: middle
+        label
+          font-size: 18px
+          line-height: 18px
+          display: block
+
+    .form-holder
+      width: 620px
+      margin: 0 auto 40px
+      .row-group
+        margin-bottom: 20px
+        &:last-child
+          margin-bottom: 0
+        >div
+          display: inline-block
+          vertical-align: top
+
+          &:nth-child(2n+1)
+            margin-right: 15px
+          &.address
+            margin-right: 0
+            display: block
+            input[type="text"]
+              width: 100%
+          &.error
+            input[type="text"]
+              border-color: red
+          input[type="text"]
+            border-radius: 2px
+            border: 2px solid #e0e0e0
+            box-sizing: border-box
+            line-height: 40px
+            padding: 0 10px
+            width: 300px
+            font-size: 18px
+            color: #979797
+            font-family: "FuturaBookC", sans-serif
+
+
+    .submit
+      border: 2px solid $main-color
+      border-radius: 4px
+      color: $main-color
+      font-size: 14px
+      font-family: "FuturaPT-Demi", sans-serif
+      box-shadow: none
+      background: none
+      transition: all 0.35s
+      width: 195px
+      line-height: 45px
+      margin: auto
+      text-align: center
+      display: block
+      cursor: pointer
+      box-sizing: border-box
+      &:hover
+        background: $main-color
+        color: #fff
+        transition: all 0.35s
+        text-decoration: none

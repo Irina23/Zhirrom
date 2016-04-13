@@ -1,0 +1,83 @@
+doctype html
+html(lang="ru")
+    include ./head.jade
+
+
+    body
+        .page_wrapper.payment
+            include ./header.jade
+
+
+            .container
+                .wrap
+                    .bread
+                        ul
+                            li
+                                a(href="index.html") Главная
+
+                            li
+                                span Оплата и доставка
+                    form#payment
+
+
+                        h3 Оплата
+
+                        .radio.cf.payments
+
+                            div
+                                input(type="radio", name="payment", value="cash", id="cash",checked="")
+                                label(for="cash") Наличная оплата
+
+                            div
+                                input(type="radio", name="payment", value="cart", id="cart")
+                                label(for="cart") Перевод на карту физического лица
+
+                            div
+                                input(type="radio", name="payment", value="bank_account", id="bank_account")
+                                label(for="bank_account") Оплата на расчетный счет
+
+
+                        h3 Доставка
+                        .radio.cf.delivery
+
+                            div
+                                input(type="radio", name="delivery", value="delivery", id="delivery", checked="")
+                                label(for="delivery") Самовывоз
+
+                            div
+                                input(type="radio", name="delivery", value="companies" id="companies")
+                                label(for="companies")  Доставка транспортными компаниями
+                            div
+                                input(type="radio", name="delivery", value="post", id="post")
+                                label(for="post") Почтой
+                            div
+                                input(type="radio", name="delivery", value="courier" id="courier")
+                                label(for="courier")  Курьером
+
+                        h3 Ваши данные
+                        .form-holder
+                            .row-group
+                                div
+                                    input(type="text", placeholder="ФИО:", name="name", minlength="2", data-validate="name")
+                                div
+                                    input(type="text", placeholder="Телефон:", name="phone", data-validate="phone")
+                            .row-group
+                                div
+                                    input(type="text", placeholder="ИНН:", name="iin", data-validate="number")
+                                div
+                                    input(type="text", placeholder="Почта:", name="email", data-validate="email")
+
+                            .row-group
+                                div.address
+                                    input(type="text", placeholder="Адрес:", name="address", data-validate="name")
+
+
+
+
+
+                        .submit.btn ОФОРМИТЬ ЗАКАЗ
+
+            include ./footer.jade
+
+
+

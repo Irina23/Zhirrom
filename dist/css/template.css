@@ -63,7 +63,7 @@ a:hover  { text-decoration:underline; }
 .radio input[type="radio"]:checked + label {
     cursor: pointer;
     position: relative;
-    padding-left: 39px;
+    padding-left: 30px;
 }
 
 /* checkbox aspect */
@@ -71,13 +71,13 @@ a:hover  { text-decoration:underline; }
 .radio input[type="radio"]:checked + label:before {
     /*background: #eee;*/
     border-radius: 50%;
-    border: 2px solid #646464;
+    border: 2px solid #b3b2b2;
     content: '';
     left:0;
     top: 0;
     position: absolute;
-    width: 25px;
-    height: 25px;
+    width: 18px;
+    height: 18px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -86,13 +86,13 @@ a:hover  { text-decoration:underline; }
 .radio input[type="radio"]:not(:checked) + label:after,
 .radio input[type="radio"]:checked + label:after {
     content: '';
-    background-color: #000;
+    background-color: #ff4504;
     border-radius: 50%;
     position: absolute;
     top: 4px;
     left: 4px;
-    width: 17px;
-    height: 17px;
+    width: 10px;
+    height: 10px;
     transition: all .2s;
 
 }

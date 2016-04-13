@@ -20,7 +20,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
   </head>
   <body>
-    <div class="page_wrapper cart">
+    <div class="page_wrapper payment">
       <div id="preloader"></div>
       <header>
         <div class="top">
@@ -77,96 +77,70 @@
           <div class="bread">
             <ul>
               <li><a href="index.html">Главная</a></li>
-              <li><span>Корзина</span></li>
+              <li><span>Оплата и доставка</span></li>
             </ul>
           </div>
-          <div class="order_block">
-            <h1>Ваша корзина</h1>
-            <div class="list_order cf">
-              <div class="order">
-                <div class="row image">
-                  <div class="img-holder"><a href="product.html"><img src="img/content/product.jpg"></a></div>
-                </div>
-                <div class="row name">
-                  <div class="title">Артикул: 5017</div>
-                  <div class="name"><a href="product.html">Повязка CHELSI</a></div>
-                </div>
-                <div class="row size">
-                  <div class="title">Размер:</div>
-                  <div class="name">42-44</div>
-                </div>
-                <div class="row color">
-                  <div class="title">Цвет:</div>
-                  <div class="name">Белый</div>
-                </div>
-                <div class="row quantity">
-                  <div class="title">Количество:</div>
-                  <div class="name">1</div>
-                </div>
-                <div class="row price">
-                  <div class="title">Цена:</div>
-                  <div class="name">1199 руб.</div>
-                </div>
-                <button class="delete"></button>
+          <form id="payment">
+            <h3>Оплата</h3>
+            <div class="radio cf payments">
+              <div>
+                <input type="radio" name="payment" value="cash" id="cash" checked="">
+                <label for="cash">Наличная оплата</label>
               </div>
-              <div class="order">
-                <div class="row image">
-                  <div class="img-holder"><a href="product.html"><img src="img/content/product.jpg"></a></div>
-                </div>
-                <div class="row name">
-                  <div class="title">Артикул: 5017</div>
-                  <div class="name"><a href="product.html">Повязка CHELSI</a></div>
-                </div>
-                <div class="row size">
-                  <div class="title">Размер:</div>
-                  <div class="name">42-44</div>
-                </div>
-                <div class="row color">
-                  <div class="title">Цвет:</div>
-                  <div class="name">Белый</div>
-                </div>
-                <div class="row quantity">
-                  <div class="title">Количество:</div>
-                  <div class="name">1</div>
-                </div>
-                <div class="row price">
-                  <div class="title">Цена:</div>
-                  <div class="name">1199 руб.</div>
-                </div>
-                <button class="delete"></button>
+              <div>
+                <input type="radio" name="payment" value="cart" id="cart">
+                <label for="cart">Перевод на карту физического лица</label>
               </div>
-              <div class="order">
-                <div class="row image">
-                  <div class="img-holder"><a href="product.html"><img src="img/content/product.jpg"></a></div>
-                </div>
-                <div class="row name">
-                  <div class="title">Артикул: 5017</div>
-                  <div class="name"><a href="product.html">Повязка CHELSI</a></div>
-                </div>
-                <div class="row size">
-                  <div class="title">Размер:</div>
-                  <div class="name">42-44</div>
-                </div>
-                <div class="row color">
-                  <div class="title">Цвет:</div>
-                  <div class="name">Белый</div>
-                </div>
-                <div class="row quantity">
-                  <div class="title">Количество:</div>
-                  <div class="name">1</div>
-                </div>
-                <div class="row price">
-                  <div class="title">Цена:</div>
-                  <div class="name">1199 руб.</div>
-                </div>
-                <button class="delete"></button>
+              <div>
+                <input type="radio" name="payment" value="bank_account" id="bank_account">
+                <label for="bank_account">Оплата на расчетный счет</label>
               </div>
-              <div class="total_price">
-                <div class="total_title">ИТОГО:</div>
-                <div class="price">3597 руб.</div>
+            </div>
+            <h3>Доставка</h3>
+            <div class="radio cf delivery">
+              <div>
+                <input type="radio" name="delivery" value="delivery" id="delivery" checked="">
+                <label for="delivery">Самовывоз</label>
               </div>
-            </div><a href="payment.html" class="submit btn">ОФОРМИТЬ ЗАКАЗ</a>
-          </div>
+              <div>
+                <input type="radio" name="delivery" value="companies" id="companies">
+                <label for="companies"> Доставка транспортными компаниями</label>
+              </div>
+              <div>
+                <input type="radio" name="delivery" value="post" id="post">
+                <label for="post">Почтой</label>
+              </div>
+              <div>
+                <input type="radio" name="delivery" value="courier" id="courier">
+                <label for="courier"> Курьером</label>
+              </div>
+            </div>
+            <h3>Ваши данные</h3>
+            <div class="form-holder">
+              <div class="row-group">
+                <div>
+                  <input type="text" placeholder="ФИО:" name="name" minlength="2" data-validate="name">
+                </div>
+                <div>
+                  <input type="text" placeholder="Телефон:" name="phone" data-validate="phone">
+                </div>
+              </div>
+              <div class="row-group">
+                <div>
+                  <input type="text" placeholder="ИНН:" name="iin" data-validate="number">
+                </div>
+                <div>
+                  <input type="text" placeholder="Почта:" name="email" data-validate="email">
+                </div>
+              </div>
+              <div class="row-group">
+                <div class="address">
+                  <input type="text" placeholder="Адрес:" name="address" data-validate="name">
+                </div>
+              </div>
+            </div>
+            <div class="submit btn">ОФОРМИТЬ ЗАКАЗ</div>
+          </form>
         </div>
       </div>
       <footer>

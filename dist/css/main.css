@@ -1134,7 +1134,7 @@ img {
         color: #ff4504;
         text-decoration: none; }
 
-.list_product header, .productfull header, .blog header, .article header, .search header, .cart header {
+.list_product header, .productfull header, .blog header, .article header, .search header, .cart header, .payment header {
   border-bottom: 5px solid #ff4504; }
 
 .list_products {
@@ -2319,10 +2319,11 @@ img {
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
     width: 195px;
-    line-height: 50px;
+    line-height: 45px;
     margin: auto;
     text-align: center;
-    display: block; }
+    display: block;
+    box-sizing: border-box; }
     .private_office .order_block .submit:hover, .cart .order_block .submit:hover {
       background: #ff4504;
       color: #fff;
@@ -2426,3 +2427,79 @@ img {
       font-size: 30px;
       line-height: 1em;
       font-family: "FuturaPT-Medium", sans-serif; }
+
+.payment form {
+  margin-top: 15px;
+  margin-bottom: 100px; }
+  .payment form h3 {
+    background: #f0efef;
+    line-height: 85px;
+    color: #000000;
+    font-size: 48px;
+    font-family: "FuturaPT-Light", sans-serif;
+    text-align: center;
+    margin-bottom: 70px;
+    font-weight: normal; }
+  .payment form .radio {
+    display: table;
+    width: 100%;
+    margin-bottom: 70px; }
+    .payment form .radio > div {
+      display: table-cell;
+      vertical-align: middle; }
+      .payment form .radio > div label {
+        font-size: 18px;
+        line-height: 18px;
+        display: block; }
+  .payment form .form-holder {
+    width: 620px;
+    margin: 0 auto 40px; }
+    .payment form .form-holder .row-group {
+      margin-bottom: 20px; }
+      .payment form .form-holder .row-group:last-child {
+        margin-bottom: 0; }
+      .payment form .form-holder .row-group > div {
+        display: inline-block;
+        vertical-align: top; }
+        .payment form .form-holder .row-group > div:nth-child(2n+1) {
+          margin-right: 15px; }
+        .payment form .form-holder .row-group > div.address {
+          margin-right: 0;
+          display: block; }
+          .payment form .form-holder .row-group > div.address input[type="text"] {
+            width: 100%; }
+        .payment form .form-holder .row-group > div.error input[type="text"] {
+          border-color: red; }
+        .payment form .form-holder .row-group > div input[type="text"] {
+          border-radius: 2px;
+          border: 2px solid #e0e0e0;
+          box-sizing: border-box;
+          line-height: 40px;
+          padding: 0 10px;
+          width: 300px;
+          font-size: 18px;
+          color: #979797;
+          font-family: "FuturaBookC", sans-serif; }
+  .payment form .submit {
+    border: 2px solid #ff4504;
+    border-radius: 4px;
+    color: #ff4504;
+    font-size: 14px;
+    font-family: "FuturaPT-Demi", sans-serif;
+    box-shadow: none;
+    background: none;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    width: 195px;
+    line-height: 45px;
+    margin: auto;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    box-sizing: border-box; }
+    .payment form .submit:hover {
+      background: #ff4504;
+      color: #fff;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      text-decoration: none; }
