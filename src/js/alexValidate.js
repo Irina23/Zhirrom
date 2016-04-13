@@ -41,6 +41,8 @@
 							return /^[0-9]/.test(data);
 						case 'empty':
 							return /^[а-яіїєґёА-ЯІЇЄҐЁa-zA-Z0-9]+/.test(data);
+						case 'quantity':
+							return /^[1-9]/.test(data);
 						default:
 							return true;
 					}

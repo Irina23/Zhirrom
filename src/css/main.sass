@@ -863,7 +863,7 @@ img
   margin-left: -310px
   display: none
   opacity: 0
-  z-index: 5
+  z-index: 50
   padding: 60px
   text-align: center
   box-sizing: border-box
@@ -1088,7 +1088,7 @@ img
 
 
 #overlay
-  z-index: 3
+  z-index: 30
   position: fixed
   background-color: #000
   opacity: 0.85
@@ -2028,6 +2028,22 @@ img
           font-size: 16px
           line-height: 1.5em
 
+
+      .quantity
+        margin-bottom: 20px
+        &.error
+          input[type="text"]
+            border-color: red
+        input[type="text"]
+          border-radius: 2px
+          box-sizing: border-box
+          border: 1px solid #bab9b9
+          color: #686767
+          text-align: center
+          padding: 0 10px
+          font-size: 18px
+          line-height: 40px
+          width: 145px
 
       .submit
         width: 145px

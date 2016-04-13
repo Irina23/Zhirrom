@@ -753,7 +753,7 @@ img {
   margin-left: -310px;
   display: none;
   opacity: 0;
-  z-index: 5;
+  z-index: 50;
   padding: 60px;
   text-align: center;
   box-sizing: border-box; }
@@ -953,7 +953,7 @@ img {
       text-decoration: none; }
 
 #overlay {
-  z-index: 3;
+  z-index: 30;
   position: fixed;
   background-color: #000;
   opacity: 0.85;
@@ -1804,6 +1804,20 @@ img {
         color: #5c5c5c;
         font-size: 16px;
         line-height: 1.5em; }
+    .productfull .product_info .block_info .quantity {
+      margin-bottom: 20px; }
+      .productfull .product_info .block_info .quantity.error input[type="text"] {
+        border-color: red; }
+      .productfull .product_info .block_info .quantity input[type="text"] {
+        border-radius: 2px;
+        box-sizing: border-box;
+        border: 1px solid #bab9b9;
+        color: #686767;
+        text-align: center;
+        padding: 0 10px;
+        font-size: 18px;
+        line-height: 40px;
+        width: 145px; }
     .productfull .product_info .block_info .submit {
       width: 145px;
       line-height: 40px;
