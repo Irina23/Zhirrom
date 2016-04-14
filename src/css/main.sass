@@ -1002,7 +1002,7 @@ img
   margin-left: -170px
   display: none
   opacity: 0
-  z-index: 5
+  z-index: 50
   padding: 45px
   text-align: center
   box-sizing: border-box
@@ -1452,18 +1452,21 @@ img
   .products
     float: right
     width: 720px
-    margin: 0 -15px 100px
+    margin: 0 0 100px
     transition: opacity 0.35s ease-in-out
-
+    &.brand_pruduct
+      width: 100%
+      float: none
+      .block_product
+        margin: 0 6px 70px
 
     .block_product
       width: 220px
       display: inline-block
       vertical-align: top
       overflow: hidden
-      margin: 0 8px
+      margin: 0 8px 70px
       box-sizing: border-box
-      margin-bottom: 70px
       transition: all 0.35s
       a
         .img_holder
@@ -2858,4 +2861,45 @@ img
           transition: all 0.35s
           text-decoration: none
           color: $main-color
+
+@media screen and (max-width: 1024px)
+  .wrap, .header
+    width: 880px
+
+  .header
+    .search,
+    .logo
+      margin-right: 90px
+  .about .text_holder
+    width: 440px
+  #faq .block_text
+    width: 400px
+  #block_info .block_article
+    width: 500px
+  .footer .wrap .logo, .footer .wrap .contact
+    margin-right: 100px
+  .header #menu li
+    margin-right: 19px
+  .brand .list_brand li
+    width: 32%
+
+  .productfull
+    .product_info
+      .image
+        margin-right: 40px
+      .block_info
+        width: 375px
+    .related_products .block_product
+      width: 210px
+      margin: 0 5px 40px
+
+  .list_products
+    .products
+      &.brand_pruduct .block_product
+        margin: 0 3px 70px
+      .block_product
+        width: 210px
+    .filter > div.preview, .filter > div.sort_by
+      margin-right: 35px
+
 
