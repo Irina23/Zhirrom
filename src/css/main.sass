@@ -731,7 +731,7 @@ img
 
           h3
             font-size: 60px
-            color: #000
+            color: #292929
             span
               display: inline-block
               vertical-align: top
@@ -763,7 +763,7 @@ img
           transition: all 0.35s
           display: block
           margin: auto
-          background: #e5cb37
+          background: $main-color
           border-radius: 6px
           box-shadow: inset  0px -2px 4px 2px rgba(0,0,0,0.16)
           text-transform: uppercase
@@ -772,7 +772,7 @@ img
 
           &:hover
             transition: all 0.35s
-            background: $main-color
+            background: #fe622b
             text-decoration: none
 
 
@@ -1259,7 +1259,7 @@ img
   li
     display: inline-block
     vertical-align: middle
-    margin-right: 15px
+    margin-right: 5px
     padding-right: 10px
     position: relative
     &:last-child
@@ -2397,6 +2397,8 @@ img
       float: left
       margin-right: 60px
       position: relative
+      width: 380px
+      height: 380px
 
 
       img
@@ -2469,6 +2471,7 @@ img
                 .ya-share2__title
                   color: #fe622b
                   transition: all 0.35s
+
             .ya-share2__badge
               display: none
             .ya-share2__title
@@ -2478,6 +2481,7 @@ img
               line-height: 1em
               color: $main-color
               transition: all 0.35s
+              margin-left: 0!important
 
 
 
@@ -2649,10 +2653,11 @@ img
         position: relative
         .delete
           position: absolute
-          top: 30px
+          top: 10px
           right: 0
-          width: 16px
-          height: 16px
+          width: 10px
+          height: 10px
+          padding: 0
           border: 0
           border-radius: 0
           background: url("../img/icons/close.png") no-repeat
@@ -2666,14 +2671,14 @@ img
         .row
           display: inline-block
           vertical-align: middle
-          width: 100px
+          width: 125px
           box-sizing: border-box
           padding: 0 10px
           .title
             color:  #b0afaf
             font-size: 16px
             line-height: 1em
-            margin-bottom: 30px
+            margin-bottom: 5px
           .name
             color: #000000
             font-size: 18px
@@ -2691,10 +2696,10 @@ img
 
 
           &.image
-            width: 220px
+            width: 60px
             .img-holder
-              width: 220px
-              height: 220px
+              width: 60px
+              height: 60px
             a
               display: block
           &.quantity
@@ -2703,7 +2708,7 @@ img
 
 
           &.name
-            width: 270px
+            width: 350px
             padding: 0 20px 0 40px
           &.price
             width: 130px
@@ -2989,14 +2994,143 @@ img
         h4
           font-size: 24px
 
+  #block_info
+    .block_order_info
+      width: 100%
+      h4
+        color: $main-color
+        background: none
+        box-shadow: none
+        padding: 0
+        margin-bottom: 30px
+        line-height: 1em
+        text-align: left
+        width: 100%
 
 
-@media screen and (max-width: 440px)
+  #slider
+    .slider
+      .item
+        .block_text
+          width: 100%
+          &.left_text
+            width: 100%
+            h3
+              font-size: 36px
+              span
+                font-size: 36px
+                margin-right: 5px
+          h3
+            font-size: 36px
+            margin-bottom: 30px
+
   .about .advantages_holder
     border-width: 5px
     padding: 15px
+
+
+  #slider
+    .slider
+
+      .item
+        .block_text
+          padding-top: 100px
+    .bx-wrapper .bx-pager.bx-default-pager
+      left: inherit
+      right: 150px
+  #slider .bx-wrapper .bx-controls-direction
+    left: inherit
+    right: 150px
+  #slider .slider .item .block_text.left_text
+    top: 200px
+
+
+
+  .blog .list_items .item .block_text .name a
+    font-size: 24px
+    height: auto
+    white-space: normal
+
+
+  .blog .list_items .item
+    margin-bottom: 40px
+    .block_text .id_article
+      font-size: 60px
+  .blog .list_items
+    margin-bottom: 50px
+  .blog .list_items .ias-trigger
+    margin-top: 0
+  .blog h1
+    font-size: 36px
+    margin-bottom: 40px
+
+
+
+  .error404
+    padding-top: 0
+    .container
+      padding: 40px 20px
+
+    .wrap
+      padding: 40px 0
+      .error404_text
+        font-size: 130px
+      .error_text
+        font-size: 23px
+        letter-spacing: 0
+        font-family: inherit
+
+
+
+  .article
+    h1
+      font-size: 36px
+      margin-bottom: 60px
+    .block_text p
+      margin-bottom: 20px
+    .img_block
+      float: none
+      margin-right: 0
+      width: 100%
+      margin-bottom: 40px
+      height: auto
+      img
+        width: 100%
+
+
+
+
+
+
+
+@media screen and (max-width: 800px)
+
+  .blog .list_items .item
+    .img-holder
+      width: 100%
+      img
+        width: 100%
+    .img_block
+      float: none!important
+      margin-right: 0!important
+      margin-left: 0!important
+
+  .bread li
+    a,span
+      font-size: 14px
+
+@media screen and (max-width: 500px)
+  .blog .list_items .item .img-holder
+    height: auto
+
+@media screen and (max-width: 440px)
+  .about .advantages_holder
     li
       h4
         font-size: 18px
       p.text
         font-size: 16px
+
+
+  .article .block_text .block_share_social .ya-share2 ul li .ya-share2__title
+    font-size: 16px
