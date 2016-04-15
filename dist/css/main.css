@@ -757,6 +757,24 @@ img {
   padding: 60px;
   text-align: center;
   box-sizing: border-box; }
+  #registration .message_modal, #contact_form .message_modal, #private_edit .message_modal {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: #fff;
+    box-sizing: border-box;
+    padding-top: 230px;
+    display: none;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    font-size: 24px;
+    text-align: center; }
+    #registration .message_modal.show, #contact_form .message_modal.show, #private_edit .message_modal.show {
+      display: block;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
   #registration .modal_close, #contact_form .modal_close, #private_edit .modal_close {
     position: absolute;
     width: 16px;
@@ -767,7 +785,8 @@ img {
     right: 20px;
     cursor: pointer;
     -webkit-transition: all 0.35s;
-    transition: all 0.35s; }
+    transition: all 0.35s;
+    z-index: 10; }
     #registration .modal_close:hover, #contact_form .modal_close:hover, #private_edit .modal_close:hover {
       background: url("../img/icons/close_hover.png") no-repeat;
       background-size: 100%;
@@ -2695,12 +2714,17 @@ img {
     border-width: 5px;
     padding: 15px; }
   #slider .bx-wrapper .bx-pager.bx-default-pager {
-    left: 20px;
+    right: 20px;
+    left: inherit;
     bottom: 60px; }
   #slider .bx-wrapper .bx-controls-direction {
-    left: 50px; }
+    right: 50px;
+    left: inherit;
+    position: absolute; }
+  #slider .bx-wrapper .bx-pager.bx-default-pager a {
+    color: rgba(255, 255, 255, 0.5); }
   #slider .slider .item .block_text.left_text {
-    top: 200px; }
+    top: 210px; }
   .blog .list_items .item .block_text .name a {
     font-size: 24px;
     height: auto;
@@ -2789,6 +2813,20 @@ img {
   .bread li a, .bread li span {
     font-size: 14px; } }
 
+@media screen and (max-width: 650px) {
+  #registration, #contact_form, #private_edit {
+    width: calc( 100% - 40px);
+    left: 20px;
+    margin-left: 0; }
+    #registration .form-holder .row-group > div, #contact_form .form-holder .row-group > div, #private_edit .form-holder .row-group > div {
+      display: block;
+      margin: auto !important; }
+    #registration .form-holder input[type="text"], #registration .form-holder input[type="email"], #contact_form .form-holder input[type="text"], #contact_form .form-holder input[type="email"], #private_edit .form-holder input[type="text"], #private_edit .form-holder input[type="email"] {
+      width: 100%; }
+  #contact_form {
+    height: 530px;
+    margin-top: -265px; } }
+
 @media screen and (max-width: 600px) {
   .brand .list_brand li {
     width: 49%; }
@@ -2804,7 +2842,18 @@ img {
   #slider .slider .item .block_text.left_text {
     width: auto; }
     #slider .slider .item .block_text.left_text h3 {
-      text-align: right; } }
+      text-align: left;
+      margin-left: 20px; }
+  #registration, #contact_form, #private_edit {
+    padding: 30px; }
+    #registration h3, #contact_form h3, #private_edit h3 {
+      margin-bottom: 20px;
+      font-size: 23px; }
+    #registration .form-holder .btn, #contact_form .form-holder .btn, #private_edit .form-holder .btn {
+      margin-top: 20px; }
+  #contact_form {
+    height: 440px;
+    margin-top: -220px; } }
 
 @media screen and (max-width: 440px) {
   .brand .list_brand li {
@@ -2834,4 +2883,5 @@ img {
   .list_category .item-category .number {
     font-size: 30px; }
   #slider .slider .item .block_text.left_text a {
-    float: right; } }
+    float: left;
+    margin-left: 20px; } }

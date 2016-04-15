@@ -60,6 +60,7 @@ jQuery(document).ready(function() {
             function(){
                 $(this).css('display', 'none');
                 overlay.fadeOut(400);
+                $(".message_modal").removeClass("show");
             }
         );
     });
