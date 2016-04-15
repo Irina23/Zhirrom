@@ -1024,7 +1024,22 @@ img
   text-align: center
   box-sizing: border-box
 
-
+  .message_modal
+    position: absolute
+    top: 0
+    height: 100%
+    width: 100%
+    left: 0
+    background: #fff
+    box-sizing: border-box
+    padding-top: 150px
+    display: none
+    transition: all 0.35s
+    font-size: 24px
+    text-align: center
+    &.show
+      display: block
+      transition: all 0.35s
   .modal_close
     position: absolute
     width: 16px
@@ -1035,6 +1050,7 @@ img
     right: 20px
     cursor: pointer
     transition: all 0.35s
+    z-index: 10
     &:hover
       background: url("../img/icons/close_hover.png") no-repeat
       background-size: 100%
@@ -3283,3 +3299,11 @@ img
   #slider .slider .item .block_text.left_text a
     float: left
     margin-left: 20px
+
+  #login, #call_back
+    width: calc( 100% - 40px)
+    margin-left: 0
+    left: 20px
+    padding: 20px
+    height: 280px
+    margin-top: -140px

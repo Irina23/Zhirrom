@@ -904,6 +904,24 @@ img {
   padding: 45px;
   text-align: center;
   box-sizing: border-box; }
+  #login .message_modal, #call_back .message_modal {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: #fff;
+    box-sizing: border-box;
+    padding-top: 150px;
+    display: none;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    font-size: 24px;
+    text-align: center; }
+    #login .message_modal.show, #call_back .message_modal.show {
+      display: block;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
   #login .modal_close, #call_back .modal_close {
     position: absolute;
     width: 16px;
@@ -914,7 +932,8 @@ img {
     right: 20px;
     cursor: pointer;
     -webkit-transition: all 0.35s;
-    transition: all 0.35s; }
+    transition: all 0.35s;
+    z-index: 10; }
     #login .modal_close:hover, #call_back .modal_close:hover {
       background: url("../img/icons/close_hover.png") no-repeat;
       background-size: 100%;
@@ -2884,4 +2903,11 @@ img {
     font-size: 30px; }
   #slider .slider .item .block_text.left_text a {
     float: left;
-    margin-left: 20px; } }
+    margin-left: 20px; }
+  #login, #call_back {
+    width: calc( 100% - 40px);
+    margin-left: 0;
+    left: 20px;
+    padding: 20px;
+    height: 280px;
+    margin-top: -140px; } }
