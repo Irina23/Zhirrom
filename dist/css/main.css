@@ -2667,7 +2667,7 @@ img {
       border: 5px solid #ff4504;
       padding: 20px;
       width: 100%;
-      margin-bottom: 40px; }
+      margin: 0 auto 40px; }
       #block_info .block_article .item h4 {
         font-size: 24px; }
   #block_info .block_order_info {
@@ -2683,27 +2683,22 @@ img {
       width: 100%; }
   #slider .slider .item .block_text {
     width: 100%; }
-    #slider .slider .item .block_text.left_text {
-      width: 100%; }
-      #slider .slider .item .block_text.left_text h3 {
-        font-size: 36px; }
-        #slider .slider .item .block_text.left_text h3 span {
-          font-size: 36px;
-          margin-right: 5px; }
+    #slider .slider .item .block_text.left_text h3 {
+      font-size: 36px; }
+      #slider .slider .item .block_text.left_text h3 span {
+        font-size: 36px;
+        margin-right: 5px; }
     #slider .slider .item .block_text h3 {
       font-size: 36px;
       margin-bottom: 30px; }
   .about .advantages_holder {
     border-width: 5px;
     padding: 15px; }
-  #slider .slider .item .block_text {
-    padding-top: 100px; }
   #slider .bx-wrapper .bx-pager.bx-default-pager {
-    left: inherit;
-    right: 150px; }
+    left: 20px;
+    bottom: 60px; }
   #slider .bx-wrapper .bx-controls-direction {
-    left: inherit;
-    right: 150px; }
+    left: 50px; }
   #slider .slider .item .block_text.left_text {
     top: 200px; }
   .blog .list_items .item .block_text .name a {
@@ -2745,7 +2740,42 @@ img {
     margin-bottom: 40px;
     height: auto; }
     .article .img_block img {
-      width: 100%; } }
+      width: 100%; }
+  .brand .block_brand {
+    margin-bottom: 50px;
+    padding: 40px 20px; }
+  .brand h1 {
+    font-size: 36px;
+    margin-bottom: 40px; }
+  .brand .text_block {
+    margin-bottom: 50px; }
+  .list_category {
+    border-width: 5px;
+    padding: 40px 20px; }
+    .list_category h1 {
+      font-size: 36px;
+      margin-bottom: 50px; }
+    .list_category .item-category {
+      width: 100%;
+      display: block;
+      margin-bottom: 40px; }
+      .list_category .item-category .number {
+        text-align: left !important;
+        margin-top: 0 !important; }
+      .list_category .item-category .img-holder {
+        float: left !important;
+        margin-right: 25px !important;
+        margin-left: 0 !important; }
+      .list_category .item-category h3 {
+        left: inherit !important;
+        font-size: 28px;
+        margin-bottom: 15px !important; }
+      .list_category .item-category .readmore {
+        position: relative !important;
+        left: inherit !important;
+        top: inherit !important;
+        font-size: 18px;
+        bottom: inherit !important; } }
 
 @media screen and (max-width: 800px) {
   .blog .list_items .item .img-holder {
@@ -2759,14 +2789,49 @@ img {
   .bread li a, .bread li span {
     font-size: 14px; } }
 
+@media screen and (max-width: 600px) {
+  .brand .list_brand li {
+    width: 49%; }
+  .list_category .item-category .img-holder {
+    width: 140px !important;
+    height: auto !important; } }
+
 @media screen and (max-width: 500px) {
   .blog .list_items .item .img-holder {
-    height: auto; } }
+    height: auto; }
+  #slider .slider .item .block_text {
+    padding-top: 100px; }
+  #slider .slider .item .block_text.left_text {
+    width: auto; }
+    #slider .slider .item .block_text.left_text h3 {
+      text-align: right; } }
 
 @media screen and (max-width: 440px) {
+  .brand .list_brand li {
+    width: 100%; }
   .about .advantages_holder li h4 {
     font-size: 18px; }
   .about .advantages_holder li p.text {
     font-size: 16px; }
   .article .block_text .block_share_social .ya-share2 ul li .ya-share2__title {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .list_category .item-category .img-holder {
+    margin-right: 15px !important; }
+  .list_category .item-category .number {
+    font-size: 36px; }
+  .list_category .item-category h3 {
+    font-size: 24px; }
+  .list_category .item-category .img-holder {
+    width: 100px !important; } }
+
+@media screen and (max-width: 400px) {
+  .list_category .item-category .img-holder {
+    width: 80px !important;
+    margin-right: 10px !important; }
+  .list_category .item-category h3 {
+    font-size: 22px;
+    margin-bottom: 5px !important; }
+  .list_category .item-category .number {
+    font-size: 30px; }
+  #slider .slider .item .block_text.left_text a {
+    float: right; } }
