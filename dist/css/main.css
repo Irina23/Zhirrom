@@ -2688,7 +2688,9 @@ img {
   .list_products .products .block_product {
     width: 210px; }
   .list_products .filter > div.preview, .list_products .filter > div.sort_by {
-    margin-right: 35px; } }
+    margin-right: 35px; }
+  .private_office .order_block .list_order .order .row.name, .cart .order_block .list_order .order .row.name {
+    width: 295px; } }
 
 @media screen and (max-width: 959px) {
   body {
@@ -3098,7 +3100,25 @@ img {
   .list_products h1 {
     font-size: 36px; }
   .list_products .description {
-    width: auto; } }
+    width: auto; }
+  .block_private_office {
+    margin-bottom: 50px;
+    padding: 30px 20px; }
+    .block_private_office h1 {
+      font-size: 36px;
+      margin-bottom: 30px; }
+  .private_office .container .order_block h1, .private_office .container .order_block h3, .cart .container .order_block h1, .cart .container .order_block h3 {
+    font-size: 36px;
+    line-height: 1em;
+    margin-bottom: 40px; }
+  .private_office .order_block .list_order .order .row.name, .cart .order_block .list_order .order .row.name {
+    width: 295px; }
+  .private_office .order_block,
+  .cart .order_block {
+    margin-bottom: 50px; }
+    .private_office .order_block .list_order .item,
+    .cart .order_block .list_order .item {
+      margin-bottom: 30px; } }
 
 @media screen and (max-width: 930px) {
   .list_products .filter_products {
@@ -3128,13 +3148,32 @@ img {
   .list_products .filter > div.sort_by {
     margin-right: 20px; } }
 
+@media screen and (max-width: 920px) {
+  .private_office .order_block .list_order .order .row, .cart .order_block .list_order .order .row {
+    width: 115px; } }
+
 @media screen and (max-width: 900px) {
   .list_products .filter > div {
     display: block;
     text-align: center;
     margin: 0 auto 20px !important; }
     .list_products .filter > div:last-child {
-      margin-bottom: 0 !important; } }
+      margin-bottom: 0 !important; }
+  .private_office .order_block .list_order .order .row.name, .cart .order_block .list_order .order .row.name {
+    width: 275px; } }
+
+@media screen and (max-width: 870px) {
+  body .private_office .order_block .list_order .order .row.name,
+  body .cart .order_block .list_order .order .row.name {
+    width: 250px; } }
+
+@media screen and (max-width: 850px) {
+  .cart .list_order .total_price .price {
+    font-size: 24px; }
+  body .private_office .order_block .list_order .order .row.name, body .cart .order_block .list_order .order .row.name {
+    width: 205px; }
+  .private_office .order_block .list_order .order .row.name, .cart .order_block .list_order .order .row.name {
+    padding: 0 20px; } }
 
 @media screen and (max-width: 800px) {
   .blog .list_items .item .img-holder {
@@ -3146,7 +3185,31 @@ img {
     margin-right: 0 !important;
     margin-left: 0 !important; }
   .bread li a, .bread li span {
-    font-size: 14px; } }
+    font-size: 14px; }
+  body .private_office .order_block .list_order .order .row,
+  body .cart .order_block .list_order .order .row {
+    display: block;
+    width: 100% !important;
+    text-align: center;
+    margin-bottom: 10px; }
+  .private_office .order_block .list_order .order .row .title,
+  .cart .order_block .list_order .order .row .title,
+  .order .row .name,
+  .cart .order_block .list_order .order .row .name {
+    display: inline-block;
+    vertical-align: top; }
+  body .private_office .order_block .list_order .item,
+  body .cart .order_block .list_order .item {
+    display: block; }
+  .private_office .order_block .list_order .order .row.image .img-holder,
+  .cart .order_block .list_order .order .row.image .img-holder {
+    margin: 10px auto 0; } }
+
+@media screen and (max-width: 750px) {
+  .block_private_office .img-holder {
+    margin-right: 20px;
+    width: 250px;
+    height: 250px; } }
 
 @media screen and (max-width: 650px) {
   #registration, #contact_form, #private_edit {
@@ -3188,7 +3251,13 @@ img {
     height: auto !important; }
   .list_products .products.preview_block .block_product .img_holder {
     width: 60px;
-    height: auto; } }
+    height: auto; }
+  .private_office .block_private_office .img-holder {
+    margin: 0 auto 30px;
+    width: 100%;
+    float: none; }
+    .private_office .block_private_office .img-holder img {
+      width: 100%; } }
 
 @media screen and (max-width: 500px) {
   .blog .list_items .item .img-holder {
