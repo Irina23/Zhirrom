@@ -2492,10 +2492,10 @@ img {
       line-height: 1em;
       font-family: "FuturaPT-Medium", sans-serif; }
 
-.payment form {
+.payment form#payment {
   margin-top: 15px;
   margin-bottom: 100px; }
-  .payment form h3 {
+  .payment form#payment h3 {
     background: #f0efef;
     line-height: 85px;
     color: #000000;
@@ -2504,37 +2504,37 @@ img {
     text-align: center;
     margin-bottom: 70px;
     font-weight: normal; }
-  .payment form .radio {
+  .payment form#payment .radio {
     display: table;
     width: 100%;
     margin-bottom: 70px; }
-    .payment form .radio > div {
+    .payment form#payment .radio > div {
       display: table-cell;
       vertical-align: middle; }
-      .payment form .radio > div label {
+      .payment form#payment .radio > div label {
         font-size: 18px;
         line-height: 18px;
         display: block; }
-  .payment form .form-holder {
+  .payment form#payment .form-holder {
     width: 620px;
     margin: 0 auto 40px; }
-    .payment form .form-holder .row-group {
+    .payment form#payment .form-holder .row-group {
       margin-bottom: 20px; }
-      .payment form .form-holder .row-group:last-child {
+      .payment form#payment .form-holder .row-group:last-child {
         margin-bottom: 0; }
-      .payment form .form-holder .row-group > div {
+      .payment form#payment .form-holder .row-group > div {
         display: inline-block;
         vertical-align: top; }
-        .payment form .form-holder .row-group > div:nth-child(2n+1) {
+        .payment form#payment .form-holder .row-group > div:nth-child(2n+1) {
           margin-right: 15px; }
-        .payment form .form-holder .row-group > div.address {
+        .payment form#payment .form-holder .row-group > div.address {
           margin-right: 0;
           display: block; }
-          .payment form .form-holder .row-group > div.address input[type="text"] {
+          .payment form#payment .form-holder .row-group > div.address input[type="text"] {
             width: 100%; }
-        .payment form .form-holder .row-group > div.error input[type="text"] {
+        .payment form#payment .form-holder .row-group > div.error input[type="text"] {
           border-color: red; }
-        .payment form .form-holder .row-group > div input[type="text"] {
+        .payment form#payment .form-holder .row-group > div input[type="text"] {
           border-radius: 2px;
           border: 2px solid #e0e0e0;
           box-sizing: border-box;
@@ -2544,7 +2544,7 @@ img {
           font-size: 18px;
           color: #979797;
           font-family: "FuturaBookC", sans-serif; }
-  .payment form .submit {
+  .payment form#payment .submit {
     border: 2px solid #ff4504;
     border-radius: 4px;
     color: #ff4504;
@@ -2561,7 +2561,7 @@ img {
     display: block;
     cursor: pointer;
     box-sizing: border-box; }
-    .payment form .submit:hover {
+    .payment form#payment .submit:hover {
       background: #ff4504;
       color: #fff;
       -webkit-transition: all 0.35s;
@@ -2721,7 +2721,8 @@ img {
         background: #727272;
         position: absolute;
         top: 10px;
-        right: 15px; }
+        right: 15px;
+        z-index: 10; }
         header .top .search input[type="text"] {
           border: 0;
           border-bottom: 1px solid #fff;
@@ -2988,7 +2989,32 @@ img {
         left: inherit !important;
         top: inherit !important;
         font-size: 18px;
-        bottom: inherit !important; } }
+        bottom: inherit !important; }
+  .payment form#payment {
+    margin-bottom: 50px; }
+    .payment form#payment .radio {
+      display: block;
+      margin-bottom: 40px; }
+      .payment form#payment .radio > div {
+        display: block;
+        margin-bottom: 15px; }
+        .payment form#payment .radio > div:last-child {
+          margin-bottom: 0; }
+    .payment form#payment h3 {
+      font-size: 36px;
+      margin-bottom: 30px;
+      line-height: 50px; }
+    .payment form#payment .form-holder {
+      width: 100%; }
+      .payment form#payment .form-holder .row-group {
+        margin-bottom: 20px; }
+        .payment form#payment .form-holder .row-group > div {
+          margin-bottom: 20px;
+          display: block; }
+          .payment form#payment .form-holder .row-group > div input[type="text"] {
+            width: 100%; }
+          .payment form#payment .form-holder .row-group > div:nth-child(2n+1) {
+            margin-right: 0; } }
 
 @media screen and (max-width: 800px) {
   .blog .list_items .item .img-holder {

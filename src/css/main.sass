@@ -2777,7 +2777,7 @@ img
 
 
 .payment
-  form
+  form#payment
     margin-top: 15px
     margin-bottom: 100px
     h3
@@ -3060,6 +3060,7 @@ img
         position: absolute
         top: 10px
         right: 15px
+        z-index: 10
         input[type="text"]
           border: 0
           border-bottom: 1px solid #fff
@@ -3397,6 +3398,32 @@ img
         font-size: 18px
         bottom: inherit!important
 
+  .payment
+    form#payment
+      margin-bottom: 50px
+      .radio
+        display: block
+        margin-bottom: 40px
+        >div
+          display: block
+          margin-bottom: 15px
+          &:last-child
+            margin-bottom: 0
+      h3
+        font-size: 36px
+        margin-bottom: 30px
+        line-height: 50px
+      .form-holder
+        width: 100%
+        .row-group
+          margin-bottom: 20px
+          > div
+            margin-bottom: 20px
+            display: block
+            input[type="text"]
+              width: 100%
+            &:nth-child(2n+1)
+              margin-right: 0
 
 
 
