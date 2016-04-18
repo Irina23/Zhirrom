@@ -310,8 +310,14 @@ jQuery(document).ready(function() {
 
 
 
-
-
+    jQuery("#menu-icon").on("click", function(){
+        jQuery(this).next().slideToggle();
+    });
+    jQuery("header.mobile li.parent >a").click( function(event){
+        event.preventDefault();
+        jQuery(this).closest(".parent").find(".drop-menu").slideToggle();
+        jQuery(this).closest(".parent").toggleClass("open");
+    });
 
 
 });

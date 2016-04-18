@@ -60,6 +60,9 @@ body {
 .container {
   min-height: 44vh; }
 
+header.mobile {
+  display: none; }
+
 .img-holder {
   overflow: hidden;
   height: 100%; }
@@ -800,14 +803,16 @@ img {
     font-family: "FuturaPT-Demi", sans-serif;
     font-weight: normal; }
   #registration .form-holder .row-group .file, #contact_form .form-holder .row-group .file, #private_edit .form-holder .row-group .file {
-    width: 240px;
-    height: 45px;
-    background: url("../img/icons/file.png") no-repeat;
+    width: 238px;
+    height: 43px;
+    background: url("../img/icons/file2.png") no-repeat;
     overflow: hidden;
     -webkit-transition: all 0.35s;
-    transition: all 0.35s; }
+    transition: all 0.35s;
+    border: 1px solid #bab9b9;
+    border-radius: 2px; }
     #registration .form-holder .row-group .file:hover, #contact_form .form-holder .row-group .file:hover, #private_edit .form-holder .row-group .file:hover {
-      background: url("../img/icons/file_hover.png") no-repeat;
+      background: url("../img/icons/file_hover2.png") no-repeat;
       -webkit-transition: all 0.35s;
       transition: all 0.35s; }
   #registration .form-holder .row-group > div, #contact_form .form-holder .row-group > div, #private_edit .form-holder .row-group > div {
@@ -2637,10 +2642,175 @@ img {
 @media screen and (max-width: 959px) {
   body {
     min-width: 320px; }
+  header {
+    display: none; }
+    header.mobile {
+      display: block; }
+    header .top {
+      padding: 10px 15px;
+      position: relative; }
+      header .top #menu #menu-icon {
+        cursor: pointer;
+        position: relative;
+        z-index: 10; }
+        header .top #menu #menu-icon + ul {
+          display: none;
+          padding: 20px 0 10px; }
+        header .top #menu #menu-icon .icon-bar {
+          background-color: #fff;
+          display: block;
+          width: 40px;
+          height: 4px;
+          margin-bottom: 7px; }
+          header .top #menu #menu-icon .icon-bar:last-child {
+            margin-bottom: 0; }
+      header .top #menu .menu li {
+        display: block;
+        position: relative;
+        margin-bottom: 10px; }
+        header .top #menu .menu li a {
+          text-transform: uppercase;
+          color: #fff;
+          font-family: "FuturaPT-Medium", sans-serif;
+          letter-spacing: 2px;
+          font-size: 14px;
+          line-height: 1em;
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s;
+          padding: 7px 0;
+          display: block; }
+          header .top #menu .menu li a:hover {
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+            color: #ff4504;
+            text-decoration: none; }
+        header .top #menu .menu li.active a {
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s;
+          color: #ff4504;
+          text-decoration: none; }
+        header .top #menu .menu li:last-child {
+          margin-bottom: 0; }
+        header .top #menu .menu li.parent {
+          cursor: pointer; }
+          header .top #menu .menu li.parent.open:before {
+            display: none; }
+          header .top #menu .menu li.parent:after {
+            position: absolute;
+            content: "";
+            top: 13px;
+            right: 0;
+            width: 10px;
+            height: 2px;
+            background: #fff; }
+          header .top #menu .menu li.parent:before {
+            position: absolute;
+            content: "";
+            top: 9px;
+            right: 4px;
+            width: 2px;
+            height: 10px;
+            background: #fff; }
+          header .top #menu .menu li.parent ul.drop-menu {
+            margin-top: 10px;
+            padding-left: 15px; }
+        header .top #menu .menu li ul.drop-menu {
+          display: none; }
+      header .top .search {
+        width: 155px;
+        background: #727272;
+        position: absolute;
+        top: 10px;
+        right: 15px; }
+        header .top .search input[type="text"] {
+          border: 0;
+          border-bottom: 1px solid #fff;
+          padding: 4px 0;
+          font-family: "FuturaBookC", sans-serif;
+          line-height: 1em;
+          font-size: 16px;
+          color: #fff;
+          background: #727272; }
+          header .top .search input[type="text"]::-webkit-input-placeholder {
+            color: #fff; }
+          header .top .search input[type="text"]::-moz-placeholder {
+            color: #fff; }
+          header .top .search input[type="text"]::-moz-placeholder {
+            color: #fff; }
+        header .top .search .form-control {
+          display: inline-block;
+          vertical-align: middle; }
+          header .top .search .form-control.error input[type="text"] {
+            border-color: red; }
+        header .top .search .submit {
+          display: inline-block;
+          vertical-align: middle;
+          width: 15px;
+          height: 15px;
+          background: url("../img/icons/search2.png") no-repeat;
+          background-size: 100%;
+          position: relative;
+          margin-left: -20px;
+          cursor: pointer; }
   .wrap, .header {
     width: 100%;
     box-sizing: border-box;
     padding: 0 20px; }
+  .header {
+    padding: 20px; }
+    .header .cart a {
+      font-size: 16px;
+      padding-left: 35px; }
+      .header .cart a span {
+        font-size: 18px;
+        line-height: 18px; }
+    .header .logo {
+      display: block;
+      margin: 0 auto 20px; }
+    .header .header_left {
+      float: left; }
+      .header .header_left .user-login a {
+        display: block;
+        line-height: 38px;
+        color: #000;
+        font-size: 18px;
+        min-width: 100px;
+        text-align: center;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        box-sizing: border-box;
+        padding: 0 10px; }
+        .header .header_left .user-login a:hover {
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s;
+          color: #ff4504;
+          text-decoration: none; }
+        .header .header_left .user-login a.login {
+          background: #ff4504;
+          border-radius: 2px;
+          box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16);
+          color: #fff; }
+          .header .header_left .user-login a.login:hover {
+            color: #fff;
+            background: #fe622b; }
+    .header .header_right {
+      float: right; }
+      .header .header_right a {
+        display: block;
+        margin-bottom: 15px;
+        color: #000;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        font-size: 16px;
+        line-height: 1em; }
+        .header .header_right a.email {
+          letter-spacing: 1px;
+          margin-bottom: 0; }
+        .header .header_right a:hover {
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s;
+          color: #ff4504;
+          text-decoration: none; }
   .footer .wrap {
     width: 280px;
     padding: 0; }
@@ -2836,12 +3006,26 @@ img {
   #registration, #contact_form, #private_edit {
     width: calc( 100% - 40px);
     left: 20px;
-    margin-left: 0; }
+    margin-left: 0;
+    padding: 30px;
+    height: 460px;
+    margin-top: -230px;
+    overflow: auto; }
+    #registration .form-holder .row-group .file, #contact_form .form-holder .row-group .file, #private_edit .form-holder .row-group .file {
+      width: 100%;
+      background-position: top center;
+      margin-bottom: 20px !important;
+      cursor: pointer; }
+      #registration .form-holder .row-group .file:hover, #contact_form .form-holder .row-group .file:hover, #private_edit .form-holder .row-group .file:hover {
+        background-position: top center; }
+      #registration .form-holder .row-group .file input[type="file"], #contact_form .form-holder .row-group .file input[type="file"], #private_edit .form-holder .row-group .file input[type="file"] {
+        width: 100% !important; }
     #registration .form-holder .row-group > div, #contact_form .form-holder .row-group > div, #private_edit .form-holder .row-group > div {
       display: block;
       margin: auto !important; }
-    #registration .form-holder input[type="text"], #registration .form-holder input[type="email"], #contact_form .form-holder input[type="text"], #contact_form .form-holder input[type="email"], #private_edit .form-holder input[type="text"], #private_edit .form-holder input[type="email"] {
-      width: 100%; }
+    #registration .form-holder .row-group input[type="text"], #registration .form-holder .row-group input[type="email"], #contact_form .form-holder .row-group input[type="text"], #contact_form .form-holder .row-group input[type="email"], #private_edit .form-holder .row-group input[type="text"], #private_edit .form-holder .row-group input[type="email"] {
+      width: 100%;
+      margin-bottom: 20px; }
   #contact_form {
     height: 530px;
     margin-top: -265px; } }
@@ -2863,16 +3047,20 @@ img {
     #slider .slider .item .block_text.left_text h3 {
       text-align: left;
       margin-left: 20px; }
-  #registration, #contact_form, #private_edit {
-    padding: 30px; }
-    #registration h3, #contact_form h3, #private_edit h3 {
-      margin-bottom: 20px;
-      font-size: 23px; }
-    #registration .form-holder .btn, #contact_form .form-holder .btn, #private_edit .form-holder .btn {
-      margin-top: 20px; }
-  #contact_form {
+  #registration h3, #contact_form h3, #private_edit h3 {
+    margin-bottom: 20px;
+    font-size: 23px; }
+  #registration .form-holder .btn, #contact_form .form-holder .btn, #private_edit .form-holder .btn {
+    margin-top: 20px; }
+  #registration .form-holder .row-group .file, #contact_form .form-holder .row-group .file, #private_edit .form-holder .row-group .file {
+    margin-bottom: 10px !important; }
+  #registration .form-holder .row-group input[type="text"], #registration .form-holder .row-group input[type="email"], #contact_form .form-holder .row-group input[type="text"], #contact_form .form-holder .row-group input[type="email"], #private_edit .form-holder .row-group input[type="text"], #private_edit .form-holder .row-group input[type="email"] {
+    margin-bottom: 10px; }
+  #contact_form, #login {
     height: 440px;
-    margin-top: -220px; } }
+    margin-top: -220px; }
+    #contact_form h3, #login h3 {
+      margin-bottom: 20px; } }
 
 @media screen and (max-width: 440px) {
   .brand .list_brand li {
