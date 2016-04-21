@@ -618,9 +618,9 @@ img {
       margin-right: 0; }
 
 #slider .slider {
-  height: 465px; }
+  height: calc( 100vh - 245px); }
   #slider .slider .item {
-    height: 465px; }
+    height: calc( 100vh - 245px); }
     #slider .slider .item .wrap {
       position: relative; }
     #slider .slider .item .block_text {
@@ -2661,9 +2661,9 @@ img {
     .header #menu {
       margin-top: 20px; }
   #slider .slider {
-    height: 430px; }
+    height: calc( 100vh - 185px); }
     #slider .slider .item {
-      height: 430px; }
+      height: calc( 100vh - 185px); }
   .about {
     padding: 0 0 30px; }
     .about h3 {
