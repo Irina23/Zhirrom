@@ -241,7 +241,7 @@ jQuery(document).ready(function() {
         $(".products").addClass('preview_block');
 
     }
-    function preview_list() {
+    function preview_block() {
 
         setTimeout(hideproducts, 0);
         setTimeout(removeClass, 300);
@@ -249,7 +249,7 @@ jQuery(document).ready(function() {
 
 
     }
-    function preview_block() {
+    function preview_list() {
 
         setTimeout(hideproducts, 0);
         setTimeout(addClass, 300);
@@ -257,14 +257,14 @@ jQuery(document).ready(function() {
 
 
     }
-    jQuery(".preview .preview_list").click(function(){
-        preview_list();
+    jQuery(".preview .preview_block").click(function(){
+        preview_block();
 
 
 
     });
-    jQuery(".preview .preview_block").click(function(){
-        preview_block();
+    jQuery(".preview .preview_list").click(function(){
+        preview_list();
 
     });
 //end sort
