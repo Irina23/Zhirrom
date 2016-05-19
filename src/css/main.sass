@@ -129,7 +129,7 @@ img
   .user-login
     float: right
     a
-      line-height: 38px
+      line-height: 36px
       color: #fff
       font-size: 18px
       min-width: 115px
@@ -2093,15 +2093,15 @@ img
       .quantity
         margin-bottom: 20px
         &.error
-          input[type="text"]
+          input[type="number"]
             border-color: red
-        input[type="text"]
+        input[type="number"]
           border-radius: 2px
           box-sizing: border-box
           border: 1px solid #bab9b9
           color: #686767
           text-align: center
-          padding: 0 10px
+          //padding: 0 10px
           font-size: 16px
           line-height: 40px
           width: 145px
@@ -2764,7 +2764,7 @@ img
             transition: all 0.35s
         .row
           display: inline-block
-          vertical-align: middle
+          vertical-align: top
           width: 125px
           box-sizing: border-box
           padding: 0 10px
@@ -2773,10 +2773,11 @@ img
             font-size: 16px
             line-height: 1em
             margin-bottom: 5px
-          .name
+          &.name
             color: #000000
             font-size: 18px
             line-height: 1em
+            width: 300px
             a
               color: #000000
               font-size: 18px
@@ -2799,13 +2800,25 @@ img
           &.quantity
             .name
               text-align: center
+              &.error
+                input[type="number"]
+                  border-color: red
+              input[type="number"]
+                border-radius: 2px
+                box-sizing: border-box
+                border: 1px solid #bab9b9
+                color: #686767
+                text-align: center
+                //padding: 0 10px
+                font-size: 16px
+                line-height: 30px
+                width: 100px
 
-
-          &.name
-            width: 350px
-            padding: 0 20px 0 40px
-          &.price
-            width: 130px
+                &.name
+                  width: 350px
+                  padding: 0 20px 0 40px
+                &.price
+                  width: 130px
 
 .cart
   .list_order
@@ -3608,7 +3621,7 @@ img
 
   .private_office, .cart
     .order_block .list_order .order .row.name
-      width: 295px
+      width: 290px
 
   .private_office .order_block,
   .cart .order_block
@@ -3721,7 +3734,9 @@ img
   .order .row .name,
   .cart .order_block .list_order .order .row .name
     display: inline-block
-    vertical-align: top
+    vertical-align: middle
+    margin: 0
+
   body .private_office .order_block .list_order .item,
   body .cart .order_block .list_order .item
     display: block

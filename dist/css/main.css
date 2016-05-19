@@ -120,7 +120,7 @@ img {
   .top .user-login {
     float: right; }
     .top .user-login a {
-      line-height: 38px;
+      line-height: 36px;
       color: #fff;
       font-size: 18px;
       min-width: 115px;
@@ -1864,15 +1864,14 @@ img {
         line-height: 1.5em; }
     .productfull .product_info .block_info .quantity {
       margin-bottom: 20px; }
-      .productfull .product_info .block_info .quantity.error input[type="text"] {
+      .productfull .product_info .block_info .quantity.error input[type="number"] {
         border-color: red; }
-      .productfull .product_info .block_info .quantity input[type="text"] {
+      .productfull .product_info .block_info .quantity input[type="number"] {
         border-radius: 2px;
         box-sizing: border-box;
         border: 1px solid #bab9b9;
         color: #686767;
         text-align: center;
-        padding: 0 10px;
         font-size: 16px;
         line-height: 40px;
         width: 145px; }
@@ -2482,7 +2481,7 @@ img {
         transition: all 0.35s; }
     .private_office .order_block .list_order .order .row, .cart .order_block .list_order .order .row {
       display: inline-block;
-      vertical-align: middle;
+      vertical-align: top;
       width: 125px;
       box-sizing: border-box;
       padding: 0 10px; }
@@ -2491,17 +2490,18 @@ img {
         font-size: 16px;
         line-height: 1em;
         margin-bottom: 5px; }
-      .private_office .order_block .list_order .order .row .name, .cart .order_block .list_order .order .row .name {
+      .private_office .order_block .list_order .order .row.name, .cart .order_block .list_order .order .row.name {
         color: #000000;
         font-size: 18px;
-        line-height: 1em; }
-        .private_office .order_block .list_order .order .row .name a, .cart .order_block .list_order .order .row .name a {
+        line-height: 1em;
+        width: 300px; }
+        .private_office .order_block .list_order .order .row.name a, .cart .order_block .list_order .order .row.name a {
           color: #000000;
           font-size: 18px;
           line-height: 1em;
           -webkit-transition: all 0.35s;
           transition: all 0.35s; }
-          .private_office .order_block .list_order .order .row .name a:hover, .cart .order_block .list_order .order .row .name a:hover {
+          .private_office .order_block .list_order .order .row.name a:hover, .cart .order_block .list_order .order .row.name a:hover {
             -webkit-transition: all 0.35s;
             transition: all 0.35s;
             color: #ff4504;
@@ -2515,11 +2515,22 @@ img {
           display: block; }
       .private_office .order_block .list_order .order .row.quantity .name, .cart .order_block .list_order .order .row.quantity .name {
         text-align: center; }
-      .private_office .order_block .list_order .order .row.name, .cart .order_block .list_order .order .row.name {
-        width: 350px;
-        padding: 0 20px 0 40px; }
-      .private_office .order_block .list_order .order .row.price, .cart .order_block .list_order .order .row.price {
-        width: 130px; }
+        .private_office .order_block .list_order .order .row.quantity .name.error input[type="number"], .cart .order_block .list_order .order .row.quantity .name.error input[type="number"] {
+          border-color: red; }
+        .private_office .order_block .list_order .order .row.quantity .name input[type="number"], .cart .order_block .list_order .order .row.quantity .name input[type="number"] {
+          border-radius: 2px;
+          box-sizing: border-box;
+          border: 1px solid #bab9b9;
+          color: #686767;
+          text-align: center;
+          font-size: 16px;
+          line-height: 30px;
+          width: 100px; }
+          .private_office .order_block .list_order .order .row.quantity .name input[type="number"].name, .cart .order_block .list_order .order .row.quantity .name input[type="number"].name {
+            width: 350px;
+            padding: 0 20px 0 40px; }
+          .private_office .order_block .list_order .order .row.quantity .name input[type="number"].price, .cart .order_block .list_order .order .row.quantity .name input[type="number"].price {
+            width: 130px; }
 
 .cart .list_order {
   margin-bottom: 60px; }
@@ -3159,7 +3170,7 @@ img {
     line-height: 1em;
     margin-bottom: 40px; }
   .private_office .order_block .list_order .order .row.name, .cart .order_block .list_order .order .row.name {
-    width: 295px; }
+    width: 290px; }
   .private_office .order_block,
   .cart .order_block {
     margin-bottom: 50px; }
@@ -3248,7 +3259,8 @@ img {
   .order .row .name,
   .cart .order_block .list_order .order .row .name {
     display: inline-block;
-    vertical-align: top; }
+    vertical-align: middle;
+    margin: 0; }
   body .private_office .order_block .list_order .item,
   body .cart .order_block .list_order .item {
     display: block; }
