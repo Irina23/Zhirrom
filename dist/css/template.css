@@ -183,3 +183,10 @@ img{
 #login input[type="text"]::-moz-placeholder{
     color: #686767;
 }
+
+
+.owl-carousel .owl-item{
+    display: inline-block;
+    vertical-align: middle;
+    float: none!important;
+}

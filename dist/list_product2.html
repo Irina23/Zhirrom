@@ -15,6 +15,7 @@
     <link href="css/template.css" rel="stylesheet" type="text/css">
     <link href="bower_components/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css">
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -25,8 +26,13 @@
       <header>
         <div class="top">
           <div class="wrap">
-            <div class="phone"><span> Тел:</span><a href="tel:+7(495) 369-14-15">+7(495) 369-14-15</a><a href="tel:+7(925) 035-31-31">+7(925) 035-31-31</a></div>
-            <div class="email"><span> Почта:</span><a href="mailto:zhirrom@mail.ru">zhirrom@mail.ru</a></div>
+            <div class="menu">
+              <li><a href="about.html">О компании</a></li>
+              <li><a href="working.html">Правила работы</a></li>
+              <li><a href="#">Таблица размеров</a></li>
+              <li><a href="#">Условия доставки</a></li>
+              <li><a href="blog.html">Статьи</a></li>
+            </div>
             <div class="user-login"><a href="#login" class="login open_modal">Вход</a><a href="#registration" class="registration open_modal">Регистрация</a></div>
           </div>
         </div>
@@ -391,26 +397,9 @@
           </div>
         </form>
       </div>
-      <div id="contact_form" class="modal_div">
+      <div id="certificate" class="modal_div">
         <div class="modal_close"></div>
-        <div class="message_modal show"> Форма успешно отправлена</div>
-        <form>
-          <h3>Связаться с нами</h3>
-          <div class="form-holder">
-            <div class="row-group">
-              <div>
-                <input type="text" placeholder="Имя:" name="name" data-validate="name">
-              </div>
-              <div>
-                <input type="text" placeholder="Телефон:" name="phone" data-validate="phone">
-              </div>
-            </div>
-            <div>
-              <textarea placeholder="Текст:" name="feedback" data-validate="name"></textarea>
-            </div>
-            <div class="btn submit">Отправить</div>
-          </div>
-        </form>
+        <div class="img-holder"><img src="img/content/certificate.png"></div>
       </div>
       <div id="overlay"></div>
       <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -420,6 +409,7 @@
       <script src="js/bootstrap_tabs.min.js"></script>
       <script src="js/alexValidate.js"></script>
       <script src="bower_components/jquery.bxslider/jquery.bxslider.js"></script>
+      <script src="js/owl.carousel.js"></script>
       <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
       <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
       <script>

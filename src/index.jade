@@ -132,70 +132,193 @@ html(lang="ru")
                                             .price 550
                                                 span руб.
 
+                    .list_category2
+                        h3 Категории товаров
+                        .text_holder
+                            p В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
 
-                #faq
-                    .wrap
-                        h3 Задать вопрос
-                        .block_text
-                            h4 Связаться с нами
-                            p.text Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания.
-                            a.open_modal(href="#contact_form") написать
+                        .categories
+
+                            .item-category.cf
+                                a(href="list_product.html")
+                                    .img-holder
+                                        img(src="img/content/men.jpg")
+                                    .name Мужчинам
+
+
+                            .item-category.cf
+                                a(href="list_product.html")
+                                    .img-holder
+                                        img(src="img/content/category3.jpg")
+
+                                    .name Женщинам
+
+                            .item-category.cf
+                                a(href="list_product.html")
+                                    .img-holder
+                                        img(src="img/content/child.jpg")
+
+                                    .name Детям
+
+
+                            .item-category.cf
+                                a(href="list_product.html")
+                                    .img-holder
+                                        img(src="img/content/tunics.jpg")
+
+                                    .name Туники и палатины
 
 
 
-                #block_info
-                    .wrap
-                        h3 Полезная информация
-                        .block_article
+                    .block_advantages
+                        h3 Наши преимущества
+                        .text_holder
+                            p В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+
+                        .list_advantages
                             .item
                                 .img-holder
-                                    a(href="#")
-                                        img(src="img/content/img.jpg")
-                                h4 Название статьи один
-                                .data January 23 / 2016
-                                .text.
-                                    Значимость этих проблем настолько очевидна, что рамки и место обучения кадров позволяет
-                                    оценить значение направлений прогрессивного развития. Идейные соображения высшего порядка, а также постоянный.
-                                a.readmore(href="#") читать больше
+                                    img(src="img/content/icon.png")
+                                .name Качество
+                                .desc Только качественные товары, прошедшие сертификацию
 
 
                             .item
                                 .img-holder
-                                    a(href="#")
-                                        img(src="img/content/img.jpg")
-                                h4 Название статьи один
-                                .data January 23 / 2016
-                                .text.
-                                    Значимость этих проблем настолько очевидна, что рамки и место обучения кадров позволяет
-                                    оценить значение направлений прогрессивного развития. Идейные соображения высшего порядка, а также постоянный.
-                                a.readmore(href="#") читать больше
+                                    img(src="img/content/icon2.png")
+                                .name Прямые поставки
+                                .desc Прямые поставки от 20 фабрик России
 
-                        .block_order_info
-                           h4 Как сделать заказ
-                           ul
-                                li
-                                    .img-holder
-                                        img(src="img/icons/icin_order1.png")
-                                    | Выбрать товар
-                                li
-                                    .img-holder
-                                        img(src="img/icons/icin_order2.png")
-                                    | Добавить в корзину
-                                li
-                                    .img-holder
-                                        img(src="img/icons/icin_order3.png")
-                                    | Оплатить товар
-                                li
-                                    .img-holder
-                                        img(src="img/icons/icin_order4.png")
-                                    | Получите Вашу покупку
+                            .item
+                                .img-holder
+                                    img(src="img/content/icon3.png")
+                                .name Бесплатная примерка
+                                .desc Бесплатная примерка в Москве и СПб
 
 
-                           h4 Новый заголовок
-                           .text
-                                p - Зарегистрироваться на сайте как оптовый покупатель.
-                                p - Ваш первый заказ должен составлять не менее 10 единиц
-                                p - На Ваш e-mail придёт счёт на оплату с накладной
+                            .item
+                                .img-holder
+                                    img(src="img/content/icon4.png")
+                                .name Скидки
+                                .desc Скидки за повторные покупки
+
+                            .item
+                                .img-holder
+                                    img(src="img/content/icon.png")
+                                .name Качество
+                                .desc Только качественные товары, прошедшие сертификацию
+
+
+                            .item
+                                .img-holder
+                                    img(src="img/content/icon2.png")
+                                .name Прямые поставки
+                                .desc Прямые поставки от 20 фабрик России
+
+                            .item
+                                .img-holder
+                                    img(src="img/content/icon3.png")
+                                .name Бесплатная примерка
+                                .desc Бесплатная примерка в Москве и СПб
+
+
+                            .item
+                                .img-holder
+                                    img(src="img/content/icon4.png")
+                                .name Скидки
+                                .desc Скидки за повторные покупки
+
+                    .block_certificate
+                        h3 Сертификат
+                        .text_holder
+                            p В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+
+                        .list_certificate
+                            .img-holder
+                                a.open_modal(href="#certificate")
+                                    img(src="img/content/certificate.png")
+
+                            .img-holder
+                                a.open_modal(href="#certificate")
+                                    img(src="img/content/certificate.png")
+
+                            .info-certificate
+                                p
+                                    | ИП Лозовая М.В.
+                                    br
+                                    | Русский Трикотаж: Шапки оптом по цене производителя с доставкой по
+                                    br
+                                    | России, Белоруссии, Казахстану, Кыргызстану и Армении.
+
+                                p
+                                    | ИНН 262409290610
+                                    br
+                                    | ОГРН 3142651134400160
+
+                                p Адрес: г. Ессентуки ул. Кисловодская д.30а корп.4 к.55
+                                p
+                                    |Россия:&nbsp;
+                                    a(href="tel:+ 7 (499) 350 22 20") + 7 (499) 350 22 20
+                                    br
+                                    | Белоруссия:&nbsp;
+                                    a(href="tel:+ 7 (499) 350 22 20") + 7 (499) 350 22 20
+                                    br
+                                    | Кыргызстан:&nbsp;
+                                    a(href="tel:+ 996( 312) 96 23 70") + 996( 312) 96 23 70
+
+
+
+
+                    .block_brands
+                        h3 Наши поставщики
+                        .text_holder
+                            p В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+                        .list_brands
+                            .item
+                                .img-holder
+                                    img(src="img/content/brollini.png")
+                            .item
+                                .img-holder
+                                    img(src="img/content/lochicalaca.png")
+                            .item
+                                .img-holder
+                                    img(src="img/content/noble.png")
+                            .item
+                                .img-holder
+                                    img(src="img/content/mialt.png")
+                            .item
+                                .img-holder
+                                    img(src="img/content/daniil.png")
+
+
+                #block_feedback
+                    .wrap
+                        h3 Отзывы наших клиентов
+                        .feedback_list
+                            .block_feedback
+                                .block_personal.cf
+                                    .img_hoder
+                                        img(src="img/content/avatar.jpg" )
+                                    .block_name
+                                        .name Светлана Зарва
+                                        .data 14 апреля 2016
+                                .text_holder.
+                                    По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст.
+                                    В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+
+                            .block_feedback
+                                .block_personal.cf
+                                    .img_hoder
+                                        img(src="img/content/avatar.jpg" )
+                                    .block_name
+                                        .name Светлана Зарва
+                                        .data 14 апреля 2016
+                                .text_holder.
+                                    По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст.
+                                    В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+
+
+                        a.link_feedback(href="#") перейти ко всем отзывам
 
 
 
