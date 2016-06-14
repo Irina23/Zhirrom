@@ -23,20 +23,40 @@ header
 
 
     .header.cf
+        .list_contact
+            .phone
+                a(href="tel:+7(495) 369-14-15") +7(495) 369-14-15
+                | &nbsp;&nbsp;&nbsp;
+                a(href="tel:+7(925) 035-31-31") +7(925) 035-31-31
+            .mail
+                | Почта:&nbsp;
+                a(href="mailto:zhirrom@mail.ru") client@zhirrom.ru
+            .work_time Время работы: пн-пт 9.00-18.00
 
-        .search
-            form(action="search.html" role="search")
-                div.form-control
-                    input(type="text" name="search" placeholder="Поиск" minlength="2" data-validate="name")
-                .btn.submit
+        .block-logo
+            .logo
+                a(href="index.html")
+                    img(src="img/icons/logo.png")
 
-        .logo
-            a(href="index.html")
-                img(src="img/icons/logo.png")
+            .tagline
+                |“Головные уборы оптом по ценам производителей.
+                br
+                span Доставка по всей России и СНГ”
 
-        .cart
-            a(href="cart.html") Товаров в корзине:&#160;
-                span 0
+        .block-info-header
+            .search
+                form(action="search.html" role="search")
+                    div.form-control
+                        input(type="text" name="search" placeholder="Поиск" minlength="2" data-validate="name")
+                    .btn.submit
+
+            .block-infosold
+                .number 1000 000&nbsp;
+                | Проданых изделий
+
+            .cart
+                a(href="cart.html") Товаров в корзине:&#160;
+                    span 0
 
         #menu
             ul

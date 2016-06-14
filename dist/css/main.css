@@ -172,17 +172,80 @@ img {
   width: 940px;
   padding: 20px 0 50px;
   margin: auto; }
+  .header .list_contact {
+    margin-bottom: 20px; }
+    .header .list_contact > div {
+      display: inline-block;
+      vertical-align: middle;
+      color: #000;
+      font-family: "FuturaPT-Light", sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 20px;
+      padding-left: 30px;
+      margin-right: 75px; }
+      .header .list_contact > div:last-child {
+        margin-right: 0; }
+      .header .list_contact > div.phone {
+        background: url("../img/icons/icon-phone.svg") no-repeat center left; }
+      .header .list_contact > div.mail {
+        background: url("../img/icons/icon-mail.svg") no-repeat center left; }
+      .header .list_contact > div.work_time {
+        background: url("../img/icons/icone-time.svg") no-repeat center left; }
+      .header .list_contact > div a {
+        display: inline-block;
+        vertical-align: top;
+        color: #000;
+        font-family: "FuturaPT-Light", sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 20px; }
+  .header .block-logo {
+    margin-bottom: 10px; }
+    .header .block-logo .tagline {
+      display: inline-block;
+      vertical-align: middle;
+      color: #ff4504;
+      font-family: "FuturaPT-Demi", sans-serif;
+      font-size: 18px;
+      line-height: 24px;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 2px; }
+      .header .block-logo .tagline span {
+        font-family: "FuturaPT-Light", sans-serif;
+        font-weight: 300; }
   .header .logo {
     width: 250px;
     margin: auto;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 120px; }
+    margin-right: 50px; }
+  .header .block-info-header {
+    text-align: center; }
+    .header .block-info-header .block-infosold {
+      display: inline-block;
+      vertical-align: bottom;
+      color: #000;
+      font-family: "FuturaPT-Demi", sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1em;
+      text-transform: uppercase; }
+      .header .block-info-header .block-infosold .number {
+        display: inline-block;
+        vertical-align: bottom;
+        color: #ff4504;
+        font-family: "FuturaPT-Medium", sans-serif;
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 30px;
+        font-variant: small-caps; }
   .header .search {
     display: inline-block;
     vertical-align: middle;
-    width: 220px;
-    margin-right: 120px; }
+    float: left;
+    width: 220px; }
     .header .search input[type="text"] {
       border: 0;
       border-bottom: 1px solid #000;
@@ -190,25 +253,29 @@ img {
       font-family: "FuturaPT-Medium", sans-serif;
       line-height: 1em;
       font-size: 18px;
-      color: #000; }
+      color: #000;
+      width: 220px; }
     .header .search .form-control {
       display: inline-block;
-      vertical-align: middle; }
+      vertical-align: middle;
+      float: left; }
       .header .search .form-control.error input[type="text"] {
         border-color: red; }
     .header .search .submit {
       display: inline-block;
       vertical-align: middle;
+      float: left;
       width: 15px;
-      height: 15px;
-      background: url("../img/icons/search.png") no-repeat;
+      height: 32px;
+      background: url("../img/icons/search.png") no-repeat center;
       background-size: 100%;
       position: relative;
       margin-left: -20px;
       cursor: pointer; }
   .header .cart {
     display: inline-block;
-    vertical-align: middle; }
+    vertical-align: middle;
+    float: right; }
     .header .cart a {
       display: block;
       padding-left: 40px;

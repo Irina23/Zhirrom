@@ -186,19 +186,93 @@ img
   width: 940px
   padding: 20px 0 50px
   margin: auto
+  .list_contact
+    margin-bottom: 20px
+    >div
+      display: inline-block
+      vertical-align: middle
+      color: #000
+      font-family: "FuturaPT-Light", sans-serif
+      font-size: 18px
+      font-weight: 300
+      line-height: 20px
+      padding-left: 30px
+      margin-right: 75px
+      &:last-child
+        margin-right: 0
+      &.phone
+        background: url("../img/icons/icon-phone.svg") no-repeat center left
+      &.mail
+        background: url("../img/icons/icon-mail.svg") no-repeat center left
+      &.work_time
+        background: url("../img/icons/icone-time.svg") no-repeat center left
+
+      a
+        display: inline-block
+        vertical-align: top
+        color: #000
+        font-family: "FuturaPT-Light", sans-serif
+        font-size: 18px
+        font-weight: 300
+        line-height: 20px
+
+  .block-logo
+    margin-bottom: 10px
+    .tagline
+      display: inline-block
+      vertical-align: middle
+      color: #ff4504
+      font-family: "FuturaPT-Demi", sans-serif
+      font-size: 18px
+      line-height: 24px
+      text-transform: uppercase
+      font-weight: 500
+      letter-spacing: 2px
+      span
+        font-family: "FuturaPT-Light", sans-serif
+        font-weight: 300
+
+
   .logo
     width: 250px
     margin: auto
     //margin-bottom: 40px
     display: inline-block
     vertical-align: middle
-    margin-right: 120px
+    margin-right: 50px
+
+  .block-info-header
+    text-align: center
+    .block-infosold
+      display: inline-block
+      vertical-align: bottom
+      color: #000
+      font-family: "FuturaPT-Demi", sans-serif
+      font-size: 18px
+      font-weight: 500
+      line-height: 1em
+      text-transform: uppercase
+
+      .number
+        display: inline-block
+        vertical-align: bottom
+        color: #ff4504
+        font-family: "FuturaPT-Medium", sans-serif
+        font-size: 48px
+        font-weight: 500
+        line-height: 30px
+        font-variant: small-caps
+
+
+
+
 
   .search
       display: inline-block
       vertical-align: middle
+      float: left
       width: 220px
-      margin-right: 120px
+      //margin-right: 120px
       input[type="text"]
         border: 0
         border-bottom: 1px solid #000
@@ -207,18 +281,21 @@ img
         line-height: 1em
         font-size: 18px
         color: #000
+        width: 220px
       .form-control
         display: inline-block
         vertical-align: middle
+        float: left
         &.error
           input[type="text"]
             border-color: red
       .submit
         display: inline-block
         vertical-align: middle
+        float: left
         width: 15px
-        height: 15px
-        background: url("../img/icons/search.png") no-repeat
+        height: 32px
+        background: url("../img/icons/search.png") no-repeat center
         background-size: 100%
         position: relative
         margin-left: -20px
@@ -227,6 +304,7 @@ img
   .cart
     display: inline-block
     vertical-align: middle
+    float: right
     a
       display: block
       padding-left: 40px
