@@ -19,8 +19,8 @@ html(lang="ru")
                                 li( href="#change_password_email" data-toggle="tab") Смена пароля и E-mail
 
                         .tab-content
-                            .tab-pane.active#history_orders history_orders
-                            .tab-pane#personal_information
+                            .tab-pane.active.cf#history_orders history_orders
+                            .tab-pane.cf#personal_information
                                 form#private_office
                                     .wholesale_customer
                                         h3 Данные оптового клиента
@@ -58,37 +58,43 @@ html(lang="ru")
 
                                     .address
                                         h3 Ваш адрес доставки
-                                        div
+                                        div.short.margin20
                                             span Город / Населенный пункт*
                                             input(type="text" name="city" data-validate="name")
-                                        div
+                                        div.short
                                             span Индекс*
                                             input(type="text" name="index" data-validate="number")
                                         div
                                             span Улица*
                                             input(type="text" name="street" data-validate="name")
 
-                                        div
+                                        div.short.margin20
                                             span Дом / Корпус*
                                             input(type="text" name="housing" data-validate="number")
 
-                                        div
+                                        div.short
                                             span Квартира / Офис*
                                             input(type="text" name="apartment" data-validate="number")
-                                        div
+                                        div.short.margin20
                                             span Вид перевозки
                                             select(name="delivery" data-validate="select")
+                                                option(value="auto" ) Автомобильные перевозки
+                                                option(value="delivery1") Вид перевозки 1
+                                                option(value="delivery2") Вид перевозки 2
 
-                                        div
+                                        div.short
                                             span Транспортная компания
                                             select(name="delivery_compamy" data-validate="select")
+                                                option(value="UPS") UPS Delivery RUS
+                                                option(value="delivery_compamy1") Транспортная компания
+                                                option(value="delivery_compamy2") Транспортная компания
 
                                     .description
                                         p.desc_form *Все поля обязательны к заполнению
                                         p Ваши данные используются исключительно для автозаполнения форм приоформлении заказа. Это улучшает качество нашего сервиса и кпращает Вам процедуру покупки. Пожалуйста, сохраните внесенные изменения ниже.
+                                        .btn.submit сохранить изменения
 
-                                    a.btn.submit(href="#") сохранить изменения
-                            .tab-pane#change_password_email change_password_email
+                            .tab-pane.cf#change_password_email change_password_email
 
 
 

@@ -153,8 +153,8 @@
               </ul>
             </div>
             <div class="tab-content">
-              <div id="history_orders" class="tab-pane active">history_orders</div>
-              <div id="personal_information" class="tab-pane">
+              <div id="history_orders" class="tab-pane active cf">history_orders</div>
+              <div id="personal_information" class="tab-pane cf">
                 <form id="private_office">
                   <div class="wholesale_customer">
                     <h3>Данные оптового клиента</h3>
@@ -188,35 +188,44 @@
                   </div>
                   <div class="address">
                     <h3>Ваш адрес доставки</h3>
-                    <div><span>Город / Населенный пункт*</span>
+                    <div class="short margin20"><span>Город / Населенный пункт*</span>
                       <input type="text" name="city" data-validate="name">
                     </div>
-                    <div><span>Индекс*</span>
+                    <div class="short"><span>Индекс*</span>
                       <input type="text" name="index" data-validate="number">
                     </div>
                     <div><span>Улица*</span>
                       <input type="text" name="street" data-validate="name">
                     </div>
-                    <div><span>Дом / Корпус*</span>
+                    <div class="short margin20"><span>Дом / Корпус*</span>
                       <input type="text" name="housing" data-validate="number">
                     </div>
-                    <div><span>Квартира / Офис*</span>
+                    <div class="short"><span>Квартира / Офис*</span>
                       <input type="text" name="apartment" data-validate="number">
                     </div>
-                    <div><span>Вид перевозки</span>
-                      <select name="delivery" data-validate="select"></select>
+                    <div class="short margin20"><span>Вид перевозки</span>
+                      <select name="delivery" data-validate="select">
+                        <option value="auto">Автомобильные перевозки</option>
+                        <option value="delivery1">Вид перевозки 1</option>
+                        <option value="delivery2">Вид перевозки 2</option>
+                      </select>
                     </div>
-                    <div><span>Транспортная компания</span>
-                      <select name="delivery_compamy" data-validate="select"></select>
+                    <div class="short"><span>Транспортная компания</span>
+                      <select name="delivery_compamy" data-validate="select">
+                        <option value="UPS">UPS Delivery RUS</option>
+                        <option value="delivery_compamy1">Транспортная компания</option>
+                        <option value="delivery_compamy2">Транспортная компания</option>
+                      </select>
                     </div>
                   </div>
                   <div class="description">
                     <p class="desc_form">*Все поля обязательны к заполнению</p>
                     <p>Ваши данные используются исключительно для автозаполнения форм приоформлении заказа. Это улучшает качество нашего сервиса и кпращает Вам процедуру покупки. Пожалуйста, сохраните внесенные изменения ниже.</p>
-                  </div><a href="#" class="btn submit">сохранить изменения</a>
+                    <div class="btn submit">сохранить изменения</div>
+                  </div>
                 </form>
               </div>
-              <div id="change_password_email" class="tab-pane">change_password_email</div>
+              <div id="change_password_email" class="tab-pane cf">change_password_email</div>
             </div>
           </div>
         </div>
@@ -262,7 +271,7 @@
       </div>
       <div id="call_back" class="modal_div">
         <div class="modal_close"></div>
-        <div class="message_modal show"> Форма успешно отправлена</div>
+        <div class="message_modal"> Форма успешно отправлена</div>
         <form>
           <h3>Заказать звонок</h3>
           <div class="form-holder">
@@ -271,6 +280,27 @@
             </div>
             <div>
               <input type="text" placeholder="Телефон:" name="phone" data-validate="phone">
+            </div>
+            <div class="btn submit">Отправить</div>
+          </div>
+        </form>
+      </div>
+      <div id="contact_form" class="modal_div">
+        <div class="modal_close"></div>
+        <div class="message_modal"> Форма успешно отправлена</div>
+        <form>
+          <h3>Связаться с нами</h3>
+          <div class="form-holder">
+            <div class="row-group">
+              <div>
+                <input type="text" placeholder="Имя:" name="name" data-validate="name">
+              </div>
+              <div>
+                <input type="text" placeholder="Телефон:" name="phone" data-validate="phone">
+              </div>
+            </div>
+            <div>
+              <textarea placeholder="Текст:" name="feedback" data-validate="name"></textarea>
             </div>
             <div class="btn submit">Отправить</div>
           </div>
@@ -290,6 +320,7 @@
       <script src="bower_components/jquery.bxslider/jquery.bxslider.js"></script>
       <script src="js/owl.carousel.js"></script>
       <script src="js/bootstrap_tabs.min.js"></script>
+      <script src="js/jquery.selectbox.min.js"></script>
       <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
       <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
       <script>

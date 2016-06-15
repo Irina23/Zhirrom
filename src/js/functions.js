@@ -83,6 +83,8 @@ jQuery(document).ready(function() {
 
         });
 
+        jQuery('select').selectbox();
+
 
         $('[id^="slider_product"]').bxSlider({
             pagerCustom: '[id^="bx-pager"]',
