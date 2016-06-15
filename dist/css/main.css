@@ -1259,7 +1259,7 @@ img {
         color: #ff4504;
         text-decoration: none; }
 
-.list_product header, .productfull header, .blog header, .article header, .search header, .cart header, .payment header, .private_office header, .registration header {
+.list_product header, .productfull header, .blog header, .article header, .search header, .cart header, .payment header, .private_office header, .registration header, .feedback header {
   border-bottom: 5px solid #ff4504; }
 
 .list_products {
@@ -1734,116 +1734,6 @@ img {
           -webkit-transition: all 0.35s;
           transition: all 0.35s; }
 
-.productfull .feedback {
-  background: url("../img/bg/bg_review.jpg") no-repeat top center;
-  background-size: cover;
-  position: relative;
-  padding: 50px 0 110px; }
-  .productfull .feedback:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.9);
-    content: "";
-    z-index: 1; }
-  .productfull .feedback .wrap {
-    position: relative;
-    z-index: 2; }
-    .productfull .feedback .wrap h3 {
-      text-align: center;
-      margin-bottom: 60px;
-      color: #000;
-      font-size: 60px;
-      line-height: 1em;
-      font-family: "FuturaPT-Light", sans-serif;
-      font-weight: normal; }
-    .productfull .feedback .wrap form h4 {
-      color: #ff4504;
-      margin-bottom: 30px;
-      font-size: 36px;
-      line-height: 1em;
-      font-family: "FuturaPT-Light", sans-serif;
-      font-weight: normal; }
-    .productfull .feedback .wrap form .error textarea {
-      border-color: red; }
-    .productfull .feedback .wrap form textarea {
-      border-radius: 2px;
-      border: 2px solid #c8c7c7;
-      width: 100%;
-      box-sizing: border-box;
-      height: 135px;
-      background: none;
-      padding: 20px;
-      color: #818181;
-      font-size: 20px;
-      line-height: 1.3em;
-      font-family: "FuturaBookC", sans-serif;
-      letter-spacing: 1px;
-      margin-bottom: 30px; }
-    .productfull .feedback .wrap form .submit {
-      line-height: 50px;
-      color: #fff;
-      font-size: 16px;
-      width: 185px;
-      text-align: center;
-      -webkit-transition: all 0.35s;
-      transition: all 0.35s;
-      display: block;
-      margin: auto;
-      background: #ff4504;
-      border-radius: 6px;
-      box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16);
-      text-transform: uppercase;
-      font-family: "FuturaPT-Heavy", sans-serif;
-      letter-spacing: 1px;
-      cursor: pointer; }
-      .productfull .feedback .wrap form .submit:hover {
-        -webkit-transition: all 0.35s;
-        transition: all 0.35s;
-        background: #fe622b;
-        text-decoration: none; }
-
-.productfull .feedback_list .block_feedback {
-  display: inline-block;
-  vertical-align: top;
-  width: 49%;
-  padding: 0 10px;
-  box-sizing: border-box;
-  margin-bottom: 60px; }
-  .productfull .feedback_list .block_feedback:nth-child(2n+1) {
-    padding-left: 0; }
-  .productfull .feedback_list .block_feedback:nth-child(2n) {
-    padding-right: 0; }
-  .productfull .feedback_list .block_feedback .text_holder {
-    font-family: "FuturaBookC", sans-serif;
-    color: #3e3d3d;
-    font-size: 18px;
-    font-weight: normal;
-    line-height: 1.5em;
-    text-align: left; }
-  .productfull .feedback_list .block_feedback .block_personal {
-    margin-bottom: 20px; }
-    .productfull .feedback_list .block_feedback .block_personal .img_hoder {
-      width: 90px;
-      height: 90px;
-      float: left;
-      border-radius: 90px;
-      overflow: hidden;
-      margin-right: 15px; }
-    .productfull .feedback_list .block_feedback .block_personal .block_name {
-      margin-top: 40px; }
-      .productfull .feedback_list .block_feedback .block_personal .block_name .name {
-        color: #000;
-        font-size: 24px;
-        line-height: 1em;
-        margin-bottom: 10px; }
-      .productfull .feedback_list .block_feedback .block_personal .block_name .data {
-        color: #ff4504;
-        line-height: 1em;
-        font-size: 16px; }
-
 .productfull .product_info {
   margin-bottom: 60px; }
   .productfull .product_info .image {
@@ -2124,6 +2014,154 @@ img {
               transition: all 0.35s; }
           .productfull .product_info .block_info .block_characteristics .select_color li.active {
             display: none; }
+
+.feedback .container {
+  position: relative;
+  padding: 40px 0 120px; }
+  .feedback .container .wrap {
+    position: relative;
+    z-index: 2; }
+    .feedback .container .wrap h1 {
+      text-align: center;
+      margin-bottom: 60px;
+      color: #000;
+      line-height: 1em;
+      font-family: "FuturaBookC", sans-serif;
+      font-weight: normal;
+      font-size: 48px; }
+    .feedback .container .wrap form h4 {
+      color: #ff4504;
+      margin-bottom: 30px;
+      font-size: 36px;
+      line-height: 1em;
+      font-family: "FuturaPT-Light", sans-serif;
+      font-weight: normal; }
+    .feedback .container .wrap form .error textarea {
+      border-color: red; }
+    .feedback .container .wrap form textarea {
+      border-radius: 2px;
+      border: 2px solid #c8c7c7;
+      width: 100%;
+      box-sizing: border-box;
+      height: 135px;
+      background: none;
+      padding: 20px;
+      color: #818181;
+      font-size: 20px;
+      line-height: 1.3em;
+      font-family: "FuturaBookC", sans-serif;
+      letter-spacing: 1px;
+      margin-bottom: 30px; }
+    .feedback .container .wrap form .submit {
+      line-height: 50px;
+      color: #fff;
+      font-size: 16px;
+      width: 185px;
+      text-align: center;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      display: block;
+      margin: auto;
+      background: #ff4504;
+      border-radius: 6px;
+      box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16);
+      text-transform: uppercase;
+      font-family: "FuturaPT-Heavy", sans-serif;
+      letter-spacing: 1px;
+      cursor: pointer; }
+      .feedback .container .wrap form .submit:hover {
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        background: #fe622b;
+        text-decoration: none; }
+  .feedback .container .feedback_list .block_feedback {
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 40px; }
+    .feedback .container .feedback_list .block_feedback:nth-child(2n+1) {
+      padding-left: 0; }
+    .feedback .container .feedback_list .block_feedback:nth-child(2n) {
+      padding-right: 0; }
+    .feedback .container .feedback_list .block_feedback .text_holder {
+      font-family: "FuturaBookC", sans-serif;
+      color: #3e3d3d;
+      font-size: 18px;
+      font-weight: normal;
+      line-height: 1.5em;
+      text-align: left; }
+    .feedback .container .feedback_list .block_feedback .block_personal {
+      margin-bottom: 20px; }
+      .feedback .container .feedback_list .block_feedback .block_personal .img_hoder {
+        width: 90px;
+        height: 90px;
+        float: left;
+        border-radius: 90px;
+        overflow: hidden;
+        margin-right: 15px; }
+      .feedback .container .feedback_list .block_feedback .block_personal .block_name {
+        margin-top: 40px; }
+        .feedback .container .feedback_list .block_feedback .block_personal .block_name .name {
+          color: #000;
+          font-size: 24px;
+          line-height: 1em;
+          margin-bottom: 10px; }
+        .feedback .container .feedback_list .block_feedback .block_personal .block_name .data {
+          color: #ff4504;
+          line-height: 1em;
+          font-size: 16px; }
+
+.feedback .pagination_list {
+  text-align: center;
+  margin-bottom: 60px; }
+  .feedback .pagination_list li {
+    display: inline-block;
+    vertical-align: middle; }
+    .feedback .pagination_list li:first-child {
+      margin-right: 100px; }
+    .feedback .pagination_list li.disabled a {
+      color: #a5a5a5; }
+      .feedback .pagination_list li.disabled a:hover {
+        color: #a5a5a5;
+        cursor: default; }
+      .feedback .pagination_list li.disabled a.prev:after, .feedback .pagination_list li.disabled a.next:after {
+        background: url("../img/icons/prev-grey.png") no-repeat;
+        background-size: 100%; }
+    .feedback .pagination_list li a {
+      color: #ff4504;
+      font-size: 24px;
+      font-family: "FuturaPT-Light", sans-serif;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      display: block;
+      line-height: 1em; }
+      .feedback .pagination_list li a:hover {
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        text-decoration: none;
+        color: #fe622b; }
+      .feedback .pagination_list li a.prev, .feedback .pagination_list li a.next {
+        position: relative; }
+        .feedback .pagination_list li a.prev:after, .feedback .pagination_list li a.next:after {
+          position: absolute;
+          content: "";
+          width: 9px;
+          height: 15px;
+          top: 6px;
+          background: url("../img/icons/prev-orange.png") no-repeat;
+          background-size: 100%; }
+      .feedback .pagination_list li a.prev {
+        padding-left: 15px; }
+        .feedback .pagination_list li a.prev:after {
+          left: 0; }
+      .feedback .pagination_list li a.next {
+        padding-right: 15px; }
+        .feedback .pagination_list li a.next:after {
+          right: 0;
+          -webkit-transform: rotate(180deg);
+                  transform: rotate(180deg); }
 
 .zoomContainer {
   z-index: 11; }
@@ -3830,15 +3868,6 @@ img {
         font-size: 28px; }
       .productfull .product_info .block_info .block_price .price {
         font-size: 24px; }
-  .productfull .feedback {
-    padding: 50px 0; }
-    .productfull .feedback .wrap h3 {
-      font-size: 36px;
-      margin-bottom: 30px; }
-    .productfull .feedback .wrap form h4 {
-      font-size: 28px; }
-    .productfull .feedback .wrap form textarea {
-      letter-spacing: 0; }
   .productfull .related_products h3 {
     font-size: 36px;
     padding: 20px 0;
@@ -3847,6 +3876,15 @@ img {
     text-align: center; }
   .zoomContainer {
     display: none !important; }
+  .feedback {
+    padding: 50px 0; }
+    .feedback .wrap h3 {
+      font-size: 36px;
+      margin-bottom: 30px; }
+    .feedback .wrap form h4 {
+      font-size: 28px; }
+    .feedback .wrap form textarea {
+      letter-spacing: 0; }
   .list_products h1 {
     font-size: 36px; }
   .list_products .description {
@@ -3985,7 +4023,7 @@ img {
   #contact_form {
     height: 530px;
     margin-top: -265px; }
-  .productfull .feedback_list .block_feedback {
+  .feedback .feedback_list .block_feedback {
     width: 100%;
     padding: 0;
     margin-bottom: 30px; } }
