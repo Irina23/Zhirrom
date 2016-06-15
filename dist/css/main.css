@@ -170,7 +170,7 @@ img {
 
 .header {
   width: 940px;
-  padding: 20px 0 50px;
+  padding: 20px 0;
   margin: auto; }
   .header .list_contact {
     margin-bottom: 20px; }
@@ -350,7 +350,7 @@ img {
       .header #menu li ul.drop-menu {
         display: none;
         position: absolute;
-        top: 15px;
+        top: 16px;
         left: 0;
         padding-top: 20px;
         z-index: 10; }
@@ -709,9 +709,9 @@ img {
       margin-right: 0; }
 
 #slider .slider {
-  height: calc( 100vh - 245px); }
+  height: calc( 100vh - 295px); }
   #slider .slider .item {
-    height: calc( 100vh - 245px); }
+    height: calc( 100vh - 295px); }
     #slider .slider .item .wrap {
       position: relative; }
     #slider .slider .item .block_text {
@@ -833,7 +833,7 @@ img {
 .gcsc-branding {
   display: none; }
 
-#registration, #contact_form, #private_edit {
+#contact_form {
   background-color: #ffffff;
   width: 620px;
   height: 530px;
@@ -848,7 +848,7 @@ img {
   padding: 60px;
   text-align: center;
   box-sizing: border-box; }
-  #registration .message_modal, #contact_form .message_modal, #private_edit .message_modal {
+  #contact_form .message_modal {
     position: absolute;
     top: 0;
     height: 100%;
@@ -862,11 +862,11 @@ img {
     transition: all 0.35s;
     font-size: 24px;
     text-align: center; }
-    #registration .message_modal.show, #contact_form .message_modal.show, #private_edit .message_modal.show {
+    #contact_form .message_modal.show {
       display: block;
       -webkit-transition: all 0.35s;
       transition: all 0.35s; }
-  #registration .modal_close, #contact_form .modal_close, #private_edit .modal_close {
+  #contact_form .modal_close {
     position: absolute;
     width: 16px;
     height: 16px;
@@ -878,19 +878,19 @@ img {
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
     z-index: 10; }
-    #registration .modal_close:hover, #contact_form .modal_close:hover, #private_edit .modal_close:hover {
+    #contact_form .modal_close:hover {
       background: url("../img/icons/close_hover.png") no-repeat;
       background-size: 100%;
       -webkit-transition: all 0.35s;
       transition: all 0.35s; }
-  #registration h3, #contact_form h3, #private_edit h3 {
+  #contact_form h3 {
     text-transform: uppercase;
     margin-bottom: 40px;
     font-size: 24px;
     line-height: 1em;
     font-family: "FuturaPT-Demi", sans-serif;
     font-weight: normal; }
-  #registration .form-holder .row-group .file, #contact_form .form-holder .row-group .file, #private_edit .form-holder .row-group .file {
+  #contact_form .form-holder .row-group .file {
     width: 238px;
     height: 43px;
     background: url("../img/icons/file2.png") no-repeat;
@@ -899,29 +899,27 @@ img {
     transition: all 0.35s;
     border: 1px solid #bab9b9;
     border-radius: 2px; }
-    #registration .form-holder .row-group .file:hover, #contact_form .form-holder .row-group .file:hover, #private_edit .form-holder .row-group .file:hover {
+    #contact_form .form-holder .row-group .file:hover {
       background: url("../img/icons/file_hover2.png") no-repeat;
       -webkit-transition: all 0.35s;
       transition: all 0.35s; }
-  #registration .form-holder .row-group > div, #contact_form .form-holder .row-group > div, #private_edit .form-holder .row-group > div {
+  #contact_form .form-holder .row-group > div {
     display: inline-block;
     vertical-align: top; }
-    #registration .form-holder .row-group > div:first-child, #contact_form .form-holder .row-group > div:first-child, #private_edit .form-holder .row-group > div:first-child {
+    #contact_form .form-holder .row-group > div:first-child {
       margin-right: 15px; }
-  #registration .form-holder .assortment, #contact_form .form-holder .assortment, #private_edit .form-holder .assortment {
+  #contact_form .form-holder .assortment {
     width: 100%; }
-    #registration .form-holder .assortment input[type="text"], #contact_form .form-holder .assortment input[type="text"], #private_edit .form-holder .assortment input[type="text"] {
+    #contact_form .form-holder .assortment input[type="text"] {
       width: 100%; }
-  #registration .form-holder input[type="file"], #contact_form .form-holder input[type="file"], #private_edit .form-holder input[type="file"] {
+  #contact_form .form-holder input[type="file"] {
     width: 240px !important;
     height: 45px !important;
     opacity: 0 !important;
     overflow: hidden !important;
     cursor: pointer; }
-  #registration .form-holder input[type="text"],
-  #registration .form-holder input[type="email"], #contact_form .form-holder input[type="text"],
-  #contact_form .form-holder input[type="email"], #private_edit .form-holder input[type="text"],
-  #private_edit .form-holder input[type="email"] {
+  #contact_form .form-holder input[type="text"],
+  #contact_form .form-holder input[type="email"] {
     text-align: left;
     height: 45px;
     padding: 0 10px;
@@ -935,7 +933,7 @@ img {
     background: #fff;
     font-family: "FuturaPT-Medium", sans-serif;
     width: 240px; }
-  #registration .form-holder textarea, #contact_form .form-holder textarea, #private_edit .form-holder textarea {
+  #contact_form .form-holder textarea {
     border-radius: 2px;
     border: 1px solid #bab9b9;
     width: 100%;
@@ -947,15 +945,11 @@ img {
     font-size: 18px;
     line-height: 1.3em;
     font-family: "FuturaPT-Medium", sans-serif; }
-  #registration .form-holder .error input[type="text"],
-  #registration .form-holder .error input[type="email"],
-  #registration .form-holder .error textarea, #contact_form .form-holder .error input[type="text"],
+  #contact_form .form-holder .error input[type="text"],
   #contact_form .form-holder .error input[type="email"],
-  #contact_form .form-holder .error textarea, #private_edit .form-holder .error input[type="text"],
-  #private_edit .form-holder .error input[type="email"],
-  #private_edit .form-holder .error textarea {
+  #contact_form .form-holder .error textarea {
     border-color: #FF0000; }
-  #registration .form-holder .btn, #contact_form .form-holder .btn, #private_edit .form-holder .btn {
+  #contact_form .form-holder .btn {
     line-height: 50px;
     color: #fff;
     font-size: 16px;
@@ -972,7 +966,7 @@ img {
     font-family: "FuturaPT-Heavy", sans-serif;
     letter-spacing: 1px;
     cursor: pointer; }
-    #registration .form-holder .btn:hover, #contact_form .form-holder .btn:hover, #private_edit .form-holder .btn:hover {
+    #contact_form .form-holder .btn:hover {
       -webkit-transition: all 0.35s;
       transition: all 0.35s;
       background: #fe622b;
@@ -1265,7 +1259,7 @@ img {
         color: #ff4504;
         text-decoration: none; }
 
-.list_product header, .productfull header, .blog header, .article header, .search header, .cart header, .payment header {
+.list_product header, .productfull header, .blog header, .article header, .search header, .cart header, .payment header, .private_office header, .registration header {
   border-bottom: 5px solid #ff4504; }
 
 .list_products {
@@ -2496,9 +2490,9 @@ img {
         background: #fe622b;
         text-decoration: none; }
 
-.private_office .order_block, .cart .order_block {
+.cart .order_block {
   margin-bottom: 120px; }
-  .private_office .order_block .ias-trigger a, .cart .order_block .ias-trigger a {
+  .cart .order_block .ias-trigger a {
     border: 2px solid #ff4504;
     border-radius: 4px;
     color: #ff4504;
@@ -2506,10 +2500,10 @@ img {
     font-family: "FuturaPT-Demi", sans-serif;
     box-shadow: none;
     background: none; }
-    .private_office .order_block .ias-trigger a:hover, .cart .order_block .ias-trigger a:hover {
+    .cart .order_block .ias-trigger a:hover {
       background: #ff4504;
       color: #fff; }
-  .private_office .order_block .submit, .cart .order_block .submit {
+  .cart .order_block .submit {
     border: 2px solid #ff4504;
     border-radius: 4px;
     color: #ff4504;
@@ -2525,13 +2519,13 @@ img {
     text-align: center;
     display: block;
     box-sizing: border-box; }
-    .private_office .order_block .submit:hover, .cart .order_block .submit:hover {
+    .cart .order_block .submit:hover {
       background: #ff4504;
       color: #fff;
       -webkit-transition: all 0.35s;
       transition: all 0.35s;
       text-decoration: none; }
-  .private_office .order_block h1, .private_office .order_block h3, .cart .order_block h1, .cart .order_block h3 {
+  .cart .order_block h1, .cart .order_block h3 {
     font-size: 60px;
     line-height: 1em;
     margin-bottom: 50px;
@@ -2539,17 +2533,17 @@ img {
     font-weight: normal;
     font-family: "FuturaPT-Light", sans-serif;
     text-align: center; }
-  .private_office .order_block .list_order .item, .cart .order_block .list_order .item {
+  .cart .order_block .list_order .item {
     margin-bottom: 70px; }
-  .private_office .order_block .list_order .data, .cart .order_block .list_order .data {
+  .cart .order_block .list_order .data {
     color: #5d5c5c;
     font-size: 18px;
     line-height: 1em;
     margin-bottom: 20px; }
-  .private_office .order_block .list_order .order, .cart .order_block .list_order .order {
+  .cart .order_block .list_order .order {
     border-bottom: 1px solid #f0eeee;
     position: relative; }
-    .private_office .order_block .list_order .order .delete, .cart .order_block .list_order .order .delete {
+    .cart .order_block .list_order .order .delete {
       position: absolute;
       top: 10px;
       right: 0;
@@ -2563,50 +2557,50 @@ img {
       -webkit-transition: all 0.35s;
       transition: all 0.35s;
       cursor: pointer; }
-      .private_office .order_block .list_order .order .delete:hover, .cart .order_block .list_order .order .delete:hover {
+      .cart .order_block .list_order .order .delete:hover {
         background: url("../img/icons/close_hover.png") no-repeat;
         background-size: 100%;
         -webkit-transition: all 0.35s;
         transition: all 0.35s; }
-    .private_office .order_block .list_order .order .row, .cart .order_block .list_order .order .row {
+    .cart .order_block .list_order .order .row {
       display: inline-block;
       vertical-align: top;
       width: 125px;
       box-sizing: border-box;
       padding: 0 10px; }
-      .private_office .order_block .list_order .order .row .title, .cart .order_block .list_order .order .row .title {
+      .cart .order_block .list_order .order .row .title {
         color: #b0afaf;
         font-size: 16px;
         line-height: 1em;
         margin-bottom: 5px; }
-      .private_office .order_block .list_order .order .row.name, .cart .order_block .list_order .order .row.name {
+      .cart .order_block .list_order .order .row.name {
         color: #000000;
         font-size: 18px;
         line-height: 1em;
         width: 300px; }
-        .private_office .order_block .list_order .order .row.name a, .cart .order_block .list_order .order .row.name a {
+        .cart .order_block .list_order .order .row.name a {
           color: #000000;
           font-size: 18px;
           line-height: 1em;
           -webkit-transition: all 0.35s;
           transition: all 0.35s; }
-          .private_office .order_block .list_order .order .row.name a:hover, .cart .order_block .list_order .order .row.name a:hover {
+          .cart .order_block .list_order .order .row.name a:hover {
             -webkit-transition: all 0.35s;
             transition: all 0.35s;
             color: #ff4504;
             text-decoration: none; }
-      .private_office .order_block .list_order .order .row.image, .cart .order_block .list_order .order .row.image {
+      .cart .order_block .list_order .order .row.image {
         width: 60px; }
-        .private_office .order_block .list_order .order .row.image .img-holder, .cart .order_block .list_order .order .row.image .img-holder {
+        .cart .order_block .list_order .order .row.image .img-holder {
           width: 60px;
           height: 60px; }
-        .private_office .order_block .list_order .order .row.image a, .cart .order_block .list_order .order .row.image a {
+        .cart .order_block .list_order .order .row.image a {
           display: block; }
-      .private_office .order_block .list_order .order .row.quantity .name, .cart .order_block .list_order .order .row.quantity .name {
+      .cart .order_block .list_order .order .row.quantity .name {
         text-align: center; }
-        .private_office .order_block .list_order .order .row.quantity .name.error input[type="number"], .cart .order_block .list_order .order .row.quantity .name.error input[type="number"] {
+        .cart .order_block .list_order .order .row.quantity .name.error input[type="number"] {
           border-color: red; }
-        .private_office .order_block .list_order .order .row.quantity .name input[type="number"], .cart .order_block .list_order .order .row.quantity .name input[type="number"] {
+        .cart .order_block .list_order .order .row.quantity .name input[type="number"] {
           border-radius: 2px;
           box-sizing: border-box;
           border: 1px solid #bab9b9;
@@ -2615,10 +2609,10 @@ img {
           font-size: 16px;
           line-height: 30px;
           width: 100px; }
-          .private_office .order_block .list_order .order .row.quantity .name input[type="number"].name, .cart .order_block .list_order .order .row.quantity .name input[type="number"].name {
+          .cart .order_block .list_order .order .row.quantity .name input[type="number"].name {
             width: 350px;
             padding: 0 20px 0 40px; }
-          .private_office .order_block .list_order .order .row.quantity .name input[type="number"].price, .cart .order_block .list_order .order .row.quantity .name input[type="number"].price {
+          .cart .order_block .list_order .order .row.quantity .name input[type="number"].price {
             width: 130px; }
 
 .cart .list_order {
@@ -3195,6 +3189,49 @@ img {
   z-index: 31;
   display: none; }
 
+.tab-content {
+  clear: both; }
+  .tab-content .tab-pane {
+    display: none; }
+    .tab-content .tab-pane.active {
+      display: block; }
+
+.registration .container {
+  padding: 30px 0 120px; }
+  .registration .container h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 1em;
+    font-family: "FuturaBookC", sans-serif;
+    margin-bottom: 50px; }
+
+.private_office .container {
+  padding: 30px 0 120px; }
+  .private_office .container h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 1em;
+    font-family: "FuturaBookC", sans-serif;
+    margin-bottom: 50px;
+    float: left; }
+  .private_office .container .tabs-menu {
+    float: right; }
+    .private_office .container .tabs-menu li {
+      display: inline-block;
+      vertical-align: middle;
+      font-family: "FuturaPT-Demi", sans-serif;
+      font-size: 16px;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: #000;
+      cursor: pointer;
+      padding: 0 5px;
+      position: relative; }
+      .private_office .container .tabs-menu li:last-child {
+        padding-right: 0; }
+      .private_office .container .tabs-menu li.active {
+        color: #ff4504; }
+
 @media screen and (min-width: 1024px) and (max-height: 700px) {
   .header {
     padding: 15px 0; }
@@ -3274,7 +3311,7 @@ img {
     width: 210px; }
   .list_products .filter > div.preview, .list_products .filter > div.sort_by {
     margin-right: 35px; }
-  .private_office .order_block .list_order .order .row.name, .cart .order_block .list_order .order .row.name {
+  .cart .order_block .list_order .order .row.name {
     width: 295px; } }
 
 @media screen and (max-width: 959px) {
@@ -3287,26 +3324,26 @@ img {
     header .top {
       padding: 10px 15px;
       position: relative; }
-      header .top #menu #menu-icon {
+      header .top #menu-mobile #menu-icon {
         cursor: pointer;
         position: relative;
         z-index: 10; }
-        header .top #menu #menu-icon + ul {
+        header .top #menu-mobile #menu-icon + ul {
           display: none;
           padding: 20px 0 10px; }
-        header .top #menu #menu-icon .icon-bar {
+        header .top #menu-mobile #menu-icon .icon-bar {
           background-color: #fff;
           display: block;
           width: 40px;
           height: 4px;
           margin-bottom: 7px; }
-          header .top #menu #menu-icon .icon-bar:last-child {
+          header .top #menu-mobile #menu-icon .icon-bar:last-child {
             margin-bottom: 0; }
-      header .top #menu .menu li {
+      header .top #menu-mobile .menu li {
         display: block;
         position: relative;
         margin-bottom: 10px; }
-        header .top #menu .menu li a {
+        header .top #menu-mobile .menu li a {
           text-transform: uppercase;
           color: #fff;
           font-family: "FuturaPT-Medium", sans-serif;
@@ -3317,23 +3354,23 @@ img {
           transition: all 0.35s;
           padding: 7px 0;
           display: block; }
-          header .top #menu .menu li a:hover {
+          header .top #menu-mobile .menu li a:hover {
             -webkit-transition: all 0.35s;
             transition: all 0.35s;
             color: #ff4504;
             text-decoration: none; }
-        header .top #menu .menu li.active a {
+        header .top #menu-mobile .menu li.active a {
           -webkit-transition: all 0.35s;
           transition: all 0.35s;
           color: #ff4504;
           text-decoration: none; }
-        header .top #menu .menu li:last-child {
+        header .top #menu-mobile .menu li:last-child {
           margin-bottom: 0; }
-        header .top #menu .menu li.parent {
+        header .top #menu-mobile .menu li.parent {
           cursor: pointer; }
-          header .top #menu .menu li.parent.open:before {
+          header .top #menu-mobile .menu li.parent.open:before {
             display: none; }
-          header .top #menu .menu li.parent:after {
+          header .top #menu-mobile .menu li.parent:after {
             position: absolute;
             content: "";
             top: 13px;
@@ -3341,7 +3378,7 @@ img {
             width: 10px;
             height: 2px;
             background: #fff; }
-          header .top #menu .menu li.parent:before {
+          header .top #menu-mobile .menu li.parent:before {
             position: absolute;
             content: "";
             top: 9px;
@@ -3349,10 +3386,10 @@ img {
             width: 2px;
             height: 10px;
             background: #fff; }
-          header .top #menu .menu li.parent ul.drop-menu {
+          header .top #menu-mobile .menu li.parent ul.drop-menu {
             margin-top: 10px;
             padding-left: 15px; }
-        header .top #menu .menu li ul.drop-menu {
+        header .top #menu-mobile .menu li ul.drop-menu {
           display: none; }
       header .top .search {
         width: 155px;
@@ -3692,16 +3729,14 @@ img {
     .block_private_office h1 {
       font-size: 36px;
       margin-bottom: 30px; }
-  .private_office .container .order_block h1, .private_office .container .order_block h3, .cart .container .order_block h1, .cart .container .order_block h3 {
+  .cart .container .order_block h1, .cart .container .order_block h3 {
     font-size: 36px;
     line-height: 1em;
     margin-bottom: 40px; }
-  .private_office .order_block .list_order .order .row.name, .cart .order_block .list_order .order .row.name {
+  .cart .order_block .list_order .order .row.name {
     width: 290px; }
-  .private_office .order_block,
   .cart .order_block {
     margin-bottom: 50px; }
-    .private_office .order_block .list_order .item,
     .cart .order_block .list_order .item {
       margin-bottom: 30px; }
   #slider .slider {
@@ -3738,7 +3773,7 @@ img {
     margin-right: 20px; } }
 
 @media screen and (max-width: 920px) {
-  .private_office .order_block .list_order .order .row, .cart .order_block .list_order .order .row {
+  .cart .order_block .list_order .order .row {
     width: 115px; } }
 
 @media screen and (max-width: 900px) {
@@ -3748,20 +3783,18 @@ img {
     margin: 0 auto 20px !important; }
     .list_products .filter > div:last-child {
       margin-bottom: 0 !important; }
-  .private_office .order_block .list_order .order .row.name, .cart .order_block .list_order .order .row.name {
+  .cart .order_block .list_order .order .row.name {
     width: 275px; } }
 
 @media screen and (max-width: 870px) {
-  body .private_office .order_block .list_order .order .row.name,
   body .cart .order_block .list_order .order .row.name {
     width: 250px; } }
 
 @media screen and (max-width: 850px) {
   .cart .list_order .total_price .price {
     font-size: 24px; }
-  body .private_office .order_block .list_order .order .row.name, body .cart .order_block .list_order .order .row.name {
-    width: 205px; }
-  .private_office .order_block .list_order .order .row.name, .cart .order_block .list_order .order .row.name {
+  body .cart .order_block .list_order .order .row.name {
+    width: 205px;
     padding: 0 20px; } }
 
 @media screen and (max-width: 800px) {
@@ -3775,23 +3808,19 @@ img {
     margin-left: 0 !important; }
   .bread li a, .bread li span {
     font-size: 14px; }
-  body .private_office .order_block .list_order .order .row,
   body .cart .order_block .list_order .order .row {
     display: block;
     width: 100% !important;
     text-align: center;
     margin-bottom: 10px; }
-  .private_office .order_block .list_order .order .row .title,
   .cart .order_block .list_order .order .row .title,
   .order .row .name,
   .cart .order_block .list_order .order .row .name {
     display: inline-block;
     vertical-align: middle;
     margin: 0; }
-  body .private_office .order_block .list_order .item,
   body .cart .order_block .list_order .item {
     display: block; }
-  .private_office .order_block .list_order .order .row.image .img-holder,
   .cart .order_block .list_order .order .row.image .img-holder {
     margin: 10px auto 0; } }
 
@@ -3802,7 +3831,7 @@ img {
     height: 250px; } }
 
 @media screen and (max-width: 650px) {
-  #registration, #contact_form, #private_edit {
+  #contact_form {
     width: calc( 100% - 40px);
     left: 20px;
     margin-left: 0;
@@ -3810,19 +3839,19 @@ img {
     height: 460px;
     margin-top: -230px;
     overflow: auto; }
-    #registration .form-holder .row-group .file, #contact_form .form-holder .row-group .file, #private_edit .form-holder .row-group .file {
+    #contact_form .form-holder .row-group .file {
       width: 100%;
       background-position: top center;
       margin-bottom: 20px !important;
       cursor: pointer; }
-      #registration .form-holder .row-group .file:hover, #contact_form .form-holder .row-group .file:hover, #private_edit .form-holder .row-group .file:hover {
+      #contact_form .form-holder .row-group .file:hover {
         background-position: top center; }
-      #registration .form-holder .row-group .file input[type="file"], #contact_form .form-holder .row-group .file input[type="file"], #private_edit .form-holder .row-group .file input[type="file"] {
+      #contact_form .form-holder .row-group .file input[type="file"] {
         width: 100% !important; }
-    #registration .form-holder .row-group > div, #contact_form .form-holder .row-group > div, #private_edit .form-holder .row-group > div {
+    #contact_form .form-holder .row-group > div {
       display: block;
       margin: auto !important; }
-    #registration .form-holder .row-group input[type="text"], #registration .form-holder .row-group input[type="email"], #contact_form .form-holder .row-group input[type="text"], #contact_form .form-holder .row-group input[type="email"], #private_edit .form-holder .row-group input[type="text"], #private_edit .form-holder .row-group input[type="email"] {
+    #contact_form .form-holder .row-group input[type="text"], #contact_form .form-holder .row-group input[type="email"] {
       width: 100%;
       margin-bottom: 20px; }
   #contact_form {
@@ -3841,13 +3870,7 @@ img {
     height: auto !important; }
   .list_products .products.preview_block .block_product .img_holder {
     width: 60px;
-    height: auto; }
-  .private_office .block_private_office .img-holder {
-    margin: 0 auto 30px;
-    width: 100%;
-    float: none; }
-    .private_office .block_private_office .img-holder img {
-      width: 100%; } }
+    height: auto; } }
 
 @media screen and (max-width: 500px) {
   .blog .list_items .item .img-holder {
@@ -3859,14 +3882,14 @@ img {
     #slider .slider .item .block_text.left_text h3 {
       text-align: left;
       margin-left: 20px; }
-  #registration h3, #contact_form h3, #private_edit h3 {
+  #contact_form h3 {
     margin-bottom: 20px;
     font-size: 23px; }
-  #registration .form-holder .btn, #contact_form .form-holder .btn, #private_edit .form-holder .btn {
+  #contact_form .form-holder .btn {
     margin-top: 20px; }
-  #registration .form-holder .row-group .file, #contact_form .form-holder .row-group .file, #private_edit .form-holder .row-group .file {
+  #contact_form .form-holder .row-group .file {
     margin-bottom: 10px !important; }
-  #registration .form-holder .row-group input[type="text"], #registration .form-holder .row-group input[type="email"], #contact_form .form-holder .row-group input[type="text"], #contact_form .form-holder .row-group input[type="email"], #private_edit .form-holder .row-group input[type="text"], #private_edit .form-holder .row-group input[type="email"] {
+  #contact_form .form-holder .row-group input[type="text"], #contact_form .form-holder .row-group input[type="email"] {
     margin-bottom: 10px; }
   #contact_form, #login {
     height: 440px;

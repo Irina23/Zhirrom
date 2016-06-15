@@ -43,6 +43,8 @@
 							return /^[а-яіїєґёА-ЯІЇЄҐЁa-zA-Z0-9]+/.test(data);
 						case 'quantity':
 							return /^[1-9]/.test(data);
+						case 'select':
+							return !(data === null || data === "null" || data === "false" || data === "0" || data === "undefined");
 						default:
 							return true;
 					}

@@ -1,4 +1,4 @@
-#preloader
+//#preloader
 header
     .top
         .wrap
@@ -17,7 +17,7 @@ header
 
             .user-login
                 a.login.open_modal(href="#login") Вход
-                a.registration.open_modal(href="#registration") Регистрация
+                a.registration(href="registration.html") Регистрация
 
 
 
@@ -102,7 +102,7 @@ header
 
 header.mobile
     .top.cf
-        #menu
+        #menu-mobile
             #menu-icon
                 span.icon-bar
                 span.icon-bar
@@ -167,7 +167,7 @@ header.mobile
         .header_left
             .user-login
                 a.login.open_modal(href="#login") Вход
-                a.registration.open_modal(href="#registration") Регистрация
+                a.registration.open_modal(href="registration.html") Регистрация
             .cart
                 a(href="cart.html") В корзине:&#160;
                     span 0

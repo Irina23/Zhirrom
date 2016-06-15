@@ -10,102 +10,88 @@ html(lang="ru")
 
             .container
                 .wrap
-                    .block_private_office.cf
-                        h1 Личный кабинет
-                        .img-holder
-                            img(src="img/content/img_blog.jpg")
-                        .block_info
-                            .row ФИО: Зарва Светлана Юрьевна
-                            .row ИНН: 333546365987
-                            .row Почта: Zarva@gmail.com
-                            .row Телефон: +7 (495) 773-36-46
-                            .row Адрес: г. Москва, Ленина 22
-                            .row Интересующий асортимент: шапка, берет, косынка, аксесуары
-                            a.submit.open_modal(href="#private_edit") Редактировать
+                    h1 Личный кабинет
+                    .tabs
+                        .tabs-menu
+                            ul.nav.nav-tabs
+                                li.active( href="#history_orders" data-toggle="tab") История заказов
+                                li( href="#personal_information" data-toggle="tab") Персональные данные
+                                li( href="#change_password_email" data-toggle="tab") Смена пароля и E-mail
 
-                    .order_block
-                        h3 История покупок
-                        .list_order.list_items
-                            .item
-                                .data Дата заказа: 14 апреля 2016г.
-                                .order
-                                    .row.image
-                                        .img-holder
-                                            a(href="product.html")
-                                                img(src="img/content/product.jpg")
-                                    .row.name
-                                        .title Артикул: 5017
-                                        .name
-                                            a(href="product.html") Повязка CHELSI
-                                    .row.size
-                                        .title Размер:
-                                        .name 42-44
+                        .tab-content
+                            .tab-pane.active#history_orders history_orders
+                            .tab-pane#personal_information
+                                form#private_office
+                                    .wholesale_customer
+                                        h3 Данные оптового клиента
+                                        div
+                                            span Название компании*
+                                            input(type="text" name="company" data-validate="name")
+                                        div
+                                            span ИНН*
+                                            input(type="text" name="inn" data-validate="number")
+                                        div
+                                            span КПП*
+                                            input(type="text" name="kpp" data-validate="number")
 
-                                    .row.color
-                                        .title Цвет:
-                                        .name Белый
-                                    .row.quantity
-                                        .title Количество:
-                                        .name 1
-                                    .row.price
-                                        .title Цена:
-                                        .name 1199 руб.
-
-                                .order
-                                    .row.image
-                                        .img-holder
-                                            a(href="product.html")
-                                                img(src="img/content/product.jpg")
-                                    .row.name
-                                        .title Артикул: 5017
-                                        .name
-                                            a(href="product.html") Повязка CHELSI
-                                    .row.size
-                                        .title Размер:
-                                        .name 42-44
-
-                                    .row.color
-                                        .title Цвет:
-                                        .name Белый
-                                    .row.quantity
-                                        .title Количество:
-                                        .name 1
-                                    .row.price
-                                        .title Цена:
-                                        .name 1199 руб.
-
-                            .item
-                                .data Дата заказа: 14 апреля 2016г.
-                                .order
-                                    .row.image
-                                        .img-holder
-                                            a(href="product.html")
-                                                img(src="img/content/product.jpg")
-                                    .row.name
-                                        .title Артикул: 5017
-                                        .name
-                                            a(href="product.html") Повязка CHELSI
-                                    .row.size
-                                        .title Размер:
-                                        .name 42-44
-
-                                    .row.color
-                                        .title Цвет:
-                                        .name Белый
-                                    .row.quantity
-                                        .title Количество:
-                                        .name 1
-                                    .row.price
-                                        .title Цена:
-                                        .name 1199 руб.
+                                        div
+                                            span Телефон организации*
+                                            input(type="text" name="phone" data-validate="phone")
 
 
-                        .pagination
-                            ul
-                                li.prev
-                                    a(href="#")
-                                li.next
-                                    a(href="#")
+                                    .contact_details
+                                        h3 Ваши контактные данные
+                                        div
+                                            span Ваше имя*
+                                            input(type="text" name="name" data-validate="name")
+                                        div
+                                            span Фамилия*
+                                            input(type="text" name="surname" data-validate="name")
+                                        div
+                                            span Должность*
+                                            input(type="text" name="position" data-validate="name")
+
+                                        div
+                                            span Контактный телефон*
+                                            input(type="text" name="phone_contact" data-validate="phone")
+
+
+                                    .address
+                                        h3 Ваш адрес доставки
+                                        div
+                                            span Город / Населенный пункт*
+                                            input(type="text" name="city" data-validate="name")
+                                        div
+                                            span Индекс*
+                                            input(type="text" name="index" data-validate="number")
+                                        div
+                                            span Улица*
+                                            input(type="text" name="street" data-validate="name")
+
+                                        div
+                                            span Дом / Корпус*
+                                            input(type="text" name="housing" data-validate="number")
+
+                                        div
+                                            span Квартира / Офис*
+                                            input(type="text" name="apartment" data-validate="number")
+                                        div
+                                            span Вид перевозки
+                                            select(name="delivery" data-validate="select")
+
+                                        div
+                                            span Транспортная компания
+                                            select(name="delivery_compamy" data-validate="select")
+
+                                    .description
+                                        p.desc_form *Все поля обязательны к заполнению
+                                        p Ваши данные используются исключительно для автозаполнения форм приоформлении заказа. Это улучшает качество нашего сервиса и кпращает Вам процедуру покупки. Пожалуйста, сохраните внесенные изменения ниже.
+
+                                    a.btn.submit(href="#") сохранить изменения
+                            .tab-pane#change_password_email change_password_email
+
+
+
 
             include ./footer.jade
 

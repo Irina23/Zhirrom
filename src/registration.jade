@@ -1,0 +1,59 @@
+doctype html
+html(lang="ru")
+    include ./head.jade
+
+
+    body
+        .page_wrapper.registration
+            include ./header.jade
+
+
+            .container.cf
+                .wrap
+
+                    h1 Регистрация
+                    form#registration
+                        .desc Для регистрации заполните, пожалуйста, слудующие поля:
+                        .row
+                            div
+                                span Название компании*
+                                input(type="text" name="company" data-validate="name")
+                            div
+                                span Дата рождения*
+                                input(type="text" name="birthday" data-validate="name")
+
+                        .row
+                            div
+                                span Ваше имя*
+                                input(type="text" name="name" data-validate="name")
+                            div
+                                span Город / Населенный пункт*
+                                input(type="text" name="city" data-validate="name")
+                            div
+                                span Индекс*
+                                input(type="text" name="index" data-validate="number")
+
+                        .row
+                            div
+                                span Фамилия*
+                                input(type="text" name="name" data-validate="name")
+                            div
+                                span Пароль*
+                                input(type="text" name="city" data-validate="name")
+                        .row
+                            div
+                                span ИНН*
+                                input(type="text" name="index" data-validate="number")
+
+                            div
+                                span Повторить пароль*
+                                input(type="text" name="city" data-validate="name")
+
+                        .row
+                            div
+                                span Контактный телефон*
+                                input(type="text" name="index" data-validate="number")
+
+            include ./footer.jade
+
+
