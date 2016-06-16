@@ -3165,7 +3165,7 @@ img
 
   .products
     margin: 0 -10px
-
+    text-align: center
 
 
     .block_product
@@ -3299,6 +3299,7 @@ img
     padding: 0 95px
 
   .categories
+    text-align: center
     .item-category
       display: inline-block
       vertical-align: top
@@ -3439,12 +3440,17 @@ img
 
   .list_certificate
     >div
-      width: 300px
+      width: calc((100% - 40px)/3)
       display: inline-block
       vertical-align: top
       margin-right: 15px
       &:last-child
         margin-right: 0
+      &.img-holder
+        a
+          display: block
+          text-align: center
+
 
     .info-certificate
       color: #515151
@@ -3458,6 +3464,7 @@ img
         font-size: 18px
         font-weight: 300
         line-height: 30px
+
       p
         margin-bottom: 25px
         color: #515151
@@ -3518,6 +3525,7 @@ img
       img
         width: auto
         max-width: 100%
+        margin: auto
 
 
 
@@ -4103,6 +4111,10 @@ img
     > div.short
       width: 205px
 
+
+  .list_category2
+    .item-category
+      margin-bottom: 20px
 
 
 @media screen and (max-width: 959px)
@@ -4740,7 +4752,15 @@ img
           margin-top: 0
           margin-bottom: 20px
 
+  .product_new,.list_category2, .block_advantages, .block_certificate, .block_brands, #block_feedback .wrap
+    h3
+      font-size: 36px
+    .text_holder
+      padding: 0
 
+
+  .list_category2 .categories .item-category
+    margin: 0 10px 20px!important
 
 @media screen and (max-width: 930px)
   .list_products
@@ -4812,6 +4832,18 @@ img
     padding: 0 20px
 
 
+  .block_certificate .list_certificate > div
+    width: 100%
+    margin-right: 0
+    margin-bottom: 20px
+    &.img-holder
+      img
+        text-align: center
+        margin: auto
+
+
+
+
 @media screen and (max-width: 800px)
 
   .blog .list_items .item
@@ -4851,6 +4883,11 @@ img
 
   .cart .order_block .list_order .order .row.image .img-holder
     margin: 10px auto 0
+
+  .block_advantages .list_advantages .item
+    width: 32%
+
+
 
 @media screen and (max-width: 750px)
   .block_private_office .img-holder
@@ -4909,6 +4946,8 @@ img
         display: none
 
 
+  .block_advantages .list_advantages .item
+    width: 49%
 
 @media screen and (max-width: 600px)
   .brand .list_brand li
@@ -4925,7 +4964,10 @@ img
     width: 60px
     height: auto
 
-
+  #block_feedback .feedback_list .block_feedback
+    width: 100%
+    padding: 0
+    margin-bottom: 40px
 
 
 
@@ -4980,6 +5022,12 @@ img
         margin-right: 10px
         &:nth-child(3n)
           margin-right: 0
+
+
+
+
+  .block_advantages .list_advantages .item
+    width: 100%
 
 @media screen and (max-width: 450px)
   .list_products .filter > div span

@@ -104,13 +104,16 @@ jQuery(document).ready(function() {
         });
 
 
+
+
         $('.home .list_brands').owlCarousel({
             loop:true,
             margin:60,
             nav:true,
             responsive:{
                 0:{
-                    items:1
+                    items:1,
+                    margin: 0
                 },
                 600:{
                     items:3
@@ -119,7 +122,7 @@ jQuery(document).ready(function() {
                     items:5
                 }
             }
-        })
+        });
 
 
 
