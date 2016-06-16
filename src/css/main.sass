@@ -2277,6 +2277,8 @@ img
             &.active
               display: none
 
+
+
 .feedback
   .container
     //background: url("../img/bg/bg_review.jpg") no-repeat top center
@@ -3783,7 +3785,7 @@ img
 
 
         .selectbox
-
+          margin-bottom: 10px
           color: #3d3d3d
           font-family: "FuturaBookC", sans-serif
           font-size: 16px
@@ -3812,6 +3814,9 @@ img
             .text
               padding: 0 30px 0 10px
               position: relative
+              white-space: nowrap
+              overflow: hidden
+              text-overflow: ellipsis
               &:after
                 content: ''
                 position: absolute
@@ -3823,6 +3828,62 @@ img
                 border-left: 5px solid transparent
                 border-right: 5px solid transparent
                 border-top: 7px solid #838383
+
+    #change_password_email
+      form
+        width: 460px
+        float: left
+        &:nth-child(2n+1)
+          margin-right: 20px
+        > div
+          &.error
+            input[type="text"]
+              border-color: $main-color
+        h3
+          margin-bottom: 15px
+          color: #000
+          font-family: "FuturaPT-Medium", sans-serif
+          font-size: 20px
+          font-weight: 500
+          line-height: 1em
+
+        input[type="text"]
+          display: block
+          width: 100%
+          box-sizing: border-box
+          border: 1px solid #d7d7d7
+          height: 35px
+          line-height: 35px
+          margin-bottom: 7px
+          padding: 0 10px
+          color: #3d3d3d
+          font-family: "FuturaBookC", sans-serif
+          font-size: 16px
+          font-weight: 300
+
+        .submit
+
+          float: right
+          background: $main-color
+          border-radius: 2px
+          box-shadow: inset 0 2px 7.8px 0.2px rgba(0, 0, 0, 0.16)
+          color: #fff
+          font-family: "FuturaPT-Demi", sans-serif
+          //letter-spacing: 1px
+          font-size: 14px
+          font-weight: 300
+          line-height: 1em
+          text-transform: uppercase
+          font-variant: small-caps
+          padding: 13px 20px
+          display: inline-block
+          cursor: pointer
+          transition: all 0.35s
+          &:hover
+            transition: all 0.35s
+            background: #fe622b
+
+
 
 
 @media screen and (min-width: 1024px) and (max-height: 700px)
@@ -3888,10 +3949,7 @@ img
   .wrap, .header
     width: 880px
 
-  .header
-    .search,
-    .logo
-      margin-right: 90px
+
   .about .text_holder
     width: 440px
   #faq .block_text
@@ -3929,6 +3987,23 @@ img
 
 
 
+  .top .menu li
+    margin-right: 15px
+  .header .list_contact > div
+    margin-right: 50px
+  .header .block-logo .tagline
+    font-size: 17px
+
+
+  .private_office .container #private_office > div
+    width: 430px
+    > div.short
+      width: 205px
+
+  .private_office .container #change_password_email form
+    width: 430px
+  .private_office .container .tabs-menu li:after
+    top: 2px
 
 @media screen and (max-width: 959px)
   body
@@ -3954,9 +4029,9 @@ img
           .icon-bar
             background-color: #fff
             display: block
-            width: 40px
-            height: 4px
-            margin-bottom: 7px
+            width: 24px
+            height: 2px
+            margin-bottom: 5px
 
             &:last-child
               margin-bottom: 0
@@ -4030,7 +4105,7 @@ img
         width: 155px
         background: #727272
         position: absolute
-        top: 10px
+        top: 4px
         right: 15px
         z-index: 10
         input[type="text"]
@@ -4120,6 +4195,13 @@ img
 
     .header_right
       float: right
+      color: #000
+      font-size: 16px
+      line-height: 1em
+      p
+        color: #000
+        font-size: 16px
+        line-height: 1em
       a
         display: block
         margin-bottom: 15px
@@ -4131,7 +4213,7 @@ img
 
         &.email
           letter-spacing: 1px
-          margin-bottom: 0
+          //margin-bottom: 0
         &:hover
           transition: all 0.35s
           color: $main-color
@@ -4434,7 +4516,18 @@ img
     display: none!important
 
   .feedback
-    padding: 50px 0
+    //padding: 50px 0
+    .container .wrap
+      h1
+        font-size: 36px
+        margin-bottom: 40px
+      form h4
+        font-size: 24px
+    .pagination_list li a
+      font-size: 18px
+      &.prev:after, &.next:after
+        top: 3px
+
     .wrap
       h3
         font-size: 36px
@@ -4484,6 +4577,36 @@ img
       height: 480px
 
 
+  .private_office
+    .container
+      h1
+        font-size: 24px
+        margin-bottom: 30px
+
+      .tabs-menu
+        float: none
+        clear: both
+        display: block
+        text-align: center
+        margin-bottom: 50px
+        li
+          line-height: 24px
+
+      #private_office > div
+        width: 100%
+        margin-right: 0!important
+        > div.short
+          width: 100%
+          margin-right: 0!important
+
+  .private_office .container #change_password_email form
+    width: 100%
+    margin-right: 0!important
+
+
+
+  #change_password
+    margin-bottom: 30px
 
 
 
@@ -4599,6 +4722,10 @@ img
     width: 250px
     height: 250px
 
+  .feedback .container .feedback_list .block_feedback
+    width: 100%
+    padding: 0!important
+
 
 
 @media screen and (max-width: 650px)
@@ -4637,6 +4764,13 @@ img
     padding: 0
     margin-bottom: 30px
 
+
+  .private_office .container .tabs-menu
+    li
+      display: block
+      margin-bottom: 10px
+      &:after
+        display: none
 
 
 

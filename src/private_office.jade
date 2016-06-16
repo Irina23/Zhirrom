@@ -47,10 +47,12 @@ html(lang="ru")
                                         div
                                             span Фамилия*
                                             input(type="text" name="surname" data-validate="name")
-                                        div
+                                        div.short.margin20
                                             span Должность*
                                             input(type="text" name="position" data-validate="name")
-
+                                        div.short
+                                            span Дата в формате ДД-ММ-ГГГГ*
+                                            input(type="text" name="data" data-validate="data" placeholder="ДД-ММ-ГГГГ")
                                         div
                                             span Контактный телефон*
                                             input(type="text" name="phone_contact" data-validate="phone")
@@ -63,7 +65,7 @@ html(lang="ru")
                                             input(type="text" name="city" data-validate="name")
                                         div.short
                                             span Индекс*
-                                            input(type="text" name="index" data-validate="number")
+                                            input(type="text" name="index" data-validate="index")
                                         div
                                             span Улица*
                                             input(type="text" name="street" data-validate="name")
@@ -86,15 +88,38 @@ html(lang="ru")
                                             span Транспортная компания
                                             select(name="delivery_compamy" data-validate="select")
                                                 option(value="UPS") UPS Delivery RUS
-                                                option(value="delivery_compamy1") Транспортная компания
-                                                option(value="delivery_compamy2") Транспортная компания
+                                                option(value="delivery_compamy1") Транспортная компания 1
+                                                option(value="delivery_compamy2") Транспортная компания 2
 
                                     .description
                                         p.desc_form *Все поля обязательны к заполнению
                                         p Ваши данные используются исключительно для автозаполнения форм приоформлении заказа. Это улучшает качество нашего сервиса и кпращает Вам процедуру покупки. Пожалуйста, сохраните внесенные изменения ниже.
                                         .btn.submit сохранить изменения
 
-                            .tab-pane.cf#change_password_email change_password_email
+                            .tab-pane.cf#change_password_email
+                                form#change_password
+
+                                        h3 Изминение пароля
+                                        div
+                                            input(type="text" name="old_pass" data-validate="password" placeholder="*Старый пароль:")
+                                        div
+                                            input(type="text" name="pass" data-validate="password" placeholder="*Новый пароль:")
+                                        div
+                                            input(type="text" name="repeat_pass" data-validate="password" placeholder="*Повторить пароль:")
+
+                                        .btn.submit отправить
+
+                                form#change_email
+
+                                        h3 Изминение E-mail
+                                        div
+                                            input(type="text" name="current_pass" data-validate="password" placeholder="*Текущий пароль:")
+                                        div
+                                            input(type="text" name="email" data-validate="email" placeholder="*Новый e-mail:")
+                                        div
+                                            input(type="text" name="repeat_email" data-validate="email" placeholder="*Повторить e-mail:")
+                                        .btn.submit отправить
+
 
 
 

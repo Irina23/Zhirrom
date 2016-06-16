@@ -39,10 +39,16 @@
 							return /^[0-9a-zA-Z._-]+@[0-9a-zA-Z_-]+\.[a-zA-Z._-]+/.test(data);
 						case 'number':
 							return /^[0-9]/.test(data);
+						case 'index':
+							return /^[0-9]{6}/.test(data);
 						case 'empty':
 							return /^[а-яіїєґёА-ЯІЇЄҐЁa-zA-Z0-9]+/.test(data);
+						case 'password':
+							return /^[a-zA-Z0-9]{6}/.test(data);
 						case 'quantity':
 							return /^[1-9]/.test(data);
+						case 'data':
+							return /^(0[1-9]|1[0-9]|2[0-9]|3[01])-(0[1-9]|1[012])-[0-9]{4}/.test(data);
 						case 'select':
 							return !(data === null || data === "null" || data === "false" || data === "0" || data === "undefined");
 						default:

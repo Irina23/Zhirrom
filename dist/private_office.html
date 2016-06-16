@@ -138,7 +138,9 @@
             <div class="user-login"><a href="#login" class="login open_modal">Вход</a><a href="registration.html" class="registration open_modal">Регистрация</a></div>
             <div class="cart"><a href="cart.html">В корзине:&#160;<span>0</span></a></div>
           </div>
-          <div class="header_right"><a href="tel:+7(495) 369-14-15">+7(495) 369-14-15</a><a href="tel:+7(925) 035-31-31">+7(925) 035-31-31</a><a href="mailto:client@zhirrom.ru" class="email">client@zhirrom.ru</a></div>
+          <div class="header_right"><a href="tel:+7(495) 369-14-15">+7(495) 369-14-15</a><a href="tel:+7(925) 035-31-31">+7(925) 035-31-31</a><a href="mailto:client@zhirrom.ru" class="email">client@zhirrom.ru</a>
+            <p>пн-пт 9.00-18.00</p>
+          </div>
         </div>
       </header>
       <div class="container">
@@ -179,8 +181,11 @@
                     <div><span>Фамилия*</span>
                       <input type="text" name="surname" data-validate="name">
                     </div>
-                    <div><span>Должность*</span>
+                    <div class="short margin20"><span>Должность*</span>
                       <input type="text" name="position" data-validate="name">
+                    </div>
+                    <div class="short"><span>Дата в формате ДД-ММ-ГГГГ*</span>
+                      <input type="text" name="data" data-validate="data" placeholder="ДД-ММ-ГГГГ">
                     </div>
                     <div><span>Контактный телефон*</span>
                       <input type="text" name="phone_contact" data-validate="phone">
@@ -192,7 +197,7 @@
                       <input type="text" name="city" data-validate="name">
                     </div>
                     <div class="short"><span>Индекс*</span>
-                      <input type="text" name="index" data-validate="number">
+                      <input type="text" name="index" data-validate="index">
                     </div>
                     <div><span>Улица*</span>
                       <input type="text" name="street" data-validate="name">
@@ -213,8 +218,8 @@
                     <div class="short"><span>Транспортная компания</span>
                       <select name="delivery_compamy" data-validate="select">
                         <option value="UPS">UPS Delivery RUS</option>
-                        <option value="delivery_compamy1">Транспортная компания</option>
-                        <option value="delivery_compamy2">Транспортная компания</option>
+                        <option value="delivery_compamy1">Транспортная компания 1</option>
+                        <option value="delivery_compamy2">Транспортная компания 2</option>
                       </select>
                     </div>
                   </div>
@@ -225,7 +230,34 @@
                   </div>
                 </form>
               </div>
-              <div id="change_password_email" class="tab-pane cf">change_password_email</div>
+              <div id="change_password_email" class="tab-pane cf">
+                <form id="change_password">
+                  <h3>Изминение пароля</h3>
+                  <div>
+                    <input type="text" name="old_pass" data-validate="password" placeholder="*Старый пароль:">
+                  </div>
+                  <div>
+                    <input type="text" name="pass" data-validate="password" placeholder="*Новый пароль:">
+                  </div>
+                  <div>
+                    <input type="text" name="repeat_pass" data-validate="password" placeholder="*Повторить пароль:">
+                  </div>
+                  <div class="btn submit">отправить</div>
+                </form>
+                <form id="change_email">
+                  <h3>Изминение E-mail</h3>
+                  <div>
+                    <input type="text" name="current_pass" data-validate="password" placeholder="*Текущий пароль:">
+                  </div>
+                  <div>
+                    <input type="text" name="email" data-validate="email" placeholder="*Новый e-mail:">
+                  </div>
+                  <div>
+                    <input type="text" name="repeat_email" data-validate="email" placeholder="*Повторить e-mail:">
+                  </div>
+                  <div class="btn submit">отправить</div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -321,6 +353,7 @@
       <script src="js/owl.carousel.js"></script>
       <script src="js/bootstrap_tabs.min.js"></script>
       <script src="js/jquery.selectbox.min.js"></script>
+      <script src="js/jquery.maskedinput.js"></script>
       <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
       <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
       <script>
