@@ -3242,6 +3242,81 @@ img {
     line-height: 1em;
     font-family: "FuturaBookC", sans-serif;
     margin-bottom: 50px; }
+  .registration .container .desc {
+    color: #000;
+    font-family: "FuturaBookC", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1em;
+    margin-bottom: 20px; }
+  .registration .container .row {
+    width: 460px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 30px; }
+    .registration .container .row:nth-child(2n+1) {
+      margin-right: 16px; }
+    .registration .container .row > div.error input[type="text"] {
+      border-color: #ff4504; }
+    .registration .container .row > div.short {
+      width: 220px;
+      display: inline-block;
+      vertical-align: bottom; }
+      .registration .container .row > div.short.data_desc span {
+        line-height: 35px; }
+      .registration .container .row > div.short.margin20 {
+        margin-right: 16px; }
+    .registration .container .row span {
+      display: block;
+      margin-bottom: 10px;
+      color: #000;
+      font-family: "FuturaBookC", sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1em; }
+    .registration .container .row input[type="text"] {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      border: 1px solid #d7d7d7;
+      height: 35px;
+      line-height: 35px;
+      margin-bottom: 10px;
+      padding: 0 10px;
+      color: #3d3d3d;
+      font-family: "FuturaBookC", sans-serif;
+      font-size: 16px;
+      font-weight: 300; }
+    .registration .container .row p {
+      color: #696868;
+      font-family: "FuturaBookC", sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 40px;
+      float: left;
+      margin-top: 20px; }
+    .registration .container .row .submit {
+      background: #ff4504;
+      border-radius: 2px;
+      box-shadow: inset 0 2px 7.8px 0.2px rgba(0, 0, 0, 0.16);
+      color: #fff;
+      font-family: "FuturaPT-Demi", sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 1em;
+      text-transform: uppercase;
+      font-variant: small-caps;
+      padding: 13px 12px;
+      display: inline-block;
+      cursor: pointer;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      float: right;
+      margin-top: 20px; }
+      .registration .container .row .submit:hover {
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        background: #fe622b; }
 
 .private_office .container {
   padding: 30px 0 120px; }
@@ -3360,7 +3435,6 @@ img {
         color: #696868;
         font-size: 16px; }
     .private_office .container #private_office > div .selectbox {
-      margin-bottom: 10px;
       color: #3d3d3d;
       font-family: "FuturaBookC", sans-serif;
       font-size: 16px;
@@ -3541,7 +3615,11 @@ img {
   .private_office .container #change_password_email form {
     width: 430px; }
   .private_office .container .tabs-menu li:after {
-    top: 2px; } }
+    top: 2px; }
+  .registration .container .row {
+    width: 430px; }
+    .registration .container .row > div.short {
+      width: 205px; } }
 
 @media screen and (max-width: 959px) {
   body {
@@ -3985,28 +4063,54 @@ img {
     height: 480px; }
     #slider .slider .item {
       height: 480px; }
-  .private_office .container h1 {
-    font-size: 24px;
-    margin-bottom: 30px; }
-  .private_office .container .tabs-menu {
-    float: none;
-    clear: both;
-    display: block;
-    text-align: center;
-    margin-bottom: 50px; }
-    .private_office .container .tabs-menu li {
-      line-height: 24px; }
-  .private_office .container #private_office > div {
-    width: 100%;
-    margin-right: 0 !important; }
-    .private_office .container #private_office > div > div.short {
+  .private_office .container {
+    padding: 40px 0; }
+    .private_office .container h1 {
+      font-size: 24px;
+      margin-bottom: 30px; }
+    .private_office .container .tabs-menu {
+      float: none;
+      clear: both;
+      display: block;
+      text-align: center;
+      margin-bottom: 50px; }
+      .private_office .container .tabs-menu li {
+        line-height: 24px; }
+    .private_office .container #private_office > div {
       width: 100%;
       margin-right: 0 !important; }
+      .private_office .container #private_office > div > div.short {
+        width: 100%;
+        margin-right: 0 !important; }
   .private_office .container #change_password_email form {
     width: 100%;
     margin-right: 0 !important; }
   #change_password {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .feedback .container {
+    padding: 40px 0; }
+    .feedback .container .wrap form textarea {
+      font-size: 18px;
+      letter-spacing: 0; }
+  .registration .container {
+    padding: 40px 0; }
+    .registration .container h1 {
+      font-size: 24px;
+      margin-bottom: 30px; }
+    .registration .container .row {
+      width: 100%;
+      margin-right: 0 !important; }
+      .registration .container .row > div.short {
+        width: 100%;
+        margin-right: 0 !important; }
+        .registration .container .row > div.short.data_desc span {
+          line-height: 1em;
+          margin-bottom: 15px; }
+      .registration .container .row p {
+        float: none;
+        line-height: 1em;
+        margin-top: 0;
+        margin-bottom: 20px; } }
 
 @media screen and (max-width: 930px) {
   .list_products .filter_products {
@@ -4034,7 +4138,9 @@ img {
     text-align: center; }
   .list_products .filter > div.preview,
   .list_products .filter > div.sort_by {
-    margin-right: 20px; } }
+    margin-right: 20px; }
+  .private_office .container #private_office > div .selectbox {
+    margin-bottom: 10px; } }
 
 @media screen and (max-width: 920px) {
   .cart .order_block .list_order .order .row {
