@@ -8,7 +8,7 @@ $color-grey: #727272
 @font-face
   font-family: "SegoeUIRegular"
   src: url("../fonts/SegoeUIRegular.eot")
-  src: url("../fonts/SegoeUIRegular.eot?#iefix")format("embedded-opentype"),url("../fonts/SegoeUIRegular.woff") format("woff"),url("../fonts/SegoeUIRegular.ttf") format("truetype")
+  src: url("../fonts/SegoeUIRegular.eot?#iefix")format("embedded-opentype"), url("../fonts/SegoeUIRegular.woff") format("woff"),url("../fonts/SegoeUIRegular.ttf") format("truetype")
   font-style: normal
   font-weight: normal
 
@@ -130,6 +130,8 @@ img
   .menu
     display: inline-block
     vertical-align: middle
+    padding: 17px 0
+    margin-right: 70px
     li
       display: inline-block
       vertical-align: middle
@@ -140,11 +142,14 @@ img
 
       a
         color: #fff
-        font-family: "FuturaPT-Light", sans-serif
-        font-size: 18px
+        font-family: "FuturaBookC", sans-serif
+        font-size: 14px
         font-weight: 300
-        line-height: 40px
+        line-height: 1em
+        display: block
         transition: all 0.35s
+        text-transform: uppercase
+
         &:hover
           transition: all 0.35s
           color: $main-color
@@ -153,12 +158,14 @@ img
 
 
   .user-login
-    float: right
+    //float: right
+    display: inline-block
+    vertical-align: middle
     a
-      line-height: 38px
+      line-height: 35px
       color: #fff
       font-size: 18px
-      min-width: 115px
+      min-width: 80px
       text-align: center
       transition: all 0.35s
       display: inline-block
@@ -168,7 +175,7 @@ img
       &.login
         background: $main-color
         border-radius: 2px
-        box-shadow: inset  0px -2px 4px 2px rgba(0,0,0,0.16)
+        box-shadow: inset 0 -2px 7.8px 0.2px rgba(0, 0, 0, 0.16)
         &:hover
           color: #fff
           background: #fe622b
@@ -177,7 +184,7 @@ img
         color: $main-color
         text-decoration: none
 
-      &:first-letter
+      //&:first-letter
         font-family: "FuturaPT-Medium", sans-serif
 
 
@@ -771,12 +778,60 @@ img
         color: #fff
 
     .logo
-      width: 187px
-      height: 139px
-      margin-right: 135px
+      width: 255px
+      //height: 139px
+      margin-right: 125px
+      //margin-bottom: 15px
+      a
+        display: block
+        margin-bottom: 15px
+
+
+      #subscription
+        h3
+
+          color: #fff
+          font-family: "FuturaBookC", sans-serif
+          font-size: 18px
+          font-weight: 300
+          line-height: 1em
+          margin-bottom: 10px
+        >div
+          display: inline-block
+          vertical-align: middle
+          &.error
+            input
+              border-color: red
+        input
+          width: 240px
+          //height: 35px
+          border: 1px solid white
+          box-sizing: border-box
+          background: none
+          color: #fff
+          padding: 7px 30px 7px 10px
+          font-family: "FuturaBookC", sans-serif
+          font-size: 16px
+          font-weight: 300
+          line-height: 1em
+          &::-webkit-input-placeholder
+            color: #fff
+          &::-moz-placeholder
+            color: #fff
+          &:-moz-placeholder
+            color: #fff
+          &:-ms-input-placeholder
+            color: #fff
+
+        .submit
+          width: 19px
+          height: 19px
+          background: url("../img/icons/icon-subscription.png") no-repeat
+          cursor: pointer
+          margin-left: -30px
 
     .contact
-      margin-right: 135px
+      margin-right: 75px
       color: #fff
       >div
         font-size: 20px
@@ -842,7 +897,7 @@ img
 
           h3
             font-size: 60px
-            color: #292929
+            color: #000
             span
               display: inline-block
               vertical-align: top
@@ -1596,6 +1651,7 @@ img
     width: 160px
     h2
       display: none
+
 
   .products
     float: right
@@ -2384,6 +2440,8 @@ img
             border-radius: 90px
             overflow: hidden
             margin-right: 15px
+            border: 3px solid $main-color
+
           .block_name
             margin-top: 40px
             .name
@@ -3176,6 +3234,24 @@ img
       margin: 0 8px 50px
       box-sizing: border-box
       transition: all 0.35s
+      a.asking_price
+        color: #fffefe
+        font-family: "FuturaBookC", sans-serif
+        font-size: 16px
+        font-weight: 300
+        text-transform: uppercase
+        height: 1em
+        padding: 13px 18px 11px
+        background-color: $main-color
+        border-radius: 6px
+        box-shadow: inset 0 -2px 7.8px 0.2px rgba(0, 0, 0, 0.16)
+        display: inline-block
+        vertical-align: bottom
+        transition: all 0.35s
+        &:hover
+          background: #fe622b
+          transition: all 0.35s
+
       a
         .img_holder
           width: 220px
@@ -3216,13 +3292,15 @@ img
           margin-bottom: 15px
           text-align: left
 
+
         .block_price
           text-align: center
 
 
+
           .price
             display: inline-block
-            vertical-align: middle
+            vertical-align: bottom
             font-size: 24px
             line-height: 1em
             color:  #3e3d3d
@@ -3297,6 +3375,30 @@ img
     line-height: 24px
     margin-bottom: 50px
     padding: 0 95px
+
+  .download_price
+    width: 170px
+    height: 50px
+    background: $main-color
+    border-radius: 6px
+    box-shadow: inset 0 -2px 7.8px 0.2px rgba(0, 0, 0, 0.16)
+    margin: 50px auto 0
+    color: #fffefe
+    font-family: "FuturaPT-Demi", sans-serif
+    font-size: 16px
+    //font-weight: 800
+    text-transform: uppercase
+    display: block
+    text-align: center
+    line-height: 50px
+    transition: all 0.35s
+    &:hover
+      transition: all 0.35s
+      background: #fe622b
+      text-decoration: none
+
+
+
 
   .categories
     text-align: center
@@ -3612,6 +3714,8 @@ img
           border-radius: 85px
           overflow: hidden
           margin-right: 15px
+          border: 3px solid $main-color
+
         .block_name
           margin-top: 40px
           .name
@@ -3984,6 +4088,53 @@ img
             transition: all 0.35s
             background: #fe622b
 
+#order_status
+  display: inline-block
+  vertical-align: middle
+  h3
+    display: inline-block
+    vertical-align: middle
+    font-family: "FuturaBookC", sans-serif
+    color:  #ffffff
+    font-size: 14px
+    text-transform: uppercase
+    font-weight: 400
+    line-height: 1em
+    margin-right: 12px
+  div
+    display: inline-block
+    vertical-align: middle
+    &.error
+      input
+        border-color: red
+    input
+      font-family: "FuturaBookC", sans-serif
+      color:  #ffffff
+      font-size: 16px
+      line-height: 1em
+      text-align: left
+      background: none
+      border: 1px solid #fff
+      width: 160px
+      padding: 8px 33px 6px 7px
+      box-sizing: border-box
+      display: block
+      &::-webkit-input-placeholder
+        color: #fff
+      &::-moz-placeholder
+        color: #fff
+      &:-moz-placeholder
+        color: #fff
+      &:-ms-input-placeholder
+        color: #fff
+  .submit
+    width: 33px
+    height: 33px
+    display: inline-block
+    vertical-align: middle
+    background: url("../img/icons/search_w.png") no-repeat center
+    margin-left: -34px
+    cursor: pointer
 
 
 
@@ -4778,6 +4929,7 @@ img
         font-weight: normal
         font-size: 24px
         font-family: "FuturaBookC", sans-serif
+        cursor: pointer
         i
           margin-right: 15px
 

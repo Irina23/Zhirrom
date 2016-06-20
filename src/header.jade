@@ -1,23 +1,28 @@
 //#preloader
 header
     .top
-        .wrap
+        .wrap.cf
             .menu
                 li
                     a(href="about.html") О компании
-                li
-                    a(href="working.html") Правила работы
+
                 li
                     a(href="#") Таблица размеров
-                li
-                    a(href="#") Условия доставки
+
                 li
                     a(href="blog.html") Статьи
 
 
+            form#order_status
+                h3 Состояние заказа
+                div
+                    input(type="text" placeholder="Номер заказа" data-validate="number")
+                .btn.submit
+
             .user-login
-                a.login.open_modal(href="#login") Вход
                 a.registration(href="registration.html") Регистрация
+                a.login.open_modal(href="#login") Вход
+
 
 
 

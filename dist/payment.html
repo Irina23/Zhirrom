@@ -25,15 +25,20 @@
       <!--#preloader-->
       <header>
         <div class="top">
-          <div class="wrap">
+          <div class="wrap cf">
             <div class="menu">
               <li><a href="about.html">О компании</a></li>
-              <li><a href="working.html">Правила работы</a></li>
               <li><a href="#">Таблица размеров</a></li>
-              <li><a href="#">Условия доставки</a></li>
               <li><a href="blog.html">Статьи</a></li>
             </div>
-            <div class="user-login"><a href="#login" class="login open_modal">Вход</a><a href="registration.html" class="registration">Регистрация</a></div>
+            <form id="order_status">
+              <h3>Состояние заказа</h3>
+              <div>
+                <input type="text" placeholder="Номер заказа" data-validate="number">
+              </div>
+              <div class="btn submit"></div>
+            </form>
+            <div class="user-login"><a href="registration.html" class="registration">Регистрация</a><a href="#login" class="login open_modal">Вход</a></div>
           </div>
         </div>
         <div class="header cf">
@@ -217,7 +222,15 @@
       <footer>
         <div class="footer">
           <div class="wrap">
-            <div class="logo"><a href="index.html"><img src="img/icons/logo-footer.png"></a></div>
+            <div class="logo"><a href="index.html"><img src="img/icons/logo-f.png"></a>
+              <form id="subscription">
+                <h3>Подписаться на акции и скидки</h3>
+                <div>
+                  <input type="text" placeholder="Почта:" data-validate="email">
+                </div>
+                <div class="btn submit"></div>
+              </form>
+            </div>
             <div class="contact">
               <h4>Связаться с нами</h4>
               <div> Телефон:&#160;<a href="tel:+7(495) 369-14-15">+7(495) 369-14-15</a></div>

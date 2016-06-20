@@ -25,15 +25,20 @@
       <!--#preloader-->
       <header>
         <div class="top">
-          <div class="wrap">
+          <div class="wrap cf">
             <div class="menu">
               <li><a href="about.html">О компании</a></li>
-              <li><a href="working.html">Правила работы</a></li>
               <li><a href="#">Таблица размеров</a></li>
-              <li><a href="#">Условия доставки</a></li>
               <li><a href="blog.html">Статьи</a></li>
             </div>
-            <div class="user-login"><a href="#login" class="login open_modal">Вход</a><a href="registration.html" class="registration">Регистрация</a></div>
+            <form id="order_status">
+              <h3>Состояние заказа</h3>
+              <div>
+                <input type="text" placeholder="Номер заказа" data-validate="number">
+              </div>
+              <div class="btn submit"></div>
+            </form>
+            <div class="user-login"><a href="registration.html" class="registration">Регистрация</a><a href="#login" class="login open_modal">Вход</a></div>
           </div>
         </div>
         <div class="header cf">
@@ -181,11 +186,8 @@
                   <div class="block_text">
                     <div title="Винтаж Плюс L14" class="name">Винтаж Плюс L14</div>
                     <div class="description_product">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum</div>
-                    <div class="block_price">
-                      <div class="cart"></div>
-                      <div class="price">550<span>руб.</span></div>
-                    </div>
-                  </div></a></div>
+                    <div class="block_price"></div>
+                  </div></a><a href="registration.html" class="asking_price">узнать цену</a></div>
               <div class="block_product item"><a href="product.html">
                   <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14"></div>
                   <div class="block_text">
@@ -276,7 +278,7 @@
               <div class="item-category cf"><a href="list_product.html">
                   <div class="img-holder"><img src="img/content/tunics.jpg"></div>
                   <div class="name">Туники и палатины</div></a></div>
-            </div>
+            </div><a href="#" target="_blank" class="download_price">скачать прайс</a>
           </div>
           <div class="block_advantages">
             <h3>Наши преимущества</h3>
@@ -363,6 +365,12 @@
               <div class="item">
                 <div class="img-holder"><img src="img/content/daniil.png"></div>
               </div>
+              <div class="item">
+                <div class="img-holder"><img src="img/content/mialt.png"></div>
+              </div>
+              <div class="item">
+                <div class="img-holder"><img src="img/content/daniil.png"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -406,7 +414,15 @@
       <footer>
         <div class="footer">
           <div class="wrap">
-            <div class="logo"><a href="index.html"><img src="img/icons/logo-footer.png"></a></div>
+            <div class="logo"><a href="index.html"><img src="img/icons/logo-f.png"></a>
+              <form id="subscription">
+                <h3>Подписаться на акции и скидки</h3>
+                <div>
+                  <input type="text" placeholder="Почта:" data-validate="email">
+                </div>
+                <div class="btn submit"></div>
+              </form>
+            </div>
             <div class="contact">
               <h4>Связаться с нами</h4>
               <div> Телефон:&#160;<a href="tel:+7(495) 369-14-15">+7(495) 369-14-15</a></div>

@@ -119,7 +119,9 @@ img {
       vertical-align: middle; }
   .top .menu {
     display: inline-block;
-    vertical-align: middle; }
+    vertical-align: middle;
+    padding: 17px 0;
+    margin-right: 70px; }
     .top .menu li {
       display: inline-block;
       vertical-align: middle;
@@ -128,24 +130,27 @@ img {
         color: #ff4504; }
       .top .menu li a {
         color: #fff;
-        font-family: "FuturaPT-Light", sans-serif;
-        font-size: 18px;
+        font-family: "FuturaBookC", sans-serif;
+        font-size: 14px;
         font-weight: 300;
-        line-height: 40px;
+        line-height: 1em;
+        display: block;
         -webkit-transition: all 0.35s;
-        transition: all 0.35s; }
+        transition: all 0.35s;
+        text-transform: uppercase; }
         .top .menu li a:hover {
           -webkit-transition: all 0.35s;
           transition: all 0.35s;
           color: #ff4504;
           text-decoration: none; }
   .top .user-login {
-    float: right; }
+    display: inline-block;
+    vertical-align: middle; }
     .top .user-login a {
-      line-height: 38px;
+      line-height: 35px;
       color: #fff;
       font-size: 18px;
-      min-width: 115px;
+      min-width: 80px;
       text-align: center;
       -webkit-transition: all 0.35s;
       transition: all 0.35s;
@@ -156,7 +161,7 @@ img {
       .top .user-login a.login {
         background: #ff4504;
         border-radius: 2px;
-        box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16); }
+        box-shadow: inset 0 -2px 7.8px 0.2px rgba(0, 0, 0, 0.16); }
         .top .user-login a.login:hover {
           color: #fff;
           background: #fe622b; }
@@ -165,8 +170,6 @@ img {
         transition: all 0.35s;
         color: #ff4504;
         text-decoration: none; }
-      .top .user-login a:first-letter {
-        font-family: "FuturaPT-Medium", sans-serif; }
 
 .header {
   width: 940px;
@@ -669,11 +672,50 @@ img {
       margin-bottom: 20px;
       color: #fff; }
   .footer .wrap .logo {
-    width: 187px;
-    height: 139px;
-    margin-right: 135px; }
+    width: 255px;
+    margin-right: 125px; }
+    .footer .wrap .logo a {
+      display: block;
+      margin-bottom: 15px; }
+    .footer .wrap .logo #subscription h3 {
+      color: #fff;
+      font-family: "FuturaBookC", sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1em;
+      margin-bottom: 10px; }
+    .footer .wrap .logo #subscription > div {
+      display: inline-block;
+      vertical-align: middle; }
+      .footer .wrap .logo #subscription > div.error input {
+        border-color: red; }
+    .footer .wrap .logo #subscription input {
+      width: 240px;
+      border: 1px solid white;
+      box-sizing: border-box;
+      background: none;
+      color: #fff;
+      padding: 7px 30px 7px 10px;
+      font-family: "FuturaBookC", sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1em; }
+      .footer .wrap .logo #subscription input::-webkit-input-placeholder {
+        color: #fff; }
+      .footer .wrap .logo #subscription input::-moz-placeholder {
+        color: #fff; }
+      .footer .wrap .logo #subscription input:-moz-placeholder {
+        color: #fff; }
+      .footer .wrap .logo #subscription input:-ms-input-placeholder {
+        color: #fff; }
+    .footer .wrap .logo #subscription .submit {
+      width: 19px;
+      height: 19px;
+      background: url("../img/icons/icon-subscription.png") no-repeat;
+      cursor: pointer;
+      margin-left: -30px; }
   .footer .wrap .contact {
-    margin-right: 135px;
+    margin-right: 75px;
     color: #fff; }
     .footer .wrap .contact > div {
       font-size: 20px;
@@ -726,7 +768,7 @@ img {
         top: 150px; }
         #slider .slider .item .block_text.left_text h3 {
           font-size: 60px;
-          color: #292929; }
+          color: #000; }
           #slider .slider .item .block_text.left_text h3 span {
             display: inline-block;
             vertical-align: top;
@@ -2100,7 +2142,8 @@ img {
         float: left;
         border-radius: 90px;
         overflow: hidden;
-        margin-right: 15px; }
+        margin-right: 15px;
+        border: 3px solid #ff4504; }
       .feedback .container .feedback_list .block_feedback .block_personal .block_name {
         margin-top: 40px; }
         .feedback .container .feedback_list .block_feedback .block_personal .block_name .name {
@@ -2820,6 +2863,25 @@ img {
       box-sizing: border-box;
       -webkit-transition: all 0.35s;
       transition: all 0.35s; }
+      .product_new .products .block_product a.asking_price {
+        color: #fffefe;
+        font-family: "FuturaBookC", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        text-transform: uppercase;
+        height: 1em;
+        padding: 13px 18px 11px;
+        background-color: #ff4504;
+        border-radius: 6px;
+        box-shadow: inset 0 -2px 7.8px 0.2px rgba(0, 0, 0, 0.16);
+        display: inline-block;
+        vertical-align: bottom;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s; }
+        .product_new .products .block_product a.asking_price:hover {
+          background: #fe622b;
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s; }
       .product_new .products .block_product a .img_holder {
         width: 220px;
         height: 220px;
@@ -2859,7 +2921,7 @@ img {
         text-align: center; }
         .product_new .products .block_product a .block_price .price {
           display: inline-block;
-          vertical-align: middle;
+          vertical-align: bottom;
           font-size: 24px;
           line-height: 1em;
           color: #3e3d3d;
@@ -2932,6 +2994,27 @@ img {
     line-height: 24px;
     margin-bottom: 50px;
     padding: 0 95px; }
+  .list_category2 .download_price {
+    width: 170px;
+    height: 50px;
+    background: #ff4504;
+    border-radius: 6px;
+    box-shadow: inset 0 -2px 7.8px 0.2px rgba(0, 0, 0, 0.16);
+    margin: 50px auto 0;
+    color: #fffefe;
+    font-family: "FuturaPT-Demi", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s; }
+    .list_category2 .download_price:hover {
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      background: #fe622b;
+      text-decoration: none; }
   .list_category2 .categories {
     text-align: center; }
     .list_category2 .categories .item-category {
@@ -3212,7 +3295,8 @@ img {
           float: left;
           border-radius: 85px;
           overflow: hidden;
-          margin-right: 15px; }
+          margin-right: 15px;
+          border: 3px solid #ff4504; }
         #block_feedback .feedback_list .block_feedback .block_personal .block_name {
           margin-top: 40px; }
           #block_feedback .feedback_list .block_feedback .block_personal .block_name .name {
@@ -3530,6 +3614,53 @@ img {
         -webkit-transition: all 0.35s;
         transition: all 0.35s;
         background: #fe622b; }
+
+#order_status {
+  display: inline-block;
+  vertical-align: middle; }
+  #order_status h3 {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "FuturaBookC", sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1em;
+    margin-right: 12px; }
+  #order_status div {
+    display: inline-block;
+    vertical-align: middle; }
+    #order_status div.error input {
+      border-color: red; }
+    #order_status div input {
+      font-family: "FuturaBookC", sans-serif;
+      color: #ffffff;
+      font-size: 16px;
+      line-height: 1em;
+      text-align: left;
+      background: none;
+      border: 1px solid #fff;
+      width: 160px;
+      padding: 8px 33px 6px 7px;
+      box-sizing: border-box;
+      display: block; }
+      #order_status div input::-webkit-input-placeholder {
+        color: #fff; }
+      #order_status div input::-moz-placeholder {
+        color: #fff; }
+      #order_status div input:-moz-placeholder {
+        color: #fff; }
+      #order_status div input:-ms-input-placeholder {
+        color: #fff; }
+  #order_status .submit {
+    width: 33px;
+    height: 33px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../img/icons/search_w.png") no-repeat center;
+    margin-left: -34px;
+    cursor: pointer; }
 
 @media screen and (min-width: 1024px) and (max-height: 700px) {
   .header {
@@ -4140,7 +4271,8 @@ img {
       background: #ff4504;
       font-weight: normal;
       font-size: 24px;
-      font-family: "FuturaBookC", sans-serif; }
+      font-family: "FuturaBookC", sans-serif;
+      cursor: pointer; }
       .list_products .filter_products h2 i {
         margin-right: 15px; }
     .list_products .filter_products .wrap_filter {

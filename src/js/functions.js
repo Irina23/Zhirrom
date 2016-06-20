@@ -108,7 +108,7 @@ jQuery(document).ready(function() {
 
         $('.home .list_brands').owlCarousel({
             loop:true,
-            margin:60,
+            margin:35,
             nav:true,
             responsive:{
                 0:{
@@ -119,7 +119,7 @@ jQuery(document).ready(function() {
                     items:3
                 },
                 1000:{
-                    items:5
+                    items:7
                 }
             }
         });
