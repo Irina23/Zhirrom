@@ -131,6 +131,44 @@ jQuery(document).ready(function() {
 
 
 
+    //filter get
+    function showValues(clear) {
+        var filter_data, $el;
+
+        $el = $( "#filter" );
+
+        filter_data = $el.serialize();
+        console.log( filter_data );
+        $.ajax({
+            type: "GET",
+            url: "/filter",
+            data: filter_data,
+            success: function(data){
+                //console.log(data);
+                if (clear) {
+                    jQuery(".list_product").html(data);
+                } else {
+                    jQuery(".list_products").find('.pagination_list ul').remove();
+                    jQuery(".list_products").html(jQuery(".list_products").html() + data);
+                }
+            }
+        });
+
+    }
+    $('.list_products').on('click', '.next a, .prev a', function (e) {
+        e.preventDefault();
+        $( "#filter" ).find('[name="page"]').val($(e.target).attr('href')[$(e.target).attr('href').length - 1]);
+        showValues();
+    });
+    jQuery( "#filter input" ).change( function () {
+        $( "#filter" ).find('[name="page"]').val(1);
+        showValues(true);
+    });
+    showValues();
+
+
+
+
 
 
 
@@ -151,7 +189,7 @@ jQuery(document).ready(function() {
         var content_slider = $(this).closest('.slider_filter_color').attr('data-class');
         var content_img = $(this).attr('data-class');
         var main_content = '#'+content_slider +' .'+ content_img;
-        console.log(main_content);
+        //console.log(main_content);
         $(main_content).elevateZoom({
             zoomType: "inner",
             cursor: 'crosshair',
@@ -183,6 +221,14 @@ jQuery(document).ready(function() {
         jQuery(this).closest(".sort_by").find(".active_sort").text(active_text);
         jQuery(this).addClass("active").siblings().removeClass('active');
         jQuery(this).closest("ul").slideToggle();
+        var $data_val = jQuery(this).data('value');
+        $("[name='sort_by']").attr('value', $data_val);
+
+    });
+    jQuery(".items_page li").click(function(){
+       
+        var $data_val = jQuery(this).data('count');
+        $("[name='items_page']").attr('value', $data_val);
 
     });
     jQuery(".select_size li").click(function(){
@@ -214,9 +260,9 @@ jQuery(document).ready(function() {
                 jQuery(this).css("opacity", 1).addClass("active");
                 var content_slider = $(this).attr('data-class');
                 var content_img = $(this).find('[id^="bx-pager"] a.active').attr('data-class');
-                console.log(content_slider);
+                //console.log(content_slider);
                 var main_content = '#'+content_slider +' .'+ content_img;
-                console.log(main_content);
+                //console.log(main_content);
                 $(main_content).elevateZoom({
                      zoomType: "inner",
                      cursor: 'crosshair',
@@ -244,7 +290,9 @@ jQuery(document).ready(function() {
     jQuery(".preview li").click(function(){
 
         jQuery(this).addClass("active").siblings().removeClass('active');
-
+        var $data_val = jQuery(this).data('value');
+        //console.log($data_val);
+        $("[name='preview']").attr('value', $data_val);
 
     });
     function hideproducts() {
@@ -297,22 +345,7 @@ jQuery(document).ready(function() {
 
 
 
-    //filter get
-    function showValues() {
-        var filter_data = $( "#filter" ).serialize();
-        console.log( filter_data );
-        $.ajax({
-            type: "GET",
-            url: "list_product.html",
-            data: filter_data,
-            success: function(data){
 
-            }
-        });
-    }
-    jQuery( "#filter li, #filter input" ).on( "click", showValues ).on( "change", showValues );
-
-    showValues();
 
 
 

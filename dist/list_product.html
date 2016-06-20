@@ -157,6 +157,13 @@
               <li><span>Головные уборы</span></li>
             </ul>
           </div>
+          <form id="subscription2">
+            <h3>Подписаться на акции и скидки</h3>
+            <div>
+              <input type="text" placeholder="Почта:" data-validate="email">
+            </div>
+            <!--.btn.submit-->
+          </form>
           <div class="list_products cf">
             <h1>Головные уборы</h1>
             <div class="description">
@@ -167,30 +174,33 @@
               <div class="filter">
                 <div class="preview"><span>Вид:</span>
                   <ul>
-                    <li class="preview_list"></li>
-                    <li class="active preview_block"></li>
+                    <li data-value="preview_list" class="preview_list"></li>
+                    <li data-value="preview_block" class="active preview_block"></li>
                   </ul>
+                  <input type="text" name="preview" value="preview_block" class="hidden">
                 </div>
                 <div class="sort_by"><span>Сортировать как:</span>
                   <div>
                     <div class="active_sort">От дешёвых к дорогим</div>
                     <ul>
-                      <li class="active">От дешёвых к дорогим</li>
-                      <li>От дорогих к дешёвым</li>
-                      <li>Популярные</li>
-                      <li>Новинки</li>
+                      <li data-value="От дешёвых к дорогим" class="active">От дешёвых к дорогим</li>
+                      <li data-value="От дорогих к дешёвым">От дорогих к дешёвым</li>
+                      <li data-value="Популярные">Популярные</li>
+                      <li data-value="Новинки">Новинки</li>
                     </ul>
                   </div>
+                  <input type="text" name="sort_by" value="От дешёвых к дорогим" class="hidden">
                 </div>
                 <div class="sort_by items_page"><span>Товаров на странице:</span>
                   <div>
                     <div class="active_sort">10</div>
                     <ul>
-                      <li class="active">10</li>
-                      <li>20</li>
-                      <li>40</li>
+                      <li data-count="10" class="active">10</li>
+                      <li data-count="20">20</li>
+                      <li data-count="40">40</li>
                     </ul>
                   </div>
+                  <input type="text" name="items_page" value="10" class="hidden">
                 </div>
               </div>
               <div class="filter_products cf">
@@ -301,9 +311,17 @@
                   </div>
                 </div>
               </div>
+              <input type="text" id="page" name="page" value="1" class="hidden">
             </form>
-            <div class="products list_items cf">
-              <div class="block_product item"><a href="product.html">
+            <div class="products cf">
+              <div class="block_product"><a href="product.html">
+                  <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14"></div>
+                  <div class="block_text">
+                    <div title="Винтаж Плюс L14" class="name">Винтаж Плюс L14</div>
+                    <div class="description_product">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum</div>
+                    <div class="block_price"></div>
+                  </div></a><a href="registration.html" class="asking_price">узнать цену</a></div>
+              <div class="block_product"><a href="product.html">
                   <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14"></div>
                   <div class="block_text">
                     <div title="Винтаж Плюс L14" class="name">Винтаж Плюс L14</div>
@@ -313,7 +331,7 @@
                       <div class="price">550<span>руб.</span></div>
                     </div>
                   </div></a></div>
-              <div class="block_product item"><a href="product.html">
+              <div class="block_product"><a href="product.html">
                   <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14"></div>
                   <div class="block_text">
                     <div title="Винтаж Плюс L14" class="name">Винтаж Плюс L14</div>
@@ -323,7 +341,7 @@
                       <div class="price">550<span>руб.</span></div>
                     </div>
                   </div></a></div>
-              <div class="block_product item"><a href="product.html">
+              <div class="block_product"><a href="product.html">
                   <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14"></div>
                   <div class="block_text">
                     <div title="Винтаж Плюс L14" class="name">Винтаж Плюс L14</div>
@@ -333,7 +351,7 @@
                       <div class="price">550<span>руб.</span></div>
                     </div>
                   </div></a></div>
-              <div class="block_product item"><a href="product.html">
+              <div class="block_product"><a href="product.html">
                   <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14"></div>
                   <div class="block_text">
                     <div title="Винтаж Плюс L14" class="name">Винтаж Плюс L14</div>
@@ -343,7 +361,7 @@
                       <div class="price">550<span>руб.</span></div>
                     </div>
                   </div></a></div>
-              <div class="block_product item"><a href="product.html">
+              <div class="block_product"><a href="product.html">
                   <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14"></div>
                   <div class="block_text">
                     <div title="Винтаж Плюс L14" class="name">Винтаж Плюс L14</div>
@@ -353,7 +371,7 @@
                       <div class="price">550<span>руб.</span></div>
                     </div>
                   </div></a></div>
-              <div class="block_product item"><a href="product.html">
+              <div class="block_product"><a href="product.html">
                   <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14"></div>
                   <div class="block_text">
                     <div title="Винтаж Плюс L14" class="name">Винтаж Плюс L14</div>
@@ -363,7 +381,7 @@
                       <div class="price">550<span>руб.</span></div>
                     </div>
                   </div></a></div>
-              <div class="block_product item"><a href="product.html">
+              <div class="block_product"><a href="product.html">
                   <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14"></div>
                   <div class="block_text">
                     <div title="Винтаж Плюс L14" class="name">Винтаж Плюс L14</div>
@@ -373,17 +391,7 @@
                       <div class="price">550<span>руб.</span></div>
                     </div>
                   </div></a></div>
-              <div class="block_product item"><a href="product.html">
-                  <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14"></div>
-                  <div class="block_text">
-                    <div title="Винтаж Плюс L14" class="name">Винтаж Плюс L14</div>
-                    <div class="description_product">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum</div>
-                    <div class="block_price">
-                      <div class="cart"></div>
-                      <div class="price">550<span>руб.</span></div>
-                    </div>
-                  </div></a></div>
-              <div class="block_product item"><a href="product.html">
+              <div class="block_product"><a href="product.html">
                   <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14"></div>
                   <div class="block_text">
                     <div title="Винтаж Плюс L14" class="name">Винтаж Плюс L14</div>
@@ -394,13 +402,18 @@
                     </div>
                   </div></a></div>
               <!--.ias-trigger показать еще-->
+              <div class="pagination_list">
+                <ul>
+                  <li class="prev"><a href="#"></a></li>
+                  <li class="next"><a href="#" class="ias-trigger">показать еще</a></li>
+                </ul><a href="#" target="_blank" class="download_price">скачать прайс</a>
+              </div>
             </div>
-            <div class="pagination">
-              <ul>
-                <li class="prev"><a href="#"></a></li>
-                <li class="next"><a href="#"></a></li>
-              </ul>
-            </div>
+          </div>
+          <div class="decs_category">
+            <h3>Головные уборы</h3>
+            <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезызвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+            <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых клиентов недоумение при попытках прочитать рыбу текст.</p>
           </div>
         </div>
       </div>

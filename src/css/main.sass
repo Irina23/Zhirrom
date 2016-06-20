@@ -87,7 +87,7 @@ img
   margin: auto
 
 
-#cache, .pagination
+#cache
   display: none
 #preloader
   position: fixed
@@ -875,6 +875,44 @@ img
 
 
 
+#subscription2
+  position: absolute
+  top: 10px
+  right: 0
+  h3
+
+    color: $main-color
+    font-family: "FuturaBookC", sans-serif
+    font-size: 18px
+    font-weight: 300
+    line-height: 1em
+    margin-bottom: 10px
+  >div
+    display: inline-block
+    vertical-align: middle
+    &.error
+      input
+        border-color: red
+  input
+    width: 240px
+    border: 1px solid #c6c5c5
+    box-sizing: border-box
+    background: none
+    color: #9c9a9a
+    padding: 5px 10px 4px
+    font-family: "FuturaBookC", sans-serif
+    font-size: 16px
+    font-weight: 300
+    line-height: 1em
+    &::-webkit-input-placeholder
+      color: #c6c5c5
+    &::-moz-placeholder
+      color: #c6c5c5
+    &:-moz-placeholder
+      color: #c6c5c5
+    &:-ms-input-placeholder
+      color: #c6c5c5
+
 
 
 #slider
@@ -1503,6 +1541,10 @@ img
     header
       border-bottom: 5px solid $main-color
 
+.list_product
+  .container
+    .wrap
+      position: relative
 
 
 .list_products
@@ -1522,6 +1564,11 @@ img
     line-height: 1.5em
     color: #636363
     margin-bottom: 50px
+  #filter
+    input.hidden
+      display: none!important
+
+
   .filter
     border: 1px solid #f0f0f0
     background-color:  #f5f4f4
@@ -1529,6 +1576,7 @@ img
     padding: 20px
     margin-bottom: 30px
     box-sizing: border-box
+
     >div
       display: inline-block
       vertical-align: middle
@@ -1653,10 +1701,11 @@ img
       display: none
 
 
+
   .products
     float: right
     width: 720px
-    margin: 0 0 100px
+    //margin: 0 0 100px
     transition: opacity 0.35s ease-in-out
     &.brand_pruduct
       width: 100%
@@ -1672,6 +1721,24 @@ img
       margin: 0 8px 70px
       box-sizing: border-box
       transition: all 0.35s
+      text-align: center
+      a.asking_price
+          color: #fffefe
+          font-family: "FuturaBookC", sans-serif
+          font-size: 16px
+          font-weight: 300
+          text-transform: uppercase
+          height: 1em
+          padding: 13px 18px 11px
+          background-color: $main-color
+          border-radius: 6px
+          box-shadow: inset 0 -2px 7.8px 0.2px rgba(0, 0, 0, 0.16)
+          display: inline-block
+          vertical-align: bottom
+          transition: all 0.35s
+          &:hover
+            background: #fe622b
+            transition: all 0.35s
       a
         .img_holder
           width: 220px
@@ -1718,7 +1785,7 @@ img
 
           .price
             display: inline-block
-            vertical-align: middle
+            vertical-align: bottom
             font-size: 24px
             line-height: 1em
             color:  #3e3d3d
@@ -1779,7 +1846,7 @@ img
       margin: auto
       margin-bottom: 140px
       transition: opacity 0.35s ease-in-out
-      .ias-trigger
+      //.ias-trigger
         margin-top: 40px
       .block_product
         width: 100%
@@ -1811,31 +1878,61 @@ img
           height: auto
 
 
-
-
 .ias-trigger
-
-    a
-      display: block
-      margin: auto
-      width: 185px
-      line-height: 1em
-      text-transform: uppercase
-      color: #fff
-      background: $main-color
-      border-radius: 6px
-      font-size: 16px
-      text-align: center
-      padding: 17px 0
-      box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16)
-      cursor: pointer
+  a
+    display: block
+    margin: auto
+    width: 185px
+    line-height: 1em
+    text-transform: uppercase
+    color: #fff
+    background: $main-color
+    border-radius: 6px
+    font-size: 16px
+    text-align: center
+    padding: 17px 0
+    box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16)
+    cursor: pointer
+    transition: all 0.35s
+    font-family: "FuturaPT-Heavy", sans-serif
+    letter-spacing: 1px
+    &:hover
+      text-decoration: none
       transition: all 0.35s
-      font-family: "FuturaPT-Heavy", sans-serif
-      letter-spacing: 1px
-      &:hover
-        text-decoration: none
-        transition: all 0.35s
-        background: #fe622b
+      background: #fe622b
+
+.pagination_list
+  clear: both
+  margin-bottom: 100px
+  text-align: center
+  ul
+    display: inline-block
+    vertical-align: middle
+    + .download_price
+      margin-left: 60px
+
+  a.ias-trigger, .download_price
+    display: inline-block
+    vertical-align: middle
+    margin: auto
+    width: 185px
+    line-height: 1em
+    text-transform: uppercase
+    color: #fff
+    background: $main-color
+    border-radius: 6px
+    font-size: 16px
+    text-align: center
+    padding: 17px 0
+    box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16)
+    cursor: pointer
+    transition: all 0.35s
+    font-family: "FuturaPT-Heavy", sans-serif
+    letter-spacing: 1px
+    &:hover
+      text-decoration: none
+      transition: all 0.35s
+      background: #fe622b
 
 
 .filter_products
@@ -2857,7 +2954,20 @@ img
 
 
 
+.decs_category
+  margin-bottom: 120px
+  h3
 
+    font-family: "FuturaBookC", sans-serif
+    font-weight: 300
+    line-height: 1em
+    color: #1f1f1f
+    font-size: 30px
+    margin-bottom: 15px
+  p
+    color: #5a5a5a
+    font-size: 16px
+    line-height: 2em
 
 .block_private_office
   border: 5px solid $main-color
