@@ -125,6 +125,7 @@
               <li><a href="about.html">О нас</a></li>
               <li><a href="working.html">Условия работы</a></li>
               <li><a href="blog.html">Блог</a></li>
+              <li><a href="#">Таблица размеров</a></li>
               <li><a href="contact.html">Контакты</a></li>
             </ul>
           </div>
@@ -171,11 +172,16 @@
                     <div><span>ИНН*</span>
                       <input type="text" name="inn" data-validate="number">
                     </div>
-                    <div><span>КПП*</span>
-                      <input type="text" name="kpp" data-validate="number">
-                    </div>
+                    <!--div
+                    span КПП*
+                    input(type="text" name="kpp" data-validate="number")
+                    
+                    -->
                     <div><span>Телефон организации*</span>
                       <input type="text" name="phone" data-validate="phone">
+                    </div>
+                    <div><span>Должность*</span>
+                      <input type="text" name="position" data-validate="name">
                     </div>
                   </div>
                   <div class="contact_details">
@@ -186,10 +192,7 @@
                     <div><span>Фамилия*</span>
                       <input type="text" name="surname" data-validate="name">
                     </div>
-                    <div class="short margin20"><span>Должность*</span>
-                      <input type="text" name="position" data-validate="name">
-                    </div>
-                    <div class="short"><span>Дата в формате ДД-ММ-ГГГГ*</span>
+                    <div><span>Дата в формате ДД-ММ-ГГГГ*</span>
                       <input type="text" name="data" data-validate="data" placeholder="ДД-ММ-ГГГГ">
                     </div>
                     <div><span>Контактный телефон*</span>

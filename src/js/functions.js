@@ -249,7 +249,7 @@ jQuery(document).ready(function() {
         var customType = jQuery(this).attr('data-filter');
 
 
-        $(window).resize();
+        /*$(window).resize();
         $(".zoomContainer").remove();
         jQuery('.slider_filter_color').each(function(){
             if(jQuery(this).attr('data-filter').indexOf(customType) < 0) {
@@ -273,7 +273,7 @@ jQuery(document).ready(function() {
             }
 
 
-        });
+        });*/
 
 
 
