@@ -1154,6 +1154,11 @@ img {
       transition: all 0.35s;
       background: #fe622b;
       text-decoration: none; }
+  #login a, #call_back a {
+    display: block;
+    color: #ff4504;
+    margin-top: 15px;
+    font-family: "FuturaBookC", sans-serif; }
 
 #overlay {
   z-index: 30;
@@ -1337,7 +1342,7 @@ img {
         color: #ff4504;
         text-decoration: none; }
 
-.list_product header, .productfull header, .blog header, .article header, .search header, .cart header, .payment header, .private_office header, .registration header, .feedback header {
+.list_product header, .productfull header, .blog header, .article header, .search header, .cart header, .payment header, .private_office header, .registration header, .feedback header, .update_password header {
   border-bottom: 5px solid #ff4504; }
 
 .list_product .container .wrap {
@@ -1775,7 +1780,27 @@ img {
     box-sizing: border-box;
     margin-bottom: 70px;
     -webkit-transition: all 0.35s;
-    transition: all 0.35s; }
+    transition: all 0.35s;
+    text-align: center; }
+    .productfull .related_products .block_product a.asking_price {
+      color: #fffefe;
+      font-family: "FuturaBookC", sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      text-transform: uppercase;
+      height: 1em;
+      padding: 13px 18px 11px;
+      background-color: #ff4504;
+      border-radius: 6px;
+      box-shadow: inset 0 -2px 7.8px 0.2px rgba(0, 0, 0, 0.16);
+      display: inline-block;
+      vertical-align: bottom;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
+      .productfull .related_products .block_product a.asking_price:hover {
+        background: #fe622b;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s; }
     .productfull .related_products .block_product a .img_holder {
       width: 220px;
       height: 220px;
@@ -1814,7 +1839,7 @@ img {
       text-align: center; }
       .productfull .related_products .block_product a .block_price .price {
         display: inline-block;
-        vertical-align: middle;
+        vertical-align: bottom;
         font-size: 24px;
         line-height: 1em;
         color: #3e3d3d;
@@ -1953,38 +1978,25 @@ img {
       padding-bottom: 20px;
       margin-bottom: 10px;
       border-bottom: 1px solid #dfdede; }
+    .productfull .product_info .block_info .name_price {
+      margin-bottom: 10px;
+      line-height: 1em;
+      color: #535353;
+      font-size: 16px; }
     .productfull .product_info .block_info .block_price {
-      margin-bottom: 25px; }
-      .productfull .product_info .block_info .block_price .name_price {
-        margin-bottom: 10px;
-        line-height: 1em;
-        color: #535353;
-        font-size: 16px; }
-      .productfull .product_info .block_info .block_price .price {
-        margin-bottom: 15px;
-        line-height: 1em;
-        font-size: 36px;
-        color: #000; }
-      .productfull .product_info .block_info .block_price .description_price {
-        color: #5c5c5c;
-        font-size: 16px;
-        line-height: 1.5em; }
-    .productfull .product_info .block_info .quantity {
-      margin-bottom: 20px; }
-      .productfull .product_info .block_info .quantity.error input[type="number"] {
-        border-color: red; }
-      .productfull .product_info .block_info .quantity input[type="number"] {
-        border-radius: 2px;
-        box-sizing: border-box;
-        border: 1px solid #bab9b9;
-        color: #686767;
-        text-align: center;
-        font-size: 16px;
-        line-height: 40px;
-        width: 145px; }
+      margin-bottom: 30px;
+      line-height: 1em;
+      font-size: 30px;
+      color: #1d1d1d;
+      font-family: "FuturaBookC", sans-serif;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 20px; }
     .productfull .product_info .block_info .submit {
-      width: 145px;
-      line-height: 40px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 120px;
+      line-height: 36px;
       text-align: center;
       text-transform: uppercase;
       color: #ff4504;
@@ -2014,8 +2026,12 @@ img {
     .productfull .product_info .block_info .block_characteristics {
       margin-bottom: 10px; }
       .productfull .product_info .block_info .block_characteristics > div {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         position: relative; }
+        .productfull .product_info .block_info .block_characteristics > div.width50 {
+          width: 49%;
+          display: inline-block;
+          vertical-align: middle; }
         .productfull .product_info .block_info .block_characteristics > div .name, .productfull .product_info .block_info .block_characteristics > div .value {
           display: inline-block;
           vertical-align: middle;
@@ -2631,6 +2647,66 @@ img {
     color: #5a5a5a;
     font-size: 16px;
     line-height: 2em; }
+
+.update_password .container {
+  padding-top: 50px; }
+
+.update_password h1 {
+  font-size: 60px;
+  line-height: 1em;
+  margin-bottom: 70px;
+  color: #000;
+  font-weight: normal;
+  font-family: "FuturaPT-Light", sans-serif;
+  text-align: center;
+  clear: both; }
+
+.update_password form#update_password1, .update_password form#update_password2 {
+  width: 460px;
+  margin: auto; }
+  .update_password form#update_password1 > div.error input[type="text"], .update_password form#update_password2 > div.error input[type="text"] {
+    border-color: #ff4504; }
+  .update_password form#update_password1 h3, .update_password form#update_password2 h3 {
+    margin-bottom: 15px;
+    color: #000;
+    font-family: "FuturaPT-Medium", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1em; }
+  .update_password form#update_password1 input[type="text"], .update_password form#update_password2 input[type="text"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #d7d7d7;
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 7px;
+    padding: 0 10px;
+    color: #3d3d3d;
+    font-family: "FuturaBookC", sans-serif;
+    font-size: 16px;
+    font-weight: 300; }
+  .update_password form#update_password1 .submit, .update_password form#update_password2 .submit {
+    float: right;
+    background: #ff4504;
+    border-radius: 2px;
+    box-shadow: inset 0 2px 7.8px 0.2px rgba(0, 0, 0, 0.16);
+    color: #fff;
+    font-family: "FuturaPT-Demi", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1em;
+    text-transform: uppercase;
+    font-variant: small-caps;
+    padding: 13px 20px;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s; }
+    .update_password form#update_password1 .submit:hover, .update_password form#update_password2 .submit:hover {
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      background: #fe622b; }
 
 .block_private_office {
   border: 5px solid #ff4504;
