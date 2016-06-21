@@ -4704,6 +4704,128 @@ img
             transition: all 0.35s
             background: #fe622b
 
+    #history_orders
+      .table_order
+        .row
+          padding: 15px
+          cursor: pointer
+          transition: all 0.35s
+          border-bottom: 1px solid #dcdada
+          &:hover
+            transition: all 0.35s
+            background: rgba(236, 236, 236, 0.3)
+
+          &:first-child
+            background-color: #ececec
+            font-size: 18px
+            border: 0
+          >div
+            display: inline-block
+            vertical-align: middle
+          .number
+            width: 23%
+          .data
+            width: 25%
+          .quantity
+            width: 19%
+          .sum
+            width: 21%
+          .status
+            width: 9%
+          .order_list
+            display: none
+
+            width: 820px
+            margin: 10px auto 0
+            //display: block
+            .row
+              padding: 12px 20px 10px
+            .order
+              padding: 12px 0 10px
+              background-color: #f9f9f9
+              border: 1px solid #fff
+            .row, .order
+
+              font-size: 18px
+              line-height: 1em
+
+              color: #000
+              &:first-child
+                background: #ff4504
+                color: #fff
+
+
+              >div
+                display: inline-block
+                vertical-align: middle
+                box-sizing: border-box
+                padding-right: 10px
+
+              .product
+                width: 30%
+                .img-holder
+                  display: inline-block
+                  vertical-align: middle
+                  margin-right: 8%
+                  height: 80px
+                  //float: left
+                  width: 80px
+                  img
+                    height: 100%
+                >div
+                  overflow: hidden
+                  //float: left
+                  width: calc(92% - 90px)
+                  display: inline-block
+                  vertical-align: middle
+                a
+                  color: #000
+                  font-size: 18px
+                  line-height: 1em
+                  transition: all 0.35s
+                  display: inline-block
+                  vertical-align: middle
+                  overflow: hidden
+                  margin-bottom: 10px
+                  &:hover
+                    transition: all 0.35s
+                    color: $main-color
+                    text-decoration: none
+
+                span
+                  display: inline-block
+                  vertical-align: middle
+                  overflow: hidden
+
+
+              .article
+                width: 12%
+              .color
+                width: 13%
+              .price
+                width: 13%
+              .quantity
+                width: 11%
+                padding: 0
+              .repeat_order
+                width: 17%
+                padding: 11px 8px
+                text-align: center
+                box-sizing: border-box
+                color: #ff6a36
+                text-transform: uppercase
+                font-size: 13px
+                line-height: 1em
+                font-family: "FuturaPT-Demi", sans-serif
+                border: 2px solid #ff6a36
+                border-radius: 8px
+                transition: all 0.35s
+                &:hover
+                  transition: all 0.35s
+                  background: #ff6a36
+                  color: #fff
+
+
 #order_status
   display: inline-block
   vertical-align: middle
@@ -4752,6 +4874,50 @@ img
     margin-left: -34px
     cursor: pointer
 
+.faq
+  .container
+    background: none
+    padding-top: 30px
+    h1
+      font-family: "FuturaBookC", sans-serif
+      margin-bottom: 20px
+      line-height: 1em
+      font-size: 48px
+    h3
+      color: #000
+      font-family: "FuturaBookC", sans-serif
+      text-transform: uppercase
+      line-height: 1em
+      background-color: #e6e5e5
+      border: 1px solid #dfdfdf
+      margin-bottom: 1px
+      padding: 18px 15px 16px
+      font-size: 18px
+      font-weight: normal
+      cursor: pointer
+
+
+    .description
+      width: 760px
+      margin: auto
+      text-align: center
+      font-size: 18px
+      line-height: 1.5em
+      color: #636363
+      margin-bottom: 50px
+    .content_block
+      display: none
+      padding: 30px 0
+      color: #494949
+      font-size: 18px
+      line-height: 1.5em
+      h4
+        color: #000
+        margin-bottom: 20px
+        font-size: 20px
+        line-height: 1em
+        font-family: "FuturaPT-Demi", sans-serif
+        font-weight: normal
 
 
 @media screen and (min-width: 1024px) and (max-height: 700px)
@@ -5538,6 +5704,13 @@ img
 
   .list_category2 .categories .item-category
     margin: 0 10px 20px!important
+
+  .faq .container
+    h1
+      font-size: 36px
+    .description
+      width: 100%
+
 
 @media screen and (max-width: 930px)
   .list_products

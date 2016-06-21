@@ -4169,6 +4169,117 @@ img {
         -webkit-transition: all 0.35s;
         transition: all 0.35s;
         background: #fe622b; }
+  .private_office .container #history_orders .table_order .row {
+    padding: 15px;
+    cursor: pointer;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    border-bottom: 1px solid #dcdada; }
+    .private_office .container #history_orders .table_order .row:hover {
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      background: rgba(236, 236, 236, 0.3); }
+    .private_office .container #history_orders .table_order .row:first-child {
+      background-color: #ececec;
+      font-size: 18px;
+      border: 0; }
+    .private_office .container #history_orders .table_order .row > div {
+      display: inline-block;
+      vertical-align: middle; }
+    .private_office .container #history_orders .table_order .row .number {
+      width: 23%; }
+    .private_office .container #history_orders .table_order .row .data {
+      width: 25%; }
+    .private_office .container #history_orders .table_order .row .quantity {
+      width: 19%; }
+    .private_office .container #history_orders .table_order .row .sum {
+      width: 21%; }
+    .private_office .container #history_orders .table_order .row .status {
+      width: 9%; }
+    .private_office .container #history_orders .table_order .row .order_list {
+      display: none;
+      width: 820px;
+      margin: 10px auto 0; }
+      .private_office .container #history_orders .table_order .row .order_list .row {
+        padding: 12px 20px 10px; }
+      .private_office .container #history_orders .table_order .row .order_list .order {
+        padding: 12px 0 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #fff; }
+      .private_office .container #history_orders .table_order .row .order_list .row, .private_office .container #history_orders .table_order .row .order_list .order {
+        font-size: 18px;
+        line-height: 1em;
+        color: #000; }
+        .private_office .container #history_orders .table_order .row .order_list .row:first-child, .private_office .container #history_orders .table_order .row .order_list .order:first-child {
+          background: #ff4504;
+          color: #fff; }
+        .private_office .container #history_orders .table_order .row .order_list .row > div, .private_office .container #history_orders .table_order .row .order_list .order > div {
+          display: inline-block;
+          vertical-align: middle;
+          box-sizing: border-box;
+          padding-right: 10px; }
+        .private_office .container #history_orders .table_order .row .order_list .row .product, .private_office .container #history_orders .table_order .row .order_list .order .product {
+          width: 30%; }
+          .private_office .container #history_orders .table_order .row .order_list .row .product .img-holder, .private_office .container #history_orders .table_order .row .order_list .order .product .img-holder {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8%;
+            height: 80px;
+            width: 80px; }
+            .private_office .container #history_orders .table_order .row .order_list .row .product .img-holder img, .private_office .container #history_orders .table_order .row .order_list .order .product .img-holder img {
+              height: 100%; }
+          .private_office .container #history_orders .table_order .row .order_list .row .product > div, .private_office .container #history_orders .table_order .row .order_list .order .product > div {
+            overflow: hidden;
+            width: calc(92% - 90px);
+            display: inline-block;
+            vertical-align: middle; }
+          .private_office .container #history_orders .table_order .row .order_list .row .product a, .private_office .container #history_orders .table_order .row .order_list .order .product a {
+            color: #000;
+            font-size: 18px;
+            line-height: 1em;
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+            display: inline-block;
+            vertical-align: middle;
+            overflow: hidden;
+            margin-bottom: 10px; }
+            .private_office .container #history_orders .table_order .row .order_list .row .product a:hover, .private_office .container #history_orders .table_order .row .order_list .order .product a:hover {
+              -webkit-transition: all 0.35s;
+              transition: all 0.35s;
+              color: #ff4504;
+              text-decoration: none; }
+          .private_office .container #history_orders .table_order .row .order_list .row .product span, .private_office .container #history_orders .table_order .row .order_list .order .product span {
+            display: inline-block;
+            vertical-align: middle;
+            overflow: hidden; }
+        .private_office .container #history_orders .table_order .row .order_list .row .article, .private_office .container #history_orders .table_order .row .order_list .order .article {
+          width: 12%; }
+        .private_office .container #history_orders .table_order .row .order_list .row .color, .private_office .container #history_orders .table_order .row .order_list .order .color {
+          width: 13%; }
+        .private_office .container #history_orders .table_order .row .order_list .row .price, .private_office .container #history_orders .table_order .row .order_list .order .price {
+          width: 13%; }
+        .private_office .container #history_orders .table_order .row .order_list .row .quantity, .private_office .container #history_orders .table_order .row .order_list .order .quantity {
+          width: 11%;
+          padding: 0; }
+        .private_office .container #history_orders .table_order .row .order_list .row .repeat_order, .private_office .container #history_orders .table_order .row .order_list .order .repeat_order {
+          width: 17%;
+          padding: 11px 8px;
+          text-align: center;
+          box-sizing: border-box;
+          color: #ff6a36;
+          text-transform: uppercase;
+          font-size: 13px;
+          line-height: 1em;
+          font-family: "FuturaPT-Demi", sans-serif;
+          border: 2px solid #ff6a36;
+          border-radius: 8px;
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s; }
+          .private_office .container #history_orders .table_order .row .order_list .row .repeat_order:hover, .private_office .container #history_orders .table_order .row .order_list .order .repeat_order:hover {
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+            background: #ff6a36;
+            color: #fff; }
 
 #order_status {
   display: inline-block;
@@ -4216,6 +4327,48 @@ img {
     background: url("../img/icons/search_w.png") no-repeat center;
     margin-left: -34px;
     cursor: pointer; }
+
+.faq .container {
+  background: none;
+  padding-top: 30px; }
+  .faq .container h1 {
+    font-family: "FuturaBookC", sans-serif;
+    margin-bottom: 20px;
+    line-height: 1em;
+    font-size: 48px; }
+  .faq .container h3 {
+    color: #000;
+    font-family: "FuturaBookC", sans-serif;
+    text-transform: uppercase;
+    line-height: 1em;
+    background-color: #e6e5e5;
+    border: 1px solid #dfdfdf;
+    margin-bottom: 1px;
+    padding: 18px 15px 16px;
+    font-size: 18px;
+    font-weight: normal;
+    cursor: pointer; }
+  .faq .container .description {
+    width: 760px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5em;
+    color: #636363;
+    margin-bottom: 50px; }
+  .faq .container .content_block {
+    display: none;
+    padding: 30px 0;
+    color: #494949;
+    font-size: 18px;
+    line-height: 1.5em; }
+    .faq .container .content_block h4 {
+      color: #000;
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 1em;
+      font-family: "FuturaPT-Demi", sans-serif;
+      font-weight: normal; }
 
 @media screen and (min-width: 1024px) and (max-height: 700px) {
   .header {
@@ -4820,7 +4973,11 @@ img {
   .product_new .text_holder, .list_category2 .text_holder, .block_advantages .text_holder, .block_certificate .text_holder, .block_brands .text_holder, #block_feedback .wrap .text_holder {
     padding: 0; }
   .list_category2 .categories .item-category {
-    margin: 0 10px 20px !important; } }
+    margin: 0 10px 20px !important; }
+  .faq .container h1 {
+    font-size: 36px; }
+  .faq .container .description {
+    width: 100%; } }
 
 @media screen and (max-width: 930px) {
   .list_products .filter_products {

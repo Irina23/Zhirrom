@@ -154,7 +154,7 @@ jQuery(document).ready(function() {
         $el = $( "#filter" );
 
         filter_data = $el.serialize();
-        console.log( filter_data );
+        //console.log( filter_data );
         $.ajax({
             type: "GET",
             url: "/filter",
@@ -376,4 +376,11 @@ jQuery(document).ready(function() {
     });
 
 
+    //accordeon
+    $("#history_orders .row").click(function () {
+        $(this).find('.order_list').slideToggle();
+    });
+    $(".faq h3").click(function () {
+        $(this).next('.content_block').slideToggle();
+    });
 });
