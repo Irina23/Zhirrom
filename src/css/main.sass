@@ -67,7 +67,8 @@ body
     color: #545353
     line-height: 1.5em
     //font-weight: bold
-
+  &.no-scroll
+    overflow: hidden!important
 .container
   min-height: 44vh
 
@@ -2143,7 +2144,7 @@ img
 
 
   .product_info
-    margin-bottom: 60px
+    margin-bottom: 80px
     .image
       width: 460px
       display: inline-block
@@ -2222,6 +2223,27 @@ img
       width: 400px
       display: inline-block
       vertical-align: top
+      .report_available
+        background: $main-color
+        color: #fff
+        text-transform: uppercase
+        text-align: center
+        border-radius: 4px
+        box-shadow: inset 0 -3px 1.9px 0.1px rgba(0, 0, 0, 0.08)
+        padding: 14px 20px
+        transition: all 0.35s
+        font-size: 14px
+        font-family: "FuturaPT-Demi", sans-serif
+        line-height: 1em
+        margin-top: 10px
+        display: inline-block
+        vertical-align: middle
+        //letter-spacing: 1px
+        &:hover
+          transition: all 0.35s
+          text-decoration: none
+          background: #fe622b
+
       .code_product
         color:  #5c5c5c
         font-size: 16px
@@ -2349,6 +2371,57 @@ img
               font-family: "FuturaPT-Medium", sans-serif
               margin-right: 5px
 
+        .selectbox
+          display: inline-block
+          vertical-align: middle
+          .select
+            font-size: 16px
+            color: #343434
+            position: relative
+            border: 1px solid #d2d2d2
+            line-height: 30px
+            padding: 0 25px 0 10px
+            cursor: pointer
+            &:after
+              position: absolute
+              top: 50%
+              right: 5px
+              width: 13px
+              height: 9px
+              margin-top: -5px
+              background: url("../img/icons/select.png") no-repeat
+              content: ""
+
+          .dropdown
+            display: none
+            position: absolute
+            top: 32px!important
+            left: 0
+            width: 100%
+            z-index: 2
+            background: #fff
+
+
+            li
+              font-size: 16px
+              //font-family: "FuturaBookC", sans-serif
+              line-height: 1em
+              cursor: pointer
+              color: #000
+              padding: 6px 10px
+              transition: all 0.35s
+              border: 1px solid #d2d2d2
+              border-top: 0
+              box-sizing: border-box
+
+              &:hover
+                background: $main-color
+                transition: all 0.35s
+                color: #fff
+                border-color: $main-color
+
+              &.sel
+                display: none
 
         .active_size
           font-size: 16px
@@ -2485,6 +2558,155 @@ img
 
             &.active
               display: none
+
+    .wholesale_order
+      margin-top: 15px
+      h3
+        color: #343434
+        font-family: "FuturaBookC", sans-serif
+        font-size: 30px
+        font-weight: 300
+        line-height: 36px
+        font-variant: small-caps
+        margin-bottom: 25px
+      .table_order
+        .row
+          padding: 0 15px
+          border-bottom: 1px solid #dcdbdb
+          color: #343434
+          &:first-child
+            padding: 9px 15px
+            background: #e5e4e4
+            border: 1px solid #dfdfdf
+            >div
+              font-size: 18px!important
+
+          >div
+            display: inline-block
+            vertical-align: middle
+          .article
+            width: 14%
+            font-size: 18px
+          .color
+            width: 25%
+            font-size: 18px
+            .img-holder
+              height: 60px
+              display: inline-block
+              vertical-align: middle
+              margin-right: 15%
+              img
+                height: 100%
+                max-width: inherit
+            + .availability
+              width: 33%
+          .size
+            width: 10%
+            &.disabled
+              .selectbox
+                .select
+                  color: #d2d2d2
+                  &:after
+                    border-top: 9px solid #d2d2d2
+                .dropdown
+                  display: none!important
+            .selectbox
+              display: inline-block
+              vertical-align: middle
+              .select
+                font-size: 16px
+                color: #343434
+                position: relative
+                border: 1px solid #d2d2d2
+                line-height: 30px
+                padding: 0 25px 0 10px
+                cursor: pointer
+                &:after
+                  position: absolute
+                  top: 50%
+                  right: 5px
+                  margin-top: -5px
+                  width: 0
+                  height: 0
+                  border-left: 6px solid transparent
+                  border-right: 6px solid transparent
+                  border-top: 9px solid $main-color
+
+              .dropdown
+                display: none
+                position: absolute
+                top: 32px!important
+                left: 0
+                width: 100%
+                z-index: 2
+                background: #fff
+
+
+                li
+                  font-size: 16px
+                  //font-family: "FuturaBookC", sans-serif
+                  line-height: 1em
+                  cursor: pointer
+                  color: #000
+                  padding: 6px 10px
+                  transition: all 0.35s
+                  border: 1px solid #d2d2d2
+                  border-top: 0
+                  box-sizing: border-box
+
+                  &:hover
+                    background: $main-color
+                    transition: all 0.35s
+                    color: #fff
+                    border-color: $main-color
+
+                  &.sel
+                    display: none
+          .availability
+            width: 23%
+            font-size: 18px
+            &.little
+              color: $main-color
+            &.disabled
+              color: #b2b2b2
+          .quantity
+            width: 16%
+            &.disabled
+              input[type="number"]
+                border-color: #bab9b9!important
+            &.error
+              input[type="number"]
+                border-color: red
+
+
+            input[type="number"]
+              width: 80px
+              //height: 30px
+              border: 1px solid #d2d2d2
+              box-sizing: border-box
+              color: #343434
+              padding-left: 10px
+              font-size: 16px
+              line-height: 28px
+          .submit
+            background-color: $main-color
+            border-radius: 5px
+            color: #fff
+            font-size: 14px
+            line-height: 1em
+            text-transform: uppercase
+            font-family: "FuturaBookC", sans-serif
+            padding: 9px 8px 7px
+            cursor: pointer
+            transition: all 0.35s
+            &:hover
+              transition: all 0.35s
+              background: #fe622b
+            &.disabled
+              background: #c7c7c7
+              &:hover
+                background: #c7c7c7
+
 
 
 
@@ -3331,36 +3553,152 @@ img
           display: block
 
     .form-holder
-      width: 620px
+      //width: 620px
       margin: 0 auto 40px
-      .row-group
-        margin-bottom: 20px
-        &:last-child
-          margin-bottom: 0
-        >div
-          display: inline-block
-          vertical-align: top
-
-          &:nth-child(2n+1)
-            margin-right: 15px
-          &.address
-            margin-right: 0
-            display: block
-            input[type="text"]
-              width: 100%
+      >div
+        width: 460px
+        //float: left
+        display: inline-block
+        vertical-align: top
+        margin-bottom: 30px
+        &.description
+          vertical-align: bottom
+        &:nth-child(2n+1)
+          margin-right: 16px
+        > div
           &.error
             input[type="text"]
-              border-color: red
-          input[type="text"]
-            border-radius: 2px
-            border: 2px solid #e0e0e0
+              border-color: $main-color
+          &.short
+            width: 220px
+            float: left
+            //margin-right: 20px
+            &.margin20
+              margin-right: 20px
+
+
+        h4
+          margin-bottom: 20px
+          color: #000
+          font-family: "FuturaBookC", sans-serif
+          font-size: 20px
+          font-weight: 500
+          line-height: 1em
+
+        span
+          display: block
+          margin-bottom: 10px
+          color: #000
+          font-family: "FuturaBookC", sans-serif
+          font-size: 16px
+          font-weight: 300
+          line-height: 1em
+
+        input[type="text"]
+          display: block
+          width: 100%
+          box-sizing: border-box
+          border: 1px solid #d7d7d7
+          height: 35px
+          line-height: 35px
+          margin-bottom: 10px
+          padding: 0 10px
+          color: #3d3d3d
+          font-family: "FuturaBookC", sans-serif
+          font-size: 16px
+          font-weight: 300
+        textarea
+          display: block
+          width: 100%
+          box-sizing: border-box
+          border: 1px solid #d7d7d7
+          height: 100px
+          line-height: 1.3em
+          margin-bottom: 10px
+          padding: 10px
+          color: #3d3d3d
+          font-family: "FuturaBookC", sans-serif
+          font-size: 16px
+          font-weight: 300
+        .submit
+
+
+          background: $main-color
+          border-radius: 2px
+          box-shadow: inset 0 2px 7.8px 0.2px rgba(0, 0, 0, 0.16)
+          color: #fff
+          font-family: "FuturaPT-Demi", sans-serif
+          //letter-spacing: 1px
+          font-size: 14px
+          font-weight: 300
+          line-height: 1em
+          text-transform: uppercase
+          font-variant: small-caps
+          padding: 13px 12px
+          display: inline-block
+          cursor: pointer
+          transition: all 0.35s
+          &:hover
+            transition: all 0.35s
+            background: #fe622b
+
+        p
+          color: #4b4b4b
+          font-family: "FuturaBookC", sans-serif
+          font-size: 18px
+          line-height: 24px
+          margin-bottom: 50px
+          &.desc_form
+            margin-bottom: 15px
+            color: #696868
+            font-size: 16px
+
+
+
+        .selectbox
+          //margin-bottom: 10px
+          color: #3d3d3d
+          font-family: "FuturaBookC", sans-serif
+          font-size: 16px
+          font-weight: 300
+          line-height: 35px
+          box-sizing: border-box
+          .dropdown
+            top: 34px!important
+            width: 100%
+            border: 1px solid #d7d7d7
+            border-top: 0
+            background: #fff
             box-sizing: border-box
-            line-height: 40px
-            padding: 0 10px
-            width: 300px
-            font-size: 18px
-            color: #979797
-            font-family: "FuturaBookC", sans-serif
+            li
+              padding: 0 10px
+              cursor: pointer
+              &.sel
+                display: none
+
+          .select
+            display: block
+
+            cursor: pointer
+            border: 1px solid #d7d7d7
+            box-sizing: border-box
+            .text
+              padding: 0 30px 0 10px
+              position: relative
+              white-space: nowrap
+              overflow: hidden
+              text-overflow: ellipsis
+              &:after
+                content: ''
+                position: absolute
+                top: 50%
+                right: 9px
+                margin-top: -3px
+                width: 0
+                height: 0
+                border-left: 5px solid transparent
+                border-right: 5px solid transparent
+                border-top: 7px solid #838383
 
 
     .submit
@@ -3589,6 +3927,39 @@ img
                 background: url("../img/icons/cart_hover.png") no-repeat
                 background-size: 100%
                 transition: all 0.35s
+
+
+
+#report_available, #order_status_result
+  position: fixed
+  left: 50%
+  //transform: translate(-50%, -50%)
+  background: #fff
+  display: none
+  opacity: 0
+  z-index: 31
+  padding: 60px 40px
+  width: 410px
+  height: 165px
+  margin-top: -82px
+  margin-left: -205px
+  box-sizing: border-box
+  text-align: center
+  .modal_content
+    font-size: 18px
+    font-family: "FuturaBookC", sans-serif
+    line-height: 1.3em
+  .modal_close
+    position: absolute
+    width: 16px
+    height: 16px
+    background: url("../img/icons/close.png") no-repeat
+    background-size: 100%
+    top: 15px
+    right: 15px
+    cursor: pointer
+    transition: all 0.35s
+    z-index: 10
 
 
 .list_category2
@@ -4277,6 +4648,15 @@ img
         &:nth-child(2n+1)
           margin-right: 20px
         > div
+          &.short
+            float: left
+            line-height: 40px
+            margin-top: 10px
+            color:  #696868
+            font-family: "FuturaBookC", sans-serif
+            font-size: 16px
+
+
           &.error
             input[type="text"]
               border-color: $main-color
@@ -4303,7 +4683,7 @@ img
           font-weight: 300
 
         .submit
-
+          margin-top: 10px
           float: right
           background: $main-color
           border-radius: 2px
@@ -4483,12 +4863,14 @@ img
     font-size: 17px
 
 
-  .private_office .container #private_office > div
+  .private_office .container #private_office > div,
+  .payment form#payment .form-holder > div
     width: 430px
     > div.short
       width: 205px
 
   .private_office .container #change_password_email form
+
     width: 430px
   .private_office .container .tabs-menu li:after
     top: 2px
@@ -5099,11 +5481,19 @@ img
           width: 100%
           margin-right: 0!important
 
-  .private_office .container #change_password_email form
+  .private_office .container #change_password_email form,
+  .payment form#payment .form-holder > div,
+  .payment form#payment .form-holder > div > div.short
     width: 100%
     margin-right: 0!important
 
 
+  .payment form#payment .form-holder > div .selectbox,
+  .private_office .container #private_office > div .selectbox
+    margin-bottom: 10px
+
+  .payment form#payment .form-holder
+    margin: 0
 
   #change_password
     margin-bottom: 30px

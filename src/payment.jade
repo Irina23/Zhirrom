@@ -56,20 +56,79 @@ html(lang="ru")
 
                         h3 Ваши данные
                         .form-holder
-                            .row-group
+                            .wholesale_customer
+                                h4 Данные оптового клиента
                                 div
-                                    input(type="text", placeholder="ФИО:", name="name", minlength="2", data-validate="name")
+                                    span Название компании*
+                                    input(type="text" name="company" data-validate="name")
                                 div
-                                    input(type="text", placeholder="Телефон:", name="phone", data-validate="phone")
-                            .row-group
-                                div
-                                    input(type="text", placeholder="ИНН:", name="iin", data-validate="number")
-                                div
-                                    input(type="text", placeholder="Почта:", name="email", data-validate="email")
+                                    span ИНН*
+                                    input(type="text" name="inn" data-validate="number")
+                                //div
+                                    span КПП*
+                                    input(type="text" name="kpp" data-validate="number")
 
-                            .row-group
-                                div.address
-                                    input(type="text", placeholder="Адрес:", name="address", data-validate="name")
+                                div
+                                    span Телефон организации
+                                    input(type="text" name="phone" data-validate="phone")
+                                div
+                                    span Должность*
+                                    input(type="text" name="position" data-validate="name")
+
+                            .address
+                                h4 Ваш адрес доставки
+                                div.short.margin20
+                                    span Город / Населенный пункт*
+                                    input(type="text" name="city" data-validate="name")
+                                div.short
+                                    span Индекс*
+                                    input(type="text" name="index" data-validate="index")
+                                div
+                                    span Улица*
+                                    input(type="text" name="street" data-validate="name")
+
+                                div.short.margin20
+                                    span Дом / Корпус*
+                                    input(type="text" name="housing" data-validate="number")
+
+                                div.short
+                                    span Квартира / Офис*
+                                    input(type="text" name="apartment" data-validate="number")
+                                div.short.margin20
+                                    span Вид перевозки
+                                    select(name="delivery" data-validate="select")
+                                        option(value="auto" ) Автомобильные перевозки
+                                        option(value="delivery1") Вид перевозки 1
+                                        option(value="delivery2") Вид перевозки 2
+
+                                div.short
+                                    span Транспортная компания
+                                    select(name="delivery_compamy" data-validate="select")
+                                        option(value="UPS") UPS Delivery RUS
+                                        option(value="delivery_compamy1") Транспортная компания 1
+                                        option(value="delivery_compamy2") Транспортная компания 2
+
+
+
+                            .contact_details
+                                h4 Ваши контактные данные
+                                div
+                                    span Ваше имя*
+                                    input(type="text" name="name" data-validate="name")
+                                div
+                                    span Фамилия*
+                                    input(type="text" name="surname" data-validate="name")
+
+                                div
+                                    span Контактный телефон*
+                                    input(type="text" name="phone_contact" data-validate="phone")
+
+                                div
+                                    span Ваши комментарии
+                                    textarea
+
+
+
 
 
 

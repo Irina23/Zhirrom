@@ -177,7 +177,7 @@
                     input(type="text" name="kpp" data-validate="number")
                     
                     -->
-                    <div><span>Телефон организации*</span>
+                    <div><span>Телефон организации</span>
                       <input type="text" name="phone" data-validate="phone">
                     </div>
                     <div><span>Должность*</span>
@@ -192,7 +192,7 @@
                     <div><span>Фамилия*</span>
                       <input type="text" name="surname" data-validate="name">
                     </div>
-                    <div><span>Дата в формате ДД-ММ-ГГГГ*</span>
+                    <div><span>Дата в формате ДД-ММ-ГГГГ</span>
                       <input type="text" name="data" data-validate="data" placeholder="ДД-ММ-ГГГГ">
                     </div>
                     <div><span>Контактный телефон*</span>
@@ -263,6 +263,7 @@
                   <div>
                     <input type="text" name="repeat_email" data-validate="email" placeholder="*Повторить e-mail:">
                   </div>
+                  <div class="short">*Все поля обязательны к заполнению</div>
                   <div class="btn submit">отправить</div>
                 </form>
               </div>
@@ -357,6 +358,14 @@
       <div id="certificate" class="modal_div">
         <div class="modal_close"></div>
         <div class="img-holder"><img src="img/content/certificate.png"></div>
+      </div>
+      <div id="report_available" class="modal_div">
+        <div class="modal_close"></div>
+        <div class="modal_content">Когда товар появится на складе мы вам сообщим.</div>
+      </div>
+      <div id="order_status_result" class="modal_div">
+        <div class="modal_close"></div>
+        <div class="modal_content">Товар доставлено</div>
       </div>
       <div id="overlay"></div>
       <script src="bower_components/jquery/dist/jquery.js"></script>

@@ -51,6 +51,7 @@ jQuery(document).ready(function() {
                 $(div)
                     .css('display', 'block')
                     .animate({opacity: 1, top: '50%'}, 200);
+                $('body').addClass('no-scroll');
             });
     });
 
@@ -61,8 +62,23 @@ jQuery(document).ready(function() {
                 $(this).css('display', 'none');
                 overlay.fadeOut(400);
                 $(".message_modal").removeClass("show");
+                $('body').removeClass('no-scroll');
             }
         );
+    });
+
+
+    $(this).keydown(function(eventObject){
+        if (eventObject.which == 27)
+            modal.animate({opacity: 0}, 200,
+                function(){
+                    $(this).css('display', 'none');
+                    overlay.fadeOut(400);
+                    $(".message_modal").removeClass('show');
+                    $('body').removeClass('no-scroll');
+
+                }
+            );
     });
 
 
@@ -74,7 +90,7 @@ jQuery(document).ready(function() {
         $("[name='data']").mask("99-99-9999");
 
         $('#preloader').fadeOut('slow',function(){$(this).remove();});
-//bxSlider
+        //bxSlider
         jQuery('.slider').bxSlider({
             nextText: "",
             prevText: ""
@@ -186,9 +202,10 @@ jQuery(document).ready(function() {
     $(".productfull [id^='bx-pager'] a").click(function() {
         $(window).resize();
         $(".zoomContainer").remove();
-        var content_slider = $(this).closest('.slider_filter_color').attr('data-class');
+        //var content_slider = $(this).closest('.slider_filter_color').attr('data-class');
         var content_img = $(this).attr('data-class');
-        var main_content = '#'+content_slider +' .'+ content_img;
+        //var main_content = '#'+content_slider +' .'+ content_img;
+        var main_content = '#slider_product1 .'+ content_img;
         //console.log(main_content);
         $(main_content).elevateZoom({
             zoomType: "inner",

@@ -49,38 +49,40 @@ html(lang="ru")
 
 
                         .block_info
-                                    form#product_add_cart
-                                        .code_product Артикул: CHELSI 5017
-                                        .name_product Повязка CHELSI
-                                        .name_price.availability Нет в наличии
-                                        .block_price.width50.availability 1199 руб.
-                                        .quantity.availability
-                                            input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus disabled)
+                            form#product_add_cart
+                                .code_product Артикул: CHELSI 5017
+                                .name_product Повязка CHELSI
+                                .name_price.availability Нет в наличии
+                                .block_price.width50.availability 1199 руб.
+                                .quantity.availability
+                                    input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus disabled)
 
-                                        .submit.btn.width50.availability В КОРЗИНУ
+                                .submit.btn.width50.availability В КОРЗИНУ
 
-                                        .block_characteristics
-                                            div.width50
-                                                .name Бренд:
-                                                .value Lak miss
-                                            div.width50
-                                                .name Цвет:
-                                                .value Белый
+                                .block_characteristics
+                                    div.width50
+                                        .name Бренд:
+                                        .value Lak miss
+                                    div.width50
+                                        .name Цвет:
+                                        .value Белый
 
-                                            div.width50
-                                                .name Тип:
-                                                .value Шапка зимняя
-                                            div.width50
-                                                .name Cостав:
-                                                .value Хлопок 90%
+                                    div.width50
+                                        .name Тип:
+                                        .value Шапка зимняя
+                                    div.width50
+                                        .name Cостав:
+                                        .value Хлопок 90%
 
 
 
-                                            .description_product
-                                                span Описание товара:
-                                                | Таким образом дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что сложившаяся структура организации позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям.
+                                    .description_product
+                                        span Описание товара:
+                                        | Таким образом дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что сложившаяся структура организации позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям.
 
-                                        a(href="#") СООБЩИТЬ О НАЛИЧИИ
+                            form.form_report_available
+
+                                a.report_available.open_modal(href="#report_available") СООБЩИТЬ О НАЛИЧИИ
                 .related_products
                     h3 Также рекомендуем
 

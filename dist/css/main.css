@@ -56,6 +56,8 @@ body {
   body p {
     color: #545353;
     line-height: 1.5em; }
+  body.no-scroll {
+    overflow: hidden !important; }
 
 .container {
   min-height: 44vh; }
@@ -1894,7 +1896,7 @@ img {
           transition: all 0.35s; }
 
 .productfull .product_info {
-  margin-bottom: 60px; }
+  margin-bottom: 80px; }
   .productfull .product_info .image {
     width: 460px;
     display: inline-block;
@@ -1963,6 +1965,27 @@ img {
     width: 400px;
     display: inline-block;
     vertical-align: top; }
+    .productfull .product_info .block_info .report_available {
+      background: #ff4504;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      border-radius: 4px;
+      box-shadow: inset 0 -3px 1.9px 0.1px rgba(0, 0, 0, 0.08);
+      padding: 14px 20px;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      font-size: 14px;
+      font-family: "FuturaPT-Demi", sans-serif;
+      line-height: 1em;
+      margin-top: 10px;
+      display: inline-block;
+      vertical-align: middle; }
+      .productfull .product_info .block_info .report_available:hover {
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        text-decoration: none;
+        background: #fe622b; }
     .productfull .product_info .block_info .code_product {
       color: #5c5c5c;
       font-size: 16px;
@@ -2068,6 +2091,53 @@ img {
         .productfull .product_info .block_info .block_characteristics > div .name {
           font-family: "FuturaPT-Medium", sans-serif;
           margin-right: 5px; }
+      .productfull .product_info .block_info .block_characteristics .selectbox {
+        display: inline-block;
+        vertical-align: middle; }
+        .productfull .product_info .block_info .block_characteristics .selectbox .select {
+          font-size: 16px;
+          color: #343434;
+          position: relative;
+          border: 1px solid #d2d2d2;
+          line-height: 30px;
+          padding: 0 25px 0 10px;
+          cursor: pointer; }
+          .productfull .product_info .block_info .block_characteristics .selectbox .select:after {
+            position: absolute;
+            top: 50%;
+            right: 5px;
+            width: 13px;
+            height: 9px;
+            margin-top: -5px;
+            background: url("../img/icons/select.png") no-repeat;
+            content: ""; }
+        .productfull .product_info .block_info .block_characteristics .selectbox .dropdown {
+          display: none;
+          position: absolute;
+          top: 32px !important;
+          left: 0;
+          width: 100%;
+          z-index: 2;
+          background: #fff; }
+          .productfull .product_info .block_info .block_characteristics .selectbox .dropdown li {
+            font-size: 16px;
+            line-height: 1em;
+            cursor: pointer;
+            color: #000;
+            padding: 6px 10px;
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+            border: 1px solid #d2d2d2;
+            border-top: 0;
+            box-sizing: border-box; }
+            .productfull .product_info .block_info .block_characteristics .selectbox .dropdown li:hover {
+              background: #ff4504;
+              -webkit-transition: all 0.35s;
+              transition: all 0.35s;
+              color: #fff;
+              border-color: #ff4504; }
+            .productfull .product_info .block_info .block_characteristics .selectbox .dropdown li.sel {
+              display: none; }
       .productfull .product_info .block_info .block_characteristics .active_size {
         font-size: 16px;
         color: #343434;
@@ -2191,6 +2261,142 @@ img {
               transition: all 0.35s; }
           .productfull .product_info .block_info .block_characteristics .select_color li.active {
             display: none; }
+  .productfull .product_info .wholesale_order {
+    margin-top: 15px; }
+    .productfull .product_info .wholesale_order h3 {
+      color: #343434;
+      font-family: "FuturaBookC", sans-serif;
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 36px;
+      font-variant: small-caps;
+      margin-bottom: 25px; }
+    .productfull .product_info .wholesale_order .table_order .row {
+      padding: 0 15px;
+      border-bottom: 1px solid #dcdbdb;
+      color: #343434; }
+      .productfull .product_info .wholesale_order .table_order .row:first-child {
+        padding: 9px 15px;
+        background: #e5e4e4;
+        border: 1px solid #dfdfdf; }
+        .productfull .product_info .wholesale_order .table_order .row:first-child > div {
+          font-size: 18px !important; }
+      .productfull .product_info .wholesale_order .table_order .row > div {
+        display: inline-block;
+        vertical-align: middle; }
+      .productfull .product_info .wholesale_order .table_order .row .article {
+        width: 14%;
+        font-size: 18px; }
+      .productfull .product_info .wholesale_order .table_order .row .color {
+        width: 25%;
+        font-size: 18px; }
+        .productfull .product_info .wholesale_order .table_order .row .color .img-holder {
+          height: 60px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 15%; }
+          .productfull .product_info .wholesale_order .table_order .row .color .img-holder img {
+            height: 100%;
+            max-width: inherit; }
+        .productfull .product_info .wholesale_order .table_order .row .color + .availability {
+          width: 33%; }
+      .productfull .product_info .wholesale_order .table_order .row .size {
+        width: 10%; }
+        .productfull .product_info .wholesale_order .table_order .row .size.disabled .selectbox .select {
+          color: #d2d2d2; }
+          .productfull .product_info .wholesale_order .table_order .row .size.disabled .selectbox .select:after {
+            border-top: 9px solid #d2d2d2; }
+        .productfull .product_info .wholesale_order .table_order .row .size.disabled .selectbox .dropdown {
+          display: none !important; }
+        .productfull .product_info .wholesale_order .table_order .row .size .selectbox {
+          display: inline-block;
+          vertical-align: middle; }
+          .productfull .product_info .wholesale_order .table_order .row .size .selectbox .select {
+            font-size: 16px;
+            color: #343434;
+            position: relative;
+            border: 1px solid #d2d2d2;
+            line-height: 30px;
+            padding: 0 25px 0 10px;
+            cursor: pointer; }
+            .productfull .product_info .wholesale_order .table_order .row .size .selectbox .select:after {
+              position: absolute;
+              top: 50%;
+              right: 5px;
+              margin-top: -5px;
+              width: 0;
+              height: 0;
+              border-left: 6px solid transparent;
+              border-right: 6px solid transparent;
+              border-top: 9px solid #ff4504; }
+          .productfull .product_info .wholesale_order .table_order .row .size .selectbox .dropdown {
+            display: none;
+            position: absolute;
+            top: 32px !important;
+            left: 0;
+            width: 100%;
+            z-index: 2;
+            background: #fff; }
+            .productfull .product_info .wholesale_order .table_order .row .size .selectbox .dropdown li {
+              font-size: 16px;
+              line-height: 1em;
+              cursor: pointer;
+              color: #000;
+              padding: 6px 10px;
+              -webkit-transition: all 0.35s;
+              transition: all 0.35s;
+              border: 1px solid #d2d2d2;
+              border-top: 0;
+              box-sizing: border-box; }
+              .productfull .product_info .wholesale_order .table_order .row .size .selectbox .dropdown li:hover {
+                background: #ff4504;
+                -webkit-transition: all 0.35s;
+                transition: all 0.35s;
+                color: #fff;
+                border-color: #ff4504; }
+              .productfull .product_info .wholesale_order .table_order .row .size .selectbox .dropdown li.sel {
+                display: none; }
+      .productfull .product_info .wholesale_order .table_order .row .availability {
+        width: 23%;
+        font-size: 18px; }
+        .productfull .product_info .wholesale_order .table_order .row .availability.little {
+          color: #ff4504; }
+        .productfull .product_info .wholesale_order .table_order .row .availability.disabled {
+          color: #b2b2b2; }
+      .productfull .product_info .wholesale_order .table_order .row .quantity {
+        width: 16%; }
+        .productfull .product_info .wholesale_order .table_order .row .quantity.disabled input[type="number"] {
+          border-color: #bab9b9 !important; }
+        .productfull .product_info .wholesale_order .table_order .row .quantity.error input[type="number"] {
+          border-color: red; }
+        .productfull .product_info .wholesale_order .table_order .row .quantity input[type="number"] {
+          width: 80px;
+          border: 1px solid #d2d2d2;
+          box-sizing: border-box;
+          color: #343434;
+          padding-left: 10px;
+          font-size: 16px;
+          line-height: 28px; }
+      .productfull .product_info .wholesale_order .table_order .row .submit {
+        background-color: #ff4504;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 14px;
+        line-height: 1em;
+        text-transform: uppercase;
+        font-family: "FuturaBookC", sans-serif;
+        padding: 9px 8px 7px;
+        cursor: pointer;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s; }
+        .productfull .product_info .wholesale_order .table_order .row .submit:hover {
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s;
+          background: #fe622b; }
+        .productfull .product_info .wholesale_order .table_order .row .submit.disabled {
+          background: #c7c7c7; }
+          .productfull .product_info .wholesale_order .table_order .row .submit.disabled:hover {
+            background: #c7c7c7; }
 
 .feedback .container {
   position: relative;
@@ -2950,34 +3156,135 @@ img {
         line-height: 18px;
         display: block; }
   .payment form#payment .form-holder {
-    width: 620px;
     margin: 0 auto 40px; }
-    .payment form#payment .form-holder .row-group {
-      margin-bottom: 20px; }
-      .payment form#payment .form-holder .row-group:last-child {
-        margin-bottom: 0; }
-      .payment form#payment .form-holder .row-group > div {
+    .payment form#payment .form-holder > div {
+      width: 460px;
+      display: inline-block;
+      vertical-align: top;
+      margin-bottom: 30px; }
+      .payment form#payment .form-holder > div.description {
+        vertical-align: bottom; }
+      .payment form#payment .form-holder > div:nth-child(2n+1) {
+        margin-right: 16px; }
+      .payment form#payment .form-holder > div > div.error input[type="text"] {
+        border-color: #ff4504; }
+      .payment form#payment .form-holder > div > div.short {
+        width: 220px;
+        float: left; }
+        .payment form#payment .form-holder > div > div.short.margin20 {
+          margin-right: 20px; }
+      .payment form#payment .form-holder > div h4 {
+        margin-bottom: 20px;
+        color: #000;
+        font-family: "FuturaBookC", sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1em; }
+      .payment form#payment .form-holder > div span {
+        display: block;
+        margin-bottom: 10px;
+        color: #000;
+        font-family: "FuturaBookC", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1em; }
+      .payment form#payment .form-holder > div input[type="text"] {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #d7d7d7;
+        height: 35px;
+        line-height: 35px;
+        margin-bottom: 10px;
+        padding: 0 10px;
+        color: #3d3d3d;
+        font-family: "FuturaBookC", sans-serif;
+        font-size: 16px;
+        font-weight: 300; }
+      .payment form#payment .form-holder > div textarea {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #d7d7d7;
+        height: 100px;
+        line-height: 1.3em;
+        margin-bottom: 10px;
+        padding: 10px;
+        color: #3d3d3d;
+        font-family: "FuturaBookC", sans-serif;
+        font-size: 16px;
+        font-weight: 300; }
+      .payment form#payment .form-holder > div .submit {
+        background: #ff4504;
+        border-radius: 2px;
+        box-shadow: inset 0 2px 7.8px 0.2px rgba(0, 0, 0, 0.16);
+        color: #fff;
+        font-family: "FuturaPT-Demi", sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1em;
+        text-transform: uppercase;
+        font-variant: small-caps;
+        padding: 13px 12px;
         display: inline-block;
-        vertical-align: top; }
-        .payment form#payment .form-holder .row-group > div:nth-child(2n+1) {
-          margin-right: 15px; }
-        .payment form#payment .form-holder .row-group > div.address {
-          margin-right: 0;
-          display: block; }
-          .payment form#payment .form-holder .row-group > div.address input[type="text"] {
-            width: 100%; }
-        .payment form#payment .form-holder .row-group > div.error input[type="text"] {
-          border-color: red; }
-        .payment form#payment .form-holder .row-group > div input[type="text"] {
-          border-radius: 2px;
-          border: 2px solid #e0e0e0;
-          box-sizing: border-box;
-          line-height: 40px;
-          padding: 0 10px;
-          width: 300px;
-          font-size: 18px;
-          color: #979797;
-          font-family: "FuturaBookC", sans-serif; }
+        cursor: pointer;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s; }
+        .payment form#payment .form-holder > div .submit:hover {
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s;
+          background: #fe622b; }
+      .payment form#payment .form-holder > div p {
+        color: #4b4b4b;
+        font-family: "FuturaBookC", sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 50px; }
+        .payment form#payment .form-holder > div p.desc_form {
+          margin-bottom: 15px;
+          color: #696868;
+          font-size: 16px; }
+      .payment form#payment .form-holder > div .selectbox {
+        color: #3d3d3d;
+        font-family: "FuturaBookC", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 35px;
+        box-sizing: border-box; }
+        .payment form#payment .form-holder > div .selectbox .dropdown {
+          top: 34px !important;
+          width: 100%;
+          border: 1px solid #d7d7d7;
+          border-top: 0;
+          background: #fff;
+          box-sizing: border-box; }
+          .payment form#payment .form-holder > div .selectbox .dropdown li {
+            padding: 0 10px;
+            cursor: pointer; }
+            .payment form#payment .form-holder > div .selectbox .dropdown li.sel {
+              display: none; }
+        .payment form#payment .form-holder > div .selectbox .select {
+          display: block;
+          cursor: pointer;
+          border: 1px solid #d7d7d7;
+          box-sizing: border-box; }
+          .payment form#payment .form-holder > div .selectbox .select .text {
+            padding: 0 30px 0 10px;
+            position: relative;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; }
+            .payment form#payment .form-holder > div .selectbox .select .text:after {
+              content: '';
+              position: absolute;
+              top: 50%;
+              right: 9px;
+              margin-top: -3px;
+              width: 0;
+              height: 0;
+              border-left: 5px solid transparent;
+              border-right: 5px solid transparent;
+              border-top: 7px solid #838383; }
   .payment form#payment .submit {
     border: 2px solid #ff4504;
     border-radius: 4px;
@@ -3183,6 +3490,37 @@ img {
             background-size: 100%;
             -webkit-transition: all 0.35s;
             transition: all 0.35s; }
+
+#report_available, #order_status_result {
+  position: fixed;
+  left: 50%;
+  background: #fff;
+  display: none;
+  opacity: 0;
+  z-index: 31;
+  padding: 60px 40px;
+  width: 410px;
+  height: 165px;
+  margin-top: -82px;
+  margin-left: -205px;
+  box-sizing: border-box;
+  text-align: center; }
+  #report_available .modal_content, #order_status_result .modal_content {
+    font-size: 18px;
+    font-family: "FuturaBookC", sans-serif;
+    line-height: 1.3em; }
+  #report_available .modal_close, #order_status_result .modal_close {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url("../img/icons/close.png") no-repeat;
+    background-size: 100%;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    z-index: 10; }
 
 .list_category2 {
   margin-bottom: 90px; }
@@ -3780,6 +4118,13 @@ img {
     float: left; }
     .private_office .container #change_password_email form:nth-child(2n+1) {
       margin-right: 20px; }
+    .private_office .container #change_password_email form > div.short {
+      float: left;
+      line-height: 40px;
+      margin-top: 10px;
+      color: #696868;
+      font-family: "FuturaBookC", sans-serif;
+      font-size: 16px; }
     .private_office .container #change_password_email form > div.error input[type="text"] {
       border-color: #ff4504; }
     .private_office .container #change_password_email form h3 {
@@ -3803,6 +4148,7 @@ img {
       font-size: 16px;
       font-weight: 300; }
     .private_office .container #change_password_email form .submit {
+      margin-top: 10px;
       float: right;
       background: #ff4504;
       border-radius: 2px;
@@ -3955,9 +4301,11 @@ img {
     margin-right: 50px; }
   .header .block-logo .tagline {
     font-size: 17px; }
-  .private_office .container #private_office > div {
+  .private_office .container #private_office > div,
+  .payment form#payment .form-holder > div {
     width: 430px; }
-    .private_office .container #private_office > div > div.short {
+    .private_office .container #private_office > div > div.short,
+    .payment form#payment .form-holder > div > div.short {
       width: 205px; }
   .private_office .container #change_password_email form {
     width: 430px; }
@@ -4431,9 +4779,16 @@ img {
       .private_office .container #private_office > div > div.short {
         width: 100%;
         margin-right: 0 !important; }
-  .private_office .container #change_password_email form {
+  .private_office .container #change_password_email form,
+  .payment form#payment .form-holder > div,
+  .payment form#payment .form-holder > div > div.short {
     width: 100%;
     margin-right: 0 !important; }
+  .payment form#payment .form-holder > div .selectbox,
+  .private_office .container #private_office > div .selectbox {
+    margin-bottom: 10px; }
+  .payment form#payment .form-holder {
+    margin: 0; }
   #change_password {
     margin-bottom: 30px; }
   .feedback .container {

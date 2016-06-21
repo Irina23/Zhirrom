@@ -49,49 +49,113 @@ html(lang="ru")
 
 
                         .block_info
-                                    form#product_add_cart
-                                        .code_product Артикул: CHELSI 5017
-                                        .name_product Повязка CHELSI
-                                        .name_price Чтобы узнать розничную цену свяжитесь с нашим менеджером
-                                        .block_price.width50 1199 руб.
+                            form#product_add_cart
+                                .code_product Артикул: CHELSI 5017
+                                .name_product Повязка CHELSI
+                                .name_price Чтобы узнать розничную цену свяжитесь с нашим менеджером
+                                .block_price.width50 1199 руб.
 
-                                        .quantity
-                                            input(type="number", min="0", value="1", name="quantity", data-validate="quantity" autofocus)
-                                        .submit.btn.width50 В КОРЗИНУ
+                                .quantity
+                                    input(type="number", min="0", value="1", name="quantity", data-validate="quantity" autofocus)
+                                .submit.btn.width50 В КОРЗИНУ
 
-                                        .block_characteristics
-                                            div.width50
-                                                .name Бренд:
-                                                .value Lak miss
-                                            div.width50
-                                                .name Цвет:
-                                                .value Белый
+                                .block_characteristics
+                                    div.width50
+                                        .name Бренд:
+                                        .value Lak miss
+                                    div.width50
+                                        .name Цвет:
+                                        .value Белый
 
-                                            div.width50
-                                                .name Тип:
-                                                .value Шапка зимняя
-
-
-
-                                            div.width50
-                                                .name Cостав:
-                                                .value Хлопок 90%
+                                    div.width50
+                                        .name Тип:
+                                        .value Шапка зимняя
 
 
 
+                                    div.width50
+                                        .name Cостав:
+                                        .value Хлопок 90%
 
-                                            .description_product
-                                                span Описание товара:
-                                                | Таким образом дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что сложившаяся структура организации позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям.
 
-                                            div.width50
-                                                .name Размер:
-                                                .value
-                                                   .active_size 42-44
-                                                   ul.select_size
-                                                      li.active 42-44
-                                                       li 46-48
-                                                       li 50-52
+
+
+                                    .description_product
+                                        span Описание товара:
+                                        | Таким образом дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что сложившаяся структура организации позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям.
+
+                                    div.width50
+                                        .name Размер:
+
+                                        select(name="size" data-validate="select")
+                                            option(value="42-44" ) 42-44
+                                            option(value="46-48") 46-48
+                                            option(value="50-52") 50-52
+
+
+
+
+                        .wholesale_order
+                            h3 Оптовый заказ
+                            div.table_order
+                                .row
+                                    div.article Артикул
+                                    div.color Цвет
+                                    div.size Размер
+                                    div.availability Наличие на складе/шт.
+                                    div.quantity Количество
+                                    div Корзина
+                                form.row
+                                    div.article 17.458.18К
+                                    div.color
+                                        .img-holder
+                                            img(src="img/content/product1.jpg" )
+                                        span Серый
+                                    div.size
+                                        select(name="size" data-validate="select")
+                                            option(value="42-44" ) 42-44
+                                            option(value="46-48") 46-48
+                                            option(value="50-52") 50-52
+                                    div.availability В наличии: 158
+                                    div.quantity
+                                        input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
+                                    .btn.submit Добавить
+
+                                form.row
+                                    div.article 17.458.19К
+                                    div.color
+                                        .img-holder
+                                            img(src="img/content/product2.jpg" )
+                                        span Светло-серый
+                                    div.size
+                                        select(name="size" data-validate="select")
+                                            option(value="42-44" ) 42-44
+                                            option(value="46-48") 46-48
+                                            option(value="50-52") 50-52
+                                    div.availability.little Мало: 36
+                                    div.quantity
+                                        input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
+                                    .btn.submit Добавить
+                                form.row
+                                    div.article 17.458.20К
+                                    div.color
+                                        .img-holder
+                                            img(src="img/content/product3.jpg" )
+                                        span Синий
+                                    div.size.disabled
+                                        select(name="size" data-validate="select" disabled)
+                                            option(value="42-44" ) 42-44
+                                            option(value="46-48") 46-48
+                                            option(value="50-52") 50-52
+
+                                    div.availability.disabled Нет в наличии: 0
+                                    div.quantity.disabled
+                                        input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus disabled)
+                                    .btn.submit.disabled Добавить
+
+
+
+
 
                 .related_products
                     h3 Также рекомендуем
