@@ -84,7 +84,7 @@ html(lang="ru")
                                         span Описание товара:
                                         | Таким образом дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что сложившаяся структура организации позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям.
 
-                                    div.width50
+                                    div
                                         .name Размер:
 
                                         select(name="size" data-validate="select")
@@ -152,6 +152,69 @@ html(lang="ru")
                                     div.quantity.disabled
                                         input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus disabled)
                                     .btn.submit.disabled Добавить
+
+                        .wholesale_order.mobile
+                            h3 Оптовый заказ
+
+                            form.row
+                                .img-holder
+                                    img(src="img/content/product1.jpg" )
+
+                                div
+                                    .article Артикул: 17.458.18К
+                                    .color Цвет: Серый
+                                    .availability В наличии: 158
+                                    div Размер:
+                                    div.size
+                                        select(name="size" data-validate="select")
+                                            option(value="42-44" ) 42-44
+                                            option(value="46-48") 46-48
+                                            option(value="50-52") 50-52
+                                    .button
+                                        div.quantity
+                                            input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
+                                        .btn.submit Добавить
+                            form.row
+                                .img-holder
+                                    img(src="img/content/product2.jpg" )
+
+                                div
+                                    .article Артикул: 17.458.19К
+                                    .color Цвет: Светло-серый
+                                    .availability Мало: 36
+                                    div Размер:
+                                    div.size
+                                        select(name="size" data-validate="select")
+                                            option(value="42-44" ) 42-44
+                                            option(value="46-48") 46-48
+                                            option(value="50-52") 50-52
+                                    .button
+                                        div.quantity
+                                            input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
+                                        .btn.submit Добавить
+
+
+                            form.row
+                                .img-holder
+                                    img(src="img/content/product3.jpg" )
+
+                                div
+                                    .article Артикул: 17.458.20К
+                                    .color Цвет: Синий
+                                    .availability Нет в наличии: 0
+                                    div Размер:
+                                    div.size.disabled
+                                        select(name="size" data-validate="select")
+                                            option(value="42-44" ) 42-44
+                                            option(value="46-48") 46-48
+                                            option(value="50-52") 50-52
+                                    .button
+                                        div.quantity.disabled
+                                            input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus disabled)
+                                        .btn.submit.disabled Добавить
+
+
+
 
 
 
