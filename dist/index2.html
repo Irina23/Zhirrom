@@ -26,14 +26,14 @@
       <header>
         <div class="top">
           <div class="wrap cf">
-            <div class="menu">
+            <nav class="menu">
               <ul>
                 <li><a href="about.html">О компании</a></li>
                 <li><a href="faq.html">Таблица размеров</a></li>
                 <li><a href="blog.html">Статьи</a></li>
               </ul>
-            </div>
-            <form id="order_status">
+            </nav>
+            <form id="order_status" action="#">
               <h3>Состояние заказа</h3>
               <div>
                 <input type="text" placeholder="Номер заказа" data-validate="number">
@@ -67,7 +67,7 @@
             </div>
             <div class="cart"><a href="cart.html">Товаров в корзине:&#160;<span>0</span></a></div>
           </div>
-          <div id="menu">
+          <nav id="menu">
             <ul>
               <li class="active"><a href="index.html">Главная</a></li>
               <li class="parent"><a href="catalog.html">Женщинам</a>
@@ -95,41 +95,43 @@
               <li><a href="blog.html">Блог</a></li>
               <li><a href="contact.html">Контакты</a></li>
             </ul>
-          </div>
+          </nav>
         </div>
       </header>
       <header class="mobile">
         <div class="top cf">
           <div id="menu-mobile">
             <div id="menu-icon"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></div>
-            <ul class="menu">
-              <li class="active"><a href="index.html">Главная</a></li>
-              <li class="parent"><a href="catalog.html">Женщинам</a>
-                <ul class="drop-menu">
-                  <li><a href="list_product.html">Головные уборы</a></li>
-                  <li><a href="list_product.html">Одежда</a></li>
-                  <li><a href="list_product.html">Аксессуары</a></li>
-                </ul>
-              </li>
-              <li class="parent"><a href="catalog.html">Детям</a>
-                <ul class="drop-menu">
-                  <li><a href="list_product.html">Головные уборы</a></li>
-                  <li><a href="list_product.html">Аксессуары</a></li>
-                </ul>
-              </li>
-              <li class="parent"><a href="catalog.html">Мужчинам</a>
-                <ul class="drop-menu">
-                  <li><a href="list_product.html">Головные уборы</a></li>
-                  <li><a href="list_product.html">Аксессуары</a></li>
-                </ul>
-              </li>
-              <li><a href="brand.html">Бренды</a></li>
-              <li><a href="about.html">О нас</a></li>
-              <li><a href="working.html">Условия работы</a></li>
-              <li><a href="blog.html">Блог</a></li>
-              <li><a href="faq.html">Таблица размеров</a></li>
-              <li><a href="contact.html">Контакты</a></li>
-            </ul>
+            <nav class="menu">
+              <ul>
+                <li class="active"><a href="index.html">Главная</a></li>
+                <li class="parent"><a href="catalog.html">Женщинам</a>
+                  <ul class="drop-menu">
+                    <li><a href="list_product.html">Головные уборы</a></li>
+                    <li><a href="list_product.html">Одежда</a></li>
+                    <li><a href="list_product.html">Аксессуары</a></li>
+                  </ul>
+                </li>
+                <li class="parent"><a href="catalog.html">Детям</a>
+                  <ul class="drop-menu">
+                    <li><a href="list_product.html">Головные уборы</a></li>
+                    <li><a href="list_product.html">Аксессуары</a></li>
+                  </ul>
+                </li>
+                <li class="parent"><a href="catalog.html">Мужчинам</a>
+                  <ul class="drop-menu">
+                    <li><a href="list_product.html">Головные уборы</a></li>
+                    <li><a href="list_product.html">Аксессуары</a></li>
+                  </ul>
+                </li>
+                <li><a href="brand.html">Бренды</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="working.html">Условия работы</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="faq.html">Таблица размеров</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+              </ul>
+            </nav>
           </div>
           <div class="search">
             <form action="search.html" role="search">
@@ -314,7 +316,7 @@
       </footer>
       <div id="login" class="modal_div">
         <div class="modal_close"></div>
-        <form>
+        <form action="#">
           <h3>Вход в личный кабинет</h3>
           <div class="form-holder">
             <div>
@@ -330,7 +332,7 @@
       <div id="call_back" class="modal_div">
         <div class="modal_close"></div>
         <div class="message_modal"> Форма успешно отправлена</div>
-        <form>
+        <form action="#">
           <h3>Заказать звонок</h3>
           <div class="form-holder">
             <div>
@@ -346,7 +348,7 @@
       <div id="contact_form" class="modal_div">
         <div class="modal_close"></div>
         <div class="message_modal"> Форма успешно отправлена</div>
-        <form>
+        <form action="#">
           <h3>Связаться с нами</h3>
           <div class="form-holder">
             <div class="row-group">

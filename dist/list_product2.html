@@ -26,14 +26,14 @@
       <header>
         <div class="top">
           <div class="wrap cf">
-            <div class="menu">
+            <nav class="menu">
               <ul>
                 <li><a href="about.html">О компании</a></li>
                 <li><a href="faq.html">Таблица размеров</a></li>
                 <li><a href="blog.html">Статьи</a></li>
               </ul>
-            </div>
-            <form id="order_status">
+            </nav>
+            <form id="order_status" action="#">
               <h3>Состояние заказа</h3>
               <div>
                 <input type="text" placeholder="Номер заказа" data-validate="number">
@@ -67,7 +67,7 @@
             </div>
             <div class="cart"><a href="cart.html">Товаров в корзине:&#160;<span>0</span></a></div>
           </div>
-          <div id="menu">
+          <nav id="menu">
             <ul>
               <li class="active"><a href="index.html">Главная</a></li>
               <li class="parent"><a href="catalog.html">Женщинам</a>
@@ -95,41 +95,43 @@
               <li><a href="blog.html">Блог</a></li>
               <li><a href="contact.html">Контакты</a></li>
             </ul>
-          </div>
+          </nav>
         </div>
       </header>
       <header class="mobile">
         <div class="top cf">
           <div id="menu-mobile">
             <div id="menu-icon"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></div>
-            <ul class="menu">
-              <li class="active"><a href="index.html">Главная</a></li>
-              <li class="parent"><a href="catalog.html">Женщинам</a>
-                <ul class="drop-menu">
-                  <li><a href="list_product.html">Головные уборы</a></li>
-                  <li><a href="list_product.html">Одежда</a></li>
-                  <li><a href="list_product.html">Аксессуары</a></li>
-                </ul>
-              </li>
-              <li class="parent"><a href="catalog.html">Детям</a>
-                <ul class="drop-menu">
-                  <li><a href="list_product.html">Головные уборы</a></li>
-                  <li><a href="list_product.html">Аксессуары</a></li>
-                </ul>
-              </li>
-              <li class="parent"><a href="catalog.html">Мужчинам</a>
-                <ul class="drop-menu">
-                  <li><a href="list_product.html">Головные уборы</a></li>
-                  <li><a href="list_product.html">Аксессуары</a></li>
-                </ul>
-              </li>
-              <li><a href="brand.html">Бренды</a></li>
-              <li><a href="about.html">О нас</a></li>
-              <li><a href="working.html">Условия работы</a></li>
-              <li><a href="blog.html">Блог</a></li>
-              <li><a href="faq.html">Таблица размеров</a></li>
-              <li><a href="contact.html">Контакты</a></li>
-            </ul>
+            <nav class="menu">
+              <ul>
+                <li class="active"><a href="index.html">Главная</a></li>
+                <li class="parent"><a href="catalog.html">Женщинам</a>
+                  <ul class="drop-menu">
+                    <li><a href="list_product.html">Головные уборы</a></li>
+                    <li><a href="list_product.html">Одежда</a></li>
+                    <li><a href="list_product.html">Аксессуары</a></li>
+                  </ul>
+                </li>
+                <li class="parent"><a href="catalog.html">Детям</a>
+                  <ul class="drop-menu">
+                    <li><a href="list_product.html">Головные уборы</a></li>
+                    <li><a href="list_product.html">Аксессуары</a></li>
+                  </ul>
+                </li>
+                <li class="parent"><a href="catalog.html">Мужчинам</a>
+                  <ul class="drop-menu">
+                    <li><a href="list_product.html">Головные уборы</a></li>
+                    <li><a href="list_product.html">Аксессуары</a></li>
+                  </ul>
+                </li>
+                <li><a href="brand.html">Бренды</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="working.html">Условия работы</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="faq.html">Таблица размеров</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+              </ul>
+            </nav>
           </div>
           <div class="search">
             <form action="search.html" role="search">
@@ -160,7 +162,7 @@
               <li><span>Головные уборы</span></li>
             </ul>
           </div>
-          <form id="subscription2">
+          <form id="subscription2" action="#">
             <h3>Подписаться на акции и скидки</h3>
             <div>
               <input type="text" placeholder="Почта:" data-validate="email">
@@ -173,36 +175,37 @@
               В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом
               и придаст неповторимый колорит советских времен.
             </div>
-            <form id="filter">
+            <form id="filter" action="#">
               <div class="filter">
                 <div class="preview"><span>Вид:</span>
                   <ul>
-                    <li data-value="preview_list" class="preview_list"></li>
-                    <li data-value="preview_block" class="active preview_block"></li>
+                    <li>
+                      <input type="radio" name="preview" value="preview_list" id="preview_list">
+                      <label for="preview_list" class="preview_list"></label>
+                    </li>
+                    <li class="active">
+                      <input type="radio" name="preview" value="preview_block" id="preview_block" checked="">
+                      <label for="preview_block" class="preview_block"></label>
+                    </li>
                   </ul>
-                  <input type="text" name="preview" value="preview_block" class="hidden">
                 </div>
                 <div class="sort_by"><span>Сортировать как:</span>
                   <div>
-                    <div class="active_sort">От дешёвых к дорогим</div>
-                    <ul>
-                      <li data-value="От дешёвых к дорогим" class="active">От дешёвых к дорогим</li>
-                      <li data-value="От дорогих к дешёвым">От дорогих к дешёвым</li>
-                      <li data-value="Популярные">Популярные</li>
-                      <li data-value="Новинки">Новинки</li>
-                    </ul>
-                    <input type="text" name="sort_by" value="От дешёвых к дорогим" class="hidden">
+                    <select name="sort_by" data-validate="select">
+                      <option value="42-44">От дешёвых к дорогим</option>
+                      <option value="46-48">От дорогих к дешёвым</option>
+                      <option value="50-52">Популярные</option>
+                      <option value="50-52">Новинки</option>
+                    </select>
                   </div>
                 </div>
                 <div class="sort_by items_page"><span>Товаров на странице:</span>
                   <div>
-                    <div class="active_sort">10</div>
-                    <ul>
-                      <li data-count="10" class="active">10</li>
-                      <li data-count="20">20</li>
-                      <li data-count="40">40</li>
-                    </ul>
-                    <input type="text" name="items_page" value="10" class="hidden">
+                    <select name="sort_page" data-validate="select">
+                      <option value="10">10</option>
+                      <option value="20">20</option>
+                      <option value="40">40</option>
+                    </select>
                   </div>
                 </div>
               </div>
@@ -334,7 +337,7 @@
       </footer>
       <div id="login" class="modal_div">
         <div class="modal_close"></div>
-        <form>
+        <form action="#">
           <h3>Вход в личный кабинет</h3>
           <div class="form-holder">
             <div>
@@ -350,7 +353,7 @@
       <div id="call_back" class="modal_div">
         <div class="modal_close"></div>
         <div class="message_modal"> Форма успешно отправлена</div>
-        <form>
+        <form action="#">
           <h3>Заказать звонок</h3>
           <div class="form-holder">
             <div>
@@ -366,7 +369,7 @@
       <div id="contact_form" class="modal_div">
         <div class="modal_close"></div>
         <div class="message_modal"> Форма успешно отправлена</div>
-        <form>
+        <form action="#">
           <h3>Связаться с нами</h3>
           <div class="form-holder">
             <div class="row-group">

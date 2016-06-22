@@ -1601,17 +1601,28 @@ img
           li
             display: inline-block
             vertical-align: middle
+            &.active
+              label
+
+                  &.preview_block
+                    background: url("../img/icons/preview_block_hover.png") no-repeat
+                    background-size: 100%
+                  &.preview_list
+                    background: url("../img/icons/preview_list_hover.png") no-repeat
+                    background-size: 100%
+
+
+
+          input[type="radio"]
+            display: none
+          label
+            display: inline-block
+            vertical-align: middle
             width: 25px
             height: 23px
             cursor: pointer
             transition: all 0.35s
-            &.active
-              &.preview_block
-                background: url("../img/icons/preview_block_hover.png") no-repeat
-                background-size: 100%
-              &.preview_list
-                background: url("../img/icons/preview_list_hover.png") no-repeat
-                background-size: 100%
+
 
 
             &:hover
@@ -1640,64 +1651,69 @@ img
           display: inline-block
           vertical-align: middle
           position: relative
-          ul
-            display: none
-            position: absolute
-            top: 33px
-            left: 0
-            width: 100%
-            z-index: 2
-            
-            border-bottom: 0
-            border-top: 0
-            background:  #e8e7e7
-            box-sizing: border-box
 
-            li
+
+          .selectbox
+            .select
+              border: 1px solid #e0dddd
+              background:  #e8e7e7
+              width: 220px
               font-size: 18px
               font-family: "FuturaBookC", sans-serif
               line-height: 1em
-              cursor: pointer
-              color: #000
               padding: 7px 30px 7px 12px
-              transition: all 0.35s
-              border-left: 1px solid #e0dddd
-              border-right: 1px solid #e0dddd
-              &:last-child
-                border-bottom: 1px solid #e0dddd
-              &:hover
-                background: $main-color
-                transition: all 0.35s
-                color: #fff
-                border-color: $main-color
+              color: #000
+              box-sizing: border-box
+              position: relative
+              cursor: pointer
+              &:after
+                position: absolute
+                top: 50%
+                right: 10px
+                width: 13px
+                height: 9px
+                margin-top: -5px
+                background: url("../img/icons/select.png") no-repeat
+                content: ""
 
-              &.active
-                display: none
-          .active_sort
-            border: 1px solid #e0dddd
-            background:  #e8e7e7
-            width: 220px
-            font-size: 18px
-            font-family: "FuturaBookC", sans-serif
-            line-height: 1em
-            padding: 7px 30px 7px 12px
-            color: #000
-            box-sizing: border-box
-            position: relative
-            cursor: pointer
-            &:after
+            .dropdown
+              display: none
               position: absolute
-              top: 50%
-              right: 10px
-              width: 13px
-              height: 9px
-              margin-top: -5px
-              background: url("../img/icons/select.png") no-repeat
-              content: ""
+              top: 33px!important
+              left: 0
+              width: 100%
+              z-index: 2
+
+              border-bottom: 0
+              border-top: 0
+              background:  #e8e7e7
+              box-sizing: border-box
+
+              li
+                font-size: 18px
+                font-family: "FuturaBookC", sans-serif
+                line-height: 1em
+                cursor: pointer
+                color: #000
+                padding: 7px 30px 7px 12px
+                transition: all 0.35s
+                border-left: 1px solid #e0dddd
+                border-right: 1px solid #e0dddd
+                &:last-child
+                  border-bottom: 1px solid #e0dddd
+                &:hover
+                  background: $main-color
+                  transition: all 0.35s
+                  color: #fff
+                  border-color: $main-color
+
+                &.sel
+                  display: none
 
         &.items_page
-          .active_sort
-            width: 75px
+          .selectbox
+            .select
+              width: 75px
 
 
   .filter_products
@@ -3190,28 +3206,32 @@ img
     margin-bottom: 70px
 
   .img_block
-      float: left
-      margin-right: 60px
-      position: relative
-      width: 380px
+    float: left
+    margin-right: 60px
+    position: relative
+    width: 380px
+    height: 380px
+    #map_canvas
       height: 380px
-      #map_canvas
-        height: 380px
-        z-index: 10
+      z-index: 10
+      position: absolute!important
+      width: 380px
+      left: 0
+      top: 0
 
-      img
-        position: relative
-        z-index: 2
-      &:after
-        position: absolute
-        content: ""
-        top: -20px
-        left: -20px
-        width: 100%
-        height: 100%
-        box-sizing: border-box
-        border: 5px solid $main-color
-        z-index: 1
+    img
+      position: relative
+      z-index: 2
+    &:after
+      position: absolute
+      content: ""
+      top: -20px
+      left: -20px
+      width: 100%
+      height: 100%
+      box-sizing: border-box
+      border: 5px solid $main-color
+      z-index: 1
 
 
   .block_text
@@ -3484,18 +3504,7 @@ img
 .cart
   .order_block
     margin-bottom: 120px
-    .ias-trigger
-      a
-        border: 2px solid $main-color
-        border-radius: 4px
-        color: $main-color
-        font-size: 14px
-        font-family: "FuturaPT-Demi", sans-serif
-        box-shadow: none
-        background: none
-        &:hover
-          background: $main-color
-          color: #fff
+
     .submit
       border: 2px solid $main-color
       border-radius: 4px
@@ -3539,6 +3548,11 @@ img
       .order
         border-bottom: 1px solid #f0eeee
         position: relative
+        display: flex
+        flex-direction: row
+
+
+
         .delete
           position: absolute
           top: 10px
@@ -3557,11 +3571,12 @@ img
             background-size: 100%
             transition: all 0.35s
         .row
-          display: inline-block
-          vertical-align: top
-          width: 125px
+
+          //width: 125px
           box-sizing: border-box
           padding: 0 10px
+          min-width: 18.5%
+
           .title
             color:  #b0afaf
             font-size: 16px
@@ -3571,7 +3586,8 @@ img
             color: #000000
             font-size: 18px
             line-height: 1em
-            width: 300px
+
+            //width: 300px
             a
               color: #000000
               font-size: 18px
@@ -3585,7 +3601,8 @@ img
 
 
           &.image
-            width: 60px
+            //width: 60px
+            min-width: 7%
             .img-holder
               width: 60px
               height: 60px
@@ -3593,7 +3610,7 @@ img
               display: block
           &.quantity
             .name
-              text-align: center
+              //text-align: center
               &.error
                 input[type="number"]
                   border-color: red
@@ -3613,6 +3630,7 @@ img
                   padding: 0 20px 0 40px
                 &.price
                   width: 130px
+
 
 .cart
   .list_order
@@ -4949,6 +4967,89 @@ img
                   transition: all 0.35s
                   background: #ff6a36
                   color: #fff
+        &.mobile
+          display: none
+          .row
+            padding: 0
+            background: #ececec!important
+            border: none
+            margin-bottom: 1px
+            .order-info
+              padding: 17px 0
+              display: block
+              > div
+                display: block
+                margin-bottom: 10px
+                padding: 0 17px
+                .name
+                  font-family: "FuturaPT-Demi", sans-serif
+                .name, .value
+                  display: inline-block
+                  vertical-align: middle
+                  width: 49%
+                  font-size: 16px!important
+            .order_list
+                  display: none
+                  width: 100%
+                  background: #f9f9f9
+                  padding: 0
+                  margin: 0!important
+
+                  .order
+                    background: none
+                    color: #000
+                    border: 0
+                    text-align: center
+                    padding: 15px 0
+                    .product-info
+
+                      //width: calc(100% - 100px)
+                      text-align: left
+                      >div
+                        margin-bottom: 10px
+                        color: #000
+                        font-size: 18px
+                        width: 100% !important
+                        //line-height: 1em
+                        &.article
+                          font-size: 16px
+                        .name
+                          font-family: "FuturaPT-Demi", sans-serif
+                        .value
+                          margin-top: 3px
+                        .name, .value
+                          display: inline-block
+                          vertical-align: middle
+
+                          line-height: 18px
+                          font-size: 18px
+                          //width: 49%
+
+                      a
+                        color: #000
+                        font-size: 18px
+                        font-family: "FuturaPT-Demi", sans-serif
+                        line-height: 1em
+                      .price
+                        color: #ff6a36
+                      .repeat_order
+                        width: auto!important
+                        color: $main-color
+                        font-size: 13px
+                        display: inline-block
+
+                        &:hover
+                          color: #fff
+                    > div
+                      padding: 0
+                    .product-img
+                      width: 80px
+                      height: 80px
+                      padding-right: 20px
+                      vertical-align: top
+
+
+
 
 
 #order_status
@@ -5141,7 +5242,7 @@ img
     .filter > div.preview, .filter > div.sort_by
       margin-right: 35px
 
-  .cart .order_block .list_order .order .row.name
+  //.cart .order_block .list_order .order .row.name
     width: 295px
 
 
@@ -5177,6 +5278,15 @@ img
       margin-bottom: 20px
 
 
+  .top .menu
+    margin-right: 40px
+
+  .footer .wrap .logo, .footer .wrap .contact
+    margin-right: 75px
+
+
+
+
 @media screen and (max-width: 959px)
   body
     min-width: 320px
@@ -5195,7 +5305,7 @@ img
           cursor: pointer
           position: relative
           z-index: 10
-          + ul
+          + nav
             display: none
             padding: 20px 0 10px
           .icon-bar
@@ -5733,7 +5843,7 @@ img
           line-height: 1em
           margin-bottom: 40px
 
-  .cart
+  //.cart
     .order_block .list_order .order .row.name
       width: 290px
 
@@ -5868,6 +5978,15 @@ img
   .feedback .pagination_list li:first-child
     margin-right: 20px
 
+  .private_office .container #history_orders .table_order
+    display: none
+    &.mobile
+      display: block
+
+
+
+
+
 @media screen and (max-width: 930px)
   .list_products
     .filter_products
@@ -5909,7 +6028,7 @@ img
   .private_office .container #private_office > div .selectbox
     margin-bottom: 10px
 
-@media screen and (max-width: 920px)
+//@media screen and (max-width: 920px)
  .cart .order_block .list_order .order .row
     width: 115px
 
@@ -5924,10 +6043,10 @@ img
         margin-bottom: 0!important
 
 
-  .cart .order_block .list_order .order .row.name
+  //.cart .order_block .list_order .order .row.name
     width: 275px
 
-@media screen and (max-width: 870px)
+//@media screen and (max-width: 870px)
 
   body .cart .order_block .list_order .order .row.name
     width: 250px
@@ -5935,7 +6054,7 @@ img
   .cart .list_order .total_price .price
     font-size: 24px
   body .cart .order_block .list_order .order .row.name
-    width: 205px
+    //width: 205px
     padding: 0 20px
 
 
@@ -5970,11 +6089,14 @@ img
 
 
 
-  body .cart .order_block .list_order .order .row
+  body .cart .order_block .list_order .order
     display: block
-    width: 100%!important
-    text-align: center
-    margin-bottom: 10px
+
+    .row
+      display: block
+      width: 100%!important
+      text-align: center
+      margin-bottom: 10px
 
   .cart .order_block .list_order .order .row .title,
   .order .row .name,

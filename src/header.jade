@@ -2,7 +2,7 @@
 header
     .top
         .wrap.cf
-            .menu
+            nav.menu
                 ul
                     li
                         a(href="about.html") О компании
@@ -14,7 +14,7 @@ header
                         a(href="blog.html") Статьи
 
 
-            form#order_status
+            form#order_status(action="#")
                 h3 Состояние заказа
                 div
                     input(type="text" placeholder="Номер заказа" data-validate="number")
@@ -64,7 +64,7 @@ header
                 a(href="cart.html") Товаров в корзине:&#160;
                     span 0
 
-        #menu
+        nav#menu
             ul
                 li.active
                     a(href="index.html") Главная
@@ -114,48 +114,48 @@ header.mobile
                 span.icon-bar
                 span.icon-bar
 
+            nav.menu
+                ul
+                    li.active
+                        a(href="index.html") Главная
+                    li.parent
+                        a(href="catalog.html") Женщинам
+                        ul.drop-menu
+                            li
+                                a(href="list_product.html") Головные уборы
+                            li
+                                a(href="list_product.html") Одежда
+                            li
+                                a(href="list_product.html") Аксессуары
+                    li.parent
+                        a(href="catalog.html") Детям
+                        ul.drop-menu
+                            li
+                                a(href="list_product.html") Головные уборы
 
-            ul.menu
-                li.active
-                    a(href="index.html") Главная
-                li.parent
-                    a(href="catalog.html") Женщинам
-                    ul.drop-menu
-                        li
-                            a(href="list_product.html") Головные уборы
-                        li
-                            a(href="list_product.html") Одежда
-                        li
-                            a(href="list_product.html") Аксессуары
-                li.parent
-                    a(href="catalog.html") Детям
-                    ul.drop-menu
-                        li
-                            a(href="list_product.html") Головные уборы
+                            li
+                                a(href="list_product.html") Аксессуары
 
-                        li
-                            a(href="list_product.html") Аксессуары
+                    li.parent
+                        a(href="catalog.html") Мужчинам
+                        ul.drop-menu
+                            li
+                                a(href="list_product.html") Головные уборы
+                            li
+                                a(href="list_product.html") Аксессуары
+                    li
+                        a(href="brand.html") Бренды
+                    li
+                        a(href="about.html") О нас
+                    li
+                        a(href="working.html") Условия работы
 
-                li.parent
-                    a(href="catalog.html") Мужчинам
-                    ul.drop-menu
-                        li
-                            a(href="list_product.html") Головные уборы
-                        li
-                            a(href="list_product.html") Аксессуары
-                li
-                    a(href="brand.html") Бренды
-                li
-                    a(href="about.html") О нас
-                li
-                    a(href="working.html") Условия работы
-
-                li
-                    a(href="blog.html") Блог
-                li
-                    a(href="faq.html") Таблица размеров
-                li
-                    a(href="contact.html") Контакты
+                    li
+                        a(href="blog.html") Блог
+                    li
+                        a(href="faq.html") Таблица размеров
+                    li
+                        a(href="contact.html") Контакты
 
 
 

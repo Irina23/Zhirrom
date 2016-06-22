@@ -17,7 +17,7 @@ html(lang="ru")
 
                             li
                                 span Оплата и доставка
-                    form#payment
+                    form#payment(action="#")
 
 
                         h3 Оплата
@@ -25,7 +25,7 @@ html(lang="ru")
                         .radio.cf.payments
 
                             div
-                                input(type="radio", name="payment", value="cash", id="cash",checked="")
+                                input(type="radio", name="payment", value="cash", id="cash", checked="")
                                 label(for="cash") Наличная оплата
 
                             div
@@ -70,7 +70,7 @@ html(lang="ru")
 
                                 div
                                     span Телефон организации
-                                    input(type="text" name="phone" data-validate="phone")
+                                    input(type="text" name="phone" data-validate="phone-default")
                                 div
                                     span Должность*
                                     input(type="text" name="position" data-validate="name")

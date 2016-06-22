@@ -18,7 +18,7 @@ html(lang="ru")
                                 a(href="catalog.html") Категория товаров
                             li
                                 span Головные уборы
-                    form#subscription2
+                    form#subscription2(action="#")
                         h3 Подписаться на акции и скидки
                         div
                             input(type="text" placeholder="Почта:" data-validate="email")
@@ -29,33 +29,41 @@ html(lang="ru")
                         .description.
                             В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом
                             и придаст неповторимый колорит советских времен.
-                        form#filter
+                        form#filter(action="#")
                             .filter
                                 .preview
                                     span Вид:
                                     ul
-                                        li.preview_list(data-value="preview_list")
-                                        li.active.preview_block(data-value="preview_block")
-                                    input(type="text" class="hidden"  name="preview" value="preview_block")
+
+                                        li
+                                            input(type="radio", name="preview", value="preview_list", id="preview_list")
+                                            label.preview_list(for="preview_list")
+
+                                        li.active
+                                            input(type="radio", name="preview", value="preview_block", id="preview_block",checked="")
+                                            label.preview_block(for="preview_block")
+
+
                                 .sort_by
                                     span Сортировать как:
                                     div
-                                        .active_sort От дешёвых к дорогим
-                                        ul
-                                            li.active(data-value="От дешёвых к дорогим") От дешёвых к дорогим
-                                            li(data-value="От дорогих к дешёвым") От дорогих к дешёвым
-                                            li(data-value="Популярные") Популярные
-                                            li(data-value="Новинки") Новинки
-                                    input(type="text" class="hidden" name="sort_by" value="От дешёвых к дорогим")
+                                        select(name="sort_by" data-validate="select")
+                                            option(value="42-44" ) От дешёвых к дорогим
+                                            option(value="46-48") От дорогих к дешёвым
+                                            option(value="50-52") Популярные
+                                            option(value="50-52") Новинки
+
+
+
                                 .sort_by.items_page
                                     span Товаров на странице:
                                     div
-                                        .active_sort 10
-                                        ul
-                                            li.active(data-count="10") 10
-                                            li(data-count="20") 20
-                                            li(data-count="40") 40
-                                    input(type="text" class="hidden" name="items_page" value="10")
+                                        select(name="sort_page" data-validate="select")
+                                            option(value="10" ) 10
+                                            option(value="20") 20
+                                            option(value="40") 40
+
+
 
                             .filter_products.cf
                                 h2

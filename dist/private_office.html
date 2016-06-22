@@ -26,14 +26,14 @@
       <header>
         <div class="top">
           <div class="wrap cf">
-            <div class="menu">
+            <nav class="menu">
               <ul>
                 <li><a href="about.html">О компании</a></li>
                 <li><a href="faq.html">Таблица размеров</a></li>
                 <li><a href="blog.html">Статьи</a></li>
               </ul>
-            </div>
-            <form id="order_status">
+            </nav>
+            <form id="order_status" action="#">
               <h3>Состояние заказа</h3>
               <div>
                 <input type="text" placeholder="Номер заказа" data-validate="number">
@@ -67,7 +67,7 @@
             </div>
             <div class="cart"><a href="cart.html">Товаров в корзине:&#160;<span>0</span></a></div>
           </div>
-          <div id="menu">
+          <nav id="menu">
             <ul>
               <li class="active"><a href="index.html">Главная</a></li>
               <li class="parent"><a href="catalog.html">Женщинам</a>
@@ -95,41 +95,43 @@
               <li><a href="blog.html">Блог</a></li>
               <li><a href="contact.html">Контакты</a></li>
             </ul>
-          </div>
+          </nav>
         </div>
       </header>
       <header class="mobile">
         <div class="top cf">
           <div id="menu-mobile">
             <div id="menu-icon"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></div>
-            <ul class="menu">
-              <li class="active"><a href="index.html">Главная</a></li>
-              <li class="parent"><a href="catalog.html">Женщинам</a>
-                <ul class="drop-menu">
-                  <li><a href="list_product.html">Головные уборы</a></li>
-                  <li><a href="list_product.html">Одежда</a></li>
-                  <li><a href="list_product.html">Аксессуары</a></li>
-                </ul>
-              </li>
-              <li class="parent"><a href="catalog.html">Детям</a>
-                <ul class="drop-menu">
-                  <li><a href="list_product.html">Головные уборы</a></li>
-                  <li><a href="list_product.html">Аксессуары</a></li>
-                </ul>
-              </li>
-              <li class="parent"><a href="catalog.html">Мужчинам</a>
-                <ul class="drop-menu">
-                  <li><a href="list_product.html">Головные уборы</a></li>
-                  <li><a href="list_product.html">Аксессуары</a></li>
-                </ul>
-              </li>
-              <li><a href="brand.html">Бренды</a></li>
-              <li><a href="about.html">О нас</a></li>
-              <li><a href="working.html">Условия работы</a></li>
-              <li><a href="blog.html">Блог</a></li>
-              <li><a href="faq.html">Таблица размеров</a></li>
-              <li><a href="contact.html">Контакты</a></li>
-            </ul>
+            <nav class="menu">
+              <ul>
+                <li class="active"><a href="index.html">Главная</a></li>
+                <li class="parent"><a href="catalog.html">Женщинам</a>
+                  <ul class="drop-menu">
+                    <li><a href="list_product.html">Головные уборы</a></li>
+                    <li><a href="list_product.html">Одежда</a></li>
+                    <li><a href="list_product.html">Аксессуары</a></li>
+                  </ul>
+                </li>
+                <li class="parent"><a href="catalog.html">Детям</a>
+                  <ul class="drop-menu">
+                    <li><a href="list_product.html">Головные уборы</a></li>
+                    <li><a href="list_product.html">Аксессуары</a></li>
+                  </ul>
+                </li>
+                <li class="parent"><a href="catalog.html">Мужчинам</a>
+                  <ul class="drop-menu">
+                    <li><a href="list_product.html">Головные уборы</a></li>
+                    <li><a href="list_product.html">Аксессуары</a></li>
+                  </ul>
+                </li>
+                <li><a href="brand.html">Бренды</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="working.html">Условия работы</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="faq.html">Таблица размеров</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+              </ul>
+            </nav>
           </div>
           <div class="search">
             <form action="search.html" role="search">
@@ -157,9 +159,9 @@
           <div class="tabs">
             <div class="tabs-menu">
               <ul class="nav nav-tabs">
-                <li data-toggle="tab" class="active"><a href="#history_orders">История заказов</a></li>
-                <li data-toggle="tab"><a href="#personal_information">Персональные данные</a></li>
-                <li data-toggle="tab"><a href="#change_password_email">Смена пароля и E-mail</a></li>
+                <li class="active"><a href="#history_orders" data-toggle="tab">История заказов</a></li>
+                <li><a href="#personal_information" data-toggle="tab">Персональные данные</a></li>
+                <li><a href="#change_password_email" data-toggle="tab">Смена пароля и E-mail</a></li>
               </ul>
             </div>
             <div class="tab-content">
@@ -187,7 +189,7 @@
                           <div class="price">Цена</div>
                           <div class="quantity">Количество</div>
                         </div>
-                        <form class="order">
+                        <form action="#" class="order">
                           <div class="product">
                             <div class="img-holder"><img src="img/content/product2.jpg" alt="Повязка CHELSI"></div>
                             <div><a href="product.html">Повязка CHELSI</a><span>Бренд: La chica loca</span></div>
@@ -198,7 +200,7 @@
                           <div class="quantity">12 шт.</div>
                           <div class="submit btn repeat_order">ПОВТОРИТЬ ЗАКАЗ</div>
                         </form>
-                        <form class="order">
+                        <form action="#" class="order">
                           <div class="product">
                             <div class="img-holder"><img src="img/content/product2.jpg" alt="Повязка CHELSI"></div>
                             <div><a href="product.html">Повязка CHELSI</a><span>Бренд: La chica loca</span></div>
@@ -209,7 +211,7 @@
                           <div class="quantity">12 шт.</div>
                           <div class="submit btn repeat_order">ПОВТОРИТЬ ЗАКАЗ</div>
                         </form>
-                        <form class="order">
+                        <form action="#" class="order">
                           <div class="product">
                             <div class="img-holder"><img src="img/content/product2.jpg" alt="Повязка CHELSI"></div>
                             <div><a href="product.html">Повязка CHELSI</a><span>Бренд: La chica loca</span></div>
@@ -238,7 +240,7 @@
                           <div class="price">Цена</div>
                           <div class="quantity">Количество</div>
                         </div>
-                        <form class="order">
+                        <form action="#" class="order">
                           <div class="product">
                             <div class="img-holder"><img src="img/content/product2.jpg" alt="Повязка CHELSI"></div>
                             <div><a href="product.html">Повязка CHELSI</a><span>Бренд: La chica loca</span></div>
@@ -249,7 +251,7 @@
                           <div class="quantity">12 шт.</div>
                           <div class="submit btn repeat_order">ПОВТОРИТЬ ЗАКАЗ</div>
                         </form>
-                        <form class="order">
+                        <form action="#" class="order">
                           <div class="product">
                             <div class="img-holder"><img src="img/content/product2.jpg" alt="Повязка CHELSI"></div>
                             <div><a href="product.html">Повязка CHELSI</a><span>Бренд: La chica loca</span></div>
@@ -260,7 +262,7 @@
                           <div class="quantity">12 шт.</div>
                           <div class="submit btn repeat_order">ПОВТОРИТЬ ЗАКАЗ</div>
                         </form>
-                        <form class="order">
+                        <form action="#" class="order">
                           <div class="product">
                             <div class="img-holder"><img src="img/content/product2.jpg" alt="Повязка CHELSI"></div>
                             <div><a href="product.html">Повязка CHELSI</a><span>Бренд: La chica loca</span></div>
@@ -289,7 +291,7 @@
                           <div class="price">Цена</div>
                           <div class="quantity">Количество</div>
                         </div>
-                        <form class="order">
+                        <form action="#" class="order">
                           <div class="product">
                             <div class="img-holder"><img src="img/content/product2.jpg" alt="Повязка CHELSI"></div>
                             <div><a href="product.html">Повязка CHELSI</a><span>Бренд: La chica loca</span></div>
@@ -300,7 +302,7 @@
                           <div class="quantity">12 шт.</div>
                           <div class="submit btn repeat_order">ПОВТОРИТЬ ЗАКАЗ</div>
                         </form>
-                        <form class="order">
+                        <form action="#" class="order">
                           <div class="product">
                             <div class="img-holder"><img src="img/content/product2.jpg" alt="Повязка CHELSI"></div>
                             <div><a href="product.html">Повязка CHELSI</a><span>Бренд: La chica loca</span></div>
@@ -311,7 +313,7 @@
                           <div class="quantity">12 шт.</div>
                           <div class="submit btn repeat_order">ПОВТОРИТЬ ЗАКАЗ</div>
                         </form>
-                        <form class="order">
+                        <form action="#" class="order">
                           <div class="product">
                             <div class="img-holder"><img src="img/content/product2.jpg" alt="Повязка CHELSI"></div>
                             <div><a href="product.html">Повязка CHELSI</a><span>Бренд: La chica loca</span></div>
@@ -326,9 +328,269 @@
                     </div>
                   </div>
                 </div>
+                <div class="table_order mobile">
+                  <div class="row">
+                    <div class="order-info">
+                      <div>
+                        <div class="name">Номер заказа:</div>
+                        <div class="value">№ 123658914</div>
+                      </div>
+                      <div>
+                        <div class="name">Дата:</div>
+                        <div class="value">9 июня 2016 г.</div>
+                      </div>
+                      <div>
+                        <div class="name">Количество:</div>
+                        <div class="value">55</div>
+                      </div>
+                      <div>
+                        <div class="name">Сумма:</div>
+                        <div class="value">100 356 руб.</div>
+                      </div>
+                      <div>
+                        <div class="name">Состояние:</div>
+                        <div class="value">Выполнен</div>
+                      </div>
+                    </div>
+                    <div class="order_list">
+                      <form action="#" class="order">
+                        <div class="product-img">
+                          <div class="img-holder"><img src="img/content/product2.jpg" alt="Повязка CHELSI"></div>
+                        </div>
+                        <div class="product-info">
+                          <div><a href="product.html">Повязка CHELSI</a></div>
+                          <div>La chica loca</div>
+                          <div class="article">17.458.18K</div>
+                          <div>
+                            <div class="name">Цвет:</div>
+                            <div class="value">Белый</div>
+                          </div>
+                          <div>
+                            <div class="name">Количество:</div>
+                            <div class="value">12 шт.</div>
+                          </div>
+                          <div class="price">2536 руб.</div>
+                          <div class="submit btn repeat_order">ПОВТОРИТЬ ЗАКАЗ</div>
+                        </div>
+                      </form>
+                      <form action="#" class="order">
+                        <div class="product-img">
+                          <div class="img-holder"><img src="img/content/product2.jpg" alt="Повязка CHELSI"></div>
+                        </div>
+                        <div class="product-info">
+                          <div><a href="product.html">Повязка CHELSI</a></div>
+                          <div>La chica loca</div>
+                          <div class="article">17.458.18K</div>
+                          <div>
+                            <div class="name">Цвет:</div>
+                            <div class="value">Белый</div>
+                          </div>
+                          <div>
+                            <div class="name">Количество:</div>
+                            <div class="value">12 шт.</div>
+                          </div>
+                          <div class="price">2536 руб.</div>
+                          <div class="submit btn repeat_order">ПОВТОРИТЬ ЗАКАЗ</div>
+                        </div>
+                      </form>
+                      <form action="#" class="order">
+                        <div class="product-img">
+                          <div class="img-holder"><img src="img/content/product2.jpg" alt="Повязка CHELSI"></div>
+                        </div>
+                        <div class="product-info">
+                          <div><a href="product.html">Повязка CHELSI</a></div>
+                          <div>La chica loca</div>
+                          <div class="article">17.458.18K</div>
+                          <div>
+                            <div class="name">Цвет:</div>
+                            <div class="value">Белый</div>
+                          </div>
+                          <div>
+                            <div class="name">Количество:</div>
+                            <div class="value">12 шт.</div>
+                          </div>
+                          <div class="price">2536 руб.</div>
+                          <div class="submit btn repeat_order">ПОВТОРИТЬ ЗАКАЗ</div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="order-info">
+                      <div>
+                        <div class="name">Номер заказа:</div>
+                        <div class="value">№ 123658914</div>
+                      </div>
+                      <div>
+                        <div class="name">Дата:</div>
+                        <div class="value">8 мая 2016 г.</div>
+                      </div>
+                      <div>
+                        <div class="name">Количество:</div>
+                        <div class="value">55</div>
+                      </div>
+                      <div>
+                        <div class="name">Сумма:</div>
+                        <div class="value">100 356 руб.</div>
+                      </div>
+                      <div>
+                        <div class="name">Состояние:</div>
+                        <div class="value">Выполнен</div>
+                      </div>
+                    </div>
+                    <div class="order_list">
+                      <form action="#" class="order">
+                        <div class="product-img">
+                          <div class="img-holder"><img src="img/content/product2.jpg" alt="Повязка CHELSI"></div>
+                        </div>
+                        <div class="product-info">
+                          <div><a href="product.html">Повязка CHELSI</a></div>
+                          <div>La chica loca</div>
+                          <div class="article">17.458.18K</div>
+                          <div>
+                            <div class="name">Цвет:</div>
+                            <div class="value">Белый</div>
+                          </div>
+                          <div>
+                            <div class="name">Количество:</div>
+                            <div class="value">12 шт.</div>
+                          </div>
+                          <div class="price">2536 руб.</div>
+                          <div class="submit btn repeat_order">ПОВТОРИТЬ ЗАКАЗ</div>
+                        </div>
+                      </form>
+                      <form action="#" class="order">
+                        <div class="product-img">
+                          <div class="img-holder"><img src="img/content/product2.jpg" alt="Повязка CHELSI"></div>
+                        </div>
+                        <div class="product-info">
+                          <div><a href="product.html">Повязка CHELSI</a></div>
+                          <div>La chica loca</div>
+                          <div class="article">17.458.18K</div>
+                          <div>
+                            <div class="name">Цвет:</div>
+                            <div class="value">Белый</div>
+                          </div>
+                          <div>
+                            <div class="name">Количество:</div>
+                            <div class="value">12 шт.</div>
+                          </div>
+                          <div class="price">2536 руб.</div>
+                          <div class="submit btn repeat_order">ПОВТОРИТЬ ЗАКАЗ</div>
+                        </div>
+                      </form>
+                      <form action="#" class="order">
+                        <div class="product-img">
+                          <div class="img-holder"><img src="img/content/product2.jpg" alt="Повязка CHELSI"></div>
+                        </div>
+                        <div class="product-info">
+                          <div><a href="product.html">Повязка CHELSI</a></div>
+                          <div>La chica loca</div>
+                          <div class="article">17.458.18K</div>
+                          <div>
+                            <div class="name">Цвет:</div>
+                            <div class="value">Белый</div>
+                          </div>
+                          <div>
+                            <div class="name">Количество:</div>
+                            <div class="value">12 шт.</div>
+                          </div>
+                          <div class="price">2536 руб.</div>
+                          <div class="submit btn repeat_order">ПОВТОРИТЬ ЗАКАЗ</div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="order-info">
+                      <div>
+                        <div class="name">Номер заказа:</div>
+                        <div class="value">№ 123658914</div>
+                      </div>
+                      <div>
+                        <div class="name">Дата:</div>
+                        <div class="value">23 апреля 2016 г.</div>
+                      </div>
+                      <div>
+                        <div class="name">Количество:</div>
+                        <div class="value">55</div>
+                      </div>
+                      <div>
+                        <div class="name">Сумма:</div>
+                        <div class="value">100 356 руб.</div>
+                      </div>
+                      <div>
+                        <div class="name">Состояние:</div>
+                        <div class="value">Выполнен</div>
+                      </div>
+                    </div>
+                    <div class="order_list">
+                      <form action="#" class="order">
+                        <div class="product-img">
+                          <div class="img-holder"><img src="img/content/product2.jpg" alt="Повязка CHELSI"></div>
+                        </div>
+                        <div class="product-info">
+                          <div><a href="product.html">Повязка CHELSI</a></div>
+                          <div>La chica loca</div>
+                          <div class="article">17.458.18K</div>
+                          <div>
+                            <div class="name">Цвет:</div>
+                            <div class="value">Белый</div>
+                          </div>
+                          <div>
+                            <div class="name">Количество:</div>
+                            <div class="value">12 шт.</div>
+                          </div>
+                          <div class="price">2536 руб.</div>
+                          <div class="submit btn repeat_order">ПОВТОРИТЬ ЗАКАЗ</div>
+                        </div>
+                      </form>
+                      <form action="#" class="order">
+                        <div class="product-img">
+                          <div class="img-holder"><img src="img/content/product2.jpg" alt="Повязка CHELSI"></div>
+                        </div>
+                        <div class="product-info">
+                          <div><a href="product.html">Повязка CHELSI</a></div>
+                          <div>La chica loca</div>
+                          <div class="article">17.458.18K</div>
+                          <div>
+                            <div class="name">Цвет:</div>
+                            <div class="value">Белый</div>
+                          </div>
+                          <div>
+                            <div class="name">Количество:</div>
+                            <div class="value">12 шт.</div>
+                          </div>
+                          <div class="price">2536 руб.</div>
+                          <div class="submit btn repeat_order">ПОВТОРИТЬ ЗАКАЗ</div>
+                        </div>
+                      </form>
+                      <form action="#" class="order">
+                        <div class="product-img">
+                          <div class="img-holder"><img src="img/content/product2.jpg" alt="Повязка CHELSI"></div>
+                        </div>
+                        <div class="product-info">
+                          <div><a href="product.html">Повязка CHELSI</a></div>
+                          <div>La chica loca</div>
+                          <div class="article">17.458.18K</div>
+                          <div>
+                            <div class="name">Цвет:</div>
+                            <div class="value">Белый</div>
+                          </div>
+                          <div>
+                            <div class="name">Количество:</div>
+                            <div class="value">12 шт.</div>
+                          </div>
+                          <div class="price">2536 руб.</div>
+                          <div class="submit btn repeat_order">ПОВТОРИТЬ ЗАКАЗ</div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div id="personal_information" class="tab-pane cf">
-                <form id="private_office">
+                <form id="private_office" action="#">
                   <div class="wholesale_customer">
                     <h3>Данные оптового клиента</h3>
                     <div><span>Название компании*</span>
@@ -343,7 +605,7 @@
                     
                     -->
                     <div><span>Телефон организации</span>
-                      <input type="text" name="phone" data-validate="phone">
+                      <input type="text" name="phone" data-validate="phone-default">
                     </div>
                     <div><span>Должность*</span>
                       <input type="text" name="position" data-validate="name">
@@ -404,7 +666,7 @@
                 </form>
               </div>
               <div id="change_password_email" class="tab-pane cf">
-                <form id="change_password">
+                <form id="change_password" action="#">
                   <h3>Изминение пароля</h3>
                   <div>
                     <input type="text" name="old_pass" data-validate="password" placeholder="*Старый пароль:">
@@ -417,7 +679,7 @@
                   </div>
                   <div class="btn submit">отправить</div>
                 </form>
-                <form id="change_email">
+                <form id="change_email" action="#">
                   <h3>Изминение E-mail</h3>
                   <div>
                     <input type="text" name="current_pass" data-validate="password" placeholder="*Текущий пароль:">
@@ -470,7 +732,7 @@
       </footer>
       <div id="login" class="modal_div">
         <div class="modal_close"></div>
-        <form>
+        <form action="#">
           <h3>Вход в личный кабинет</h3>
           <div class="form-holder">
             <div>
@@ -486,7 +748,7 @@
       <div id="call_back" class="modal_div">
         <div class="modal_close"></div>
         <div class="message_modal"> Форма успешно отправлена</div>
-        <form>
+        <form action="#">
           <h3>Заказать звонок</h3>
           <div class="form-holder">
             <div>
@@ -502,7 +764,7 @@
       <div id="contact_form" class="modal_div">
         <div class="modal_close"></div>
         <div class="message_modal"> Форма успешно отправлена</div>
-        <form>
+        <form action="#">
           <h3>Связаться с нами</h3>
           <div class="form-holder">
             <div class="row-group">

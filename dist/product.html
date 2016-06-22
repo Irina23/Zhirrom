@@ -26,14 +26,14 @@
       <header>
         <div class="top">
           <div class="wrap cf">
-            <div class="menu">
+            <nav class="menu">
               <ul>
                 <li><a href="about.html">О компании</a></li>
                 <li><a href="faq.html">Таблица размеров</a></li>
                 <li><a href="blog.html">Статьи</a></li>
               </ul>
-            </div>
-            <form id="order_status">
+            </nav>
+            <form id="order_status" action="#">
               <h3>Состояние заказа</h3>
               <div>
                 <input type="text" placeholder="Номер заказа" data-validate="number">
@@ -67,7 +67,7 @@
             </div>
             <div class="cart"><a href="cart.html">Товаров в корзине:&#160;<span>0</span></a></div>
           </div>
-          <div id="menu">
+          <nav id="menu">
             <ul>
               <li class="active"><a href="index.html">Главная</a></li>
               <li class="parent"><a href="catalog.html">Женщинам</a>
@@ -95,41 +95,43 @@
               <li><a href="blog.html">Блог</a></li>
               <li><a href="contact.html">Контакты</a></li>
             </ul>
-          </div>
+          </nav>
         </div>
       </header>
       <header class="mobile">
         <div class="top cf">
           <div id="menu-mobile">
             <div id="menu-icon"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></div>
-            <ul class="menu">
-              <li class="active"><a href="index.html">Главная</a></li>
-              <li class="parent"><a href="catalog.html">Женщинам</a>
-                <ul class="drop-menu">
-                  <li><a href="list_product.html">Головные уборы</a></li>
-                  <li><a href="list_product.html">Одежда</a></li>
-                  <li><a href="list_product.html">Аксессуары</a></li>
-                </ul>
-              </li>
-              <li class="parent"><a href="catalog.html">Детям</a>
-                <ul class="drop-menu">
-                  <li><a href="list_product.html">Головные уборы</a></li>
-                  <li><a href="list_product.html">Аксессуары</a></li>
-                </ul>
-              </li>
-              <li class="parent"><a href="catalog.html">Мужчинам</a>
-                <ul class="drop-menu">
-                  <li><a href="list_product.html">Головные уборы</a></li>
-                  <li><a href="list_product.html">Аксессуары</a></li>
-                </ul>
-              </li>
-              <li><a href="brand.html">Бренды</a></li>
-              <li><a href="about.html">О нас</a></li>
-              <li><a href="working.html">Условия работы</a></li>
-              <li><a href="blog.html">Блог</a></li>
-              <li><a href="faq.html">Таблица размеров</a></li>
-              <li><a href="contact.html">Контакты</a></li>
-            </ul>
+            <nav class="menu">
+              <ul>
+                <li class="active"><a href="index.html">Главная</a></li>
+                <li class="parent"><a href="catalog.html">Женщинам</a>
+                  <ul class="drop-menu">
+                    <li><a href="list_product.html">Головные уборы</a></li>
+                    <li><a href="list_product.html">Одежда</a></li>
+                    <li><a href="list_product.html">Аксессуары</a></li>
+                  </ul>
+                </li>
+                <li class="parent"><a href="catalog.html">Детям</a>
+                  <ul class="drop-menu">
+                    <li><a href="list_product.html">Головные уборы</a></li>
+                    <li><a href="list_product.html">Аксессуары</a></li>
+                  </ul>
+                </li>
+                <li class="parent"><a href="catalog.html">Мужчинам</a>
+                  <ul class="drop-menu">
+                    <li><a href="list_product.html">Головные уборы</a></li>
+                    <li><a href="list_product.html">Аксессуары</a></li>
+                  </ul>
+                </li>
+                <li><a href="brand.html">Бренды</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="working.html">Условия работы</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="faq.html">Таблица размеров</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+              </ul>
+            </nav>
           </div>
           <div class="search">
             <form action="search.html" role="search">
@@ -165,15 +167,15 @@
             <div class="image cf">
               <div class="slider_filter_color">
                 <div id="slider_product1">
-                  <div><img src="img/content/product1.jpg" data-zoom-image="img/content/imgfull_product1.jpg" class="product-zoom0"></div>
-                  <div><img src="img/content/product2.jpg" data-zoom-image="img/content/imgfull_product2.jpg" class="product-zoom1"></div>
-                  <div><img src="img/content/product3.jpg" data-zoom-image="img/content/imgfull_product3.jpg" class="product-zoom2"></div>
+                  <div><img src="img/content/product1.jpg" data-zoom-image="img/content/imgfull_product1.jpg" alt="Повязка Chelsi" class="product-zoom0"></div>
+                  <div><img src="img/content/product2.jpg" data-zoom-image="img/content/imgfull_product2.jpg" alt="Повязка Chelsi" class="product-zoom1"></div>
+                  <div><img src="img/content/product3.jpg" data-zoom-image="img/content/imgfull_product3.jpg" alt="Повязка Chelsi" class="product-zoom2"></div>
                 </div>
-                <div id="bx-pager1"><a data-slide-index="0" href="" data-class="product-zoom0"><img src="img/content/product1.jpg"></a><a data-slide-index="1" href="" data-class="product-zoom1"><img src="img/content/product2.jpg"></a><a data-slide-index="2" href="" data-class="product-zoom2"><img src="img/content/product3.jpg"></a></div>
+                <div id="bx-pager1"><a data-slide-index="0" href="img/content/product1.jpg" data-class="product-zoom0"><img src="img/content/product1.jpg" alt="Повязка Chelsi"></a><a data-slide-index="1" href="img/content/product2.jpg" data-class="product-zoom1"><img src="img/content/product2.jpg" alt="Повязка Chelsi"></a><a data-slide-index="2" href="img/content/product3.jpg" data-class="product-zoom2"><img src="img/content/product3.jpg" alt="Повязка Chelsi"></a></div>
               </div>
             </div>
             <div class="block_info">
-              <form id="product_add_cart">
+              <form id="product_add_cart" action="#">
                 <div class="code_product">Артикул: CHELSI 5017</div>
                 <div class="name_product">Повязка CHELSI</div>
                 <div class="name_price">Чтобы узнать розничную цену свяжитесь с нашим менеджером</div>
@@ -222,10 +224,10 @@
                   <div class="quantity">Количество</div>
                   <div>Корзина</div>
                 </div>
-                <form class="row">
+                <form action="#" class="row">
                   <div class="article">17.458.18К</div>
                   <div class="color">
-                    <div class="img-holder"><img src="img/content/product1.jpg"></div><span>Серый</span>
+                    <div class="img-holder"><img src="img/content/product1.jpg" alt="Повязка Chelsi"></div><span>Серый</span>
                   </div>
                   <div class="size">
                     <select name="size" data-validate="select">
@@ -240,10 +242,10 @@
                   </div>
                   <div class="btn submit">Добавить</div>
                 </form>
-                <form class="row">
+                <form action="#" class="row">
                   <div class="article">17.458.19К</div>
                   <div class="color">
-                    <div class="img-holder"><img src="img/content/product2.jpg"></div><span>Светло-серый</span>
+                    <div class="img-holder"><img src="img/content/product2.jpg" alt="Повязка Chelsi"></div><span>Светло-серый</span>
                   </div>
                   <div class="size">
                     <select name="size" data-validate="select">
@@ -258,10 +260,10 @@
                   </div>
                   <div class="btn submit">Добавить</div>
                 </form>
-                <form class="row">
+                <form action="#" class="row">
                   <div class="article">17.458.20К</div>
                   <div class="color">
-                    <div class="img-holder"><img src="img/content/product3.jpg"></div><span>Синий</span>
+                    <div class="img-holder"><img src="img/content/product3.jpg" alt="Повязка Chelsi"></div><span>Синий</span>
                   </div>
                   <div class="size disabled">
                     <select name="size" data-validate="select" disabled>
@@ -280,8 +282,8 @@
             </div>
             <div class="wholesale_order mobile">
               <h3>Оптовый заказ</h3>
-              <form class="row">
-                <div class="img-holder"><img src="img/content/product1.jpg"></div>
+              <form action="#" class="row">
+                <div class="img-holder"><img src="img/content/product1.jpg" alt="Повязка Chelsi"></div>
                 <div>
                   <div class="article">Артикул: 17.458.18К</div>
                   <div class="color">Цвет: Серый</div>
@@ -302,8 +304,8 @@
                   </div>
                 </div>
               </form>
-              <form class="row">
-                <div class="img-holder"><img src="img/content/product2.jpg"></div>
+              <form action="#" class="row">
+                <div class="img-holder"><img src="img/content/product2.jpg" alt="Повязка Chelsi"></div>
                 <div>
                   <div class="article">Артикул: 17.458.19К</div>
                   <div class="color">Цвет: Светло-серый</div>
@@ -324,8 +326,8 @@
                   </div>
                 </div>
               </form>
-              <form class="row">
-                <div class="img-holder"><img src="img/content/product3.jpg"></div>
+              <form action="#" class="row">
+                <div class="img-holder"><img src="img/content/product3.jpg" alt="Повязка Chelsi"></div>
                 <div>
                   <div class="article">Артикул: 17.458.20К</div>
                   <div class="color">Цвет: Синий</div>
@@ -354,14 +356,14 @@
           <div class="wrap">
             <div class="products cf">
               <div class="block_product"><a href="product.html">
-                  <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14"></div>
+                  <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14" alt="Винтаж Плюс L14"></div>
                   <div class="block_text">
                     <div title="Винтаж Плюс L14" class="name">Винтаж Плюс L14</div>
                     <div class="description_product">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum</div>
                     <div class="block_price"></div>
                   </div></a><a href="registration.html" class="asking_price">узнать цену</a></div>
               <div class="block_product"><a href="product.html">
-                  <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14"></div>
+                  <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14" alt="Винтаж Плюс L14"></div>
                   <div class="block_text">
                     <div title="Винтаж Плюс L14" class="name">Винтаж Плюс L14</div>
                     <div class="description_product">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum</div>
@@ -371,7 +373,7 @@
                     </div>
                   </div></a></div>
               <div class="block_product"><a href="product.html">
-                  <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14"></div>
+                  <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14" alt="Винтаж Плюс L14"></div>
                   <div class="block_text">
                     <div title="Винтаж Плюс L14" class="name">Винтаж Плюс L14</div>
                     <div class="description_product">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum</div>
@@ -381,7 +383,7 @@
                     </div>
                   </div></a></div>
               <div class="block_product"><a href="product.html">
-                  <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14"></div>
+                  <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14" alt="Винтаж Плюс L14"></div>
                   <div class="block_text">
                     <div title="Винтаж Плюс L14" class="name">Винтаж Плюс L14</div>
                     <div class="description_product">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum</div>
@@ -428,7 +430,7 @@
       </footer>
       <div id="login" class="modal_div">
         <div class="modal_close"></div>
-        <form>
+        <form action="#">
           <h3>Вход в личный кабинет</h3>
           <div class="form-holder">
             <div>
@@ -444,7 +446,7 @@
       <div id="call_back" class="modal_div">
         <div class="modal_close"></div>
         <div class="message_modal"> Форма успешно отправлена</div>
-        <form>
+        <form action="#">
           <h3>Заказать звонок</h3>
           <div class="form-holder">
             <div>
@@ -460,7 +462,7 @@
       <div id="contact_form" class="modal_div">
         <div class="modal_close"></div>
         <div class="message_modal"> Форма успешно отправлена</div>
-        <form>
+        <form action="#">
           <h3>Связаться с нами</h3>
           <div class="form-holder">
             <div class="row-group">

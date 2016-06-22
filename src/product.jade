@@ -26,30 +26,30 @@ html(lang="ru")
                             .slider_filter_color
                                 #slider_product1
                                     div
-                                        img(src="img/content/product1.jpg", data-zoom-image="img/content/imgfull_product1.jpg", class="product-zoom0" )
+                                        img(src="img/content/product1.jpg", data-zoom-image="img/content/imgfull_product1.jpg", class="product-zoom0", alt="Повязка Chelsi" )
 
                                     div
-                                        img(src="img/content/product2.jpg", data-zoom-image="img/content/imgfull_product2.jpg",class="product-zoom1"  )
+                                        img(src="img/content/product2.jpg", data-zoom-image="img/content/imgfull_product2.jpg",class="product-zoom1", alt="Повязка Chelsi"  )
 
                                     div
-                                        img(src="img/content/product3.jpg", data-zoom-image="img/content/imgfull_product3.jpg", class="product-zoom2"  )
+                                        img(src="img/content/product3.jpg", data-zoom-image="img/content/imgfull_product3.jpg", class="product-zoom2" , alt="Повязка Chelsi" )
 
 
                                 #bx-pager1
-                                        a(data-slide-index='0', href='', data-class="product-zoom0")
-                                            img(src="img/content/product1.jpg" )
+                                        a(data-slide-index='0', href='img/content/product1.jpg', data-class="product-zoom0")
+                                            img(src="img/content/product1.jpg" , alt="Повязка Chelsi")
 
-                                        a(data-slide-index='1', href='', data-class="product-zoom1" )
-                                            img(src="img/content/product2.jpg" )
+                                        a(data-slide-index='1', href='img/content/product2.jpg', data-class="product-zoom1" )
+                                            img(src="img/content/product2.jpg" , alt="Повязка Chelsi")
 
-                                        a(data-slide-index='2', href='', data-class="product-zoom2")
-                                            img(src="img/content/product3.jpg" )
+                                        a(data-slide-index='2', href='img/content/product3.jpg', data-class="product-zoom2")
+                                            img(src="img/content/product3.jpg" , alt="Повязка Chelsi")
 
 
 
 
                         .block_info
-                            form#product_add_cart
+                            form#product_add_cart(action="#")
                                 .code_product Артикул: CHELSI 5017
                                 .name_product Повязка CHELSI
                                 .name_price Чтобы узнать розничную цену свяжитесь с нашим менеджером
@@ -105,11 +105,11 @@ html(lang="ru")
                                     div.availability Наличие на складе/шт.
                                     div.quantity Количество
                                     div Корзина
-                                form.row
+                                form.row(action="#")
                                     div.article 17.458.18К
                                     div.color
                                         .img-holder
-                                            img(src="img/content/product1.jpg" )
+                                            img(src="img/content/product1.jpg" , alt="Повязка Chelsi")
                                         span Серый
                                     div.size
                                         select(name="size" data-validate="select")
@@ -121,11 +121,11 @@ html(lang="ru")
                                         input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
                                     .btn.submit Добавить
 
-                                form.row
+                                form.row(action="#")
                                     div.article 17.458.19К
                                     div.color
                                         .img-holder
-                                            img(src="img/content/product2.jpg" )
+                                            img(src="img/content/product2.jpg", alt="Повязка Chelsi" )
                                         span Светло-серый
                                     div.size
                                         select(name="size" data-validate="select")
@@ -136,11 +136,11 @@ html(lang="ru")
                                     div.quantity
                                         input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
                                     .btn.submit Добавить
-                                form.row
+                                form.row(action="#")
                                     div.article 17.458.20К
                                     div.color
                                         .img-holder
-                                            img(src="img/content/product3.jpg" )
+                                            img(src="img/content/product3.jpg", alt="Повязка Chelsi" )
                                         span Синий
                                     div.size.disabled
                                         select(name="size" data-validate="select" disabled)
@@ -156,9 +156,9 @@ html(lang="ru")
                         .wholesale_order.mobile
                             h3 Оптовый заказ
 
-                            form.row
+                            form.row(action="#")
                                 .img-holder
-                                    img(src="img/content/product1.jpg" )
+                                    img(src="img/content/product1.jpg", alt="Повязка Chelsi" )
 
                                 div
                                     .article Артикул: 17.458.18К
@@ -174,9 +174,9 @@ html(lang="ru")
                                         div.quantity
                                             input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
                                         .btn.submit Добавить
-                            form.row
+                            form.row(action="#")
                                 .img-holder
-                                    img(src="img/content/product2.jpg" )
+                                    img(src="img/content/product2.jpg", alt="Повязка Chelsi" )
 
                                 div
                                     .article Артикул: 17.458.19К
@@ -194,9 +194,9 @@ html(lang="ru")
                                         .btn.submit Добавить
 
 
-                            form.row
+                            form.row(action="#")
                                 .img-holder
-                                    img(src="img/content/product3.jpg" )
+                                    img(src="img/content/product3.jpg", alt="Повязка Chelsi" )
 
                                 div
                                     .article Артикул: 17.458.20К
@@ -228,7 +228,7 @@ html(lang="ru")
                             .block_product
                                 a(href="product.html")
                                     .img_holder
-                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14")
+                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
                                     .block_text
                                         .name(title="Винтаж Плюс L14") Винтаж Плюс L14
                                         .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
@@ -238,7 +238,7 @@ html(lang="ru")
                             .block_product
                                 a(href="product.html")
                                     .img_holder
-                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14")
+                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
                                     .block_text
                                         .name(title="Винтаж Плюс L14") Винтаж Плюс L14
                                         .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
@@ -251,7 +251,7 @@ html(lang="ru")
                             .block_product
                                 a(href="product.html")
                                     .img_holder
-                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14")
+                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
                                     .block_text
                                         .name(title="Винтаж Плюс L14") Винтаж Плюс L14
                                         .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
@@ -262,7 +262,7 @@ html(lang="ru")
                             .block_product
                                 a(href="product.html")
                                     .img_holder
-                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14")
+                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
                                     .block_text
                                         .name(title="Винтаж Плюс L14") Винтаж Плюс L14
                                         .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
