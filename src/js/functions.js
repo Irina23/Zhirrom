@@ -305,4 +305,12 @@ jQuery(document).ready(function() {
     $(".faq h3").click(function () {
         $(this).next('.content_block').slideToggle();
     });
+
+    
+
+    ///mobile buttom more
+    $(".buttom_more").on('click',function () {
+        $(this).parent().find('.short').removeClass('short');
+        $(this).remove();
+    });
 });

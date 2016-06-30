@@ -8,7 +8,7 @@ header
                         a(href="about.html") О компании
 
                     li
-                        a(href="faq.html") Таблица размеров
+                        a(href="faq.html") faq
 
                     li
                         a(href="blog.html") Статьи
@@ -153,41 +153,49 @@ header.mobile
                     li
                         a(href="blog.html") Блог
                     li
-                        a(href="faq.html") Таблица размеров
+                        a(href="faq.html") faq
                     li
                         a(href="contact.html") Контакты
 
 
+        form.order_status(action="#")
 
-        .search
-            form(action="search.html" role="search")
-                div.form-control
-                    input(type="text" name="search" placeholder="Поиск" minlength="2" data-validate="name")
-                .btn.submit
+            div
+                input(type="text" placeholder="Номер заказа" data-validate="number")
+            .btn.submit
+
 
     .header.cf
 
 
 
-        .logo
-            a(href="index.html")
-                img(src="img/icons/logo.png", alt="Zhirrom")
+        .block_logo
+            .logo
+                a(href="index.html")
+                    img(src="img/icons/logo.png", alt="Zhirrom")
+
+            .tagline
+                | “Головные уборы оптом по ценам производителей.
+                br
+                span Доставка по всей России и СНГ”
         .header_left
             .user-login
                 a.login.open_modal(href="#login") Вход
                 a.registration(href="registration.html") Регистрация
-            .cart
-                a(href="cart.html") В корзине:&#160;
-                    span 0
 
 
         .header_right
 
-            a(href="tel:+7(495) 369-14-15") +7(495) 369-14-15
-            a(href="tel:+7(925) 035-31-31") +7(925) 035-31-31
-            a.email(href="mailto:client@zhirrom.ru") client@zhirrom.ru
-            p пн-пт 9.00-18.00
+            .search
+                form(action="search.html" role="search")
+                    div.form-control
+                        input(type="text" name="search" placeholder="Поиск" minlength="2" data-validate="name")
+                    .btn.submit
 
+
+            .cart
+                a(href="cart.html") В корзине:&#160;
+                    span 0
 
 
 

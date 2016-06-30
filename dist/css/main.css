@@ -76,6 +76,9 @@ img {
   width: 940px;
   margin: auto; }
 
+.selectbox + select {
+  display: none; }
+
 #cache {
   display: none; }
 
@@ -719,6 +722,8 @@ img {
   .footer .wrap .contact {
     margin-right: 75px;
     color: #fff; }
+    .footer .wrap .contact .work_time {
+      display: none; }
     .footer .wrap .contact > div {
       font-size: 20px;
       line-height: 1em;
@@ -4555,6 +4560,30 @@ img {
       font-family: "FuturaPT-Demi", sans-serif;
       font-weight: normal; }
 
+.buttom_more {
+  display: none;
+  margin: auto;
+  width: 185px;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: #fff;
+  background: #ff4504;
+  border-radius: 6px;
+  font-size: 16px;
+  text-align: center;
+  padding: 17px 0;
+  box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  font-family: "FuturaPT-Heavy", sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 50px; }
+  .buttom_more:hover {
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    background: #fe622b; }
+
 @media screen and (min-width: 1024px) and (max-height: 700px) {
   .header {
     padding: 15px 0; }
@@ -4665,6 +4694,9 @@ img {
     display: none; }
     header.mobile {
       display: block; }
+      header.mobile .block_logo {
+        margin: auto;
+        text-align: center; }
     header .top {
       padding: 10px 15px;
       position: relative; }
@@ -4778,15 +4810,45 @@ img {
     padding: 0 20px; }
   .header {
     padding: 20px; }
-    .header .cart a {
-      font-size: 16px;
-      padding-left: 35px; }
-      .header .cart a span {
+    .header .search {
+      float: right;
+      clear: right;
+      width: auto;
+      margin-bottom: 6px; }
+      .header .search input[type="text"] {
+        width: 120px;
         font-size: 18px;
-        line-height: 18px; }
+        font-family: "FuturaBookC", sans-serif;
+        font-weight: normal; }
+      .header .search .submit {
+        line-height: 29px; }
+    .header .cart {
+      clear: both; }
+      .header .cart a {
+        font-size: 18px;
+        padding-left: 35px;
+        font-family: "FuturaBookC", sans-serif;
+        font-weight: normal; }
+        .header .cart a span {
+          font-size: 18px;
+          line-height: 18px;
+          font-family: "FuturaBookC", sans-serif;
+          font-weight: normal; }
     .header .logo {
       display: block;
-      margin: 0 auto 20px; }
+      margin: 0 auto 30px; }
+    .header .tagline {
+      margin-bottom: 30px;
+      color: #ff4504;
+      font-family: "FuturaPT-Demi", sans-serif;
+      font-size: 18px;
+      line-height: 24px;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 2px; }
+      .header .tagline span {
+        font-family: "FuturaPT-Light", sans-serif;
+        font-weight: 300; }
     .header .header_left {
       float: left; }
       .header .header_left .user-login a {
@@ -4824,12 +4886,11 @@ img {
         line-height: 1em; }
       .header .header_right a {
         display: block;
-        margin-bottom: 15px;
         color: #000;
         -webkit-transition: all 0.35s;
         transition: all 0.35s;
-        font-size: 16px;
-        line-height: 1em; }
+        font-size: 18px;
+        line-height: 38px; }
         .header .header_right a.email {
           letter-spacing: 1px; }
         .header .header_right a:hover {
@@ -4841,7 +4902,8 @@ img {
     width: 280px;
     padding: 0; }
     .footer .wrap .logo {
-      margin: 0 auto 40px; }
+      margin: 0 auto 40px;
+      width: 280px; }
     .footer .wrap > div {
       display: block;
       margin-bottom: 40px; }
@@ -4851,13 +4913,20 @@ img {
         margin-bottom: 10px; }
     .footer .wrap .user_block a, .footer .wrap .user_block span {
       font-size: 18px; }
-    .footer .wrap .contact > div {
-      font-size: 18px;
-      margin-bottom: 15px; }
-      .footer .wrap .contact > div a {
+    .footer .wrap .contact {
+      margin: 0 0 40px; }
+      .footer .wrap .contact .work_time {
+        display: block; }
+        .footer .wrap .contact .work_time span {
+          display: block;
+          margin-top: 5px; }
+      .footer .wrap .contact > div {
         font-size: 18px;
-        display: block;
-        margin-top: 5px; }
+        margin-bottom: 15px; }
+        .footer .wrap .contact > div a {
+          font-size: 18px;
+          display: block;
+          margin-top: 5px; }
   .copyright_block .wrap > div {
     margin-bottom: 15px;
     float: none !important;
@@ -5191,7 +5260,54 @@ img {
   .private_office .container #history_orders .table_order {
     display: none; }
     .private_office .container #history_orders .table_order.mobile {
-      display: block; } }
+      display: block; }
+  #menu-mobile {
+    padding: 10px 0; }
+  .order_status {
+    position: absolute;
+    top: 10px;
+    right: 15px; }
+    .order_status div {
+      display: inline-block;
+      vertical-align: middle; }
+      .order_status div.error input {
+        border-color: red; }
+      .order_status div input {
+        font-family: "FuturaBookC", sans-serif;
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 1em;
+        text-align: left;
+        background: none;
+        border: 1px solid #fff;
+        width: 160px;
+        padding: 8px 33px 6px 7px;
+        box-sizing: border-box;
+        display: block; }
+        .order_status div input::-webkit-input-placeholder {
+          color: #fff; }
+        .order_status div input::-moz-placeholder {
+          color: #fff; }
+        .order_status div input:-moz-placeholder {
+          color: #fff; }
+        .order_status div input:-ms-input-placeholder {
+          color: #fff; }
+    .order_status .submit {
+      width: 33px;
+      height: 33px;
+      display: inline-block;
+      vertical-align: middle;
+      background: url("../img/icons/search_w.png") no-repeat center;
+      margin-left: -34px;
+      cursor: pointer; }
+  .slider_filter_color .bx-wrapper {
+    margin-bottom: 30px; }
+  .product_new .products.short .block_product:nth-child(1n+5) {
+    display: none; }
+  .block_advantages .list_advantages.short .item:nth-child(1n+5) {
+    display: none; }
+  .buttom_more {
+    display: block; } }
 
 @media screen and (max-width: 930px) {
   .list_products .filter_products {
