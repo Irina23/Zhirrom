@@ -371,14 +371,16 @@ img
 
   #menu
     margin-top: 40px
-    li
+    position: relative
+    >ul>li
       display: inline-block
       vertical-align: middle
       margin-right: 25px
-      position: relative
+      //position: relative
       &.parent
         >a
-          border-bottom: 2px solid #fff
+          border-bottom: 20px solid #fff
+          position: relative
         &:hover
           >a
             &:after
@@ -408,38 +410,60 @@ img
 
 
 
-          ul.drop-menu
+          ul.drop-menu-1
             display: block
 
 
 
 
 
-      ul.drop-menu
+      ul.colum-2
+        display: inline-block
+        vertical-align: top
+        width: 49%
+      ul.drop-menu-1
         display: none
         position: absolute
         top: 16px
         left: 0
-        padding-top: 20px
+        margin-top: 20px
         z-index: 10
+        background: rgba(255, 69, 4, 0.8)
+        width: 100%
 
-        li
-          width: 190px
+        >li
+          //width: 220px
+          display: inline-block
+          vertical-align: top
+
+          &.parent-menu
+            ///width: 500px
+            >a
+              text-transform: uppercase
+              //padding: 20px 15px 10px
+              font-size: 16px
+              text-align: center
+              color: #000
+            .parent-menu
+              >a
+                color: #000
+
           a
             display: block
-            background-color:  rgba(255, 69, 4, 0.7)
+            //background-color:  rgba(255, 69, 4, 0.7)
             width: 100%
-
+            box-sizing: border-box
             line-height: 1em
-            font-size: 14px
-            text-transform: uppercase
+            font-size: 15px
+            //text-transform: uppercase
             color: #fff
-            padding: 15px
+            padding: 10px 15px
             transition: all 0.35s
             font-family: "FuturaPT-Medium", sans-serif
             &:hover
               transition: all 0.35s
               background: $main-color
+              text-decoration: none
 
 
 
@@ -452,7 +476,7 @@ img
           text-decoration: none
       &:last-child
         margin-right: 0
-      a
+      >a
         text-transform: uppercase
         color: #000
         font-family: "FuturaPT-Medium", sans-serif
@@ -1350,20 +1374,27 @@ img
 
 
 
-
+.catalog
+  .container
+    .wrap
+      border: 10px solid $main-color
+      padding: 50px 50px 60px
+      margin-bottom: 80px
+      text-align: center
+      box-sizing: border-box
+      h1
+        text-align: center
+        font-weight: normal
+        margin-bottom: 80px
+        font-size: 60px
+        line-height: 1em
 
 .list_category
-  border: 10px solid $main-color
-  padding: 50px 50px 60px
-  margin-bottom: 80px
-  text-align: center
-  h1
-    text-align: center
-    font-weight: normal
-    margin-bottom: 80px
-    font-size: 60px
-    line-height: 1em
-    //font-family: "FuturaPT-Light", sans-serif
+  //border: 10px solid $main-color
+  //padding: 50px 50px 60px
+  //margin-bottom: 80px
+  //text-align: center
+
   .item-category
     width: 49%
     display: inline-block
@@ -1399,10 +1430,10 @@ img
 
     &:last-child
       margin-bottom: 0
-    &.category1
+    &:nth-child(2n+1)
       h3
         position: relative
-        left: -135px
+        left: -110px
 
 
 
@@ -1413,7 +1444,7 @@ img
 
 
 
-    &.category2
+    &:nth-child(2n)
       margin-top: 30px
       .img-holder
         float: right
@@ -1426,15 +1457,7 @@ img
         position: absolute
         bottom: 5px
         left: 0
-    &.category3
-      .number
-        margin-top: 125px
-      h3
-        left: -60px
-      .readmore
-        position: absolute
-        bottom: 20px
-        left: 260px
+
 
 
 
@@ -5769,12 +5792,19 @@ img
     .text_block
       margin-bottom: 50px
 
+  .catalog
+    .container
+      padding: 0 20px
+      .wrap
+        border-width: 5px
+        padding: 40px 20px
+        h1
+          font-size: 36px
+          margin-bottom: 50px
+
   .list_category
-    border-width: 5px
-    padding: 40px 20px
-    h1
-      font-size: 36px
-      margin-bottom: 50px
+
+
 
     .item-category
       width: 100%
