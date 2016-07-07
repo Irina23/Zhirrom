@@ -423,26 +423,38 @@ img {
         left: 0;
         margin-top: 20px;
         z-index: 10;
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(73, 73, 73, 0.97);
         width: auto;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -webkit-flex-direction: row;
             -ms-flex-direction: row;
                 flex-direction: row; }
+        .header #menu > ul > li ul.drop-menu-1 .drop-menu-2 {
+          padding: 20px;
+          border-right: 1px solid #646464;
+          min-height: calc(100% - 46px);
+          box-sizing: border-box; }
         .header #menu > ul > li ul.drop-menu-1 .nav-tabs li {
           float: left;
           width: 50%;
           cursor: pointer;
-          color: #fff;
+          color: #b4b3b3;
           padding: 10px 15px;
           text-transform: uppercase;
           font-size: 18px;
           text-align: center;
           box-sizing: border-box;
-          font-family: "FuturaPT-Medium", sans-serif; }
+          font-family: "FuturaPT-Medium", sans-serif;
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s; }
+          .header #menu > ul > li ul.drop-menu-1 .nav-tabs li:hover {
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+            color: #fff; }
           .header #menu > ul > li ul.drop-menu-1 .nav-tabs li.active {
-            background: #ff4504; }
+            background: #727272;
+            color: #fff; }
         .header #menu > ul > li ul.drop-menu-1 .tab-pane.active {
           display: -webkit-box;
           display: -webkit-flex;
@@ -457,29 +469,28 @@ img {
           min-width: 229px;
           min-height: 100%;
           float: left; }
-          .header #menu > ul > li ul.drop-menu-1 .tab-pane > li.parent-menu {
-            border-right: 1px solid rgba(255, 255, 255, 0.4); }
-            .header #menu > ul > li ul.drop-menu-1 .tab-pane > li.parent-menu:nth-child(3) {
-              border: 0; }
-            .header #menu > ul > li ul.drop-menu-1 .tab-pane > li.parent-menu > a {
-              text-transform: uppercase;
-              font-size: 16px;
-              text-align: center;
-              background: #ff4504; }
-            .header #menu > ul > li ul.drop-menu-1 .tab-pane > li.parent-menu .parent-menu > a {
-              text-transform: uppercase;
-              position: relative; }
-              .header #menu > ul > li ul.drop-menu-1 .tab-pane > li.parent-menu .parent-menu > a:after {
-                position: absolute;
-                height: 14px;
-                width: 2px;
-                background: #fff;
-                content: "";
-                top: 50%;
-                margin-top: -7px;
-                left: 7px; }
-            .header #menu > ul > li ul.drop-menu-1 .tab-pane > li.parent-menu .parent-menu .drop-menu-3 {
-              padding-left: 15px; }
+          .header #menu > ul > li ul.drop-menu-1 .tab-pane > li.parent-menu:nth-child(3) {
+            border: 0; }
+          .header #menu > ul > li ul.drop-menu-1 .tab-pane > li.parent-menu > a {
+            text-transform: uppercase;
+            padding: 15px 20px;
+            font-size: 16px;
+            background: #ff4504;
+            border-right: 1px solid rgba(255, 255, 255, 0.2); }
+          .header #menu > ul > li ul.drop-menu-1 .tab-pane > li.parent-menu .parent-menu > a {
+            text-transform: uppercase;
+            position: relative; }
+            .header #menu > ul > li ul.drop-menu-1 .tab-pane > li.parent-menu .parent-menu > a:after {
+              position: absolute;
+              height: 14px;
+              width: 2px;
+              background: #fff;
+              content: "";
+              top: 50%;
+              margin-top: -7px;
+              left: 7px; }
+          .header #menu > ul > li ul.drop-menu-1 .tab-pane > li.parent-menu .parent-menu .drop-menu-3 {
+            padding-left: 15px; }
           .header #menu > ul > li ul.drop-menu-1 .tab-pane > li a {
             display: block;
             width: 100%;
@@ -490,7 +501,10 @@ img {
             padding: 10px 15px;
             -webkit-transition: all 0.35s;
             transition: all 0.35s;
-            font-family: "FuturaPT-Medium", sans-serif; }
+            font-family: "FuturaPT-Medium", sans-serif;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; }
             .header #menu > ul > li ul.drop-menu-1 .tab-pane > li a:hover {
               -webkit-transition: all 0.35s;
               transition: all 0.35s;
@@ -498,31 +512,32 @@ img {
               text-decoration: none; }
         .header #menu > ul > li ul.drop-menu-1 > li {
           min-width: 229px;
-          min-height: 100%;
+          min-height: calc(100% - 46px);
           float: left; }
-          .header #menu > ul > li ul.drop-menu-1 > li.parent-menu {
-            border-right: 1px solid rgba(255, 255, 255, 0.4); }
-            .header #menu > ul > li ul.drop-menu-1 > li.parent-menu:nth-child(3) {
+          .header #menu > ul > li ul.drop-menu-1 > li.parent-menu:nth-child(3) {
+            border: 0; }
+            .header #menu > ul > li ul.drop-menu-1 > li.parent-menu:nth-child(3) .drop-menu-2 {
               border: 0; }
-            .header #menu > ul > li ul.drop-menu-1 > li.parent-menu > a {
-              text-transform: uppercase;
-              font-size: 16px;
-              text-align: center;
-              background: #ff4504; }
-            .header #menu > ul > li ul.drop-menu-1 > li.parent-menu .parent-menu > a {
-              text-transform: uppercase;
-              position: relative; }
-              .header #menu > ul > li ul.drop-menu-1 > li.parent-menu .parent-menu > a:after {
-                position: absolute;
-                height: 14px;
-                width: 2px;
-                background: #fff;
-                content: "";
-                top: 50%;
-                margin-top: -7px;
-                left: 7px; }
-            .header #menu > ul > li ul.drop-menu-1 > li.parent-menu .parent-menu .drop-menu-3 {
-              padding-left: 15px; }
+          .header #menu > ul > li ul.drop-menu-1 > li.parent-menu > a {
+            text-transform: uppercase;
+            padding: 15px 20px;
+            font-size: 16px;
+            background: #ff4504;
+            border-right: 1px solid rgba(255, 255, 255, 0.2); }
+          .header #menu > ul > li ul.drop-menu-1 > li.parent-menu .parent-menu > a {
+            text-transform: uppercase;
+            position: relative; }
+            .header #menu > ul > li ul.drop-menu-1 > li.parent-menu .parent-menu > a:after {
+              position: absolute;
+              height: 14px;
+              width: 2px;
+              background: #fff;
+              content: "";
+              top: 50%;
+              margin-top: -7px;
+              left: 7px; }
+          .header #menu > ul > li ul.drop-menu-1 > li.parent-menu .parent-menu .drop-menu-3 {
+            padding-left: 15px; }
           .header #menu > ul > li ul.drop-menu-1 > li a {
             display: block;
             width: 100%;
@@ -533,7 +548,10 @@ img {
             padding: 10px 15px;
             -webkit-transition: all 0.35s;
             transition: all 0.35s;
-            font-family: "FuturaPT-Medium", sans-serif; }
+            font-family: "FuturaPT-Medium", sans-serif;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; }
             .header #menu > ul > li ul.drop-menu-1 > li a:hover {
               -webkit-transition: all 0.35s;
               transition: all 0.35s;
