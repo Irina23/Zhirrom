@@ -103,6 +103,65 @@ img
   background: #fff url('../img/icons/logo-main.png') no-repeat center center
   background-size: 10%
   animation-fill-mode: both
+
+
+.pagination
+  display: none
+  text-align: center
+  margin-bottom: 60px
+  li
+    display: inline-block
+    vertical-align: middle
+
+    &:first-child
+      margin-right: 100px
+
+    &.disabled
+      a
+        color: #a5a5a5
+        &:hover
+          color: #a5a5a5
+          cursor: default
+      &.prev,&.next
+        &:after
+          background: url("../img/icons/prev-grey.png") no-repeat
+          background-size: 100%
+
+
+
+    a
+      color: $main-color
+      font-size: 24px
+      font-family: "FuturaPT-Light", sans-serif
+      transition: all 0.35s
+      display: block
+      line-height: 1em
+      &:hover
+        transition: all 0.35s
+        text-decoration: none
+        color: #fe622b
+    &.prev, &.next
+      position: relative
+      &:after
+        position: absolute
+        content: ""
+        width: 9px
+        height: 15px
+        top: 6px
+        //margin-top: -4px
+        background: url("../img/icons/prev-orange.png") no-repeat
+        background-size: 100%
+
+      &.prev
+        padding-left: 15px
+        &:after
+          left: 0
+      &.next
+        padding-right: 15px
+        &:after
+          right: 0
+          transform: rotate(180deg)
+
 .top
   background: #727272
 
@@ -6068,7 +6127,11 @@ img
       font-size: 36px
     .description
       width: auto
-
+  .pagination li
+    a
+      font-size: 18px
+    &.prev:after, &.next:after
+      top: 3px
 
   .block_private_office
     margin-bottom: 50px
