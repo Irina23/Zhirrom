@@ -419,10 +419,10 @@ img {
       .header #menu > ul > li ul.drop-menu-1 {
         display: none;
         position: absolute;
-        top: 16px;
+        top: 17px;
         left: 0;
         margin-top: 20px;
-        z-index: 10;
+        z-index: 12;
         background: rgba(73, 73, 73, 0.97);
         width: auto;
         -webkit-box-orient: horizontal;
@@ -1298,8 +1298,10 @@ img {
     font-weight: normal;
     color: #000; }
   #login .form-holder input[type="text"],
-  #login .form-holder input[type="email"], #call_back .form-holder input[type="text"],
-  #call_back .form-holder input[type="email"] {
+  #login .form-holder input[type="email"],
+  #login .form-holder input[type="password"], #call_back .form-holder input[type="text"],
+  #call_back .form-holder input[type="email"],
+  #call_back .form-holder input[type="password"] {
     text-align: left;
     width: 100%;
     height: 45px;
@@ -1314,8 +1316,10 @@ img {
     color: #686767;
     border-radius: 2px; }
   #login .form-holder .error input[type="text"],
-  #login .form-holder .error input[type="email"], #call_back .form-holder .error input[type="text"],
-  #call_back .form-holder .error input[type="email"] {
+  #login .form-holder .error input[type="email"],
+  #login .form-holder .error input[type="password"], #call_back .form-holder .error input[type="text"],
+  #call_back .form-holder .error input[type="email"],
+  #call_back .form-holder .error input[type="password"] {
     border-color: #FF0000; }
   #login .form-holder .btn, #call_back .form-holder .btn {
     line-height: 50px;
@@ -3181,7 +3185,7 @@ img {
 .update_password form#update_password1, .update_password form#update_password2 {
   width: 460px;
   margin: auto; }
-  .update_password form#update_password1 > div.error input[type="text"], .update_password form#update_password2 > div.error input[type="text"] {
+  .update_password form#update_password1 > div.error input[type="text"], .update_password form#update_password1 > div.error input[type="password"], .update_password form#update_password2 > div.error input[type="text"], .update_password form#update_password2 > div.error input[type="password"] {
     border-color: #ff4504; }
   .update_password form#update_password1 h3, .update_password form#update_password2 h3 {
     margin-bottom: 15px;
@@ -3190,7 +3194,7 @@ img {
     font-size: 20px;
     font-weight: 500;
     line-height: 1em; }
-  .update_password form#update_password1 input[type="text"], .update_password form#update_password2 input[type="text"] {
+  .update_password form#update_password1 input[type="text"], .update_password form#update_password1 input[type="password"], .update_password form#update_password2 input[type="text"], .update_password form#update_password2 input[type="password"] {
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -4215,7 +4219,7 @@ img {
     margin-bottom: 30px; }
     .registration .container .row:nth-child(2n+1) {
       margin-right: 16px; }
-    .registration .container .row > div.error input[type="text"] {
+    .registration .container .row > div.error input[type="text"], .registration .container .row > div.error input[type="password"] {
       border-color: #ff4504; }
     .registration .container .row > div.short {
       width: 220px;
@@ -4233,7 +4237,8 @@ img {
       font-size: 16px;
       font-weight: 300;
       line-height: 1em; }
-    .registration .container .row input[type="text"] {
+    .registration .container .row input[type="text"],
+    .registration .container .row input[type="password"] {
       display: block;
       width: 100%;
       box-sizing: border-box;
@@ -4448,7 +4453,7 @@ img {
       color: #696868;
       font-family: "FuturaBookC", sans-serif;
       font-size: 16px; }
-    .private_office .container #change_password_email form > div.error input[type="text"] {
+    .private_office .container #change_password_email form > div.error input[type="text"], .private_office .container #change_password_email form > div.error input[type="password"] {
       border-color: #ff4504; }
     .private_office .container #change_password_email form h3 {
       margin-bottom: 15px;
@@ -4457,7 +4462,7 @@ img {
       font-size: 20px;
       font-weight: 500;
       line-height: 1em; }
-    .private_office .container #change_password_email form input[type="text"] {
+    .private_office .container #change_password_email form input[type="text"], .private_office .container #change_password_email form input[type="password"] {
       display: block;
       width: 100%;
       box-sizing: border-box;
@@ -5473,7 +5478,8 @@ img {
   .order_status {
     position: absolute;
     top: 10px;
-    right: 15px; }
+    right: 15px;
+    z-index: 10; }
     .order_status div {
       display: inline-block;
       vertical-align: middle; }
