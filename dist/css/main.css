@@ -1450,14 +1450,17 @@ img {
     overflow: hidden; }
   .list_category .item-category h3 {
     font-weight: normal;
-    font-size: 48px;
+    font-size: 40px;
     line-height: 1em;
     margin-bottom: 15px;
     color: #000;
     white-space: nowrap;
     position: relative;
     -webkit-transition: all 0.35s;
-    transition: all 0.35s; }
+    transition: all 0.35s;
+    text-transform: lowercase; }
+    .list_category .item-category h3:first-letter {
+      text-transform: uppercase; }
   .list_category .item-category .readmore {
     font-size: 20px;
     line-height: 1em;

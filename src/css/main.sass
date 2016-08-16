@@ -1602,6 +1602,7 @@ img
     text-align: left
     margin-bottom: 65px
     position: relative
+    //overflow: hidden
     a
       &:hover
         text-decoration: none
@@ -1617,6 +1618,7 @@ img
           transition: all 0.35s
           //color: $main-color
           text-decoration: none
+
 
         .readmore
           transition: all 0.35s
@@ -1688,13 +1690,19 @@ img
 
     h3
       font-weight: normal
-      font-size: 48px
+      font-size: 40px
       line-height: 1em
       margin-bottom: 15px
       color: #000
       white-space: nowrap
       position: relative
       transition: all 0.35s
+      text-transform: lowercase
+      //width: 100%
+      //overflow: hidden
+      //text-overflow: ellipsis
+      &:first-letter
+        text-transform: uppercase
 
     .readmore
       font-size: 20px
@@ -3777,6 +3785,7 @@ img
         position: relative
         display: flex
         flex-direction: row
+
 
 
 
