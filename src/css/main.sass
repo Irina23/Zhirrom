@@ -615,6 +615,10 @@ img
               //text-align: center
               background: $main-color
               border-right: 1px solid rgba(255,255,255,0.2)
+              transition: all 0.35s
+              &:hover
+                transition: all 0.35s
+                color: #292929
 
             .parent-menu
               >a
@@ -2133,6 +2137,100 @@ img
         .description_product
           font-size: 18px
           height: auto
+
+
+    .list_category
+      text-align: center
+      margin-bottom: 40px
+      &.open
+        ul
+          height: auto
+        .hide_item
+          display: block
+        .show_all
+          display: none
+
+      .show_all, .hide_item
+        display: inline-block
+        vertical-align: middle
+        margin: auto
+        width: 185px
+        line-height: 1em
+        text-transform: uppercase
+        color: #fff
+        background: #ff4504
+        border-radius: 6px
+        font-size: 16px
+        text-align: center
+        padding: 17px 0
+        box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16)
+        cursor: pointer
+        transition: all 0.35s
+        font-family: "FuturaPT-Heavy", sans-serif
+        letter-spacing: 1px
+
+        &:hover
+          text-decoration: none
+          transition: all 0.35s
+          background: #fe622b
+      .hide_item
+        display: none
+      ul
+        margin-bottom: 20px
+        height: 180px
+        overflow: hidden
+        li
+          margin-bottom: 15px
+          margin-right: 40px
+          width: calc((100% - 80px)/3)
+          float: left
+          height: 75px
+          text-align: center
+          z-index: 1
+          box-sizing: border-box
+          position: relative
+          transition: all 0.35s
+          &:nth-child(3n)
+            margin-right: 0
+
+          &:before
+            background: $main-color
+            width: 100%
+            height: 100%
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            z-index: 1
+            opacity: 0
+            transition: all 0.35s
+          &:hover
+            &:before
+              opacity: 1
+              transition: all 0.35s
+          a
+            text-transform: uppercase
+            color:  #4a4a4a
+            font-size: 16px
+            line-height: 1em
+            display: block
+            padding: 27px 0
+            border: 3px solid #e6e5e5
+            position: relative
+            font-family: "FuturaPT-Medium", sans-serif
+            transition: all 0.35s
+            position: relative
+            z-index: 3
+
+            &:hover
+              transition: all 0.35s
+              text-decoration: none
+              color: #fff
+              background: rgba(255, 69, 4, 0.7)
+              border-color: rgba(255, 69, 4, 0)
+
+
+
 
 
 .ias-trigger
@@ -3739,6 +3837,12 @@ img
 .cart
   .order_block
     margin-bottom: 120px
+    p
+      text-align: center
+      font-size: 18px
+      color: #000
+      font-weight: 600
+      margin-bottom: 30px
 
     .submit
       border: 2px solid $main-color
@@ -3755,6 +3859,7 @@ img
       text-align: center
       display: block
       box-sizing: border-box
+      text-transform: uppercase
       &:hover
         background: $main-color
         color: #fff
@@ -5118,6 +5223,8 @@ img
             background: #fe622b
 
     #history_orders
+      h3
+        text-align: center
       .table_order
         .row
           padding: 15px
@@ -6528,6 +6635,9 @@ img
     width: 100%
     padding: 0!important
 
+  .list_products .products .list_category ul li
+    width: 100%
+    margin: 0 auto 20px
 
 
 @media screen and (max-width: 650px)

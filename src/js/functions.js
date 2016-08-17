@@ -313,4 +313,14 @@ jQuery(document).ready(function() {
         $(this).parent().find('.short').removeClass('short');
         $(this).remove();
     });
+
+
+
+    // show or hide category in list products
+    $(".list_product .list_category .show_all").on('click', function () {
+        $(this).closest(".list_category").addClass("open");
+    });
+    $(".list_product .list_category .hide_item").on('click', function () {
+        $(this).closest(".list_category").removeClass("open");
+    });
 });
