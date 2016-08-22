@@ -431,10 +431,34 @@ img {
             -ms-flex-direction: row;
                 flex-direction: row; }
         .header #menu > ul > li ul.drop-menu-1 .drop-menu-2 {
-          padding: 20px;
+          padding: 20px 20px 60px;
           border-right: 1px solid #646464;
           min-height: calc(100% - 46px);
-          box-sizing: border-box; }
+          box-sizing: border-box;
+          position: relative; }
+          .header #menu > ul > li ul.drop-menu-1 .drop-menu-2 .link_all {
+            color: #fffefe;
+            font-family: "FuturaBookC", sans-serif;
+            font-weight: 300;
+            font-size: 14px;
+            text-transform: uppercase;
+            padding: 13px 18px 11px;
+            border-radius: 6px;
+            box-shadow: inset 0 -2px 7.8px 0.2px rgba(0, 0, 0, 0.16);
+            display: block;
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+            width: 160px;
+            text-align: center;
+            background: #ff4504;
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            margin-left: -80px; }
+            .header #menu > ul > li ul.drop-menu-1 .drop-menu-2 .link_all:hover {
+              background: #fe622b;
+              -webkit-transition: all 0.35s;
+              transition: all 0.35s; }
         .header #menu > ul > li ul.drop-menu-1 .nav-tabs li {
           float: left;
           width: 50%;
