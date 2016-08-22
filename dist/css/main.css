@@ -2834,6 +2834,26 @@ img {
       font-size: 18px; }
     .feedback .container .wrap form .error textarea {
       border-color: red; }
+    .feedback .container .wrap form .file {
+      width: 238px;
+      height: 43px;
+      background: url("../img/icons/file2.png") no-repeat;
+      overflow: hidden;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      border: 1px solid #bab9b9;
+      border-radius: 2px;
+      margin-bottom: 20px; }
+      .feedback .container .wrap form .file:hover {
+        background: url("../img/icons/file_hover2.png") no-repeat;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s; }
+    .feedback .container .wrap form input[type="file"] {
+      width: 240px !important;
+      height: 45px !important;
+      opacity: 0 !important;
+      overflow: hidden !important;
+      cursor: pointer; }
     .feedback .container .wrap form textarea {
       border-radius: 2px;
       border: 2px solid #c8c7c7;
