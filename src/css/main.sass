@@ -69,6 +69,10 @@ body
     //font-weight: bold
   &.no-scroll
     overflow: hidden!important
+
+  input[type="text"], input[type="password"],
+  textarea
+    background: #fff
 .container
   min-height: 44vh
 
@@ -438,8 +442,9 @@ img
       //position: relative
       &.parent
         >a
-          border-bottom: 20px solid #fff
+          //border-bottom: 19px solid #fff
           position: relative
+          padding-bottom: 20px
         &:hover
           >a
             &:after
@@ -1906,7 +1911,7 @@ img
                 background: url("../img/icons/preview_list_hover.png") no-repeat
                 background-size: 100%
       &.sort_by
-        margin-right: 65px
+        margin-right: 55px
         position: relative
         &:last-child
           margin-right: 0
@@ -3231,6 +3236,10 @@ img
           line-height: 1em
           font-family: "FuturaPT-Light", sans-serif
           font-weight: normal
+        p
+          margin-bottom: 30px
+          font-size: 18px
+
         .error
           textarea
             border-color: red
@@ -5545,7 +5554,23 @@ img
         line-height: 1em
         font-family: "FuturaPT-Demi", sans-serif
         font-weight: normal
+      ul, ol
+      margin-bottom: 50px
+      li
+        line-height: 2em
+        font-size: 18px
+        color:  #3c3b3b
+        display: list-item
+        margin-left: 30px
 
+      ul
+        li
+          list-style-type: disc
+
+
+      ol
+        li
+          list-style-type: decimal
 
 
 

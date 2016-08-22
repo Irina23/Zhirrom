@@ -58,6 +58,9 @@ body {
     line-height: 1.5em; }
   body.no-scroll {
     overflow: hidden !important; }
+  body input[type="text"], body input[type="password"],
+  body textarea {
+    background: #fff; }
 
 .container {
   min-height: 44vh; }
@@ -392,8 +395,8 @@ img {
       vertical-align: middle;
       margin-right: 25px; }
       .header #menu > ul > li.parent > a {
-        border-bottom: 20px solid #fff;
-        position: relative; }
+        position: relative;
+        padding-bottom: 20px; }
       .header #menu > ul > li.parent:hover > a:after {
         content: '';
         position: absolute;
@@ -1642,7 +1645,7 @@ img {
                 background: url("../img/icons/preview_list_hover.png") no-repeat;
                 background-size: 100%; }
       .list_products .filter > div.sort_by {
-        margin-right: 65px;
+        margin-right: 55px;
         position: relative; }
         .list_products .filter > div.sort_by:last-child {
           margin-right: 0; }
@@ -2826,6 +2829,9 @@ img {
       line-height: 1em;
       font-family: "FuturaPT-Light", sans-serif;
       font-weight: normal; }
+    .feedback .container .wrap form p {
+      margin-bottom: 30px;
+      font-size: 18px; }
     .feedback .container .wrap form .error textarea {
       border-color: red; }
     .feedback .container .wrap form textarea {
@@ -4893,7 +4899,8 @@ img {
     padding: 30px 0;
     color: #494949;
     font-size: 18px;
-    line-height: 1.5em; }
+    line-height: 1.5em;
+    margin-bottom: 50px; }
     .faq .container .content_block h4 {
       color: #000;
       margin-bottom: 20px;
@@ -4901,6 +4908,16 @@ img {
       line-height: 1em;
       font-family: "FuturaPT-Demi", sans-serif;
       font-weight: normal; }
+    .faq .container .content_block li {
+      line-height: 2em;
+      font-size: 18px;
+      color: #3c3b3b;
+      display: list-item;
+      margin-left: 30px; }
+    .faq .container .content_block ul li {
+      list-style-type: disc; }
+    .faq .container .content_block ol li {
+      list-style-type: decimal; }
 
 .buttom_more {
   display: none;
