@@ -1,0 +1,27 @@
+doctype html
+html(lang="ru")
+    include ./head.jade
+
+
+    body
+        .page_wrapper.order_complete.cart
+            include ./header.jade
+
+
+            .container
+                .wrap.cf
+
+                    .img-holder
+                        img(src="img/icons/like.png" alt="Товар успешно оформлен")
+                    h3 Товар успешно оформлен
+                    p Хотите больше экономить? Подпишитесь на рассылку об акциях и скидках!
+                    form#subscription.cf
+
+                        div
+                            input(type="text" placeholder="Почта:" data-validate="email")
+                        .btn.submit
+
+            include ./footer.jade
+
+
+
