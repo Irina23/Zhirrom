@@ -1385,6 +1385,14 @@ img {
     color: #ff4504;
     margin-top: 15px;
     font-family: "FuturaBookC", sans-serif; }
+  #login .link_login, #call_back .link_login {
+    margin-top: 15px;
+    font-size: 14px; }
+    #login .link_login > a, #call_back .link_login > a {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: 0;
+      font-size: 16px; }
 
 #overlay {
   z-index: 30;

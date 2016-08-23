@@ -65,10 +65,14 @@ footer
             div
                 input(type="text", placeholder="Почта:", name="email", data-validate="email")
             div
-                input(type="password", placeholder="Пароль:", name="pass", data-validate="pass")
+                input(type="password", placeholder="Пароль:", name="pass", data-validate="password")
 
             .btn.submit Отправить
-            a.update_password(href="update_password.html") Забыли пароль?
+            div.link_login
+                a.registration(href="registration.html") Регистрация
+
+                | &nbsp;/&nbsp;
+                a.update_password(href="update_password.html") Забыли пароль?
 
 #call_back.modal_div
 

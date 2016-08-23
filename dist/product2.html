@@ -34,19 +34,16 @@
           <div class="wrap cf">
             <nav class="menu">
               <ul>
-                <li><a href="about.html">О компании</a></li>
                 <li><a href="faq.html">faq</a></li>
-                <li><a href="blog.html">Статьи</a></li>
               </ul>
             </nav>
             <form id="order_status" action="#">
-              <h3>Состояние заказа</h3>
               <div>
-                <input type="text" placeholder="Номер заказа" data-validate="number">
+                <input type="text" placeholder="Состояние заказа" data-validate="number">
               </div>
               <div class="btn submit"></div>
             </form>
-            <div class="user-login"><a href="registration.html" class="registration">Регистрация</a><a href="#login" class="login open_modal">Вход</a></div>
+            <div class="user-login"><a href="#login" class="login open_modal">Вход</a></div>
           </div>
         </div>
         <div class="header cf">
@@ -562,9 +559,10 @@
               <input type="text" placeholder="Почта:" name="email" data-validate="email">
             </div>
             <div>
-              <input type="password" placeholder="Пароль:" name="pass" data-validate="pass">
+              <input type="password" placeholder="Пароль:" name="pass" data-validate="password">
             </div>
-            <div class="btn submit">Отправить</div><a href="update_password.html" class="update_password">Забыли пароль?</a>
+            <div class="btn submit">Отправить</div>
+            <div class="link_login"><a href="registration.html" class="registration">Регистрация</a>&nbsp;/&nbsp;<a href="update_password.html" class="update_password">Забыли пароль?</a></div>
           </div>
         </form>
       </div>
