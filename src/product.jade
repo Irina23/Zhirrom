@@ -150,9 +150,9 @@ html(lang="ru")
                                             option(value="50-52") 50-52
 
                                     div.availability.disabled Нет в наличии: 0
-                                    div.quantity.disabled
-                                        input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus disabled)
-                                    .btn.submit.disabled Добавить
+                                    //div.quantity.disabled
+                                        //input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus disabled)
+                                    .btn.submit.disabled.open_modal(href="#report_available") Сообщить о наличии
 
                         .wholesale_order.mobile
                             h3 Оптовый заказ
@@ -210,9 +210,9 @@ html(lang="ru")
                                             option(value="46-48") 46-48
                                             option(value="50-52") 50-52
                                     .button
-                                        div.quantity.disabled
+                                        //div.quantity.disabled
                                             input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus disabled)
-                                        .btn.submit.disabled Добавить
+                                        .btn.submit.disabled.open_modal(href="#report_available") Сообщить о наличии
 
 
 

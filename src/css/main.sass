@@ -168,6 +168,7 @@ img
 
 .top
   background: #727272
+  text-align: center
 
   .phone
     margin-right: 70px
@@ -198,6 +199,7 @@ img
     vertical-align: middle
     padding: 17px 0
     margin-right: 70px
+    float: left
     li
       display: inline-block
       vertical-align: middle
@@ -227,6 +229,8 @@ img
     //float: right
     display: inline-block
     vertical-align: middle
+    float: right
+    margin-top: 7px
     a
       line-height: 35px
       color: #fff
@@ -2987,9 +2991,18 @@ img
             transition: all 0.35s
             background: #fe622b
           &.disabled
-            background: #c7c7c7
+            background: #fff
+            color: $main-color
+            float: right
+            margin-top: 15px
+            border: 2px solid $main-color
+            transition: all 0.35s
+            text-align: center
+
             &:hover
-              background: #c7c7c7
+              background: $main-color
+              color: #fff
+              transition: all 0.35s
         .size
           margin-bottom: 15px
           &.disabled
@@ -3190,13 +3203,24 @@ img
             padding: 9px 8px 7px
             cursor: pointer
             transition: all 0.35s
+
+
+
             &:hover
               transition: all 0.35s
               background: #fe622b
             &.disabled
-              background: #c7c7c7
+              background: #fff
+              color: $main-color
+              float: right
+              margin-top: 15px
+              border: 2px solid $main-color
+              transition: all 0.35s
+
               &:hover
-                background: #c7c7c7
+                background: $main-color
+                color: #fff
+                transition: all 0.35s
 
 
 
@@ -5640,6 +5664,7 @@ img
 #order_status
   display: inline-block
   vertical-align: middle
+  margin-top: 7px
   h3
     display: inline-block
     vertical-align: middle
@@ -5790,65 +5815,68 @@ img
 
 
 .order_complete
-  .wrap
-    margin: 75px auto
-    text-align: center
-    .img-holder
+  .container
+    .wrap
+      margin: 75px auto
+      text-align: center
 
-      margin-bottom: 40px
-    h3
-      color: $main-color
-      font-family: FuturaBookC, sans-serif
-      font-size: 18px
-      font-weight: 300
-      line-height: 1em
-      text-transform: uppercase
-      margin-bottom: 30px
-    p
-      color: #000
-      font-family: FuturaBookC, sans-serif
-      font-size: 18px
-      font-weight: 300
-      line-height: 30px
-      margin-bottom: 30px
-    input
-      width: 260px
-      //height: 35px
-      border: 1px solid #000
-      box-sizing: border-box
-      background: none
-      color: #000
-      padding: 7px 30px 7px 10px
-      font-family: "FuturaBookC", sans-serif
-      font-size: 16px
-      font-weight: 300
-      line-height: 1em
+      .img-holder
 
-      &::-webkit-input-placeholder
-        color: #999
-      &::-moz-placeholder
-        color: #999
-      &:-moz-placeholder
-        color: #999
-      &:-ms-input-placeholder
-        color: #999
-    .error
+        margin-bottom: 40px
+      h3
+        color: $main-color
+        font-family: FuturaBookC, sans-serif
+        font-size: 18px
+        font-weight: 300
+        line-height: 1em
+        text-transform: uppercase
+        margin-bottom: 30px
+      p
+        color: #000
+        font-family: FuturaBookC, sans-serif
+        font-size: 18px
+        font-weight: 300
+        line-height: 30px
+        margin-bottom: 30px
+
       input
-        border-color: $main-color
-    .submit
-      width: 19px
-      height: 19px
-      background: url("../img/icons/icon-subscription2.png") no-repeat
-      cursor: pointer
-      margin-left: -30px
-      float: left
-      margin-top: 7px
+        width: 260px
+        //height: 35px
+        border: 1px solid #000
+        box-sizing: border-box
+        background: none
+        color: #000
+        padding: 7px 30px 7px 10px
+        font-family: "FuturaBookC", sans-serif
+        font-size: 16px
+        font-weight: 300
+        line-height: 1em
 
-    #subscription
-      width: 260px
-      margin: auto
-      >div
+        &::-webkit-input-placeholder
+          color: #999
+        &::-moz-placeholder
+          color: #999
+        &:-moz-placeholder
+          color: #999
+        &:-ms-input-placeholder
+          color: #999
+      .error
+        input
+          border-color: $main-color
+      .submit
+        width: 19px
+        height: 19px
+        background: url("../img/icons/icon-subscription2.png") no-repeat
+        cursor: pointer
+        margin-left: -30px
         float: left
+        margin-top: 7px
+
+      #subscription
+        width: 260px
+        margin: auto
+        >div
+          float: left
 
 
 

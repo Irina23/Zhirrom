@@ -150,7 +150,8 @@ img {
                   transform: rotate(180deg); }
 
 .top {
-  background: #727272; }
+  background: #727272;
+  text-align: center; }
   .top .phone {
     margin-right: 70px; }
   .top .phone, .top .email {
@@ -180,7 +181,8 @@ img {
     display: inline-block;
     vertical-align: middle;
     padding: 17px 0;
-    margin-right: 70px; }
+    margin-right: 70px;
+    float: left; }
     .top .menu li {
       display: inline-block;
       vertical-align: middle;
@@ -204,7 +206,9 @@ img {
           text-decoration: none; }
   .top .user-login {
     display: inline-block;
-    vertical-align: middle; }
+    vertical-align: middle;
+    float: right;
+    margin-top: 7px; }
     .top .user-login a {
       line-height: 35px;
       color: #fff;
@@ -2614,9 +2618,19 @@ img {
           transition: all 0.35s;
           background: #fe622b; }
         .productfull .product_info .wholesale_order.mobile .submit.disabled {
-          background: #c7c7c7; }
+          background: #fff;
+          color: #ff4504;
+          float: right;
+          margin-top: 15px;
+          border: 2px solid #ff4504;
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s;
+          text-align: center; }
           .productfull .product_info .wholesale_order.mobile .submit.disabled:hover {
-            background: #c7c7c7; }
+            background: #ff4504;
+            color: #fff;
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s; }
       .productfull .product_info .wholesale_order.mobile .size {
         margin-bottom: 15px; }
         .productfull .product_info .wholesale_order.mobile .size.disabled .selectbox .select {
@@ -2804,9 +2818,18 @@ img {
           transition: all 0.35s;
           background: #fe622b; }
         .productfull .product_info .wholesale_order .table_order .row .submit.disabled {
-          background: #c7c7c7; }
+          background: #fff;
+          color: #ff4504;
+          float: right;
+          margin-top: 15px;
+          border: 2px solid #ff4504;
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s; }
           .productfull .product_info .wholesale_order .table_order .row .submit.disabled:hover {
-            background: #c7c7c7; }
+            background: #ff4504;
+            color: #fff;
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s; }
 
 .feedback .container {
   position: relative;
@@ -4976,7 +4999,8 @@ img {
 
 #order_status {
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: middle;
+  margin-top: 7px; }
   #order_status h3 {
     display: inline-block;
     vertical-align: middle;
@@ -5109,12 +5133,12 @@ img {
 #map ul li.parent ul {
   padding-left: 20px; }
 
-.order_complete .wrap {
+.order_complete .container .wrap {
   margin: 75px auto;
   text-align: center; }
-  .order_complete .wrap .img-holder {
+  .order_complete .container .wrap .img-holder {
     margin-bottom: 40px; }
-  .order_complete .wrap h3 {
+  .order_complete .container .wrap h3 {
     color: #ff4504;
     font-family: FuturaBookC, sans-serif;
     font-size: 18px;
@@ -5122,14 +5146,14 @@ img {
     line-height: 1em;
     text-transform: uppercase;
     margin-bottom: 30px; }
-  .order_complete .wrap p {
+  .order_complete .container .wrap p {
     color: #000;
     font-family: FuturaBookC, sans-serif;
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;
     margin-bottom: 30px; }
-  .order_complete .wrap input {
+  .order_complete .container .wrap input {
     width: 260px;
     border: 1px solid #000;
     box-sizing: border-box;
@@ -5140,17 +5164,17 @@ img {
     font-size: 16px;
     font-weight: 300;
     line-height: 1em; }
-    .order_complete .wrap input::-webkit-input-placeholder {
+    .order_complete .container .wrap input::-webkit-input-placeholder {
       color: #999; }
-    .order_complete .wrap input::-moz-placeholder {
+    .order_complete .container .wrap input::-moz-placeholder {
       color: #999; }
-    .order_complete .wrap input:-moz-placeholder {
+    .order_complete .container .wrap input:-moz-placeholder {
       color: #999; }
-    .order_complete .wrap input:-ms-input-placeholder {
+    .order_complete .container .wrap input:-ms-input-placeholder {
       color: #999; }
-  .order_complete .wrap .error input {
+  .order_complete .container .wrap .error input {
     border-color: #ff4504; }
-  .order_complete .wrap .submit {
+  .order_complete .container .wrap .submit {
     width: 19px;
     height: 19px;
     background: url("../img/icons/icon-subscription2.png") no-repeat;
@@ -5158,10 +5182,10 @@ img {
     margin-left: -30px;
     float: left;
     margin-top: 7px; }
-  .order_complete .wrap #subscription {
+  .order_complete .container .wrap #subscription {
     width: 260px;
     margin: auto; }
-    .order_complete .wrap #subscription > div {
+    .order_complete .container .wrap #subscription > div {
       float: left; }
 
 @media screen and (min-width: 1024px) and (max-height: 700px) {
