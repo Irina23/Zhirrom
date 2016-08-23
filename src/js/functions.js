@@ -299,15 +299,20 @@ jQuery(document).ready(function() {
 
 
     //accordeon
-    $("#history_orders .row").click(function () {
-        $(this).find('.order_list').slideToggle();
+    $("#history_orders .row .open").click(function () {
+        $(this).closest(".row").toggleClass("active").find('.order_list').slideToggle();
     });
     $(".faq h3").click(function () {
         $(this).next('.content_block').slideToggle();
     });
 
     
-
+    // private_office order add cart
+    $("#history_orders .repeat_order").click(function () {
+        var quantityValue = $(this).closest(".order").find('input[name="quantity"]').attr('value');
+        $("#add_cart input[type='number']").attr('value', quantityValue);
+    });
+    
     ///mobile buttom more
     $(".buttom_more").on('click',function () {
         $(this).parent().find('.short').removeClass('short');

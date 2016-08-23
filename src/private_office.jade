@@ -37,6 +37,9 @@ html(lang="ru")
                                         div.quantity 55
                                         div.sum 100 356 руб.
                                         div.status Выполнен
+                                        div.open
+                                            span.show Посмотреть заказ
+                                            span.hide Свернуть
                                         .order_list
                                             .table_order
                                                 .row
@@ -57,8 +60,10 @@ html(lang="ru")
                                                     div.color Белый
                                                     div.price
                                                         price 2536 руб.
-                                                    div.quantity 12 шт.
-                                                    .submit.btn.repeat_order ПОВТОРИТЬ ЗАКАЗ
+                                                    div.quantity 15 шт.
+                                                    input(type="hidden" value="15" name="quantity")
+                                                    .submit.btn.repeat_order.open_modal(href="#add_cart") Добавить в корзину
+
 
                                                 form.order(action="#")
                                                     div.product
@@ -71,8 +76,9 @@ html(lang="ru")
                                                     div.color Белый
                                                     div.price
                                                         price 2536 руб.
-                                                    div.quantity 12 шт.
-                                                    .submit.btn.repeat_order ПОВТОРИТЬ ЗАКАЗ
+                                                    div.quantity 120 шт.
+                                                    input(type="hidden" value="120" name="quantity")
+                                                    .submit.btn.repeat_order.open_modal(href="#add_cart") Добавить в корзину
                                                 form.order(action="#")
                                                     div.product
                                                         .img-holder
@@ -85,7 +91,8 @@ html(lang="ru")
                                                     div.price
                                                         price 2536 руб.
                                                     div.quantity 12 шт.
-                                                    .submit.btn.repeat_order ПОВТОРИТЬ ЗАКАЗ
+                                                    input(type="hidden" value="12" name="quantity")
+                                                    .submit.btn.repeat_order.open_modal(href="#add_cart") Добавить в корзину
 
 
 
@@ -98,6 +105,9 @@ html(lang="ru")
                                         div.quantity 55
                                         div.sum 100 356 руб.
                                         div.status Выполнен
+                                        div.open
+                                            span.show Посмотреть заказ
+                                            span.hide Свернуть
                                         .order_list
                                             .table_order
                                                 .row
@@ -118,7 +128,8 @@ html(lang="ru")
                                                     div.color Белый
                                                     div.price 2536 руб.
                                                     div.quantity 12 шт.
-                                                    .submit.btn.repeat_order ПОВТОРИТЬ ЗАКАЗ
+                                                    input(type="hidden" value="12" name="quantity")
+                                                    .submit.btn.repeat_order.open_modal(href="#add_cart") Добавить в корзину
 
                                                 form.order(action="#")
                                                     div.product
@@ -132,7 +143,8 @@ html(lang="ru")
                                                     div.price
                                                         price 2536 руб.
                                                     div.quantity 12 шт.
-                                                    .submit.btn.repeat_order ПОВТОРИТЬ ЗАКАЗ
+                                                    input(type="hidden" value="12" name="quantity")
+                                                    .submit.btn.repeat_order.open_modal(href="#add_cart") Добавить в корзину
                                                 form.order(action="#")
                                                     div.product
                                                         .img-holder
@@ -145,7 +157,8 @@ html(lang="ru")
                                                     div.price
                                                         price 2536 руб.
                                                     div.quantity 12 шт.
-                                                    .submit.btn.repeat_order ПОВТОРИТЬ ЗАКАЗ
+                                                    input(type="hidden" value="12" name="quantity")
+                                                    .submit.btn.repeat_order.open_modal(href="#add_cart") Добавить в корзину
 
 
                                     .row
@@ -154,6 +167,9 @@ html(lang="ru")
                                         div.quantity 55
                                         div.sum 100 356 руб.
                                         div.status Выполнен
+                                        div.open
+                                            span.show Посмотреть заказ
+                                            span.hide Свернуть
                                         .order_list
                                             .table_order
                                                 .row
@@ -175,7 +191,8 @@ html(lang="ru")
                                                     div.price
                                                         price 2536 руб.
                                                     div.quantity 12 шт.
-                                                    .submit.btn.repeat_order ПОВТОРИТЬ ЗАКАЗ
+                                                    input(type="hidden" value="12" name="quantity")
+                                                    .submit.btn.repeat_order.open_modal(href="#add_cart") Добавить в корзину
 
                                                 form.order(action="#")
                                                     div.product
@@ -189,7 +206,8 @@ html(lang="ru")
                                                     div.price
                                                         price 2536 руб.
                                                     div.quantity 12 шт.
-                                                    .submit.btn.repeat_order ПОВТОРИТЬ ЗАКАЗ
+                                                    input(type="hidden" value="12" name="quantity")
+                                                    .submit.btn.repeat_order.open_modal(href="#add_cart") Добавить в корзину
                                                 form.order(action="#")
                                                     div.product
                                                         .img-holder
@@ -202,7 +220,8 @@ html(lang="ru")
                                                     div.price
                                                         price 2536 руб.
                                                     div.quantity 12 шт.
-                                                    .submit.btn.repeat_order ПОВТОРИТЬ ЗАКАЗ
+                                                    input(type="hidden" value="12" name="quantity")
+                                                    .submit.btn.repeat_order.open_modal(href="#add_cart") Добавить в корзину
 
 
 
@@ -225,6 +244,9 @@ html(lang="ru")
                                             div
                                                 .name Состояние:
                                                 .value Выполнен
+                                            div.open
+                                                span.show Посмотреть заказ
+                                                span.hide Свернуть
                                         .order_list
                                             form.order(action="#")
                                                 div.product-img
@@ -244,7 +266,8 @@ html(lang="ru")
                                                         .value 12 шт.
                                                     div.price
                                                         price 2536 руб.
-                                                    .submit.btn.repeat_order ПОВТОРИТЬ ЗАКАЗ
+                                                    input(type="hidden" value="12" name="quantity")
+                                                    .submit.btn.repeat_order.open_modal(href="#add_cart") Добавить в корзину
                                             form.order(action="#")
                                                 div.product-img
                                                     .img-holder
@@ -263,7 +286,8 @@ html(lang="ru")
                                                         .value 12 шт.
                                                     div.price
                                                         price 2536 руб.
-                                                    .submit.btn.repeat_order ПОВТОРИТЬ ЗАКАЗ
+                                                    input(type="hidden" value="12" name="quantity")
+                                                    .submit.btn.repeat_order.open_modal(href="#add_cart") Добавить в корзину
                                             form.order(action="#")
                                                 div.product-img
                                                     .img-holder
@@ -282,7 +306,8 @@ html(lang="ru")
                                                         .value 12 шт.
                                                     div.price
                                                         price 2536 руб.
-                                                    .submit.btn.repeat_order ПОВТОРИТЬ ЗАКАЗ
+                                                    input(type="hidden" value="12" name="quantity")
+                                                    .submit.btn.repeat_order.open_modal(href="#add_cart") Добавить в корзину
 
 
 
@@ -304,7 +329,9 @@ html(lang="ru")
                                             div
                                                 .name Состояние:
                                                 .value Выполнен
-
+                                            div.open
+                                                span.show Посмотреть заказ
+                                                span.hide Свернуть
 
                                         .order_list
                                             form.order(action="#")
@@ -325,7 +352,8 @@ html(lang="ru")
                                                         .value 12 шт.
                                                     div.price
                                                         price 2536 руб.
-                                                    .submit.btn.repeat_order ПОВТОРИТЬ ЗАКАЗ
+                                                    input(type="hidden" value="12" name="quantity")
+                                                    .submit.btn.repeat_order.open_modal(href="#add_cart") Добавить в корзину
                                             form.order(action="#")
                                                 div.product-img
                                                     .img-holder
@@ -344,7 +372,8 @@ html(lang="ru")
                                                         .value 12 шт.
                                                     div.price
                                                         price 2536 руб.
-                                                    .submit.btn.repeat_order ПОВТОРИТЬ ЗАКАЗ
+                                                    input(type="hidden" value="12" name="quantity")
+                                                    .submit.btn.repeat_order.open_modal(href="#add_cart") Добавить в корзину
                                             form.order(action="#")
                                                 div.product-img
                                                     .img-holder
@@ -363,7 +392,8 @@ html(lang="ru")
                                                         .value 12 шт.
                                                     div.price
                                                         price 2536 руб.
-                                                    .submit.btn.repeat_order ПОВТОРИТЬ ЗАКАЗ
+                                                    input(type="hidden" value="12" name="quantity")
+                                                    .submit.btn.repeat_order.open_modal(href="#add_cart") Добавить в корзину
 
 
 
@@ -385,7 +415,9 @@ html(lang="ru")
                                                 .name Состояние:
                                                 .value Выполнен
 
-
+                                            div.open
+                                                span.show Посмотреть заказ
+                                                span.hide Свернуть
                                         .order_list
                                             form.order(action="#")
                                                 div.product-img
@@ -405,7 +437,8 @@ html(lang="ru")
                                                         .value 12 шт.
                                                     div.price
                                                         price 2536 руб.
-                                                    .submit.btn.repeat_order ПОВТОРИТЬ ЗАКАЗ
+                                                    input(type="hidden" value="12" name="quantity")
+                                                    .submit.btn.repeat_order.open_modal(href="#add_cart") Добавить в корзину
                                             form.order(action="#")
                                                 div.product-img
                                                     .img-holder
@@ -424,7 +457,8 @@ html(lang="ru")
                                                         .value 12 шт.
                                                     div.price
                                                         price 2536 руб.
-                                                    .submit.btn.repeat_order ПОВТОРИТЬ ЗАКАЗ
+                                                    input(type="hidden" value="12" name="quantity")
+                                                    .submit.btn.repeat_order.open_modal(href="#add_cart") Добавить в корзину
                                             form.order(action="#")
                                                 div.product-img
                                                     .img-holder
@@ -443,7 +477,8 @@ html(lang="ru")
                                                         .value 12 шт.
                                                     div.price
                                                         price 2536 руб.
-                                                    .submit.btn.repeat_order ПОВТОРИТЬ ЗАКАЗ
+                                                    input(type="hidden" value="12" name="quantity")
+                                                    .submit.btn.repeat_order.open_modal(href="#add_cart") Добавить в корзину
 
 
 
@@ -558,6 +593,33 @@ html(lang="ru")
 
 
             include ./footer.jade
+            #add_cart.modal_div
+
+                .modal_close
+                form(action="#")
+
+                    h3 Выберите количество
+
+                    .form-holder
+
+
+                        div
+                            input(type="number" min="0" value="12" name="quantity" data-validate="quantity" autofocus="")
+
+
+                        .btn.submit.open_modal(href="#successful_order") ДОБАВИТЬ В КОРЗИНУ
+
+
+            #successful_order.modal_div
+
+                .modal_close
+                .wrap_succesful_order
+
+
+                    .img-holder
+                        img(src="img/icons/like.png" alt="Товар успешно добавлен в корзину")
+                    p Товар успешно добавлен в корзину
+
 
 
 

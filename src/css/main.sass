@@ -5282,12 +5282,43 @@ img
       .table_order
         .row
           padding: 15px
-          cursor: pointer
+          //cursor: pointer
           transition: all 0.35s
           border-bottom: 1px solid #dcdada
-          &:hover
+          //&:hover
             transition: all 0.35s
             background: rgba(236, 236, 236, 0.3)
+          &.active
+            .open
+              .show
+                display: none
+              .hide
+                display: block
+          .open
+            width: 18%
+            .show
+              display: block
+            .hide
+              display: none
+
+            span
+              display: inline-block
+              vertical-align: middle
+              color: #fff
+              font-family: "FuturaPT-Demi", sans-serif
+              font-size: 14px
+              font-weight: 300
+              line-height: 36px
+              text-transform: uppercase
+              background: $main-color
+              border-radius: 8px
+              width: 160px
+              text-align: center
+              transition: all 0.35s
+              cursor: pointer
+              &:hover
+                transition: all 0.35s
+                background: #fe622b
 
           &:first-child
             background-color: #ececec
@@ -5297,15 +5328,15 @@ img
             display: inline-block
             vertical-align: middle
           .number
-            width: 23%
+            width: 18%
           .data
-            width: 25%
+            width: 17%
           .quantity
-            width: 19%
+            width: 14%
           .sum
-            width: 21%
+            width: 15%
           .status
-            width: 9%
+            width: 15%
           .order_list
             display: none
 
@@ -5375,14 +5406,14 @@ img
               .article
                 width: 12%
               .color
-                width: 13%
+                width: 12%
               .price
-                width: 13%
+                width: 12%
               .quantity
-                width: 11%
+                width: 10%
                 padding: 0
               .repeat_order
-                width: 17%
+                width: 20%
                 padding: 11px 8px
                 text-align: center
                 box-sizing: border-box
@@ -5394,6 +5425,7 @@ img
                 border: 2px solid #ff6a36
                 border-radius: 8px
                 transition: all 0.35s
+                cursor: pointer
                 &:hover
                   transition: all 0.35s
                   background: #ff6a36
@@ -5481,6 +5513,78 @@ img
 
 
 
+#add_cart, #successful_order
+  background-color: #fff
+  width: 340px
+  height: 240px
+  position: fixed
+  top: 50%
+  left: 50%
+  margin-top: -165px
+  margin-left: -120px
+  display: none
+  opacity: 0
+  z-index: 50
+  padding: 45px 30px
+  text-align: center
+  box-sizing: border-box
+  .modal_close
+    position: absolute
+    width: 16px
+    height: 16px
+    background: url("../img/icons/close.png") no-repeat
+    background-size: 100%
+    top: 15px
+    right: 20px
+    cursor: pointer
+    -webkit-transition: all 0.35s
+    transition: all 0.35s
+    z-index: 10
+  h3
+    margin-bottom: 30px
+    color: #ff4504
+    font-family: "FuturaPT-Light", sans-serif
+    font-size: 30px
+    font-weight: 300
+    line-height: 36px
+  input[type="number"]
+    border-radius: 2px
+    box-sizing: border-box
+    border: 1px solid #bab9b9
+    color: #686767
+    text-align: center
+    font-size: 16px
+    line-height: 30px
+    width: 100px
+    margin-bottom: 30px
+  .submit
+    color: #fffefe
+    font-family: "FuturaBookC", sans-serif
+    font-size: 16px
+    font-weight: 300
+    text-transform: uppercase
+    height: 1em
+    padding: 13px 8px 11px
+    background-color: #ff4504
+    border-radius: 6px
+    box-shadow: inset 0 -2px 7.8px 0.2px rgba(0, 0, 0, 0.16)
+    display: inline-block
+    vertical-align: bottom
+    transition: all 0.35s
+    cursor: pointer
+    &:hover
+      background: #fe622b
+      transition: all 0.35s
+  p
+    color: #1a1a1a
+    font-family: "FuturaPT-Demi", sans-serif
+    font-size: 18px
+    font-weight: 300
+    line-height: 30px
+    text-transform: uppercase
+
+  .img-holder
+    margin-bottom: 30px
 
 
 #order_status
@@ -6584,6 +6688,16 @@ img
       display: none
   .buttom_more
     display: block
+
+  #add_cart, #successful_order
+    width: 280px
+    margin-left: -140px
+    height: 300px
+    margin-top: -150px
+    padding: 30px 20px
+
+
+
 
 @media screen and (max-width: 930px)
   .list_products
