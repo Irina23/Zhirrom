@@ -2835,22 +2835,15 @@ img {
     .feedback .container .wrap form .error textarea {
       border-color: red; }
     .feedback .container .wrap form .file {
-      width: 238px;
-      height: 43px;
-      background: url("../img/icons/file2.png") no-repeat;
+      width: 173px;
+      height: 25px;
+      background: url("../img/icons/input_file.png") no-repeat;
       overflow: hidden;
-      -webkit-transition: all 0.35s;
-      transition: all 0.35s;
-      border: 1px solid #bab9b9;
-      border-radius: 2px;
+      cursor: pointer;
       margin-bottom: 20px; }
-      .feedback .container .wrap form .file:hover {
-        background: url("../img/icons/file_hover2.png") no-repeat;
-        -webkit-transition: all 0.35s;
-        transition: all 0.35s; }
     .feedback .container .wrap form input[type="file"] {
-      width: 240px !important;
-      height: 45px !important;
+      width: 173px !important;
+      height: 25px !important;
       opacity: 0 !important;
       overflow: hidden !important;
       cursor: pointer; }
@@ -2884,7 +2877,8 @@ img {
       text-transform: uppercase;
       font-family: "FuturaPT-Heavy", sans-serif;
       letter-spacing: 1px;
-      cursor: pointer; }
+      cursor: pointer;
+      float: right; }
       .feedback .container .wrap form .submit:hover {
         -webkit-transition: all 0.35s;
         transition: all 0.35s;

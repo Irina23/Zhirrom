@@ -17,7 +17,7 @@ html(lang="ru")
                             .block_feedback
                                 .block_personal.cf
                                     .img_hoder
-                                        img(src="img/content/avatar.jpg", alt="Светлана Зарва" )
+                                        img(src="img/icons/nofoto.jpg", alt="Светлана Зарва" )
                                     .block_name
                                         .name Светлана Зарва
                                         .data 14 апреля 2016
@@ -39,7 +39,7 @@ html(lang="ru")
                             .block_feedback
                                 .block_personal.cf
                                     .img_hoder
-                                        img(src="img/content/avatar.jpg" , alt="Светлана Зарва")
+                                        img(src="img/icons/nofoto.jpg" , alt="Светлана Зарва")
                                     .block_name
                                         .name Светлана Зарва
                                         .data 14 апреля 2016
@@ -90,10 +90,11 @@ html(lang="ru")
                         form#feedback(action="#")
                             h4 Оставить отзыв
                             p Ваше сообщение успешно отправлено!
-                            div.file
-                                input(type="file")
+
                             div
                                 textarea(placeholder="Текст:", name="feedback", data-validate="name")
+                            div.file
+                                input(type="file")
                             .btn.submit Отправить
 
 
