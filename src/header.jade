@@ -15,8 +15,15 @@ header
                     input(type="text" placeholder="Состояние заказа" data-validate="number")
                 .btn.submit
 
-            .user-login
+            .block-infosold
+                .number 1000 000&nbsp;
+                | Проданых изделий
 
+            .cart
+                a(href="cart.html") Товаров в корзине:&#160;
+                    span 0
+            .user-login
+                a.registration(href="registration.html") Регистрация
                 a.login.open_modal(href="#login") Вход
 
 
@@ -24,15 +31,7 @@ header
 
 
     .header.cf
-        .list_contact
-            .phone
-                a(href="tel:+7(495) 369-14-15") +7(495) 369-14-15
-                | &nbsp;&nbsp;&nbsp;
-                a(href="tel:+7(925) 035-31-31") +7(925) 035-31-31
-            .mail
-                | Почта:&nbsp;
-                a(href="mailto:zhirrom@mail.ru") client@zhirrom.ru
-            .work_time Время работы: пн-пт 9.00-18.00
+
 
         .block-logo
             .logo
@@ -45,19 +44,26 @@ header
                 span Доставка по всей России и СНГ”
 
         .block-info-header
+            .list_contact
+                .phone
+                    a(href="tel:+7(495) 369-14-15") +7(495) 369-14-15
+                    | &nbsp;&nbsp;&nbsp;
+                    a(href="tel:+7(925) 035-31-31") +7(925) 035-31-31
+                .work_time ПН-ПТ 9.00-18.00
+                .mail
+                    | Почта:&nbsp;
+                    a(href="mailto:zhirrom@mail.ru") client@zhirrom.ru
+
+
             .search
                 form(action="search.html" role="search")
                     div.form-control
                         input(type="text" name="search" placeholder="Поиск" minlength="2" data-validate="name")
                     .btn.submit
 
-            .block-infosold
-                .number 1000 000&nbsp;
-                | Проданых изделий
 
-            .cart
-                a(href="cart.html") Товаров в корзине:&#160;
-                    span 0
+
+
 
         nav#menu
             ul

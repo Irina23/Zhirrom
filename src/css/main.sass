@@ -167,8 +167,8 @@ img
           transform: rotate(180deg)
 
 .top
-  background: #727272
-  text-align: center
+  background: #868686
+  //text-align: center
 
   .phone
     margin-right: 70px
@@ -198,12 +198,14 @@ img
     display: inline-block
     vertical-align: middle
     padding: 17px 0
-    margin-right: 70px
+    margin-right: 19px
     float: left
     li
       display: inline-block
       vertical-align: middle
       margin-right: 25px
+      &:last-child
+        margin-right: 0
       &.active
         a
           color: $main-color
@@ -259,23 +261,111 @@ img
 
 
 
+  .block-infosold
+    display: inline-block
+    vertical-align: top
+    color: #fff
+    font-family: "FuturaBookC", sans-serif
+    font-size: 14px
+    font-weight: 500
+    line-height: 27px
+    text-transform: uppercase
+    margin-right: 19px
+    margin-top: 10px
+
+    .number
+      display: inline-block
+      vertical-align: bottom
+      color: #fff
+      font-family: "FuturaPT-Medium", sans-serif
+      font-size: 30px
+      font-weight: 500
+      line-height: 30px
+      //font-variant: small-caps
+
+
+  .cart
+    display: inline-block
+    vertical-align: top
+    //float: right
+    margin-top: 10px
+    a
+      display: block
+      padding-left: 40px
+      position: relative
+      color: #fff
+      font-family: "FuturaBookC", sans-serif
+      line-height: 33px
+      font-size: 14px
+      text-transform: uppercase
+      transition: all 0.35s
+      span
+        color: #fff
+        font-size: 20px
+        font-family: "FuturaPT-Medium", sans-serif
+        line-height: 20px
+
+      &:hover
+
+        //color: $main-color
+        transition: all 0.35s
+        text-decoration: none
+        &:after
+          transition: all 0.35s
+          opacity: 1
+
+
+
+      &:after
+        border-radius: 2px
+        background-color:  $main-color
+        width: 30px
+        height: 30px
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        opacity: 0
+        transition: all 0.35s
+        z-index: 1
+
+
+      &:before
+        position: absolute
+        top: 6px
+        left: 4px
+        background: url("../img/icons/cart_hover.png") no-repeat
+        background-size: 100%
+        width: 22px
+        height: 18px
+        content: ""
+        z-index: 2
+
+
+
+
+
+
+
+
 .header
   width: 940px
   //padding: 20px 0 50px
   padding: 20px 0
   margin: auto
   .list_contact
-    margin-bottom: 20px
+    margin-bottom: 30px
+    float: left
     >div
       display: inline-block
       vertical-align: middle
       color: #000
-      font-family: "FuturaPT-Light", sans-serif
-      font-size: 18px
+      font-family: "FuturaBookC", sans-serif
+      font-size: 16px
       font-weight: 300
-      line-height: 20px
+      line-height: 32px
       padding-left: 30px
-      margin-right: 75px
+      margin-right: 25px
       &:last-child
         margin-right: 0
       &.phone
@@ -289,10 +379,10 @@ img
         display: inline-block
         vertical-align: top
         color: #000
-        font-family: "FuturaPT-Light", sans-serif
-        font-size: 18px
+        font-family: "FuturaBookC", sans-serif
+        font-size: 16px
         font-weight: 300
-        line-height: 20px
+        line-height: 32px
 
   .block-logo
     margin-bottom: 10px
@@ -348,7 +438,7 @@ img
   .search
       display: inline-block
       vertical-align: middle
-      float: left
+      float: right
       width: 220px
       //margin-right: 120px
       input[type="text"]
@@ -379,66 +469,11 @@ img
         margin-left: -20px
         cursor: pointer
 
-  .cart
-    display: inline-block
-    vertical-align: middle
-    float: right
-    a
-      display: block
-      padding-left: 40px
-      position: relative
-      color: #000
-      font-family: "FuturaPT-Heavy", sans-serif
-      line-height: 30px
-      font-size: 18px
-      transition: all 0.35s
-      span
-        color: $main-color
-        font-size: 20px
-        font-family: "FuturaPT-Medium", sans-serif
-        line-height: 20px
-
-      &:hover
-
-          //color: $main-color
-          transition: all 0.35s
-          text-decoration: none
-          &:after
-            transition: all 0.35s
-            opacity: 1
-          &:before
-            background: url("../img/icons/cart_hover.png") no-repeat
-            background-size: 100%
-
-
-      &:after
-        border-radius: 2px
-        background-color:  $main-color
-        width: 30px
-        height: 30px
-        content: ""
-        position: absolute
-        top: 0
-        left: 0
-        opacity: 0
-        transition: all 0.35s
-        z-index: 1
-        
-        
-      &:before
-        position: absolute
-        top: 6px
-        left: 4px
-        background: url("../img/icons/cart.png") no-repeat
-        background-size: 100%
-        width: 22px
-        height: 18px
-        content: ""
-        z-index: 2
 
   #menu
     margin-top: 40px
     position: relative
+    clear: both
     >ul>li
       display: inline-block
       vertical-align: middle
@@ -5673,6 +5708,7 @@ img
   display: inline-block
   vertical-align: middle
   margin-top: 7px
+  margin-right: 19px
   h3
     display: inline-block
     vertical-align: middle
@@ -5692,13 +5728,16 @@ img
     input
       font-family: "FuturaBookC", sans-serif
       color:  #ffffff
-      font-size: 16px
+      font-size: 12px
       line-height: 1em
       text-align: left
       background: none
-      border: 1px solid #fff
+      border: 0
+      border-bottom: 1px solid #fff
+
+      text-transform: uppercase
       width: 160px
-      padding: 8px 33px 6px 7px
+      padding: 8px 33px 6px 0
       box-sizing: border-box
       display: block
       &::-webkit-input-placeholder
@@ -5991,11 +6030,14 @@ img
 
   .top .menu li
     margin-right: 15px
-  .header .list_contact > div
+  //.header .list_contact > div
     margin-right: 50px
   .header .block-logo .tagline
     font-size: 17px
-
+  .header .search
+    width: 160px
+    input[type="text"]
+      width: 160px
 
   .private_office .container #private_office > div,
   .payment form#payment .form-holder > div
