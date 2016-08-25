@@ -1028,10 +1028,10 @@ img {
       color: #c6c5c5; }
 
 #slider .slider {
-  height: calc( 100vh - 295px);
+  height: calc( 100vh - 257px);
   overflow: hidden; }
   #slider .slider .item {
-    height: calc( 100vh - 295px); }
+    height: calc( 100vh - 257px); }
     #slider .slider .item .wrap {
       position: relative; }
     #slider .slider .item .block_text {
