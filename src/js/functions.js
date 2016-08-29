@@ -131,7 +131,23 @@ jQuery(document).ready(function() {
             }
         });
 
-
+        $('.related_products .products, .history_products .products').owlCarousel({
+            loop:true,
+            //margin:35,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1,
+                    margin: 0
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:4
+                }
+            }
+        });
 
 
     });

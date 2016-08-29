@@ -2429,8 +2429,27 @@ img
 
 .productfull
 
-  .related_products
+  .related_products, .history_products
     padding-bottom: 50px
+    .owl-controls
+      .owl-nav
+        .owl-prev, .owl-next
+          width: 22px
+          height: 37px
+          background: url("../img/icons/next_brand.png") no-repeat
+          position: absolute
+          background-size: 100%
+          top: 110px
+          margin-top: -19px
+
+
+        .owl-prev
+          transform: rotate(180deg)
+          left: -50px
+
+        .owl-next
+          right: -50px
+
     h3
       background: $main-color
       color: #fff
@@ -2570,8 +2589,11 @@ img
 
 
 
-
-
+  .history_products
+    background: url("../img/bg/bg_history.jpg") no-repeat center 
+    background-size: cover
+    h3
+      background: #c3c2c2             
 
   .product_info
     margin-bottom: 80px
