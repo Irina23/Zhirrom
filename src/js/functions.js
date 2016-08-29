@@ -303,7 +303,7 @@ jQuery(document).ready(function() {
         $(this).closest(".row").toggleClass("active").find('.order_list').slideToggle();
     });
     $(".faq h3").click(function () {
-        $(this).next('.content_block').slideToggle();
+        $(this).toggleClass('active').next('.content_block').slideToggle();
     });
 
     

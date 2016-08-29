@@ -5762,6 +5762,43 @@ img
     cursor: pointer
 
 .faq
+  &.faq2 
+    .container
+      h3 
+        background: none 
+        border: 0
+        padding: 20px
+        position: relative
+        margin: 0
+        font-size: 16px
+        font-family: "FuturaPT-Demi", sans-serif
+        &:before
+          content: ""
+          width: 10px
+          height: 2px
+          background: #000
+          position: absolute
+          left: 0
+          top: 50%
+          margin-top: -1px
+        &:after
+          content: ""
+          width: 2px
+          height: 10px
+          background: #000
+          position: absolute
+          left: 4px
+          top: 50%
+          margin-top: -5px
+          transition: all 0.35s
+        &.active
+          color: $main-color
+          &:before
+            background: $main-color
+          &:after
+            display: none  
+      .content_block
+        padding: 0
   .container
     background: none
     padding-top: 30px
@@ -5801,7 +5838,7 @@ img
       h4
         color: #000
         margin-bottom: 20px
-        font-size: 20px
+        font-size: 18px
         line-height: 1em
         font-family: "FuturaPT-Demi", sans-serif
         font-weight: normal

@@ -5080,6 +5080,44 @@ img {
     margin-left: -34px;
     cursor: pointer; }
 
+.faq.faq2 .container h3 {
+  background: none;
+  border: 0;
+  padding: 20px;
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+  font-family: "FuturaPT-Demi", sans-serif; }
+  .faq.faq2 .container h3:before {
+    content: "";
+    width: 10px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -1px; }
+  .faq.faq2 .container h3:after {
+    content: "";
+    width: 2px;
+    height: 10px;
+    background: #000;
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    margin-top: -5px;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s; }
+  .faq.faq2 .container h3.active {
+    color: #ff4504; }
+    .faq.faq2 .container h3.active:before {
+      background: #ff4504; }
+    .faq.faq2 .container h3.active:after {
+      display: none; }
+
+.faq.faq2 .container .content_block {
+  padding: 0; }
+
 .faq .container {
   background: none;
   padding-top: 30px; }
@@ -5118,7 +5156,7 @@ img {
     .faq .container .content_block h4 {
       color: #000;
       margin-bottom: 20px;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 1em;
       font-family: "FuturaPT-Demi", sans-serif;
       font-weight: normal; }
