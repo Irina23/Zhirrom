@@ -87,6 +87,7 @@ jQuery(document).ready(function() {
 
 
     jQuery(window).load(function() {
+        $(".carousel").alphaSlider();
         $("[name='data']").mask("99-99-9999");
 
         $('#preloader').fadeOut('slow',function(){$(this).remove();});

@@ -9,20 +9,20 @@ html(lang="ru")
 
             #slider
                 .slider
-                    .item(style='background: url("../img/content/slider1.jpg") no-repeat top center; background-size: cover;')
+                    .item(style='background: url("../img/content/slider4.jpg") no-repeat top center; background-size: cover;')
                         .wrap
                             .block_text.left_text
                                 h3 Магазин
                                     span оптовых
                                     | продаж
-                                a(href="catalog.html") Подробнее
+                                //a(href="catalog.html") Подробнее
 
 
                     .item(style='background: url("../img/content/slider2.jpg") no-repeat top center; background-size: cover;')
                         .wrap
                             .block_text
                                 h3 Зарегистрируйтесь и получите цены от производителя!
-                                a.open_modal(href="#registration") зарегистрироваться
+                                a(href="registration.html") зарегистрироваться
                     .item(style='background: url("../img/content/slider3.jpg") no-repeat top center; background-size: cover;')
                         .wrap
                             .block_text
@@ -31,109 +31,338 @@ html(lang="ru")
             .container
                 .wrap
                     .product_new
-                        h3 Новинки
+                        h3 Новинки и распродажа
                         .text_holder
                             p В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
 
-                        .products.list_items.short
-                            .block_product.item
-                                a(href="product.html")
-                                    .img_holder
-                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
-                                    .block_text
-                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
-                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
-                                        .block_price
+                        .tabs
+                                .tabs-menu
+                                    ul.nav.nav-tabs
+                                        li.active(href="#new_product" data-toggle="tab") Новинки
+                                        li(href="#sale_product" data-toggle="tab") Распродажа
+                                       
 
-                                a.asking_price(href="registration.html") узнать цену
+                                .tab-content
+                                    .tab-pane.active#new_product
+                                        .products.list_items
 
-                            .block_product.item
-                                a(href="product.html")
-                                    .img_holder
-                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
-                                    .block_text
-                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
-                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
-                                        .block_price
-                                            .cart
-                                            price.price 550
-                                                span руб.
+                                            .block_product.item
+                                                a(href="product.html")
+                                                    .img_holder
+                                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
+                                                    .block_text
+                                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
+                                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                                        .block_price
 
+                                                a.asking_price(href="registration.html") узнать цену
 
-                            .block_product.item
-                                a(href="product.html")
-                                    .img_holder
-                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
-                                    .block_text
-                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
-                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
-                                        .block_price
-                                            .cart
-                                            price.price 550
-                                                span руб.
-                            .block_product.item
-                                a(href="product.html")
-                                    .img_holder
-                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
-                                    .block_text
-                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
-                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
-                                        .block_price
-                                            .cart
-                                            price.price 550
-                                                span руб.
-
-                            .block_product.item
-                                a(href="product.html")
-                                    .img_holder
-                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
-                                    .block_text
-                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
-                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
-                                        .block_price
-                                            .cart
-                                            price.price 550
-                                                span руб.
+                                            .block_product.item
+                                                a(href="product.html")
+                                                    .img_holder
+                                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
+                                                        label.new
+                                                            img(src="img/icons/new.png" title="New", alt="New")
+                                                    .block_text
+                                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
+                                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                                        .block_price
+                                                            .cart
+                                                            price.price 550
+                                                                span руб.
 
 
-                            .block_product.item
-                                a(href="product.html")
-                                    .img_holder
-                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
-                                    .block_text
-                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
-                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
-                                        .block_price
-                                            .cart
-                                            price.price 550
-                                                span руб.
+                                            .block_product.item
+                                                a(href="product.html")
+                                                    .img_holder
+                                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
+                                                        label.sale
+                                                            img(src="img/icons/sale.png" title="sale", alt="sale")
+                                                        label.sell-out распродажа
+                                                    .block_text
+                                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
+                                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                                        .block_price
+                                                            .cart
+                                                            price.price 550
+                                                                span руб.
+                                            .block_product.item
+                                                a(href="product.html")
+                                                    .img_holder
+                                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
+                                                        label.sale-procent
+                                                            img(src="img/icons/sale-procent.png" title="sale", alt="sale")
+                                                            span -15%
+                                                    .block_text
+                                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
+                                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                                        .block_price
+                                                            .cart
+                                                            price.price 550
+                                                                span руб.
 
-                            .block_product.item
-                                a(href="product.html")
-                                    .img_holder
-                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
-                                    .block_text
-                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
-                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
-                                        .block_price
-                                            .cart
-                                            price.price 550
-                                                span руб.
-
-                            .block_product.item
-                                a(href="product.html")
-                                    .img_holder
-                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
-                                    .block_text
-                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
-                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
-                                        .block_price
-                                            .cart
-                                            price.price 550
-                                                span руб.
+                                            .block_product.item
+                                                a(href="product.html")
+                                                    .img_holder
+                                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
+                                                    .block_text
+                                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
+                                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                                        .block_price
+                                                            .cart
+                                                            price.price 550
+                                                                span руб.
 
 
-                        .buttom_more показать еще
+                                            .block_product.item
+                                                a(href="product.html")
+                                                    .img_holder
+                                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
+                                                    .block_text
+                                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
+                                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                                        .block_price
+                                                            .cart
+                                                            price.price 550
+                                                                span руб.
+
+                                            .block_product.item
+                                                a(href="product.html")
+                                                    .img_holder
+                                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
+                                                    .block_text
+                                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
+                                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                                        .block_price
+                                                            .cart
+                                                            price.price 550
+                                                                span руб.
+
+                                            .block_product.item
+                                                a(href="product.html")
+                                                    .img_holder
+                                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
+                                                    .block_text
+                                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
+                                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                                        .block_price
+                                                            .cart
+                                                            price.price 550
+                                                                span руб.
+                                    .tab-pane#sale_product
+                                        .products.list_items
+
+                                            .block_product.item
+                                                a(href="product.html")
+                                                    .img_holder
+                                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
+                                                    .block_text
+                                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
+                                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                                        .block_price
+
+                                                a.asking_price(href="registration.html") узнать цену
+
+                                            .block_product.item
+                                                a(href="product.html")
+                                                    .img_holder
+                                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
+                                                       
+                                                    .block_text
+                                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
+                                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                                        .block_price
+                                                            .cart
+                                                            price.price 550
+                                                                span руб.
+
+
+                                            .block_product.item
+                                                a(href="product.html")
+                                                    .img_holder
+                                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
+                                                        label.sale
+                                                            img(src="img/icons/sale.png" title="sale", alt="sale")
+                                                        label.sell-out распродажа
+                                                    .block_text
+                                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
+                                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                                        .block_price
+                                                            .cart
+                                                            price.price 550
+                                                                span руб.
+                                            .block_product.item
+                                                a(href="product.html")
+                                                    .img_holder
+                                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
+                                                        label.sale-procent
+                                                            img(src="img/icons/sale-procent.png" title="sale", alt="sale")
+                                                            span -15%
+                                                    .block_text
+                                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
+                                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                                        .block_price
+                                                            .cart
+                                                            price.price 550
+                                                                span руб.
+
+                                            .block_product.item
+                                                a(href="product.html")
+                                                    .img_holder
+                                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
+                                                    .block_text
+                                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
+                                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                                        .block_price
+                                                            .cart
+                                                            price.price 550
+                                                                span руб.
+
+
+                                            .block_product.item
+                                                a(href="product.html")
+                                                    .img_holder
+                                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
+                                                    .block_text
+                                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
+                                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                                        .block_price
+                                                            .cart
+                                                            price.price 550
+                                                                span руб.
+
+                                            .block_product.item
+                                                a(href="product.html")
+                                                    .img_holder
+                                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
+                                                    .block_text
+                                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
+                                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                                        .block_price
+                                                            .cart
+                                                            price.price 550
+                                                                span руб.
+
+                                            .block_product.item
+                                                a(href="product.html")
+                                                    .img_holder
+                                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
+                                                    .block_text
+                                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
+                                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                                        .block_price
+                                                            .cart
+                                                            price.price 550
+                                                                span руб.
+
+
+                       
+
+                    .block_advantages
+                        h3 Наши преимущества
+                        .text_holder
+                            p В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+
+                        .list_advantages.list_items.short
+                            .item
+                                .img-holder
+                                    img(src="img/icons/icon-advantages1.png", alt="Товары по ценам производителя")
+                                
+                                .desc Товары по ценам производителя
+
+
+                            .item
+                                .img-holder
+                                    img(src="img/icons/icon-advantages2.png", alt="Бесплатная примерка в Москве и СПб")
+                               
+                                .desc Бесплатная примерка в Москве и СПб
+
+                            .item
+                                .img-holder
+                                    img(src="img/icons/icon-advantages3.png", alt="Распродажи")
+                               
+                                .desc Распродажи
+
+
+                            .item
+                                .img-holder
+                                    img(src="img/icons/icon-advantages4.png", alt="Наличие и стоимость всех товаров на сайте всегда актуальна")
+                               
+                                .desc Наличие и стоимость всех товаров на сайте всегда актуальна
+
+                            .item
+                                .img-holder
+                                    img(src="img/icons/icon-advantages5.png", alt="Более 2000 наименований в наличии 3-4 обновления склада в неделю")
+                               
+                                .desc Более 2000 наименований в наличии 3-4 обновления склада в неделю
+
+
+                            .item
+                                .img-holder
+                                    img(src="img/icons/icon-advantages6.png", alt="Сотрудничаем с более чем 10 ведущими транспортными компаниями России")
+                                
+                                .desc Сотрудничаем с более чем 10 ведущими транспортными компаниями России
+
+                            .item
+                                .img-holder
+                                    img(src="img/icons/icon-advantages7.png", alt="Есть отзывы на сайте")
+                               
+                                .desc Есть отзывы на сайте
+
+
+                            .item
+                                .img-holder
+                                    img(src="img/icons/icon-advantages8.png", alt="23 года на рынке")
+                               
+                                .desc 23 года на рынке
+                            .item
+                                .img-holder
+                                    img(src="img/icons/icon-advantages9.png", alt="Сертификаты")
+                                
+                                .desc Сертификаты
+
+
+                            .item
+                                .img-holder
+                                    img(src="img/icons/icon-advantages10.png", alt="Только качественные товары, прошедшие сертификацию")
+                               
+                                .desc Только качественные товары, прошедшие сертификацию
+
+                            .item
+                                .img-holder
+                                    img(src="img/icons/icon-advantages11.png", alt="Лёгкий возврат и обмен в течение 30 дней")
+                               
+                                .desc Лёгкий возврат и обмен в течение 30 дней
+
+
+                            .item
+                                .img-holder
+                                    img(src="img/icons/icon-advantages12.png", alt="Есть выставочные центры в других городах")
+                               
+                                .desc Есть выставочные центры в других городах
+
+                            .item
+                                .img-holder
+                                    img(src="img/icons/icon-advantages13.png", alt="Двойной контроль качества и хорошая,бережная упаковка при отправке")
+                               
+                                .desc Двойной контроль качества и хорошая,бережная упаковка при отправке
+
+
+                            .item
+                                .img-holder
+                                    img(src="img/icons/icon-advantages14.png", alt="Прямые поставки от 20 фабрик России")
+                                
+                                .desc Прямые поставки от 20 фабрик России
+
+                            .item
+                                .img-holder
+                                    img(src="img/icons/icon-advantages15.png", alt="Партнерская программа 5%")
+                               
+                                .desc Партнерская программа 5%
+                        .buttom_more показать еще 
+
+                        
+
 
                     .list_category2
                         h3 Категории товаров
@@ -167,113 +396,51 @@ html(lang="ru")
                             .item-category.cf
                                 a(href="list_product.html")
                                     .img-holder
-                                        img(src="img/content/tunics.jpg", alt="Туники и палатины")
+                                        img(src="img/content/brend.jpg", alt="Бренды")
 
-                                    .name Туники и палатины
+                                    .name Бренды
 
                         a.download_price(href="#" target="_blank") скачать прайс
 
-                    .block_advantages
-                        h3 Наши преимущества
+                    .block_make_order
+                        h3 Как сделать заказ
                         .text_holder
                             p В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
-
-                        .list_advantages.list_items.short
-                            .item
-                                .img-holder
-                                    img(src="img/content/icon.png", alt="Качество")
-                                .name Качество
-                                .desc Только качественные товары, прошедшие сертификацию
+                        
+                        .block_text
+                            iframe(width='940', height='470', src='https://www.youtube.com/embed/kPDnw3_1GOI', frameborder='0', allowfullscreen='')
+                            p Равным образом консультация с широким активом представляет собой интересный эксперимент проверки существенных финансовых и административных условий. Задача организации, в особенности же сложившаяся структура организации в значительной степени обуславливает создание форм развития. Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям.
 
 
-                            .item
-                                .img-holder
-                                    img(src="img/content/icon2.png", alt="Прямые поставки")
-                                .name Прямые поставки
-                                .desc Прямые поставки от 20 фабрик России
 
-                            .item
-                                .img-holder
-                                    img(src="img/content/icon3.png", alt="Бесплатная примерка")
-                                .name Бесплатная примерка
-                                .desc Бесплатная примерка в Москве и СПб
-
-
-                            .item
-                                .img-holder
-                                    img(src="img/content/icon4.png", alt="Скидки")
-                                .name Скидки
-                                .desc Скидки за повторные покупки
-
-                            .item
-                                .img-holder
-                                    img(src="img/content/icon.png", alt="Качество")
-                                .name Качество
-                                .desc Только качественные товары, прошедшие сертификацию
-
-
-                            .item
-                                .img-holder
-                                    img(src="img/content/icon2.png", alt="Прямые поставки")
-                                .name Прямые поставки
-                                .desc Прямые поставки от 20 фабрик России
-
-                            .item
-                                .img-holder
-                                    img(src="img/content/icon3.png", alt="Бесплатная примерка")
-                                .name Бесплатная примерка
-                                .desc Бесплатная примерка в Москве и СПб
-
-
-                            .item
-                                .img-holder
-                                    img(src="img/content/icon4.png", alt="Скидки")
-                                .name Скидки
-                                .desc Скидки за повторные покупки
-                        .buttom_more показать еще
                     .block_certificate
                         h3 Сертификат
                         .text_holder
                             p В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
 
-                        .list_certificate
-                            .img-holder
-                                a.open_modal(href="#certificate")
-                                    img(src="img/content/certificate.png", alt="Сертификат")
-
-                            .img-holder
-                                a.open_modal(href="#certificate")
-                                    img(src="img/content/certificate.png", alt="Сертификат")
-
-                            .info-certificate
-                                p
-                                    | ИП Лозовая М.В.
-                                    br
-                                    | Русский Трикотаж: Шапки оптом по цене производителя с доставкой по
-                                    br
-                                    | России, Белоруссии, Казахстану, Кыргызстану и Армении.
-
-                                p
-                                    | ИНН 262409290610
-                                    br
-                                    | ОГРН 3142651134400160
-
-                                p Адрес: г. Ессентуки ул. Кисловодская д.30а корп.4 к.55
-                                p
-                                    |Россия:&nbsp;
-                                    a(href="tel:+ 7 (499) 350 22 20") + 7 (499) 350 22 20
-                                    br
-                                    | Белоруссия:&nbsp;
-                                    a(href="tel:+ 7 (499) 350 22 20") + 7 (499) 350 22 20
-                                    br
-                                    | Кыргызстан:&nbsp;
-                                    a(href="tel:+ 996( 312) 96 23 70") + 996( 312) 96 23 70
-
+                        .carousel
+                            .slide
+                                .img-holder
+                                    a.open_modal(href="#certificate")
+                                        img(src="img/content/certificate.png", alt="Сертификат")
+                            .slide                
+                                .img-holder
+                                    a.open_modal(href="#certificate")
+                                        img(src="img/content/certificate.png", alt="Сертификат")
+                            .slide                
+                                .img-holder
+                                    a.open_modal(href="#certificate")
+                                        img(src="img/content/certificate.png", alt="Сертификат")
+                            .slide                
+                                .img-holder
+                                    a.open_modal(href="#certificate")
+                                        img(src="img/content/certificate.png", alt="Сертификат")                 
+                           
 
 
 
                     .block_brands
-                        h3 Наши поставщики
+                        h3 Наши бренды
                         .text_holder
                             p В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
                         .list_brands

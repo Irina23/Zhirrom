@@ -383,6 +383,7 @@ img
         font-size: 16px
         font-weight: 300
         line-height: 32px
+        
 
   .block-logo
     margin-bottom: 10px
@@ -1225,13 +1226,13 @@ img
       .block_text
         width: 700px
         margin: auto
-        padding-top: 150px
+        padding-top: 200px
         &.left_text
           width: 450px
           right: 0
           position: absolute
           padding: 0
-          top: 150px
+          top: 200px
 
           h3
             font-size: 60px
@@ -1866,7 +1867,8 @@ img
   .container
     .wrap
       position: relative
-
+      .bread
+        width: calc(100% - 260px)
 
 .list_products
   padding-top: 20px
@@ -2083,6 +2085,34 @@ img
           overflow: hidden
           margin-bottom: 20px
           position: relative
+          label 
+            position: absolute
+            top: 0 
+            right: 0
+            width: 85px 
+            height: 74px
+            &.sale-procent
+              width: 55px 
+              height: 55px
+              span 
+                line-height: 50px 
+                margin-top: -55px
+                display: block 
+                color: #fff 
+                font-size: 16px 
+                font-family: 'FuturaPT-Medium', sans-serif         
+            &.sell-out 
+              width: 100% 
+              text-align: center 
+              text-transform: uppercase
+              color: #fff 
+              font-size: 16px 
+              background: rgba(255, 69, 4, 0.8)
+              line-height: 25px 
+              height: auto 
+              bottom: 0
+              top: inherit
+
           img
             width: 100%
           &:after
@@ -2497,6 +2527,35 @@ img
           overflow: hidden
           margin-bottom: 20px
           position: relative
+          label 
+            position: absolute
+            top: 0 
+            right: 0
+            width: 85px 
+            height: 74px
+            &.sale-procent
+              width: 55px 
+              height: 55px
+              span 
+                line-height: 55px 
+                margin-top: -55px
+                display: block 
+                color: #fff 
+                font-size: 16px 
+                font-family: 'FuturaPT-Medium', sans-serif   
+                position: relative      
+            &.sell-out 
+              width: 100% 
+              text-align: center 
+              text-transform: uppercase
+              color: #fff 
+              font-size: 16px 
+              background: rgba(255, 69, 4, 0.8)
+              line-height: 25px 
+              height: auto 
+              bottom: 0
+              top: inherit
+
           img
             width: 100%
           &:after
@@ -4448,6 +4507,43 @@ img
     margin-bottom: 50px
     padding: 0 95px
 
+  .tabs-menu
+    margin: 0 auto 50px;
+    text-align: center;
+    .nav-tabs
+      li 
+        width: 145px;
+        height: 45px;
+        cursor: pointer
+        background: none;
+        border-radius: 6px;
+        color: $main-color
+        margin: 0 20px
+        font-family: "FuturaPT-Demi", sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        display: inline-block;
+        text-align: center;
+        line-height: 41px;
+        transition: all 0.35s; 
+        border: 2px solid $main-color
+        box-sizing: border-box
+
+        &.active 
+          background: $main-color;
+          box-shadow: inset 0 -2px 7.8px 0.2px rgba(0, 0, 0, 0.16)
+          color: #fffefe;
+          border-color: rgba(0, 0, 0, 0)
+          
+          
+        &:hover
+          transition: all 0.35s;
+          color: #fffefe;
+          background: $main-color;
+          box-shadow: inset 0 -2px 7.8px 0.2px rgba(0, 0, 0, 0.16)
+          text-decoration: none;
+          border-color: rgba(0, 0, 0, 0)
+         
 
   .products
     margin: 0 -10px
@@ -4487,6 +4583,35 @@ img
           overflow: hidden
           margin-bottom: 20px
           position: relative
+          label 
+            position: absolute
+            top: 0 
+            right: 0
+            width: 85px 
+            height: 74px
+            &.sale-procent
+              width: 55px 
+              height: 55px
+              span 
+                line-height: 50px 
+                margin-top: -55px
+                display: block 
+                color: #fff 
+                font-size: 16px 
+                font-family: 'FuturaPT-Medium', sans-serif         
+            &.sell-out 
+              width: 100% 
+              text-align: center 
+              text-transform: uppercase
+              color: #fff 
+              font-size: 16px 
+              background: rgba(255, 69, 4, 0.8)
+              line-height: 25px 
+              height: auto 
+              bottom: 0
+              top: inherit
+
+
           img
             width: 100%
           &:after
@@ -4755,30 +4880,63 @@ img
 
   .list_advantages
     .item
-      width: 24%
+      width: 33%
       display: inline-block
       vertical-align: top
-      text-align: center
-      margin-bottom: 20px
+      //text-align: center
+      margin-bottom: 30px
       box-sizing: border-box
       padding: 0 8px
       .img-holder
-        height: 45px
-        margin-bottom: 15px
-      .name
-        margin-bottom: 15px
-        color: #3d3d3d
-        font-family: "FuturaPT-Light", sans-serif
-        font-size: 24px
-        font-weight: 300
-        line-height: 1em
+        display: inline-block
+        vertical-align: middle
+        margin-right: 20px
+
+     
       .desc
+        overflow: hidden
+        display: inline-block
+        vertical-align: middle
+        width: calc(100% - 65px)    
         color: #3d3d3d
-        font-family: "FuturaPT-Light", sans-serif
-        font-size: 16px
+        font-family: "FuturaBookC", sans-serif
+        font-size: 18px
         font-weight: 300
         line-height: 24px
 
+.block_make_order
+  margin-bottom: 60px
+  h3
+    color: black
+    font-family: "FuturaBookC", sans-serif
+    font-size: 48px
+    line-height: 1em
+    margin-bottom: 10px
+    text-align: center
+    font-weight: 300
+
+  .text_holder
+    text-align: center
+    color: #636363
+    font-family: "FuturaPT-Light", sans-serif
+    font-size: 18px
+    font-weight: 300
+    line-height: 24px
+    margin-bottom: 50px
+    padding: 0 95px
+
+  .block_text
+    p 
+          
+      color: #636363;
+      font-family: 'FuturaBookC', sans-serif
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 30px;
+    iframe 
+      width: 100%!important
+      margin-bottom: 40px
+      
 
 .block_certificate
   margin-bottom: 60px
@@ -4801,17 +4959,27 @@ img
     margin-bottom: 50px
     padding: 0 95px
 
-  .list_certificate
-    >div
-      width: calc((100% - 40px)/3)
+  .carousel
+    width: 100%!important
+    .slider-control 
+      background: url('../img/icons/next-black.png') no-repeat 
+      width: 22px 
+      height: 37px
+      background-size: 100%  
+      &.arrow-left
+        
+        transform: rotate(180deg)
+
+
+
+    .slide
+      //width: calc((100% - 40px)/3)
       display: inline-block
       vertical-align: top
-      margin-right: 15px
-      &:last-child
-        margin-right: 0
-      &.img-holder
+      
+      .img-holder
         a
-          display: block
+          display: inline-block
           text-align: center
 
 
@@ -6968,8 +7136,19 @@ img
             left: 0
           .owl-next
             right: 0
+  .list_product .container .wrap .bread
+    width: 100%          
 
+  .block_certificate .carousel .slide
+    width: 280px
 
+  .block_make_order 
+    h3
+      font-size: 36px
+    .text_holder
+      padding: 0
+  .block_make_order .block_text iframe    
+    height: auto!important    
 
 @media screen and (max-width: 930px)
   .list_products
@@ -7290,6 +7469,11 @@ img
     width: 100px!important
 
 
+@media screen and (max-width: 415px)
+  .product_new .tabs-menu .nav-tabs li
+    &:first-child
+      margin-bottom: 20px
+    
 
 @media screen and (max-width: 400px)
 
