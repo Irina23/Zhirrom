@@ -160,7 +160,7 @@ img {
     .top .phone span, .top .email span {
       margin-right: 5px; }
     .top .phone a, .top .email a {
-      margin-right: 18px;
+      margin-right: 19px;
       -webkit-transition: all 0.35s;
       transition: all 0.35s; }
       .top .phone a:hover, .top .email a:hover {
@@ -185,7 +185,7 @@ img {
     .top .menu li {
       display: inline-block;
       vertical-align: middle;
-      margin-right: 25px; }
+      margin-right: 10px; }
       .top .menu li:last-child {
         margin-right: 0; }
       .top .menu li.active a {
@@ -5429,6 +5429,201 @@ img {
     .order_complete .container .wrap #subscription > div {
       float: left; }
 
+.make_order_page .container {
+  background: none; }
+  .make_order_page .container .wrap {
+    margin-top: 30px; }
+  .make_order_page .container h1, .make_order_page .container h3 {
+    color: black;
+    font-family: "FuturaBookC", sans-serif;
+    font-size: 48px;
+    line-height: 1em;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 300; }
+  .make_order_page .container .text_holder {
+    text-align: center;
+    color: #636363;
+    font-family: "FuturaBookC", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 50px;
+    padding: 0 95px; }
+
+.make_order_page .block_video {
+  margin-bottom: 60px; }
+  .make_order_page .block_video .block_text p {
+    color: #636363;
+    font-family: 'FuturaBookC', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px; }
+  .make_order_page .block_video .block_text iframe {
+    width: 100% !important;
+    margin-bottom: 40px; }
+
+.make_order_page .questions_tiltle {
+  color: #fff;
+  font-family: 'FuturaBookC', sans-serif;
+  font-size: 60px;
+  font-weight: normal;
+  line-height: 1em;
+  background: url("../img/bg/bg-form-make-order.png") no-repeat center #ff4504;
+  text-align: center;
+  padding: 40px 0;
+  margin-bottom: 65px; }
+
+.make_order_page form#questions p {
+  margin-bottom: 30px;
+  font-size: 18px; }
+
+.make_order_page form#questions .error textarea {
+  border-color: red; }
+
+.make_order_page form#questions .row-group {
+  margin-bottom: 20px; }
+  .make_order_page form#questions .row-group > div {
+    width: calc((100% - 20px)/2);
+    float: left;
+    margin-right: 20px; }
+    .make_order_page form#questions .row-group > div:last-child {
+      margin-right: 0; }
+
+.make_order_page form#questions input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  border: 1px solid #b3b3b3;
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 18px;
+  line-height: 45px;
+  padding: 0 10px; }
+
+.make_order_page form#questions textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  padding: 10px;
+  color: #7b7b7b;
+  font-size: 18px;
+  line-height: 1.3em;
+  font-family: "FuturaBookC", sans-serif;
+  letter-spacing: 1px;
+  margin-bottom: 35px;
+  height: 145px;
+  border: 1px solid #b3b3b3; }
+
+.make_order_page form#questions .submit {
+  line-height: 48px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  display: block;
+  margin: auto;
+  background: #ff4504;
+  text-transform: uppercase;
+  font-family: "FuturaBookC", sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+  width: 135px;
+  height: 45px;
+  background-color: #ff4504;
+  border-radius: 2px;
+  box-shadow: inset 0 -2px 7.8px 0.2px rgba(0, 0, 0, 0.16); }
+  .make_order_page form#questions .submit:hover {
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    background: #fe622b;
+    text-decoration: none; }
+
+.make_order_page .step_make_order {
+  position: relative;
+  margin-bottom: 95px; }
+  .make_order_page .step_make_order:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 3px;
+    height: 100%;
+    background: #cdcccc;
+    margin-left: -1px;
+    display: block; }
+  .make_order_page .step_make_order .item {
+    clear: both;
+    margin-bottom: 40px; }
+    .make_order_page .step_make_order .item:first-child {
+      margin-top: 35px; }
+    .make_order_page .step_make_order .item:nth-child(2n) .block_text {
+      float: left;
+      margin-right: 70px;
+      margin-left: 0; }
+      .make_order_page .step_make_order .item:nth-child(2n) .block_text label {
+        float: right; }
+        .make_order_page .step_make_order .item:nth-child(2n) .block_text label:after {
+          left: inherit;
+          right: -79px; }
+      .make_order_page .step_make_order .item:nth-child(2n) .block_text h4, .make_order_page .step_make_order .item:nth-child(2n) .block_text p {
+        text-align: right; }
+      .make_order_page .step_make_order .item:nth-child(2n) .block_text p {
+        margin-bottom: 95px; }
+    .make_order_page .step_make_order .item:nth-child(2n) .img-holder {
+      float: right;
+      margin-left: 70px;
+      margin-right: 0; }
+    .make_order_page .step_make_order .item .block_text {
+      width: calc(50% - 70px);
+      float: right;
+      margin-left: 70px;
+      overflow: visible;
+      position: relative; }
+      .make_order_page .step_make_order .item .block_text label {
+        background: #ff4504;
+        text-transform: uppercase;
+        color: #fefefe;
+        font-family: 'FuturaBookC', sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1em;
+        padding: 10px 40px 4px;
+        margin-bottom: 35px;
+        float: left;
+        display: block;
+        position: relative; }
+        .make_order_page .step_make_order .item .block_text label:after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: -79px;
+          margin-top: -9px;
+          width: 18px;
+          height: 18px;
+          background-color: #cdcccc;
+          border: 3px solid #ababab;
+          display: block;
+          box-sizing: border-box;
+          border-radius: 18px;
+          z-index: 3; }
+      .make_order_page .step_make_order .item .block_text h4 {
+        clear: both;
+        color: #010101;
+        font-family: 'FuturaBookC',sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1em;
+        margin-bottom: 20px; }
+      .make_order_page .step_make_order .item .block_text p {
+        margin-bottom: 0;
+        color: #575656;
+        font-size: 18px; }
+    .make_order_page .step_make_order .item .img-holder {
+      float: left;
+      margin-right: 70px;
+      margin-top: 75px; }
+
 @media screen and (min-width: 1024px) and (max-height: 700px) {
   .header #menu {
     margin-top: 20px; }
@@ -5507,8 +5702,6 @@ img {
     width: 210px; }
   .list_products .filter > div.preview, .list_products .filter > div.sort_by {
     margin-right: 35px; }
-  .top .menu li {
-    margin-right: 15px; }
   .header .block-logo .tagline {
     font-size: 17px; }
   .header .search {
@@ -5531,10 +5724,15 @@ img {
       width: 205px; }
   .list_category2 .item-category {
     margin-bottom: 20px; }
-  .top .menu {
-    margin-right: 40px; }
   .footer .wrap .logo, .footer .wrap .contact {
-    margin-right: 75px; } }
+    margin-right: 75px; }
+  .top .menu, .top .block-infosold {
+    margin-right: 10px; }
+  #order_status {
+    margin-right: 0; }
+    #order_status div input {
+      width: 140px;
+      padding-right: 25px; } }
 
 @media screen and (max-width: 959px) {
   body {

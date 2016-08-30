@@ -144,8 +144,8 @@
 
           createControls : function () {
 
-            DOM.$carouselViewport.append('<span class="slider-control arrow-left fa fa-angle-left"></span>');
-            DOM.$carouselViewport.append('<span class="slider-control arrow-right fa fa-angle-right"></span>');
+            DOM.$carouselViewport.append('<span class="slider-control arrow-left "></span>');
+            DOM.$carouselViewport.append('<span class="slider-control arrow-right "></span>');
             DOM.$sliderControls = DOM.$carouselViewport.find('.slider-control');
             DOM.$controlLeft = $self.find('.arrow-left');
             DOM.$controlRight = $self.find('.arrow-right');
