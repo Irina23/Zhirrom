@@ -2462,7 +2462,7 @@ img
       margin-bottom: 80px
 
     .products
-      margin: 0 -10px
+      //margin: 0 -10px
     .block_product
       width: 220px
       display: inline-block
@@ -5991,6 +5991,7 @@ img
 
 
 
+
 @media screen and (min-width: 1024px) and (max-height: 700px)
 
   .header
@@ -6048,6 +6049,17 @@ img
 
     .block_order_info .text p
       margin-bottom: 10px
+
+
+@media screen and (max-width: 1060px)
+  .productfull
+    .related_products, .history_products 
+      .owl-controls 
+        .owl-nav 
+          .owl-prev
+            left: -25px
+          .owl-next
+            right: -25px  
 
 
 @media screen and (max-width: 1024px)
@@ -6675,7 +6687,7 @@ img
 
 
 
-    .related_products
+    .related_products, .history_products
       h3
         font-size: 36px
         padding: 20px 0
@@ -6948,6 +6960,14 @@ img
     margin-top: -150px
     padding: 30px 20px
 
+  .productfull
+    .related_products, .history_products 
+      .owl-controls 
+        .owl-nav 
+          .owl-prev
+            left: 0
+          .owl-next
+            right: 0
 
 
 

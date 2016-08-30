@@ -140,7 +140,7 @@ jQuery(document).ready(function() {
                     items:1,
                     margin: 0
                 },
-                600:{
+                765:{
                     items:3
                 },
                 1000:{
