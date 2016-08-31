@@ -174,7 +174,18 @@ jQuery(document).ready(function() {
     showValues();
 
 
-
+    //blog page visaible 
+    $('.blog .pagination_list').on('click', '.ias-trigger', function(e){
+        e.preventDefault();
+        $( ".blog" ).find('[name="page"]').val($(e.target).attr('href')[$(e.target).attr('href').length - 1]);
+        $.ajax({
+            type: "GET",
+            url: "",
+            success: function(data){
+               
+            }
+        });
+    });
 
 
 
