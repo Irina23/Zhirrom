@@ -481,6 +481,13 @@
               </div>
             </div>
           </div>
+          <input type="text" id="page" name="page" value="1" class="hidden">
+          <div class="pagination_list">
+            <ul>
+              <li class="prev"><a href="#"></a></li>
+              <li class="next"><a href="#" class="ias-trigger">показать еще</a></li>
+            </ul>
+          </div>
           <div class="pagination">
             <ul>
               <li class="prev"><a href="#">Предыдущая</a></li>
@@ -599,40 +606,15 @@
       <script src="bower_components/jquery/dist/jquery.js"></script>
       <script src="js/jquery.elevateZoom-3.0.8.min.js"></script>
       <script src="js/functions.js"></script>
-      <script src="js/jquery-ias.min.js"></script>
       <script src="js/bootstrap_tabs.min.js"></script>
       <script src="js/alexValidate.js"></script>
       <script src="bower_components/jquery.bxslider/jquery.bxslider.js"></script>
       <script src="js/owl.carousel.js"></script>
-      <script src="js/bootstrap_tabs.min.js"></script>
       <script src="js/jquery.selectbox.min.js"></script>
       <script src="js/jquery.maskedinput.js"></script>
       <script src="js/alphaSlider.js"></script>
       <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
       <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
-      <script>
-        (function() {
-          var cx = '007193684977280474025:m3ozddvtnpw';
-          var gcse = document.createElement('script');
-          gcse.type = 'text/javascript';
-          gcse.async = true;
-          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-          '//cse.google.com/cse.js?cx=' + cx;
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(gcse, s);
-          })();
-      </script>
-      <script type="text/javascript">
-        var ias = jQuery.ias({
-            container: '.list_items',
-            item: '.item',
-            pagination: '.pagination',
-            next: '.next a'
-        });
-        ias.extension(new IASTriggerExtension({
-            text: 'показать еще' // optionally
-        }));
-      </script>
     </div>
   </body>
 </html>

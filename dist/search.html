@@ -28,7 +28,7 @@
     </noscript>
   </head>
   <body>
-    <div class="page_wrapper search">
+    <div class="page_wrapper search_page">
       <!--#preloader-->
       <header>
         <div class="top">
@@ -427,7 +427,87 @@
             </ul>
           </div>
           <h1>Поиск</h1>
-          <gcse:search></gcse:search>
+          <form id="search" action="#" role="search">
+            <div class="form-control">
+              <input type="text" name="search" placeholder="Поиск" minlength="2" data-validate="name">
+            </div>
+            <div class="btn submit"></div>
+          </form>
+          <div class="products cf">
+            <div class="block_product"><a href="product.html">
+                <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14" alt="Винтаж Плюс L14"></div>
+                <div class="block_text">
+                  <div title="Винтаж Плюс L14" class="name">Винтаж Плюс L14</div>
+                  <div class="description_product">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum</div>
+                  <div class="block_price"></div>
+                </div></a><a href="registration.html" class="asking_price">узнать цену</a></div>
+            <div class="block_product"><a href="product.html">
+                <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14" alt="Винтаж Плюс L14"></div>
+                <div class="block_text">
+                  <div title="Винтаж Плюс L14" class="name">Винтаж Плюс L14</div>
+                  <div class="description_product">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum</div>
+                  <div class="block_price">
+                    <div class="cart"></div>
+                    <price class="price">550<span>руб.</span></price>
+                  </div>
+                </div></a></div>
+            <div class="block_product"><a href="product.html">
+                <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14" alt="Винтаж Плюс L14"></div>
+                <div class="block_text">
+                  <div title="Винтаж Плюс L14" class="name">Винтаж Плюс L14</div>
+                  <div class="description_product">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum</div>
+                  <div class="block_price">
+                    <div class="cart"></div>
+                    <price class="price">550<span>руб.</span></price>
+                  </div>
+                </div></a></div>
+            <div class="block_product"><a href="product.html">
+                <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14" alt="Винтаж Плюс L14"></div>
+                <div class="block_text">
+                  <div title="Винтаж Плюс L14" class="name">Винтаж Плюс L14</div>
+                  <div class="description_product">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum</div>
+                  <div class="block_price">
+                    <div class="cart"></div>
+                    <price class="price">550<span>руб.</span></price>
+                  </div>
+                </div></a></div>
+            <div class="block_product"><a href="product.html">
+                <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14" alt="Винтаж Плюс L14"></div>
+                <div class="block_text">
+                  <div title="Винтаж Плюс L14" class="name">Винтаж Плюс L14</div>
+                  <div class="description_product">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum</div>
+                  <div class="block_price">
+                    <div class="cart"></div>
+                    <price class="price">550<span>руб.</span></price>
+                  </div>
+                </div></a></div>
+            <div class="block_product"><a href="product.html">
+                <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14" alt="Винтаж Плюс L14"></div>
+                <div class="block_text">
+                  <div title="Винтаж Плюс L14" class="name">Винтаж Плюс L14</div>
+                  <div class="description_product">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum</div>
+                  <div class="block_price">
+                    <div class="cart"></div>
+                    <price class="price">550<span>руб.</span></price>
+                  </div>
+                </div></a></div>
+            <div class="block_product"><a href="product.html">
+                <div class="img_holder"><img src="img/content/product.jpg" title="Винтаж Плюс L14" alt="Винтаж Плюс L14"></div>
+                <div class="block_text">
+                  <div title="Винтаж Плюс L14" class="name">Винтаж Плюс L14</div>
+                  <div class="description_product">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum</div>
+                  <div class="block_price">
+                    <div class="cart"></div>
+                    <price class="price">550<span>руб.</span></price>
+                  </div>
+                </div></a></div>
+            <div class="pagination">
+              <ul>
+                <li class="prev disabled"><a href="#">Предыдущая</a></li>
+                <li class="next"><a href="#">Следующая</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <div id="overlay"></div>
@@ -541,40 +621,15 @@
       <script src="bower_components/jquery/dist/jquery.js"></script>
       <script src="js/jquery.elevateZoom-3.0.8.min.js"></script>
       <script src="js/functions.js"></script>
-      <script src="js/jquery-ias.min.js"></script>
       <script src="js/bootstrap_tabs.min.js"></script>
       <script src="js/alexValidate.js"></script>
       <script src="bower_components/jquery.bxslider/jquery.bxslider.js"></script>
       <script src="js/owl.carousel.js"></script>
-      <script src="js/bootstrap_tabs.min.js"></script>
       <script src="js/jquery.selectbox.min.js"></script>
       <script src="js/jquery.maskedinput.js"></script>
       <script src="js/alphaSlider.js"></script>
       <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
       <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
-      <script>
-        (function() {
-          var cx = '007193684977280474025:m3ozddvtnpw';
-          var gcse = document.createElement('script');
-          gcse.type = 'text/javascript';
-          gcse.async = true;
-          gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-          '//cse.google.com/cse.js?cx=' + cx;
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(gcse, s);
-          })();
-      </script>
-      <script type="text/javascript">
-        var ias = jQuery.ias({
-            container: '.list_items',
-            item: '.item',
-            pagination: '.pagination',
-            next: '.next a'
-        });
-        ias.extension(new IASTriggerExtension({
-            text: 'показать еще' // optionally
-        }));
-      </script>
     </div>
   </body>
 </html>

@@ -56,7 +56,8 @@ $color-grey: #727272
   font-style: normal
   font-weight: normal
 
-
+.hidden
+  display: none
 body
   font-family: "FuturaBookC", sans-serif
   padding: 0
@@ -1860,7 +1861,7 @@ img
 
 
 
-.list_product, .productfull, .blog, .article, .search,.cart, .payment, .private_office, .registration, .feedback, .update_password
+.list_product, .productfull, .blog, .article, .search_page,.cart, .payment, .private_office, .registration, .feedback, .update_password
     header
       border-bottom: 5px solid $main-color
 
@@ -3560,7 +3561,7 @@ img
   z-index: 11
 
 
-.search
+.search_page
   h1
     text-align: center
     font-family: "FuturaPT-Light", sans-serif
@@ -3568,12 +3569,145 @@ img
     font-size: 60px
     line-height: 1em
     margin-bottom: 70px
-  .gsst_a
-    padding-top: 6px
-    .gscb_a
-      color: $color-grey
-      &:hover
-        color: $main-color
+  .pagination
+    display: block
+  .block_product
+      width: 100%
+      display: inline-block
+      vertical-align: top
+      overflow: hidden
+      margin: auto
+      margin-bottom: 30px
+      box-sizing: border-box
+      transition: all 0.35s
+      text-align: center
+      .block_text
+        overflow: hidden
+      a.asking_price
+          color: #fffefe
+          font-family: "FuturaBookC", sans-serif
+          font-size: 16px
+          font-weight: 300
+          text-transform: uppercase
+          height: 1em
+          padding: 13px 18px 11px
+          background-color: $main-color
+          border-radius: 6px
+          box-shadow: inset 0 -2px 7.8px 0.2px rgba(0, 0, 0, 0.16)
+          display: inline-block
+          vertical-align: bottom
+          transition: all 0.35s
+          &:hover
+            background: #fe622b
+            transition: all 0.35s
+      a
+        .img_holder
+
+          overflow: hidden
+          position: relative
+          float: left
+          margin-right: 20px
+          width: 240px
+          height: 240px
+          margin-bottom: 0
+          img
+            width: 100%
+          &:after
+            background: rgba(255, 69, 4, 0)
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            content: ""
+            transition: all 0.35s
+        .name
+          font-size: 20px
+          line-height: 1em
+          color:  #373737
+          font-family: "FuturaBookC", sans-serif
+          overflow: hidden
+          height: 20px
+          text-overflow: ellipsis
+          text-align: left
+          font-size: 24px
+          margin-bottom: 20px
+          padding-bottom: 10px
+          border-bottom: 2px solid #eeeded
+
+
+
+
+        .description_product
+          color:  #6a6a6a
+          font-size: 18px
+          line-height: 1.5em
+          height: auto
+          overflow: hidden
+          margin-bottom: 15px
+          text-align: left
+
+        .block_price
+          text-align: left
+
+
+          .price
+            display: inline-block
+            vertical-align: bottom
+            font-size: 24px
+            line-height: 1em
+            color:  #3e3d3d
+            text-transform: uppercase
+            span
+              font-size: 18px
+              display: inline-block
+              vertical-align: middle
+              margin-left: 5px
+              line-height: 1em
+          .cart
+            position: relative
+            display: inline-block
+            vertical-align: middle
+            margin-right: 5px
+            border-radius: 2px
+            background: rgba(255, 69, 4, 0)
+            width: 30px
+            height: 30px
+            transition: all 0.35s
+            &:before
+              background: url("../img/icons/cart.png") no-repeat
+              background-size: 100%
+              width: 22px
+              height: 18px
+              content: ""
+              position: absolute
+              top: 6px
+              left: 4px
+              z-index: 2
+              transition: all 0.35s
+
+
+
+        &:hover
+          text-decoration: none
+          .img_holder
+            &:after
+              background: rgba(255, 69, 4, 0.45)
+              transition: all 0.35s
+
+          .name
+            color: $main-color
+            transition: all 0.35s
+          .block_price
+            .cart
+              transition: all 0.35s
+              background: $main-color
+              &:before
+                background: url("../img/icons/cart_hover.png") no-repeat
+                background-size: 100%
+                transition: all 0.35s
+
+
 
 
 
@@ -6379,7 +6513,44 @@ img
         margin-right: 70px 
         margin-top: 75px
         
+#search
 
+    width: 100%
+    position: relative
+    margin-bottom: 50px
+    input[type="text"]
+      border: 0
+      border-bottom: 1px solid #000
+      padding: 7px 0
+      font-family: "FuturaBookC", sans-serif
+      line-height: 1em
+      font-size: 18px
+      color: #000
+      background: none
+      width: 100%
+      &::-webkit-input-placeholder
+        color: #000
+      &::-moz-placeholder
+        color: #000
+      &::-moz-placeholder
+        color: #000
+
+    .form-control
+    
+      &.error
+        input[type="text"]
+          border-color: red
+    .submit
+      display: inline-block
+      vertical-align: middle
+      width: 15px
+      height: 15px
+      background: url("../img/icons/search.png") no-repeat
+      background-size: 100%
+      position: absolute
+      top: 10px 
+      right: 0
+      cursor: pointer
 
 
 @media screen and (min-width: 1024px) and (max-height: 700px)
@@ -7621,7 +7792,7 @@ img
     //margin: 0 auto 15px!important
 
 
-  .list_products .products.preview_block .block_product .img_holder
+  .list_products .products.preview_block .block_product .img_holder, .search_page .block_product a .img_holder
     width: 60px
     height: auto
 
