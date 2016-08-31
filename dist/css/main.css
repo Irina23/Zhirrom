@@ -5478,7 +5478,7 @@ img {
   margin-bottom: 30px;
   font-size: 18px; }
 
-.make_order_page form#questions .error textarea {
+.make_order_page form#questions .error textarea, .make_order_page form#questions .error input[type="text"] {
   border-color: red; }
 
 .make_order_page form#questions .row-group {
@@ -5620,6 +5620,7 @@ img {
         color: #575656;
         font-size: 18px; }
     .make_order_page .step_make_order .item .img-holder {
+      width: calc(50% - 70px);
       float: left;
       margin-right: 70px;
       margin-top: 75px; }
@@ -6381,7 +6382,14 @@ img {
   .block_make_order .text_holder {
     padding: 0; }
   .block_make_order .block_text iframe {
-    height: auto !important; } }
+    height: auto !important; }
+  .make_order_page .container h1, .make_order_page .container h3 {
+    font-size: 36px;
+    margin-bottom: 40px; }
+  .make_order_page .container .questions_tiltle {
+    font-size: 36px; }
+  .make_order_page .container .text_holder {
+    padding: 0; } }
 
 @media screen and (max-width: 930px) {
   .list_products .filter_products {
@@ -6464,7 +6472,25 @@ img {
   .cart .order_block .list_order .order .row.image .img-holder {
     margin: 10px auto 0; }
   .block_advantages .list_advantages .item {
-    width: 32%; } }
+    width: 32%; }
+  .make_order_page .step_make_order:after {
+    display: none; }
+  .make_order_page .step_make_order .item .img-holder {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 30px;
+    float: none; }
+  .make_order_page .step_make_order .item .block_text {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0; }
+    .make_order_page .step_make_order .item .block_text p {
+      margin-bottom: 0 !important; }
+    .make_order_page .step_make_order .item .block_text label:after {
+      display: none; } }
 
 @media screen and (max-width: 750px) {
   .block_private_office .img-holder {
@@ -6625,4 +6651,10 @@ img {
     left: 20px;
     padding: 20px;
     height: 320px;
-    margin-top: -160px; } }
+    margin-top: -160px; }
+  .make_order_page form#questions .row-group {
+    margin-bottom: 0; }
+    .make_order_page form#questions .row-group > div {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px; } }

@@ -6218,7 +6218,7 @@ img
       font-size: 18px
 
     .error
-      textarea
+      textarea, input[type="text"]
         border-color: red
     .row-group 
       margin-bottom: 20px    
@@ -6373,6 +6373,7 @@ img
 
 
       .img-holder
+        width: calc(50% - 70px)
         float: left 
         margin-right: 70px 
         margin-top: 75px
@@ -7375,6 +7376,16 @@ img
   .block_make_order .block_text iframe    
     height: auto!important    
 
+  .make_order_page .container 
+    h1, h3
+      font-size: 36px;
+      margin-bottom: 40px;  
+    .questions_tiltle
+      font-size: 36px
+
+    .text_holder
+      padding: 0
+
 @media screen and (max-width: 930px)
   .list_products
     .filter_products
@@ -7503,6 +7514,32 @@ img
 
   .block_advantages .list_advantages .item
     width: 32%
+
+  .make_order_page 
+    .step_make_order
+      &:after
+        display: none
+      .item 
+        .img-holder
+          width: 100%
+          margin-left: 0 
+          margin-right: 0
+          margin-top: 30px
+          float: none
+        .block_text 
+          float: none
+          display: block
+          width: 100%
+          margin-left: 0 
+          margin-right: 0
+          p 
+            margin-bottom: 0!important
+          label
+            &:after
+              display: none
+
+
+
 
 
 
@@ -7723,5 +7760,10 @@ img
     height: 320px
     margin-top: -160px
 
-
+  .make_order_page form#questions .row-group 
+    margin-bottom: 0
+    > div
+      width: 100%
+      margin-right: 0
+      margin-bottom: 20px  
 
