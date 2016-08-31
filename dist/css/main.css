@@ -47,6 +47,9 @@
   font-style: normal;
   font-weight: normal; }
 
+.hidden {
+  display: none; }
+
 body {
   font-family: "FuturaBookC", sans-serif;
   padding: 0;
