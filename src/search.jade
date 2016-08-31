@@ -4,7 +4,7 @@ html(lang="ru")
 
 
     body
-        .page_wrapper.search
+        .page_wrapper.search_page
             include ./header.jade
 
             .container
@@ -17,10 +17,104 @@ html(lang="ru")
                             li
                                 span Поиск
                     h1 Поиск
-                    gcse:search
+                    form#search(action="#" role="search")
+                        div.form-control
+                            input(type="text" name="search" placeholder="Поиск" minlength="2" data-validate="name")
+                        .btn.submit
+
+                    .products.cf
+                           
+
+                            .block_product
+                                a(href="product.html")
+                                    .img_holder
+                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
+                                    .block_text
+                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
+                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                        .block_price
+
+                                a.asking_price(href="registration.html") узнать цену
+
+                            .block_product
+                                a(href="product.html")
+                                    .img_holder
+                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
+                                    .block_text
+                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
+                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                        .block_price
+                                            .cart
+                                            price.price 550
+                                                span руб.
 
 
+                            .block_product
+                                a(href="product.html")
+                                    .img_holder
+                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
+                                    .block_text
+                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
+                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                        .block_price
+                                            .cart
+                                            price.price 550
+                                                span руб.
+                            .block_product
+                                a(href="product.html")
+                                    .img_holder
+                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
+                                    .block_text
+                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
+                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                        .block_price
+                                            .cart
+                                            price.price 550
+                                                span руб.
 
+                            .block_product
+                                a(href="product.html")
+                                    .img_holder
+                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
+                                    .block_text
+                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
+                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                        .block_price
+                                            .cart
+                                            price.price 550
+                                                span руб.
+
+
+                            .block_product
+                                a(href="product.html")
+                                    .img_holder
+                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
+                                    .block_text
+                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
+                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                        .block_price
+                                            .cart
+                                            price.price 550
+                                                span руб.
+                            .block_product
+                                a(href="product.html")
+                                    .img_holder
+                                        img(src="img/content/product.jpg" title="Винтаж Плюс L14", alt="Винтаж Плюс L14")
+                                    .block_text
+                                        .name(title="Винтаж Плюс L14") Винтаж Плюс L14
+                                        .description_product Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum
+                                        .block_price
+                                            .cart
+                                            price.price 550
+                                                span руб.
+            
+                            .pagination
+                                ul
+                                    li.prev.disabled
+                                        a(href="#") Предыдущая
+                                    li.next
+                                        a(href="#") Следующая
+                    
 
             #overlay
             include ./footer.jade
