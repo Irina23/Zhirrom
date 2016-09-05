@@ -3906,7 +3906,7 @@ img {
 .brand .list_brand li {
   margin-bottom: 15px;
   margin-right: 40px;
-  width: calc((100% - 80px)/3);
+  width: calc((100% - 81px)/3);
   float: left;
   height: 75px;
   text-align: center;
