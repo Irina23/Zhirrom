@@ -6009,7 +6009,9 @@ img {
     .private_office .container .tabs-menu li:after {
       display: none; }
   .block_advantages .list_advantages .item {
-    width: 49%; } }
+    width: 49%; }
+  .list_category .item-category h3 {
+    white-space: normal; } }
 
 @media screen and (max-width: 600px) {
   .brand .list_brand li {
