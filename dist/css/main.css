@@ -1279,11 +1279,11 @@ img {
 #login, #call_back {
   background-color: #fff;
   width: 340px;
-  height: 330px;
+  height: 350px;
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -165px;
+  margin-top: -175px;
   margin-left: -170px;
   display: none;
   opacity: 0;
@@ -1334,6 +1334,9 @@ img {
     font-family: "FuturaPT-Demi", sans-serif;
     font-weight: normal;
     color: #000; }
+  #login .form-holder p, #call_back .form-holder p {
+    margin-bottom: 5px;
+    color: red; }
   #login .form-holder input[type="text"],
   #login .form-holder input[type="email"],
   #login .form-holder input[type="password"], #call_back .form-holder input[type="text"],
