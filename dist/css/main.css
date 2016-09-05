@@ -5713,6 +5713,7 @@ img {
       position: relative; }
       .make_order_page .step_make_order .item .block_text label {
         background: #ff4504;
+        color: #fff;
         text-transform: uppercase;
         color: #fefefe;
         font-family: 'FuturaBookC', sans-serif;
@@ -6708,7 +6709,9 @@ img {
     .private_office .container .tabs-menu li:after {
       display: none; }
   .block_advantages .list_advantages .item {
-    width: 49%; } }
+    width: 49%; }
+  .list_category .item-category h3 {
+    white-space: normal; } }
 
 @media screen and (max-width: 600px) {
   .brand .list_brand li {
