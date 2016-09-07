@@ -4477,7 +4477,7 @@ img {
             line-height: 1em;
             font-size: 16px; }
 
-#certificate {
+[id^="certificate"] {
   -webkit-transform: translate3d(-50%, -50%, 0);
           transform: translate3d(-50%, -50%, 0);
   position: fixed;
