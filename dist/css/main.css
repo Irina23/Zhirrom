@@ -1719,7 +1719,8 @@ img {
           width: 75px; }
   .list_products .filter_products {
     float: left;
-    width: 160px; }
+    width: 160px;
+    margin-bottom: 70px; }
     .list_products .filter_products h2 {
       display: none; }
   .list_products .products {
