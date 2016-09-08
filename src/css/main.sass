@@ -2615,6 +2615,9 @@ img
       width: 400px
       display: inline-block
       vertical-align: top
+
+
+
       .report_available
         background: $main-color
         color: #fff
@@ -2701,7 +2704,7 @@ img
           line-height: 38px
           width: 100px
 
-      .submit
+      .submit, .asking_price
         display: inline-block
         vertical-align: middle
         width: 120px
@@ -2724,6 +2727,7 @@ img
           transition: all 0.35s
           background: $main-color
           color: #fff
+          text-decoration: none
 
         &.availability
           color: #c3c3c3
@@ -2993,9 +2997,11 @@ img
           transition: all 0.35s
           display: inline-block
           vertical-align: middle
+          text-decoration: none
           &:hover
             transition: all 0.35s
             background: #fe622b
+            text-decoration: none
           &.disabled
             background: #c7c7c7
             &:hover
@@ -3200,9 +3206,12 @@ img
             padding: 9px 8px 7px
             cursor: pointer
             transition: all 0.35s
+            float: right
+            margin-top: 15px
             &:hover
               transition: all 0.35s
               background: #fe622b
+              text-decoration: none
             &.disabled
               background: #c7c7c7
               &:hover
