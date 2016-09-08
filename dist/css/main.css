@@ -2468,7 +2468,7 @@ img {
         font-size: 16px;
         line-height: 38px;
         width: 100px; }
-    .productfull .product_info .block_info .submit {
+    .productfull .product_info .block_info .submit, .productfull .product_info .block_info .asking_price {
       display: inline-block;
       vertical-align: middle;
       width: 120px;
@@ -2487,16 +2487,17 @@ img {
       -webkit-transition: all 0.35s;
       transition: all 0.35s;
       margin-bottom: 30px; }
-      .productfull .product_info .block_info .submit:hover {
+      .productfull .product_info .block_info .submit:hover, .productfull .product_info .block_info .asking_price:hover {
         -webkit-transition: all 0.35s;
         transition: all 0.35s;
         background: #ff4504;
-        color: #fff; }
-      .productfull .product_info .block_info .submit.availability {
+        color: #fff;
+        text-decoration: none; }
+      .productfull .product_info .block_info .submit.availability, .productfull .product_info .block_info .asking_price.availability {
         color: #c3c3c3;
         border-color: #c3c3c3;
         cursor: default; }
-        .productfull .product_info .block_info .submit.availability:hover {
+        .productfull .product_info .block_info .submit.availability:hover, .productfull .product_info .block_info .asking_price.availability:hover {
           background: none; }
     .productfull .product_info .block_info .description_product {
       color: #000;
@@ -2927,11 +2928,14 @@ img {
         padding: 9px 8px 7px;
         cursor: pointer;
         -webkit-transition: all 0.35s;
-        transition: all 0.35s; }
+        transition: all 0.35s;
+        float: right;
+        margin-top: 15px; }
         .productfull .product_info .wholesale_order .table_order .row .submit:hover {
           -webkit-transition: all 0.35s;
           transition: all 0.35s;
-          background: #fe622b; }
+          background: #fe622b;
+          text-decoration: none; }
         .productfull .product_info .wholesale_order .table_order .row .submit.disabled {
           background: #fff;
           color: #ff4504;

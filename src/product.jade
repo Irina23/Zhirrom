@@ -53,12 +53,13 @@ html(lang="ru")
                                 .code_product Артикул: CHELSI 5017
                                 .name_product Повязка CHELSI
                                 .name_price Чтобы узнать розничную цену свяжитесь с нашим менеджером
-                                .block_price.width50
+                                a.asking_price(href="#") узнать цену
+                                //.block_price.width50
                                     preice 1199 руб.
 
-                                .quantity
+                                //.quantity
                                     input(type="number", min="0", value="1", name="quantity", data-validate="quantity" autofocus)
-                                .submit.btn.width50 В КОРЗИНУ
+                                //.submit.btn.width50 В КОРЗИНУ
 
                                 .block_characteristics
                                     div.width50
@@ -118,9 +119,13 @@ html(lang="ru")
                                             option(value="46-48") 46-48
                                             option(value="50-52") 50-52
                                     div.availability В наличии: 158
-                                    div.quantity
+                                    //div.quantity
                                         input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
-                                    .btn.submit Добавить
+                                    //.btn.submit Добавить
+                                    div
+                                    div
+                                    a.btn.submit(href="#") узнать цену
+
 
                                 form.row(action="#")
                                     div.article 17.458.19К
