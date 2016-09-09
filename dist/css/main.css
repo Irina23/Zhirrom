@@ -4052,19 +4052,6 @@ img {
   transition: all 0.35s; }
   .brand .list_brand li:nth-child(3n) {
     margin-right: 0; }
-  .brand .list_brand li:before {
-    background: url("../img/bg/bg_brand.jpg") no-repeat top center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 0;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s; }
   .brand .list_brand li:hover:before {
     opacity: 1;
     -webkit-transition: all 0.35s;
@@ -4081,15 +4068,14 @@ img {
     font-family: "FuturaPT-Medium", sans-serif;
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
-    position: relative;
     z-index: 3; }
     .brand .list_brand li a:hover {
       -webkit-transition: all 0.35s;
       transition: all 0.35s;
       text-decoration: none;
       color: #fff;
-      background: rgba(255, 69, 4, 0.7);
-      border-color: rgba(255, 69, 4, 0); }
+      background: #ff4504;
+      border-color: #ff4504; }
 
 .product_new {
   margin: 50px 0 10px; }
