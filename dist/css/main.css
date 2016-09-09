@@ -2283,7 +2283,7 @@ img {
         height: 140px;
         box-sizing: border-box;
         border: 5px solid #f3f3f3;
-        margin-right: 20px; }
+        margin-right: 16px; }
         .productfull .product_info .image [id^="bx-pager"] a:nth-child(3n) {
           margin-right: 0; }
         .productfull .product_info .image [id^="bx-pager"] a.active {
