@@ -4305,6 +4305,14 @@ img
             a
               display: block
           &.quantity
+            .update
+              display: inline-block
+              vertical-align: middle
+              width: 30px
+              height: 30px
+              background: url("../img/icons/icon-update.svg") no-repeat
+              background-size: 100%
+              margin-left: 10px
             .name
               //text-align: center
               &.error
@@ -7616,7 +7624,9 @@ img
 //@media screen and (max-width: 920px)
  .cart .order_block .list_order .order .row
     width: 115px
-
+@media screen and (max-width: 920px)
+  .cart .order_block .list_order .order .row.quantity .name input[type="number"]
+    width: 60%
 
 @media screen and (max-width: 900px)
   .list_products .filter > div
