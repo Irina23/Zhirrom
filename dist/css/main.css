@@ -1847,7 +1847,8 @@ img {
         text-align: center;
         overflow: hidden;
         height: 20px;
-        text-overflow: ellipsis; }
+        text-overflow: ellipsis;
+        white-space: nowrap; }
       .list_products .products .block_product a .description_product {
         color: #6a6a6a;
         font-size: 16px;
@@ -4695,7 +4696,8 @@ img {
   top: 50%;
   left: 50%;
   z-index: 31;
-  display: none; }
+  display: none;
+  height: 100vh; }
 
 .tab-content {
   clear: both; }
