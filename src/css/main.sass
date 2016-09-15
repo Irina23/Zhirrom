@@ -3503,7 +3503,7 @@ img
           color:  #373737
           font-family: "FuturaBookC", sans-serif
           overflow: hidden
-          height: 60px
+          //height: 60px
           text-overflow: ellipsis
           text-align: left
           font-size: 24px
@@ -4141,7 +4141,8 @@ img
           //width: 125px
           box-sizing: border-box
           padding: 0 10px
-          min-width: 18.5%
+          width: 15.5%
+          overflow: hidden
 
           .title
             color:  #b0afaf
@@ -4168,7 +4169,7 @@ img
 
           &.image
             //width: 60px
-            min-width: 7%
+            width: 7%
             .img-holder
               width: 60px
               height: 60px
@@ -4178,12 +4179,13 @@ img
             .update 
               display: inline-block
               vertical-align: middle
-              width: 30px 
-              height: 30px 
+              width: 26px
+              height: 26px
               background: url("../img/icons/icon-update.svg") no-repeat
               background-size: 100%
-              margin-left: 10px
+              //margin-left: 10px
               border: 0
+              cursor: pointer
             .name
               //text-align: center
               &.error
@@ -4198,7 +4200,7 @@ img
                 //padding: 0 10px
                 font-size: 16px
                 line-height: 30px
-                width: 100px
+                width: 80px
 
                 &.name
                   width: 350px
