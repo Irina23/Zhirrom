@@ -3778,7 +3778,8 @@ img {
     .cart .order_block .list_order .order .row {
       box-sizing: border-box;
       padding: 0 10px;
-      min-width: 18.5%; }
+      width: 15.5%;
+      overflow: hidden; }
       .cart .order_block .list_order .order .row .title {
         color: #b0afaf;
         font-size: 16px;
@@ -3800,7 +3801,7 @@ img {
             color: #ff4504;
             text-decoration: none; }
       .cart .order_block .list_order .order .row.image {
-        min-width: 7%; }
+        width: 7%; }
         .cart .order_block .list_order .order .row.image .img-holder {
           width: 60px;
           height: 60px; }
@@ -3809,11 +3810,10 @@ img {
       .cart .order_block .list_order .order .row.quantity .update {
         display: inline-block;
         vertical-align: middle;
-        width: 30px;
-        height: 30px;
+        width: 26px;
+        height: 26px;
         background: url("../img/icons/icon-update.svg") no-repeat;
         background-size: 100%;
-        margin-left: 10px;
         border: 0;
         cursor: pointer; }
       .cart .order_block .list_order .order .row.quantity .name.error input[type="number"] {
@@ -3826,7 +3826,7 @@ img {
         text-align: center;
         font-size: 16px;
         line-height: 30px;
-        width: 100px; }
+        width: 80px; }
         .cart .order_block .list_order .order .row.quantity .name input[type="number"].name {
           width: 350px;
           padding: 0 20px 0 40px; }
