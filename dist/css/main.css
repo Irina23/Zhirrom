@@ -2595,6 +2595,13 @@ img {
               transition: all 0.35s; }
           .productfull .product_info .block_info .block_characteristics .select_color li.active {
             display: none; }
+  .productfull .product_info .block_color {
+    margin-bottom: 15px; }
+    .productfull .product_info .block_color a {
+      width: 25px;
+      height: 25px;
+      display: inline-block;
+      margin: 0 10px 15px 0; }
   .productfull .product_info .wholesale_order {
     margin-top: 15px; }
     .productfull .product_info .wholesale_order.mobile {
