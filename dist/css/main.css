@@ -1792,9 +1792,9 @@ img {
         font-family: "FuturaBookC", sans-serif;
         text-align: center;
         overflow: hidden;
-        height: 20px;
-        text-overflow: ellipsis;
-        white-space: nowrap; }
+        height: 40px;
+        margin-bottom: 15px;
+        text-overflow: ellipsis; }
       .list_products .products .block_product a .description_product {
         color: #6a6a6a;
         font-size: 16px;
@@ -2160,7 +2160,7 @@ img {
       font-family: "FuturaBookC", sans-serif;
       text-align: center;
       overflow: hidden;
-      height: 20px;
+      height: 40px;
       text-overflow: ellipsis; }
     .productfull .related_products .block_product a .description_product {
       color: #6a6a6a;
@@ -3073,12 +3073,11 @@ img {
       -webkit-transition: all 0.35s;
       transition: all 0.35s; }
   .search_page .block_product a .name {
-    font-size: 20px;
     line-height: 1em;
     color: #373737;
     font-family: "FuturaBookC", sans-serif;
     overflow: hidden;
-    height: 20px;
+    height: 60px;
     text-overflow: ellipsis;
     text-align: left;
     font-size: 24px;
@@ -3697,7 +3696,8 @@ img {
         height: 30px;
         background: url("../img/icons/icon-update.svg") no-repeat;
         background-size: 100%;
-        margin-left: 10px; }
+        margin-left: 10px;
+        border: 0; }
       .cart .order_block .list_order .order .row.quantity .name.error input[type="number"] {
         border-color: red; }
       .cart .order_block .list_order .order .row.quantity .name input[type="number"] {
@@ -4061,7 +4061,8 @@ img {
         font-family: "FuturaBookC", sans-serif;
         text-align: center;
         overflow: hidden;
-        height: 20px;
+        height: 40px;
+        margin-bottom: 15px;
         text-overflow: ellipsis; }
       .product_new .products .block_product a .description_product {
         color: #6a6a6a;
