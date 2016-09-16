@@ -84,10 +84,26 @@
 						state.errors++;
 					}
 				},
+				validateConfirm: function ($el) {
+
+					var confirmData = $el.attr('data-confirm');
+					var elVal = $el.val();
+					var elConfirmVal = $el.closest('form').find('[name="'+ confirmData+'"]').val();
+
+					if ( elVal == elConfirmVal) {
+						plg.removeLabel( $el );
+					} else {
+						plg.addLabel( $el );
+						state.errors++;
+					}
+				},
 				submit: function (e) {
 					state.errors = 0;
 					$self.find('[data-validate]').each( function () {
 						plg.validate( $(this) );
+					} );
+					$self.find('[data-confirm]').each( function () {
+						plg.validateConfirm( $(this) );
 					} );
 					if (state.errors) {
 						e.preventDefault();
