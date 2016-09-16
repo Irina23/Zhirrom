@@ -892,22 +892,20 @@
                 <form id="private_office" action="#">
                   <div class="wholesale_customer">
                     <h3>Данные оптового клиента</h3>
-                    <div><span>Название компании*</span>
-                      <input type="text" name="company" data-validate="name">
+                    <div><span>Название компании</span>
+                      <input type="text" name="company" data-validate="empty">
                     </div>
                     <div><span>ИНН*</span>
                       <input type="text" name="inn" data-validate="number">
                     </div>
-                    <!--div
-                    span КПП*
-                    input(type="text" name="kpp" data-validate="number")
-                    
-                    -->
+                    <div><span>КПП</span>
+                      <input type="text" name="kpp" data-validate="number-default">
+                    </div>
                     <div><span>Телефон организации</span>
                       <input type="text" name="phone" data-validate="phone-default">
                     </div>
-                    <div><span>Должность*</span>
-                      <input type="text" name="position" data-validate="name">
+                    <div><span>Должность</span>
+                      <input type="text" name="position" data-validate="empty">
                     </div>
                   </div>
                   <div class="contact_details">
@@ -930,31 +928,23 @@
                     <div class="short margin20"><span>Город / Населенный пункт*</span>
                       <input type="text" name="city" data-validate="name">
                     </div>
-                    <div class="short"><span>Индекс*</span>
+                    <div class="short"><span>Индекс</span>
                       <input type="text" name="index" data-validate="index">
                     </div>
-                    <div><span>Улица*</span>
-                      <input type="text" name="street" data-validate="name">
+                    <div><span>Улица</span>
+                      <input type="text" name="street" data-validate="empty">
                     </div>
-                    <div class="short margin20"><span>Дом / Корпус*</span>
-                      <input type="text" name="housing" data-validate="number">
+                    <div class="short margin20"><span>Дом / Корпус</span>
+                      <input type="text" name="housing" data-validate="number-default">
                     </div>
-                    <div class="short"><span>Квартира / Офис*</span>
-                      <input type="text" name="apartment" data-validate="number">
+                    <div class="short"><span>Квартира / Офис</span>
+                      <input type="text" name="apartment" data-validate="number-default">
                     </div>
                     <div class="short margin20"><span>Вид перевозки</span>
-                      <select name="delivery" data-validate="select">
-                        <option value="auto">Автомобильные перевозки</option>
-                        <option value="delivery1">Вид перевозки 1</option>
-                        <option value="delivery2">Вид перевозки 2</option>
-                      </select>
+                      <input type="text" name="delivery" data-validate="empty">
                     </div>
                     <div class="short"><span>Транспортная компания</span>
-                      <select name="delivery_compamy" data-validate="select">
-                        <option value="UPS">UPS Delivery RUS</option>
-                        <option value="delivery_compamy1">Транспортная компания 1</option>
-                        <option value="delivery_compamy2">Транспортная компания 2</option>
-                      </select>
+                      <input type="text" name="delivery_compamy" data-validate="empty">
                     </div>
                   </div>
                   <div class="description">

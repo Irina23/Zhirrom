@@ -16,7 +16,7 @@ html(lang="ru")
                         .desc Для регистрации заполните, пожалуйста, слудующие поля:
                         .block_registration
                             .row
-                                div
+                                //div
                                     span Название компании*
                                     input(type="text" name="company" data-validate="name")
                                 div
@@ -25,26 +25,22 @@ html(lang="ru")
                                 div
                                     span Фамилия*
                                     input(type="text" name="surname" data-validate="name")
-                                div
+                                //div
                                     span ИНН*
                                     input(type="text" name="inn" data-validate="number")
                                 div
                                     span Контактный телефон*
                                     input(type="text" name="phone" data-validate="phone")
 
-
+                                div
+                                    span E-mail
+                                    input(type="text" name="email" data-validate="email")
                             .row
-                                div.short.margin20
-                                    span Дата рождения
-                                    input(type="text" name="data" data-validate="data")
-                                div.short.data_desc
-                                    span В формате ДД-ММ-ГГГГ
-                                div.short.margin20
+
+                                div
                                     span Город / Населенный пункт*
                                     input(type="text" name="city" data-validate="name")
-                                div.short
-                                    span Индекс*
-                                    input(type="text" name="index" data-validate="index")
+
                                 div
                                     span Пароль*
                                     input(type="password" name="password" data-validate="password")

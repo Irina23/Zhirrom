@@ -47,10 +47,24 @@
 							return /^[0-9a-zA-Z._-]+@[0-9a-zA-Z_-]+\.[a-zA-Z._-]+/.test(data);
 						case 'number':
 							return /^[0-9]/.test(data);
+						case 'number-default':
+							if (data === null || data === "null" || data === "false" || data === "0" || data === "undefined" ||data === "" ){
+								return true;
+							} else{
+								return /^[0-9]/.test(data);
+							}
 						case 'index':
-							return /^[0-9]{6}/.test(data);
+							if (data === null || data === "null" || data === "false" || data === "0" || data === "undefined" ||data === "" ){
+								return true;
+							} else{
+								return /^[0-9]{6}/.test(data);
+							}
 						case 'empty':
-							return /^[а-яіїєґёА-ЯІЇЄҐЁa-zA-Z0-9]+/.test(data);
+							if (data === null || data === "null" || data === "false" || data === "0" || data === "undefined" ||data === "" ){
+								return true;
+							} else {
+								return /^[а-яіїєґёА-ЯІЇЄҐЁa-zA-Z0-9]+/.test(data);
+							}
 						case 'password':
 							return /^[a-zA-Z0-9]{6}/.test(data);
 						case 'quantity':
@@ -84,10 +98,26 @@
 						state.errors++;
 					}
 				},
+				validateConfirm: function ($el) {
+
+					var confirmData = $el.attr('data-confirm');
+					var elVal = $el.val();
+					var elConfirmVal = $el.closest('form').find('[name="'+ confirmData+'"]').val();
+
+					if ( elVal == elConfirmVal) {
+						plg.removeLabel( $el );
+					} else {
+						plg.addLabel( $el );
+						state.errors++;
+					}
+				},
 				submit: function (e) {
 					state.errors = 0;
 					$self.find('[data-validate]').each( function () {
 						plg.validate( $(this) );
+					} );
+					$self.find('[data-confirm]').each( function () {
+						plg.validateConfirm( $(this) );
 					} );
 					if (state.errors) {
 						e.preventDefault();

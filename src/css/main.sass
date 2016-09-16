@@ -2986,6 +2986,7 @@ img
           margin-bottom: 30px
         .button
           //text-align: center
+          margin: 10px 0
         .quantity
           display: inline-block
           vertical-align: middle
@@ -3101,7 +3102,7 @@ img
         margin-bottom: 25px
       .table_order
         .row
-          padding: 0 15px
+          padding: 10px 15px
           border-bottom: 1px solid #dcdbdb
           color: #343434
           &:first-child
@@ -3114,93 +3115,29 @@ img
           >div
             display: inline-block
             vertical-align: middle
+            width: 19%
+            span
+              display: block
+              margin-bottom: 10px
+              &:last-child
+                margin-bottom: 0
           .article
-            width: 14%
             font-size: 18px
           .color
-            width: 25%
+            //width: 25%
             font-size: 18px
             .img-holder
               height: 60px
               display: inline-block
               vertical-align: middle
-              margin-right: 15%
+              margin-bottom: 10px
               img
                 height: 100%
                 max-width: inherit
-            + .availability
-              width: 33%
-          .size
-            width: 10%
-            &.disabled
-              .selectbox
-                .select
-                  color: #d2d2d2
-                  &:after
-                    border-top: 9px solid #d2d2d2
-                .dropdown
-                  display: none!important
-            .selectbox
-              display: inline-block
-              vertical-align: middle
-              .select
-                font-size: 16px
-                color: #343434
-                position: relative
-                border: 1px solid #d2d2d2
-                line-height: 30px
-                padding: 0 25px 0 10px
-                cursor: pointer
-                &:after
-                  position: absolute
-                  top: 50%
-                  right: 5px
-                  margin-top: -5px
-                  width: 0
-                  height: 0
-                  border-left: 6px solid transparent
-                  border-right: 6px solid transparent
-                  border-top: 9px solid $main-color
-
-              .dropdown
-                display: none
-                position: absolute
-                top: 32px!important
-                left: 0
-                width: 100%
-                z-index: 2
-                background: #fff
 
 
-                li
-                  font-size: 16px
-                  //font-family: "FuturaBookC", sans-serif
-                  line-height: 1em
-                  cursor: pointer
-                  color: #000
-                  padding: 6px 10px
-                  transition: all 0.35s
-                  border: 1px solid #d2d2d2
-                  border-top: 0
-                  box-sizing: border-box
-
-                  &:hover
-                    background: $main-color
-                    transition: all 0.35s
-                    color: #fff
-                    border-color: $main-color
-
-                  &.sel
-                    display: none
-          .availability
-            width: 23%
-            font-size: 18px
-            &.little
-              color: $main-color
-            &.disabled
-              color: #b2b2b2
           .quantity
-            width: 16%
+
             &.disabled
               input[type="number"]
                 border-color: #bab9b9!important
@@ -3210,7 +3147,7 @@ img
 
 
             input[type="number"]
-              width: 80px
+              width: 100px
               //height: 30px
               border: 1px solid #d2d2d2
               box-sizing: border-box
@@ -3218,6 +3155,10 @@ img
               padding-left: 10px
               font-size: 16px
               line-height: 28px
+              margin-bottom: 7px
+              display: block
+              &:last-child
+                margin-bottom: 0
           .submit
             background-color: $main-color
             border-radius: 5px
@@ -3229,16 +3170,13 @@ img
             padding: 9px 8px 7px
             cursor: pointer
             transition: all 0.35s
-            float: right
-            margin-top: 15px
+            //float: right
+            //margin-top: 15px
             &:hover
               transition: all 0.35s
               background: #fe622b
               text-decoration: none
-            &.disabled
-              background: #c7c7c7
-              &:hover
-                background: #c7c7c7
+
 
 
 
