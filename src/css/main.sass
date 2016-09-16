@@ -4108,6 +4108,7 @@ img
       font-family: "FuturaPT-Light", sans-serif
       text-align: center
     .list_order
+      margin-bottom: 60px
       .item
         margin-bottom: 70px
 
@@ -4216,27 +4217,27 @@ img
                   width: 130px
 
 
-.cart
-  .list_order
-    margin-bottom: 60px
-    .total_price
-      float: right
-      margin-top: 30px
-      .total_title
-        text-transform: uppercase
-        color:  #828181
-        font-size: 18px
-        line-height: 22px
-        display: inline-block
-        vertical-align: bottom
-        margin-right: 5px
-      .price
-        display: inline-block
-        vertical-align: bottom
-        color: #000
-        font-size: 30px
-        line-height: 1em
-        font-family: "FuturaPT-Medium", sans-serif
+      .total_price
+        float: right
+        margin-top: 30px
+
+        .total_title, .total_items
+          text-transform: uppercase
+          color:  #828181
+          font-size: 18px
+          line-height: 30px
+          display: inline-block
+          //vertical-align: bottom
+          margin-right: 5px
+        .total_items
+          margin-right: 30px
+        .price
+          display: inline-block
+          //vertical-align: bottom
+          color: #000
+          font-size: 30px
+          line-height: 1em
+          font-family: "FuturaPT-Medium", sans-serif
 
 
 
@@ -6819,9 +6820,10 @@ img
     display: block
 
   .list_product .container .wrap .bread
-    width: 100% 
+    width: 100%
 
-
+  .cart .order_block .list_order .total_price .price
+    font-size: 20px
 
 
 @media screen and (max-width: 930px)
