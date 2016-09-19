@@ -2711,7 +2711,43 @@ img {
       .productfull .product_info .block_color a.active {
         border-color: #ff4504; }
   .productfull .product_info .wholesale_order {
-    margin-top: 15px; }
+    margin-top: 15px;
+    margin-bottom: 40px; }
+    .productfull .product_info .wholesale_order + .total_price {
+      float: right;
+      width: 225px; }
+      .productfull .product_info .wholesale_order + .total_price .name {
+        font-size: 24px;
+        line-height: 1em;
+        margin-right: 20px; }
+      .productfull .product_info .wholesale_order + .total_price .price {
+        font-size: 24px;
+        line-height: 1em; }
+      .productfull .product_info .wholesale_order + .total_price .submit {
+        margin-top: 25px;
+        display: block;
+        line-height: 45px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ff4504;
+        box-sizing: border-box;
+        border: 2px solid #ff4504;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        font-family: "FuturaPT-Demi", sans-serif;
+        font-weight: normal;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s; }
+        .productfull .product_info .wholesale_order + .total_price .submit:hover {
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s;
+          background: #ff4504;
+          color: #fff;
+          text-decoration: none; }
+      .productfull .product_info .wholesale_order + .total_price > div {
+        display: inline-block;
+        vertical-align: middle; }
     .productfull .product_info .wholesale_order.mobile {
       display: none; }
       .productfull .product_info .wholesale_order.mobile .row {
@@ -2828,7 +2864,7 @@ img {
       font-variant: small-caps;
       margin-bottom: 25px; }
     .productfull .product_info .wholesale_order .table_order .row {
-      padding: 0 15px;
+      padding: 10px 15px;
       border-bottom: 1px solid #dcdbdb;
       color: #343434; }
       .productfull .product_info .wholesale_order .table_order .row:first-child {
@@ -2839,100 +2875,49 @@ img {
           font-size: 18px !important; }
       .productfull .product_info .wholesale_order .table_order .row > div {
         display: inline-block;
-        vertical-align: middle; }
+        vertical-align: middle;
+        width: 19%; }
+        .productfull .product_info .wholesale_order .table_order .row > div span {
+          display: block;
+          margin-bottom: 10px; }
+          .productfull .product_info .wholesale_order .table_order .row > div span:last-child {
+            margin-bottom: 0; }
+      .productfull .product_info .wholesale_order .table_order .row .row-item {
+        margin-bottom: 10px; }
+        .productfull .product_info .wholesale_order .table_order .row .row-item span {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 60px; }
+          .productfull .product_info .wholesale_order .table_order .row .row-item span:last-child {
+            margin-right: 0; }
       .productfull .product_info .wholesale_order .table_order .row .article {
-        width: 14%;
         font-size: 18px; }
       .productfull .product_info .wholesale_order .table_order .row .color {
-        width: 25%;
         font-size: 18px; }
         .productfull .product_info .wholesale_order .table_order .row .color .img-holder {
           height: 60px;
           display: inline-block;
           vertical-align: middle;
-          margin-right: 15%; }
+          margin-bottom: 10px; }
           .productfull .product_info .wholesale_order .table_order .row .color .img-holder img {
             height: 100%;
             max-width: inherit; }
-        .productfull .product_info .wholesale_order .table_order .row .color + .availability {
-          width: 33%; }
-      .productfull .product_info .wholesale_order .table_order .row .size {
-        width: 10%; }
-        .productfull .product_info .wholesale_order .table_order .row .size.disabled .selectbox .select {
-          color: #d2d2d2; }
-          .productfull .product_info .wholesale_order .table_order .row .size.disabled .selectbox .select:after {
-            border-top: 9px solid #d2d2d2; }
-        .productfull .product_info .wholesale_order .table_order .row .size.disabled .selectbox .dropdown {
-          display: none !important; }
-        .productfull .product_info .wholesale_order .table_order .row .size .selectbox {
-          display: inline-block;
-          vertical-align: middle; }
-          .productfull .product_info .wholesale_order .table_order .row .size .selectbox .select {
-            font-size: 16px;
-            color: #343434;
-            position: relative;
-            border: 1px solid #d2d2d2;
-            line-height: 30px;
-            padding: 0 25px 0 10px;
-            cursor: pointer; }
-            .productfull .product_info .wholesale_order .table_order .row .size .selectbox .select:after {
-              position: absolute;
-              top: 50%;
-              right: 5px;
-              margin-top: -5px;
-              width: 0;
-              height: 0;
-              border-left: 6px solid transparent;
-              border-right: 6px solid transparent;
-              border-top: 9px solid #ff4504; }
-          .productfull .product_info .wholesale_order .table_order .row .size .selectbox .dropdown {
-            display: none;
-            position: absolute;
-            top: 32px !important;
-            left: 0;
-            width: 100%;
-            z-index: 2;
-            background: #fff; }
-            .productfull .product_info .wholesale_order .table_order .row .size .selectbox .dropdown li {
-              font-size: 16px;
-              line-height: 1em;
-              cursor: pointer;
-              color: #000;
-              padding: 6px 10px;
-              -webkit-transition: all 0.35s;
-              transition: all 0.35s;
-              border: 1px solid #d2d2d2;
-              border-top: 0;
-              box-sizing: border-box; }
-              .productfull .product_info .wholesale_order .table_order .row .size .selectbox .dropdown li:hover {
-                background: #ff4504;
-                -webkit-transition: all 0.35s;
-                transition: all 0.35s;
-                color: #fff;
-                border-color: #ff4504; }
-              .productfull .product_info .wholesale_order .table_order .row .size .selectbox .dropdown li.sel {
-                display: none; }
-      .productfull .product_info .wholesale_order .table_order .row .availability {
-        width: 23%;
-        font-size: 18px; }
-        .productfull .product_info .wholesale_order .table_order .row .availability.little {
-          color: #ff4504; }
-        .productfull .product_info .wholesale_order .table_order .row .availability.disabled {
-          color: #b2b2b2; }
-      .productfull .product_info .wholesale_order .table_order .row .quantity {
-        width: 16%; }
-        .productfull .product_info .wholesale_order .table_order .row .quantity.disabled input[type="number"] {
-          border-color: #bab9b9 !important; }
-        .productfull .product_info .wholesale_order .table_order .row .quantity.error input[type="number"] {
-          border-color: red; }
-        .productfull .product_info .wholesale_order .table_order .row .quantity input[type="number"] {
-          width: 80px;
-          border: 1px solid #d2d2d2;
-          box-sizing: border-box;
-          color: #343434;
-          padding-left: 10px;
-          font-size: 16px;
-          line-height: 28px; }
+      .productfull .product_info .wholesale_order .table_order .row .quantity.disabled input[type="number"] {
+        border-color: #bab9b9 !important; }
+      .productfull .product_info .wholesale_order .table_order .row .quantity.error input[type="number"] {
+        border-color: red; }
+      .productfull .product_info .wholesale_order .table_order .row .quantity input[type="number"] {
+        width: 100px;
+        border: 1px solid #d2d2d2;
+        box-sizing: border-box;
+        color: #343434;
+        padding-left: 10px;
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 7px;
+        display: block; }
+        .productfull .product_info .wholesale_order .table_order .row .quantity input[type="number"]:last-child {
+          margin-bottom: 0; }
       .productfull .product_info .wholesale_order .table_order .row .submit {
         background-color: #ff4504;
         border-radius: 5px;
@@ -2944,27 +2929,12 @@ img {
         padding: 9px 8px 7px;
         cursor: pointer;
         -webkit-transition: all 0.35s;
-        transition: all 0.35s;
-        float: right;
-        margin-top: 15px; }
+        transition: all 0.35s; }
         .productfull .product_info .wholesale_order .table_order .row .submit:hover {
           -webkit-transition: all 0.35s;
           transition: all 0.35s;
           background: #fe622b;
           text-decoration: none; }
-        .productfull .product_info .wholesale_order .table_order .row .submit.disabled {
-          background: #fff;
-          color: #ff4504;
-          float: right;
-          margin-top: 15px;
-          border: 2px solid #ff4504;
-          -webkit-transition: all 0.35s;
-          transition: all 0.35s; }
-          .productfull .product_info .wholesale_order .table_order .row .submit.disabled:hover {
-            background: #ff4504;
-            color: #fff;
-            -webkit-transition: all 0.35s;
-            transition: all 0.35s; }
 
 .feedback .container {
   position: relative;
@@ -4863,7 +4833,8 @@ img {
     vertical-align: top;
     margin-bottom: 30px; }
     .private_office .container #private_office > div.description {
-      vertical-align: bottom; }
+      vertical-align: bottom;
+      margin-bottom: 40px; }
     .private_office .container #private_office > div:nth-child(2n+1) {
       margin-right: 16px; }
     .private_office .container #private_office > div > div.error input[type="text"] {

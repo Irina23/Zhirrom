@@ -492,21 +492,21 @@ html(lang="ru")
                                     .wholesale_customer
                                         h3 Данные оптового клиента
                                         div
-                                            span Название компании*
-                                            input(type="text" name="company" data-validate="name")
+                                            span Название компании
+                                            input(type="text" name="company" data-validate="empty")
                                         div
                                             span ИНН*
                                             input(type="text" name="inn" data-validate="number")
-                                        //div
-                                            span КПП*
-                                            input(type="text" name="kpp" data-validate="number")
+                                        div
+                                            span КПП
+                                            input(type="text" name="kpp" data-validate="number-default")
 
                                         div
                                             span Телефон организации
                                             input(type="text" name="phone" data-validate="phone-default")
                                         div
-                                           span Должность*
-                                           input(type="text" name="position" data-validate="name")
+                                           span Должность
+                                           input(type="text" name="position" data-validate="empty")
 
                                     .contact_details
                                         h3 Ваши контактные данные
@@ -531,29 +531,31 @@ html(lang="ru")
                                             span Город / Населенный пункт*
                                             input(type="text" name="city" data-validate="name")
                                         div.short
-                                            span Индекс*
+                                            span Индекс
                                             input(type="text" name="index" data-validate="index")
                                         div
-                                            span Улица*
-                                            input(type="text" name="street" data-validate="name")
+                                            span Улица
+                                            input(type="text" name="street" data-validate="empty")
 
                                         div.short.margin20
-                                            span Дом / Корпус*
-                                            input(type="text" name="housing" data-validate="number")
+                                            span Дом / Корпус
+                                            input(type="text" name="housing" data-validate="number-default")
 
                                         div.short
-                                            span Квартира / Офис*
-                                            input(type="text" name="apartment" data-validate="number")
+                                            span Квартира / Офис
+                                            input(type="text" name="apartment" data-validate="number-default")
                                         div.short.margin20
                                             span Вид перевозки
-                                            select(name="delivery" data-validate="select")
+                                            input(type="text" name="delivery" data-validate="empty")
+                                            //select(name="delivery" data-validate="select")
                                                 option(value="auto" ) Автомобильные перевозки
                                                 option(value="delivery1") Вид перевозки 1
                                                 option(value="delivery2") Вид перевозки 2
 
                                         div.short
                                             span Транспортная компания
-                                            select(name="delivery_compamy" data-validate="select")
+                                            input(type="text" name="delivery_compamy" data-validate="empty")
+                                            //select(name="delivery_compamy" data-validate="select")
                                                 option(value="UPS") UPS Delivery RUS
                                                 option(value="delivery_compamy1") Транспортная компания 1
                                                 option(value="delivery_compamy2") Транспортная компания 2

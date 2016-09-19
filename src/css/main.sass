@@ -3100,6 +3100,42 @@ img
           border-color: $main-color
     .wholesale_order
       margin-top: 15px
+      margin-bottom: 40px
+      + .total_price
+        float: right
+        width: 225px
+        .name
+          font-size: 24px
+          line-height: 1em
+          margin-right: 20px
+        .price
+          font-size: 24px
+          line-height: 1em
+        .submit
+          margin-top: 25px
+          display: block
+          line-height: 45px
+          text-align: center
+          text-transform: uppercase
+          color: #ff4504
+          box-sizing: border-box
+          border: 2px solid #ff4504
+          border-radius: 4px
+          cursor: pointer
+          font-size: 16px
+          font-family: "FuturaPT-Demi", sans-serif
+          font-weight: normal
+          transition: all 0.35s
+
+          &:hover
+            transition: all 0.35s
+            background: #ff4504
+            color: #fff
+            text-decoration: none
+
+        >div
+          display: inline-block
+          vertical-align: middle
       &.mobile
         display: none
         .row
@@ -3231,7 +3267,7 @@ img
         margin-bottom: 25px
       .table_order
         .row
-          padding: 0 15px
+          padding: 10px 15px
           border-bottom: 1px solid #dcdbdb
           color: #343434
           &:first-child
@@ -3244,23 +3280,38 @@ img
           >div
             display: inline-block
             vertical-align: middle
+            width: 19%
+            span
+              display: block
+              margin-bottom: 10px
+              &:last-child
+                margin-bottom: 0
+          .row-item
+            margin-bottom: 10px
+            span
+              display: inline-block
+              vertical-align: middle
+              margin-right: 60px
+              &:last-child
+                margin-right: 0
           .article
-            width: 14%
+            //width: 14%
             font-size: 18px
           .color
-            width: 25%
+            //width: 25%
             font-size: 18px
             .img-holder
               height: 60px
               display: inline-block
               vertical-align: middle
-              margin-right: 15%
+              //margin-right: 15%
+              margin-bottom: 10px
               img
                 height: 100%
                 max-width: inherit
-            + .availability
+            //+ .availability
               width: 33%
-          .size
+          //.size
             width: 10%
             &.disabled
               .selectbox
@@ -3322,7 +3373,7 @@ img
 
                   &.sel
                     display: none
-          .availability
+          //.availability
             width: 23%
             font-size: 18px
             &.little
@@ -3330,7 +3381,7 @@ img
             &.disabled
               color: #b2b2b2
           .quantity
-            width: 16%
+            //width: 16%
             &.disabled
               input[type="number"]
                 border-color: #bab9b9!important
@@ -3340,7 +3391,7 @@ img
 
 
             input[type="number"]
-              width: 80px
+              width: 100px
               //height: 30px
               border: 1px solid #d2d2d2
               box-sizing: border-box
@@ -3348,6 +3399,10 @@ img
               padding-left: 10px
               font-size: 16px
               line-height: 28px
+              margin-bottom: 7px
+              display: block
+              &:last-child
+                  margin-bottom: 0
           .submit
             background-color: $main-color
             border-radius: 5px
@@ -3360,8 +3415,8 @@ img
             cursor: pointer
             transition: all 0.35s
 
-            float: right
-            margin-top: 15px
+            //float: right
+            //margin-top: 15px
 
 
 
@@ -3369,7 +3424,7 @@ img
               transition: all 0.35s
               background: #fe622b
               text-decoration: none
-            &.disabled
+            //&.disabled
               background: #fff
               color: $main-color
               float: right
@@ -5541,6 +5596,7 @@ img
         margin-bottom: 30px
         &.description
           vertical-align: bottom
+          margin-bottom: 40px
         &:nth-child(2n+1)
           margin-right: 16px
         > div

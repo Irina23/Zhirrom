@@ -117,129 +117,133 @@ html(lang="ru")
 
 
 
-                        .wholesale_order
-                            h3 Оптовый заказ
-                            div.table_order
-                                .row
-                                    div.article Артикул
-                                    div.color Цвет
-                                    div.size Размер
-                                    div.availability Наличие на складе/шт.
-                                    div.quantity Количество
-                                    div Корзина
-                                form.row(action="#")
-                                    div.article 17.458.18К
-                                    div.color
+                        form.cf
+                            .wholesale_order
+                                h3 Оптовый заказ
+                                .form
+                                    div.table_order
+                                        .row
+                                            div.article Артикул
+                                            div.color Цвет
+                                            div.item-price Цена за единицу
+                                            div.quantity Количество
+                                            div Сумма по товару
+                                        .row
+                                            div.article 17.458.18К
+                                            div.color
+                                                .img-holder
+                                                    img(src="img/content/product1.jpg" , alt="Повязка Chelsi")
+                                                span Серый
+                                            div.item-price 555
+                                            div.quantity
+                                                input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
+                                            div
+                                                a.btn.submit(href="#") узнать цену
+
+                                        .row
+                                            div.article 17.458.18К
+                                            div.color
+                                                .img-holder
+                                                    img(src="img/content/product1.jpg" , alt="Повязка Chelsi")
+                                                span Серый
+                                            div.item-price
+                                                .row-item
+                                                    span 10
+                                                    span 555
+                                            div.quantity
+                                                input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
+                                            div
+                                                span 10 000
+                                        .row
+                                            div.article 17.458.18К
+                                            div.color
+                                                .img-holder
+                                                    img(src="img/content/product1.jpg" , alt="Повязка Chelsi")
+                                                span Серый
+                                            div.item-price
+                                                .row-item
+                                                    span 10
+                                                    span 555
+                                                .row-item
+                                                    span 10
+                                                    span 555
+                                                .row-item
+                                                    span 10
+                                                    span 555
+                                            div.quantity
+                                                input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
+                                                input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
+                                                input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
+                                            div
+                                                span 10 000
+                                                span 10 000
+                                                span 10 000
+
+
+                            .wholesale_order.mobile
+                                h3 Оптовый заказ
+
+                                .form
+                                    .row
                                         .img-holder
-                                            img(src="img/content/product1.jpg" , alt="Повязка Chelsi")
-                                        span Серый
-                                    div.size
-                                        select(name="size" data-validate="select")
-                                            option(value="42-44" ) 42-44
-                                            option(value="46-48") 46-48
-                                            option(value="50-52") 50-52
-                                    div.availability В наличии: 158
-                                    //div.quantity
-                                        input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
-                                    //.btn.submit Добавить
-                                    div
-                                    div
-                                    a.btn.submit(href="#") узнать цену
+                                            img(src="img/content/product1.jpg", alt="Повязка Chelsi" )
 
+                                        div
+                                            .article Артикул: 17.458.18К
+                                            .color Цвет: Серый
 
-                                form.row(action="#")
-                                    div.article 17.458.19К
-                                    div.color
+                                            div Размер: 10
+                                            div Цена за единицу: 555
+
+                                            .button
+                                                div.quantity
+                                                    input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
+
+                                            a(href="#" class="btn submit") узнать цену
+                                    .row
                                         .img-holder
-                                            img(src="img/content/product2.jpg", alt="Повязка Chelsi" )
-                                        span Светло-серый
-                                    div.size
-                                        select(name="size" data-validate="select")
-                                            option(value="42-44" ) 42-44
-                                            option(value="46-48") 46-48
-                                            option(value="50-52") 50-52
-                                    div.availability.little Мало: 36
-                                    div.quantity
-                                        input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
-                                    .btn.submit Добавить
-                                form.row(action="#")
-                                    div.article 17.458.20К
-                                    div.color
+                                            img(src="img/content/product1.jpg", alt="Повязка Chelsi" )
+
+                                        div
+                                            .article Артикул: 17.458.18К
+                                            .color Цвет: Серый
+
+                                            div Размер: 10
+                                            div Цена за единицу: 555
+
+                                            .button
+                                                div.quantity
+                                                    input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
+
+                                    .row
                                         .img-holder
-                                            img(src="img/content/product3.jpg", alt="Повязка Chelsi" )
-                                        span Синий
-                                    div.size.disabled
-                                        select(name="size" data-validate="select" disabled)
-                                            option(value="42-44" ) 42-44
-                                            option(value="46-48") 46-48
-                                            option(value="50-52") 50-52
+                                            img(src="img/content/product1.jpg", alt="Повязка Chelsi" )
 
-                                    div.availability.disabled Нет в наличии: 0
-                                    //div.quantity.disabled
-                                        //input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus disabled)
-                                    .btn.submit.disabled.open_modal(href="#report_available") Сообщить о наличии
+                                        div
+                                            .article Артикул: 17.458.18К
+                                            .color Цвет: Серый
 
-                        .wholesale_order.mobile
-                            h3 Оптовый заказ
+                                            div Размер: 10
+                                            div Цена за единицу: 555
 
-                            form.row(action="#")
-                                .img-holder
-                                    img(src="img/content/product1.jpg", alt="Повязка Chelsi" )
+                                            .button
+                                                div.quantity
+                                                    input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
 
-                                div
-                                    .article Артикул: 17.458.18К
-                                    .color Цвет: Серый
-                                    .availability В наличии: 158
-                                    div Размер:
-                                    div.size
-                                        select(name="size" data-validate="select")
-                                            option(value="42-44" ) 42-44
-                                            option(value="46-48") 46-48
-                                            option(value="50-52") 50-52
-                                    .button
-                                        div.quantity
-                                            input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
-                                        .btn.submit Добавить
-                            form.row(action="#")
-                                .img-holder
-                                    img(src="img/content/product2.jpg", alt="Повязка Chelsi" )
+                                            .color Цвет: Серый
 
-                                div
-                                    .article Артикул: 17.458.19К
-                                    .color Цвет: Светло-серый
-                                    .availability Мало: 36
-                                    div Размер:
-                                    div.size
-                                        select(name="size" data-validate="select")
-                                            option(value="42-44" ) 42-44
-                                            option(value="46-48") 46-48
-                                            option(value="50-52") 50-52
-                                    .button
-                                        div.quantity
-                                            input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
-                                        .btn.submit Добавить
+                                            div Размер: 10
+                                            div Цена за единицу: 555
+
+                                            .button
+                                                div.quantity
+                                                    input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
 
 
-                            form.row(action="#")
-                                .img-holder
-                                    img(src="img/content/product3.jpg", alt="Повязка Chelsi" )
-
-                                div
-                                    .article Артикул: 17.458.20К
-                                    .color Цвет: Синий
-                                    .availability Нет в наличии: 0
-                                    div Размер:
-                                    div.size.disabled
-                                        select(name="size" data-validate="select")
-                                            option(value="42-44" ) 42-44
-                                            option(value="46-48") 46-48
-                                            option(value="50-52") 50-52
-                                    .button
-                                        //div.quantity.disabled
-                                            input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus disabled)
-                                        .btn.submit.disabled.open_modal(href="#report_available") Сообщить о наличии
-
-
+                            .total_price.cf
+                                .name Итого:
+                                .price 30 000 руб.
+                                .submit Довабивить в корзину
 
 
 
