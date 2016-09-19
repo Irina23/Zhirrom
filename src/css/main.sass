@@ -2980,6 +2980,45 @@ img
           border-color: $main-color
     .wholesale_order
       margin-top: 15px
+      margin-bottom: 40px
+      + .total_price
+          float: right
+          width: 225px
+          .name
+            font-size: 24px
+            line-height: 1em
+            margin-right: 20px
+          .price
+            font-size: 24px
+            line-height: 1em
+          .submit
+            margin-top: 25px
+            display: block
+            line-height: 45px
+            text-align: center
+            text-transform: uppercase
+            color: #ff4504
+            box-sizing: border-box
+            border: 2px solid #ff4504
+            border-radius: 4px
+            cursor: pointer
+            font-size: 16px
+            font-family: "FuturaPT-Demi", sans-serif
+            font-weight: normal
+            transition: all 0.35s
+
+            &:hover
+              transition: all 0.35s
+              background: #ff4504
+              color: #fff
+              text-decoration: none
+
+          >div
+            display: inline-block
+            vertical-align: middle
+
+
+
       &.mobile
         display: none
         .row
@@ -3121,6 +3160,16 @@ img
               margin-bottom: 10px
               &:last-child
                 margin-bottom: 0
+
+          .row-item
+            margin-bottom: 10px
+            span
+              display: inline-block
+              vertical-align: middle
+              margin-right: 60px
+              &:last-child
+                margin-right: 0
+
           .article
             font-size: 18px
           .color
