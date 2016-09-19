@@ -2602,7 +2602,7 @@ img {
       height: 25px;
       display: inline-block;
       margin: 0 10px 15px 0;
-      border: 2px solid transparent; }
+      border: 1px solid #000; }
       .productfull .product_info .block_color a.active {
         border-color: #ff4504; }
   .productfull .product_info .wholesale_order {
