@@ -2493,7 +2493,7 @@ img {
       -webkit-transition: all 0.35s;
       transition: all 0.35s;
       margin-bottom: 30px;
-      border: 0; }
+      background: none; }
       .productfull .product_info .block_info .submit:hover, .productfull .product_info .block_info .asking_price:hover {
         -webkit-transition: all 0.35s;
         transition: all 0.35s;
@@ -2770,6 +2770,16 @@ img {
           font-size: 16px;
           line-height: 28px;
           margin: 10px 0; }
+        .productfull .product_info .wholesale_order.mobile .quantity .update {
+          display: inline-block;
+          vertical-align: middle;
+          width: 26px;
+          height: 26px;
+          background: url(../img/icons/icon-update.svg) no-repeat;
+          background-size: 100%;
+          border: 0;
+          cursor: pointer;
+          margin-bottom: 7px; }
       .productfull .product_info .wholesale_order.mobile .submit {
         background-color: #ff4504;
         color: #fff;
@@ -2919,9 +2929,20 @@ img {
         font-size: 16px;
         line-height: 28px;
         margin-bottom: 7px;
-        display: block; }
+        display: inline-block;
+        vertical-align: middle; }
         .productfull .product_info .wholesale_order .table_order .row .quantity input[type="number"]:last-child {
           margin-bottom: 0; }
+      .productfull .product_info .wholesale_order .table_order .row .quantity .update {
+        display: inline-block;
+        vertical-align: middle;
+        width: 26px;
+        height: 26px;
+        background: url(../img/icons/icon-update.svg) no-repeat;
+        background-size: 100%;
+        border: 0;
+        cursor: pointer;
+        margin-bottom: 7px; }
       .productfull .product_info .wholesale_order .table_order .row .submit {
         background-color: #ff4504;
         border-radius: 5px;
@@ -5866,7 +5887,6 @@ img {
   .productfull .product_info .block_info {
     width: 375px; }
   .productfull .related_products .block_product {
-    width: 210px;
     margin: 0 5px 40px; }
   .list_products .products.brand_pruduct .block_product {
     margin: 0 3px 70px; }
