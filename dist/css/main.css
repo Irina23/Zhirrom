@@ -2678,7 +2678,8 @@ img {
         transition: all 0.35s;
         display: inline-block;
         vertical-align: middle;
-        text-decoration: none; }
+        text-decoration: none;
+        background: none; }
         .productfull .product_info .wholesale_order.mobile .submit:hover {
           -webkit-transition: all 0.35s;
           transition: all 0.35s;
