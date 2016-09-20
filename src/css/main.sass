@@ -5862,6 +5862,9 @@ img
       right: 0
       cursor: pointer
 
+.opt_order
+  &.mobile
+    display: none
 
 @media screen and (min-width: 1024px) and (max-height: 700px)
 
@@ -6816,7 +6819,10 @@ img
 
   .cart .order_block .list_order .total_price .price
     font-size: 20px
-
+  .opt_order
+    display: none
+    &.mobile
+      display: block
 
 @media screen and (max-width: 930px)
   .list_products
