@@ -57,7 +57,7 @@
 							if (data === null || data === "null" || data === "false" || data === "0" || data === "undefined" ||data === "" ){
 								return true;
 							} else{
-								return /^[0-9]{6}/.test(data);
+								return /^[0-9]{5}/.test(data);
 							}
 						case 'empty':
 							if (data === null || data === "null" || data === "false" || data === "0" || data === "undefined" ||data === "" ){
