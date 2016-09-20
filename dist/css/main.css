@@ -2633,7 +2633,8 @@ img {
         font-family: "FuturaPT-Demi", sans-serif;
         font-weight: normal;
         -webkit-transition: all 0.35s;
-        transition: all 0.35s; }
+        transition: all 0.35s;
+        background: none; }
         .productfull .product_info .wholesale_order + .total_price .submit:hover {
           -webkit-transition: all 0.35s;
           transition: all 0.35s;
@@ -2678,8 +2679,7 @@ img {
         transition: all 0.35s;
         display: inline-block;
         vertical-align: middle;
-        text-decoration: none;
-        background: none; }
+        text-decoration: none; }
         .productfull .product_info .wholesale_order.mobile .submit:hover {
           -webkit-transition: all 0.35s;
           transition: all 0.35s;
