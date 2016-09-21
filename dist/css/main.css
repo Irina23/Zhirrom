@@ -2473,7 +2473,8 @@ img {
         text-align: center;
         font-size: 16px;
         line-height: 38px;
-        width: 100px; }
+        width: 100px;
+        background: #fff; }
     .productfull .product_info .block_info .submit, .productfull .product_info .block_info .asking_price {
       display: inline-block;
       vertical-align: middle;
@@ -2769,7 +2770,8 @@ img {
           padding-left: 10px;
           font-size: 16px;
           line-height: 28px;
-          margin: 10px 0; }
+          margin: 10px 0;
+          background: #fff; }
         .productfull .product_info .wholesale_order.mobile .quantity .update {
           display: inline-block;
           vertical-align: middle;
@@ -2930,7 +2932,8 @@ img {
         line-height: 28px;
         margin-bottom: 7px;
         display: inline-block;
-        vertical-align: middle; }
+        vertical-align: middle;
+        background: #fff; }
         .productfull .product_info .wholesale_order .table_order .row .quantity input[type="number"]:last-child {
           margin-bottom: 0; }
       .productfull .product_info .wholesale_order .table_order .row .quantity .update {
@@ -3833,7 +3836,8 @@ img {
           text-align: center;
           font-size: 16px;
           line-height: 30px;
-          width: 80px; }
+          width: 80px;
+          background: #fff; }
           .cart .order_block .list_order .order .row.quantity .name input[type="number"].name {
             width: 350px;
             padding: 0 20px 0 40px; }
@@ -5279,7 +5283,8 @@ img {
     font-size: 16px;
     line-height: 30px;
     width: 100px;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    background: #fff; }
   #add_cart .submit, #successful_order .submit {
     color: #fffefe;
     font-family: "FuturaBookC", sans-serif;
