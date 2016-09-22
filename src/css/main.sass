@@ -4866,30 +4866,89 @@ img
     padding: 0 95px
 
   .list_advantages
+    text-align: center
+    margin: 0 -16px
     .item
-      width: 24%
+
       display: inline-block
       vertical-align: top
       text-align: center
-      margin-bottom: 20px
+      margin: 0 10px 20px
+
       box-sizing: border-box
-      padding: 0 8px
-      .img-holder
-        height: 45px
-        margin-bottom: 15px
-      .name
-        margin-bottom: 15px
-        color: #3d3d3d
-        font-family: "FuturaPT-Light", sans-serif
-        font-size: 24px
-        font-weight: 300
-        line-height: 1em
-      .desc
-        color: #3d3d3d
-        font-family: "FuturaPT-Light", sans-serif
-        font-size: 16px
-        font-weight: 300
-        line-height: 24px
+
+      overflow: hidden
+      border: 3px solid #ebe9e9
+      width: 220px
+      height: 300px
+      perspective: 1000px
+      &:hover
+        .flipper
+          transform: rotateY(180deg)
+          //.back
+            transform: rotateY(0deg)
+          //.front
+            transform: rotateY(180deg)
+
+
+
+      .content-advantage
+        width: 100%
+        height: 100%
+        display: table
+        > div
+          display: table-cell
+          vertical-align: middle
+      .flipper
+        //transform: perspective(1000px)
+        transition: 0.6s
+        transform-style: preserve-3d
+        position: relative
+
+      .front, .back
+        backface-visibility: hidden
+        position: absolute
+        top: 0
+        left: 0
+        transition: 0.6s
+        transform-style: preserve-3d
+        transform: rotateY(0deg)
+        width: 220px
+        height: 300px
+      .front
+        //display: block
+        padding: 60px 10px 0
+        box-sizing: border-box
+        z-index: 2
+        transform: rotateY(0deg)
+
+
+        .name
+          text-transform: uppercase
+          color: #000
+          font-size: 16px
+          line-height: 1.4em
+        .img-holder
+          height: 65px
+          margin-bottom: 25px
+          img
+            max-height: 100%
+      .back
+        //display: none
+        transform: rotateY(180deg)
+        background-color: $main-color
+        padding: 20px 10px
+        //overflow-x: auto
+        box-sizing: border-box
+        background-repeat: no-repeat
+        background-size: 120%
+        background-position: 50% 50%
+
+
+        .desc
+          color: #fff
+          font-size: 15px
+          line-height: 1.4em
 
 
 .block_certificate
@@ -6497,8 +6556,6 @@ img
 
   .list_category
 
-
-
     .item-category
       width: 100%
       display: block
@@ -6833,7 +6890,7 @@ img
       &:nth-child(1n+5)
         display: none
   .block_advantages .list_advantages.short .item
-    &:nth-child(1n+5)
+    &:nth-child(1n+7)
       display: none
   .buttom_more
     display: block
@@ -6974,8 +7031,6 @@ img
   .cart .order_block .list_order .order .row.image .img-holder
     margin: 10px auto 0
 
-  .block_advantages .list_advantages .item
-    width: 32%
 
 
 
@@ -6992,7 +7047,9 @@ img
   .list_products .products .list_category ul li
     width: 100%
     margin: 0 auto 20px
-
+  .block_advantages .list_advantages.short .item
+    &:nth-child(1n+5)
+      display: none
 
 @media screen and (max-width: 650px)
   #contact_form
@@ -7039,8 +7096,7 @@ img
         display: none
 
 
-  .block_advantages .list_advantages .item
-    width: 49%
+
 
   .list_category .item-category h3
     white-space: normal
@@ -7119,12 +7175,6 @@ img
         margin-right: 7px
         &:nth-child(3n)
           margin-right: 0
-
-
-
-
-  .block_advantages .list_advantages .item
-    width: 100%
 
 
   #report_available, #order_status_result
