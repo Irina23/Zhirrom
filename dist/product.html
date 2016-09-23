@@ -448,10 +448,10 @@
                 </div>
                 <!--a.asking_price(href="#") узнать цену-->
                 <div class="quantity">
-                  <input type="number" min="0" value="1" name="quantity" data-validate="quantity" autofocus>
+                  <input type="number" min="0" value="1" name="quantity" data-validate="quantity">
                 </div>
                 <div class="submit btn width50">В КОРЗИНУ</div>
-                <div class="block_color"><a href="#" style="background: #000" class="active"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a></div>
+                <div class="block_color"><a href="#" style="background: #000" class="active"></a><a href="product.html#product_add_cart" style="background: #fff"></a><a href="product.html#product_add_cart" style="background: #fff"></a><a href="product.html" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a><a href="#" style="background: #fff"></a></div>
                 <div class="block_characteristics">
                   <div class="width50">
                     <div class="name">Бренд:</div>
@@ -481,11 +481,11 @@
                 </div>
               </form>
             </div>
-            <form class="cf opt_order">
+            <form class="cf opt_order standart_form">
               <div class="wholesale_order">
                 <h3>Оптовый заказ</h3>
                 <div class="form">
-                  <div class="table_order">
+                  <div class="table_order js-table-desktop">
                     <div class="row">
                       <div class="article">Артикул</div>
                       <div class="color">Цвет</div>
@@ -494,113 +494,84 @@
                       <div>Сумма по товару</div>
                     </div>
                     <div class="row">
-                      <div class="article">17.458.18К</div>
+                      <div class="article">Паула w</div>
                       <div class="color">
-                        <div class="img-holder"><img src="img/content/product1.jpg" alt="Повязка Chelsi"></div><span>Серый</span>
+                        <div class="img-holder"><img src="img/content/product1.jpg" alt="Malina шапка Паула"></div><span>Белый</span>
+                        <input type="hidden" name="color_1126" value="1">
+                        <input type="hidden" name="1126" value="1126">
+                        <input type="hidden" name="brand_1126" value="5">
                       </div>
-                      <div class="item-price">555</div>
-                      <div class="quantity">
-                        <input type="number" min="0" value="0" name="quantity" data-validate="quantity" autofocus>
-                        <buttom class="update"></buttom>
+                      <div class="parameter">
+                        <div class="row-item">
+                          <div data-item-id="1126" class="item-price"><span class="title_mobile">Цена за единицу</span><span>1350</span>
+                            <input type="hidden" name="price_1126" value="1350.00000">
+                          </div>
+                          <div class="quantity">
+                            <input type="number" min="0" max="7" value="0" name="quantity_1126" data-validate="quantity" data-item-id="1126">
+                            <button data-request-update="'opt_item' : '.standart_form'" class="update"></button>
+                          </div>
+                          <div data-item-id="1126" class="item-price"><span class="title_mobile">Сумма по товару</span><span>0</span>
+                            <input type="hidden" name="price_1126" value="1350.00000">
+                          </div>
+                        </div>
                       </div>
-                      <div><a href="#" class="btn submit">узнать цену</a></div>
                     </div>
                     <div class="row">
-                      <div class="article">17.458.18К</div>
+                      <div class="article">Паула w</div>
                       <div class="color">
-                        <div class="img-holder"><img src="img/content/product1.jpg" alt="Повязка Chelsi"></div><span>Серый</span>
+                        <div class="img-holder"><img src="img/content/product1.jpg" alt="Malina шапка Паула"></div><span>Белый</span>
+                        <input type="hidden" name="color_1126" value="1">
+                        <input type="hidden" name="1126" value="1126">
+                        <input type="hidden" name="brand_1126" value="5">
                       </div>
-                      <div class="item-price">
-                        <div class="row-item"><span>10</span><span>555</span></div>
+                      <div class="parameter">
+                        <div class="row-item">
+                          <div class="item-price"><span class="title_mobile">Цена за единицу</span><span>S</span><span data-item-id="10_1">1250</span>
+                            <input type="hidden" name="size_10_1" value="1">
+                          </div>
+                          <div class="quantity">
+                            <input type="number" min="0" max="7" value="0" name="quantity_1126" data-validate="quantity" data-item-id="1126">
+                            <button data-request-update="'opt_item' : '.standart_form'" class="update"></button>
+                          </div>
+                          <div data-item-id="1126" class="item-price"><span class="title_mobile">Сумма по товару</span><span>0</span></div>
+                        </div>
+                        <div class="row-item">
+                          <div class="item-price"><span class="title_mobile">Цена за единицу</span><span>S</span><span data-item-id="10_1">1250</span>
+                            <input type="hidden" name="size_10_1" value="1">
+                          </div>
+                          <div class="quantity">
+                            <input type="number" min="0" max="7" value="0" name="quantity_1126" data-validate="quantity" data-item-id="1126">
+                            <button data-request-update="'opt_item' : '.standart_form'" class="update"></button>
+                          </div>
+                          <div data-item-id="1126" class="item-price"><span class="title_mobile">Сумма по товару</span><span>0</span></div>
+                        </div>
+                        <div class="row-item">
+                          <div class="item-price"><span class="title_mobile">Цена за единицу</span><span>S</span><span data-item-id="10_1">1250</span>
+                            <input type="hidden" name="size_10_1" value="1">
+                          </div>
+                          <div class="quantity">
+                            <input type="number" min="0" max="7" value="0" name="quantity_1126" data-validate="quantity" data-item-id="1126">
+                            <button data-request-update="'opt_item' : '.standart_form'" class="update"></button>
+                          </div>
+                          <div data-item-id="1126" class="item-price"><span class="title_mobile">Сумма по товару</span><span>0</span></div>
+                        </div>
                       </div>
-                      <div class="quantity">
-                        <input type="number" min="0" value="0" name="quantity" data-validate="quantity" autofocus>
-                        <buttom class="update"></buttom>
-                      </div>
-                      <div><span>10 000</span></div>
                     </div>
                     <div class="row">
-                      <div class="article">17.458.18К</div>
+                      <div class="article">Паула</div>
                       <div class="color">
-                        <div class="img-holder"><img src="img/content/product1.jpg" alt="Повязка Chelsi"></div><span>Серый</span>
+                        <div class="img-holder"><img src="img/content/product1.jpg" alt="Malina шапка Паула"></div><span>Светло бежевый</span>
+                        <input type="hidden" name="color_1113" value="14">
+                        <input type="hidden" name="1113" value="1113">
+                        <input type="hidden" name="brand_1113" value="5">
                       </div>
-                      <div class="item-price">
-                        <div class="row-item"><span>10</span><span>555</span></div>
-                        <div class="row-item"><span>10</span><span>555</span></div>
-                        <div class="row-item"><span>10</span><span>555</span></div>
-                      </div>
-                      <div class="quantity">
-                        <input type="number" min="0" value="0" name="quantity" data-validate="quantity" autofocus>
-                        <buttom class="update"></buttom>
-                        <input type="number" min="0" value="0" name="quantity" data-validate="quantity" autofocus>
-                        <buttom class="update"></buttom>
-                        <input type="number" min="0" value="0" name="quantity" data-validate="quantity" autofocus>
-                        <buttom class="update"></buttom>
-                      </div>
-                      <div><span>10 000</span><span>10 000</span><span>10 000</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="total_price cf">
-                <div class="name">Итого:</div>
-                <div class="price">30 000 руб.</div><a href="#" class="submit">Добавить в корзину</a>
-              </div>
-            </form>
-            <form class="cf mobile opt_order">
-              <div class="wholesale_order mobile">
-                <h3>Оптовый заказ</h3>
-                <div class="form">
-                  <div class="row">
-                    <div class="img-holder"><img src="img/content/product1.jpg" alt="Повязка Chelsi"></div>
-                    <div>
-                      <div class="article">Артикул: 17.458.18К</div>
-                      <div class="color">Цвет: Серый</div>
-                      <div>Размер: 10</div>
-                      <div>Цена за единицу: 555</div>
-                      <div class="button">
-                        <div class="quantity">
-                          <input type="number" min="0" value="0" name="quantity" data-validate="quantity" autofocus>
-                          <buttom class="update"></buttom>
-                        </div>
-                      </div><a href="#" class="btn submit">узнать цену</a>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="img-holder"><img src="img/content/product1.jpg" alt="Повязка Chelsi"></div>
-                    <div>
-                      <div class="article">Артикул: 17.458.18К</div>
-                      <div class="color">Цвет: Серый</div>
-                      <div>Размер: 10</div>
-                      <div>Цена за единицу: 555</div>
-                      <div class="button">
-                        <div class="quantity">
-                          <input type="number" min="0" value="0" name="quantity" data-validate="quantity" autofocus>
-                          <buttom class="update"></buttom>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="img-holder"><img src="img/content/product1.jpg" alt="Повязка Chelsi"></div>
-                    <div>
-                      <div class="article">Артикул: 17.458.18К</div>
-                      <div class="color">Цвет: Серый</div>
-                      <div>Размер: 10</div>
-                      <div>Цена за единицу: 555</div>
-                      <div class="button">
-                        <div class="quantity">
-                          <input type="number" min="0" value="0" name="quantity" data-validate="quantity" autofocus>
-                          <buttom class="update"></buttom>
-                        </div>
-                      </div>
-                      <div class="color">Цвет: Серый</div>
-                      <div>Размер: 10</div>
-                      <div>Цена за единицу: 555</div>
-                      <div class="button">
-                        <div class="quantity">
-                          <input type="number" min="0" value="0" name="quantity" data-validate="quantity" autofocus>
-                          <buttom class="update"></buttom>
+                      <div class="parameter">
+                        <div class="row-item">
+                          <div data-item-id="1113" class="item-price"><span class="title_mobile">Цена за единицу</span><span>1350</span></div>
+                          <div class="quantity disabled">
+                            <input type="number" min="0" value="0" max="0" name="quantity_1113_" data-validate="quantity" disabled="" data-item-id="1113_">
+                          </div>
+                          <div class="item-summ"><span class="title_mobile">Сумма по товару</span><span data-item-id="1113_">0</span></div>
                         </div>
                       </div>
                     </div>

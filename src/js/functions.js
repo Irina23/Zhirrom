@@ -1,5 +1,18 @@
 jQuery(document).ready(function() {
 
+    // scroll on top when history change
+    /*if (window.localStorage.getItem('scrollTo')) {
+        var scroll = window.localStorage.getItem('scrollTo');
+        scroll = parseInt(scroll);
+        // alert(scroll);
+        $('html, body').scrollTop(scroll);
+        window.localStorage.removeItem('scrollTo');
+    }
+    $(window).on('popstate', function () {
+        // alert(scroll);
+        window.localStorage.setItem('scrollTo', 1);
+    });
+*/
     //form validate
     jQuery("form").validate({
 
@@ -135,7 +148,6 @@ jQuery(document).ready(function() {
 
 
     });
-
 
 
     //filter get

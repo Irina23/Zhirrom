@@ -2982,6 +2982,7 @@ img
     .wholesale_order
       margin-top: 15px
       margin-bottom: 40px
+
       + .total_price
           float: right
           width: 225px
@@ -3021,7 +3022,7 @@ img
 
 
 
-      &.mobile
+      //&.mobile
         display: none
         .row
           margin-bottom: 30px
@@ -3174,12 +3175,12 @@ img
             width: 19%
             span
               display: block
-              margin-bottom: 10px
-              &:last-child
-                margin-bottom: 0
 
           .row-item
             margin-bottom: 10px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
             span
               display: inline-block
               vertical-align: middle
@@ -3201,6 +3202,21 @@ img
                 height: 100%
                 max-width: inherit
 
+          .parameter
+
+            width: 60%
+
+            .row-item
+              //display: block
+              margin-bottom: 10px
+              display: flex
+              flex-direction: row
+              justify-content: space-between
+              align-items: center
+              >div
+                width: 33%
+                .title_mobile
+                  display: none
 
           .quantity
 
@@ -3221,12 +3237,10 @@ img
               padding-left: 10px
               font-size: 16px
               line-height: 28px
-              margin-bottom: 7px
               display: inline-block
               vertical-align: middle
               background: #fff
-              &:last-child
-                margin-bottom: 0
+
             .update
               display: inline-block
               vertical-align: middle
@@ -3237,6 +3251,10 @@ img
               border: 0
               cursor: pointer
               margin-bottom: 7px
+              width: 0
+              height: 0
+              padding: 0
+              border: 0
           .submit
             background-color: $main-color
             border-radius: 5px
@@ -5949,7 +5967,7 @@ img
       right: 0
       cursor: pointer
 
-.opt_order
+//.opt_order
   &.mobile
     display: none
 
@@ -6803,8 +6821,8 @@ img
 
   .productfull .product_info
     .wholesale_order
-      display: none
-      &.mobile
+      //display: none
+      //&.mobile
         display: block
         .img-holder
           display: inline-block
@@ -6904,7 +6922,7 @@ img
 
   .cart .order_block .list_order .total_price .price
     font-size: 20px
-  .opt_order
+  //.opt_order
     display: none
     &.mobile
       display: block
@@ -6950,6 +6968,11 @@ img
   .private_office .container #private_office > div .selectbox
     margin-bottom: 10px
 
+  .productfull .product_info .wholesale_order .table_order .row .row-item span
+    margin-right: 30px
+
+
+
 @media screen and (max-width: 920px)
   .cart .order_block .list_order .order .row.quantity .name input[type="number"]
     width: 60%
@@ -6963,10 +6986,27 @@ img
 
     &:last-child
         margin-bottom: 0!important
+  .productfull
+    .product_info
+      .wholesale_order
+        .table_order
+          .row
+            display: block
+            >div
+              display: block
+              margin-bottom: 20px
+              text-align: center
+              width: 100%
+            &:first-child
+              display: none
+            .parameter
+              width: 100%
+              .row-item > div .title_mobile
+                display: block
+                margin: 0 0 10px
+            .row-item span
+                margin-right: 30px
 
-
-  //.cart .order_block .list_order .order .row.name
-    width: 275px
 
 //@media screen and (max-width: 870px)
 
@@ -7189,6 +7229,14 @@ img
   .productfull .product_info .block_info .block_price
     display: block
 
+  .productfull .product_info .wholesale_order .table_order .row .parameter .row-item
+    display: block
+  .productfull .product_info .wholesale_order .table_order .row .parameter .row-item > div
+    width: 100%
+    margin-bottom: 20px
+    text-align: center
+
+
 
 @media screen and (max-width: 450px)
   .list_products .filter > div span
@@ -7257,3 +7305,11 @@ img
 
 
 
+  .productfull
+    .product_info
+      .wholesale_order
+        .table_order .row
+          .row-item span
+            margin-right: 15px
+          .quantity input[type="number"]
+            width: 60px

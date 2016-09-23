@@ -57,13 +57,13 @@ html(lang="ru")
                                     preice 1199 руб.
                                 //a.asking_price(href="#") узнать цену
                                 .quantity
-                                    input(type="number", min="0", value="1", name="quantity", data-validate="quantity" autofocus)
+                                    input(type="number", min="0", value="1", name="quantity", data-validate="quantity" )
                                 .submit.btn.width50 В КОРЗИНУ
                                 .block_color
                                     a.active(href="#" style="background: #000")
-                                    a(href="#" style="background: #fff")
-                                    a(href="#" style="background: #fff")
-                                    a(href="#" style="background: #fff")
+                                    a(href="product.html#product_add_cart" style="background: #fff")
+                                    a(href="product.html#product_add_cart" style="background: #fff")
+                                    a(href="product.html" style="background: #fff")
                                     a(href="#" style="background: #fff")
                                     a(href="#" style="background: #fff")
                                     a(href="#" style="background: #fff")
@@ -115,138 +115,114 @@ html(lang="ru")
                                             option(value="50-52") 50-52
 
 
-
-                        form.cf.opt_order
+                        form(class="cf opt_order standart_form" )
                             .wholesale_order
                                 h3 Оптовый заказ
                                 .form
-                                    div.table_order
+                                    .table_order.js-table-desktop
                                         .row
-                                            div.article Артикул
-                                            div.color Цвет
-                                            div.item-price Цена за единицу
-                                            div.quantity Количество
+                                            .article Артикул
+                                            .color Цвет
+                                            .item-price Цена за единицу
+                                            .quantity Количество
                                             div Сумма по товару
-                                        .row
-                                            div.article 17.458.18К
-                                            div.color
-                                                .img-holder
-                                                    img(src="img/content/product1.jpg" , alt="Повязка Chelsi")
-                                                span Серый
-                                            div.item-price 555
-                                            div.quantity
-                                                input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
-                                                buttom.update
-                                            div
-                                                a.btn.submit(href="#") узнать цену
 
                                         .row
-                                            div.article 17.458.18К
-                                            div.color
+                                            .article Паула w
+                                            .color
                                                 .img-holder
-                                                    img(src="img/content/product1.jpg" , alt="Повязка Chelsi")
-                                                span Серый
-                                            div.item-price
+                                                    img(src="img/content/product1.jpg" alt="Malina шапка Паула")
+                                                span Белый
+                                                input(type="hidden" name="color_1126" value="1")
+                                                input(type="hidden" name="1126" value="1126")
+                                                input(type="hidden" name="brand_1126" value="5")
+                                            .parameter
                                                 .row-item
-                                                    span 10
-                                                    span 555
-                                            div.quantity
-                                                input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
-                                                buttom.update
-                                            div
-                                                span 10 000
+                                                    .item-price(data-item-id="1126")
+                                                        span.title_mobile Цена за единицу
+                                                        span 1350
+                                                        input(type="hidden" name="price_1126" value="1350.00000")
+
+                                                    .quantity
+                                                        input(type="number" min="0" max="7" value="0" name="quantity_1126" data-validate="quantity" data-item-id="1126")
+                                                        button(class="update" data-request-update="'opt_item' : '.standart_form'")
+
+                                                    div(class="item-price" data-item-id="1126")
+                                                        span.title_mobile Сумма по товару
+                                                        span 0
+                                                        input(type="hidden" name="price_1126" value="1350.00000")
+
                                         .row
-                                            div.article 17.458.18К
-                                            div.color
+                                            .article Паула w
+                                            .color
                                                 .img-holder
-                                                    img(src="img/content/product1.jpg" , alt="Повязка Chelsi")
-                                                span Серый
-                                            div.item-price
+                                                    img(src="img/content/product1.jpg" alt="Malina шапка Паула")
+                                                span Белый
+                                                input(type="hidden" name="color_1126" value="1")
+                                                input(type="hidden" name="1126" value="1126")
+                                                input(type="hidden" name="brand_1126" value="5")
+
+                                            .parameter
                                                 .row-item
-                                                    span 10
-                                                    span 555
+                                                    .item-price
+                                                        span.title_mobile Цена за единицу
+                                                        span S
+                                                        span(data-item-id="10_1") 1250
+                                                        input(type="hidden" name="size_10_1" value="1")
+                                                    .quantity
+                                                        input(type="number" min="0" max="7" value="0" name="quantity_1126" data-validate="quantity" data-item-id="1126")
+                                                        button(class="update" data-request-update="'opt_item' : '.standart_form'")
+                                                    div(class="item-price" data-item-id="1126")
+                                                        span.title_mobile Сумма по товару
+                                                        span 0
                                                 .row-item
-                                                    span 10
-                                                    span 555
+                                                    .item-price
+                                                        span.title_mobile Цена за единицу
+                                                        span S
+                                                        span(data-item-id="10_1") 1250
+                                                        input(type="hidden" name="size_10_1" value="1")
+                                                    .quantity
+                                                        input(type="number" min="0" max="7" value="0" name="quantity_1126" data-validate="quantity" data-item-id="1126")
+                                                        button(class="update" data-request-update="'opt_item' : '.standart_form'")
+                                                    div(class="item-price" data-item-id="1126")
+                                                        span.title_mobile Сумма по товару
+                                                        span 0
                                                 .row-item
-                                                    span 10
-                                                    span 555
-                                            div.quantity
-                                                input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
-                                                buttom.update
-                                                input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
-                                                buttom.update
-                                                input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
-                                                buttom.update
-                                            div
-                                                span 10 000
-                                                span 10 000
-                                                span 10 000
-                            .total_price.cf
-                                .name Итого:
-                                .price 30 000 руб.
-                                a.submit(href="#") Добавить в корзину
+                                                    .item-price
+                                                        span.title_mobile Цена за единицу
+                                                        span S
+                                                        span(data-item-id="10_1") 1250
+                                                        input(type="hidden" name="size_10_1" value="1")
+                                                    .quantity
+                                                        input(type="number" min="0" max="7" value="0" name="quantity_1126" data-validate="quantity" data-item-id="1126")
+                                                        button(class="update" data-request-update="'opt_item' : '.standart_form'")
+                                                    div(class="item-price" data-item-id="1126")
+                                                        span.title_mobile Сумма по товару
+                                                        span 0
 
-                        form.cf.mobile.opt_order
-                            .wholesale_order.mobile
-                                h3 Оптовый заказ
 
-                                .form
-                                    .row
-                                        .img-holder
-                                            img(src="img/content/product1.jpg", alt="Повязка Chelsi" )
+                                        .row
+                                            .article Паула
+                                            .color
+                                                .img-holder
+                                                    img(src="img/content/product1.jpg" alt="Malina шапка Паула")
+                                                span Светло бежевый
+                                                input(type="hidden" name="color_1113" value="14")
+                                                input(type="hidden" name="1113" value="1113")
+                                                input(type="hidden" name="brand_1113" value="5")
 
-                                        div
-                                            .article Артикул: 17.458.18К
-                                            .color Цвет: Серый
+                                            .parameter
+                                                .row-item
+                                                    .item-price( data-item-id="1113")
+                                                        span.title_mobile Цена за единицу
+                                                        span 1350
+                                                    .quantity.disabled
+                                                        input(type="number" min="0" value="0" max="0" name="quantity_1113_" data-validate="quantity" disabled="" data-item-id="1113_")
 
-                                            div Размер: 10
-                                            div Цена за единицу: 555
+                                                    .item-summ
+                                                        span.title_mobile Сумма по товару
+                                                        span(data-item-id="1113_") 0
 
-                                            .button
-                                                div.quantity
-                                                    input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
-                                                    buttom.update
-                                            a(href="#" class="btn submit") узнать цену
-                                    .row
-                                        .img-holder
-                                            img(src="img/content/product1.jpg", alt="Повязка Chelsi" )
-
-                                        div
-                                            .article Артикул: 17.458.18К
-                                            .color Цвет: Серый
-
-                                            div Размер: 10
-                                            div Цена за единицу: 555
-
-                                            .button
-                                                div.quantity
-                                                    input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
-                                                    buttom.update
-                                    .row
-                                        .img-holder
-                                            img(src="img/content/product1.jpg", alt="Повязка Chelsi" )
-
-                                        div
-                                            .article Артикул: 17.458.18К
-                                            .color Цвет: Серый
-
-                                            div Размер: 10
-                                            div Цена за единицу: 555
-
-                                            .button
-                                                div.quantity
-                                                    input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
-                                                    buttom.update
-                                            .color Цвет: Серый
-
-                                            div Размер: 10
-                                            div Цена за единицу: 555
-
-                                            .button
-                                                div.quantity
-                                                    input(type="number", min="0", value="0", name="quantity", data-validate="quantity" autofocus)
-                                                    buttom.update
 
                             .total_price.cf
                                 .name Итого:
