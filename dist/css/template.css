@@ -161,28 +161,19 @@ img{
 }
 
 
+
+#login input[type="text"]::-webkit-input-placeholder,
+#login input[type="password"]::-webkit-input-placeholder,
 #registration input[type="text"]::-webkit-input-placeholder{
     color: #686767;
 }
 
+#login input[type="text"]::-moz-placeholder,
+#login input[type="password"]::-moz-placeholder,
 #registration input[type="text"]::-moz-placeholder{
     color: #686767;
 }
 
-#registration input[type="text"]::-moz-placeholder{
-    color: #686767;
-}
-#login input[type="text"]::-webkit-input-placeholder{
-    color: #686767;
-}
-
-#login input[type="text"]::-moz-placeholder{
-    color: #686767;
-}
-
-#login input[type="text"]::-moz-placeholder{
-    color: #686767;
-}
 
 
 .owl-carousel .owl-item{

@@ -2767,7 +2767,24 @@ img {
     .productfull .product_info .wholesale_order .table_order .row {
       padding: 10px 15px;
       border-bottom: 1px solid #dcdbdb;
-      color: #343434; }
+      color: #343434;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
       .productfull .product_info .wholesale_order .table_order .row:first-child {
         padding: 9px 15px;
         background: #e5e4e4;
