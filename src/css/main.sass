@@ -3182,11 +3182,22 @@ img
             flex-direction: row
             justify-content: space-between
             span
+
               display: inline-block
               vertical-align: middle
-              margin-right: 60px
-              &:last-child
-                margin-right: 0
+              &.price_default
+                position: relative
+                &:after
+                  content: " руб."
+
+            .item-price
+              span
+
+                &:nth-child(3)
+                  margin-left: 60px
+
+
+
 
           .article
             font-size: 18px
@@ -6968,8 +6979,8 @@ img
   .private_office .container #private_office > div .selectbox
     margin-bottom: 10px
 
-  .productfull .product_info .wholesale_order .table_order .row .row-item span
-    margin-right: 30px
+  .productfull .product_info .wholesale_order .table_order .row .row-item .item-price span:nth-child(3)
+    margin-left: 30px
 
 
 
@@ -7004,8 +7015,7 @@ img
               .row-item > div .title_mobile
                 display: block
                 margin: 0 0 10px
-            .row-item span
-                margin-right: 30px
+
 
 
 //@media screen and (max-width: 870px)
@@ -7303,13 +7313,3 @@ img
     height: 320px
     margin-top: -160px
 
-
-
-  .productfull
-    .product_info
-      .wholesale_order
-        .table_order .row
-          .row-item span
-            margin-right: 15px
-          .quantity input[type="number"]
-            width: 60px

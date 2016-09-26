@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "SegoeUIRegular";
   src: url("../fonts/SegoeUIRegular.eot");
@@ -2703,10 +2704,13 @@ img {
                 justify-content: space-between; }
         .productfull .product_info .wholesale_order .table_order .row .row-item span {
           display: inline-block;
-          vertical-align: middle;
-          margin-right: 60px; }
-          .productfull .product_info .wholesale_order .table_order .row .row-item span:last-child {
-            margin-right: 0; }
+          vertical-align: middle; }
+          .productfull .product_info .wholesale_order .table_order .row .row-item span.price_default {
+            position: relative; }
+            .productfull .product_info .wholesale_order .table_order .row .row-item span.price_default:after {
+              content: " руб."; }
+        .productfull .product_info .wholesale_order .table_order .row .row-item .item-price span:nth-child(3) {
+          margin-left: 60px; }
       .productfull .product_info .wholesale_order .table_order .row .article {
         font-size: 18px; }
       .productfull .product_info .wholesale_order .table_order .row .color {
@@ -5932,8 +5936,8 @@ img {
     margin-right: 20px; }
   .private_office .container #private_office > div .selectbox {
     margin-bottom: 10px; }
-  .productfull .product_info .wholesale_order .table_order .row .row-item span {
-    margin-right: 30px; } }
+  .productfull .product_info .wholesale_order .table_order .row .row-item .item-price span:nth-child(3) {
+    margin-left: 30px; } }
 
 @media screen and (max-width: 920px) {
   .cart .order_block .list_order .order .row.quantity .name input[type="number"] {
@@ -5959,9 +5963,7 @@ img {
       width: 100%; }
       .productfull .product_info .wholesale_order .table_order .row .parameter .row-item > div .title_mobile {
         display: block;
-        margin: 0 0 10px; }
-    .productfull .product_info .wholesale_order .table_order .row .row-item span {
-      margin-right: 30px; } }
+        margin: 0 0 10px; } }
 
 @media screen and (max-width: 850px) {
   .cart .list_order .total_price .price {
@@ -6173,8 +6175,4 @@ img {
     left: 20px;
     padding: 20px;
     height: 320px;
-    margin-top: -160px; }
-  .productfull .product_info .wholesale_order .table_order .row .row-item span {
-    margin-right: 15px; }
-  .productfull .product_info .wholesale_order .table_order .row .quantity input[type="number"] {
-    width: 60px; } }
+    margin-top: -160px; } }
