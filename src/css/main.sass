@@ -3194,7 +3194,7 @@ img
               span
 
                 &:nth-child(3)
-                  margin-left: 60px
+                  margin-left: 30px
 
 
 
@@ -3224,8 +3224,11 @@ img
               flex-direction: row
               justify-content: space-between
               align-items: center
+              text-align: left
               >div
                 width: 33%
+                .size
+                  min-width: 30px
                 .title_mobile
                   display: none
 
@@ -3285,7 +3288,13 @@ img
               text-decoration: none
 
 
-
+        &.unlogined
+          .row
+            .parameter
+              width: 19%
+              .row-item
+                >div
+                  width: 100%
 
 
 .feedback
@@ -7017,11 +7026,15 @@ img
                 margin: 0 0 10px
 
 
+  .page_wrapper.productfull .product_info .wholesale_order .table_order.unlogined .row .parameter
+    width: 100%
+    .row-item
+      text-align: center
+      > div
+        display: inline-block
 
-//@media screen and (max-width: 870px)
 
-  body .cart .order_block .list_order .order .row.name
-    width: 250px
+
 @media screen and (max-width: 850px)
   .cart .list_order .total_price .price
     font-size: 24px

@@ -2710,7 +2710,7 @@ img {
             .productfull .product_info .wholesale_order .table_order .row .row-item span.price_default:after {
               content: " руб."; }
         .productfull .product_info .wholesale_order .table_order .row .row-item .item-price span:nth-child(3) {
-          margin-left: 60px; }
+          margin-left: 30px; }
       .productfull .product_info .wholesale_order .table_order .row .article {
         font-size: 18px; }
       .productfull .product_info .wholesale_order .table_order .row .color {
@@ -2743,9 +2743,12 @@ img {
           -webkit-box-align: center;
           -webkit-align-items: center;
               -ms-flex-align: center;
-                  align-items: center; }
+                  align-items: center;
+          text-align: left; }
           .productfull .product_info .wholesale_order .table_order .row .parameter .row-item > div {
             width: 33%; }
+            .productfull .product_info .wholesale_order .table_order .row .parameter .row-item > div .size {
+              min-width: 30px; }
             .productfull .product_info .wholesale_order .table_order .row .parameter .row-item > div .title_mobile {
               display: none; }
       .productfull .product_info .wholesale_order .table_order .row .quantity.disabled input[type="number"] {
@@ -2794,6 +2797,10 @@ img {
           transition: all 0.35s;
           background: #fe622b;
           text-decoration: none; }
+    .productfull .product_info .wholesale_order .table_order.unlogined .row .parameter {
+      width: 19%; }
+      .productfull .product_info .wholesale_order .table_order.unlogined .row .parameter .row-item > div {
+        width: 100%; }
 
 .feedback .container {
   position: relative;
@@ -5963,7 +5970,13 @@ img {
       width: 100%; }
       .productfull .product_info .wholesale_order .table_order .row .parameter .row-item > div .title_mobile {
         display: block;
-        margin: 0 0 10px; } }
+        margin: 0 0 10px; }
+  .page_wrapper.productfull .product_info .wholesale_order .table_order.unlogined .row .parameter {
+    width: 100%; }
+    .page_wrapper.productfull .product_info .wholesale_order .table_order.unlogined .row .parameter .row-item {
+      text-align: center; }
+      .page_wrapper.productfull .product_info .wholesale_order .table_order.unlogined .row .parameter .row-item > div {
+        display: inline-block; } }
 
 @media screen and (max-width: 850px) {
   .cart .list_order .total_price .price {
