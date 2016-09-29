@@ -3174,16 +3174,47 @@ img
               margin-bottom: 10px
               &:last-child
                 margin-bottom: 0
+          .table_order
+        .row
+          padding: 10px 15px
+          border-bottom: 1px solid #dcdbdb
+          color: #343434
+          display: flex
+          flex-direction: row
+          justify-content: space-between
+          align-items: center
+          &:first-child
+            padding: 9px 15px
+            background: #e5e4e4
+            border: 1px solid #dfdfdf
+            >div
+              font-size: 18px!important
+
+          >div
+            display: inline-block
+            vertical-align: middle
+            width: 19%
+            span
+              display: block
+
           .row-item
             margin-bottom: 10px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
             span
               display: inline-block
               vertical-align: middle
-              margin-right: 60px
-              &:last-child
-                margin-right: 0
+              &.price_default
+                position: relative
+                &:after
+                  content: " руб."
+            .item-price
+              span
+
+                &:nth-child(3)
+                  margin-left: 60px
           .article
-            //width: 14%
             font-size: 18px
           .color
             //width: 25%
@@ -3192,84 +3223,31 @@ img
               height: 60px
               display: inline-block
               vertical-align: middle
-              //margin-right: 15%
               margin-bottom: 10px
               img
                 height: 100%
                 max-width: inherit
-            //+ .availability
-              width: 33%
-          //.size
-            width: 10%
-            &.disabled
-              .selectbox
-                .select
-                  color: #d2d2d2
-                  &:after
-                    border-top: 9px solid #d2d2d2
-                .dropdown
-                  display: none!important
-            .selectbox
-              display: inline-block
-              vertical-align: middle
-              .select
-                font-size: 16px
-                color: #343434
-                position: relative
-                border: 1px solid #d2d2d2
-                line-height: 30px
-                padding: 0 25px 0 10px
-                cursor: pointer
-                &:after
-                  position: absolute
-                  top: 50%
-                  right: 5px
-                  margin-top: -5px
-                  width: 0
-                  height: 0
-                  border-left: 6px solid transparent
-                  border-right: 6px solid transparent
-                  border-top: 9px solid $main-color
 
-              .dropdown
-                display: none
-                position: absolute
-                top: 32px!important
-                left: 0
-                width: 100%
-                z-index: 2
-                background: #fff
+          .parameter
 
+            width: 60%
 
-                li
-                  font-size: 16px
-                  //font-family: "FuturaBookC", sans-serif
-                  line-height: 1em
-                  cursor: pointer
-                  color: #000
-                  padding: 6px 10px
-                  transition: all 0.35s
-                  border: 1px solid #d2d2d2
-                  border-top: 0
-                  box-sizing: border-box
+            .row-item
+              //display: block
+              margin-bottom: 10px
+              display: flex
+              flex-direction: row
+              justify-content: space-between
+              align-items: center
+              >div
+                width: 33%
+                .size
+                  min-width: 30px
+                .title_mobile
+                  display: none
 
-                  &:hover
-                    background: $main-color
-                    transition: all 0.35s
-                    color: #fff
-                    border-color: $main-color
-
-                  &.sel
-                    display: none
-          //.availability
-            width: 23%
-            font-size: 18px
-            &.little
-              color: $main-color
-            &.disabled
-              color: #b2b2b2
           .quantity
-            //width: 16%
+
             &.disabled
               input[type="number"]
                 border-color: #bab9b9!important
@@ -3287,12 +3265,9 @@ img
               padding-left: 10px
               font-size: 16px
               line-height: 28px
-              margin-bottom: 7px
               display: inline-block
               vertical-align: middle
               background: #fff
-              &:last-child
-                  margin-bottom: 0
 
             .update
               display: inline-block
@@ -3304,6 +3279,10 @@ img
               border: 0
               cursor: pointer
               margin-bottom: 7px
+              width: 0
+              height: 0
+              padding: 0
+              border: 0
           .submit
             background-color: $main-color
             border-radius: 5px
@@ -3315,29 +3294,12 @@ img
             padding: 9px 8px 7px
             cursor: pointer
             transition: all 0.35s
-
             //float: right
             //margin-top: 15px
-
-
-
             &:hover
               transition: all 0.35s
               background: #fe622b
               text-decoration: none
-            //&.disabled
-              background: #fff
-              color: $main-color
-              float: right
-              margin-top: 15px
-              border: 2px solid $main-color
-              transition: all 0.35s
-
-              &:hover
-                background: $main-color
-                color: #fff
-                transition: all 0.35s
-
 
 
 
@@ -6622,9 +6584,39 @@ img
       right: 0
       cursor: pointer
 
-.opt_order
-  &.mobile
-   display: none
+
+
+.link_form_contact
+  width: 60px
+  height: 60px
+  position: fixed
+  bottom: 11%
+  right: 6%
+  background: $main-color
+  border-radius: 60px
+  z-index: 10
+  display: block
+  &:after
+    width: 100%
+    height: 100%
+    background: url("../img/icons/mail-icon.png") no-repeat center
+    content: ""
+    animation: myarrow 1.25s linear 0s infinite alternate
+    position: absolute
+
+
+body .rngst_phone_button
+  right: calc(6% - 20px)
+  margin-right: 0
+
+@keyframes myarrow
+  to
+    transform: scale(1)
+  from
+    transform: scale(0.8)
+
+
+
 @media screen and (min-width: 1024px) and (max-height: 700px)
 
 
@@ -6685,14 +6677,7 @@ img
       margin-bottom: 10px
 
 
-.link_form_contact
-  width: 75px
-  height: 75px
-  position: fixed
-  bottom: 11%
-  right: 5%
-  background: url("../img/icons/mail-icon.png") no-repeat center $main-color
-  border-radius: 75px
+
 
 
 @media screen and (max-width: 1060px)
@@ -7628,11 +7613,29 @@ img
   .cart .order_block .list_order .total_price .price
     font-size: 20px
 
-  .opt_order
-    display: none
-    &.mobile
-      display: block
+  .productfull .product_info
+    .wholesale_order
 
+      display: block
+      .img-holder
+        display: inline-block
+        vertical-align: top
+        width: 40%
+        padding-right: 10%
+        box-sizing: border-box
+        + div
+          display: inline-block
+          vertical-align: top
+          width: 58%
+          font-size: 16px
+          line-height: 1.5em
+
+  body .rngst_phone_button
+    margin-right: 0
+    right: calc( 3% - 20px )
+    bottom: 21%
+  .link_form_contact
+    right: 3%
 
 @media screen and (max-width: 930px)
   .list_products
@@ -7675,9 +7678,7 @@ img
   .private_office .container #private_office > div .selectbox
     margin-bottom: 10px
 
-//@media screen and (max-width: 920px)
- .cart .order_block .list_order .order .row
-    width: 115px
+
 @media screen and (max-width: 920px)
   .cart .order_block .list_order .order .row.quantity .name input[type="number"]
     width: 60%
@@ -7691,14 +7692,27 @@ img
     &:last-child
         margin-bottom: 0!important
 
+  .productfull
+    .product_info
+      .wholesale_order
+        .table_order
+          .row
+            display: block
+            >div
+              display: block
+              margin-bottom: 20px
+              text-align: center
+              width: 100%
+            &:first-child
+              display: none
+            .parameter
+              width: 100%
+              .row-item > div .title_mobile
+                display: block
+                margin: 0 0 10px
+.productfull .product_info .wholesale_order .table_order .row .row-item .item-price span:nth-child(3)
+              margin-left: 30px
 
-  //.cart .order_block .list_order .order .row.name
-    width: 275px
-
-//@media screen and (max-width: 870px)
-
-  body .cart .order_block .list_order .order .row.name
-    width: 250px
 @media screen and (max-width: 850px)
   .cart .list_order .total_price .price
     font-size: 24px
@@ -7944,6 +7958,12 @@ img
   .productfull .product_info .block_info .block_price
     display: block
 
+  .productfull .product_info .wholesale_order .table_order .row .parameter .row-item
+    display: block
+  .productfull .product_info .wholesale_order .table_order .row .parameter .row-item > div
+    width: 100%
+    margin-bottom: 20px
+    text-align: center
 
 @media screen and (max-width: 450px)
   .list_products .filter > div span
@@ -8021,3 +8041,11 @@ img
       margin-right: 0
       margin-bottom: 20px  
 
+  .productfull
+    .product_info
+      .wholesale_order
+        .table_order .row
+          .row-item span
+            margin-right: 15px
+          .quantity input[type="number"]
+            width: 60px
