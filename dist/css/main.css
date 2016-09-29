@@ -5813,6 +5813,15 @@ img {
   #block_info .block_order_info .text p {
     margin-bottom: 10px; } }
 
+.link_form_contact {
+  width: 75px;
+  height: 75px;
+  position: fixed;
+  bottom: 11%;
+  right: 5%;
+  background: url("../img/icons/mail-icon.png") no-repeat center #ff4504;
+  border-radius: 75px; }
+
 @media screen and (max-width: 1060px) {
   .productfull .related_products .owl-controls .owl-nav .owl-prev, .productfull .history_products .owl-controls .owl-nav .owl-prev {
     left: -25px; }
