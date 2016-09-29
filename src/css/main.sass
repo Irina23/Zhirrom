@@ -1147,7 +1147,7 @@ img
 
         a
           font-size: 20px
-          line-height: 1em
+          line-height: 20px
     .user_block
       a, span
         font-size: 20px
@@ -3139,143 +3139,7 @@ img
         >div
           display: inline-block
           vertical-align: middle
-      &.mobile
-        display: none
-        .row
-          margin-bottom: 30px
-        .button
-          //text-align: center
-        .quantity
-          display: inline-block
-          vertical-align: middle
-          margin-right: 5px
-          &.disabled
-            input[type="number"]
-              border-color: #bab9b9!important
-          &.error
-            input[type="number"]
-              border-color: red
 
-
-          input[type="number"]
-            width: 70px
-            //height: 30px
-            border: 1px solid #d2d2d2
-            box-sizing: border-box
-            color: #343434
-            padding-left: 10px
-            font-size: 16px
-            line-height: 28px
-            margin: 10px 0
-            background: #fff
-          .update
-            display: inline-block
-            vertical-align: middle
-            width: 26px
-            height: 26px
-            background: url(../img/icons/icon-update.svg) no-repeat
-            background-size: 100%
-            border: 0
-            cursor: pointer
-            margin-bottom: 7px
-        .submit
-          background-color: $main-color
-          //border-radius: 5px
-          color: #fff
-          font-size: 14px
-          line-height: 1em
-          text-transform: uppercase
-          font-family: "FuturaBookC", sans-serif
-          padding: 9px 7px 7px
-          cursor: pointer
-          transition: all 0.35s
-          display: inline-block
-          vertical-align: middle
-          border-radius: 5px
-          //margin-top: 10px
-
-
-          &:hover
-            transition: all 0.35s
-            background: #fe622b
-            text-decoration: none
-
-
-          &.disabled
-            background: #fff
-            color: $main-color
-            float: right
-            margin-top: 15px
-            border: 2px solid $main-color
-            transition: all 0.35s
-            text-align: center
-
-            &:hover
-              background: $main-color
-              color: #fff
-              transition: all 0.35s
-        .size
-          margin-bottom: 15px
-          &.disabled
-            .selectbox
-              .select
-                color: #d2d2d2
-                &:after
-                  border-top: 9px solid #d2d2d2
-              .dropdown
-                display: none!important
-        .selectbox
-          display: inline-block
-          vertical-align: middle
-          .select
-            font-size: 16px
-            color: #343434
-            position: relative
-            border: 1px solid #d2d2d2
-            line-height: 30px
-            padding: 0 25px 0 10px
-            cursor: pointer
-            &:after
-              position: absolute
-              top: 50%
-              right: 5px
-              margin-top: -5px
-              width: 0
-              height: 0
-              border-left: 6px solid transparent
-              border-right: 6px solid transparent
-              border-top: 9px solid $main-color
-
-          .dropdown
-            display: none
-            position: absolute
-            top: 32px!important
-            left: 0
-            width: 100%
-            z-index: 2
-            background: #fff
-
-
-            li
-              font-size: 16px
-              //font-family: "FuturaBookC", sans-serif
-              line-height: 1em
-              cursor: pointer
-              color: #000
-              padding: 6px 10px
-              transition: all 0.35s
-              border: 1px solid #d2d2d2
-              border-top: 0
-              box-sizing: border-box
-
-              &:hover
-                background: $main-color
-                transition: all 0.35s
-                color: #fff
-                border-color: $main-color
-
-              &.sel
-                display: none
       h3
         color: #343434
         font-family: "FuturaBookC", sans-serif
@@ -5161,30 +5025,87 @@ img
     padding: 0 95px
 
   .list_advantages
+    text-align: center
+    margin: 0 -16px
     .item
-      width: 33%
+
       display: inline-block
       vertical-align: top
-      //text-align: center
-      margin-bottom: 30px
-      box-sizing: border-box
-      padding: 0 8px
-      .img-holder
-        display: inline-block
-        vertical-align: middle
-        margin-right: 20px
+      text-align: center
+      margin: 0 10px 20px
 
-     
-      .desc
-        overflow: hidden
-        display: inline-block
-        vertical-align: middle
-        width: calc(100% - 65px)    
-        color: #3d3d3d
-        font-family: "FuturaBookC", sans-serif
-        font-size: 18px
-        font-weight: 300
-        line-height: 24px
+      box-sizing: border-box
+
+      overflow: hidden
+      border: 3px solid #ebe9e9
+      width: 220px
+      height: 300px
+      perspective: 1000px
+      &:hover
+        .flipper
+          transform: rotateY(180deg)
+      //.back
+        transform: rotateY(0deg)
+      //.front
+        transform: rotateY(180deg)
+
+
+
+      .content-advantage
+        width: 100%
+        height: 100%
+        display: table
+        > div
+          display: table-cell
+          vertical-align: middle
+      .flipper
+        //transform: perspective(1000px)
+        transition: 0.6s
+        transform-style: preserve-3d
+        position: relative
+
+      .front, .back
+        backface-visibility: hidden
+        position: absolute
+        top: 0
+        left: 0
+        transition: 0.6s
+        transform-style: preserve-3d
+        transform: rotateY(0deg)
+        width: 220px
+        height: 300px
+      .front
+        //display: block
+        padding: 60px 10px 0
+        box-sizing: border-box
+        z-index: 2
+        transform: rotateY(0deg)
+
+
+        .name
+          text-transform: uppercase
+          color: #000
+          font-size: 16px
+          line-height: 1.4em
+        .img-holder
+          height: 65px
+          margin-bottom: 25px
+          img
+            max-height: 100%
+      .back
+        //display: none
+        transform: rotateY(180deg)
+        background: $main-color
+        padding: 20px 10px
+        //overflow-x: auto
+        box-sizing: border-box
+
+
+
+        .desc
+          color: #fff
+          font-size: 15px
+          line-height: 1.4em
 
 .block_make_order
   margin-bottom: 60px
@@ -6611,8 +6532,7 @@ img
         overflow: visible
         position: relative
         label 
-          background: $main-color 
-          color: #fff
+          background: $main-color
           text-transform: uppercase
           color: #fefefe
           font-family: 'FuturaBookC', sans-serif
@@ -7575,23 +7495,6 @@ img
     .description
       width: 100%
 
-  .productfull .product_info
-    .wholesale_order
-      display: none
-      &.mobile
-        display: block
-        .img-holder
-          display: inline-block
-          vertical-align: top
-          width: 40%
-          padding-right: 10%
-          box-sizing: border-box
-          + div
-            display: inline-block
-            vertical-align: top
-            width: 58%
-            font-size: 16px
-            line-height: 1.5em
 
 
 
@@ -7668,7 +7571,7 @@ img
       &:nth-child(1n+5)
         display: none
   .block_advantages .list_advantages.short .item
-    &:nth-child(1n+5)
+    &:nth-child(1n+7)
       display: none
   .buttom_more
     display: block
@@ -7849,8 +7752,6 @@ img
   .cart .order_block .list_order .order .row.image .img-holder
     margin: 10px auto 0
 
-  .block_advantages .list_advantages .item
-    width: 32%
 
   .make_order_page 
     .step_make_order
@@ -7894,6 +7795,9 @@ img
     width: 100%
     margin: 0 auto 20px
 
+  .block_advantages .list_advantages.short .item
+      &:nth-child(1n+5)
+        display: none
 
 @media screen and (max-width: 650px)
   #contact_form
@@ -7940,8 +7844,7 @@ img
         display: none
 
 
-  .block_advantages .list_advantages .item
-    width: 49%
+
 
   .list_category .item-category h3
     white-space: normal
@@ -8021,11 +7924,6 @@ img
         &:nth-child(3n)
           margin-right: 0
 
-
-
-
-  .block_advantages .list_advantages .item
-    width: 100%
 
 
   #report_available, #order_status_result

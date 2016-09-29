@@ -179,4 +179,9 @@ img{
     vertical-align: middle;
     float: none!important;
 }
-
+.update{
+    width: 0!important;
+    height: 0!important;
+    border: 0!important;
+    padding: 0!important;
+}

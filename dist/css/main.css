@@ -972,7 +972,7 @@ img {
         margin-bottom: 20px; }
       .footer .wrap .contact > div a {
         font-size: 20px;
-        line-height: 1em; }
+        line-height: 20px; }
   .footer .wrap .user_block a, .footer .wrap .user_block span {
     font-size: 20px;
     line-height: 1em;
@@ -2750,127 +2750,6 @@ img {
       .productfull .product_info .wholesale_order + .total_price > div {
         display: inline-block;
         vertical-align: middle; }
-    .productfull .product_info .wholesale_order.mobile {
-      display: none; }
-      .productfull .product_info .wholesale_order.mobile .row {
-        margin-bottom: 30px; }
-      .productfull .product_info .wholesale_order.mobile .quantity {
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 5px; }
-        .productfull .product_info .wholesale_order.mobile .quantity.disabled input[type="number"] {
-          border-color: #bab9b9 !important; }
-        .productfull .product_info .wholesale_order.mobile .quantity.error input[type="number"] {
-          border-color: red; }
-        .productfull .product_info .wholesale_order.mobile .quantity input[type="number"] {
-          width: 70px;
-          border: 1px solid #d2d2d2;
-          box-sizing: border-box;
-          color: #343434;
-          padding-left: 10px;
-          font-size: 16px;
-          line-height: 28px;
-          margin: 10px 0;
-          background: #fff; }
-        .productfull .product_info .wholesale_order.mobile .quantity .update {
-          display: inline-block;
-          vertical-align: middle;
-          width: 26px;
-          height: 26px;
-          background: url(../img/icons/icon-update.svg) no-repeat;
-          background-size: 100%;
-          border: 0;
-          cursor: pointer;
-          margin-bottom: 7px; }
-      .productfull .product_info .wholesale_order.mobile .submit {
-        background-color: #ff4504;
-        color: #fff;
-        font-size: 14px;
-        line-height: 1em;
-        text-transform: uppercase;
-        font-family: "FuturaBookC", sans-serif;
-        padding: 9px 7px 7px;
-        cursor: pointer;
-        -webkit-transition: all 0.35s;
-        transition: all 0.35s;
-        display: inline-block;
-        vertical-align: middle;
-        border-radius: 5px; }
-        .productfull .product_info .wholesale_order.mobile .submit:hover {
-          -webkit-transition: all 0.35s;
-          transition: all 0.35s;
-          background: #fe622b;
-          text-decoration: none; }
-        .productfull .product_info .wholesale_order.mobile .submit.disabled {
-          background: #fff;
-          color: #ff4504;
-          float: right;
-          margin-top: 15px;
-          border: 2px solid #ff4504;
-          -webkit-transition: all 0.35s;
-          transition: all 0.35s;
-          text-align: center; }
-          .productfull .product_info .wholesale_order.mobile .submit.disabled:hover {
-            background: #ff4504;
-            color: #fff;
-            -webkit-transition: all 0.35s;
-            transition: all 0.35s; }
-      .productfull .product_info .wholesale_order.mobile .size {
-        margin-bottom: 15px; }
-        .productfull .product_info .wholesale_order.mobile .size.disabled .selectbox .select {
-          color: #d2d2d2; }
-          .productfull .product_info .wholesale_order.mobile .size.disabled .selectbox .select:after {
-            border-top: 9px solid #d2d2d2; }
-        .productfull .product_info .wholesale_order.mobile .size.disabled .selectbox .dropdown {
-          display: none !important; }
-      .productfull .product_info .wholesale_order.mobile .selectbox {
-        display: inline-block;
-        vertical-align: middle; }
-        .productfull .product_info .wholesale_order.mobile .selectbox .select {
-          font-size: 16px;
-          color: #343434;
-          position: relative;
-          border: 1px solid #d2d2d2;
-          line-height: 30px;
-          padding: 0 25px 0 10px;
-          cursor: pointer; }
-          .productfull .product_info .wholesale_order.mobile .selectbox .select:after {
-            position: absolute;
-            top: 50%;
-            right: 5px;
-            margin-top: -5px;
-            width: 0;
-            height: 0;
-            border-left: 6px solid transparent;
-            border-right: 6px solid transparent;
-            border-top: 9px solid #ff4504; }
-        .productfull .product_info .wholesale_order.mobile .selectbox .dropdown {
-          display: none;
-          position: absolute;
-          top: 32px !important;
-          left: 0;
-          width: 100%;
-          z-index: 2;
-          background: #fff; }
-          .productfull .product_info .wholesale_order.mobile .selectbox .dropdown li {
-            font-size: 16px;
-            line-height: 1em;
-            cursor: pointer;
-            color: #000;
-            padding: 6px 10px;
-            -webkit-transition: all 0.35s;
-            transition: all 0.35s;
-            border: 1px solid #d2d2d2;
-            border-top: 0;
-            box-sizing: border-box; }
-            .productfull .product_info .wholesale_order.mobile .selectbox .dropdown li:hover {
-              background: #ff4504;
-              -webkit-transition: all 0.35s;
-              transition: all 0.35s;
-              color: #fff;
-              border-color: #ff4504; }
-            .productfull .product_info .wholesale_order.mobile .selectbox .dropdown li.sel {
-              display: none; }
     .productfull .product_info .wholesale_order h3 {
       color: #343434;
       font-family: "FuturaBookC", sans-serif;
@@ -4477,27 +4356,77 @@ img {
     line-height: 24px;
     margin-bottom: 50px;
     padding: 0 95px; }
-  .block_advantages .list_advantages .item {
-    width: 33%;
-    display: inline-block;
-    vertical-align: top;
-    margin-bottom: 30px;
-    box-sizing: border-box;
-    padding: 0 8px; }
-    .block_advantages .list_advantages .item .img-holder {
+  .block_advantages .list_advantages {
+    text-align: center;
+    margin: 0 -16px; }
+    .block_advantages .list_advantages .item {
       display: inline-block;
-      vertical-align: middle;
-      margin-right: 20px; }
-    .block_advantages .list_advantages .item .desc {
+      vertical-align: top;
+      text-align: center;
+      margin: 0 10px 20px;
+      box-sizing: border-box;
       overflow: hidden;
-      display: inline-block;
-      vertical-align: middle;
-      width: calc(100% - 65px);
-      color: #3d3d3d;
-      font-family: "FuturaBookC", sans-serif;
-      font-size: 18px;
-      font-weight: 300;
-      line-height: 24px; }
+      border: 3px solid #ebe9e9;
+      width: 220px;
+      height: 300px;
+      -webkit-perspective: 1000px;
+              perspective: 1000px; }
+      .block_advantages .list_advantages .item:hover .flipper {
+        -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg); }
+      .block_advantages .list_advantages .item .content-advantage {
+        width: 100%;
+        height: 100%;
+        display: table; }
+        .block_advantages .list_advantages .item .content-advantage > div {
+          display: table-cell;
+          vertical-align: middle; }
+      .block_advantages .list_advantages .item .flipper {
+        -webkit-transition: 0.6s;
+        transition: 0.6s;
+        -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+        position: relative; }
+      .block_advantages .list_advantages .item .front, .block_advantages .list_advantages .item .back {
+        -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        -webkit-transition: 0.6s;
+        transition: 0.6s;
+        -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+        width: 220px;
+        height: 300px; }
+      .block_advantages .list_advantages .item .front {
+        padding: 60px 10px 0;
+        box-sizing: border-box;
+        z-index: 2;
+        -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg); }
+        .block_advantages .list_advantages .item .front .name {
+          text-transform: uppercase;
+          color: #000;
+          font-size: 16px;
+          line-height: 1.4em; }
+        .block_advantages .list_advantages .item .front .img-holder {
+          height: 65px;
+          margin-bottom: 25px; }
+          .block_advantages .list_advantages .item .front .img-holder img {
+            max-height: 100%; }
+      .block_advantages .list_advantages .item .back {
+        -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+        background: #ff4504;
+        padding: 20px 10px;
+        box-sizing: border-box; }
+        .block_advantages .list_advantages .item .back .desc {
+          color: #fff;
+          font-size: 15px;
+          line-height: 1.4em; }
 
 .block_make_order {
   margin-bottom: 60px; }
@@ -5758,7 +5687,6 @@ img {
       position: relative; }
       .make_order_page .step_make_order .item .block_text label {
         background: #ff4504;
-        color: #fff;
         text-transform: uppercase;
         color: #fefefe;
         font-family: 'FuturaBookC', sans-serif;
@@ -6501,22 +6429,6 @@ img {
     font-size: 36px; }
   .faq .container .description {
     width: 100%; }
-  .productfull .product_info .wholesale_order {
-    display: none; }
-    .productfull .product_info .wholesale_order.mobile {
-      display: block; }
-      .productfull .product_info .wholesale_order.mobile .img-holder {
-        display: inline-block;
-        vertical-align: top;
-        width: 40%;
-        padding-right: 10%;
-        box-sizing: border-box; }
-        .productfull .product_info .wholesale_order.mobile .img-holder + div {
-          display: inline-block;
-          vertical-align: top;
-          width: 58%;
-          font-size: 16px;
-          line-height: 1.5em; }
   #subscription2 {
     position: inherit;
     top: inherit;
@@ -6574,7 +6486,7 @@ img {
     margin-bottom: 30px; }
   .product_new .products.short .block_product:nth-child(1n+5) {
     display: none; }
-  .block_advantages .list_advantages.short .item:nth-child(1n+5) {
+  .block_advantages .list_advantages.short .item:nth-child(1n+7) {
     display: none; }
   .buttom_more {
     display: block; }
@@ -6696,8 +6608,6 @@ img {
     display: block; }
   .cart .order_block .list_order .order .row.image .img-holder {
     margin: 10px auto 0; }
-  .block_advantages .list_advantages .item {
-    width: 32%; }
   .make_order_page .step_make_order:after {
     display: none; }
   .make_order_page .step_make_order .item .img-holder {
@@ -6727,7 +6637,9 @@ img {
     padding: 0 !important; }
   .list_products .products .list_category ul li {
     width: 100%;
-    margin: 0 auto 20px; } }
+    margin: 0 auto 20px; }
+  .block_advantages .list_advantages.short .item:nth-child(1n+5) {
+    display: none; } }
 
 @media screen and (max-width: 650px) {
   #contact_form {
@@ -6765,8 +6677,6 @@ img {
     margin-bottom: 10px; }
     .private_office .container .tabs-menu li:after {
       display: none; }
-  .block_advantages .list_advantages .item {
-    width: 49%; }
   .list_category .item-category h3 {
     white-space: normal; } }
 
@@ -6823,8 +6733,6 @@ img {
         margin-right: 7px; }
         .productfull .product_info .image [id^="bx-pager"] a:nth-child(3n) {
           margin-right: 0; }
-  .block_advantages .list_advantages .item {
-    width: 100%; }
   #report_available, #order_status_result {
     width: calc(100vw - 40px);
     left: 20px;
