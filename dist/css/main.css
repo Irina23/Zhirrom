@@ -1018,26 +1018,24 @@ img {
   #slider .slider .item {
     height: calc( 100vh - 295px); }
     #slider .slider .item .wrap {
-      position: relative; }
+      position: relative;
+      display: table;
+      height: 100%; }
     #slider .slider .item .block_text {
-      width: 700px;
       margin: auto;
-      padding-top: 150px; }
+      display: table-cell;
+      vertical-align: middle;
+      height: 100%; }
+      #slider .slider .item .block_text > div {
+        width: 80%; }
+      #slider .slider .item .block_text.right_text > div {
+        width: 60%;
+        float: left; }
       #slider .slider .item .block_text.left_text {
-        width: 450px;
-        right: 0;
-        position: absolute;
-        padding: 0;
-        top: 150px; }
-        #slider .slider .item .block_text.left_text h3 {
-          font-size: 60px;
-          color: #000; }
-          #slider .slider .item .block_text.left_text h3 span {
-            display: inline-block;
-            vertical-align: top;
-            margin-left: 5px;
-            color: #ff4504;
-            font-size: 60px; }
+        padding: 0; }
+        #slider .slider .item .block_text.left_text > div {
+          width: 50%;
+          float: right; }
         #slider .slider .item .block_text.left_text a {
           background: #ff4504;
           width: 155px;
@@ -1047,11 +1045,10 @@ img {
       #slider .slider .item .block_text h3 {
         font-family: "FuturaPT-Medium", sans-serif;
         color: #ffffff;
-        font-size: 55px;
+        font-size: 58px;
         font-weight: normal;
         line-height: 1.2em;
-        text-align: center;
-        margin-bottom: 40px; }
+        text-align: center; }
       #slider .slider .item .block_text a {
         line-height: 50px;
         color: #fff;
@@ -1067,7 +1064,8 @@ img {
         box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16);
         text-transform: uppercase;
         font-family: "FuturaPT-Heavy", sans-serif;
-        letter-spacing: 1px; }
+        letter-spacing: 1px;
+        margin-top: 40px; }
         #slider .slider .item .block_text a:hover {
           -webkit-transition: all 0.35s;
           transition: all 0.35s;
@@ -6182,7 +6180,17 @@ body .rngst_phone_button {
   .productfull .product_info .wholesale_order .table_order .row .parameter .row-item > div {
     width: 100%;
     margin-bottom: 20px;
-    text-align: center; } }
+    text-align: center; }
+  .bx-wrapper .bx-pager .bx-pager-item {
+    display: none !important; }
+  #slider .bx-wrapper .bx-controls-direction {
+    display: none !important; }
+  #slider .slider .item .block_text h3, #slider .slider .item .block_text.left_text h3 {
+    font-size: 16px; }
+  #slider .slider {
+    height: 200px; }
+    #slider .slider .item {
+      height: 200px; } }
 
 @media screen and (max-width: 450px) {
   .list_products .filter > div span {

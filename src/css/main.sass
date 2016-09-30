@@ -1194,26 +1194,29 @@ img
       height: calc( 100vh - 295px)
       .wrap
         position: relative
+        display: table
+        height: 100%
       .block_text
-        width: 700px
-        margin: auto
-        padding-top: 150px
-        &.left_text
-          width: 450px
-          right: 0
-          position: absolute
-          padding: 0
-          top: 150px
 
-          h3
-            font-size: 60px
-            color: #000
-            span
-              display: inline-block
-              vertical-align: top
-              margin-left: 5px
-              color: $main-color
-              font-size: 60px
+        margin: auto
+        //padding-top: 150px
+        display: table-cell
+        vertical-align: middle
+        height: 100%
+        >div
+          width: 80%
+        &.right_text
+          >div
+            width: 60%
+            float: left
+        &.left_text
+
+          padding: 0
+          >div
+            width: 50%
+            float: right
+
+
           a
             background: $main-color
             width: 155px
@@ -1225,11 +1228,11 @@ img
         h3
           font-family: "FuturaPT-Medium", sans-serif
           color:  #ffffff
-          font-size: 55px
+          font-size: 58px
           font-weight: normal
           line-height: 1.2em
           text-align: center
-          margin-bottom: 40px
+
         a
           line-height: 50px
           color: #fff
@@ -1245,6 +1248,7 @@ img
           text-transform: uppercase
           font-family: "FuturaPT-Heavy", sans-serif
           letter-spacing: 1px
+          margin-top: 40px
 
           &:hover
             transition: all 0.35s
@@ -7170,6 +7174,18 @@ body .rngst_phone_button
     margin-bottom: 20px
     text-align: center
 
+  .bx-wrapper .bx-pager .bx-pager-item
+    display: none!important
+
+  #slider .bx-wrapper .bx-controls-direction
+    display: none!important
+  #slider .slider .item .block_text h3, #slider .slider .item .block_text.left_text h3
+    font-size: 16px
+
+  #slider .slider
+    height: 200px
+    .item
+      height: 200px
 
 
 @media screen and (max-width: 450px)
