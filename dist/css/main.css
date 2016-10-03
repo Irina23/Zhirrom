@@ -1042,26 +1042,25 @@ img {
   #slider .slider .item {
     height: calc( 100vh - 257px); }
     #slider .slider .item .wrap {
-      position: relative; }
+      position: relative;
+      display: table;
+      height: 100%; }
     #slider .slider .item .block_text {
       width: 700px;
       margin: auto;
-      padding-top: 200px; }
+      display: table-cell;
+      vertical-align: middle;
+      height: 100%; }
+      #slider .slider .item .block_text > div {
+        width: 80%; }
+      #slider .slider .item .block_text.right_text > div {
+        width: 60%;
+        float: left; }
       #slider .slider .item .block_text.left_text {
-        width: 450px;
-        right: 0;
-        position: absolute;
-        padding: 0;
-        top: 200px; }
-        #slider .slider .item .block_text.left_text h3 {
-          font-size: 60px;
-          color: #000; }
-          #slider .slider .item .block_text.left_text h3 span {
-            display: inline-block;
-            vertical-align: top;
-            margin-left: 5px;
-            color: #ff4504;
-            font-size: 60px; }
+        padding: 0; }
+        #slider .slider .item .block_text.left_text > div {
+          width: 50%;
+          float: right; }
         #slider .slider .item .block_text.left_text a {
           background: #ff4504;
           width: 155px;
@@ -1071,11 +1070,10 @@ img {
       #slider .slider .item .block_text h3 {
         font-family: "FuturaPT-Medium", sans-serif;
         color: #ffffff;
-        font-size: 55px;
+        font-size: 58px;
         font-weight: normal;
         line-height: 1.2em;
-        text-align: center;
-        margin-bottom: 40px; }
+        text-align: center; }
       #slider .slider .item .block_text a {
         line-height: 50px;
         color: #fff;
@@ -6289,14 +6287,8 @@ body .rngst_phone_button {
       width: 100%; }
   #slider .slider .item .block_text {
     width: 100%; }
-    #slider .slider .item .block_text.left_text h3 {
-      font-size: 36px; }
-      #slider .slider .item .block_text.left_text h3 span {
-        font-size: 36px;
-        margin-right: 5px; }
     #slider .slider .item .block_text h3 {
-      font-size: 36px;
-      margin-bottom: 30px; }
+      font-size: 36px; }
   .about .advantages_holder {
     border-width: 5px;
     padding: 15px; }
@@ -6310,8 +6302,6 @@ body .rngst_phone_button {
     position: absolute; }
   #slider .bx-wrapper .bx-pager.bx-default-pager a {
     color: rgba(255, 255, 255, 0.5); }
-  #slider .slider .item .block_text.left_text {
-    top: 210px; }
   .blog .list_items .item .block_text .name a {
     font-size: 24px;
     height: auto;
@@ -6845,13 +6835,6 @@ body .rngst_phone_button {
 @media screen and (max-width: 500px) {
   .blog .list_items .item .img-holder {
     height: auto; }
-  #slider .slider .item .block_text {
-    padding-top: 100px; }
-  #slider .slider .item .block_text.left_text {
-    width: auto; }
-    #slider .slider .item .block_text.left_text h3 {
-      text-align: left;
-      margin-left: 20px; }
   #contact_form h3 {
     margin-bottom: 20px;
     font-size: 23px; }
@@ -6891,7 +6874,17 @@ body .rngst_phone_button {
   .productfull .product_info .wholesale_order .table_order .row .parameter .row-item > div {
     width: 100%;
     margin-bottom: 20px;
-    text-align: center; } }
+    text-align: center; }
+  #slider .bx-wrapper .bx-controls-direction {
+    display: none !important; }
+  #slider .slider {
+    height: 200px; }
+    #slider .slider .item {
+      height: 200px; }
+      #slider .slider .item .block_text h3, #slider .slider .item .block_text.left_text h3 {
+        font-size: 16px; }
+  #slider .bx-wrapper .bx-pager.bx-default-pager {
+    display: none !important; } }
 
 @media screen and (max-width: 450px) {
   .list_products .filter > div span {
@@ -6937,9 +6930,6 @@ body .rngst_phone_button {
     margin-bottom: 5px !important; }
   .list_category .item-category .number {
     font-size: 30px; }
-  #slider .slider .item .block_text.left_text a {
-    float: left;
-    margin-left: 20px; }
   #login, #call_back {
     width: calc( 100% - 40px);
     margin-left: 0;

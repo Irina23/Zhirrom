@@ -1231,26 +1231,28 @@ img
       height: calc( 100vh - 257px)
       .wrap
         position: relative
+        display: table
+        height: 100%
       .block_text
         width: 700px
         margin: auto
-        padding-top: 200px
+        display: table-cell
+        vertical-align: middle
+        height: 100%
+        >div
+          width: 80%
+        &.right_text
+          >div
+            width: 60%
+            float: left
         &.left_text
-          width: 450px
-          right: 0
-          position: absolute
-          padding: 0
-          top: 200px
 
-          h3
-            font-size: 60px
-            color: #000
-            span
-              display: inline-block
-              vertical-align: top
-              margin-left: 5px
-              color: $main-color
-              font-size: 60px
+          padding: 0
+          >div
+            width: 50%
+            float: right
+
+
           a
             background: $main-color
             width: 155px
@@ -1262,11 +1264,11 @@ img
         h3
           font-family: "FuturaPT-Medium", sans-serif
           color:  #ffffff
-          font-size: 55px
+          font-size: 58px
           font-weight: normal
           line-height: 1.2em
           text-align: center
-          margin-bottom: 40px
+
         a
           line-height: 50px
           color: #fff
@@ -7132,16 +7134,9 @@ body .rngst_phone_button
       .item
         .block_text
           width: 100%
-          &.left_text
-            //width: 100%
-            h3
-              font-size: 36px
-              span
-                font-size: 36px
-                margin-right: 5px
+
           h3
             font-size: 36px
-            margin-bottom: 30px
 
   .about .advantages_holder
     border-width: 5px
@@ -7149,11 +7144,7 @@ body .rngst_phone_button
 
 
   #slider
-    .slider
 
-      .item
-        .block_text
-          //padding-top: 100px
     .bx-wrapper .bx-pager.bx-default-pager
       right: 20px
       left: inherit
@@ -7164,9 +7155,6 @@ body .rngst_phone_button
     position: absolute
   #slider .bx-wrapper .bx-pager.bx-default-pager a
     color: rgba(255, 255, 255, 0.5)
-
-  #slider .slider .item .block_text.left_text
-    top: 210px
 
 
 
@@ -7902,14 +7890,6 @@ body .rngst_phone_button
     height: auto
 
 
-  #slider .slider .item .block_text
-    padding-top: 100px
-  #slider .slider .item .block_text.left_text
-    width: auto
-    h3
-      text-align: left
-      margin-left: 20px
-
 
   #contact_form
     //padding: 20px 15px
@@ -7964,6 +7944,22 @@ body .rngst_phone_button
     width: 100%
     margin-bottom: 20px
     text-align: center
+
+
+
+
+  #slider
+    .bx-wrapper .bx-controls-direction
+      display: none!important
+    .slider
+      height: 200px
+      .item
+        height: 200px
+        .block_text h3, .block_text.left_text h3
+          font-size: 16px
+    .bx-wrapper .bx-pager.bx-default-pager
+      display: none!important
+
 
 @media screen and (max-width: 450px)
   .list_products .filter > div span
@@ -8022,7 +8018,7 @@ body .rngst_phone_button
   .list_category .item-category .number
     font-size: 30px
 
-  #slider .slider .item .block_text.left_text a
+  //#slider .slider .item .block_text.left_text a
     float: left
     margin-left: 20px
 
