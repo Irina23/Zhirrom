@@ -5636,8 +5636,7 @@ body .rngst_phone_button {
         font-size: 36px;
         margin-right: 5px; }
     #slider .slider .item .block_text h3 {
-      font-size: 36px;
-      margin-bottom: 30px; }
+      font-size: 36px; }
   .about .advantages_holder {
     border-width: 5px;
     padding: 15px; }
@@ -5651,8 +5650,6 @@ body .rngst_phone_button {
     position: absolute; }
   #slider .bx-wrapper .bx-pager.bx-default-pager a {
     color: rgba(255, 255, 255, 0.5); }
-  #slider .slider .item .block_text.left_text {
-    top: 210px; }
   .blog .list_items .item .block_text .name a {
     font-size: 24px;
     height: auto;
@@ -6134,8 +6131,6 @@ body .rngst_phone_button {
 @media screen and (max-width: 500px) {
   .blog .list_items .item .img-holder {
     height: auto; }
-  #slider .slider .item .block_text {
-    padding-top: 100px; }
   #slider .slider .item .block_text.left_text {
     width: auto; }
     #slider .slider .item .block_text.left_text h3 {
