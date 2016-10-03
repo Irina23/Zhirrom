@@ -6131,11 +6131,6 @@ body .rngst_phone_button {
 @media screen and (max-width: 500px) {
   .blog .list_items .item .img-holder {
     height: auto; }
-  #slider .slider .item .block_text.left_text {
-    width: auto; }
-    #slider .slider .item .block_text.left_text h3 {
-      text-align: left;
-      margin-left: 20px; }
   #contact_form h3 {
     margin-bottom: 20px;
     font-size: 23px; }
