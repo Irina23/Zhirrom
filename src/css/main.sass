@@ -58,6 +58,64 @@ $color-grey: #727272
 
 .hidden
   display: none
+
+
+.inline-layout
+  font-size: 0
+  letter-spacing: 0
+  & > *
+    display: inline-block
+    vertical-align: top
+    font-size: 0
+  &.col-1 > *
+    width: 100%
+  &.col-2 > *
+    width: 100 / 2 + %
+  &.col-3 > *
+    width: 100 / 3 + %
+  &.col-4 > *
+    width: 100 / 4 + %
+  &.col-5 > *
+    width: 100 / 5 + %
+  &.col-6 > *
+    width: 100 / 6 + %
+  &.col-7 > *
+    width: 100 / 7 + %
+  &.col-8 > *
+    width: 100 / 8 + %
+  &.col-9 > *
+    width: 100 / 9 + %
+  &.col-10 > *
+    width: 100 / 10 + %
+
+
+
+.image-holder
+  overflow: hidden
+  position: relative
+  text-align: center
+  vertical-align: middle
+  img
+    vertical-align: middle
+    width: 100%
+  .fake-img
+    opacity: 0
+    position: relative
+    height: 100%
+    width: 100%
+    z-index: 1
+  .img
+    background:
+      position: 50% 50%
+      repeat: no-repeat
+      size: cover
+    height: 100%
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+
+
 body
   font-family: "FuturaBookC", sans-serif
   padding: 0
@@ -1231,6 +1289,7 @@ img
           font-weight: normal
           line-height: 1.2em
           text-align: center
+          text-shadow: 1px 0 2px rgba(0, 0, 0, 0.7)
 
         a
           line-height: 50px
@@ -5895,6 +5954,80 @@ body .rngst_phone_button
   from
     transform: scale(0.8)
 
+.block_team
+  margin-bottom: 70px
+  h3
+    color: black
+    font-family: "FuturaBookC", sans-serif
+    font-size: 48px
+    line-height: 1em
+    margin-bottom: 10px
+    text-align: center
+    font-weight: 300
+
+  .text_holder
+    text-align: center
+    color: #636363
+    font-family: "FuturaPT-Light", sans-serif
+    font-size: 18px
+    font-weight: 300
+    line-height: 24px
+    margin-bottom: 50px
+    padding: 0 95px
+
+  .list_team
+    text-align: center
+    .item
+      width: 300px
+      border: 1px solid #e8e8e8
+      margin-right: 20px
+      display: inline-block
+      vertical-align: middle
+      box-sizing: border-box
+      margin-bottom: 20px
+      &:hover
+        .block-image
+          .image-holder
+            opacity: 0
+            //transition: all 0.35s
+            &:nth-child(2)
+              opacity: 1
+              //transition: all 0.35s
+
+      &:last-child
+        margin-right: 0
+      .block-image
+        position: relative
+        height: 300px
+
+        .image-holder
+          position: absolute
+          height: 300px
+          //transition: all 0.35s
+
+          &:nth-child(2)
+            opacity: 0
+          .img
+            max-height: 100%
+      .block-name
+
+        color: #000
+        font-family: "FuturaBookC", sans-serif
+        text-align: center
+        padding: 20px
+
+
+        background: #f0f0f0
+        //border: 1px solid #e8e8e8
+        .name
+          margin-bottom: 7px
+          font-size: 24px
+          line-height: 1em
+        .position
+          font-size: 16px
+          line-height: 1em
+
+
 
 
 @media screen and (min-width: 1024px) and (max-height: 700px)
@@ -5905,9 +6038,9 @@ body .rngst_phone_button
       margin-top: 20px
   #slider
     .slider
-      height: calc( 100vh - 185px)
+      height: 100vh
       .item
-        height: calc( 100vh - 185px)
+        height: 100vh
 
   .about
     padding: 0 0 30px
@@ -6745,23 +6878,7 @@ body .rngst_phone_button
     .description
       width: 100%
 
-  .productfull .product_info
-    .wholesale_order
-      //display: none
-      //&.mobile
-        display: block
-        .img-holder
-          display: inline-block
-          vertical-align: top
-          width: 40%
-          padding-right: 10%
-          box-sizing: border-box
-          + div
-            display: inline-block
-            vertical-align: top
-            width: 58%
-            font-size: 16px
-            line-height: 1.5em
+
 
 
 
@@ -6860,6 +6977,12 @@ body .rngst_phone_button
     bottom: 21%
   .link_form_contact
     right: 3%
+
+  .block_team
+    h3
+      font-size: 36px
+    .text_holder
+      padding: 0
 
 @media screen and (max-width: 930px)
   .list_products
@@ -7194,6 +7317,15 @@ body .rngst_phone_button
       width: 100%  
       height: 280px
 
+  .block_team
+    .list_team
+      .item
+        width: 280px
+        margin: 0 auto 20px
+        .block-image
+          height: 280px
+          .image-holder
+            height: 280px
 
 
 
