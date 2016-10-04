@@ -51,6 +51,58 @@
 .hidden {
   display: none; }
 
+.inline-layout {
+  font-size: 0;
+  letter-spacing: 0; }
+  .inline-layout > * {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0; }
+  .inline-layout.col-1 > * {
+    width: 100%; }
+  .inline-layout.col-2 > * {
+    width: 50%; }
+  .inline-layout.col-3 > * {
+    width: 33.33333%; }
+  .inline-layout.col-4 > * {
+    width: 25%; }
+  .inline-layout.col-5 > * {
+    width: 20%; }
+  .inline-layout.col-6 > * {
+    width: 16.66667%; }
+  .inline-layout.col-7 > * {
+    width: 14.28571%; }
+  .inline-layout.col-8 > * {
+    width: 12.5%; }
+  .inline-layout.col-9 > * {
+    width: 11.11111%; }
+  .inline-layout.col-10 > * {
+    width: 10%; }
+
+.image-holder {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  vertical-align: middle; }
+  .image-holder img {
+    vertical-align: middle;
+    width: 100%; }
+  .image-holder .fake-img {
+    opacity: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1; }
+  .image-holder .img {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0; }
+
 body {
   font-family: "FuturaBookC", sans-serif;
   padding: 0;
@@ -5879,6 +5931,65 @@ body .rngst_phone_button {
     -webkit-transform: scale(0.8);
             transform: scale(0.8); } }
 
+.block_team {
+  margin-bottom: 70px; }
+  .block_team h3 {
+    color: black;
+    font-family: "FuturaBookC", sans-serif;
+    font-size: 48px;
+    line-height: 1em;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 300; }
+  .block_team .text_holder {
+    text-align: center;
+    color: #636363;
+    font-family: "FuturaPT-Light", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 50px;
+    padding: 0 95px; }
+  .block_team .list_team {
+    text-align: center; }
+    .block_team .list_team .item {
+      width: 300px;
+      border: 1px solid #e8e8e8;
+      margin-right: 20px;
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      margin-bottom: 20px; }
+      .block_team .list_team .item:hover .block-image .image-holder {
+        opacity: 0; }
+        .block_team .list_team .item:hover .block-image .image-holder:nth-child(2) {
+          opacity: 1; }
+      .block_team .list_team .item:last-child {
+        margin-right: 0; }
+      .block_team .list_team .item .block-image {
+        position: relative;
+        height: 300px; }
+        .block_team .list_team .item .block-image .image-holder {
+          position: absolute;
+          height: 300px; }
+          .block_team .list_team .item .block-image .image-holder:nth-child(2) {
+            opacity: 0; }
+          .block_team .list_team .item .block-image .image-holder .img {
+            max-height: 100%; }
+      .block_team .list_team .item .block-name {
+        color: #000;
+        font-family: "FuturaBookC", sans-serif;
+        text-align: center;
+        padding: 20px;
+        background: #f0f0f0; }
+        .block_team .list_team .item .block-name .name {
+          margin-bottom: 7px;
+          font-size: 24px;
+          line-height: 1em; }
+        .block_team .list_team .item .block-name .position {
+          font-size: 16px;
+          line-height: 1em; }
+
 @media screen and (min-width: 1024px) and (max-height: 700px) {
   .header #menu {
     margin-top: 20px; }
@@ -6642,7 +6753,11 @@ body .rngst_phone_button {
     right: calc( 3% - 20px);
     bottom: 21%; }
   .link_form_contact {
-    right: 3%; } }
+    right: 3%; }
+  .block_team h3 {
+    font-size: 36px; }
+  .block_team .text_holder {
+    padding: 0; } }
 
 @media screen and (max-width: 930px) {
   .list_products .filter_products {
@@ -6897,7 +7012,14 @@ body .rngst_phone_button {
       max-height: 280px; }
     .article .img_block.map #map_canvas {
       width: 100%;
-      height: 280px; } }
+      height: 280px; }
+  .block_team .list_team .item {
+    width: 280px;
+    margin: 0 auto 20px; }
+    .block_team .list_team .item .block-image {
+      height: 280px; }
+      .block_team .list_team .item .block-image .image-holder {
+        height: 280px; } }
 
 @media screen and (max-width: 440px) {
   .brand .list_brand li {
