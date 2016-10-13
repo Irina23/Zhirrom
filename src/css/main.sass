@@ -2625,10 +2625,17 @@ img
         height: 100%
         z-index: 2
         opacity: 1
+        //overflow: hidden
+
+
 
 
       .bx-wrapper
           //margin-bottom: 30px
+          max-height: 460px
+          overflow: hidden
+          img
+            max-height: 100%
           .bx-controls-direction
             display: none
             a
@@ -7303,6 +7310,9 @@ body .rngst_phone_button
     .item
       height: 200px
 
+
+  .productfull .product_info .image [id^="slider_product"]
+    height: 280px
 
 @media screen and (max-width: 450px)
   .list_products .filter > div span

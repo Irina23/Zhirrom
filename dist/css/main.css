@@ -2297,21 +2297,26 @@ img {
       height: 100%;
       z-index: 2;
       opacity: 1; }
-    .productfull .product_info .image .bx-wrapper .bx-controls-direction {
-      display: none; }
-      .productfull .product_info .image .bx-wrapper .bx-controls-direction a {
-        width: 20px;
-        height: 34px;
-        background: url("../img/icons/slider-nav_hover.png") no-repeat;
-        background-size: 100%;
-        margin-top: -10px;
-        text-indent: 0; }
-        .productfull .product_info .image .bx-wrapper .bx-controls-direction a.bx-next {
-          -webkit-transform: rotate(180deg);
-                  transform: rotate(180deg);
-          right: 10px; }
-        .productfull .product_info .image .bx-wrapper .bx-controls-direction a.bx-prev {
-          left: 10px; }
+    .productfull .product_info .image .bx-wrapper {
+      max-height: 460px;
+      overflow: hidden; }
+      .productfull .product_info .image .bx-wrapper img {
+        max-height: 100%; }
+      .productfull .product_info .image .bx-wrapper .bx-controls-direction {
+        display: none; }
+        .productfull .product_info .image .bx-wrapper .bx-controls-direction a {
+          width: 20px;
+          height: 34px;
+          background: url("../img/icons/slider-nav_hover.png") no-repeat;
+          background-size: 100%;
+          margin-top: -10px;
+          text-indent: 0; }
+          .productfull .product_info .image .bx-wrapper .bx-controls-direction a.bx-next {
+            -webkit-transform: rotate(180deg);
+                    transform: rotate(180deg);
+            right: 10px; }
+          .productfull .product_info .image .bx-wrapper .bx-controls-direction a.bx-prev {
+            left: 10px; }
     .productfull .product_info .image [id^="slider_product"] {
       overflow: hidden;
       height: 460px;
@@ -6296,7 +6301,9 @@ body .rngst_phone_button {
   #slider .slider {
     height: 200px; }
     #slider .slider .item {
-      height: 200px; } }
+      height: 200px; }
+  .productfull .product_info .image [id^="slider_product"] {
+    height: 280px; } }
 
 @media screen and (max-width: 450px) {
   .list_products .filter > div span {

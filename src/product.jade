@@ -25,8 +25,11 @@ html(lang="ru")
                         .image.cf
                             .slider_filter_color
                                 #slider_product1
-                                    div
-                                        img(src="img/content/product1.jpg", data-zoom-image="img/content/imgfull_product1.jpg", class="product-zoom0", alt="Повязка Chelsi" )
+                                    div.image-holder
+                                        img.fake-img(src="img/content/foto_product.jpg" data-zoom-image="img/content/foto_product.jpg", class="product-zoom0", alt="Повязка Chelsi")
+                                        .img(style="background: url('../img/content/foto_product.jpg') no-repeat;background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;")
+
+                                        //img(src="img/content/foto_product.jpg",  )
 
                                     div
                                         img(src="img/content/product2.jpg", data-zoom-image="img/content/imgfull_product2.jpg",class="product-zoom1", alt="Повязка Chelsi"  )
@@ -36,8 +39,11 @@ html(lang="ru")
 
 
                                 #bx-pager1
-                                        a(data-slide-index='0', href='img/content/product1.jpg', data-class="product-zoom0")
-                                            img(src="img/content/product1.jpg" , alt="Повязка Chelsi")
+                                        a.image-holder(data-slide-index='0', href='img/content/foto_product.jpg', data-class="product-zoom0")
+                                            //img(src="img/content/foto_product.jpg" , alt="Повязка Chelsi")
+                                            img.fake-img(src="img/content/foto_product.jpg" data-zoom-image="img/content/imgfull_product1.jpg", class="product-zoom0", alt="Повязка Chelsi")
+                                            .img(style="background: url('../img/content/foto_product.jpg') no-repeat;background-position: 50% 50%;background-repeat: no-repeat;background-size: cover;")
+
 
                                         a(data-slide-index='1', href='img/content/product2.jpg', data-class="product-zoom1" )
                                             img(src="img/content/product2.jpg" , alt="Повязка Chelsi")
