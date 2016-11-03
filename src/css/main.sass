@@ -1552,11 +1552,11 @@ img
 #login, #call_back
   background-color:  #fff
   width: 340px
-  height: 350px
+  height: 400px
   position: fixed
   top: 50%
   left: 50%
-  margin-top: -175px
+  margin-top: -200px
   margin-left: -170px
   display: none
   opacity: 0
@@ -1668,6 +1668,23 @@ img
     color: $main-color
     margin-top: 15px
     font-family: "FuturaBookC", sans-serif
+  .login-social
+    margin-top: 15px
+    .vk-login
+      display: inline-block
+      vertical-align: middle
+      border: 1px solid #ff4504
+      margin-top: 0
+      padding: 6px 6px 5px
+      border-radius: 100px
+      margin-left: 15px
+      transition: all 0.35s
+      &:hover
+        transition: all 0.35s
+        background: #ff4504
+        color: #fff
+
+
 
 #overlay
   z-index: 30
@@ -7380,7 +7397,7 @@ body .rngst_phone_button
     float: left
     margin-left: 20px
 
-  #login, #call_back
+  //#login, #call_back
     width: calc( 100% - 40px)
     margin-left: 0
     left: 20px
