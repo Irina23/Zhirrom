@@ -101,6 +101,7 @@ jQuery(document).ready(function() {
 
     jQuery(window).load(function() {
         $("[name='data']").mask("99-99-9999");
+        $("[name='phone']").mask("+7(999)999-9999");
 
         $('#preloader').fadeOut('slow',function(){$(this).remove();});
         //bxSlider
