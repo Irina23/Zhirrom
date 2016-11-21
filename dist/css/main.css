@@ -155,7 +155,6 @@ img {
           animation-fill-mode: both; }
 
 .pagination {
-  display: none;
   text-align: center;
   margin-bottom: 60px; }
   .pagination li {
