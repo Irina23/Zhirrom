@@ -2507,7 +2507,8 @@ img {
       line-height: 1em;
       padding-bottom: 20px;
       margin-bottom: 10px;
-      border-bottom: 1px solid #dfdede; }
+      border-bottom: 1px solid #dfdede;
+      font-weight: normal; }
     .productfull .product_info .block_info .name_price {
       margin-bottom: 10px;
       line-height: 1em;
@@ -6010,6 +6011,10 @@ body .rngst_phone_button {
         .block_team .list_team .item .block-name .position {
           font-size: 16px;
           line-height: 1em; }
+
+#partialUserResetForm p {
+  text-align: center;
+  font-size: 16px; }
 
 @media screen and (min-width: 1024px) and (max-height: 700px) {
   .header #menu {
