@@ -1093,7 +1093,7 @@ img {
           height: 50px; }
           #slider .slider .item .block_text.left_text a:hover {
             background: #fe622b; }
-      #slider .slider .item .block_text h3 {
+      #slider .slider .item .block_text h1, #slider .slider .item .block_text h3 {
         font-family: "FuturaPT-Medium", sans-serif;
         color: #ffffff;
         font-size: 58px;
