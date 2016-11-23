@@ -1118,13 +1118,14 @@ img {
           height: 50px; }
           #slider .slider .item .block_text.left_text a:hover {
             background: #fe622b; }
-      #slider .slider .item .block_text h3 {
+      #slider .slider .item .block_text h1, #slider .slider .item .block_text h3 {
         font-family: "FuturaPT-Medium", sans-serif;
         color: #ffffff;
         font-size: 58px;
         font-weight: normal;
         line-height: 1.2em;
-        text-align: center; }
+        text-align: center;
+        text-shadow: 1px 0 2px rgba(0, 0, 0, 0.7); }
       #slider .slider .item .block_text a {
         line-height: 50px;
         color: #fff;
