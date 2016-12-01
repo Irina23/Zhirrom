@@ -1442,25 +1442,27 @@ img {
   #login a, #call_back a {
     display: block;
     color: #ff4504;
-    margin-top: 15px;
+    margin-bottom: 15px;
     font-family: "FuturaBookC", sans-serif; }
   #login .login-social, #call_back .login-social {
     margin-top: 15px; }
     #login .login-social .vk-login, #call_back .login-social .vk-login {
+      background: #507299; }
+    #login .login-social .vk-facebook, #call_back .login-social .vk-facebook {
+      background: #3b5998; }
+    #login .login-social .vk-login, #login .login-social .vk-facebook, #call_back .login-social .vk-login, #call_back .login-social .vk-facebook {
       display: inline-block;
       vertical-align: middle;
-      border: 1px solid #ff4504;
-      margin-top: 0;
-      padding: 6px 6px 5px;
-      border-radius: 100px;
+      margin-bottom: 0;
+      padding: 7px 6px 5px;
+      border-radius: 6px;
       margin-left: 15px;
       -webkit-transition: all 0.35s;
-      transition: all 0.35s; }
-      #login .login-social .vk-login:hover, #call_back .login-social .vk-login:hover {
-        -webkit-transition: all 0.35s;
-        transition: all 0.35s;
-        background: #ff4504;
-        color: #fff; }
+      transition: all 0.35s;
+      width: 30px;
+      height: 30px;
+      box-sizing: border-box;
+      color: #fff; }
 
 #overlay {
   z-index: 30;
@@ -3988,23 +3990,6 @@ img {
   transition: all 0.35s; }
   .brand .list_brand li:nth-child(3n) {
     margin-right: 0; }
-  .brand .list_brand li:before {
-    background: url("../img/bg/bg_brand.jpg") no-repeat top center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 0;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s; }
-  .brand .list_brand li:hover:before {
-    opacity: 1;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s; }
   .brand .list_brand li a {
     text-transform: uppercase;
     color: #4a4a4a;
@@ -4017,14 +4002,13 @@ img {
     font-family: "FuturaPT-Medium", sans-serif;
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
-    position: relative;
     z-index: 3; }
     .brand .list_brand li a:hover {
       -webkit-transition: all 0.35s;
       transition: all 0.35s;
       text-decoration: none;
       color: #fff;
-      background: rgba(255, 69, 4, 0.7);
+      background: #ff4504;
       border-color: rgba(255, 69, 4, 0); }
 
 .product_new {
@@ -4697,6 +4681,30 @@ img {
         -webkit-transition: all 0.35s;
         transition: all 0.35s;
         background: #fe622b; }
+  .registration .container .login-social {
+    margin-top: 20px;
+    font-size: 20px; }
+    .registration .container .login-social .vk-login {
+      background: #507299; }
+    .registration .container .login-social .vk-facebook {
+      background: #3b5998; }
+    .registration .container .login-social .vk-login, .registration .container .login-social .vk-facebook {
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 0;
+      line-height: 40px;
+      border-radius: 6px;
+      margin-left: 15px;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      width: 200px;
+      height: 40px;
+      box-sizing: border-box;
+      color: #fff;
+      text-align: center;
+      text-decoration: none; }
+      .registration .container .login-social .vk-login span, .registration .container .login-social .vk-facebook span {
+        margin-left: 15px; }
 
 .private_office .container {
   padding: 30px 0 120px; }
@@ -6214,7 +6222,11 @@ body .rngst_phone_button {
     width: 100%;
     margin: 0 auto 20px; }
   .block_advantages .list_advantages.short .item:nth-child(1n+5) {
-    display: none; } }
+    display: none; }
+  .registration .container .login-social .vk-login, .registration .container .login-social .vk-facebook {
+    display: block;
+    margin-top: 20px;
+    margin-left: 0; } }
 
 @media screen and (max-width: 650px) {
   #contact_form {

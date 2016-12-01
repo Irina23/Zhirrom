@@ -1666,20 +1666,29 @@ img
   a
     display: block
     color: $main-color
-    margin-top: 15px
+    margin-bottom: 15px
     font-family: "FuturaBookC", sans-serif
   .login-social
     margin-top: 15px
     .vk-login
+      background: #507299
+    .vk-facebook
+      background: #3b5998
+    .vk-login, .vk-facebook
       display: inline-block
       vertical-align: middle
-      border: 1px solid #ff4504
-      margin-top: 0
-      padding: 6px 6px 5px
-      border-radius: 100px
+      //border: 1px solid #ff4504
+      margin-bottom: 0
+      padding: 7px 6px 5px
+      border-radius: 6px
       margin-left: 15px
       transition: all 0.35s
-      &:hover
+      width: 30px
+      height: 30px
+      box-sizing: border-box
+      color: #fff
+
+      //&:hover
         transition: all 0.35s
         background: #ff4504
         color: #fff
@@ -4503,7 +4512,7 @@ img
       &:nth-child(3n)
         margin-right: 0
 
-      &:before
+      //&:before
         background: url("../img/bg/bg_brand.jpg") no-repeat top center
         background-size: cover
         width: 100%
@@ -4515,7 +4524,7 @@ img
         z-index: 1
         opacity: 0
         transition: all 0.35s
-      &:hover
+      //&:hover
         &:before
           opacity: 1
           transition: all 0.35s
@@ -4530,14 +4539,14 @@ img
         position: relative
         font-family: "FuturaPT-Medium", sans-serif
         transition: all 0.35s
-        position: relative
+        //position: relative
         z-index: 3
 
         &:hover
           transition: all 0.35s
           text-decoration: none
           color: #fff
-          background: rgba(255, 69, 4, 0.7)
+          background: $main-color
           border-color: rgba(255, 69, 4, 0)
 
 
@@ -5298,7 +5307,30 @@ img
           transition: all 0.35s
           background: #fe622b
 
-
+    .login-social
+      margin-top: 20px
+      font-size: 20px
+      .vk-login
+        background: #507299
+      .vk-facebook
+        background: #3b5998
+      .vk-login, .vk-facebook
+        display: inline-block
+        vertical-align: middle
+        //border: 1px solid #ff4504
+        margin-bottom: 0
+        line-height: 40px
+        border-radius: 6px
+        margin-left: 15px
+        transition: all 0.35s
+        width: 200px
+        height: 40px
+        box-sizing: border-box
+        color: #fff
+        text-align: center
+        text-decoration: none
+        span
+          margin-left: 15px
 
 
 
@@ -7183,6 +7215,15 @@ body .rngst_phone_button
     &:nth-child(1n+5)
       display: none
 
+  .registration
+    .container
+      .login-social
+        .vk-login, .vk-facebook
+          display: block
+          margin-top: 20px
+          margin-left: 0
+
+
 @media screen and (max-width: 650px)
   #contact_form
     width: calc( 100% - 40px)
@@ -7232,6 +7273,8 @@ body .rngst_phone_button
 
   .list_category .item-category h3
     white-space: normal
+
+
 
 @media screen and (max-width: 600px)
   .brand .list_brand li

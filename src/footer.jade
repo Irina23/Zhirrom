@@ -48,7 +48,7 @@ footer
 
 
 
-a(href="#contact_form" class="open_modal link_form_contact")
+//a(href="#contact_form" class="open_modal link_form_contact")
 
 
 
@@ -62,17 +62,19 @@ a(href="#contact_form" class="open_modal link_form_contact")
 
         .form-holder
 
-            p.error Ваш аккуант заблокированно
+            //p.error Ваш аккуант заблокированно
             div
                 input(type="text", placeholder="Почта:", name="email", data-validate="email")
             div
                 input(type="password", placeholder="Пароль:", name="pass", data-validate="pass")
-
+            a.update_password(href="update_password.html") Забыли пароль?
             .btn.submit Отправить
-            .login-social Авторизация через
+            .login-social Авторизация через:
                 a(href="#" target="_blank" class="vk-login")
                     i(class="fa fa-vk")
-            a.update_password(href="update_password.html") Забыли пароль?
+                a(href="#" target="_blank" class="vk-facebook")
+                    i(class="fa fa-facebook")
+
 
 #call_back.modal_div
 
