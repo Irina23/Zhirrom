@@ -151,6 +151,7 @@ jQuery(document).ready(function() {
 
 
     //filter get
+    /*
     function showValues(clear) {
         var filter_data, $el;
 
@@ -174,6 +175,7 @@ jQuery(document).ready(function() {
         });
 
     }
+
     $('.list_products').on('click', '.next a, .prev a', function (e) {
         e.preventDefault();
         $( "#filter" ).find('[name="page"]').val($(e.target).attr('href')[$(e.target).attr('href').length - 1]);
@@ -184,6 +186,7 @@ jQuery(document).ready(function() {
         showValues(true);
     });
     showValues();
+    */
 
 
     //blog page visaible 
