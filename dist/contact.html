@@ -426,7 +426,8 @@
             </ul>
           </div>
           <h1>Контакты</h1>
-          <div class="img_block map"><img src="img/content/contact.png" alt="Адресс">
+          <div class="img_block map">
+            <!--img(src="img/content/contact.png" alt="Адресс")-->
             <div id="map_canvas"></div>
           </div>
           <div class="block_text">
@@ -564,7 +565,9 @@
           text: 'показать еще' // optionally
       }));
       -->
-      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3"></script>
+      <script src="//developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+      <!--script(type='text/javascript', async defer src='//maps.googleapis.com/maps/api/js?key=key=AIzaSyD09gZY2fkBhBp213AAKuNXU7rOHnV1uz4')-->
+      <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;key=AIzaSyD09gZY2fkBhBp213AAKuNXU7rOHnV1uz4"></script>
       <script src="js/map.js"></script>
     </div>
   </body>

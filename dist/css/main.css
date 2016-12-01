@@ -3368,11 +3368,18 @@ img {
   position: relative;
   width: 380px;
   height: 380px; }
+  .article .img_block.map {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px; }
+    .article .img_block.map + .block_text {
+      display: block;
+      overflow: inherit; }
   .article .img_block #map_canvas {
     height: 380px;
     z-index: 10;
     position: absolute !important;
-    width: 380px;
+    width: 100%;
     left: 0;
     top: 0; }
   .article .img_block img {
@@ -5836,8 +5843,6 @@ body .rngst_phone_button {
     height: auto; }
     .article .img_block img {
       width: 100%; }
-    .article .img_block.map {
-      width: 380px; }
   .brand .block_brand {
     margin-bottom: 50px;
     padding: 40px 20px; }

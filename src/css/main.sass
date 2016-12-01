@@ -3804,11 +3804,18 @@ img
     position: relative
     width: 380px
     height: 380px
+    &.map
+      width: 100%
+      margin-right: 0
+      margin-bottom: 40px
+      + .block_text
+          display: block
+          overflow: inherit
     #map_canvas
       height: 380px
       z-index: 10
       position: absolute!important
-      width: 380px
+      width: 100%
       left: 0
       top: 0
 
@@ -6669,10 +6676,10 @@ body .rngst_phone_button
       width: 100%
       margin-bottom: 40px
       height: auto
+
       img
         width: 100%
-      &.map 
-        width: 380px  
+
 
 
   .brand
