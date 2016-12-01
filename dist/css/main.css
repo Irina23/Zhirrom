@@ -5841,6 +5841,8 @@ body .rngst_phone_button {
     width: 100%;
     margin-bottom: 40px;
     height: auto; }
+    .article .img_block.map {
+      height: 380px; }
     .article .img_block img {
       width: 100%; }
   .brand .block_brand {
@@ -6352,9 +6354,6 @@ body .rngst_phone_button {
     width: 100%; }
     .article .img_block.map img {
       max-height: 280px; }
-    .article .img_block.map #map_canvas {
-      width: 100%;
-      height: 280px; }
   .block_team .list_team .item {
     width: 280px;
     margin: 0 auto 20px; }
