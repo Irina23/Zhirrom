@@ -1101,7 +1101,7 @@ ClusterIcon.prototype.getPosFromLatLng_ = function(latlng) {
     pos.y -= this.iconAnchor_[1];
   } else {
     pos.x -= parseInt(this.width_ / 2, 10);
-    pos.y -= parseInt(this.height_ / 2, 10);
+    pos.y -= parseInt(this.height_ , 10);
   }
   return pos;
 };
