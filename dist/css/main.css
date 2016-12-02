@@ -4193,6 +4193,20 @@ img {
     transition: all 0.35s;
     z-index: 10; }
 
+.modal_div.show {
+  position: fixed;
+  left: 50%;
+  background: #fff;
+  z-index: 31;
+  padding: 60px 40px;
+  width: 410px;
+  height: 165px;
+  margin-top: -82px;
+  margin-left: -205px;
+  box-sizing: border-box;
+  text-align: center;
+  top: 50%; }
+
 .list_category2 {
   margin-bottom: 90px; }
   .list_category2 h3 {
@@ -6321,6 +6335,10 @@ body .rngst_phone_button {
         .productfull .product_info .image [id^="bx-pager"] a:nth-child(3n) {
           margin-right: 0; }
   #report_available, #order_status_result {
+    width: calc(100vw - 40px);
+    left: 20px;
+    margin-left: 0; }
+  .modal_div.show {
     width: calc(100vw - 40px);
     left: 20px;
     margin-left: 0; }

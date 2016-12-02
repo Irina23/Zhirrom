@@ -4748,6 +4748,21 @@ img
     transition: all 0.35s
     z-index: 10
 
+.modal_div
+  &.show
+
+    position: fixed
+    left: 50%
+    background: #fff
+    z-index: 31
+    padding: 60px 40px
+    width: 410px
+    height: 165px
+    margin-top: -82px
+    margin-left: -205px
+    box-sizing: border-box
+    text-align: center
+    top: 50%
 
 .list_category2
   margin-bottom: 90px
@@ -7358,7 +7373,11 @@ body .rngst_phone_button
     width: calc(100vw - 40px)
     left: 20px
     margin-left: 0
-
+  .modal_div
+    &.show
+      width: calc(100vw - 40px)
+      left: 20px
+      margin-left: 0
   .productfull .product_info .block_info .block_price
     display: block
 
