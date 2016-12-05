@@ -2372,6 +2372,18 @@ img
   .pagination
     li
       margin: 0 10px
+      &.active
+        a
+          color: $main-color
+      &.next, &.prev
+        a
+          color: $main-color
+        &.disabled a
+          color: #a5a5a5
+
+      a
+        color: #000
+
       &:first-child
         margin-right: inherit
 

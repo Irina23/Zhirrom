@@ -2056,6 +2056,14 @@ img {
               border-color: rgba(255, 69, 4, 0); }
   .list_products .pagination li {
     margin: 0 10px; }
+    .list_products .pagination li.active a {
+      color: #ff4504; }
+    .list_products .pagination li.next a, .list_products .pagination li.prev a {
+      color: #ff4504; }
+    .list_products .pagination li.next.disabled a, .list_products .pagination li.prev.disabled a {
+      color: #a5a5a5; }
+    .list_products .pagination li a {
+      color: #000; }
     .list_products .pagination li:first-child {
       margin-right: inherit; }
 
