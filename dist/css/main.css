@@ -2054,6 +2054,10 @@ img {
               color: #fff;
               background: rgba(255, 69, 4, 0.7);
               border-color: rgba(255, 69, 4, 0); }
+  .list_products .pagination li {
+    margin: 0 10px; }
+    .list_products .pagination li:first-child {
+      margin-right: inherit; }
 
 .ias-trigger a {
   display: block;
