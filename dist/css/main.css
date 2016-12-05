@@ -2889,6 +2889,13 @@ img {
       .productfull .product_info .wholesale_order .table_order.unlogined .row .parameter .row-item > div {
         width: 100%; }
 
+.productfull .social-share > span {
+  margin-right: 15px; }
+
+.productfull .social-share > span, .productfull .social-share .ya-share2_inited {
+  display: inline-block;
+  vertical-align: middle; }
+
 .feedback .container {
   position: relative;
   padding: 40px 0 120px; }

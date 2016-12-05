@@ -112,6 +112,7 @@ html(lang="ru")
                                         span Описание товара:
                                         | Таким образом дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что сложившаяся структура организации позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям.
 
+
                                     div
                                         .name Размер:
 
@@ -119,7 +120,9 @@ html(lang="ru")
                                             option(value="42-44" ) 42-44
                                             option(value="46-48") 46-48
                                             option(value="50-52") 50-52
-
+                                    .social-share
+                                        span Поделиться:
+                                        .ya-share2(data-services="odnoklassniki,facebook,vkontakte")
 
                         form(class="cf opt_order standart_form" )
                             .wholesale_order
@@ -288,6 +291,7 @@ html(lang="ru")
 
 
             include ./footer.jade
-
+            script(src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js")
+            script(src="//yastatic.net/share2/share.js")
 
 
