@@ -416,6 +416,9 @@
             <div class="cart"><a href="cart.html">В корзине:&#160;<span>0</span></a></div>
           </div>
         </div>
+        <p id="signatures">1000000</p>
+        <button id="start-campaign">Start campaign</button>
+        <div id="count_buy"><span class="number1">1</span><span class="number2">0</span><span class="number3">0</span><span class="number4">0</span><span class="number5">0</span><span class="number6">0</span><span class="number7">0</span></div>
       </header>
       <div id="slider">
         <div class="slider">
@@ -952,6 +955,7 @@
       <div id="overlay"></div>
       <script src="bower_components/jquery/dist/jquery.js"></script>
       <script src="js/jquery.elevateZoom-3.0.8.min.js"></script>
+      <script src="js/jquery.animateNumber.js"></script>
       <script src="js/functions.js"></script>
       <script src="js/bootstrap_tabs.min.js"></script>
       <script src="js/alexValidate.js"></script>
@@ -976,6 +980,33 @@
       <!--script(type='text/javascript', async defer src='//maps.googleapis.com/maps/api/js?key=key=AIzaSyD09gZY2fkBhBp213AAKuNXU7rOHnV1uz4')-->
       <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;key=AIzaSyD09gZY2fkBhBp213AAKuNXU7rOHnV1uz4"></script>
       <script src="js/map.js"></script>
+      <!--script(type="text/javascript").
+      var max_number = 1000020;
+      
+      var padding_zeros = '';
+      for (var i = 0, l = max_number.toString().length; i < l; i++) {
+          padding_zeros += '0';
+      }
+      
+      var padded_now, numberStep = function (now, tween) {
+          var target = $(tween.elem),
+                  rounded_now = Math.round(now);
+      
+          var rounded_now_string = rounded_now.toString()
+          padded_now = padding_zeros + rounded_now_string;
+          padded_now = padded_now.substring(rounded_now_string.length);
+      
+          target.prop('number', rounded_now).text(padded_now);
+      };
+      
+      var use_max_power = $('#checkbox');
+      $('#start-campaign').click(function () {
+          $('#signatures').animateNumber({
+              number: max_number,
+              numberStep: numberStep
+          }, 50);
+      });
+      -->
     </div>
   </body>
 </html>
