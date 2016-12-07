@@ -2,7 +2,7 @@ $main-color: #ff4504
 $color-grey: #727272
 
 
-
+@import header
 
 
 @font-face
@@ -136,9 +136,7 @@ body
   min-height: 44vh
 
 
-header
-  &.mobile
-    display: none
+
 
 .img-holder
   overflow: hidden
@@ -225,559 +223,9 @@ img
           right: 0
           transform: rotate(180deg)
 
-.top
-  background: #727272
 
-  .phone
-    margin-right: 70px
-  .phone, .email
-    display: inline-block
-    vertical-align: middle
-    padding: 10px 0
-    span
-      margin-right: 5px
-    a
-      margin-right: 18px
-      transition: all 0.35s
-      &:hover
-        transition: all 0.35s
-        color: $main-color
-        text-decoration: none
-      &:last-child
-        margin-right: 0
-    span,a
-      color: #fff
-      font-size: 18px
-      line-height: 1em
-      display: inline-block
-      vertical-align: middle
 
-  .menu
-    display: inline-block
-    vertical-align: middle
-    padding: 17px 0
-    margin-right: 70px
-    li
-      display: inline-block
-      vertical-align: middle
-      margin-right: 25px
-      &.active
-        a
-          color: $main-color
 
-      a
-        color: #fff
-        font-family: "FuturaBookC", sans-serif
-        font-size: 14px
-        font-weight: 300
-        line-height: 1em
-        display: block
-        transition: all 0.35s
-        text-transform: uppercase
-
-        &:hover
-          transition: all 0.35s
-          color: $main-color
-          text-decoration: none
-
-
-
-  .user-login
-    //float: right
-    display: inline-block
-    vertical-align: middle
-    a
-      line-height: 35px
-      color: #fff
-      font-size: 18px
-      min-width: 80px
-      text-align: center
-      transition: all 0.35s
-      display: inline-block
-      vertical-align: middle
-      padding: 0 15px
-      box-sizing: border-box
-      &.login
-        background: $main-color
-        border-radius: 2px
-        box-shadow: inset 0 -2px 7.8px 0.2px rgba(0, 0, 0, 0.16)
-        &:hover
-          color: #fff
-          background: #fe622b
-      &:hover
-        transition: all 0.35s
-        color: $main-color
-        text-decoration: none
-
-      //&:first-letter
-        font-family: "FuturaPT-Medium", sans-serif
-
-
-
-.header
-  width: 940px
-  //padding: 20px 0 50px
-  padding: 20px 0
-  margin: auto
-  .list_contact
-    margin-bottom: 20px
-    >div
-      display: inline-block
-      vertical-align: middle
-      color: #000
-      font-family: "FuturaPT-Light", sans-serif
-      font-size: 18px
-      font-weight: 300
-      line-height: 20px
-      padding-left: 30px
-      margin-right: 50px
-      &:last-child
-        margin-right: 0
-      &.phone
-        background: url("../img/icons/icon-phone.svg") no-repeat center left
-      &.mail
-        background: url("../img/icons/icon-mail.svg") no-repeat center left
-      &.work_time
-        background: url("../img/icons/icone-time.svg") no-repeat center left
-
-      a
-        display: inline-block
-        vertical-align: top
-        color: #000
-        font-family: "FuturaPT-Light", sans-serif
-        font-size: 18px
-        font-weight: 300
-        line-height: 20px
-
-  .block-logo
-    margin-bottom: 10px
-    .tagline
-      display: inline-block
-      vertical-align: middle
-      color: $main-color
-      font-family: "FuturaPT-Demi", sans-serif
-      font-size: 18px
-      line-height: 24px
-      text-transform: uppercase
-      font-weight: 500
-      letter-spacing: 2px
-      span
-        font-family: "FuturaPT-Light", sans-serif
-        font-weight: 300
-
-
-  .logo
-    width: 250px
-    margin: auto
-    //margin-bottom: 40px
-    display: inline-block
-    vertical-align: middle
-    margin-right: 50px
-
-  .block-info-header
-    text-align: center
-    .block-infosold
-      display: inline-block
-      vertical-align: bottom
-      color: #000
-      font-family: "FuturaPT-Demi", sans-serif
-      font-size: 18px
-      font-weight: 500
-      line-height: 1em
-      text-transform: uppercase
-
-      .number
-        display: inline-block
-        vertical-align: bottom
-        color: $main-color
-        font-family: "FuturaPT-Medium", sans-serif
-        font-size: 48px
-        font-weight: 500
-        line-height: 30px
-        font-variant: small-caps
-
-
-
-
-
-  .search
-      display: inline-block
-      vertical-align: middle
-      float: left
-      width: 220px
-      //margin-right: 120px
-      input[type="text"]
-        border: 0
-        border-bottom: 1px solid #000
-        padding: 4px 0
-        font-family: "FuturaPT-Medium", sans-serif
-        line-height: 1em
-        font-size: 18px
-        color: #000
-        width: 220px
-      .form-control
-        display: inline-block
-        vertical-align: middle
-        float: left
-        &.error
-          input[type="text"]
-            border-color: red
-      .submit
-        display: inline-block
-        vertical-align: middle
-        float: left
-        width: 15px
-        height: 32px
-        background: url("../img/icons/search.png") no-repeat center
-        background-size: 100%
-        position: relative
-        margin-left: -20px
-        cursor: pointer
-
-  .cart
-    display: inline-block
-    vertical-align: middle
-    float: right
-    a
-      display: block
-      padding-left: 40px
-      position: relative
-      color: #000
-      font-family: "FuturaPT-Heavy", sans-serif
-      line-height: 30px
-      font-size: 18px
-      transition: all 0.35s
-      span
-        color: $main-color
-        font-size: 20px
-        font-family: "FuturaPT-Medium", sans-serif
-        line-height: 20px
-
-      &:hover
-
-          //color: $main-color
-          transition: all 0.35s
-          text-decoration: none
-          &:after
-            transition: all 0.35s
-            opacity: 1
-          &:before
-            background: url("../img/icons/cart_hover.png") no-repeat
-            background-size: 100%
-
-
-      &:after
-        border-radius: 2px
-        background-color:  $main-color
-        width: 30px
-        height: 30px
-        content: ""
-        position: absolute
-        top: 0
-        left: 0
-        opacity: 0
-        transition: all 0.35s
-        z-index: 1
-        
-        
-      &:before
-        position: absolute
-        top: 6px
-        left: 4px
-        background: url("../img/icons/cart.png") no-repeat
-        background-size: 100%
-        width: 22px
-        height: 18px
-        content: ""
-        z-index: 2
-
-  #menu
-    margin-top: 40px
-    position: relative
-    >ul>li
-      display: inline-block
-      vertical-align: middle
-      margin-right: 25px
-      //position: relative
-      &.parent
-        >a
-          //border-bottom: 19px solid #fff
-          position: relative
-          padding-bottom: 20px
-        &:hover
-          >a
-            &:after
-              content: ''
-              position: absolute
-              top: 21px
-              left: 50%
-              margin-left: -7px
-              width: 0
-              height: 0
-              border-left: 7px solid transparent
-              border-right: 7px solid transparent
-              border-top: 8px solid $main-color
-            //border-color: #efe087
-
-            //&:after
-              position: absolute
-              width: 13px
-              height: 7px
-              top: 19px
-              left: 50%
-              margin-left: -7px
-              background: url("../img/icons/menu.png") no-repeat
-              background-size: 100%
-              content: ""
-
-
-
-
-          ul.drop-menu-1
-            display: flex
-            &.tabs
-              display: block
-
-
-
-
-
-      ul.colum-2
-        display: inline-block
-        vertical-align: top
-        width: 49%
-      ul.drop-menu-1
-        display: none
-        position: absolute
-        top: 17px
-        left: 0
-        margin-top: 20px
-        z-index: 12
-        background: rgba(73, 73, 73, 0.97)
-        width: auto
-        flex-direction: row
-        .drop-menu-2
-          padding: 20px 20px 60px
-          border-right: 1px solid #646464
-          min-height: calc(100% - 46px)
-          box-sizing: border-box
-          position: relative
-          .link_all
-            color: #fffefe
-            font-family: "FuturaBookC", sans-serif
-            font-weight: 300
-            font-size: 14px
-            text-transform: uppercase
-            padding: 13px 18px 11px
-            border-radius: 6px
-            box-shadow: inset 0 -2px 7.8px 0.2px rgba(0, 0, 0, 0.16)
-            display: block
-            transition: all 0.35s
-            width: 160px
-            //margin: auto
-            text-align: center
-            background: $main-color
-            position: absolute
-            bottom: 15px
-            left: 50%
-            margin-left: -80px
-            &:hover
-              background: #fe622b
-              transition: all 0.35s
-
-        .nav-tabs
-          //border-bottom: 1px solid rgba(255, 255, 255, 0.4)
-          li
-            float: left
-            width: 50%
-            cursor: pointer
-            color: #b4b3b3
-            padding: 10px 15px
-            text-transform: uppercase
-            font-size: 18px
-            text-align: center
-            box-sizing: border-box
-            font-family: "FuturaPT-Medium", sans-serif
-            transition: all 0.35s
-            &:hover
-              transition: all 0.35s
-              color: #fff
-            &.active
-              background: #727272
-              color: #fff
-        .tab-pane
-
-          &.active
-            display: flex
-            flex-direction: row
-          >li
-            min-width: 229px
-            min-height: 100%
-            float: left
-
-            &.parent-menu
-              ///width: 500px
-
-              &:nth-child(3)
-                border: 0
-
-
-              >a
-                text-transform: uppercase
-                padding: 15px 20px
-                font-size: 16px
-                //text-align: center
-                background: $main-color
-                border-right: 1px solid rgba(255,255,255,0.2)
-
-
-              .parent-menu
-                >a
-
-                  text-transform: uppercase
-                  position: relative
-                  &:after
-                    position: absolute
-                    height: 14px
-                    width: 2px
-                    background: #fff
-                    content: ""
-                    top: 50%
-                    margin-top: -7px
-                    left: 7px
-                //&:before
-                  position: absolute
-                  height: 16px
-                  width: 2px
-                  background: #fff
-                  content: ""
-                  top: 50%
-                  margin-top: -8px
-                  right: 5px
-                .drop-menu-3
-                  padding-left: 15px
-
-            a
-              display: block
-              //background-color:  rgba(255, 69, 4, 0.7)
-              width: 100%
-              box-sizing: border-box
-              line-height: 1em
-              font-size: 15px
-              //text-transform: uppercase
-              color: #fff
-              padding: 10px 15px
-              transition: all 0.35s
-              font-family: "FuturaPT-Medium", sans-serif
-              white-space: nowrap
-              overflow: hidden
-              text-overflow: ellipsis
-
-              &:hover
-                transition: all 0.35s
-                background: $main-color
-                text-decoration: none
-
-        >li
-          min-width: 229px
-          min-height: calc(100% - 46px)
-          float: left
-
-
-          &.parent-menu
-            ///width: 500px
-            //border-right: 1px solid rgba(255,255,255,0.4)
-            &:nth-child(3)
-              border: 0
-              .drop-menu-2
-
-                  border: 0
-
-
-            >a
-              text-transform: uppercase
-              padding: 15px 20px
-              font-size: 16px
-              //text-align: center
-              background: $main-color
-              border-right: 1px solid rgba(255,255,255,0.2)
-              transition: all 0.35s
-              &:hover
-                transition: all 0.35s
-                color: #292929
-
-
-
-            .parent-menu
-              >a
-
-                text-transform: uppercase
-                position: relative
-                &:after
-                  position: absolute
-                  height: 14px
-                  width: 2px
-                  background: #fff
-                  content: ""
-                  top: 50%
-                  margin-top: -7px
-                  left: 7px
-                //&:before
-                  position: absolute
-                  height: 16px
-                  width: 2px
-                  background: #fff
-                  content: ""
-                  top: 50%
-                  margin-top: -8px
-                  right: 5px
-              .drop-menu-3
-                padding-left: 15px
-
-          a
-            display: block
-            //background-color:  rgba(255, 69, 4, 0.7)
-            width: 100%
-            box-sizing: border-box
-            line-height: 1em
-            font-size: 15px
-            //text-transform: uppercase
-            color: #fff
-            padding: 10px 15px
-            transition: all 0.35s
-            font-family: "FuturaPT-Medium", sans-serif
-            white-space: nowrap
-            overflow: hidden
-            text-overflow: ellipsis
-
-            &:hover
-              transition: all 0.35s
-              background: $main-color
-              text-decoration: none
-
-
-
-
-      &.active
-        a
-
-          transition: all 0.35s
-          color: $main-color
-          text-decoration: none
-      &:last-child
-        margin-right: 0
-      >a
-        text-transform: uppercase
-        color: #000
-        font-family: "FuturaPT-Medium", sans-serif
-        letter-spacing: 2px
-        font-size: 14px
-        line-height: 1em
-        transition: all 0.35s
-        &:hover
-          transition: all 0.35s
-          color: #3d3d3d
-          text-decoration: none
 
 
 
@@ -4739,7 +4187,7 @@ img
 
 
 
-#report_available, #order_status_result
+#report_available, #order_status_result, .modal_div
   position: fixed
   left: 50%
   //transform: translate(-50%, -50%)
@@ -4771,6 +4219,7 @@ img
     z-index: 10
 
 .modal_div
+
   &.show
 
     position: fixed
@@ -4785,6 +4234,35 @@ img
     box-sizing: border-box
     text-align: center
     top: 50%
+
+#search_modal
+  text-align: left
+  padding: 40px 30px
+  h3
+    margin-bottom: 20px
+    color:  #636262
+    font-size: 30px
+    font-weight: 300
+    line-height: 1em
+  .form-control
+    width: calc(100% - 35px)
+  input[type="text"]
+    height: 30px
+    border: 1px solid #d7d7d7
+    font-size: 18px
+    width: 100%
+    font-family: "FuturaBookC", sans-serif
+    box-sizing: border-box
+    line-height: 28px
+    padding: 0 10px
+
+
+    
+  .submit
+    width: 35px
+    height: 30px
+    background: url("../img/icons/search2.png") no-repeat center $main-color
+    background-size: 17px auto
 
 .list_category2
   margin-bottom: 90px
@@ -6153,10 +5631,7 @@ body .rngst_phone_button
 
 @media screen and (min-width: 1024px) and (max-height: 700px)
 
-  .header
-    //padding: 15px 0
-    #menu
-      margin-top: 20px
+
   #slider
     .slider
       height: 100vh
@@ -6211,7 +5686,7 @@ body .rngst_phone_button
 
 
 @media screen and (max-width: 1024px)
-  .wrap, .header
+  .wrap
     width: 880px
 
 
@@ -6223,8 +5698,7 @@ body .rngst_phone_button
     width: 500px
   .footer .wrap .logo, .footer .wrap .contact
     margin-right: 100px
-  .header #menu > ul > li
-    margin-right: 19px
+
 
 
   .productfull
@@ -6251,12 +5725,7 @@ body .rngst_phone_button
 
 
 
-  .top .menu li
-    margin-right: 15px
-  .header .list_contact > div
-    margin-right: 50px
-  .header .block-logo .tagline
-    font-size: 17px
+
 
 
   .private_office .container #private_office > div,
@@ -6281,10 +5750,6 @@ body .rngst_phone_button
     .item-category
       margin-bottom: 20px
 
-
-  .top .menu
-    margin-right: 40px
-
   .footer .wrap .logo, .footer .wrap .contact
     margin-right: 75px
 
@@ -6294,246 +5759,12 @@ body .rngst_phone_button
 @media screen and (max-width: 959px)
   body
     min-width: 320px
-  header
-    display: none
-    &.mobile
-      display: block
-      .block_logo
-        margin: auto
-        text-align: center
-    .top
-      padding: 10px 15px
-      position: relative
-      #menu-mobile
-
-        #menu-icon
-          cursor: pointer
-          position: relative
-          z-index: 10
-          + nav
-            display: none
-            padding: 20px 0 10px
-          .icon-bar
-            background-color: #fff
-            display: block
-            width: 24px
-            height: 2px
-            margin-bottom: 5px
-
-            &:last-child
-              margin-bottom: 0
 
 
-        .menu
-
-          li
-            display: block
-            position: relative
-            margin-bottom: 10px
-            a
-              text-transform: uppercase
-              color: #fff
-              font-family: "FuturaPT-Medium", sans-serif
-              letter-spacing: 2px
-              font-size: 14px
-              line-height: 1em
-              transition: all 0.35s
-              padding: 7px 0
-              display: block
-              &:hover
-                transition: all 0.35s
-                color: $main-color
-                text-decoration: none
-            &.active
-              a
-
-                transition: all 0.35s
-                color: $main-color
-                text-decoration: none
-            &:last-child
-              margin-bottom: 0
-            &.parent
-                cursor: pointer
-                &.open
-                  &:before
-                    display: none
-                &:after
-                  position: absolute
-                  content: ""
-                  top: 13px
-                  right: 0
-                  width: 10px
-                  height: 2px
-                  //margin-top: -1px
-                  background: #fff
-                &:before
-                  position: absolute
-                  content: ""
-                  top: 9px
-                  right: 4px
-                  width: 2px
-                  height: 10px
-                  //margin-top: -5px
-                  background: #fff
-
-                ul.drop-menu
-                    margin-top: 10px
-                    padding-left: 15px
-
-
-
-            ul.drop-menu
-              display: none
-
-
-
-      .search
-        //float: right
-        width: 155px
-        background: #727272
-        position: absolute
-        top: 4px
-        right: 15px
-        z-index: 10
-        input[type="text"]
-          border: 0
-          border-bottom: 1px solid #fff
-          padding: 4px 0
-          font-family: "FuturaBookC", sans-serif
-          line-height: 1em
-          font-size: 16px
-          color: #fff
-          background: #727272
-          &::-webkit-input-placeholder
-            color: #fff
-          &::-moz-placeholder
-            color: #fff
-          &::-moz-placeholder
-            color: #fff
-
-        .form-control
-          display: inline-block
-          vertical-align: middle
-          &.error
-            input[type="text"]
-              border-color: red
-        .submit
-          display: inline-block
-          vertical-align: middle
-          width: 15px
-          height: 15px
-          background: url("../img/icons/search2.png") no-repeat
-          background-size: 100%
-          position: relative
-          margin-left: -20px
-          cursor: pointer
-
-
-  .wrap, .header
+  .wrap
     width: 100%
     box-sizing: border-box
     padding: 0 20px
-  .header
-    padding: 20px
-    .search
-      float: right
-      clear: right
-      width: auto
-      margin-bottom: 6px
-      input[type="text"]
-        width: 120px
-        font-size: 18px
-        font-family: "FuturaBookC", sans-serif
-        font-weight: normal
-
-      .submit
-        line-height: 29px
-
-    .cart
-      //margin-bottom: 7px
-      clear: both
-      a
-        font-size: 18px
-        padding-left: 35px
-        font-family: "FuturaBookC", sans-serif
-        font-weight: normal
-        span
-          font-size: 18px
-          line-height: 18px
-          font-family: "FuturaBookC", sans-serif
-          font-weight: normal
-
-    .logo
-      display: block
-      margin: 0 auto 30px
-      //width: 200px
-    .tagline
-      margin-bottom: 30px
-      color: #ff4504
-      font-family: "FuturaPT-Demi", sans-serif
-      font-size: 18px
-      line-height: 24px
-      text-transform: uppercase
-      font-weight: 500
-      letter-spacing: 2px
-      span
-        font-family: "FuturaPT-Light", sans-serif
-        font-weight: 300
-
-
-    .header_left
-      float: left
-      .user-login
-        a
-          display: block
-          line-height: 38px
-          color: #000
-          font-size: 18px
-          min-width: 100px
-          text-align: center
-          transition: all 0.35s
-          box-sizing: border-box
-          padding: 0 10px
-          &:hover
-            transition: all 0.35s
-            color: $main-color
-            text-decoration: none
-          &.login
-            background: $main-color
-            border-radius: 2px
-            box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16)
-            color: #fff
-            &:hover
-              color: #fff
-              background: #fe622b
-
-
-
-    .header_right
-      float: right
-      color: #000
-      font-size: 16px
-      line-height: 1em
-      p
-        color: #000
-        font-size: 16px
-        line-height: 1em
-      a
-        display: block
-        //margin-bottom: 15px
-        color: #000
-        transition: all 0.35s
-        font-size: 18px
-        line-height: 38px
-
-
-        &.email
-          letter-spacing: 1px
-          //margin-bottom: 0
-        &:hover
-          transition: all 0.35s
-          color: $main-color
-          text-decoration: none
 
   .footer .wrap
     width: 280px
@@ -6914,7 +6145,7 @@ body .rngst_phone_button
 
   .block_map
     padding: 30px 0
-    h3
+    h1, h3
       font-size: 36px
       margin-bottom: 30px
   .private_office
@@ -7412,7 +6643,7 @@ body .rngst_phone_button
           margin-right: 0
 
 
-  #report_available, #order_status_result
+  #report_available, #order_status_result, .modal_div
     width: calc(100vw - 40px)
     left: 20px
     margin-left: 0
@@ -7436,7 +6667,8 @@ body .rngst_phone_button
 
   #slider .bx-wrapper .bx-controls-direction
     display: none!important
-  #slider .slider .item .block_text h3, #slider .slider .item .block_text.left_text h3
+  #slider .slider .item .block_text h3, #slider .slider .item .block_text.left_text h3,
+  #slider .slider .item .block_text h1
     font-size: 16px
 
   #slider .slider

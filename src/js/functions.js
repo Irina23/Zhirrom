@@ -349,84 +349,46 @@ jQuery(document).ready(function() {
     $(".list_product .list_category .hide_item").on('click', function () {
         $(this).closest(".list_category").removeClass("open");
     });
-    
-    
-    
-    
-    ///#count_buy
-    (function () {
-        $.fn.countPlugin = function(options){
-            var options = $.extend({
-                'counter':'',
-                'countNow': '',
-                'countNew': ''
 
-            }, options);
-
-            var methods = {
-                init: function(){
-                    methods.addNumber();
-                    methods.diffNumber7();
+    /*$('.slogan2 .number').animateNumber({
+        number: $('.slogan2 .number').text(),
+        duration: 2500,
+        easing: "swing"
+    });*/
+    //$('.slogan3 .number').animateNumber({ number: 1000 }, 'slow');
 
 
 
-
-                },
-
-
-                addNumber: function (){
-                    var split = options.countNow.split('');
-                    for (var i = 0; i < 7; i++) {
-                        var n = i+1;
-                        $('.number'+n).text(split[i]);
-                    }
-                },
-
-
-
-                diffNumber7: function (){
-                    if(options.countNow < options.countNew ){
-
-                        var diffcount = options.countNew - options.countNow;
-                        if(diffcount < 10){
-
-                            var nubmer7 = $('.number7').text();
-                            var rest = 9 - nubmer7;
-                            if(rest < diffcount){
-                                var diffNubmer7 = diffcount - rest -1;
-                                var animate = diffcount - diffNubmer7 + Number(nubmer7);
-                                //console.log(diffNubmer7);
-                                $('.number7').animateNumber({ number: animate}, 2000);
-
-                                methods.diffNumber6();
-
-                                $('.number7').animateNumber({ number: diffNubmer7 });
-
-
-                            } else{
-                                var animate = diffcount + Number(nubmer7);
-                                $('.number7').animateNumber({ number: animate}, 2000);
-                            }
-
-                        }
-                    }
-
-                },
-
-                diffNumber6: function () {
-                    var nubmer6 = $('.nubmer6').text();
-                    var NewNubmer6 = Number(nubmer6) + 1;
-                    $('.number6').animateNumber({ number: NewNubmer6 }, 2000);
-                }
-
-
-            };
-            methods.init();
-
+    $(".slogan2 .number").prop("Counter", 0).animate({
+        Counter: $('.slogan2 .number').text()
+    }, {
+        duration: 1000,
+        easing: "swing",
+        step: function(e) {
+            $(this).text(Math.ceil(e))
+        },
+        complete: function() {
+            $(this).text($(this).text().replace(/\B(?=(\d{3})+\b)/g, " "))
         }
+    });
+
+    $(".slogan3 .number").prop("Counter", 0).animate({
+        Counter: $('.slogan3 .number').text()
+    }, {
+        duration: 1000,
+        easing: "swing",
+        step: function(e) {
+            $(this).text(Math.ceil(e))
+        },
+        complete: function() {
+            $(this).text($(this).text().replace(/\B(?=(\d{3})+\b)/g, " "))
+        }
+    });
 
 
-    })(jQuery);
+
+    
+    
 
 
     $(document).countPlugin({

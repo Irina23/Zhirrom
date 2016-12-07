@@ -1,0 +1,614 @@
+$main-color: #ff4504
+$color-grey: #727272
+
+header
+  &.mobile
+    display: none
+
+.top
+  background: #868686
+
+  .list_contact
+    float: left
+    padding: 11px 0
+    > div
+      margin-right: 30px
+      &:last-child
+        margin-right: 0
+
+    a, span
+      color: #fff
+      display: block
+      padding-left: 20px
+      font-size: 16px
+      line-height: 18px
+      font-family: "FuturaBookC", sans-serif
+    a
+      transition: all 0.35s
+      &:hover
+        transition: all 0.35s
+        color: $main-color
+        text-decoration: none
+
+    .phone
+      a
+        background: url("../img/icons/icon-phone_w.png") no-repeat left center
+        background-size: 15px auto
+    .email
+      a
+        background: url("../img/icons/icon-mail_w.png") no-repeat left center
+        background-size: 15px auto
+    .work_time
+      span
+        background: url("../img/icons/icone-time_w.png") no-repeat left top
+        background-size: 15px auto
+    .link_faq
+      a
+        padding-left: 0
+        text-transform: uppercase
+
+
+
+
+  .user-account, .user-login
+    float: right
+    a
+      display: inline-block
+      vertical-align: middle
+      color: #fff
+      text-align: center
+      font-size: 18px
+      transition: all 0.35s
+      padding: 0 20px
+      line-height: 40px
+      &:hover
+        transition: all 0.35s
+        color: $main-color
+        text-decoration: none
+
+  .user-login
+    a
+      &.registration
+        background: $main-color
+        &:hover
+          color: #fff
+          background: #fe622b
+
+  .user-account
+    .profile, .cart
+      font-size: 14px
+      position: relative
+      box-sizing: border-box
+      padding-top: 22px
+      line-height: 1em
+      height: 40px
+
+    .profile
+      background: url("../img/icons/icon-profile-w.png") no-repeat center 3px
+      background-size: 15px auto
+
+
+    .cart
+      background: url("../img/icons/icon-cart-w.png") no-repeat center 3px
+      background-size: 17px auto
+      span
+        position: absolute
+        right: 20px
+        color: #fdc68a
+        font-size: 13px
+        top: 3px
+
+
+
+.header
+  border-bottom: 1px solid #f1f1f1
+  padding: 25px 0
+
+
+  .block-logo
+    margin-right: 40px
+    vertical-align: middle
+    .logo
+      width: 333px
+
+      img
+        max-width: 100%
+
+
+
+
+
+  .block-info-header
+    width: calc(100% - 373px)
+    font-size: 16px
+    text-align: left
+    color: #000
+    text-transform: uppercase
+    line-height: 1em
+    vertical-align: middle
+    .slogan
+      color:  #868686
+      font-size: 24px
+      margin-bottom: 20px
+    .slogan2
+      margin-bottom: 15px
+    .slogan3
+      text-align: right
+    .slogan, .slogan2, .slogan3
+      span
+        color: $main-color
+    .slogan2, .slogan3
+      span
+        margin-right: 7px
+
+    .block-infosold
+      margin-bottom: 20px
+      text-align: center
+      .number
+
+        border-radius: 4px
+        background:  #f1f1f1
+        width: 185px
+        height: 39px
+        vertical-align: middle
+
+        [class^="number"]
+          margin-top: 4px
+          border-radius: 4px
+          border-style: solid
+          border-width: 1px
+          border-color:  #d1d2d7
+          box-sizing: border-box
+          background-color:  #ffffff
+          box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1)
+          width: 21px
+          height: 29px
+          font-size: 20px
+          color: $main-color
+          line-height: 27px
+          font-family: "FuturaPT-Bold", sans-serif
+          margin-right: 3px
+          &:nth-child(1), &:nth-child(4)
+            margin-right: 8px
+      span
+        font-size: 22px
+        text-transform: none
+        vertical-align: middle
+        margin-left: 10px
+        line-height: 39px
+
+
+
+
+
+
+#menu
+
+  padding: 20px 0
+  .wrap
+    position: relative
+    >ul>li
+      display: inline-block
+      vertical-align: middle
+      margin-right: 20px
+      //position: relative
+      &.parent
+        >a
+          //border-bottom: 19px solid #fff
+          position: relative
+          padding-bottom: 20px
+        &:hover
+          >a
+            &:after
+              content: ''
+              position: absolute
+              top: 21px
+              left: 50%
+              margin-left: -7px
+              width: 0
+              height: 0
+              border-left: 7px solid transparent
+              border-right: 7px solid transparent
+              border-top: 8px solid $main-color
+
+
+          ul.drop-menu-1
+            display: flex
+
+
+
+
+
+      ul.drop-menu-1
+        display: none
+        position: absolute
+        top: 17px
+        left: 0
+        margin-top: 20px
+        z-index: 12
+        background: rgba(73, 73, 73, 0.97)
+        width: auto
+        flex-direction: row
+        .drop-menu-2
+          padding: 20px 20px 60px
+          border-right: 1px solid #646464
+          min-height: calc(100% - 46px)
+          box-sizing: border-box
+          position: relative
+          .link_all
+            color: #fffefe
+            font-family: "FuturaBookC", sans-serif
+            font-weight: 300
+            font-size: 14px
+            text-transform: uppercase
+            padding: 13px 18px 11px
+            border-radius: 6px
+            box-shadow: inset 0 -2px 7.8px 0.2px rgba(0, 0, 0, 0.16)
+            display: block
+            transition: all 0.35s
+            width: 160px
+            //margin: auto
+            text-align: center
+            background: $main-color
+            position: absolute
+            bottom: 15px
+            left: 50%
+            margin-left: -80px
+            &:hover
+              background: #fe622b
+              transition: all 0.35s
+
+
+        >li
+          min-width: 229px
+          min-height: calc(100% - 46px)
+          float: left
+
+
+          &.parent-menu
+            ///width: 500px
+            //border-right: 1px solid rgba(255,255,255,0.4)
+            &:nth-child(3)
+              border: 0
+              .drop-menu-2
+
+                border: 0
+
+
+            >a
+              text-transform: uppercase
+              padding: 15px 20px
+              font-size: 16px
+              //text-align: center
+              background: $main-color
+              border-right: 1px solid rgba(255,255,255,0.2)
+              transition: all 0.35s
+              &:hover
+                transition: all 0.35s
+                color: #292929
+
+
+
+            .parent-menu
+              >a
+
+                text-transform: uppercase
+                position: relative
+                &:after
+                  position: absolute
+                  height: 14px
+                  width: 2px
+                  background: #fff
+                  content: ""
+                  top: 50%
+                  margin-top: -7px
+                  left: 7px
+
+              .drop-menu-3
+                padding-left: 15px
+
+          a
+            display: block
+            //background-color:  rgba(255, 69, 4, 0.7)
+            width: 100%
+            box-sizing: border-box
+            line-height: 1em
+            font-size: 15px
+            //text-transform: uppercase
+            color: #fff
+            padding: 10px 15px
+            transition: all 0.35s
+            font-family: "FuturaPT-Medium", sans-serif
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+
+            &:hover
+              transition: all 0.35s
+              background: $main-color
+              text-decoration: none
+
+
+
+
+      &.active
+        a
+
+          transition: all 0.35s
+          color: $main-color
+          text-decoration: none
+
+      &.search
+        a
+          padding-right: 20px
+          background: url("../img/icons/icon-search.png") no-repeat right center
+          background-size: 13px auto
+
+      &:last-child
+        margin-right: 0
+      >a
+        text-transform: uppercase
+        color: #000
+        font-family: "FuturaPT-Medium", sans-serif
+        letter-spacing: 1px
+        font-size: 14px
+        line-height: 1em
+        transition: all 0.35s
+        &:hover
+          transition: all 0.35s
+          color: #3d3d3d
+          text-decoration: none
+
+
+
+
+
+@media screen and (max-width: 1024px)
+
+
+  #menu .wrap > ul > li
+    margin-right: 15px
+  .header .block-info-header .slogan
+    font-size: 20px
+
+
+@media screen and (max-width: 959px)
+
+  header
+    display: none
+    &.mobile
+      display: block
+      .block_logo
+        margin: auto
+        text-align: center
+    .top
+      padding: 10px 15px
+      position: relative
+      #menu-mobile
+
+        #menu-icon
+          cursor: pointer
+          position: relative
+          z-index: 10
+          + nav
+            display: none
+            padding: 20px 0 10px
+          .icon-bar
+            background-color: #fff
+            display: block
+            width: 24px
+            height: 2px
+            margin-bottom: 5px
+
+            &:last-child
+              margin-bottom: 0
+
+
+        .menu
+
+          li
+            display: block
+            position: relative
+            margin-bottom: 10px
+            a
+              text-transform: uppercase
+              color: #fff
+              font-family: "FuturaPT-Medium", sans-serif
+              letter-spacing: 2px
+              font-size: 14px
+              line-height: 1em
+              transition: all 0.35s
+              padding: 7px 0
+              display: block
+              &:hover
+                transition: all 0.35s
+                color: $main-color
+                text-decoration: none
+            &.active
+              a
+
+                transition: all 0.35s
+                color: $main-color
+                text-decoration: none
+            &:last-child
+              margin-bottom: 0
+            &.parent
+              cursor: pointer
+              &.open
+                &:before
+                  display: none
+              &:after
+                position: absolute
+                content: ""
+                top: 13px
+                right: 0
+                width: 10px
+                height: 2px
+                //margin-top: -1px
+                background: #fff
+              &:before
+                position: absolute
+                content: ""
+                top: 9px
+                right: 4px
+                width: 2px
+                height: 10px
+                //margin-top: -5px
+                background: #fff
+
+              ul.drop-menu
+                margin-top: 10px
+                padding-left: 15px
+
+
+
+            ul.drop-menu
+              display: none
+
+
+
+      .search
+        //float: right
+        width: 155px
+        background: #727272
+        position: absolute
+        top: 4px
+        right: 15px
+        z-index: 10
+        input[type="text"]
+          border: 0
+          border-bottom: 1px solid #fff
+          padding: 4px 0
+          font-family: "FuturaBookC", sans-serif
+          line-height: 1em
+          font-size: 16px
+          color: #fff
+          background: #727272
+          &::-webkit-input-placeholder
+            color: #fff
+          &::-moz-placeholder
+            color: #fff
+          &::-moz-placeholder
+            color: #fff
+
+        .form-control
+          display: inline-block
+          vertical-align: middle
+          &.error
+            input[type="text"]
+              border-color: red
+        .submit
+          display: inline-block
+          vertical-align: middle
+          width: 15px
+          height: 15px
+          background: url("../img/icons/search2.png") no-repeat
+          background-size: 100%
+          position: relative
+          margin-left: -20px
+          cursor: pointer
+
+
+
+  .header
+    padding: 20px
+    .search
+      float: right
+      clear: right
+      width: auto
+      margin-bottom: 6px
+      input[type="text"]
+        width: 120px
+        font-size: 18px
+        font-family: "FuturaBookC", sans-serif
+        font-weight: normal
+
+      .submit
+        line-height: 29px
+
+    .cart
+      //margin-bottom: 7px
+      clear: both
+      a
+        font-size: 18px
+        padding-left: 35px
+        font-family: "FuturaBookC", sans-serif
+        font-weight: normal
+        span
+          font-size: 18px
+          line-height: 18px
+          font-family: "FuturaBookC", sans-serif
+          font-weight: normal
+
+    .logo
+      display: block
+      margin: 0 auto 30px
+    //width: 200px
+    .tagline
+      margin-bottom: 30px
+      color: #ff4504
+      font-family: "FuturaPT-Demi", sans-serif
+      font-size: 18px
+      line-height: 24px
+      text-transform: uppercase
+      font-weight: 500
+      letter-spacing: 2px
+      span
+        font-family: "FuturaPT-Light", sans-serif
+        font-weight: 300
+
+
+    .header_left
+      float: left
+      .user-login
+        a
+          display: block
+          line-height: 38px
+          color: #000
+          font-size: 18px
+          min-width: 100px
+          text-align: center
+          transition: all 0.35s
+          box-sizing: border-box
+          padding: 0 10px
+          &:hover
+            transition: all 0.35s
+            color: $main-color
+            text-decoration: none
+          &.login
+            background: $main-color
+            border-radius: 2px
+            box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16)
+            color: #fff
+            &:hover
+              color: #fff
+              background: #fe622b
+
+
+
+    .header_right
+      float: right
+      color: #000
+      font-size: 16px
+      line-height: 1em
+      p
+        color: #000
+        font-size: 16px
+        line-height: 1em
+      a
+        display: block
+        //margin-bottom: 15px
+        color: #000
+        transition: all 0.35s
+        font-size: 18px
+        line-height: 38px
+
+
+        &.email
+          letter-spacing: 1px
+        //margin-bottom: 0
+        &:hover
+          transition: all 0.35s
+          color: $main-color
+          text-decoration: none
+

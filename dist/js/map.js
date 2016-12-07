@@ -29,9 +29,9 @@ $(window).on('load', function() {
     function initMap() {
 
         var map = new google.maps.Map(document.getElementById('map_canvas'), {
-            zoom: 5,
-            center: {lat: 53.38754297, lng: 32.58556172}
-            //scrollwheel: false
+            zoom: 4,
+            center: {lat: 51.05192259, lng: 49.02804657},
+            scrollwheel: false
         });
 
         // Create an array of alphabetical characters used to label the markers.

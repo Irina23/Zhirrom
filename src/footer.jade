@@ -131,14 +131,26 @@ footer
 
     .modal_close
     .modal_content Товар доставлено
+
+
+#search_modal.modal_div
+    .modal_close
+    .modal_content
+        h3 Введите поисковой запрос
+        form.inline-layout(action="search.html" role="search")
+            div.form-control
+                input(type="text" name="search" placeholder="Поиск" minlength="2" data-validate="name")
+            .btn.submit
+
+
 #overlay
 
 script(src="bower_components/jquery/dist/jquery.js")
 script(src="js/jquery.elevateZoom-3.0.8.min.js")
 script(src="js/jquery.animateNumber.js")
-
+script(src="js/count_buy.js")
 script(src="js/functions.js")
-script(src="js/bootstrap_tabs.min.js")
+//script(src="js/bootstrap_tabs.min.js")
 script(src="js/alexValidate.js")
 script(src="bower_components/jquery.bxslider/jquery.bxslider.js")
 script(src="js/owl.carousel.js")

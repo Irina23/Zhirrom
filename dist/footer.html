@@ -102,12 +102,25 @@
   <div class="modal_close"></div>
   <div class="modal_content">Товар доставлено</div>
 </div>
+<div id="search_modal" class="modal_div">
+  <div class="modal_close"></div>
+  <div class="modal_content">
+    <h3>Введите поисковой запрос</h3>
+    <form action="search.html" role="search" class="inline-layout">
+      <div class="form-control">
+        <input type="text" name="search" placeholder="Поиск" minlength="2" data-validate="name"/>
+      </div>
+      <div class="btn submit"></div>
+    </form>
+  </div>
+</div>
 <div id="overlay"></div>
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="js/jquery.elevateZoom-3.0.8.min.js"></script>
 <script src="js/jquery.animateNumber.js"></script>
+<script src="js/count_buy.js"></script>
 <script src="js/functions.js"></script>
-<script src="js/bootstrap_tabs.min.js"></script>
+<!--script(src="js/bootstrap_tabs.min.js")-->
 <script src="js/alexValidate.js"></script>
 <script src="bower_components/jquery.bxslider/jquery.bxslider.js"></script>
 <script src="js/owl.carousel.js"></script>
