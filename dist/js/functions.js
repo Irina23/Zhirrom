@@ -388,14 +388,11 @@ jQuery(document).ready(function() {
     });
 
 
-
     
-    
-
-
     $(document).countPlugin({
         'counter':'#count_buy',
         'countNow': '1000005',
-        'countNew': '1000012'
+        'countNew': '1000024'
     });
+    
 });
