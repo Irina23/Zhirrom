@@ -2,28 +2,23 @@
 header
     .top
         .wrap.cf
-            .list_contact
-                .phone.ringo-phone
-                    a(href="tel:+7(495) 369-14-15") +7(495) 369-14-15
-                    | &nbsp;&nbsp;&nbsp;
-                    a(href="tel:+7(925) 035-31-31") +7(925) 035-31-31
-                .mail
-                    | Почта:&nbsp;
-                    a(href="mailto:zhirrom@mail.ru") client@zhirrom.ru
-                .work_time Время работы: пн-пт 9.00-18.00
-
-
             nav.menu
                 ul
-
+                    li
+                        a(href="about.html") О компании
 
                     li
                         a(href="faq.html") faq
 
+                    li
+                        a(href="blog.html") Статьи
 
 
-
-
+            form#order_status(action="#")
+                h3 Состояние заказа
+                div
+                    input(type="text" placeholder="Номер заказа" data-validate="number")
+                .btn.submit
 
             .user-login
                 a.registration(href="registration.html") Регистрация
@@ -34,7 +29,15 @@ header
 
 
     .header.cf
-
+        .list_contact
+            .phone.ringo-phone
+                a(href="tel:+7(495) 369-14-15") +7(495) 369-14-15
+                | &nbsp;&nbsp;&nbsp;
+                a(href="tel:+7(925) 035-31-31") +7(925) 035-31-31
+            .mail
+                | Почта:&nbsp;
+                a(href="mailto:zhirrom@mail.ru") client@zhirrom.ru
+            .work_time Время работы: пн-пт 9.00-18.00
 
         .block-logo
             .logo
@@ -466,15 +469,6 @@ header
                 li
                     a(href="contact.html") Контакты
 
-#count_buy
-    span.number1 1
-    span.number2 0
-    span.number3 0
-    span.number4 0
-    span.number5 0
-    span.number6 0
-    span.number7 0
-
 
 header.mobile
     .top.cf
@@ -571,7 +565,16 @@ header.mobile
 
 
 
+    p#signatures 1000000
+    button#start-campaign Start campaign
 
-
+    #count_buy
+        span.number1 1
+        span.number2 0
+        span.number3 0
+        span.number4 0
+        span.number5 0
+        span.number6 0
+        span.number7 0
 
 
