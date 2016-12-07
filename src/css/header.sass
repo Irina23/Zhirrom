@@ -1,9 +1,7 @@
 $main-color: #ff4504
 $color-grey: #727272
 
-header
-  &.mobile
-    display: none
+
 
 .top
   background: #868686
@@ -361,6 +359,88 @@ header
 
 
 
+#menu-mobile
+  display: none
+
+
+  #menu-icon
+    cursor: pointer
+    position: relative
+    z-index: 10
+    + nav
+      display: none
+      padding: 20px 0 10px
+    .icon-bar
+      background-color: #fff
+      display: block
+      width: 24px
+      height: 2px
+      margin-bottom: 5px
+
+      &:last-child
+        margin-bottom: 0
+
+
+  .menu
+
+    li
+      display: block
+      position: relative
+      margin-bottom: 10px
+      a
+        text-transform: uppercase
+        color: #fff
+        font-family: "FuturaPT-Medium", sans-serif
+        letter-spacing: 2px
+        font-size: 14px
+        line-height: 1em
+        transition: all 0.35s
+        padding: 7px 0
+        display: block
+        &:hover
+          transition: all 0.35s
+          color: $main-color
+          text-decoration: none
+      &.active
+        a
+
+          transition: all 0.35s
+          color: $main-color
+          text-decoration: none
+      &:last-child
+        margin-bottom: 0
+      &.parent
+        cursor: pointer
+        &.open
+          &:before
+            display: none
+        &:after
+          position: absolute
+          content: ""
+          top: 13px
+          right: 0
+          width: 10px
+          height: 2px
+          //margin-top: -1px
+          background: #fff
+        &:before
+          position: absolute
+          content: ""
+          top: 9px
+          right: 4px
+          width: 2px
+          height: 10px
+          //margin-top: -5px
+          background: #fff
+
+        ul.drop-menu
+          margin-top: 10px
+          padding-left: 15px
+
+
+
+      ul.drop-menu
+        display: none
 
 
 @media screen and (max-width: 1024px)
@@ -373,242 +453,44 @@ header
 
 
 @media screen and (max-width: 959px)
+  #menu-mobile
+    display: block
 
-  header
+  nav#menu
     display: none
-    &.mobile
-      display: block
-      .block_logo
-        margin: auto
-        text-align: center
-    .top
-      padding: 10px 15px
-      position: relative
-      #menu-mobile
-
-        #menu-icon
-          cursor: pointer
-          position: relative
-          z-index: 10
-          + nav
-            display: none
-            padding: 20px 0 10px
-          .icon-bar
-            background-color: #fff
-            display: block
-            width: 24px
-            height: 2px
-            margin-bottom: 5px
-
-            &:last-child
-              margin-bottom: 0
-
-
-        .menu
-
-          li
-            display: block
-            position: relative
-            margin-bottom: 10px
-            a
-              text-transform: uppercase
-              color: #fff
-              font-family: "FuturaPT-Medium", sans-serif
-              letter-spacing: 2px
-              font-size: 14px
-              line-height: 1em
-              transition: all 0.35s
-              padding: 7px 0
-              display: block
-              &:hover
-                transition: all 0.35s
-                color: $main-color
-                text-decoration: none
-            &.active
-              a
-
-                transition: all 0.35s
-                color: $main-color
-                text-decoration: none
-            &:last-child
-              margin-bottom: 0
-            &.parent
-              cursor: pointer
-              &.open
-                &:before
-                  display: none
-              &:after
-                position: absolute
-                content: ""
-                top: 13px
-                right: 0
-                width: 10px
-                height: 2px
-                //margin-top: -1px
-                background: #fff
-              &:before
-                position: absolute
-                content: ""
-                top: 9px
-                right: 4px
-                width: 2px
-                height: 10px
-                //margin-top: -5px
-                background: #fff
-
-              ul.drop-menu
-                margin-top: 10px
-                padding-left: 15px
-
-
-
-            ul.drop-menu
-              display: none
-
-
-
-      .search
-        //float: right
-        width: 155px
-        background: #727272
-        position: absolute
-        top: 4px
-        right: 15px
-        z-index: 10
-        input[type="text"]
-          border: 0
-          border-bottom: 1px solid #fff
-          padding: 4px 0
-          font-family: "FuturaBookC", sans-serif
-          line-height: 1em
-          font-size: 16px
-          color: #fff
-          background: #727272
-          &::-webkit-input-placeholder
-            color: #fff
-          &::-moz-placeholder
-            color: #fff
-          &::-moz-placeholder
-            color: #fff
-
-        .form-control
-          display: inline-block
-          vertical-align: middle
-          &.error
-            input[type="text"]
-              border-color: red
-        .submit
-          display: inline-block
-          vertical-align: middle
-          width: 15px
-          height: 15px
-          background: url("../img/icons/search2.png") no-repeat
-          background-size: 100%
-          position: relative
-          margin-left: -20px
-          cursor: pointer
-
-
 
   .header
-    padding: 20px
-    .search
-      float: right
-      clear: right
-      width: auto
-      margin-bottom: 6px
-      input[type="text"]
-        width: 120px
-        font-size: 18px
-        font-family: "FuturaBookC", sans-serif
-        font-weight: normal
-
-      .submit
-        line-height: 29px
-
-    .cart
-      //margin-bottom: 7px
-      clear: both
-      a
-        font-size: 18px
-        padding-left: 35px
-        font-family: "FuturaBookC", sans-serif
-        font-weight: normal
-        span
-          font-size: 18px
-          line-height: 18px
-          font-family: "FuturaBookC", sans-serif
-          font-weight: normal
-
-    .logo
-      display: block
+    border: 0
+    .block-logo
       margin: 0 auto 30px
-    //width: 200px
-    .tagline
-      margin-bottom: 30px
-      color: #ff4504
-      font-family: "FuturaPT-Demi", sans-serif
-      font-size: 18px
-      line-height: 24px
-      text-transform: uppercase
-      font-weight: 500
-      letter-spacing: 2px
-      span
-        font-family: "FuturaPT-Light", sans-serif
-        font-weight: 300
+      display: block
+      .logo
+        margin: auto
+        width: 280px
 
+    .block-info-header
+      text-align: center
+      display: block
+      width: 100%
+      font-size: 14px
+      .slogan3
+        text-align: center
+      .slogan
+        line-height: 1.3em
 
-    .header_left
-      float: left
-      .user-login
-        a
-          display: block
-          line-height: 38px
-          color: #000
-          font-size: 18px
-          min-width: 100px
-          text-align: center
-          transition: all 0.35s
-          box-sizing: border-box
-          padding: 0 10px
-          &:hover
-            transition: all 0.35s
-            color: $main-color
-            text-decoration: none
-          &.login
-            background: $main-color
-            border-radius: 2px
-            box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16)
-            color: #fff
-            &:hover
-              color: #fff
-              background: #fe622b
+  .top
+    .list_contact
+      display: none
+    .user-account,.user-login
 
-
-
-    .header_right
-      float: right
-      color: #000
-      font-size: 16px
-      line-height: 1em
-      p
-        color: #000
-        font-size: 16px
-        line-height: 1em
+      position: absolute
+      top: 0
+      right: 0
+      z-index: 10
       a
-        display: block
-        //margin-bottom: 15px
-        color: #000
-        transition: all 0.35s
-        font-size: 18px
-        line-height: 38px
-
-
-        &.email
-          letter-spacing: 1px
-        //margin-bottom: 0
-        &:hover
-          transition: all 0.35s
-          color: $main-color
-          text-decoration: none
-
+        line-height: 36px
+    .user-account
+      a
+        padding: 0 15px
+        &.cart span
+          right: 10px

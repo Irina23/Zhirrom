@@ -1,6 +1,7 @@
 jQuery(document).ready(function() {
 
     // scroll on top when history change
+    /*
     if (window.localStorage.getItem('scrollTo')) {
         var scroll = window.localStorage.getItem('scrollTo');
         scroll = parseInt(scroll);
@@ -12,6 +13,7 @@ jQuery(document).ready(function() {
         alert(scroll);
         window.localStorage.setItem('scrollTo', 1);
     });
+    */
 
     //form validate
     jQuery("form").validate({
@@ -317,7 +319,7 @@ jQuery(document).ready(function() {
     jQuery("#menu-icon, .filter_products  h2 ").on("click", function(){
         jQuery(this).next().slideToggle();
     });
-    jQuery("header.mobile li.parent >a").click( function(event){
+    jQuery("#menu-mobile li.parent >a").click( function(event){
         event.preventDefault();
         jQuery(this).closest(".parent").find(".drop-menu").slideToggle();
         jQuery(this).closest(".parent").toggleClass("open");
