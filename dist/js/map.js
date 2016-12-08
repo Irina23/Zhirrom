@@ -29,8 +29,8 @@ $(window).on('load', function() {
     function initMap() {
 
         var map = new google.maps.Map(document.getElementById('map_canvas'), {
-            zoom: 4,
-            center: {lat: 51.05192259, lng: 49.02804657},
+            zoom: 3,
+            center: {lat: 57.32680396, lng: 91.2283999},
             scrollwheel: false
         });
 

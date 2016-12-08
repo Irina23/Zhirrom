@@ -39,9 +39,9 @@
                 if(options.countNow < options.countNew ){
 
                     var diffcount = options.countNew - options.countNow;
-                    if(diffcount > 20){
+                    /*if(diffcount > 20){
                         diffcount = 20;
-                    }
+                    }*/
 
                     //console.log(diffcount);
 

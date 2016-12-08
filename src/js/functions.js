@@ -394,5 +394,13 @@ jQuery(document).ready(function() {
         'countNow': '1000035',
         'countNew': '1000056'
     });
+
+
+    $( ".page_wrapper.registration input[name='phone']" ).focus(function() {
+        $( this ).next( ".help_text" ).show();
+    });
+    $( ".page_wrapper.registration input[name='phone']" ).focusout(function() {
+        $( this ).next( ".help_text" ).hide();
+    });
     
 });
