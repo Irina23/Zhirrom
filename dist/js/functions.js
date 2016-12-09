@@ -364,7 +364,7 @@ jQuery(document).ready(function() {
     $(".slogan2 .number").prop("Counter", 0).animate({
         Counter: $('.slogan2 .number').text()
     }, {
-        duration: 1000,
+        duration: 3000,
         easing: "swing",
         step: function(e) {
             $(this).text(Math.ceil(e))
@@ -377,8 +377,8 @@ jQuery(document).ready(function() {
     $(".slogan3 .number").prop("Counter", 0).animate({
         Counter: $('.slogan3 .number').text()
     }, {
-        duration: 1000,
-        easing: "swing",
+        duration: 5000,
+        //easing: "swing",
         step: function(e) {
             $(this).text(Math.ceil(e))
         },
@@ -391,8 +391,8 @@ jQuery(document).ready(function() {
 
     $(document).countPlugin({
         'counter':'#count_buy',
-        'countNow': '1000035',
-        'countNew': '1000056'
+        'countNow': '1999987',
+        'countNew': '2000007'
     });
 
 

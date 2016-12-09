@@ -22,7 +22,12 @@
             numberSave: function (){
                 storage.number7 = $('.number7').text();
                 storage.number6 = $('.number6').text();
-                //console.log(storage.number6);
+                storage.number5 = $('.number5').text();
+                storage.number4 = $('.number4').text();
+                storage.number3 = $('.number3').text();
+                storage.number2 = $('.number2').text();
+                storage.number1 = $('.number1').text();
+
             },
             
             addNumber: function (){
@@ -35,119 +40,128 @@
 
             
             diffNumber: function (){
-                //console.log("ggg");
+                
                 if(options.countNow < options.countNew ){
 
                     var diffcount = options.countNew - options.countNow;
-                    /*if(diffcount > 20){
-                        diffcount = 20;
-                    }*/
+                    var rest = 9 - storage.number7;
 
-                    //console.log(diffcount);
+                    if (rest < diffcount) {
+                        var animate = diffcount - Number(storage.number7);
+                        for (var i = 0; i < diffcount; i++) {
+
+                            setTimeout(
+                                function () {
+
+                                    storage.number7 = Number(storage.number7) + 1;
+                                    if(storage.number7 == 10){
+                                        storage.number7 = 0;
+                                        methods.diffNumber6();
+                                    }
+                                    $('.number7').text(storage.number7);
+                                },
+                                600 * i
+                            );
+
+                        }
 
 
-                        var rest = 9 - storage.number7;
-                        //console.log(rest);
-                        if (rest < diffcount) {
-
-                            //var diffNubmer7 = diffcount - rest;
-                            //console.log("diffNubmer7: " + diffNubmer7);
-                            var animate = diffcount - Number(storage.number7);
-                            //console.log("animate: " + animate);
-
-
-                            //console.log(diffcount);
-                            for (var i = 0; i < diffcount; i++) {
-                                //console.log(storage.number7);
+                    } else {
+                        // > 9
+                        for (var i = 0; i < diffcount; i++) {
 
                                 setTimeout(
+
                                     function () {
 
                                         storage.number7 = Number(storage.number7) + 1;
-                                        if(storage.number7 == 10){
-                                            storage.number7 = 0;
-                                        }
                                         $('.number7').text(storage.number7);
                                         //console.log('number7:'+storage.number7 );
-                                        //console.log(storage.number7);
-                                        if(storage.number7 == 0){
-                                            methods.diffNumber6();
-                                        }
                                     },
-                                    500 * i
+                                    600 * i
                                 );
-
-
-
-
-                            }
-
-
-
-
-
-
-
-
-                        } else {
-                            // > 9
-                            for (var i = 0; i < diffcount; i++) {
-
-                                    setTimeout(
-
-                                        function () {
-
-                                            storage.number7 = Number(storage.number7) + 1;
-                                            $('.number7').text(storage.number7);
-                                            //console.log('number7:'+storage.number7 );
-                                        },
-                                        500 * i
-                                    );
-
-                            }
                         }
-
-                    //}
-                }
-
-            },
-
-            loopNumber: function () {
-                storage.number7 = 0;
-                var rest = 9 - number7;
-                if(rest < diffcount){
-
-                    var diffNubmer7 = diffcount - rest -1;
-                    var animate = diffcount - diffNubmer7 + Number(storage.number7);
-                    methods.diffNumber7(animate);
-                    methods.diffNumber6();
-
-                    if(diffNubmer7 < 9) {
-                        methods.plusNumber6(diffNubmer7);
-                    } else{
-                        $('.number7').animateNumber({number: diffNubmer7});
                     }
 
+                }
+            },
 
+
+
+            diffNumber6: function () {
+                if(storage.number6 == 9){
+                    storage.number6 = 0;
+                    $('.number6').text(storage.number6);
+                    methods.diffNumber5();
                 } else{
-                    var animate = diffcount + Number(number7);
-                    $('.number7').animateNumber({ number: animate}, 2000);
+                    storage.number6 = Number(storage.number6) + 1;
+                    $('.number6').text(storage.number6);
+                }
+            },
+            diffNumber5: function () {
+
+
+                if(storage.number5 == 9){
+                    storage.number5 = 0;
+                    $('.number5').text(storage.number5);
+                    methods.diffNumber4();
+                } else{
+                    storage.number5 = Number(storage.number5) + 1;
+                    $('.number5').text(storage.number5);
                 }
 
             },
+            diffNumber4: function () {
 
-            diffNumber6: function () {
-                storage.number6 = Number(storage.number6) + 1;
-                //$('.number6').animateNumber({ number: NewNubmer6 }, 2000);
-                $('.number6').text(storage.number6);
+
+                if(storage.number4 == 9){
+                    storage.number4 = 0;
+                    $('.number4').text(storage.number4);
+                    methods.diffNumber3();
+                } else{
+                    storage.number4 = Number(storage.number4) + 1;
+                    $('.number4').text(storage.number4);
+                }
+
+            },
+            diffNumber3: function () {
+
+
+                if(storage.number3 == 9){
+                    storage.number3 = 0;
+                    $('.number3').text(storage.number3);
+                    methods.diffNumber2();
+                } else{
+                    storage.number3 = Number(storage.number3) + 1;
+                    $('.number3').text(storage.number3);
+                }
+
+            },
+            diffNumber2: function () {
+
+
+                if(storage.number2 == 9){
+                    storage.number2 = 0;
+                    $('.number2').text(storage.number2);
+                    methods.diffNumber1();
+                } else{
+                    storage.number2 = Number(storage.number2) + 1;
+                    $('.number2').text(storage.number2);
+                }
+
+            },
+            diffNumber1: function () {
+
+                if(storage.number1 == 9){
+                    //storage.number1 = 0;
+                    //$('.number1').text(storage.number1);
+                } else{
+                    storage.number1 = Number(storage.number1) + 1;
+                    $('.number1').text(storage.number1);
+                }
             },
             diffNumber7: function (animate) {
                 $('.number7').animateNumber({ number: animate}, 2000);
-            },
-            plusNumber6: function (diffNubmer7) {
-                methods.diffNumber6();
-                var newdiffNubmer7 = diffNubmer7 - 10;
-                methods.loopNumber(newdiffNubmer7);
             }
 
         };
