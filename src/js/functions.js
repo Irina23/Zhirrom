@@ -392,7 +392,7 @@ jQuery(document).ready(function() {
     $(document).countPlugin({
         'counter':'#count_buy',
         'countNow': '1999987',
-        'countNew': '2000007'
+        'countNew': '2000087'
     });
 
 
