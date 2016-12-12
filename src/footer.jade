@@ -120,7 +120,7 @@ footer
     .img-holder
         img(src="img/content/certificate.png", alt="Сертификат")
 
-#report_available.modal_div.show
+#report_available.modal_div
 
     .modal_close
     .modal_content Когда товар появится на складе мы вам сообщим.
@@ -141,6 +141,15 @@ footer
             div.form-control
                 input(type="text" name="search" placeholder="Поиск" minlength="2" data-validate="name")
             .btn.submit
+
+#phone_modal.modal_div
+    .modal_close
+    .modal_content
+        //h3 Введите Ваш телефон
+        form.inline-layout
+            div.form-control
+                input(type="text" name="phone" placeholder="Телефон"  data-validate="phone")
+            .btn.submit отправить
 
 
 #overlay

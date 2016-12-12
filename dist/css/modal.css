@@ -1,0 +1,385 @@
+#overlay {
+  z-index: 30;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.85;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none; }
+
+.modal_div {
+  display: none;
+  position: fixed;
+  left: 50%;
+  background: #fff;
+  opacity: 0;
+  z-index: 31;
+  padding: 60px 40px;
+  width: 410px;
+  height: 165px;
+  margin-top: -82px;
+  margin-left: -205px;
+  box-sizing: border-box;
+  text-align: center; }
+  .modal_div.show {
+    top: 50%;
+    opacity: 1;
+    display: block; }
+  .modal_div .modal_content {
+    font-size: 18px;
+    font-family: "FuturaBookC", sans-serif;
+    line-height: 1.3em; }
+  .modal_div .modal_close {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url("../img/icons/close.png") no-repeat;
+    background-size: 100%;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    z-index: 10; }
+    .modal_div .modal_close:hover {
+      background: url("../img/icons/close_hover.png") no-repeat;
+      background-size: 100%;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
+  .modal_div .message_modal {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: #fff;
+    box-sizing: border-box;
+    padding-top: 150px;
+    display: none;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    font-size: 24px;
+    text-align: center; }
+    .modal_div .message_modal.show {
+      display: block;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
+  .modal_div#contact_form {
+    height: 450px;
+    margin-top: -225px; }
+  .modal_div[id^="certificate"] {
+    height: auto;
+    width: auto;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+    margin-top: 0;
+    margin-left: 0;
+    left: 50%; }
+
+#login, #call_back {
+  width: 340px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -170px;
+  padding: 45px; }
+  #login h3, #call_back h3 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 1em;
+    font-family: "FuturaPT-Demi", sans-serif;
+    font-weight: normal;
+    color: #000; }
+  #login .form-holder p, #call_back .form-holder p {
+    margin-bottom: 5px;
+    color: red; }
+  #login .form-holder input[type="text"],
+  #login .form-holder input[type="email"],
+  #login .form-holder input[type="password"], #call_back .form-holder input[type="text"],
+  #call_back .form-holder input[type="email"],
+  #call_back .form-holder input[type="password"] {
+    text-align: left;
+    width: 100%;
+    height: 45px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 45px;
+    background: #fff;
+    font-family: "FuturaPT-Medium", sans-serif;
+    border: 1px solid #bab9b9;
+    color: #686767;
+    border-radius: 2px; }
+  #login .form-holder .error input[type="text"],
+  #login .form-holder .error input[type="email"],
+  #login .form-holder .error input[type="password"], #call_back .form-holder .error input[type="text"],
+  #call_back .form-holder .error input[type="email"],
+  #call_back .form-holder .error input[type="password"] {
+    border-color: #FF0000; }
+  #login .form-holder .btn, #call_back .form-holder .btn {
+    line-height: 50px;
+    color: #fff;
+    font-size: 16px;
+    width: 155px;
+    text-align: center;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    display: block;
+    margin: auto;
+    background: #ff4504;
+    border-radius: 6px;
+    box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16);
+    text-transform: uppercase;
+    font-family: "FuturaPT-Heavy", sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer; }
+    #login .form-holder .btn:hover, #call_back .form-holder .btn:hover {
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      background: #fe622b;
+      text-decoration: none; }
+  #login a, #call_back a {
+    display: block;
+    color: #ff4504;
+    margin-bottom: 15px;
+    font-family: "FuturaBookC", sans-serif; }
+  #login .login-social, #call_back .login-social {
+    margin-top: 15px; }
+    #login .login-social .vk-login, #call_back .login-social .vk-login {
+      background: #507299; }
+    #login .login-social .vk-facebook, #call_back .login-social .vk-facebook {
+      background: #3b5998; }
+    #login .login-social .vk-login, #login .login-social .vk-facebook, #call_back .login-social .vk-login, #call_back .login-social .vk-facebook {
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 0;
+      padding: 7px 6px 5px;
+      border-radius: 6px;
+      margin-left: 15px;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      width: 30px;
+      height: 30px;
+      box-sizing: border-box;
+      color: #fff; }
+
+#contact_form {
+  width: 620px;
+  height: 530px;
+  margin-top: -265px;
+  margin-left: -310px;
+  padding: 60px; }
+  #contact_form .message_modal {
+    padding-top: 230px; }
+  #contact_form h3 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 1em;
+    font-family: "FuturaPT-Demi", sans-serif;
+    font-weight: normal; }
+  #contact_form .form-holder .row-group .file {
+    width: 238px;
+    height: 43px;
+    background: url("../img/icons/file2.png") no-repeat;
+    overflow: hidden;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    border: 1px solid #bab9b9;
+    border-radius: 2px; }
+    #contact_form .form-holder .row-group .file:hover {
+      background: url("../img/icons/file_hover2.png") no-repeat;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
+  #contact_form .form-holder .row-group > div {
+    display: inline-block;
+    vertical-align: top; }
+    #contact_form .form-holder .row-group > div:first-child {
+      margin-right: 15px; }
+  #contact_form .form-holder .assortment {
+    width: 100%; }
+    #contact_form .form-holder .assortment input[type="text"] {
+      width: 100%; }
+  #contact_form .form-holder input[type="file"] {
+    width: 240px !important;
+    height: 45px !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+    cursor: pointer; }
+  #contact_form .form-holder input[type="text"],
+  #contact_form .form-holder input[type="email"] {
+    text-align: left;
+    height: 45px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 1px solid #bab9b9;
+    color: #686767;
+    border-radius: 2px;
+    font-size: 18px;
+    line-height: 45px;
+    background: #fff;
+    font-family: "FuturaPT-Medium", sans-serif;
+    width: 240px; }
+  #contact_form .form-holder textarea {
+    border-radius: 2px;
+    border: 1px solid #bab9b9;
+    width: 100%;
+    box-sizing: border-box;
+    height: 135px;
+    background: none;
+    padding: 10px;
+    color: #818181;
+    font-size: 18px;
+    line-height: 1.3em;
+    font-family: "FuturaPT-Medium", sans-serif; }
+  #contact_form .form-holder .error input[type="text"],
+  #contact_form .form-holder .error input[type="email"],
+  #contact_form .form-holder .error textarea {
+    border-color: #FF0000; }
+  #contact_form .form-holder .btn {
+    line-height: 50px;
+    color: #fff;
+    font-size: 16px;
+    width: 155px;
+    text-align: center;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    display: block;
+    margin: 30px auto 0;
+    background: #ff4504;
+    border-radius: 6px;
+    box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16);
+    text-transform: uppercase;
+    font-family: "FuturaPT-Heavy", sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer; }
+    #contact_form .form-holder .btn:hover {
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      background: #fe622b;
+      text-decoration: none; }
+
+#search_modal, #phone_modal {
+  text-align: left;
+  padding: 40px 30px; }
+  #search_modal h3, #phone_modal h3 {
+    margin-bottom: 20px;
+    color: #636262;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1em; }
+  #search_modal .form-control, #phone_modal .form-control {
+    width: calc(100% - 35px); }
+  #search_modal input[type="text"], #phone_modal input[type="text"] {
+    height: 30px;
+    border: 1px solid #d7d7d7;
+    font-size: 18px;
+    width: 100%;
+    font-family: "FuturaBookC", sans-serif;
+    box-sizing: border-box;
+    line-height: 28px;
+    padding: 0 10px; }
+  #search_modal .submit, #phone_modal .submit {
+    width: 35px;
+    height: 30px;
+    background: url("../img/icons/search2.png") no-repeat center #ff4504;
+    background-size: 17px auto; }
+
+#phone_modal {
+  height: 200px;
+  margin-top: -100px; }
+  #phone_modal .form-control {
+    width: 100%; }
+  #phone_modal input[type="text"] {
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 20px; }
+  #phone_modal .submit {
+    height: auto;
+    line-height: 45px;
+    color: #fff;
+    font-size: 16px;
+    width: 155px;
+    text-align: center;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    display: block;
+    margin: auto;
+    background: #ff4504;
+    border-radius: 6px;
+    box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16);
+    text-transform: uppercase;
+    font-family: "FuturaPT-Heavy", sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer; }
+    #phone_modal .submit:hover {
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      background: #fe622b;
+      text-decoration: none; }
+
+@media screen and (max-width: 650px) {
+  #contact_form {
+    width: calc( 100% - 40px);
+    left: 20px;
+    margin-left: 0;
+    padding: 30px;
+    height: 460px;
+    margin-top: -230px;
+    overflow: auto; }
+    #contact_form .form-holder .row-group .file {
+      width: 100%;
+      background-position: top center;
+      margin-bottom: 20px !important;
+      cursor: pointer; }
+      #contact_form .form-holder .row-group .file:hover {
+        background-position: top center; }
+      #contact_form .form-holder .row-group .file input[type="file"] {
+        width: 100% !important; }
+    #contact_form .form-holder .row-group > div {
+      display: block;
+      margin: auto !important; }
+    #contact_form .form-holder .row-group input[type="text"], #contact_form .form-holder .row-group input[type="email"] {
+      width: 100%;
+      margin-bottom: 20px; }
+  #contact_form {
+    height: 530px;
+    margin-top: -265px; } }
+
+@media screen and (max-width: 600px) {
+  #search_modal h3 {
+    font-size: 18px; } }
+
+@media screen and (max-width: 500px) {
+  #report_available, #order_status_result, .modal_div {
+    width: calc(100vw - 40px);
+    left: 20px;
+    margin-left: 0; }
+    #report_available .modal_div.show, #order_status_result .modal_div.show, .modal_div .modal_div.show {
+      width: calc(100vw - 40px);
+      left: 20px;
+      margin-left: 0; }
+  #contact_form, #login {
+    height: 440px;
+    margin-top: -220px; }
+    #contact_form h3, #login h3 {
+      margin-bottom: 20px; }
+  #login, #call_back {
+    width: calc(100vw - 40px);
+    left: 20px;
+    margin-left: 0;
+    padding: 40px 20px; }
+  #contact_form h3 {
+    margin-bottom: 20px;
+    font-size: 23px; }
+  #contact_form .form-holder .btn {
+    margin-top: 20px; }
+  #contact_form .form-holder .row-group .file {
+    margin-bottom: 10px !important; }
+  #contact_form .form-holder .row-group input[type="text"], #contact_form .form-holder .row-group input[type="email"] {
+    margin-bottom: 10px; } }

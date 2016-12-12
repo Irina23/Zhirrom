@@ -16,47 +16,23 @@ jQuery(document).ready(function() {
     */
 
     //form validate
-    jQuery("form").validate({
-
-        rules:{
-            name:{
-                required: true,
-                minlength: 2
-            },
-            phone:{
-                required: true,
-                digits: true
-            },
-            email:{
-                required: true,
-                email: true
-            },
-            address:{
-                required: true
-
-            },
-            iin:{
-                required: true,
-                digits: true
-            },
-            assortment:{
-                //required: true
-
-            },
-            pass:{
-                required: true
-
-            }
-
-        }
-
-    });
+    jQuery("form").validate();
 
     //modal form
     var overlay = $('#overlay');
     var open_modal = $('.open_modal');
     var close = $('.modal_close, #overlay');
     var modal = $('.modal_div');
+
+
+    if($(modal).hasClass('show')){
+        overlay.fadeIn(100,
+            function(){
+
+                $('body').addClass('no-scroll');
+            });
+
+    }
 
     open_modal.click( function(event){
         event.preventDefault();
@@ -392,7 +368,7 @@ jQuery(document).ready(function() {
     $(document).countPlugin({
         'counter':'#count_buy',
         'countNow': '1999987',
-        'countNew': '2000087'
+        'countNew': '1999997'
     });
 
 
