@@ -5384,15 +5384,32 @@ body .rngst_phone_button {
         color: #000;
         font-family: "FuturaBookC", sans-serif;
         text-align: center;
-        padding: 20px;
+        padding: 10px 20px;
         background: #f0f0f0; }
         .block_team .list_team .item .block-name .name {
-          margin-bottom: 7px;
-          font-size: 24px;
+          margin-bottom: 5px;
+          font-size: 20px;
           line-height: 1em; }
         .block_team .list_team .item .block-name .position {
           font-size: 16px;
-          line-height: 1em; }
+          line-height: 1em;
+          margin-bottom: 10px; }
+        .block_team .list_team .item .block-name .block-contact {
+          height: 60px; }
+          .block_team .list_team .item .block-name .block-contact a {
+            font-size: 15px;
+            line-height: 1em;
+            display: block;
+            color: #ff4504;
+            margin-bottom: 5px; }
+          .block_team .list_team .item .block-name .block-contact p {
+            font-size: 15px;
+            line-height: 1em;
+            color: #666;
+            margin-bottom: 5px; }
+            .block_team .list_team .item .block-name .block-contact p a {
+              display: inline-block;
+              margin-bottom: 0; }
 
 #partialUserResetForm p {
   text-align: center;
