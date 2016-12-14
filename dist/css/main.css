@@ -5372,7 +5372,9 @@ body .rngst_phone_button {
         margin-right: 0; }
       .block_team .list_team .item .block-image {
         position: relative;
-        height: 300px; }
+        height: 300px;
+        -webkit-filter: grayscale(40%);
+                filter: grayscale(40%); }
         .block_team .list_team .item .block-image .image-holder {
           position: absolute;
           height: 300px; }
