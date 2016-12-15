@@ -79,7 +79,9 @@ jQuery(document).ready(function() {
 
     jQuery(window).load(function() {
         $("[name='data']").mask("99-99-9999");
-        $("[name='phone'], [name='phone_contact']").mask("+7(999)999-9999");
+        $(".phone_ru[name='phone'], .phone_ru[name='phone_contact']").mask("+7(999)999-9999");
+        $(".phone_ua[name='phone'], .phone_ua[name='phone_contact']").mask("+3(999)999-9999");
+        $(".phone_by[name='phone'], .phone_by[name='phone_contact']").mask("+375(99)999-9999");
         $('#preloader').fadeOut('slow',function(){$(this).remove();});
         //bxSlider
         jQuery('.slider').bxSlider({
@@ -92,6 +94,59 @@ jQuery(document).ready(function() {
         });
 
         jQuery('select').selectbox();
+
+        var valCountry = $("form .select_country select").val();
+        var divConunter = $("form .select_country select").closest('.select_country').next('.phone_resistered');
+        var divConunter_phone2 = $("form .select_country select").closest('form').find('.contact_details .phone_resistered');
+        if( valCountry == 'ua'){
+            divConunter.find('input[name="phone"]').hide();
+            divConunter.find('.phone_ua').show();
+            divConunter_phone2.find('input[name="phone_contact"]').hide();
+            divConunter_phone2.find('.phone_ua').show();
+
+        }
+        if( (valCountry == 'ru') || ( valCountry == 'kz' )){
+            divConunter.find('input[name="phone"]').hide();
+            divConunter.find('.phone_ru').show();
+            divConunter_phone2.find('input[name="phone_contact"]').hide();
+            divConunter_phone2.find('.phone_ru').show();
+
+        }
+        if( valCountry == 'by'  ){
+            divConunter.find('input[name="phone"]').hide();
+            divConunter.find('.phone_by').show();
+            divConunter_phone2.find('input[name="phone_contact"]').hide();
+            divConunter_phone2.find('.phone_by').show();
+
+        }
+        
+        $('form .select_country select').change( function () {
+            var valCountry2 = $(this).val();
+            var divConunter2 = $(this).closest('.select_country').next('.phone_resistered');
+            var divConunter2_phone2 = $(this).closest('form').find('.contact_details .phone_resistered');
+            //console.log(divConunter);
+            if( valCountry2 == 'ua'){
+                divConunter2.find('input[name="phone"]').hide();
+                divConunter2.find('.phone_ua').show();
+                divConunter2_phone2.find('input[name="phone_contact"]').hide();
+                divConunter2_phone2.find('.phone_ua').show();
+
+            }
+            if( (valCountry2 == 'ru') || ( valCountry2 == 'kz' )){
+                divConunter2.find('input[name="phone"]').hide();
+                divConunter2.find('.phone_ru').show();
+                divConunter2_phone2.find('input[name="phone_contact"]').hide();
+                divConunter2_phone2.find('.phone_ru').show();
+
+            }
+            if( valCountry2 == 'by'  ){
+                divConunter2.find('input[name="phone"]').hide();
+                divConunter2.find('.phone_by').show();
+                divConunter2_phone2.find('input[name="phone_contact"]').hide();
+                divConunter2_phone2.find('.phone_by').show();
+
+            }
+        });
 
 
         $('[id^="slider_product"]').bxSlider({
@@ -373,10 +428,11 @@ jQuery(document).ready(function() {
 
 
     $( ".page_wrapper.registration input[name='phone']" ).focus(function() {
-        $( this ).next( ".help_text" ).show();
+        $( this ).closest('.phone_resistered').find( ".help_text" ).show();
+        //console.log($( this ));
     });
     $( ".page_wrapper.registration input[name='phone']" ).focusout(function() {
-        $( this ).next( ".help_text" ).hide();
+        $( this ).closest('.phone_resistered').find( ".help_text" ).hide();
     });
     
 });
