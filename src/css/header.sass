@@ -191,11 +191,34 @@ $color-grey: #727272
       margin-right: 20px
       //position: relative
       &.parent
+        position: relative
+
+
+
+          //margin-left: -360px
+
         >a
           //border-bottom: 19px solid #fff
           position: relative
-          padding-bottom: 20px
+          //padding-bottom: 20px
         &:hover
+
+
+          &:after
+            content: ""
+            position: absolute
+            top: 100%
+            left: -100px
+            height: 20px
+            background: transparent
+            width: 780px
+          &:nth-child(4)
+            ul.drop-menu-1
+              width: 600px
+            &:after
+
+              width: 600px
+
           >a
             &:after
               content: ''
@@ -220,13 +243,16 @@ $color-grey: #727272
       ul.drop-menu-1
         display: none
         position: absolute
-        top: 17px
-        left: 0
+        top: 100%
+        //left: 0
         margin-top: 20px
         z-index: 12
         background: rgba(73, 73, 73, 0.97)
-        width: auto
+        //width: auto
         flex-direction: row
+        width: 780px
+        left: -100px
+        //margin-left: -100px
         .drop-menu-2
           padding: 20px 20px 60px
           border-right: 1px solid #646464
@@ -288,6 +314,7 @@ $color-grey: #727272
 
 
             .parent-menu
+              min-width: 260px
               >a
 
                 text-transform: uppercase

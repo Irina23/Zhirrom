@@ -358,9 +358,21 @@
         <div class="modal_close"></div>
         <div class="modal_content">
           <!--h3 Введите Ваш телефон-->
-          <form class="inline-layout">
-            <div class="form-control">
-              <input type="text" name="phone" placeholder="Телефон" data-validate="phone">
+          <form>
+            <p>Просим Вас вводить действующий номер телефона, потому что после регистрации с Вами свяжется наш менеджер и только после звонка Вам будут доступны наши цены.</p>
+            <div class="select_country form-holder"><span>Страна*</span>
+              <select name="county">
+                <option value="ru" selected>Россия</option>
+                <option value="ua">Украина</option>
+                <option value="by">Беларусь</option>
+                <option value="kz">Казахстан</option>
+              </select>
+            </div>
+            <div class="phone_resistered form-holder"><span>Контактный телефон*</span>
+              <input type="text" name="phone" data-validate="phone" class="phone_ru">
+              <input type="text" name="phone" data-validate="phone" class="phone_ua">
+              <input type="text" name="phone" data-validate="phone" class="phone_by">
+              <div class="help_text">Просим Вас вводить действующий номер телефона, потому что после регистрации с Вами свяжется наш менеджер и только после звонка Вам будут доступны наши цены.</div>
             </div>
             <div class="btn submit">отправить</div>
           </form>
@@ -372,7 +384,7 @@
       <!--script(src="js/jquery.animateNumber.js")-->
       <script src="js/count_buy.js"></script>
       <script src="js/functions.js"></script>
-      <!--script(src="js/bootstrap_tabs.min.js")-->
+      <script src="js/bootstrap_tabs.min.js"></script>
       <script src="js/alexValidate.js"></script>
       <script src="bower_components/jquery.bxslider/jquery.bxslider.js"></script>
       <script src="js/owl.carousel.js"></script>

@@ -148,39 +148,52 @@
       display: inline-block;
       vertical-align: middle;
       margin-right: 20px; }
-      #menu .wrap > ul > li.parent > a {
-        position: relative;
-        padding-bottom: 20px; }
-      #menu .wrap > ul > li.parent:hover > a:after {
-        content: '';
-        position: absolute;
-        top: 21px;
-        left: 50%;
-        margin-left: -7px;
-        width: 0;
-        height: 0;
-        border-left: 7px solid transparent;
-        border-right: 7px solid transparent;
-        border-top: 8px solid #ff4504; }
-      #menu .wrap > ul > li.parent:hover ul.drop-menu-1 {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex; }
+      #menu .wrap > ul > li.parent {
+        position: relative; }
+        #menu .wrap > ul > li.parent > a {
+          position: relative; }
+        #menu .wrap > ul > li.parent:hover:after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: -100px;
+          height: 20px;
+          background: transparent;
+          width: 780px; }
+        #menu .wrap > ul > li.parent:hover:nth-child(4) ul.drop-menu-1 {
+          width: 600px; }
+        #menu .wrap > ul > li.parent:hover:nth-child(4):after {
+          width: 600px; }
+        #menu .wrap > ul > li.parent:hover > a:after {
+          content: '';
+          position: absolute;
+          top: 21px;
+          left: 50%;
+          margin-left: -7px;
+          width: 0;
+          height: 0;
+          border-left: 7px solid transparent;
+          border-right: 7px solid transparent;
+          border-top: 8px solid #ff4504; }
+        #menu .wrap > ul > li.parent:hover ul.drop-menu-1 {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex; }
       #menu .wrap > ul > li ul.drop-menu-1 {
         display: none;
         position: absolute;
-        top: 17px;
-        left: 0;
+        top: 100%;
         margin-top: 20px;
         z-index: 12;
         background: rgba(73, 73, 73, 0.97);
-        width: auto;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -webkit-flex-direction: row;
             -ms-flex-direction: row;
-                flex-direction: row; }
+                flex-direction: row;
+        width: 780px;
+        left: -100px; }
         #menu .wrap > ul > li ul.drop-menu-1 .drop-menu-2 {
           padding: 20px 20px 60px;
           border-right: 1px solid #646464;
@@ -230,20 +243,22 @@
               -webkit-transition: all 0.35s;
               transition: all 0.35s;
               color: #292929; }
-          #menu .wrap > ul > li ul.drop-menu-1 > li.parent-menu .parent-menu > a {
-            text-transform: uppercase;
-            position: relative; }
-            #menu .wrap > ul > li ul.drop-menu-1 > li.parent-menu .parent-menu > a:after {
-              position: absolute;
-              height: 14px;
-              width: 2px;
-              background: #fff;
-              content: "";
-              top: 50%;
-              margin-top: -7px;
-              left: 7px; }
-          #menu .wrap > ul > li ul.drop-menu-1 > li.parent-menu .parent-menu .drop-menu-3 {
-            padding-left: 15px; }
+          #menu .wrap > ul > li ul.drop-menu-1 > li.parent-menu .parent-menu {
+            min-width: 260px; }
+            #menu .wrap > ul > li ul.drop-menu-1 > li.parent-menu .parent-menu > a {
+              text-transform: uppercase;
+              position: relative; }
+              #menu .wrap > ul > li ul.drop-menu-1 > li.parent-menu .parent-menu > a:after {
+                position: absolute;
+                height: 14px;
+                width: 2px;
+                background: #fff;
+                content: "";
+                top: 50%;
+                margin-top: -7px;
+                left: 7px; }
+            #menu .wrap > ul > li ul.drop-menu-1 > li.parent-menu .parent-menu .drop-menu-3 {
+              padding-left: 15px; }
           #menu .wrap > ul > li ul.drop-menu-1 > li a {
             display: block;
             width: 100%;

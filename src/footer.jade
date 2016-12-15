@@ -146,9 +146,22 @@ footer
     .modal_close
     .modal_content
         //h3 Введите Ваш телефон
-        form.inline-layout
-            div.form-control
-                input(type="text" name="phone" placeholder="Телефон"  data-validate="phone")
+        form
+            p Просим Вас вводить действующий номер телефона, потому что после регистрации с Вами свяжется наш менеджер и только после звонка Вам будут доступны наши цены.
+            div.select_country.form-holder
+                span Страна*
+                select(name="county")
+                    option(value="ru" selected) Россия
+                    option(value="ua" ) Украина
+                    option(value="by" ) Беларусь
+                    option(value="kz" ) Казахстан
+            div.phone_resistered.form-holder
+                span Контактный телефон*
+                input(type="text" name="phone" data-validate="phone" class="phone_ru")
+                input(type="text" name="phone" data-validate="phone" class="phone_ua")
+                input(type="text" name="phone" data-validate="phone" class="phone_by")
+                .help_text Просим Вас вводить действующий номер телефона, потому что после регистрации с Вами свяжется наш менеджер и только после звонка Вам будут доступны наши цены.
+
             .btn.submit отправить
 
 
@@ -159,7 +172,7 @@ script(src="js/jquery.elevateZoom-3.0.8.min.js")
 //script(src="js/jquery.animateNumber.js")
 script(src="js/count_buy.js")
 script(src="js/functions.js")
-//script(src="js/bootstrap_tabs.min.js")
+script(src="js/bootstrap_tabs.min.js")
 script(src="js/alexValidate.js")
 script(src="bower_components/jquery.bxslider/jquery.bxslider.js")
 script(src="js/owl.carousel.js")

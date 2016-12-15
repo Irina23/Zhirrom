@@ -28,9 +28,18 @@ html(lang="ru")
                                 //div
                                     span ИНН*
                                     input(type="text" name="inn" data-validate="number")
+                                div.select_country
+                                    span Страна*
+                                    select(name="county")
+                                        option(value="ru" selected) Россия
+                                        option(value="ua" ) Украина
+                                        option(value="by" ) Беларусь
+                                        option(value="kz" ) Казахстан
                                 div.phone_resistered
                                     span Контактный телефон*
-                                    input(type="text" name="phone" data-validate="phone")
+                                    input(type="text" name="phone" data-validate="phone" class="phone_ru")
+                                    input(type="text" name="phone" data-validate="phone" class="phone_ua")
+                                    input(type="text" name="phone" data-validate="phone" class="phone_by")
                                     .help_text Просим Вас вводить действующий номер телефона, потому что после регистрации с Вами свяжется наш менеджер и только после звонка Вам будут доступны наши цены.
 
 

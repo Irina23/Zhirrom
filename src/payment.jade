@@ -67,10 +67,20 @@ html(lang="ru")
                                 div
                                     span КПП
                                     input(type="text" name="kpp" data-validate="number-default")
-
-                                div
+                                div.select_country
+                                    span Страна*
+                                    select(name="county")
+                                        option(value="ru" ) Россия
+                                        option(value="ua" selected) Украина
+                                        option(value="by" ) Беларусь
+                                        option(value="kz" ) Казахстан
+                                div.phone_resistered
                                     span Телефон организации
-                                    input(type="text" name="phone" data-validate="phone-default")
+                                    input(type="text" name="phone" data-validate="phone-default" class="phone_ru" style="display: none;")
+                                    input(type="text" name="phone" data-validate="phone-default" class="phone_ua")
+                                    input(type="text" name="phone" data-validate="phone-default" class="phone_by" style="display: none;")
+
+
                                 div
                                     span Должность
                                     input(type="text" name="position" data-validate="empty")
@@ -117,9 +127,12 @@ html(lang="ru")
                                 div
                                     span E-mail*
                                     input(type="text" name="email" data-validate="email")
-                                div
+                                div.phone_resistered
                                     span Контактный телефон*
-                                    input(type="text" name="phone_contact" data-validate="phone")
+
+                                    input(type="text" name="phone_contact" data-validate="phone-default" class="phone_ru" style="display: none;")
+                                    input(type="text" name="phone_contact" data-validate="phone-default" class="phone_ua")
+                                    input(type="text" name="phone_contact" data-validate="phone-default" class="phone_by" style="display: none;")
 
                                 div
                                     span Ваши комментарии

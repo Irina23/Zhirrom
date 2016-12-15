@@ -331,7 +331,50 @@ $color-grey: #727272
     box-sizing: border-box
     line-height: 28px
     padding: 0 10px
+  .selectbox
+    margin-bottom: 10px
+    color: #3d3d3d
+    font-family: "FuturaBookC", sans-serif
+    font-size: 16px
+    font-weight: 300
+    line-height: 35px
+    box-sizing: border-box
+    .dropdown
+      top: 34px!important
+      width: 100%
+      border: 1px solid #d7d7d7
+      border-top: 0
+      background: #fff
+      box-sizing: border-box
+      li
+        padding: 0 10px
+        cursor: pointer
+        &.sel
+          display: none
 
+    .select
+      display: block
+
+      cursor: pointer
+      border: 1px solid #d7d7d7
+      box-sizing: border-box
+      .text
+        padding: 0 30px 0 10px
+        position: relative
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+        &:after
+          content: ''
+          position: absolute
+          top: 50%
+          right: 9px
+          margin-top: -3px
+          width: 0
+          height: 0
+          border-left: 5px solid transparent
+          border-right: 5px solid transparent
+          border-top: 7px solid #838383
   .submit
     width: 35px
     height: 30px
@@ -340,15 +383,26 @@ $color-grey: #727272
 
 
 #phone_modal
-  height: 200px
-  margin-top: -100px
+  height: 400px
+  margin-top: -200px
+  @media screen and (max-width: 650px)
+    height: 450px
+    margin-top: -225px
   .form-control
     width: 100%
+  .form-holder
+    margin-top: 10px
   input[type="text"]
     height: 45px
     line-height: 45px
     margin-bottom: 20px
     //width: calc(100% - 155px)
+  input[name='phone']
+    display: none
+    &#phone_ru
+      display: block
+  p
+    line-height: 1.3em
   .submit
     height: auto
     line-height: 45px
