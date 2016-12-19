@@ -80,7 +80,7 @@ jQuery(document).ready(function() {
     jQuery(window).load(function() {
         $("[name='data']").mask("99-99-9999");
         $(".phone_ru[name='phone'], .phone_ru[name='phone_contact']").mask("+7(999)999-9999");
-        $(".phone_ua[name='phone'], .phone_ua[name='phone_contact']").mask("+3(999)999-9999");
+        $(".phone_ua[name='phone'], .phone_ua[name='phone_contact']").mask("+3(9999)999-9999");
         $(".phone_by[name='phone'], .phone_by[name='phone_contact']").mask("+375(99)999-9999");
         $('#preloader').fadeOut('slow',function(){$(this).remove();});
         //bxSlider
