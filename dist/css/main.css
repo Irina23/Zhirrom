@@ -749,7 +749,8 @@
     width: 35px;
     height: 30px;
     background: url("../img/icons/search2.png") no-repeat center #ff4504;
-    background-size: 17px auto; }
+    background-size: 17px auto;
+    border: 0; }
 
 #phone_modal {
   height: 400px;
