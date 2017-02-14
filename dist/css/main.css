@@ -443,6 +443,8 @@
   margin-left: -205px;
   box-sizing: border-box;
   text-align: center; }
+  .modal_div.min-padding {
+    padding: 30px; }
   .modal_div.show {
     top: 50%;
     opacity: 1;
