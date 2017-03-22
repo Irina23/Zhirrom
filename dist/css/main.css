@@ -287,8 +287,12 @@
         text-decoration: none; }
       #menu .wrap > ul > li.search a {
         padding-right: 20px;
-        background: url("../img/icons/icon-search.png") no-repeat right center;
-        background-size: 13px auto; }
+        background: url("../img/icons/search_hover.png") no-repeat right center;
+        background-size: 12px auto;
+        color: #ff4504;
+        border-bottom: 2px solid #ff4504; }
+        #menu .wrap > ul > li.search a:hover {
+          color: #ff4504; }
       #menu .wrap > ul > li:last-child {
         margin-right: 0; }
       #menu .wrap > ul > li > a {
