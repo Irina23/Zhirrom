@@ -97,7 +97,7 @@
     vertical-align: middle; }
     .header .block-info-header .slogan {
       color: #868686;
-      font-size: 24px;
+      font-size: 23px;
       margin-bottom: 20px; }
     .header .block-info-header .slogan2 {
       margin-bottom: 15px; }
@@ -162,9 +162,9 @@
           background: transparent;
           width: 780px; }
         #menu .wrap > ul > li.parent:hover:nth-child(4) ul.drop-menu-1 {
-          width: 600px; }
+          width: 520px; }
         #menu .wrap > ul > li.parent:hover:nth-child(4):after {
-          width: 600px; }
+          width: 520px; }
         #menu .wrap > ul > li.parent:hover > a:after {
           content: '';
           position: absolute;
@@ -195,6 +195,8 @@
                 flex-direction: row;
         width: 780px;
         left: -100px; }
+        #menu .wrap > ul > li ul.drop-menu-1 > .parent-menu {
+          min-width: 260px; }
         #menu .wrap > ul > li ul.drop-menu-1 .drop-menu-2 {
           padding: 20px 20px 60px;
           border-right: 1px solid #646464;
@@ -245,7 +247,7 @@
               transition: all 0.35s;
               color: #292929; }
           #menu .wrap > ul > li ul.drop-menu-1 > li.parent-menu .parent-menu {
-            min-width: 260px; }
+            min-width: inherit; }
             #menu .wrap > ul > li ul.drop-menu-1 > li.parent-menu .parent-menu > a {
               text-transform: uppercase;
               position: relative; }
@@ -272,8 +274,7 @@
             transition: all 0.35s;
             font-family: "FuturaPT-Medium", sans-serif;
             white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis; }
+            overflow: hidden; }
             #menu .wrap > ul > li ul.drop-menu-1 > li a:hover {
               -webkit-transition: all 0.35s;
               transition: all 0.35s;
@@ -2269,7 +2270,7 @@ img {
       padding-left: 40px;
       margin-bottom: 7px;
       line-height: 22px;
-      font-size: 20px;
+      font-size: 17px;
       color: #000;
       position: relative;
       cursor: pointer; }

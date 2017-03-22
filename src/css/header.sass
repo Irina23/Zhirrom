@@ -126,7 +126,7 @@ $color-grey: #727272
     vertical-align: middle
     .slogan
       color:  #868686
-      font-size: 24px
+      font-size: 23px
       margin-bottom: 20px
     .slogan2
       margin-bottom: 15px
@@ -214,10 +214,10 @@ $color-grey: #727272
             width: 780px
           &:nth-child(4)
             ul.drop-menu-1
-              width: 600px
+              width: 520px
             &:after
 
-              width: 600px
+              width: 520px
 
           >a
             &:after
@@ -240,6 +240,7 @@ $color-grey: #727272
 
 
 
+
       ul.drop-menu-1
         display: none
         position: absolute
@@ -253,6 +254,8 @@ $color-grey: #727272
         width: 780px
         left: -100px
         //margin-left: -100px
+        > .parent-menu
+            min-width: 260px
         .drop-menu-2
           padding: 20px 20px 60px
           border-right: 1px solid #646464
@@ -314,7 +317,8 @@ $color-grey: #727272
 
 
             .parent-menu
-              min-width: 260px
+
+              min-width: inherit
               >a
 
                 text-transform: uppercase
@@ -346,7 +350,7 @@ $color-grey: #727272
             font-family: "FuturaPT-Medium", sans-serif
             white-space: nowrap
             overflow: hidden
-            text-overflow: ellipsis
+            //text-overflow: ellipsis
 
             &:hover
               transition: all 0.35s
