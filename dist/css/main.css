@@ -290,7 +290,8 @@
         background: url("../img/icons/search_hover.png") no-repeat right center;
         background-size: 12px auto;
         color: #ff4504;
-        border-bottom: 2px solid #ff4504; }
+        border-bottom: 2px solid #ff4504;
+        font-family: "FuturaPT-Heavy", sans-serif; }
         #menu .wrap > ul > li.search a:hover {
           color: #ff4504; }
       #menu .wrap > ul > li:last-child {
