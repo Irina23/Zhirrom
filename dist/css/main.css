@@ -1481,8 +1481,6 @@ img {
       display: table-cell;
       vertical-align: middle;
       height: 100%; }
-      #slider .slider .item .block_text > div {
-        width: 80%; }
       #slider .slider .item .block_text.right_text > div {
         width: 60%;
         float: left; }
@@ -1497,6 +1495,18 @@ img {
           height: 50px; }
           #slider .slider .item .block_text.left_text a:hover {
             background: #fe622b; }
+      #slider .slider .item .block_text.center_text {
+        text-align: center; }
+      #slider .slider .item .block_text.top_text {
+        position: absolute;
+        top: 0;
+        height: auto;
+        display: block; }
+      #slider .slider .item .block_text.bottom_text {
+        position: absolute;
+        bottom: 0;
+        height: auto;
+        display: block; }
       #slider .slider .item .block_text h1, #slider .slider .item .block_text h3 {
         font-family: "FuturaPT-Medium", sans-serif;
         color: #ffffff;
@@ -1505,6 +1515,8 @@ img {
         line-height: 1.2em;
         text-align: center;
         text-shadow: 1px 0 2px rgba(0, 0, 0, 0.7); }
+        #slider .slider .item .block_text h1.font_120, #slider .slider .item .block_text h3.font_120 {
+          font-size: 120px; }
       #slider .slider .item .block_text a {
         line-height: 50px;
         color: #fff;
@@ -5767,6 +5779,8 @@ body .rngst_phone_button {
         margin-right: 5px; }
     #slider .slider .item .block_text h1, #slider .slider .item .block_text h3 {
       font-size: 36px; }
+      #slider .slider .item .block_text h1.font_120, #slider .slider .item .block_text h3.font_120 {
+        font-size: 36px; }
   .about .advantages_holder {
     border-width: 5px;
     padding: 15px; }
@@ -6285,8 +6299,17 @@ body .rngst_phone_button {
   #slider .bx-wrapper .bx-controls-direction {
     display: none !important; }
   #slider .slider .item .block_text h3, #slider .slider .item .block_text.left_text h3,
-  #slider .slider .item .block_text h1, #slider .slider .item .block_text.left_text h1 {
+  #slider .slider .item .block_text h1, #slider .slider .item .block_text.left_text h1,
+  #slider .slider .item .block_text h1.font_120, #slider .slider .item .block_text h3.font_120 {
     font-size: 16px; }
+  #slider .slider .item .block_text a {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 40px;
+    width: auto;
+    min-width: inherit;
+    display: inline-block;
+    padding: 0 10px; }
   #slider .slider {
     height: 200px; }
     #slider .slider .item {
