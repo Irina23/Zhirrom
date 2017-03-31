@@ -6299,14 +6299,16 @@ body .rngst_phone_button {
   #slider .slider .item .block_text h1, #slider .slider .item .block_text.left_text h1,
   #slider .slider .item .block_text h1.font_120, #slider .slider .item .block_text h3.font_120 {
     font-size: 16px; }
-  #slider .slider .item .block_text a {
+  #slider .slider .item .block_text a,
+  #slider .slider .item .block_text.left_text a {
     margin-top: 20px;
     font-size: 14px;
     line-height: 40px;
     width: auto;
     min-width: inherit;
     display: inline-block;
-    padding: 0 10px; }
+    padding: 0 10px;
+    height: auto; }
   #slider .slider {
     height: 200px; }
     #slider .slider .item {
