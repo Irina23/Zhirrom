@@ -3619,23 +3619,23 @@ img {
       margin-bottom: 70px; }
     .error404 .wrap .error404_text {
       font-family: "FuturaPT-Bold", sans-serif;
-      font-size: 250px;
+      font-size: 50px;
       line-height: 1em;
       margin-bottom: 20px;
       color: #ff4504; }
     .error404 .wrap .error_text {
       color: #000;
       text-transform: uppercase;
-      font-size: 40px;
+      font-size: 30px;
       line-height: 1em;
       margin-bottom: 50px;
       letter-spacing: 2px;
       font-family: "FuturaPT-Light", sans-serif; }
     .error404 .wrap .submit {
-      line-height: 50px;
+      line-height: 55px;
       color: #fff;
-      font-size: 16px;
-      width: 185px;
+      font-size: 30px;
+      width: 260px;
       text-align: center;
       -webkit-transition: all 0.35s;
       transition: all 0.35s;
@@ -5812,12 +5812,17 @@ body .rngst_phone_button {
       padding: 40px 20px; }
     .error404 .wrap {
       padding: 40px 0; }
+      .error404 .wrap .logo {
+        margin-bottom: 30px; }
       .error404 .wrap .error404_text {
-        font-size: 130px; }
+        font-size: 30px; }
       .error404 .wrap .error_text {
-        font-size: 23px;
+        font-size: 20px;
         letter-spacing: 0;
         font-family: inherit; }
+      .error404 .wrap .submit {
+        font-size: 20px;
+        width: 185px; }
   .article h1 {
     font-size: 36px;
     margin-bottom: 60px; }
