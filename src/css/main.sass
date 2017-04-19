@@ -1420,7 +1420,50 @@ img
           font-size: 18px
           height: auto
 
+    .list_category2
+      text-align: center
+      margin-bottom: 40px
+      .categories
+        margin-bottom: 20px
+        height: 630px
+        overflow: hidden
+        .item-category
+          margin: 0 7px 20px
+          a:hover .img-holder
+            &:before, &:after
+              display: none
+      &.open
+        .categories
+          height: auto
+        .hide_item
+          display: block
+        .show_all
+          display: none
+      .show_all, .hide_item
+        display: inline-block
+        vertical-align: middle
+        margin: auto
+        width: 185px
+        line-height: 1em
+        text-transform: uppercase
+        color: #fff
+        background: #ff4504
+        border-radius: 6px
+        font-size: 16px
+        text-align: center
+        padding: 17px 0
+        box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16)
+        cursor: pointer
+        transition: all 0.35s
+        font-family: "FuturaPT-Heavy", sans-serif
+        letter-spacing: 1px
 
+        &:hover
+          text-decoration: none
+          transition: all 0.35s
+          background: #fe622b
+      .hide_item
+        display: none
     .list_category
       text-align: center
       margin-bottom: 40px
