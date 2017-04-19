@@ -52,7 +52,7 @@
             background-color:#ffffff;
             border-radius: 2px;
             margin: auto;
-            width: 580px;
+            width: 680px;
         }
         .top-image {}
         .top-image > tbody > tr > td {
@@ -164,6 +164,21 @@
             background-size: 100%;
             padding: 0!important;
         }
+        .items .img-holder{
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+        }
+        .items .img-holder a{
+            display: block;
+        }
+        .items .img-holder img{
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+
+        }
 
     </style>
 </head>
@@ -186,7 +201,7 @@
                     </tr>
                     </tbody>
                 </table>
-                <table class="page" style="border-width:5px;border-style:solid;border-color:#ff4504;border-collapse:collapse;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;background-color:#ffffff;border-radius:2px;margin-top:auto;margin-bottom:auto;margin-right:auto;margin-left:auto;width:580px;text-align:center;" >
+                <table class="page" style="border-width:5px;border-style:solid;border-color:#ff4504;border-collapse:collapse;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;background-color:#ffffff;border-radius:2px;margin-top:auto;margin-bottom:auto;margin-right:auto;margin-left:auto;width:680px;text-align:center;" >
                     <tbody>
                     <tr>
                         <td style="text-align:center;" >
@@ -253,6 +268,9 @@
                                                                     <tbody>
                                                                     <tr>
                                                                         <th>
+                                                                            Изображение
+                                                                        </th>
+                                                                        <th>
                                                                             Имя
                                                                         </th>
                                                                         <th>
@@ -269,6 +287,13 @@
                                                                         </th>
                                                                     </tr>
                                                                     <tr>
+                                                                        <td style="text-align:center;" >
+                                                                            <div class="img-holder" style="width:100px;height:100px;overflow:hidden;" >
+                                                                                <a href="product.html" target="_blank" style="color:#fff;font-size:14px;line-height:22px;font-weight:400;font-family:'Gotham Pro', 'helvetica neue regular', 'helvetica neue', helvetica, arial, sans-serif;margin-top:1em;margin-bottom:2em;margin-right:0;margin-left:0;outline-style:none;text-decoration:none;display:block;" >
+                                                                                    <img src="img/content/product.jpg" alt="{{ item.name }}" style="border-style:none;display:inline;vertical-align:bottom;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:center;max-width:100%;max-height:100%;width:auto;height:auto;" >
+                                                                                </a>
+                                                                            </div>
+                                                                        </td>
                                                                         <td style="text-align:center;" >
                                                                             {{ item.name }}
                                                                         </td>

@@ -52,7 +52,7 @@
             background-color:#ffffff;
             border-radius: 2px;
             margin: auto;
-            width: 580px;
+            width: 680px;
         }
         .top-image {}
         .top-image > tbody > tr > td {
@@ -164,6 +164,21 @@
             background-size: 100%;
             padding: 0!important;
         }
+        .items .img-holder{
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+        }
+        .items .img-holder a{
+            display: block;
+        }
+        .items .img-holder img{
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+
+        }
 
     </style>
 </head>
@@ -253,6 +268,9 @@
                                                                         <tbody>
                                                                             <tr>
                                                                                 <th>
+                                                                                    Изображение
+                                                                                </th>
+                                                                                <th>
                                                                                    Имя
                                                                                 </th>
                                                                                 <th>
@@ -269,6 +287,13 @@
                                                                                 </th>
                                                                             </tr>
                                                                             <tr>
+                                                                                <td>
+                                                                                    <div class="img-holder">
+                                                                                        <a href="product.html" target="_blank">
+                                                                                            <img src="img/content/product.jpg" alt="{{ item.name }}">
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </td>
                                                                                 <td>
                                                                                     {{ item.name }}
                                                                                 </td>
