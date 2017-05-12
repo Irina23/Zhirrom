@@ -2090,18 +2090,36 @@ img {
       margin-bottom: 40px; }
       .list_products .products .list_category2 .categories {
         margin-bottom: 20px;
-        height: 630px;
+        height: auto;
         overflow: hidden; }
         .list_products .products .list_category2 .categories .item-category {
           margin: 0 7px 20px; }
           .list_products .products .list_category2 .categories .item-category a:hover .img-holder:before, .list_products .products .list_category2 .categories .item-category a:hover .img-holder:after {
             display: none; }
-      .list_products .products .list_category2.open .categories {
-        height: auto; }
-      .list_products .products .list_category2.open .hide_item {
-        display: block; }
-      .list_products .products .list_category2.open .show_all {
-        display: none; }
+      .list_products .products .list_category2 a.show_all {
+        display: inline-block;
+        vertical-align: middle;
+        margin: auto;
+        width: 185px;
+        line-height: 1em;
+        text-transform: uppercase;
+        color: #fff;
+        background: #ff4504;
+        border-radius: 6px;
+        font-size: 16px;
+        text-align: center;
+        padding: 17px 0;
+        box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16);
+        cursor: pointer;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        font-family: "FuturaPT-Heavy", sans-serif;
+        letter-spacing: 1px; }
+        .list_products .products .list_category2 a.show_all:hover {
+          text-decoration: none;
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s;
+          background: #fe622b; }
       .list_products .products .list_category2 .show_all, .list_products .products .list_category2 .hide_item {
         display: inline-block;
         vertical-align: middle;
