@@ -4189,6 +4189,24 @@ img {
   font-size: 18px;
   margin-bottom: 80px; }
 
+.brand .list_brand2 li {
+  margin-bottom: 15px;
+  margin-right: 20px;
+  width: calc((100% - 60px)/4);
+  vertical-align: middle;
+  text-align: center;
+  z-index: 1;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s; }
+  .brand .list_brand2 li .img-holder {
+    width: 100%; }
+    .brand .list_brand2 li .img-holder img {
+      max-width: 100%; }
+  .brand .list_brand2 li:nth-child(4n) {
+    margin-right: 0; }
+
 .brand .list_brand li {
   margin-bottom: 15px;
   margin-right: 40px;
@@ -6279,7 +6297,13 @@ body .rngst_phone_button {
   body .cart .order_block .list_order .item {
     display: block; }
   .cart .order_block .list_order .order .row.image .img-holder {
-    margin: 10px auto 0; } }
+    margin: 10px auto 0; }
+  .brand .list_brand2 li {
+    width: calc((100% - 40px)/3); }
+    .brand .list_brand2 li:nth-child(4n) {
+      margin-right: 20px; }
+    .brand .list_brand2 li:nth-child(3n) {
+      margin-right: 0; } }
 
 @media screen and (max-width: 750px) {
   .block_private_office .img-holder {
@@ -6330,7 +6354,13 @@ body .rngst_phone_button {
     font-size: 24px;
     margin-bottom: 20px; }
   .update_password form#update_password1, .update_password form#update_password2 {
-    width: 100%; } }
+    width: 100%; }
+  .brand .list_brand2 li {
+    width: calc((100% - 20px)/2); }
+    .brand .list_brand2 li:nth-child(3n) {
+      margin-right: 20px; }
+    .brand .list_brand2 li:nth-child(2n) {
+      margin-right: 0; } }
 
 @media screen and (max-width: 500px) {
   .blog .list_items .item .img-holder {

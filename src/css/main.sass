@@ -3732,6 +3732,23 @@ img
     font-size: 18px
     margin-bottom: 80px
 
+  .list_brand2
+    li
+      margin-bottom: 15px
+      margin-right: 20px
+      width: calc((100% - 60px)/4)
+      vertical-align: middle
+      text-align: center
+      z-index: 1
+      box-sizing: border-box
+      position: relative
+      transition: all 0.35s
+      .img-holder
+        width: 100%
+        img
+          max-width: 100%
+      &:nth-child(4n)
+        margin-right: 0
   .list_brand
     li
       margin-bottom: 15px
@@ -6274,7 +6291,12 @@ body .rngst_phone_button
   .cart .order_block .list_order .order .row.image .img-holder
     margin: 10px auto 0
 
-
+  .brand .list_brand2 li
+    width: calc((100% - 40px)/3)
+    &:nth-child(4n)
+      margin-right: 20px
+    &:nth-child(3n)
+      margin-right: 0
 
 
 @media screen and (max-width: 750px)
@@ -6354,7 +6376,12 @@ body .rngst_phone_button
       margin-bottom: 20px
     form#update_password1, form#update_password2
       width: 100%
-
+  .brand .list_brand2 li
+    width: calc((100% - 20px)/2)
+    &:nth-child(3n)
+      margin-right: 20px
+    &:nth-child(2n)
+      margin-right: 0
 @media screen and (max-width: 500px)
   .blog .list_items .item .img-holder
     height: auto
