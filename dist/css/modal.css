@@ -22,7 +22,8 @@
   height: 165px;
   margin-top: -82px;
   margin-left: -205px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-align: center; }
   .modal_div.min-padding {
     padding: 30px; }
@@ -61,7 +62,8 @@
     width: 100%;
     left: 0;
     background: #fff;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding-top: 150px;
     display: none;
     -webkit-transition: all 0.35s;
@@ -110,7 +112,8 @@
     width: 100%;
     height: 45px;
     padding: 0 10px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin-bottom: 20px;
     font-size: 18px;
     line-height: 45px;
@@ -137,7 +140,8 @@
     margin: auto;
     background: #ff4504;
     border-radius: 6px;
-    box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16);
+            box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16);
     text-transform: uppercase;
     font-family: "FuturaPT-Heavy", sans-serif;
     letter-spacing: 1px;
@@ -169,7 +173,8 @@
       transition: all 0.35s;
       width: 30px;
       height: 30px;
-      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       color: #fff; }
 
 #contact_form {
@@ -220,7 +225,8 @@
     text-align: left;
     height: 45px;
     padding: 0 10px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin-bottom: 20px;
     border: 1px solid #bab9b9;
     color: #686767;
@@ -234,7 +240,8 @@
     border-radius: 2px;
     border: 1px solid #bab9b9;
     width: 100%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     height: 135px;
     background: none;
     padding: 10px;
@@ -258,7 +265,8 @@
     margin: 30px auto 0;
     background: #ff4504;
     border-radius: 6px;
-    box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16);
+            box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16);
     text-transform: uppercase;
     font-family: "FuturaPT-Heavy", sans-serif;
     letter-spacing: 1px;
@@ -286,7 +294,8 @@
     font-size: 18px;
     width: 100%;
     font-family: "FuturaBookC", sans-serif;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     line-height: 28px;
     padding: 0 10px; }
   #search_modal .selectbox, #phone_modal .selectbox {
@@ -296,14 +305,16 @@
     font-size: 16px;
     font-weight: 300;
     line-height: 35px;
-    box-sizing: border-box; }
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
     #search_modal .selectbox .dropdown, #phone_modal .selectbox .dropdown {
       top: 34px !important;
       width: 100%;
       border: 1px solid #d7d7d7;
       border-top: 0;
       background: #fff;
-      box-sizing: border-box; }
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
       #search_modal .selectbox .dropdown li, #phone_modal .selectbox .dropdown li {
         padding: 0 10px;
         cursor: pointer; }
@@ -313,7 +324,8 @@
       display: block;
       cursor: pointer;
       border: 1px solid #d7d7d7;
-      box-sizing: border-box; }
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
       #search_modal .selectbox .select .text, #phone_modal .selectbox .select .text {
         padding: 0 30px 0 10px;
         position: relative;
@@ -372,7 +384,8 @@
     margin: auto;
     background: #ff4504;
     border-radius: 6px;
-    box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16);
+            box-shadow: inset 0px -2px 4px 2px rgba(0, 0, 0, 0.16);
     text-transform: uppercase;
     font-family: "FuturaPT-Heavy", sans-serif;
     letter-spacing: 1px;
