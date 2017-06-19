@@ -1372,6 +1372,19 @@ img {
     .footer .wrap .logo a {
       display: block;
       margin-bottom: 15px; }
+    .footer .wrap .logo .list_aplications {
+      margin-top: 15px; }
+      .footer .wrap .logo .list_aplications a {
+        width: 100px;
+        margin-right: 10px;
+        border: 2px solid #ff4504;
+        border-radius: 4px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-bottom: 0;
+        height: 32px; }
+        .footer .wrap .logo .list_aplications a:last-child {
+          margin-right: 0; }
     .footer .wrap .logo #subscription h3 {
       color: #fff;
       font-family: "FuturaBookC", sans-serif;
@@ -1434,23 +1447,29 @@ img {
     vertical-align: middle;
     margin-bottom: 20px; }
   .footer .wrap .user_block .social a {
-    width: 22px;
-    height: 22px;
+    width: 30px;
+    height: 30px;
     display: inline-block;
     vertical-align: middle;
-    border-radius: 22px;
-    background: #fff;
-    color: #727272;
+    border-radius: 4px;
+    color: #fff;
     text-align: center;
-    margin-right: 30px;
-    font-size: 16px;
+    margin-right: 20px;
+    font-size: 20px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding-top: 3px; }
+    padding-top: 5px; }
+    .footer .wrap .user_block .social a.vk {
+      background: #5b7aa8; }
     .footer .wrap .user_block .social a.facebook {
-      padding-top: 4px; }
-    .footer .wrap .user_block .social a:hover {
-      background: #ff8604; }
+      padding-top: 6px;
+      background: #3b5998; }
+    .footer .wrap .user_block .social a.vk {
+      background: #5b7aa8; }
+    .footer .wrap .user_block .social a.odnoklassniki {
+      background: #f48420; }
+    .footer .wrap .user_block .social a.instagram {
+      background: radial-gradient(circle farthest-corner at 32% 106%, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%, transparent 82%), linear-gradient(135deg, #234bd7 12%, #c33cbe 58%); }
     .footer .wrap .user_block .social a:last-child {
       margin-right: 0; }
 

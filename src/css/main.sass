@@ -558,6 +558,20 @@ img
       a
         display: block
         margin-bottom: 15px
+      .list_aplications
+        margin-top: 15px
+        a
+          width: 100px
+          margin-right: 10px
+          border: 2px solid $main-color
+          border-radius: 4px
+          display: inline-block
+          vertical-align: middle
+          margin-bottom: 0
+          height: 32px
+          //background: $main-color
+          &:last-child
+            margin-right: 0
 
 
       #subscription
@@ -632,21 +646,30 @@ img
 
 
           a
-            width: 22px
-            height: 22px
+            width: 30px
+            height: 30px
             display: inline-block
             vertical-align: middle
-            border-radius: 22px
-            background: #fff
-            color: $color-grey
+            border-radius: 4px
+            //background: #fff
+            color: #fff
             text-align: center
-            margin-right: 30px
-            font-size: 16px
+            margin-right: 20px
+            font-size: 20px
             box-sizing: border-box
-            padding-top: 3px
+            padding-top: 5px
+            &.vk
+              background: #5b7aa8
             &.facebook
-              padding-top: 4px
-            &:hover
+              padding-top: 6px
+              background: #3b5998
+            &.vk
+              background: #5b7aa8
+            &.odnoklassniki
+              background: #f48420
+            &.instagram
+              background: radial-gradient(circle farthest-corner at 32% 106%, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%)
+            //&:hover
               background: #ff8604
             &:last-child
               margin-right: 0
