@@ -1367,22 +1367,22 @@ img {
       margin-bottom: 20px;
       color: #fff; }
   .footer .wrap .logo {
-    width: 255px;
-    margin-right: 125px; }
+    width: 320px;
+    margin-right: 60px; }
     .footer .wrap .logo a {
       display: block;
       margin-bottom: 15px; }
     .footer .wrap .logo .list_aplications {
-      margin-top: 15px; }
+      margin-top: 40px; }
       .footer .wrap .logo .list_aplications a {
-        width: 100px;
+        width: 150px;
         margin-right: 10px;
         border: 2px solid #ff4504;
         border-radius: 4px;
         display: inline-block;
         vertical-align: middle;
         margin-bottom: 0;
-        height: 32px; }
+        height: 48px; }
         .footer .wrap .logo .list_aplications a:last-child {
           margin-right: 0; }
     .footer .wrap .logo #subscription h3 {
@@ -1447,22 +1447,22 @@ img {
     vertical-align: middle;
     margin-bottom: 20px; }
   .footer .wrap .user_block .social a {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: inline-block;
     vertical-align: middle;
     border-radius: 4px;
     color: #fff;
     text-align: center;
     margin-right: 20px;
-    font-size: 20px;
+    font-size: 26px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding-top: 5px; }
+    padding-top: 7px; }
     .footer .wrap .user_block .social a.vk {
       background: #5b7aa8; }
     .footer .wrap .user_block .social a.facebook {
-      padding-top: 6px;
+      padding-top: 8px;
       background: #3b5998; }
     .footer .wrap .user_block .social a.vk {
       background: #5b7aa8; }
@@ -5869,7 +5869,7 @@ body .rngst_phone_button {
   .list_category2 .item-category {
     margin-bottom: 20px; }
   .footer .wrap .logo, .footer .wrap .contact {
-    margin-right: 75px; } }
+    margin-right: 50px; } }
 
 @media screen and (max-width: 959px) {
   body {
@@ -5907,7 +5907,8 @@ body .rngst_phone_button {
         .footer .wrap .contact > div a {
           font-size: 18px;
           display: block;
-          margin-top: 5px; }
+          margin-top: 5px;
+          line-height: 20px; }
   .copyright_block .wrap > div {
     margin-bottom: 15px;
     float: none !important;
@@ -6311,7 +6312,11 @@ body .rngst_phone_button {
     position: absolute;
     bottom: 40px;
     right: 0;
-    top: inherit; } }
+    top: inherit; }
+  .footer .wrap .logo .list_aplications a {
+    margin-right: 0;
+    display: block;
+    margin-bottom: 20px; } }
 
 @media screen and (max-width: 930px) {
   .list_products .filter_products {
